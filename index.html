@@ -814,6 +814,38 @@ body {
     max-width:100%;
 }
 
+
+/* Dashboard Rank: CNINE Excel grafted from ranking.html */
+.rankIntro {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:14px;
+    padding:12px 14px;
+    border-radius:18px;
+    background:linear-gradient(90deg,rgba(255,75,210,0.20),rgba(0,0,0,0.26));
+    border:1px solid rgba(255,95,220,0.26);
+}
+.rankIntro strong { color:#fff; font-size:18px; text-shadow:0 0 10px rgba(255,60,210,.45); }
+.rankIntro span { color:#ffc6ef; font-size:12px; font-weight:900; }
+.nr-wrap{max-width:620px;margin:0 auto;}
+.nr-card{position:relative;background:#11121d;border-radius:18px;overflow:hidden;border:1px solid rgba(255,120,225,.24);box-shadow:0 15px 35px rgba(0,0,0,.5),0 0 22px rgba(255,60,210,.12)}
+.nr-rank-badge{position:absolute;top:0;left:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:1000;z-index:3;color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.55),0 0 10px rgba(255,255,255,.4);clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%);background:rgba(255,255,255,.18)}
+.nr-top{min-height:126px;padding:18px 20px;font-weight:900;font-size:28px;display:flex;gap:16px;align-items:center}
+.nr-crew-logo{width:104px;height:76px;border-radius:10px;object-fit:contain;background:transparent;padding:2px;flex:0 0 auto;filter:drop-shadow(0 0 10px rgba(255,255,255,.18))}
+.nr-crew-info{flex:1;min-width:0;text-align:right}.nr-crew-title{font-size:34px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 rgba(255,255,255,.45),0 3px 0 rgba(0,0,0,.75),0 0 12px rgba(255,255,255,.25)}
+.nr-avg-label{font-size:12px;margin-top:12px;color:#e7ecff;font-weight:900;text-shadow:0 2px 0 rgba(0,0,0,.65)}
+.nr-avg-num{font-size:40px;line-height:1.15;font-weight:1000;color:#ff5c9c;text-shadow:0 1px 0 rgba(255,255,255,.32),0 3px 0 rgba(0,0,0,.78),0 0 13px currentColor}
+.nr-sales{padding:12px 18px;background:#1b1a17;color:#ffd34f;font-weight:900;display:flex;justify-content:space-between;text-shadow:0 2px 0 rgba(0,0,0,.75),0 0 10px rgba(255,210,74,.35)}
+.nr-sales-sub{height:22px;padding:3px 18px 0;background:#171612;color:#bda870;font-size:11px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-bottom:1px solid rgba(255,255,255,.06)}
+.nr-col-head{height:24px;display:flex;align-items:center;gap:8px;padding:0 12px;background:#0b0d16;border-bottom:1px solid rgba(255,255,255,.08);box-sizing:border-box;font-size:10px;font-weight:1000;letter-spacing:-.3px;text-shadow:0 1px 0 #000}.nr-h-rank{width:24px;flex:0 0 24px;text-align:center;color:#7f879e}.nr-h-name{flex:1 1 auto;min-width:0;text-align:left;color:#9da6bf}.nr-h-month{width:120px;flex:0 0 120px;text-align:right;color:#dfe6ff}
+.nr-row{position:relative;display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.06);font-weight:800;overflow:hidden;background:rgba(255,255,255,.01)}
+.nr-row:after{content:"";position:absolute;left:0;bottom:0;height:4px;width:var(--w);background:linear-gradient(90deg,var(--c),white);box-shadow:0 0 10px var(--c)}
+.nr-rank{width:24px;height:22px;flex:0 0 24px;border-radius:7px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);color:#a7aec5;font-size:12px;font-weight:1000;text-shadow:0 1px 0 #000}.nr-name{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:17px;font-weight:1000;letter-spacing:-.4px;text-align:left;text-shadow:0 1px 0 rgba(255,255,255,.35),0 3px 0 rgba(0,0,0,.95),0 0 10px rgba(255,255,255,.28)}
+.nr-score{width:120px;flex:0 0 120px;text-align:right;font-size:19px;font-weight:1000;letter-spacing:-.5px;white-space:nowrap;font-variant-numeric:tabular-nums;text-shadow:0 1px 0 rgba(255,255,255,.28),0 3px 0 rgba(0,0,0,.95),0 0 12px currentColor;color:#ff5b9d}.nr-first{height:58px;font-size:20px;background:rgba(255,255,255,.03)}.nr-first .nr-name{font-size:20px}.nr-first .nr-today-mini,.nr-first .nr-score{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:2px;line-height:1.05}.nr-today-mini{width:72px;flex:0 0 72px;text-align:right;font-size:15px;font-weight:1000;letter-spacing:-.4px;color:#ffd34f;white-space:nowrap;font-variant-numeric:tabular-nums;text-shadow:0 1px 0 rgba(255,255,255,.18),0 3px 0 rgba(0,0,0,.95),0 0 10px rgba(255,211,79,.35)}.nr-first .nr-today-mini{font-size:15px;color:#ffd34f}.nr-first .nr-score{font-size:18px;color:var(--c)}
+@media(max-width:760px){.rankIntro{display:block;text-align:center}.rankIntro span{display:block;margin-top:5px}.nr-wrap{max-width:100%}.nr-top{padding:16px 13px;gap:10px}.nr-crew-logo{width:86px;height:62px}.nr-crew-title{font-size:27px}.nr-avg-num{font-size:32px}.nr-row{gap:6px;padding:9px 8px}.nr-name{font-size:16px}.nr-first .nr-name{font-size:18px}.nr-today-mini{width:62px;flex-basis:62px;font-size:13px}.nr-score,.nr-h-month{width:108px;flex-basis:108px;font-size:17px}.nr-first .nr-today-mini{font-size:13px}.nr-first .nr-score{font-size:16px}}
+
 </style>
 </head>
 
@@ -880,25 +912,139 @@ body {
     </div>
 
 
+
     <div id="rank" class="section">
         <div class="card wide">
-            <h2>엑셀크루 / 스타크루 낙수표</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>순위</th>
-                        <th>닉네임</th>
-                        <th>오늘 별풍선</th>
-                        <th>월간 별풍선</th>
-                        <th>크루 평균</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td><span class="badge">1</span></td><td>집계 대기</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td><span class="badge">2</span></td><td>집계 대기</td><td>-</td><td>-</td><td>-</td></tr>
-                    <tr><td><span class="badge">3</span></td><td>집계 대기</td><td>-</td><td>-</td><td>-</td></tr>
-                </tbody>
-            </table>
+            <h2>엑셀부 낙수표</h2>
+            <div class="rankIntro">
+                <strong>씨나인엑셀 월간 낙수표</strong>
+                <span>집계시간: 2026-05-27 23:43</span>
+            </div>
+            <div class="nr-wrap">
+<div class="nr-card nr-pink">
+<div class="nr-rank-badge">2</div>
+<div class="nr-top" style="background:linear-gradient(135deg,#ff2c7c,#401325)">
+<img class="nr-crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EC%94%A8%EB%82%98%EC%9D%B8%EC%97%91%EC%85%80%EB%B6%80.png"/>
+<div class="nr-crew-info">
+<div class="nr-crew-title">씨나인엑셀</div>
+<div class="nr-avg-label">월간 월간 평균 별풍선</div>
+<div class="nr-avg-num">607,609</div>
+</div>
+</div>
+<div class="nr-sales">
+<span>👑 수장</span>
+<span>18,746,622</span>
+</div>
+<div class="nr-sales-sub">철구형</div>
+<div class="nr-col-head">
+<div class="nr-h-rank">순위</div>
+<div class="nr-h-name">멤버</div>
+<div class="nr-h-month">월간</div>
+</div>
+<div class="nr-row nr-first" style="--w:100%;--c:#ff5b9d;">
+<div class="nr-rank">1</div>
+<div class="nr-name">이다니</div>
+<div class="nr-today-mini nr-first-today">77,545</div>
+<div class="nr-score nr-first-month">1,986,163</div>
+</div>
+<div class="nr-row" style="--w:76%;--c:#ff5b9d;">
+<div class="nr-rank">2</div>
+<div class="nr-name">혜루찡</div>
+<div class="nr-today-mini">682</div>
+<div class="nr-score">1,521,405</div>
+</div>
+<div class="nr-row" style="--w:58%;--c:#ff5b9d;">
+<div class="nr-rank">3</div>
+<div class="nr-name">송채연</div>
+<div class="nr-today-mini">13,816</div>
+<div class="nr-score">1,165,865</div>
+</div>
+<div class="nr-row" style="--w:38%;--c:#ff5b9d;">
+<div class="nr-rank">4</div>
+<div class="nr-name">체온</div>
+<div class="nr-today-mini">10,575</div>
+<div class="nr-score">772,053</div>
+</div>
+<div class="nr-row" style="--w:30%;--c:#ff5b9d;">
+<div class="nr-rank">5</div>
+<div class="nr-name">초초</div>
+<div class="nr-today-mini">4,731</div>
+<div class="nr-score">601,105</div>
+</div>
+<div class="nr-row" style="--w:29%;--c:#ff5b9d;">
+<div class="nr-rank">6</div>
+<div class="nr-name">하이희야</div>
+<div class="nr-today-mini">-</div>
+<div class="nr-score">587,595</div>
+</div>
+<div class="nr-row" style="--w:28%;--c:#ff5b9d;">
+<div class="nr-rank">7</div>
+<div class="nr-name">인지연</div>
+<div class="nr-today-mini">18,870</div>
+<div class="nr-score">565,969</div>
+</div>
+<div class="nr-row" style="--w:28%;--c:#ff5b9d;">
+<div class="nr-rank">8</div>
+<div class="nr-name">채리</div>
+<div class="nr-today-mini">14,883</div>
+<div class="nr-score">558,915</div>
+</div>
+<div class="nr-row" style="--w:26%;--c:#ff5b9d;">
+<div class="nr-rank">9</div>
+<div class="nr-name">설윤이</div>
+<div class="nr-today-mini">18,475</div>
+<div class="nr-score">530,391</div>
+</div>
+<div class="nr-row" style="--w:24%;--c:#ff5b9d;">
+<div class="nr-rank">10</div>
+<div class="nr-name">여을</div>
+<div class="nr-today-mini">-</div>
+<div class="nr-score">493,307</div>
+</div>
+<div class="nr-row" style="--w:16%;--c:#ff5b9d;">
+<div class="nr-rank">11</div>
+<div class="nr-name">애순이</div>
+<div class="nr-today-mini">23,554</div>
+<div class="nr-score">324,803</div>
+</div>
+<div class="nr-row" style="--w:13%;--c:#ff5b9d;">
+<div class="nr-rank">12</div>
+<div class="nr-name">아윤</div>
+<div class="nr-today-mini">1,009</div>
+<div class="nr-score">261,000</div>
+</div>
+<div class="nr-row" style="--w:12%;--c:#ff5b9d;">
+<div class="nr-rank">13</div>
+<div class="nr-name">히나</div>
+<div class="nr-today-mini">3,593</div>
+<div class="nr-score">242,507</div>
+</div>
+<div class="nr-row" style="--w:11%;--c:#ff5b9d;">
+<div class="nr-rank">14</div>
+<div class="nr-name">연두</div>
+<div class="nr-today-mini">6,032</div>
+<div class="nr-score">234,210</div>
+</div>
+<div class="nr-row" style="--w:10%;--c:#ff5b9d;">
+<div class="nr-rank">15</div>
+<div class="nr-name">리하</div>
+<div class="nr-today-mini">1,400</div>
+<div class="nr-score">217,608</div>
+</div>
+<div class="nr-row" style="--w:8%;--c:#ff5b9d;">
+<div class="nr-rank">16</div>
+<div class="nr-name">초린</div>
+<div class="nr-today-mini">2,186</div>
+<div class="nr-score">171,347</div>
+</div>
+<div class="nr-row" style="--w:4%;--c:#ff5b9d;">
+<div class="nr-rank">17</div>
+<div class="nr-name">쁠리</div>
+<div class="nr-today-mini">-</div>
+<div class="nr-score">95,112</div>
+</div>
+</div>
+            </div>
         </div>
     </div>
 
