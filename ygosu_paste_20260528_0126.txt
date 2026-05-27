@@ -1,0 +1,175 @@
+<div style="width:100%;max-width:100%;background:#070812;padding:6px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:white;overflow:hidden;text-align:center;font-size:0;">
+<div style="display:block;text-align:center;font-size:22px;font-weight:900;color:#ffd34f;margin:4px 0 4px;text-shadow:0 2px 0 #000;">🔥 SOOP CREW RANKING 🔥</div>
+<div style="display:block;text-align:center;font-size:11px;font-weight:800;color:#bda870;margin:0 0 8px;">집계시간: 2026-05-28 01:26</div>
+
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;"></div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;"></div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">-</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 크루 매출풍 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;"></div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;height:1px;line-height:1px;margin:0 0.55% 0 0.55%;box-sizing:border-box;font-size:0;color:#070812;background:#070812;overflow:hidden;">&nbsp;</div>
+
+</div>
