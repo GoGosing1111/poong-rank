@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poong Rank Maker V24 Top1 Today</title>
+<style>
+
+body{
+margin:0;
+background:#070812;
+font-family:Pretendard,'Malgun Gothic','Noto Sans KR',sans-serif;
+color:white;
+}
+
+.update-time{
+width:1180px;
+margin:10px auto 0;
+text-align:center;
+font-size:12px;
+font-weight:900;
+color:#bda870;
+text-shadow:0 2px 0 #000;
+}
+.wrap{
+width:1180px;
+margin:auto;
+padding:14px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+.card{
+position:relative;
+background:#11121d;
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 15px 35px rgba(0,0,0,.5);
+}
+.rank-badge{
+position:absolute;
+top:0;
+left:0;
+width:38px;
+height:38px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:19px;
+font-weight:1000;
+z-index:3;
+color:#fff;
+text-shadow:0 2px 0 rgba(0,0,0,.55),0 0 10px rgba(255,255,255,.4);
+clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%);
+background:rgba(255,255,255,.18);
+}
+.top{
+height:126px;
+padding:18px 20px;
+font-weight:900;
+font-size:28px;
+display:flex;
+gap:16px;
+align-items:center;
+}
+.crew-logo{
+width:104px;
+height:76px;
+border-radius:10px;
+object-fit:contain;
+background:transparent;
+padding:2px;
+flex:0 0 auto;
+filter:drop-shadow(0 0 10px rgba(255,255,255,.18));
+}
+.logo-empty{opacity:.2;}
+.crew-info{
+flex:1;
+min-width:0;
+text-align:right;
+}
+.crew-title{
+font-size:34px;
+font-weight:1000;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+text-shadow:0 1px 0 rgba(255,255,255,.45),0 3px 0 rgba(0,0,0,.75),0 0 12px rgba(255,255,255,.25);
+}
+.avg-label{
+font-size:12px;
+margin-top:12px;
+color:#e7ecff;
+font-weight:900;
+text-shadow:0 2px 0 rgba(0,0,0,.65);
+}
+.avg-num{
+font-size:40px;
+line-height:1.15;
+font-weight:1000;
+text-shadow:0 1px 0 rgba(255,255,255,.32),0 3px 0 rgba(0,0,0,.78),0 0 13px currentColor;
+}
+.green .avg-num{color:#36ff4f}
+.pink .avg-num{color:#ff5c9c}
+.cyan .avg-num{color:#35f8ff}
+.blue .avg-num{color:#4d67ff}
+.purple .avg-num{color:#bd6cff}
+.orange .avg-num{color:#ffad3d}
+.sales{
+padding:12px 18px;
+background:#1b1a17;
+color:#ffd34f;
+font-weight:900;
+display:flex;
+justify-content:space-between;
+text-shadow:0 2px 0 rgba(0,0,0,.75),0 0 10px rgba(255,210,74,.35);
+}
+.sales-sub{
+height:22px;
+padding:3px 18px 0;
+background:#171612;
+color:#bda870;
+font-size:11px;
+font-weight:800;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+.col-head{
+height:24px;
+display:flex;
+align-items:center;
+gap:8px;
+padding:0 12px;
+background:#0b0d16;
+border-bottom:1px solid rgba(255,255,255,.08);
+box-sizing:border-box;
+font-size:10px;
+font-weight:1000;
+letter-spacing:-0.3px;
+text-shadow:0 1px 0 #000;
+}
+.h-rank{
+width:24px;
+flex:0 0 24px;
+text-align:center;
+color:#7f879e;
+}
+.h-name{
+flex:1 1 auto;
+min-width:0;
+text-align:left;
+color:#9da6bf;
+}
+
+.h-today{
+width:72px;
+flex:0 0 72px;
+text-align:right;
+color:#ffd34f;
+}
+.today-mini{
+width:72px;
+flex:0 0 72px;
+text-align:right;
+font-size:15px;
+font-weight:1000;
+letter-spacing:-0.4px;
+color:#ffd34f;
+white-space:nowrap;
+font-variant-numeric:tabular-nums;
+text-shadow:0 1px 0 rgba(255,255,255,.18),0 3px 0 rgba(0,0,0,.95),0 0 10px rgba(255,211,79,.35);
+}
+
+.h-month{
+width:120px;
+flex:0 0 120px;
+text-align:right;
+color:#dfe6ff;
+}
+.row{
+position:relative;
+display:flex;
+align-items:center;
+gap:8px;
+padding:10px 12px;
+border-bottom:1px solid rgba(255,255,255,.06);
+font-weight:800;
+overflow:hidden;
+}
+.row:after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+height:4px;
+width:var(--w);
+background:linear-gradient(90deg,var(--c),white);
+box-shadow:0 0 10px var(--c);
+}
+.rank{
+width:24px;
+height:22px;
+flex:0 0 24px;
+border-radius:7px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:rgba(255,255,255,.1);
+color:#a7aec5;
+font-size:12px;
+font-weight:1000;
+text-shadow:0 1px 0 #000;
+}
+.name{
+flex:1 1 auto;
+min-width:0;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+font-size:17px;
+font-weight:1000;
+letter-spacing:-0.4px;
+text-align:left;
+text-shadow:0 1px 0 rgba(255,255,255,.35),0 3px 0 rgba(0,0,0,.95),0 0 10px rgba(255,255,255,.28);
+}
+.score{
+width:120px;
+flex:0 0 120px;
+text-align:right;
+font-size:19px;
+font-weight:1000;
+letter-spacing:-0.5px;
+white-space:nowrap;
+font-variant-numeric:tabular-nums;
+text-shadow:0 1px 0 rgba(255,255,255,.28),0 3px 0 rgba(0,0,0,.95),0 0 12px currentColor;
+}
+.score span{
+display:none;
+}
+.first{
+height:58px;
+font-size:20px;
+background:rgba(255,255,255,.03);
+}
+.first .name{
+font-size:20px;
+}
+.first .today-mini,
+.first .score{
+display:flex;
+flex-direction:column;
+align-items:flex-end;
+justify-content:center;
+gap:2px;
+line-height:1.05;
+}
+.first .today-mini{
+font-size:15px;
+color:#ffd34f;
+}
+.first .score{
+font-size:18px;
+color:var(--c);
+}
+/* 1등 칸 내부 라벨 제거: 헤더의 오늘/월간만 사용 */
+@media(max-width:1100px){
+.wrap{width:100%;grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:620px){
+.wrap{grid-template-columns:1fr}
+.row{gap:6px;padding:9px 8px}
+.name{font-size:16px}
+.first .name{font-size:18px}
+.today-mini,.h-today{width:62px;flex-basis:62px;font-size:13px}
+.score,.h-month{width:108px;flex-basis:108px;font-size:17px}
+.first .today-mini{font-size:13px}
+.first .score{font-size:16px}
+}
+
+</style>
+</head>
+<body>
+<div class="update-time">집계시간: 2026-05-27 23:43</div>
+<div class="wrap">
+<div class="card green">
+  <div class="rank-badge">1</div>
+  <div class="top" style="background:linear-gradient(135deg,#00ff44,#10351a)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EA%B4%91%EC%9A%B0%EC%83%81%EC%82%AC.png" />
+    <div class="crew-info">
+      <div class="crew-title">광우상사</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">809,303</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>32,849,261</span>
+  </div>
+  <div class="sales-sub">커맨더지코</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#2fff58;">
+  <div class="rank">1</div>
+  <div class="name">미디</div>
+  <div class="today-mini first-today">-</div>
+  <div class="score first-month">1,343,033</div>
+</div>
+<div class="row" style="--w:76%;--c:#2fff58;">
+  <div class="rank">2</div>
+  <div class="name">함지아</div>
+  <div class="today-mini">4,213</div>
+  <div class="score">1,029,033</div>
+</div>
+<div class="row" style="--w:72%;--c:#2fff58;">
+  <div class="rank">3</div>
+  <div class="name">아이빈</div>
+  <div class="today-mini">14,149</div>
+  <div class="score">974,139</div>
+</div>
+<div class="row" style="--w:68%;--c:#2fff58;">
+  <div class="rank">4</div>
+  <div class="name">원영님</div>
+  <div class="today-mini">-</div>
+  <div class="score">926,484</div>
+</div>
+<div class="row" style="--w:67%;--c:#2fff58;">
+  <div class="rank">5</div>
+  <div class="name">임주연</div>
+  <div class="today-mini">-</div>
+  <div class="score">912,767</div>
+</div>
+<div class="row" style="--w:65%;--c:#2fff58;">
+  <div class="rank">6</div>
+  <div class="name">안둥</div>
+  <div class="today-mini">7,342</div>
+  <div class="score">882,311</div>
+</div>
+<div class="row" style="--w:57%;--c:#2fff58;">
+  <div class="rank">7</div>
+  <div class="name">이온</div>
+  <div class="today-mini">17,478</div>
+  <div class="score">769,151</div>
+</div>
+<div class="row" style="--w:51%;--c:#2fff58;">
+  <div class="rank">8</div>
+  <div class="name">가을이</div>
+  <div class="today-mini">-</div>
+  <div class="score">689,222</div>
+</div>
+<div class="row" style="--w:33%;--c:#2fff58;">
+  <div class="rank">9</div>
+  <div class="name">서윤슬</div>
+  <div class="today-mini">34,207</div>
+  <div class="score">446,958</div>
+</div>
+<div class="row" style="--w:8%;--c:#2fff58;">
+  <div class="rank">10</div>
+  <div class="name">숨댕</div>
+  <div class="today-mini">4,173</div>
+  <div class="score">119,936</div>
+</div>
+</div>
+<div class="card pink">
+  <div class="rank-badge">2</div>
+  <div class="top" style="background:linear-gradient(135deg,#ff2c7c,#401325)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EC%94%A8%EB%82%98%EC%9D%B8%EC%97%91%EC%85%80%EB%B6%80.png" />
+    <div class="crew-info">
+      <div class="crew-title">씨나인엑셀</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">607,609</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>18,746,622</span>
+  </div>
+  <div class="sales-sub">철구형</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#ff5b9d;">
+  <div class="rank">1</div>
+  <div class="name">이다니</div>
+  <div class="today-mini first-today">77,545</div>
+  <div class="score first-month">1,986,163</div>
+</div>
+<div class="row" style="--w:76%;--c:#ff5b9d;">
+  <div class="rank">2</div>
+  <div class="name">혜루찡</div>
+  <div class="today-mini">682</div>
+  <div class="score">1,521,405</div>
+</div>
+<div class="row" style="--w:58%;--c:#ff5b9d;">
+  <div class="rank">3</div>
+  <div class="name">송채연</div>
+  <div class="today-mini">13,816</div>
+  <div class="score">1,165,865</div>
+</div>
+<div class="row" style="--w:38%;--c:#ff5b9d;">
+  <div class="rank">4</div>
+  <div class="name">체온</div>
+  <div class="today-mini">10,575</div>
+  <div class="score">772,053</div>
+</div>
+<div class="row" style="--w:30%;--c:#ff5b9d;">
+  <div class="rank">5</div>
+  <div class="name">초초</div>
+  <div class="today-mini">4,731</div>
+  <div class="score">601,105</div>
+</div>
+<div class="row" style="--w:29%;--c:#ff5b9d;">
+  <div class="rank">6</div>
+  <div class="name">하이희야</div>
+  <div class="today-mini">-</div>
+  <div class="score">587,595</div>
+</div>
+<div class="row" style="--w:28%;--c:#ff5b9d;">
+  <div class="rank">7</div>
+  <div class="name">인지연</div>
+  <div class="today-mini">18,870</div>
+  <div class="score">565,969</div>
+</div>
+<div class="row" style="--w:28%;--c:#ff5b9d;">
+  <div class="rank">8</div>
+  <div class="name">채리</div>
+  <div class="today-mini">14,883</div>
+  <div class="score">558,915</div>
+</div>
+<div class="row" style="--w:26%;--c:#ff5b9d;">
+  <div class="rank">9</div>
+  <div class="name">설윤이</div>
+  <div class="today-mini">18,475</div>
+  <div class="score">530,391</div>
+</div>
+<div class="row" style="--w:24%;--c:#ff5b9d;">
+  <div class="rank">10</div>
+  <div class="name">여을</div>
+  <div class="today-mini">-</div>
+  <div class="score">493,307</div>
+</div>
+<div class="row" style="--w:16%;--c:#ff5b9d;">
+  <div class="rank">11</div>
+  <div class="name">애순이</div>
+  <div class="today-mini">23,554</div>
+  <div class="score">324,803</div>
+</div>
+<div class="row" style="--w:13%;--c:#ff5b9d;">
+  <div class="rank">12</div>
+  <div class="name">아윤</div>
+  <div class="today-mini">1,009</div>
+  <div class="score">261,000</div>
+</div>
+<div class="row" style="--w:12%;--c:#ff5b9d;">
+  <div class="rank">13</div>
+  <div class="name">히나</div>
+  <div class="today-mini">3,593</div>
+  <div class="score">242,507</div>
+</div>
+<div class="row" style="--w:11%;--c:#ff5b9d;">
+  <div class="rank">14</div>
+  <div class="name">연두</div>
+  <div class="today-mini">6,032</div>
+  <div class="score">234,210</div>
+</div>
+<div class="row" style="--w:10%;--c:#ff5b9d;">
+  <div class="rank">15</div>
+  <div class="name">리하</div>
+  <div class="today-mini">1,400</div>
+  <div class="score">217,608</div>
+</div>
+<div class="row" style="--w:8%;--c:#ff5b9d;">
+  <div class="rank">16</div>
+  <div class="name">초린</div>
+  <div class="today-mini">2,186</div>
+  <div class="score">171,347</div>
+</div>
+<div class="row" style="--w:4%;--c:#ff5b9d;">
+  <div class="rank">17</div>
+  <div class="name">쁠리</div>
+  <div class="today-mini">-</div>
+  <div class="score">95,112</div>
+</div>
+</div>
+<div class="card cyan">
+  <div class="rank-badge">3</div>
+  <div class="top" style="background:linear-gradient(135deg,#24f3ff,#143d46)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EC%9D%B4%EB%85%B8%EB%A0%88%EC%9D%B4%EB%B8%94.gif" />
+    <div class="crew-info">
+      <div class="crew-title">이노레이블</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">296,860</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>6,378,335</span>
+  </div>
+  <div class="sales-sub">김인호</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#35f5ff;">
+  <div class="rank">1</div>
+  <div class="name">애지니</div>
+  <div class="today-mini first-today">310</div>
+  <div class="score first-month">694,520</div>
+</div>
+<div class="row" style="--w:69%;--c:#35f5ff;">
+  <div class="rank">2</div>
+  <div class="name">히냥이</div>
+  <div class="today-mini">199</div>
+  <div class="score">480,853</div>
+</div>
+<div class="row" style="--w:62%;--c:#35f5ff;">
+  <div class="rank">3</div>
+  <div class="name">설탱</div>
+  <div class="today-mini">80,422</div>
+  <div class="score">432,419</div>
+</div>
+<div class="row" style="--w:59%;--c:#35f5ff;">
+  <div class="rank">4</div>
+  <div class="name">이월</div>
+  <div class="today-mini">-</div>
+  <div class="score">416,083</div>
+</div>
+<div class="row" style="--w:44%;--c:#35f5ff;">
+  <div class="rank">5</div>
+  <div class="name">꽃부기</div>
+  <div class="today-mini">8,383</div>
+  <div class="score">309,818</div>
+</div>
+<div class="row" style="--w:40%;--c:#35f5ff;">
+  <div class="rank">6</div>
+  <div class="name">리에</div>
+  <div class="today-mini">20,964</div>
+  <div class="score">278,340</div>
+</div>
+<div class="row" style="--w:36%;--c:#35f5ff;">
+  <div class="rank">7</div>
+  <div class="name">누리</div>
+  <div class="today-mini">-</div>
+  <div class="score">254,123</div>
+</div>
+<div class="row" style="--w:20%;--c:#35f5ff;">
+  <div class="rank">8</div>
+  <div class="name">설인</div>
+  <div class="today-mini">-</div>
+  <div class="score">145,553</div>
+</div>
+<div class="row" style="--w:19%;--c:#35f5ff;">
+  <div class="rank">9</div>
+  <div class="name">이리원</div>
+  <div class="today-mini">151</div>
+  <div class="score">137,599</div>
+</div>
+<div class="row" style="--w:11%;--c:#35f5ff;">
+  <div class="rank">10</div>
+  <div class="name">♥밍초♥</div>
+  <div class="today-mini">-</div>
+  <div class="score">79,372</div>
+</div>
+<div class="row" style="--w:5%;--c:#35f5ff;">
+  <div class="rank">11</div>
+  <div class="name">연보민</div>
+  <div class="today-mini">2,111</div>
+  <div class="score">36,789</div>
+</div>
+</div>
+<div class="card blue">
+  <div class="rank-badge">4</div>
+  <div class="top" style="background:linear-gradient(135deg,#304dff,#11194f)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/YXL.gif" />
+    <div class="crew-info">
+      <div class="crew-title">YXL</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">284,286</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>9,568,862</span>
+  </div>
+  <div class="sales-sub">염보성</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#4f68ff;">
+  <div class="rank">1</div>
+  <div class="name">후잉</div>
+  <div class="today-mini first-today">-</div>
+  <div class="score first-month">484,867</div>
+</div>
+<div class="row" style="--w:88%;--c:#4f68ff;">
+  <div class="rank">2</div>
+  <div class="name">류서하</div>
+  <div class="today-mini">15,821</div>
+  <div class="score">429,662</div>
+</div>
+<div class="row" style="--w:85%;--c:#4f68ff;">
+  <div class="rank">3</div>
+  <div class="name">너의멜로디</div>
+  <div class="today-mini">23,199</div>
+  <div class="score">416,136</div>
+</div>
+<div class="row" style="--w:83%;--c:#4f68ff;">
+  <div class="rank">4</div>
+  <div class="name">냥냥수주</div>
+  <div class="today-mini">440</div>
+  <div class="score">404,181</div>
+</div>
+<div class="row" style="--w:51%;--c:#4f68ff;">
+  <div class="rank">5</div>
+  <div class="name">소다</div>
+  <div class="today-mini">-</div>
+  <div class="score">251,714</div>
+</div>
+<div class="row" style="--w:50%;--c:#4f68ff;">
+  <div class="rank">6</div>
+  <div class="name">백나현</div>
+  <div class="today-mini">13,187</div>
+  <div class="score">246,755</div>
+</div>
+<div class="row" style="--w:48%;--c:#4f68ff;">
+  <div class="rank">7</div>
+  <div class="name">김유정</div>
+  <div class="today-mini">-</div>
+  <div class="score">236,511</div>
+</div>
+<div class="row" style="--w:47%;--c:#4f68ff;">
+  <div class="rank">8</div>
+  <div class="name">미로</div>
+  <div class="today-mini">-</div>
+  <div class="score">229,197</div>
+</div>
+<div class="row" style="--w:35%;--c:#4f68ff;">
+  <div class="rank">9</div>
+  <div class="name">서니</div>
+  <div class="today-mini">12,878</div>
+  <div class="score">170,479</div>
+</div>
+<div class="row" style="--w:32%;--c:#4f68ff;">
+  <div class="rank">10</div>
+  <div class="name">아름</div>
+  <div class="today-mini">10,700</div>
+  <div class="score">155,634</div>
+</div>
+<div class="row" style="--w:21%;--c:#4f68ff;">
+  <div class="rank">11</div>
+  <div class="name">하랑짱</div>
+  <div class="today-mini">-</div>
+  <div class="score">102,017</div>
+</div>
+</div>
+<div class="card purple">
+  <div class="rank-badge">5</div>
+  <div class="top" style="background:linear-gradient(135deg,#a83dff,#27153f)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%ED%8C%90%ED%83%80%EC%A7%80%EC%9C%A02.png" />
+    <div class="crew-info">
+      <div class="crew-title">판타지유</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">223,545</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>853,380</span>
+  </div>
+  <div class="sales-sub">지유</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#bd6cff;">
+  <div class="rank">1</div>
+  <div class="name">미숑.♥</div>
+  <div class="today-mini first-today">-</div>
+  <div class="score first-month">1,068,289</div>
+</div>
+<div class="row" style="--w:44%;--c:#bd6cff;">
+  <div class="rank">2</div>
+  <div class="name">가비[♥]</div>
+  <div class="today-mini">4,010</div>
+  <div class="score">473,446</div>
+</div>
+<div class="row" style="--w:31%;--c:#bd6cff;">
+  <div class="rank">3</div>
+  <div class="name">윤아현</div>
+  <div class="today-mini">13,181</div>
+  <div class="score">334,450</div>
+</div>
+<div class="row" style="--w:29%;--c:#bd6cff;">
+  <div class="rank">4</div>
+  <div class="name">쑤지</div>
+  <div class="today-mini">2,308</div>
+  <div class="score">320,142</div>
+</div>
+<div class="row" style="--w:19%;--c:#bd6cff;">
+  <div class="rank">5</div>
+  <div class="name">파닥♥</div>
+  <div class="today-mini">1,620</div>
+  <div class="score">206,546</div>
+</div>
+<div class="row" style="--w:8%;--c:#bd6cff;">
+  <div class="rank">6</div>
+  <div class="name">이소원♥</div>
+  <div class="today-mini">30</div>
+  <div class="score">95,631</div>
+</div>
+<div class="row" style="--w:7%;--c:#bd6cff;">
+  <div class="rank">7</div>
+  <div class="name">만다♥</div>
+  <div class="today-mini">-</div>
+  <div class="score">81,759</div>
+</div>
+<div class="row" style="--w:6%;--c:#bd6cff;">
+  <div class="rank">8</div>
+  <div class="name">김뽀뇨</div>
+  <div class="today-mini">4,829</div>
+  <div class="score">71,652</div>
+</div>
+<div class="row" style="--w:6%;--c:#bd6cff;">
+  <div class="rank">9</div>
+  <div class="name">한세은♥</div>
+  <div class="today-mini">7,059</div>
+  <div class="score">69,156</div>
+</div>
+<div class="row" style="--w:6%;--c:#bd6cff;">
+  <div class="rank">10</div>
+  <div class="name">파나나__</div>
+  <div class="today-mini">2,424</div>
+  <div class="score">65,811</div>
+</div>
+<div class="row" style="--w:4%;--c:#bd6cff;">
+  <div class="rank">11</div>
+  <div class="name">#한시온</div>
+  <div class="today-mini">-</div>
+  <div class="score">45,148</div>
+</div>
+<div class="row" style="--w:4%;--c:#bd6cff;">
+  <div class="rank">12</div>
+  <div class="name">유별♡</div>
+  <div class="today-mini">9,374</div>
+  <div class="score">44,813</div>
+</div>
+<div class="row" style="--w:2%;--c:#bd6cff;">
+  <div class="rank">13</div>
+  <div class="name">김그루♡</div>
+  <div class="today-mini">-</div>
+  <div class="score">29,254</div>
+</div>
+</div>
+<div class="card orange">
+  <div class="rank-badge">6</div>
+  <div class="top" style="background:linear-gradient(135deg,#ff961f,#3e2410)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EB%8D%94%EC%BC%80%EC%9D%B4.png" />
+    <div class="crew-info">
+      <div class="crew-title">더케이</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">192,317</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>14,966,835</span>
+  </div>
+  <div class="sales-sub">케이</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#ffad3d;">
+  <div class="rank">1</div>
+  <div class="name">단하나</div>
+  <div class="today-mini first-today">1,132</div>
+  <div class="score first-month">503,723</div>
+</div>
+<div class="row" style="--w:84%;--c:#ffad3d;">
+  <div class="rank">2</div>
+  <div class="name">채채</div>
+  <div class="today-mini">-</div>
+  <div class="score">425,477</div>
+</div>
+<div class="row" style="--w:59%;--c:#ffad3d;">
+  <div class="rank">3</div>
+  <div class="name">에디양</div>
+  <div class="today-mini">599</div>
+  <div class="score">301,813</div>
+</div>
+<div class="row" style="--w:52%;--c:#ffad3d;">
+  <div class="rank">4</div>
+  <div class="name">강한빛</div>
+  <div class="today-mini">5,721</div>
+  <div class="score">265,369</div>
+</div>
+<div class="row" style="--w:40%;--c:#ffad3d;">
+  <div class="rank">5</div>
+  <div class="name">지아콩</div>
+  <div class="today-mini">-</div>
+  <div class="score">205,264</div>
+</div>
+<div class="row" style="--w:35%;--c:#ffad3d;">
+  <div class="rank">6</div>
+  <div class="name">포카린</div>
+  <div class="today-mini">6,958</div>
+  <div class="score">179,348</div>
+</div>
+<div class="row" style="--w:34%;--c:#ffad3d;">
+  <div class="rank">7</div>
+  <div class="name">엘</div>
+  <div class="today-mini">-</div>
+  <div class="score">171,527</div>
+</div>
+<div class="row" style="--w:29%;--c:#ffad3d;">
+  <div class="rank">8</div>
+  <div class="name">한슬댕</div>
+  <div class="today-mini">12,901</div>
+  <div class="score">149,241</div>
+</div>
+<div class="row" style="--w:28%;--c:#ffad3d;">
+  <div class="rank">9</div>
+  <div class="name">퀸다미</div>
+  <div class="today-mini">-</div>
+  <div class="score">141,852</div>
+</div>
+<div class="row" style="--w:19%;--c:#ffad3d;">
+  <div class="rank">10</div>
+  <div class="name">푸린</div>
+  <div class="today-mini">1,327</div>
+  <div class="score">97,163</div>
+</div>
+<div class="row" style="--w:18%;--c:#ffad3d;">
+  <div class="rank">11</div>
+  <div class="name">차시월</div>
+  <div class="today-mini">538</div>
+  <div class="score">91,874</div>
+</div>
+<div class="row" style="--w:13%;--c:#ffad3d;">
+  <div class="rank">12</div>
+  <div class="name">채리나</div>
+  <div class="today-mini">14,883</div>
+  <div class="score">69,287</div>
+</div>
+<div class="row" style="--w:9%;--c:#ffad3d;">
+  <div class="rank">13</div>
+  <div class="name">소냥이에요</div>
+  <div class="today-mini">4,709</div>
+  <div class="score">45,765</div>
+</div>
+<div class="row" style="--w:8%;--c:#ffad3d;">
+  <div class="rank">14</div>
+  <div class="name">쑤</div>
+  <div class="today-mini">2,308</div>
+  <div class="score">44,747</div>
+</div>
+</div>
+<div class="card green">
+  <div class="rank-badge">7</div>
+  <div class="top" style="background:linear-gradient(135deg,#00ff44,#10351a)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EC%A0%95%EC%84%A0%EC%BB%B4%ED%8D%BC%EB%8B%88.png" />
+    <div class="crew-info">
+      <div class="crew-title">정선컴퍼니</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">191,116</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>14,681,679</span>
+  </div>
+  <div class="sales-sub">박퍼니</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#2fff58;">
+  <div class="rank">1</div>
+  <div class="name">서이안</div>
+  <div class="today-mini first-today">-</div>
+  <div class="score first-month">383,297</div>
+</div>
+<div class="row" style="--w:95%;--c:#2fff58;">
+  <div class="rank">2</div>
+  <div class="name">백설</div>
+  <div class="today-mini">-</div>
+  <div class="score">364,545</div>
+</div>
+<div class="row" style="--w:61%;--c:#2fff58;">
+  <div class="rank">3</div>
+  <div class="name">햇동이</div>
+  <div class="today-mini">5,209</div>
+  <div class="score">233,867</div>
+</div>
+<div class="row" style="--w:59%;--c:#2fff58;">
+  <div class="rank">4</div>
+  <div class="name">유서림</div>
+  <div class="today-mini">-</div>
+  <div class="score">227,567</div>
+</div>
+<div class="row" style="--w:57%;--c:#2fff58;">
+  <div class="rank">5</div>
+  <div class="name">윤수</div>
+  <div class="today-mini">3,873</div>
+  <div class="score">219,696</div>
+</div>
+<div class="row" style="--w:54%;--c:#2fff58;">
+  <div class="rank">6</div>
+  <div class="name">김규리</div>
+  <div class="today-mini">3,816</div>
+  <div class="score">207,148</div>
+</div>
+<div class="row" style="--w:53%;--c:#2fff58;">
+  <div class="rank">7</div>
+  <div class="name">아유님</div>
+  <div class="today-mini">-</div>
+  <div class="score">203,970</div>
+</div>
+<div class="row" style="--w:49%;--c:#2fff58;">
+  <div class="rank">8</div>
+  <div class="name">율비</div>
+  <div class="today-mini">-</div>
+  <div class="score">191,541</div>
+</div>
+<div class="row" style="--w:41%;--c:#2fff58;">
+  <div class="rank">9</div>
+  <div class="name">윤세빈</div>
+  <div class="today-mini">1,430</div>
+  <div class="score">159,364</div>
+</div>
+<div class="row" style="--w:36%;--c:#2fff58;">
+  <div class="rank">10</div>
+  <div class="name">김베리</div>
+  <div class="today-mini">8,817</div>
+  <div class="score">140,972</div>
+</div>
+<div class="row" style="--w:35%;--c:#2fff58;">
+  <div class="rank">11</div>
+  <div class="name">서윤</div>
+  <div class="today-mini">1,201</div>
+  <div class="score">137,249</div>
+</div>
+<div class="row" style="--w:34%;--c:#2fff58;">
+  <div class="rank">12</div>
+  <div class="name">당신의채안</div>
+  <div class="today-mini">-</div>
+  <div class="score">132,032</div>
+</div>
+<div class="row" style="--w:12%;--c:#2fff58;">
+  <div class="rank">13</div>
+  <div class="name">채보미</div>
+  <div class="today-mini">-</div>
+  <div class="score">46,321</div>
+</div>
+<div class="row" style="--w:7%;--c:#2fff58;">
+  <div class="rank">14</div>
+  <div class="name">나의유주</div>
+  <div class="today-mini">-</div>
+  <div class="score">28,055</div>
+</div>
+</div>
+<div class="card pink">
+  <div class="rank-badge">8</div>
+  <div class="top" style="background:linear-gradient(135deg,#ff2c7c,#401325)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/771.png" />
+    <div class="crew-info">
+      <div class="crew-title">771</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">148,196</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>5,456,654</span>
+  </div>
+  <div class="sales-sub">킹기훈</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#ff5b9d;">
+  <div class="rank">1</div>
+  <div class="name">예란</div>
+  <div class="today-mini first-today">-</div>
+  <div class="score first-month">367,841</div>
+</div>
+<div class="row" style="--w:99%;--c:#ff5b9d;">
+  <div class="rank">2</div>
+  <div class="name">이나율</div>
+  <div class="today-mini">-</div>
+  <div class="score">367,262</div>
+</div>
+<div class="row" style="--w:77%;--c:#ff5b9d;">
+  <div class="rank">3</div>
+  <div class="name">푸글리</div>
+  <div class="today-mini">-</div>
+  <div class="score">286,218</div>
+</div>
+<div class="row" style="--w:36%;--c:#ff5b9d;">
+  <div class="rank">4</div>
+  <div class="name">나래</div>
+  <div class="today-mini">9,808</div>
+  <div class="score">135,147</div>
+</div>
+<div class="row" style="--w:28%;--c:#ff5b9d;">
+  <div class="rank">5</div>
+  <div class="name">지숙</div>
+  <div class="today-mini">5,506</div>
+  <div class="score">106,396</div>
+</div>
+<div class="row" style="--w:21%;--c:#ff5b9d;">
+  <div class="rank">6</div>
+  <div class="name">예수</div>
+  <div class="today-mini">2,185</div>
+  <div class="score">79,369</div>
+</div>
+<div class="row" style="--w:15%;--c:#ff5b9d;">
+  <div class="rank">7</div>
+  <div class="name">김봄비</div>
+  <div class="today-mini">1,469</div>
+  <div class="score">56,819</div>
+</div>
+<div class="row" style="--w:13%;--c:#ff5b9d;">
+  <div class="rank">8</div>
+  <div class="name">한채아</div>
+  <div class="today-mini">200</div>
+  <div class="score">49,281</div>
+</div>
+<div class="row" style="--w:5%;--c:#ff5b9d;">
+  <div class="rank">9</div>
+  <div class="name">이밍</div>
+  <div class="today-mini">-</div>
+  <div class="score">21,203</div>
+</div>
+<div class="row" style="--w:3%;--c:#ff5b9d;">
+  <div class="rank">10</div>
+  <div class="name">박예솜</div>
+  <div class="today-mini">-</div>
+  <div class="score">12,429</div>
+</div>
+</div>
+<div class="card cyan">
+  <div class="rank-badge">9</div>
+  <div class="top" style="background:linear-gradient(135deg,#24f3ff,#143d46)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EB%AC%B8%EC%97%90%EC%9D%B4.png" />
+    <div class="crew-info">
+      <div class="crew-title">문에이</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">114,843</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>7,878,768</span>
+  </div>
+  <div class="sales-sub">도아</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#35f5ff;">
+  <div class="rank">1</div>
+  <div class="name">슈나♥</div>
+  <div class="today-mini first-today">170,109</div>
+  <div class="score first-month">279,274</div>
+</div>
+<div class="row" style="--w:96%;--c:#35f5ff;">
+  <div class="rank">2</div>
+  <div class="name">미지수♥</div>
+  <div class="today-mini">219</div>
+  <div class="score">269,926</div>
+</div>
+<div class="row" style="--w:57%;--c:#35f5ff;">
+  <div class="rank">3</div>
+  <div class="name">하임*</div>
+  <div class="today-mini">1</div>
+  <div class="score">160,465</div>
+</div>
+<div class="row" style="--w:57%;--c:#35f5ff;">
+  <div class="rank">4</div>
+  <div class="name">강형민이</div>
+  <div class="today-mini">-</div>
+  <div class="score">160,273</div>
+</div>
+<div class="row" style="--w:53%;--c:#35f5ff;">
+  <div class="rank">5</div>
+  <div class="name">햄벅</div>
+  <div class="today-mini">4,190</div>
+  <div class="score">150,275</div>
+</div>
+<div class="row" style="--w:47%;--c:#35f5ff;">
+  <div class="rank">6</div>
+  <div class="name">현강림2</div>
+  <div class="today-mini">-</div>
+  <div class="score">132,514</div>
+</div>
+<div class="row" style="--w:43%;--c:#35f5ff;">
+  <div class="rank">7</div>
+  <div class="name">♥채화</div>
+  <div class="today-mini">101</div>
+  <div class="score">120,640</div>
+</div>
+<div class="row" style="--w:33%;--c:#35f5ff;">
+  <div class="rank">8</div>
+  <div class="name">설현미</div>
+  <div class="today-mini">986</div>
+  <div class="score">93,474</div>
+</div>
+<div class="row" style="--w:31%;--c:#35f5ff;">
+  <div class="rank">9</div>
+  <div class="name">예니__</div>
+  <div class="today-mini">10</div>
+  <div class="score">88,376</div>
+</div>
+<div class="row" style="--w:31%;--c:#35f5ff;">
+  <div class="rank">10</div>
+  <div class="name">뮤엘♥</div>
+  <div class="today-mini">10</div>
+  <div class="score">88,288</div>
+</div>
+<div class="row" style="--w:29%;--c:#35f5ff;">
+  <div class="rank">11</div>
+  <div class="name">서언수</div>
+  <div class="today-mini">-</div>
+  <div class="score">81,585</div>
+</div>
+<div class="row" style="--w:26%;--c:#35f5ff;">
+  <div class="rank">12</div>
+  <div class="name">.장지민</div>
+  <div class="today-mini">-</div>
+  <div class="score">73,790</div>
+</div>
+<div class="row" style="--w:26%;--c:#35f5ff;">
+  <div class="rank">13</div>
+  <div class="name">박재열</div>
+  <div class="today-mini">100</div>
+  <div class="score">73,141</div>
+</div>
+<div class="row" style="--w:23%;--c:#35f5ff;">
+  <div class="rank">14</div>
+  <div class="name">E-;이은♥</div>
+  <div class="today-mini">-</div>
+  <div class="score">66,149</div>
+</div>
+<div class="row" style="--w:20%;--c:#35f5ff;">
+  <div class="rank">15</div>
+  <div class="name">천시아S2</div>
+  <div class="today-mini">-</div>
+  <div class="score">56,032</div>
+</div>
+<div class="row" style="--w:17%;--c:#35f5ff;">
+  <div class="rank">16</div>
+  <div class="name">Im미나</div>
+  <div class="today-mini">3,645</div>
+  <div class="score">48,079</div>
+</div>
+<div class="row" style="--w:3%;--c:#35f5ff;">
+  <div class="rank">17</div>
+  <div class="name">#다인</div>
+  <div class="today-mini">532</div>
+  <div class="score">10,054</div>
+</div>
+</div>
+<div class="card blue">
+  <div class="rank-badge">10</div>
+  <div class="top" style="background:linear-gradient(135deg,#304dff,#11194f)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/GD%EC%BB%B4%ED%8D%BC%EB%8B%88.gif" />
+    <div class="crew-info">
+      <div class="crew-title">GD컴퍼니</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">108,887</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>5,221,846</span>
+  </div>
+  <div class="sales-sub">박가린</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#4f68ff;">
+  <div class="rank">1</div>
+  <div class="name">아링</div>
+  <div class="today-mini first-today">7,915</div>
+  <div class="score first-month">193,147</div>
+</div>
+<div class="row" style="--w:92%;--c:#4f68ff;">
+  <div class="rank">2</div>
+  <div class="name">쥬브리</div>
+  <div class="today-mini">-</div>
+  <div class="score">178,027</div>
+</div>
+<div class="row" style="--w:90%;--c:#4f68ff;">
+  <div class="rank">3</div>
+  <div class="name">유현</div>
+  <div class="today-mini">-</div>
+  <div class="score">175,135</div>
+</div>
+<div class="row" style="--w:73%;--c:#4f68ff;">
+  <div class="rank">4</div>
+  <div class="name">은아린!!</div>
+  <div class="today-mini">10</div>
+  <div class="score">141,697</div>
+</div>
+<div class="row" style="--w:24%;--c:#4f68ff;">
+  <div class="rank">5</div>
+  <div class="name">윤아</div>
+  <div class="today-mini">1,592</div>
+  <div class="score">47,858</div>
+</div>
+<div class="row" style="--w:8%;--c:#4f68ff;">
+  <div class="rank">6</div>
+  <div class="name">채아</div>
+  <div class="today-mini">-</div>
+  <div class="score">16,721</div>
+</div>
+<div class="row" style="--w:4%;--c:#4f68ff;">
+  <div class="rank">7</div>
+  <div class="name">유나라</div>
+  <div class="today-mini">-</div>
+  <div class="score">9,625</div>
+</div>
+</div>
+<div class="card purple">
+  <div class="rank-badge">11</div>
+  <div class="top" style="background:linear-gradient(135deg,#a83dff,#27153f)">
+    <img class="crew-logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EC%87%BC%EC%BC%80%EC%9D%B4.png" />
+    <div class="crew-info">
+      <div class="crew-title">쇼케이</div>
+      <div class="avg-label">월간 월간 평균 별풍선</div>
+      <div class="avg-num">96,764</div>
+    </div>
+  </div>
+  <div class="sales">
+    <span>👑 수장</span>
+    <span>14,966,835</span>
+  </div>
+  <div class="sales-sub">케이</div>
+  <div class="col-head">
+    <div class="h-rank">순위</div>
+    <div class="h-name">멤버</div>
+    <div class="h-month">월간</div>
+  </div>
+<div class="row first" style="--w:100%;--c:#bd6cff;">
+  <div class="rank">1</div>
+  <div class="name">＠서단</div>
+  <div class="today-mini first-today">3,254</div>
+  <div class="score first-month">237,752</div>
+</div>
+<div class="row" style="--w:73%;--c:#bd6cff;">
+  <div class="rank">2</div>
+  <div class="name">송화양</div>
+  <div class="today-mini">35</div>
+  <div class="score">175,555</div>
+</div>
+<div class="row" style="--w:55%;--c:#bd6cff;">
+  <div class="rank">3</div>
+  <div class="name">재온ly</div>
+  <div class="today-mini">2,596</div>
+  <div class="score">132,038</div>
+</div>
+<div class="row" style="--w:49%;--c:#bd6cff;">
+  <div class="rank">4</div>
+  <div class="name">쏘피♥</div>
+  <div class="today-mini">12,569</div>
+  <div class="score">117,567</div>
+</div>
+<div class="row" style="--w:49%;--c:#bd6cff;">
+  <div class="rank">5</div>
+  <div class="name">송유이♥</div>
+  <div class="today-mini">1</div>
+  <div class="score">117,310</div>
+</div>
+<div class="row" style="--w:47%;--c:#bd6cff;">
+  <div class="rank">6</div>
+  <div class="name">도예빈♥</div>
+  <div class="today-mini">3,004</div>
+  <div class="score">114,066</div>
+</div>
+<div class="row" style="--w:46%;--c:#bd6cff;">
+  <div class="rank">7</div>
+  <div class="name">유이나.♡</div>
+  <div class="today-mini">-</div>
+  <div class="score">109,557</div>
+</div>
+<div class="row" style="--w:41%;--c:#bd6cff;">
+  <div class="rank">8</div>
+  <div class="name">새봄_♡</div>
+  <div class="today-mini">1,036</div>
+  <div class="score">98,018</div>
+</div>
+<div class="row" style="--w:35%;--c:#bd6cff;">
+  <div class="rank">9</div>
+  <div class="name">정인♥</div>
+  <div class="today-mini">2,051</div>
+  <div class="score">83,281</div>
+</div>
+<div class="row" style="--w:28%;--c:#bd6cff;">
+  <div class="rank">10</div>
+  <div class="name">코코_♥</div>
+  <div class="today-mini">318</div>
+  <div class="score">68,026</div>
+</div>
+<div class="row" style="--w:26%;--c:#bd6cff;">
+  <div class="rank">11</div>
+  <div class="name">♥제니♥</div>
+  <div class="today-mini">6,552</div>
+  <div class="score">61,981</div>
+</div>
+<div class="row" style="--w:15%;--c:#bd6cff;">
+  <div class="rank">12</div>
+  <div class="name">이로♥</div>
+  <div class="today-mini">1,466</div>
+  <div class="score">37,027</div>
+</div>
+<div class="row" style="--w:1%;--c:#bd6cff;">
+  <div class="rank">13</div>
+  <div class="name">도하정♥</div>
+  <div class="today-mini">-</div>
+  <div class="score">2,529</div>
+</div>
+<div class="row" style="--w:0%;--c:#bd6cff;">
+  <div class="rank">14</div>
+  <div class="name">@유톨</div>
+  <div class="today-mini">-</div>
+  <div class="score">-</div>
+</div>
+</div>
+</div>
+</body>
+</html>
