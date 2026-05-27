@@ -846,6 +846,237 @@ body {
 .nr-score{width:120px;flex:0 0 120px;text-align:right;font-size:19px;font-weight:1000;letter-spacing:-.5px;white-space:nowrap;font-variant-numeric:tabular-nums;text-shadow:0 1px 0 rgba(255,255,255,.28),0 3px 0 rgba(0,0,0,.95),0 0 12px currentColor;color:#ff5b9d}.nr-first{height:58px;font-size:20px;background:rgba(255,255,255,.03)}.nr-first .nr-name{font-size:20px}.nr-first .nr-today-mini,.nr-first .nr-score{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:2px;line-height:1.05}.nr-today-mini{width:72px;flex:0 0 72px;text-align:right;font-size:15px;font-weight:1000;letter-spacing:-.4px;color:#ffd34f;white-space:nowrap;font-variant-numeric:tabular-nums;text-shadow:0 1px 0 rgba(255,255,255,.18),0 3px 0 rgba(0,0,0,.95),0 0 10px rgba(255,211,79,.35)}.nr-first .nr-today-mini{font-size:15px;color:#ffd34f}.nr-first .nr-score{font-size:18px;color:var(--c)}
 @media(max-width:760px){.rankIntro{display:block;text-align:center}.rankIntro span{display:block;margin-top:5px}.nr-wrap{max-width:100%}.nr-top{padding:16px 13px;gap:10px}.nr-crew-logo{width:86px;height:62px}.nr-crew-title{font-size:27px}.nr-avg-num{font-size:32px}.nr-row{gap:6px;padding:9px 8px}.nr-name{font-size:16px}.nr-first .nr-name{font-size:18px}.nr-today-mini{width:62px;flex-basis:62px;font-size:13px}.nr-score,.nr-h-month{width:108px;flex-basis:108px;font-size:17px}.nr-first .nr-today-mini{font-size:13px}.nr-first .nr-score{font-size:16px}}
 
+
+
+/* =========================================================
+   BLUE / WHITE THEME OVERRIDE
+   - 핑크 네온 눈부심 완화
+   - 메뉴/섹션 제목 흰색
+   - 전체 포인트 컬러 파란 계열
+========================================================= */
+body {
+    background:
+        radial-gradient(circle at top, rgba(45,145,255,0.24), transparent 34%),
+        linear-gradient(180deg,#05070d 0%,#071426 48%,#030507 100%) !important;
+}
+
+.hero {
+    border-color:rgba(80,170,255,0.72) !important;
+    background:
+        linear-gradient(135deg,rgba(25,125,255,0.30),rgba(0,0,0,0.74) 42%,rgba(0,70,150,0.36)),
+        #07101b !important;
+    box-shadow:
+        0 0 24px rgba(40,145,255,0.32),
+        inset 0 0 36px rgba(255,255,255,0.04) !important;
+}
+
+.logoBox {
+    background:radial-gradient(circle,rgba(45,145,255,0.20) 0%,#070b12 72%) !important;
+    border-color:#55b8ff !important;
+    box-shadow:0 0 30px rgba(45,145,255,0.50), inset 0 0 18px rgba(255,255,255,0.08) !important;
+}
+
+.title {
+    color:#fff !important;
+    text-shadow:
+        0 0 8px rgba(75,170,255,0.95),
+        0 3px 0 #002b55,
+        0 8px 18px #000 !important;
+}
+
+.subtitle {
+    color:#ffffff !important;
+    border-color:rgba(105,185,255,0.58) !important;
+    background:rgba(0,18,38,0.50) !important;
+}
+
+.menu {
+    border-color:rgba(60,155,255,0.30) !important;
+}
+
+.menu button {
+    background:linear-gradient(180deg,#0b2442,#07111f) !important;
+    color:#ffffff !important;
+    border-color:#2f8fe8 !important;
+}
+
+.menu button.active,
+.menu button:hover {
+    background:linear-gradient(180deg,#2798ff,#0752a7) !important;
+    color:#ffffff !important;
+    border-color:#7dc7ff !important;
+    box-shadow:0 0 16px rgba(50,150,255,0.50) !important;
+}
+
+.card {
+    background:linear-gradient(180deg,rgba(8,24,45,0.95),rgba(8,10,15,0.96)) !important;
+    border-color:rgba(80,170,255,0.34) !important;
+}
+
+.card h2,
+.card h3,
+.scheduleTitle h3,
+.rankIntro strong {
+    color:#ffffff !important;
+    text-shadow:0 0 10px rgba(70,165,255,0.55) !important;
+}
+
+.value,
+.memberSummary,
+.liveUpdated,
+.scheduleHead .left span,
+.scheduleTitle span,
+.rankIntro span,
+.soopId {
+    color:#eaf6ff !important;
+}
+
+.linkBtn {
+    background:#081c33 !important;
+    border-color:#2b88df !important;
+    color:#ffffff !important;
+}
+
+.avatar,
+.avatarImg {
+    border-color:#55b8ff !important;
+    box-shadow:0 0 14px rgba(45,145,255,0.34) !important;
+}
+
+.avatar {
+    background:linear-gradient(135deg,#08294c,#111) !important;
+}
+
+.partBadge {
+    color:#ffffff !important;
+    background:rgba(45,145,255,0.20) !important;
+    border-color:rgba(105,185,255,0.42) !important;
+}
+
+.liveBadge.on {
+    background:#168fff !important;
+    box-shadow:0 0 12px rgba(45,145,255,0.72) !important;
+}
+
+.memberToolbar {
+    border-color:rgba(65,160,255,0.28) !important;
+}
+
+.memberTab {
+    background:#081c33 !important;
+    border-color:rgba(105,185,255,0.48) !important;
+    color:#ffffff !important;
+}
+
+.memberTab.active,
+.memberTab:hover {
+    background:linear-gradient(180deg,#2798ff,#0752a7) !important;
+    color:#ffffff !important;
+    box-shadow:0 0 12px rgba(45,145,255,0.42) !important;
+}
+
+.memberSearch {
+    border-color:rgba(105,185,255,0.48) !important;
+    background:#07111f !important;
+    color:#ffffff !important;
+}
+
+.scheduleHead {
+    background:linear-gradient(90deg,rgba(45,145,255,0.24),rgba(0,0,0,0.28)) !important;
+    border-color:rgba(90,175,255,0.32) !important;
+}
+
+.scheduleHead .left strong {
+    color:#ffffff !important;
+    text-shadow:0 0 10px rgba(70,165,255,0.70) !important;
+}
+
+.scheduleCount,
+.badge {
+    background:#168fff !important;
+    color:#ffffff !important;
+    box-shadow:0 0 14px rgba(45,145,255,0.42) !important;
+}
+
+.scheduleCard {
+    background:
+        linear-gradient(135deg,rgba(45,145,255,0.20),rgba(0,0,0,0.42) 48%,rgba(0,55,120,0.24)),
+        rgba(0,0,0,0.32) !important;
+    border-color:rgba(100,185,255,0.38) !important;
+}
+
+.scheduleCard .tag,
+.scheduleCard .kind {
+    background:rgba(45,145,255,0.20) !important;
+    border-color:rgba(110,190,255,0.48) !important;
+    color:#ffffff !important;
+}
+
+.scheduleCard .dday {
+    background:#168fff !important;
+    color:#ffffff !important;
+    box-shadow:0 0 10px rgba(45,145,255,0.38) !important;
+}
+
+.scheduleDate,
+.notice span {
+    color:#eaf6ff !important;
+}
+
+.noticeTitleBtn {
+    color:#ffffff !important;
+    text-shadow:0 0 8px rgba(70,165,255,0.42) !important;
+}
+
+.noticeCard,
+.noticeItem,
+.notice {
+    border-color:rgba(80,170,255,0.22) !important;
+}
+
+.noticeContent {
+    color:#f3f9ff !important;
+}
+
+.noticeContent a {
+    color:#a8d8ff !important;
+}
+
+.rankIntro {
+    border-color:rgba(80,170,255,0.28) !important;
+    background:linear-gradient(90deg,rgba(40,145,255,.18),rgba(0,0,0,.16)) !important;
+}
+
+#rank h2 {
+    color:#ffffff !important;
+    text-shadow:0 0 12px rgba(70,165,255,0.55) !important;
+}
+
+/* 낙수표 카드 자체는 기존 색을 유지하되, 상단 안내/제목만 파란 테마로 정리 */
+.nr-card {
+    border-color:rgba(85,180,255,0.28) !important;
+    box-shadow:0 15px 35px rgba(0,0,0,.5), 0 0 16px rgba(35,130,255,.10) !important;
+}
+
+.nr-crew-title,
+.nr-name {
+    color:#ffffff !important;
+}
+
+.nr-sales {
+    background:#111a22 !important;
+    color:#eaf6ff !important;
+}
+
+.nr-sales-sub {
+    color:#b9dfff !important;
+}
+
+.table th {
+    color:#ffffff !important;
+    background:rgba(45,145,255,0.18) !important;
+}
+
 </style>
 </head>
 
@@ -854,7 +1085,7 @@ body {
 
     <div class="hero">
         <div class="logoBox">
-            <img class="logo" src="https://keyman1335-maker.github.io/poong-rank/assets//crew_logos/cninelogo.png?v=9999" onerror="this.style.display='none'; this.parentNode.insertAdjacentHTML('beforeend', '<b style=&quot;color:#ffb8ef;font-size:34px;text-shadow:0 0 12px #ff4fcf;&quot;>CNINE</b>')">
+            <img class="logo" src="https://keyman1335-maker.github.io/poong-rank/assets//crew_logos/cninelogo.png?v=9999" onerror="this.style.display='none'; this.parentNode.insertAdjacentHTML('beforeend', '<b style=&quot;color:#ffffff;font-size:34px;text-shadow:0 0 12px #3aa8ff;&quot;>CNINE</b>')">
         </div>
         <div class="title">CNINE DASHBOARD</div>
         <div class="subtitle">씨나인 통합 현황판</div>
