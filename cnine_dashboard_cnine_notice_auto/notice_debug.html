@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5938758877288562"
+            crossorigin="anonymous"></script>
+    <title>씨나인</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="씨나인">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.cnine.kr/img/logo/logo-180x180.png">
+    <meta property="og:image:width" content="180">
+    <meta property="og:image:height" content="180">
+    <meta property="og:url" content="https://www.cnine.kr">
+    <meta property="og:description" content="숲 스트리머 철구가 운영하는 씨나인 크루 팬 홈페이지입니다. 멤버들의 실시간 방송, 조직도, 일정, 커뮤니티 게시판을 제공합니다.">
+    <meta property="og:site_name" content="씨나인">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- SEO -->
+    <meta name="description" content="숲 스트리머 철구가 운영하는 씨나인 크루 팬 홈페이지입니다. 멤버들의 실시간 방송, 조직도, 일정, 커뮤니티 게시판을 제공합니다.">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="씨나인">
+    <meta name="twitter:description" content="숲 스트리머 철구가 운영하는 씨나인 크루 팬 홈페이지입니다.">
+    <meta name="twitter:image" content="https://www.cnine.kr/img/logo/logo-180x180.png">
+
+    <meta name="theme-color" content="#181c1f">
+
+    <!-- iOS standalone 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#181c1f">
+    <meta name="apple-mobile-web-app-title" content="씨나인">
+
+    <link rel="apple-touch-icon" href="/img/logo/logo-180x180.png">
+
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="naver-site-verification" content="8911f1d1c6f7667f6d8626bdd287d7091445ec7a"/>
+
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --kn-preloader-background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --kn-preloader-icon: #0ea5e9;
+            --kn-preloader-glow: rgba(14, 165, 233, 0.4);
+            --kn-preloader-shadow: rgba(14, 165, 233, 0.6);
+            --kn-preloader-dim: rgba(14, 165, 233, 0.2);
+        }
+
+        .kn-preloader {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: kn-preloader-fadein 0.3s ease-in-out;
+        }
+
+        @keyframes kn-preloader-fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .kn-preloader-loader {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            animation: kn-preloader-float 3s ease-in-out infinite;
+        }
+
+        @keyframes kn-preloader-float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .kn-preloader-glow {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, var(--kn-preloader-glow) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: kn-preloader-pulse 2s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes kn-preloader-pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+
+        .kn-preloader-loader svg {
+            position: relative;
+            filter: drop-shadow(0 0 20px var(--kn-preloader-shadow)) drop-shadow(0 0 40px var(--kn-preloader-shadow));
+            transform: scale(2);
+            z-index: 1;
+        }
+
+        .kn-preloader-loader path {
+            fill: transparent;
+            stroke-width: 3;
+            stroke: var(--kn-preloader-icon);
+            stroke-dasharray: 550;
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            animation: kn-preloader-anim-logo 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+        }
+
+        @keyframes kn-preloader-anim-logo {
+            0% {
+                stroke-dashoffset: 0;
+                fill: transparent;
+                filter: brightness(1);
+            }
+            25% {
+                stroke-dashoffset: 550;
+                fill: transparent;
+                filter: brightness(1.2);
+            }
+            45% {
+                fill: transparent;
+                stroke-dashoffset: 1100;
+            }
+            55% {
+                stroke-dashoffset: 1100;
+                fill: var(--kn-preloader-icon);
+                filter: brightness(1.3);
+            }
+            75% {
+                stroke-width: 0;
+                fill: var(--kn-preloader-icon);
+                filter: brightness(1.1);
+            }
+            100% {
+                stroke-width: 3;
+                fill: transparent;
+                stroke-dashoffset: 0;
+                filter: brightness(1);
+            }
+        }
+
+        .kn-preloader-dots {
+            margin-top: 140px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kn-preloader-dots span {
+            width: 10px;
+            height: 10px;
+            background-color: var(--kn-preloader-icon);
+            border-radius: 50%;
+            animation: kn-preloader-anim-dots 1.4s ease-in-out infinite;
+            box-shadow: 0 0 10px var(--kn-preloader-shadow);
+        }
+
+        .kn-preloader-dots span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .kn-preloader-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .kn-preloader-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes kn-preloader-anim-dots {
+            0%, 60%, 100% {
+                transform: scale(1);
+                background-color: var(--kn-preloader-dim);
+                box-shadow: 0 0 5px var(--kn-preloader-dim);
+            }
+            30% {
+                transform: scale(1.3);
+                background-color: var(--kn-preloader-icon);
+                box-shadow: 0 0 20px var(--kn-preloader-shadow);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .kn-preloader-loader svg {
+                transform: scale(1.5);
+            }
+
+            .kn-preloader-dots {
+                margin-top: 100px;
+            }
+
+            .kn-preloader-dots span {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-BQXMlgM5.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-YGyDZvg_.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-Jb8pvWYU.css">
+</head>
+<body>
+<div id="vanilla-preloader" class="kn-preloader">
+    <div class="kn-preloader-loader">
+        <div class="kn-preloader-glow"></div>
+        <svg height="100" viewBox="30 -5 145 130" width="150" xmlns="http://www.w3.org/2000/svg">
+            <path d="m 85.504 2.63 C 67.305 2.466 51 10 37 17 C 20 31 14 48 14.021 67.882 C 18.448 89.524 24.35 98.541 37.958 106.411 C 54 115 72 117 85.504 116.248 L 85.012 89.852 C 72 89 63 88 53 80 C 44 69 47 55 52 49 C 60 37 73 33 85 32 M 157.779 55.853 C 153.613 58.794 148.957 59.284 144.178 59.284 C 140.257 59.651 130.32 58.35 129.352 57.568 C 124.941 55.73 119.304 51.442 115.506 44.948 C 113.646 40.1703 113.017 33.7767 113.3 26.691 C 113.908 23.2427 115.428 19.1023 116.948 14.962 C 119.196 9.973 125.251 3.716 130.81 2.496 C 141.231 -0.324 152.754 -0.324 162.562 1.393 C 173.105 4.09 182.667 8.748 186.163 17.358 C 189.029 20.893 190.081 27.2 190.343 42.982 C 190.141 52.873 189.738 62.562 187.719 72.049 C 184.407 83.943 182.269 90.619 178.636 96.675 C 171.773 106.566 169.754 108.18 155.423 116.658 L 139.476 100.106 C 141.495 98.29 150.78 90.014 155.221 83.958 C 160.195 76.724 161.205 68.65 162.084 62.764 C 163.901 53.075 165.259 37.435 161.913 25.024 C 159.877 19.358 152.645 15.271 140.985 19.291 C 133.63 23.582 131.141 36.119 136.204 39.764 C 139.21 47.013 153.117 45.457 159.006 41.603 Z"/>
+        </svg>
+        <div class="kn-preloader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+<div id="app"></div>
+</body>
+</html>

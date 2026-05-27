@@ -1,0 +1,11 @@
+UPDATED_AT=2026-05-28 00:52:00
+MODE=cnine_api
+
+TRY=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
+OK_URL=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
+FOUND_ITEMS=5
+
+DONE
+USED_URL=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
+LATEST_COUNT=5
+HISTORY_COUNT=14

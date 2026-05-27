@@ -1,0 +1,7 @@
+UPDATED_AT=2026-05-28 00:29:56
+SOURCE=https://www.cnine.kr/board/an
+COOKIE_FILE_EXISTS=False
+HTTP_STATUS=200
+FINAL_URL=https://www.cnine.kr/board/an
+USED_COOKIE=False
+HTML_LENGTH=9327

@@ -1,0 +1,428 @@
+{
+  "notice": {
+    "data": [
+      {
+        "id": 941353,
+        "board": {
+          "id": 11,
+          "slug": "notice",
+          "name": "홈페이지 공지"
+        },
+        "title": "[공지] 씨나인 게시판 이용 권한 변경 안내",
+        "notice": false,
+        "allNotice": true,
+        "blind": false,
+        "anonymousType": "N",
+        "canComment": false,
+        "canChat": false,
+        "hasImage": false,
+        "hasVideo": false,
+        "hasAudio": false,
+        "hasGif": false,
+        "hasPoll": false,
+        "author": {
+          "name": "관리자",
+          "uuid": "91148e4b",
+          "profile": {
+            "url": "/img/user/profile.png",
+            "thumbUrl": "/img/user/profile.png"
+          },
+          "leftBadge": "A",
+          "profileEnhanceLevel": 2,
+          "tierEnhanceLevel": 0
+        },
+        "stat": {
+          "viewCount": 2145,
+          "likeCount": 55,
+          "dislikeCount": 2,
+          "commentCount": 0
+        },
+        "categoryId": 39,
+        "departments": [],
+        "isAuthor": false,
+        "blockedUser": false,
+        "blockedByAuthor": false,
+        "popupEnabled": false,
+        "categoryReportable": true,
+        "createdAt": "2026-05-20T10:56:12",
+        "updatedAt": "2026-05-20T11:25:31"
+      },
+      {
+        "id": 940025,
+        "board": {
+          "id": 11,
+          "slug": "notice",
+          "name": "홈페이지 공지"
+        },
+        "title": "👑 씨나인 멤버 전용 방송 보조 기능 안내",
+        "notice": false,
+        "allNotice": true,
+        "blind": false,
+        "anonymousType": "N",
+        "canComment": true,
+        "canChat": false,
+        "hasImage": false,
+        "hasVideo": false,
+        "hasAudio": false,
+        "hasGif": false,
+        "hasPoll": false,
+        "author": {
+          "name": "관리자",
+          "uuid": "91148e4b",
+          "profile": {
+            "url": "/img/user/profile.png",
+            "thumbUrl": "/img/user/profile.png"
+          },
+          "leftBadge": "A",
+          "profileEnhanceLevel": 2,
+          "tierEnhanceLevel": 0
+        },
+        "stat": {
+          "viewCount": 1443,
+          "likeCount": 73,
+          "dislikeCount": 0,
+          "commentCount": 19,
+          "latestCommentAt": "2026-05-26T08:25:39"
+        },
+        "categoryId": 39,
+        "departments": [],
+        "isAuthor": false,
+        "blockedUser": false,
+        "blockedByAuthor": false,
+        "popupEnabled": false,
+        "categoryReportable": true,
+        "createdAt": "2026-05-19T00:49:52",
+        "updatedAt": "2026-05-19T02:50:31"
+      }
+    ],
+    "total": 14,
+    "page": 1,
+    "size": 2,
+    "more": true
+  },
+  "popular": {
+    "data": [
+      {
+        "id": 949091,
+        "board": {
+          "id": 3,
+          "slug": "an",
+          "name": "씨나인 숲 공지"
+        },
+        "title": "[채리 공지] 합방 잘다녀와씁니다~ + 오방",
+        "thumbUrl": "https://stimg.sooplive.com/NORMAL_BBS/8/17827698/66806a1564aa4b656.jpeg",
+        "notice": false,
+        "allNotice": false,
+        "blind": false,
+        "anonymousType": "N",
+        "canComment": true,
+        "canChat": false,
+        "hasImage": true,
+        "hasVideo": false,
+        "hasAudio": false,
+        "hasGif": false,
+        "hasPoll": false,
+        "popularAt": "2026-05-27T13:58:48",
+        "author": {
+          "name": "시스템",
+          "uuid": "1a47c7bc",
+          "profile": {
+            "url": "/img/user/profile.png",
+            "thumbUrl": "/img/user/profile.png"
+          },
+          "tier": {
+            "name": "아이돌구",
+            "imageUrl": "https://dn.cnine.kr/file/20260301/11cd59e8885848f5981be4a0ceb8a2e8.webp",
+            "imageScale": 1.2
+          },
+          "profileEnhanceLevel": 0,
+          "tierEnhanceLevel": 0
+        },
+        "stat": {
+          "viewCount": 450,
+          "likeCount": 13,
+          "dislikeCount": 0,
+          "commentCount": 0
+        },
+        "categoryId": 7,
+        "departments": [
+          {
+            "id": 1,
+            "name": "엑셀"
+          }
+        ],
+        "isAuthor": false,
+        "blockedUser": false,
+        "blockedByAuthor": false,
+        "popupEnabled": false,
+        "categoryReportable": true,
+        "createdAt": "2026-05-26T18:20:27",
+        "updatedAt": "2026-05-27T13:58:48"
+      },
+      {
+        "id": 949672,
+        "board": {
+          "id": 3,
+          "slug": "an",
+          "name": "씨나인 숲 공지"
+        },
+        "title": "[초초 공지] 오늘 열혈식 와주신 분들 감사합니다 ❤️",
+        "thumbUrl": "https://stimg.sooplive.com/NORMAL_BBS/8/18585058/17526a15dbd244547.png",
+        "notice": false,
+        "allNotice": false,
+        "blind": false,
+        "anonymousType": "N",
+        "canComment": true,
+        "canChat": false,
+        "hasImage": true,
+        "hasVideo": false,
+        "hasAudio": false,
+        "hasGif": false,
+        "hasPoll": false,
+        "popularAt": "2026-05-27T11:52:47",
+        "author": {
+          "name": "시스템",
+          "uuid": "1a47c7bc",
+          "profile": {
+            "url": "/img/user/profile.png",
+            "thumbUrl": "/img/user/profile.png"
+          },
+          "tier": {
+            "name": "아이돌구",
+            "imageUrl": "https://dn.cnine.kr/file/20260301/11cd59e8885848f5981be4a0ceb8a2e8.webp",
+            "imageScale": 1.2
+          },
+          "profileEnhanceLevel": 0,
+          "tierEnhanceLevel": 0
+        },
+        "stat": {
+          "viewCount": 406,
+          "likeCount": 14,
+          "dislikeCount": 0,
+          "commentCount": 1,
+          "latestCommentAt": "2026-05-27T11:58:21"
+        },
+        "categoryId": 7,
+        "departments": [
+          {
+            "id": 1,
+            "name": "엑셀"
+          }
+        ],
+        "isAuthor": false,
+        "blockedUser": false,
+        "blockedByAuthor": false,
+        "popupEnabled": false,
+        "categoryReportable": true,
+        "createdAt": "2026-05-27T02:51:37",
+        "updatedAt": "2026-05-27T11:52:47"
+      },
+      {
+        "id": 949593,
+        "board": {
+          "id": 3,
+          "slug": "an",
+          "name": "씨나인 숲 공지"
+        },
+        "title": "[철구 공지] 형님들~~!",
+        "notice": false,
+        "allNotice": false,
+        "blind": false,
+        "anonymousType": "N",
+        "canComment": true,
+        "canChat": false,
+        "hasImage": false,
+        "hasVideo": false,
+        "hasAudio": false,
+        "hasGif": false,
+        "hasPoll": false,
+        "popularAt": "2026-05-27T01:58:42",
+        "author": {
+          "name": "시스템",
+          "uuid": "1a47c7bc",
+          "profile": {
+            "url": "/img/user/profile.png",
+            "thumbUrl": "/img/user/profile.png"
+          },
+          "tier": {
+            "name": "아이돌구",
+            "imageUrl": "https://dn.cnine.kr/file/20260301/11cd59e8885848f5981be4a0ceb8a2e8.webp",
+            "imageScale": 1.2
+          },
+          "profileEnhanceLevel": 0,
+          "tierEnhanceLevel": 0
+        },
+        "stat": {
+          "viewCount": 799,
+          "likeCount": 22,
+          "dislikeCount": 2,
+          "commentCount": 2,
+          "latestCommentAt": "2026-05-27T01:36:17"
+        },
+        "categoryId": 6,
+        "departments": [
+          {
+            "id": 1,
+            "name": "엑셀"
+          }
+        ],
+        "isAuthor": false,
+        "blockedUser": false,
+        "blockedByAuthor": false,
+        "popupEnabled": false,
+        "categoryReportable": true,
+        "createdAt": "2026-05-27T00:35:16",
+        "updatedAt": "2026-05-27T01:58:42"
+      },
+      {
+        "id": 950122,
+        "board": {
+          "id": 3,
+          "slug": "an",
+          "name": "씨나인 숲 공지"
+        },
+        "title": "[남수댕 공지] 오늘",
+        "thumbUrl": "https://ogqmarket.img.sooplive.com/sticker/651fd9e88875b/22_160.webp?version=1",
+        "notice": false,
+        "allNotice": false,
+        "blind": false,
+        "anonymousType": "N",
+        "canComment": true,
+        "canChat": false,
+        "hasImage": true,
+        "hasVideo": false,
+        "hasAudio": false,
+        "hasGif": false,
+        "hasPoll": false,
+        "popularAt": "2026-05-27T19:12:53",
+        "author": {
+          "name": "시스템",
+          "uuid": "1a47c7bc",
+          "profile": {
+            "url": "/img/user/profile.png",
+            "thumbUrl": "/img/user/profile.png"
+          },
+          "tier": {
+            "name": "아이돌구",
+            "imageUrl": "https://dn.cnine.kr/file/20260301/11cd59e8885848f5981be4a0ceb8a2e8.webp",
+            "imageScale": 1.2
+          },
+          "profileEnhanceLevel": 0,
+          "tierEnhanceLevel": 0
+        },
+        "stat": {
+          "viewCount": 455,
+          "likeCount": 13,
+          "dislikeCount": 0,
+          "commentCount": 2,
+          "latestCommentAt": "2026-05-27T18:46:19"
+        },
+        "categoryId": 8,
+        "departments": [
+          {
+            "id": 5,
+            "name": "스타"
+          }
+        ],
+        "isAuthor": false,
+        "blockedUser": false,
+        "blockedByAuthor": false,
+        "popupEnabled": false,
+        "categoryReportable": true,
+        "createdAt": "2026-05-27T17:56:44",
+        "updatedAt": "2026-05-27T19:12:53"
+      },
+      {
+        "id": 950013,
+        "board": {
+          "id": 3,
+          "slug": "an",
+          "name": "씨나인 숲 공지"
+        },
+        "title": "[송채연 공지] 경락도 락이다",
+        "thumbUrl": "https://stimg.sooplive.com/NORMAL_BBS/0/22194360/97066a169d8a9255c.jpeg",
+        "notice": false,
+        "allNotice": false,
+        "blind": false,
+        "anonymousType": "N",
+        "canComment": true,
+        "canChat": false,
+        "hasImage": true,
+        "hasVideo": false,
+        "hasAudio": false,
+        "hasGif": false,
+        "hasPoll": false,
+        "popularAt": "2026-05-27T17:15:50",
+        "author": {
+          "name": "시스템",
+          "uuid": "1a47c7bc",
+          "profile": {
+            "url": "/img/user/profile.png",
+            "thumbUrl": "/img/user/profile.png"
+          },
+          "tier": {
+            "name": "아이돌구",
+            "imageUrl": "https://dn.cnine.kr/file/20260301/11cd59e8885848f5981be4a0ceb8a2e8.webp",
+            "imageScale": 1.2
+          },
+          "profileEnhanceLevel": 0,
+          "tierEnhanceLevel": 0
+        },
+        "stat": {
+          "viewCount": 446,
+          "likeCount": 7,
+          "dislikeCount": 0,
+          "commentCount": 0
+        },
+        "categoryId": 7,
+        "departments": [
+          {
+            "id": 1,
+            "name": "엑셀"
+          }
+        ],
+        "isAuthor": false,
+        "blockedUser": false,
+        "blockedByAuthor": false,
+        "popupEnabled": false,
+        "categoryReportable": true,
+        "createdAt": "2026-05-27T16:35:03",
+        "updatedAt": "2026-05-27T17:15:50"
+      }
+    ],
+    "total": 5,
+    "page": 1,
+    "size": 5,
+    "more": false
+  },
+  "page": {
+    "data": [],
+    "total": 0,
+    "page": 1,
+    "size": 20,
+    "more": false
+  },
+  "gameRotation": {
+    "id": 54657,
+    "title": "🏆LCK🏆 :: KT vs T1 [5/28 19:00]",
+    "author": {
+      "name": "피카츄ෆ",
+      "uuid": "5585883e",
+      "profile": {
+        "url": "https://dn.cnine.kr/file/20260422/f90f9ea0f2b1466788b1fec219c51f78.png",
+        "thumbUrl": "https://dn.cnine.kr/file/20260422/thumb_f90f9ea0f2b1466788b1fec219c51f78.png"
+      },
+      "tier": {
+        "name": "태초",
+        "imageUrl": "https://dn.cnine.kr/file/20260301/200c5931527948cbac1f8e60710f52a4.webp",
+        "darkImageUrl": "https://dn.cnine.kr/file/20260301/28d1ef2c6c4c46b3b7d87d096626ffe3.webp",
+        "imageScale": 1.0
+      }
+    },
+    "blockedUser": false,
+    "blockedByAuthor": false,
+    "createdAt": "2026-05-21T08:21:19",
+    "updatedAt": "2026-05-28T00:50:00"
+  },
+  "gameRotationType": "PREDICTION"
+}

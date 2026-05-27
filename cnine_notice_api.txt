@@ -1,0 +1,5 @@
+# 여기에 크롬 F12 > Network > Fetch/XHR 에서 찾은 공지 API Request URL 전체를 넣으면 최우선 사용합니다.
+# 예:
+# https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
+
+https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list

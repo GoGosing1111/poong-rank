@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-05-28 00:29:56",
+  "source": "https://www.cnine.kr/board/an",
+  "fetched_url": "https://www.cnine.kr/board/an",
+  "http_status": 200,
+  "used_cookie": false,
+  "ok": false,
+  "message": "공지 항목을 찾지 못했습니다. notice_debug.html 구조 확인 필요",
+  "count": 0,
+  "items": []
+}

@@ -1,4 +1,4 @@
-UPDATED_AT=2026-05-28 00:51:51
+UPDATED_AT=2026-05-28 00:29:48
 TOTAL=39
 METHOD=bjapi_station
 
@@ -21,8 +21,8 @@ METHOD=bjapi_station
 [LIVE] [스타부] 졈니 / yochba0402 / viewers=0 / title=[씨나인★] 씨나인 vs JSA 대학대전 갑니다. 졈니 출격 오늘 목표 2승 간다 ! / reason=broad_object_found / https://bjapi.afreecatv.com/api/yochba0402/station
 [LIVE] [엑셀부] 이다니 / 0929kelly / viewers=0 / title=[씨나인:신입] 200만 감사합니다,, 첫 이백만 ㅠㅠㅠㅠ / reason=broad_object_found / https://bjapi.afreecatv.com/api/0929kelly/station
 [OFF] [엑셀부] 쁠리 / alwl1047 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/alwl1047/station
-[LIVE] [엑셀부] 아윤 / ayoona / viewers=0 / title=[씨나인:추녀] 저금통3만개 노방종!!!!!!!!!226트월킹덕 / reason=broad_object_found / https://bjapi.afreecatv.com/api/ayoona/station
-[LIVE] [엑셀부] 초초 / chocho12 / viewers=0 / title=[씨나인 : 황족] 저금통 노방종중.. 1000개플 치킨+방셀+역팬? ㅁㅊㅁㅊ / reason=broad_object_found / https://bjapi.afreecatv.com/api/chocho12/station
+[LIVE] [엑셀부] 아윤 / ayoona / viewers=0 / title=[씨나인:추녀] 저금통3만개 노방종!!!!!!!!! / reason=broad_object_found / https://bjapi.afreecatv.com/api/ayoona/station
+[LIVE] [엑셀부] 초초 / chocho12 / viewers=0 / title=[씨나인 : 황족] 예? 1000개플 치킨+방셀+역팬? ㅁㅊㅁㅊ / reason=broad_object_found / https://bjapi.afreecatv.com/api/chocho12/station
 [OFF] [엑셀부] 설윤이 / dain9804 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/dain9804/station
 [OFF] [엑셀부] 주성 / ddaggida3 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/ddaggida3/station
 [LIVE] [엑셀부] 초린 / dhtnqls1238 / viewers=0 / title=[씨나인 : 버러지] 공주팀 1,2,3,4회차 누적공약 이번시즌만 / reason=broad_object_found / https://bjapi.afreecatv.com/api/dhtnqls1238/station
@@ -33,11 +33,11 @@ METHOD=bjapi_station
 [LIVE] [엑셀부] 하이희야 / jkmjkm1236 / viewers=0 / title=[ 씨나인 : 시녀1] 늦어서 미안 ㅠㅠ / reason=broad_object_found / https://bjapi.afreecatv.com/api/jkmjkm1236/station
 [OFF] [엑셀부] 여을 / kaja0011 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/kaja0011/station
 [OFF] [엑셀부] 멘토세끼 / kimkc3117 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/kimkc3117/station
-[OFF] [엑셀부] 리하 / ksdd7856 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/ksdd7856/station
-[LIVE] [엑셀부] 채리 / lcy011027 / viewers=0 / title=[씨나인:하녀]시그단 한 명 구하기 조빠지게 힘드네요 힝 시그단(17/250) / reason=broad_object_found / https://bjapi.afreecatv.com/api/lcy011027/station
+[LIVE] [엑셀부] 리하 / ksdd7856 / viewers=0 / title=[씨나인:개돼지] 리하의 손을 잡아주세요.. / reason=broad_object_found / https://bjapi.afreecatv.com/api/ksdd7856/station
+[LIVE] [엑셀부] 채리 / lcy011027 / viewers=0 / title=[씨나인:하녀]스트레스 받네요 한잔합니다 . 시그단(16/250) / reason=broad_object_found / https://bjapi.afreecatv.com/api/lcy011027/station
 [LIVE] [엑셀부] 체온 / leeso0403 / viewers=0 / title=[씨나인:공주]  체오니와 해피 팀전 !!! 어벤단 (0/2) 시그단(3/5) / reason=broad_object_found / https://bjapi.afreecatv.com/api/leeso0403/station
 [LIVE] [엑셀부] 히나 / luaa0803 / viewers=0 / title=[씨나인:잡녀]팀전 저금통 15만개 모으기 도와주십쇼 / reason=broad_object_found / https://bjapi.afreecatv.com/api/luaa0803/station
 [OFF] [엑셀부] 연두 / myby1221 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/myby1221/station
 [LIVE] [엑셀부] 빵훈이 / vlfvlf789 / viewers=0 / title=[씨나인] 고래시티 철구 얼마 안남음... / reason=broad_object_found / https://bjapi.afreecatv.com/api/vlfvlf789/station
-[LIVE] [엑셀부] 철구 / y1026 / viewers=0 / title=철구 긴급대학대전 씨나인vsJSA 2:2 디임vs라미 8만개+사비300마넌 / reason=broad_object_found / https://bjapi.afreecatv.com/api/y1026/station
+[LIVE] [엑셀부] 철구 / y1026 / viewers=0 / title=철구 긴급대학대전 씨나인vsJSA 1:1 모리vs엄보리 8만개+사비300마넌 / reason=broad_object_found / https://bjapi.afreecatv.com/api/y1026/station
 [LIVE] [엑셀부] 애순이 / yunyeson3015 / viewers=0 / title=[씨나인 : 시녀2] 나 팀전 비상 ,,,  SOS / reason=broad_object_found / https://bjapi.afreecatv.com/api/yunyeson3015/station
