@@ -689,6 +689,109 @@ body {
     }
 }
 
+
+.noticeList {
+    display:grid;
+    gap:12px;
+}
+.noticeItem {
+    overflow:hidden;
+    border-radius:18px;
+    background:rgba(0,0,0,0.30);
+    border:1px solid rgba(255,100,225,0.28);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+}
+.noticeTitleBtn {
+    width:100%;
+    border:0;
+    background:transparent;
+    color:#fff;
+    text-align:left;
+    cursor:pointer;
+    padding:14px 15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    font-family:inherit;
+}
+.noticeTitleText {
+    min-width:0;
+}
+.noticeTitleText b {
+    display:block;
+    color:#fff;
+    font-size:15px;
+    line-height:1.35;
+    word-break:keep-all;
+}
+.noticeMeta {
+    display:block;
+    margin-top:5px;
+    color:#ffc6ef;
+    font-size:12px;
+    font-weight:900;
+}
+.noticeArrow {
+    flex:0 0 auto;
+    color:#ff8be2;
+    font-size:18px;
+    font-weight:1000;
+}
+.noticeItem.open .noticeArrow {
+    transform:rotate(180deg);
+}
+.noticeBody {
+    display:none;
+    padding:0 15px 15px;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+.noticeItem.open .noticeBody {
+    display:block;
+}
+.noticeContent {
+    margin-top:12px;
+    padding:14px;
+    border-radius:14px;
+    background:rgba(0,0,0,0.28);
+    color:#ffe6fa;
+    font-size:14px;
+    line-height:1.65;
+    word-break:break-word;
+}
+.noticeContent img {
+    max-width:100%;
+    height:auto;
+    border-radius:12px;
+    margin:8px 0;
+}
+.noticeThumb {
+    width:100%;
+    max-height:220px;
+    object-fit:cover;
+    border-radius:14px;
+    margin-top:12px;
+    border:1px solid rgba(255,120,225,0.25);
+}
+.noticeOpenLink {
+    display:inline-block;
+    margin-top:10px;
+    padding:7px 10px;
+    border-radius:999px;
+    background:#250825;
+    border:1px solid #9d2c88;
+    color:#ffd8f5;
+    font-size:12px;
+    font-weight:900;
+    text-decoration:none;
+}
+.noticeEmpty {
+    padding:16px;
+    color:#ffc6ef;
+    font-weight:900;
+    text-align:center;
+}
+
 </style>
 </head>
 
@@ -728,7 +831,7 @@ body {
             </div>
             <div class="card">
                 <h2>공지 / 변동</h2>
-                <div class="metric"><span>최신 공지</span><span id="mainLatestNotice" class="value">연동 대기</span></div>
+                <div class="metric"><span>최신 공지</span><span class="value">-</span></div>
                 <div class="metric"><span>신규 IN</span><span class="value">-</span></div>
                 <div class="metric"><span>최근 OUT</span><span class="value">-</span></div>
             </div>
@@ -781,13 +884,11 @@ body {
         <div class="card wide">
             <h2>멤버 SOOP 공지사항</h2>
             <div id="noticeUpdated" class="memberSummary">공지 로딩중...</div>
-            <div id="noticeList">
-                <div class="notice"><b>공지 수집 대기</b><span>-</span></div>
+            <div id="noticeList" class="noticeList">
+                <div class="noticeEmpty">공지 수집 대기</div>
             </div>
         </div>
     </div>
-
-
     <div id="schedule" class="section">
         <div class="card wide">
             <div class="scheduleHead">
@@ -1014,55 +1115,102 @@ async function loadLiveStatus(){
 }
 
 
-let NOTICE_STATUS = { items: [] };
+function sanitizeNoticeHtml(html){
+    const box = document.createElement('div');
+    box.innerHTML = String(html || '');
+    box.querySelectorAll('script, iframe, object, embed').forEach(el => el.remove());
+    box.querySelectorAll('*').forEach(el => {
+        [...el.attributes].forEach(attr => {
+            const name = attr.name.toLowerCase();
+            const val = String(attr.value || '').toLowerCase();
+            if(name.startsWith('on') || val.includes('javascript:')){
+                el.removeAttribute(attr.name);
+            }
+        });
+    });
+    return box.innerHTML;
+}
 
-function renderNotices(){
-    const box = document.getElementById('noticeList');
+function formatNoticeDate(v){
+    if(!v) return '-';
+    return String(v).replace('T', ' ').slice(0, 16);
+}
+
+function toggleNotice(id){
+    const item = document.getElementById('noticeItem_' + id);
+    if(!item) return;
+    item.classList.toggle('open');
+}
+
+function renderNoticeStatus(data){
+    const listBox = document.getElementById('noticeList');
     const updated = document.getElementById('noticeUpdated');
-    const mainLatest = document.getElementById('mainLatestNotice');
-    if(!box) return;
+    if(!listBox) return;
 
-    const items = NOTICE_STATUS.items || [];
+    const items = (data.items || []).filter(x => x.board_slug === 'an').slice(0, 10);
+
     if(updated){
-        const msg = NOTICE_STATUS.message || '공지 상태 확인중';
-        updated.textContent = `공지 갱신: ${NOTICE_STATUS.updated_at || '-'} · ${msg} · ${items.length}개`;
+        updated.textContent = `공지 갱신: ${data.updated_at || '-'} · 씨나인 숲 공지 ${items.length}개`;
     }
 
     if(!items.length){
-        box.innerHTML = '<div class="notice"><b>공지 수집 대기 또는 수집 실패</b><span>-</span></div>';
-        if(mainLatest) mainLatest.textContent = '수집 대기';
+        listBox.innerHTML = '<div class="noticeEmpty">표시할 씨나인 숲 공지가 없습니다.</div>';
         return;
     }
 
-    if(mainLatest) mainLatest.textContent = items[0].title || '-';
+    listBox.innerHTML = items.map((n, i) => {
+        const id = escapeHtml(n.id || String(i));
+        const title = escapeHtml(n.title || '제목 없음');
+        const dept = escapeHtml(n.department || '공지');
+        const dt = escapeHtml(formatNoticeDate(n.popularAt || n.updatedAt || n.createdAt));
+        const views = Number(n.viewCount || 0).toLocaleString();
+        const thumb = n.thumbUrl ? `<img class="noticeThumb" src="${escapeHtml(n.thumbUrl)}" alt="">` : '';
+        const content = n.content
+            ? sanitizeNoticeHtml(n.content)
+            : '<p>본문 수집 대기 또는 원문에서 확인이 필요합니다.</p>';
+        const url = escapeHtml(n.url || '#');
 
-    box.innerHTML = items.map(item => {
-        const title = escapeHtml(item.title || '제목 없음');
-        const url = escapeHtml(item.url || '#');
-        const date = escapeHtml(item.date || item.category || '-');
-        return `<div class="notice"><b><a href="${url}" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">${title}</a></b><span>${date}</span></div>`;
+        return `
+            <div class="noticeItem" id="noticeItem_${id}">
+                <button class="noticeTitleBtn" type="button" onclick="toggleNotice('${id}')">
+                    <span class="noticeTitleText">
+                        <b>${title}</b>
+                        <span class="noticeMeta">${dept} · ${dt} · 조회 ${views}</span>
+                    </span>
+                    <span class="noticeArrow">⌄</span>
+                </button>
+                <div class="noticeBody">
+                    ${thumb}
+                    <div class="noticeContent">${content}</div>
+                    <a class="noticeOpenLink" href="${url}" target="_blank" rel="noopener">원문 열기</a>
+                </div>
+            </div>
+        `;
     }).join('');
 }
 
-async function loadNotices(){
+async function loadNoticeStatus(){
     try{
         const res = await fetch('notice_status.json?v=' + Date.now(), { cache:'no-store' });
         if(!res.ok) throw new Error('notice_status.json 없음');
-        NOTICE_STATUS = await res.json();
-        renderNotices();
+        const data = await res.json();
+        renderNoticeStatus(data);
     }catch(e){
-        NOTICE_STATUS = { items: [], message: 'notice_status.json 없음 또는 로딩 실패' };
-        renderNotices();
+        const listBox = document.getElementById('noticeList');
+        const updated = document.getElementById('noticeUpdated');
+        if(updated) updated.textContent = '공지 상태: notice_status.json 없음 또는 로딩 실패';
+        if(listBox) listBox.innerHTML = '<div class="noticeEmpty">공지 로딩 실패</div>';
         console.log('공지 로딩 실패:', e);
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     renderMembers();
     loadLiveStatus();
-    loadNotices();
+    loadNoticeStatus();
     setInterval(loadLiveStatus, 60000);
-    setInterval(loadNotices, 300000);
+    setInterval(loadNoticeStatus, 120000);
 });
 </script>
 
