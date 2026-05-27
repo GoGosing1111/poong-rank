@@ -544,13 +544,11 @@ body {
     background:rgba(0,0,0,0.28);
     border:1px solid rgba(255,65,65,0.22);
 }
-
 .memberTabs {
     display:flex;
     gap:8px;
     flex-wrap:wrap;
 }
-
 .memberTab {
     border:1px solid rgba(255,80,80,0.45);
     background:#210608;
@@ -561,14 +559,12 @@ body {
     font-weight:1000;
     cursor:pointer;
 }
-
 .memberTab.active,
 .memberTab:hover {
     background:linear-gradient(180deg,#ff3939,#9b0909);
     color:#fff;
     box-shadow:0 0 12px rgba(255,0,0,0.35);
 }
-
 .memberSearch {
     width:210px;
     max-width:100%;
@@ -580,31 +576,26 @@ body {
     font-weight:800;
     outline:none;
 }
-
 .memberSummary {
     margin:0 0 13px;
     color:#ffbaba;
     font-size:13px;
     font-weight:900;
 }
-
 .memberGrid.memberRealGrid {
     grid-template-columns:repeat(5,1fr);
 }
-
 .member.real {
     position:relative;
     overflow:hidden;
     padding:13px 10px 14px;
     transition:.18s transform,.18s box-shadow,.18s border-color;
 }
-
 .member.real:hover {
     transform:translateY(-3px);
     border-color:rgba(255,80,80,0.72);
     box-shadow:0 0 20px rgba(255,0,0,0.22);
 }
-
 .member.real:before {
     content:"";
     position:absolute;
@@ -612,7 +603,6 @@ body {
     background:radial-gradient(circle at top,rgba(255,50,50,0.18),transparent 45%);
     pointer-events:none;
 }
-
 .avatarImg {
     position:relative;
     z-index:1;
@@ -625,7 +615,6 @@ body {
     background:#120507;
     box-shadow:0 0 14px rgba(255,0,0,0.32);
 }
-
 .partBadge {
     position:relative;
     z-index:1;
@@ -639,7 +628,6 @@ body {
     font-size:11px;
     font-weight:1000;
 }
-
 .liveBadge {
     position:absolute;
     top:10px;
@@ -652,13 +640,11 @@ body {
     font-size:10px;
     font-weight:1000;
 }
-
 .liveBadge.on {
     background:#ff1010;
     color:#fff;
     box-shadow:0 0 12px rgba(255,0,0,0.65);
 }
-
 .soopId {
     position:relative;
     z-index:1;
@@ -671,18 +657,21 @@ body {
     text-overflow:ellipsis;
     white-space:nowrap;
 }
-
 .linkBtn.disabled {
     opacity:.35;
     pointer-events:none;
 }
-
+.liveUpdated {
+    margin-top:8px;
+    color:#ffbaba;
+    font-size:12px;
+    font-weight:900;
+}
 @media (max-width:960px) {
     .memberGrid.memberRealGrid {
         grid-template-columns:repeat(3,1fr);
     }
 }
-
 @media (max-width:760px) {
     .memberToolbar {
         display:block;
@@ -728,7 +717,7 @@ body {
             <div class="card">
                 <h2>오늘 별풍선</h2>
                 <div class="metric"><span>전체 멤버</span><span id="mainTotalMembers" class="value">-</span></div>
-                <div class="metric"><span>현재 LIVE</span><span id="mainLiveMembers" class="value">준비중</span></div>
+                <div class="metric"><span>현재 LIVE</span><span id="mainLiveMembers" class="value">연동 대기</span></div>
                 <div class="metric"><span>최종 갱신</span><span class="value">-</span></div>
             </div>
             <div class="card">
@@ -760,6 +749,7 @@ body {
             </div>
 
             <div id="memberSummary" class="memberSummary">멤버 로딩중...</div>
+            <div id="liveUpdated" class="liveUpdated">LIVE 상태: 연동 대기</div>
             <div id="memberGrid" class="memberGrid memberRealGrid"></div>
         </div>
     </div>
@@ -900,12 +890,14 @@ function showSection(id, btn){
 <script>
 const CNINE_MEMBERS = [{"part": "스타부", "name": "이영호", "match": "이영호", "soop_id": "byflash", "soop_url": "https://www.sooplive.com/station/byflash", "profile_img": "https://dn.cnine.kr/file/20251124/0f41e7237cf54917a64d28357dfa757d.png", "youtube_url": ""}, {"part": "스타부", "name": "윤용태", "match": "윤용태", "soop_id": "dbsdydx", "soop_url": "https://www.sooplive.com/station/dbsdydx", "profile_img": "https://dn.cnine.kr/file/20251125/9f60cd3ccf814618a58e7c5383a07203.png", "youtube_url": ""}, {"part": "스타부", "name": "오리꿍", "match": "오리꿍", "soop_id": "imducko3o", "soop_url": "https://www.sooplive.com/station/imducko3o", "profile_img": "https://dn.cnine.kr/file/20251121/91cd25cba6024b3a8c2571f1d8edeac3.png", "youtube_url": ""}, {"part": "스타부", "name": "지우리", "match": "지우리", "soop_id": "jiwooris2", "soop_url": "https://www.sooplive.com/station/jiwooris2", "profile_img": "https://profile.img.sooplive.com/LOGO/ji/jiwooris2/jiwooris2.jpg", "youtube_url": ""}, {"part": "스타부", "name": "왜냐맨장민철", "match": "왜냐맨장민철", "soop_id": "jmc06170", "soop_url": "https://www.sooplive.com/station/jmc06170", "profile_img": "https://dn.cnine.kr/file/20251125/2a0fa5ac245a453e97b14e9a54b8bcd6.png", "youtube_url": ""}, {"part": "스타부", "name": "강구열", "match": "강구열", "soop_id": "kuyol", "soop_url": "https://www.sooplive.com/station/kuyol", "profile_img": "https://dn.cnine.kr/file/20251208/cb015391b4604dd59061ebdc0d9b596a.jpg", "youtube_url": ""}, {"part": "스타부", "name": "남수댕", "match": "남수댕", "soop_id": "mew030709", "soop_url": "https://www.sooplive.com/station/mew030709", "profile_img": "https://dn.cnine.kr/file/20251121/204cd6d4ae8a4ec28840650320cbe773.png", "youtube_url": ""}, {"part": "스타부", "name": "모리", "match": "모리", "soop_id": "moguleave", "soop_url": "https://www.sooplive.com/station/moguleave", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/mo/moguleave/moguleave.jpg", "youtube_url": ""}, {"part": "스타부", "name": "디임", "match": "디임", "soop_id": "qpqpro", "soop_url": "https://www.sooplive.com/station/qpqpro", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/qp/qpqpro/qpqpro.jpg", "youtube_url": ""}, {"part": "스타부", "name": "효짱", "match": "효짱", "soop_id": "queen030", "soop_url": "https://www.sooplive.com/station/queen030", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/qu/queen030/queen030.jpg", "youtube_url": ""}, {"part": "스타부", "name": "란란", "match": "란란", "soop_id": "rhf104", "soop_url": "https://www.sooplive.com/station/rhf104", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/rh/rhf104/rhf104.jpg", "youtube_url": ""}, {"part": "스타부", "name": "김택용", "match": "김택용", "soop_id": "rlaxordyd", "soop_url": "https://www.sooplive.com/station/rlaxordyd", "profile_img": "https://dn.cnine.kr/file/20251124/702ee331e36846f183ce2a854d324889.png", "youtube_url": ""}, {"part": "스타부", "name": "박재혁", "match": "박재혁", "soop_id": "rlekfu6", "soop_url": "https://www.sooplive.com/station/rlekfu6", "profile_img": "https://dn.cnine.kr/file/20251125/17aa9e03f61444ab88d0bda0582777a1.png", "youtube_url": ""}, {"part": "스타부", "name": "유승곤", "match": "유승곤", "soop_id": "scan1014", "soop_url": "https://www.sooplive.com/station/scan1014", "profile_img": "https://profile.img.sooplive.com/LOGO/sc/scan1014/scan1014.jpg", "youtube_url": ""}, {"part": "스타부", "name": "요닝", "match": "요닝", "soop_id": "tjgpdus97", "soop_url": "https://www.sooplive.com/station/tjgpdus97", "profile_img": "https://dn.cnine.kr/file/20251121/9c9e22c7ef2c413ab9de7cd7aa28a75b.png", "youtube_url": ""}, {"part": "스타부", "name": "나무늘봉순", "match": "나무늘봉순", "soop_id": "yjk011599", "soop_url": "https://www.sooplive.com/station/yjk011599", "profile_img": "https://dn.cnine.kr/file/20251121/d8add98883464b42ba76ce4d3e6e2de6.png", "youtube_url": ""}, {"part": "스타부", "name": "졈니", "match": "졈니", "soop_id": "yochba0402", "soop_url": "https://www.sooplive.com/station/yochba0402", "profile_img": "https://dn.cnine.kr/file/20251121/cb51d57824294260a469fc7990f4200c.png", "youtube_url": ""}, {"part": "엑셀부", "name": "이다니", "match": "이다니", "soop_id": "0929kelly", "soop_url": "https://www.sooplive.com/station/0929kelly", "profile_img": "https://profile.img.sooplive.com/LOGO/09/0929kelly/0929kelly.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "쁠리", "match": "쁠리", "soop_id": "alwl1047", "soop_url": "https://www.sooplive.com/station/alwl1047", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/al/alwl1047/alwl1047.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "아윤", "match": "아윤", "soop_id": "ayoona", "soop_url": "https://www.sooplive.com/station/ayoona", "profile_img": "https://dn.cnine.kr/file/20251120/08eed7b374d64a2da2218b910f9e4e33.png", "youtube_url": ""}, {"part": "엑셀부", "name": "초초", "match": "초초", "soop_id": "chocho12", "soop_url": "https://www.sooplive.com/station/chocho12", "profile_img": "https://dn.cnine.kr/file/20251121/4bdfb2f355e44afba8561be86953f63a.png", "youtube_url": ""}, {"part": "엑셀부", "name": "설윤이", "match": "설윤이", "soop_id": "dain9804", "soop_url": "https://www.sooplive.com/station/dain9804", "profile_img": "https://profile.img.sooplive.com/LOGO/da/dain9804/dain9804.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "주성", "match": "주성", "soop_id": "ddaggida3", "soop_url": "https://www.sooplive.com/station/ddaggida3", "profile_img": "https://dn.cnine.kr/file/20251125/8e5a736caf4d4a4c8f98aa4d9fa23e66.png", "youtube_url": ""}, {"part": "엑셀부", "name": "초린", "match": "초린", "soop_id": "dhtnqls1238", "soop_url": "https://www.sooplive.com/station/dhtnqls1238", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/dh/dhtnqls1238/dhtnqls1238.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "인지연", "match": "인지연", "soop_id": "dlswldus107", "soop_url": "https://www.sooplive.com/station/dlswldus107", "profile_img": "https://profile.img.sooplive.com/LOGO/dl/dlswldus107/dlswldus107.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "혜루찡", "match": "혜루찡", "soop_id": "epsthddus", "soop_url": "https://www.sooplive.com/station/epsthddus", "profile_img": "https://dn.cnine.kr/file/20251120/fece76c5655a48bf831655913e27c9c1.png", "youtube_url": ""}, {"part": "엑셀부", "name": "송채연", "match": "송채연", "soop_id": "jfiary0718", "soop_url": "https://www.sooplive.com/station/jfiary0718", "profile_img": "https://profile.img.sooplive.com/LOGO/jf/jfiary0718/jfiary0718.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "김윤중", "match": "김윤중", "soop_id": "jk890202", "soop_url": "https://www.sooplive.com/station/jk890202", "profile_img": "https://dn.cnine.kr/file/20251124/b1eee229133b498887c5c4541ffe3ec0.png", "youtube_url": ""}, {"part": "엑셀부", "name": "하이희야", "match": "하이희야", "soop_id": "jkmjkm1236", "soop_url": "https://www.sooplive.com/station/jkmjkm1236", "profile_img": "https://dn.cnine.kr/file/20251121/28e620017cdd4bf5a621e09551e6bcef.png", "youtube_url": ""}, {"part": "엑셀부", "name": "여을", "match": "여을", "soop_id": "kaja0011", "soop_url": "https://www.sooplive.com/station/kaja0011", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/ka/kaja0011/kaja0011.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "멘토세끼", "match": "멘토세끼", "soop_id": "kimkc3117", "soop_url": "https://www.sooplive.com/station/kimkc3117", "profile_img": "https://profile.img.sooplive.com/LOGO/ki/kimkc3117/kimkc3117.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "리하", "match": "리하", "soop_id": "ksdd7856", "soop_url": "https://www.sooplive.com/station/ksdd7856", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/ks/ksdd7856/ksdd7856.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "채리", "match": "채리", "soop_id": "lcy011027", "soop_url": "https://www.sooplive.com/station/lcy011027", "profile_img": "https://dn.cnine.kr/file/20251121/c5704e1521ff4814bb4ccad6d5fd169f.png", "youtube_url": ""}, {"part": "엑셀부", "name": "체온", "match": "체온", "soop_id": "leeso0403", "soop_url": "https://www.sooplive.com/station/leeso0403", "profile_img": "https://dn.cnine.kr/file/20251208/e5c64b68ff744f0bb2dd63d847d6bd42.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "히나", "match": "히나", "soop_id": "luaa0803", "soop_url": "https://www.sooplive.com/station/luaa0803", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/lu/luaa0803/luaa0803.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "연두", "match": "연두", "soop_id": "myby1221", "soop_url": "https://www.sooplive.com/station/myby1221", "profile_img": "https://profile.img.sooplive.com/LOGO/my/myby1221/myby1221.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "빵훈이", "match": "빵훈이", "soop_id": "vlfvlf789", "soop_url": "https://www.sooplive.com/station/vlfvlf789", "profile_img": "https://dn.cnine.kr/file/20251125/6d2cda01d16540fd80d525dd23f47ecc.png", "youtube_url": ""}, {"part": "엑셀부", "name": "철구", "match": "철구", "soop_id": "y1026", "soop_url": "https://www.sooplive.com/station/y1026", "profile_img": "https://dn.cnine.kr/file/20251121/369e8a8d015e498989be3993d11dfd21.png", "youtube_url": ""}, {"part": "엑셀부", "name": "애순이", "match": "애순이", "soop_id": "yunyeson3015", "soop_url": "https://www.sooplive.com/station/yunyeson3015", "profile_img": "https://dn.cnine.kr/file/20251120/c3b74c45918f4a9e883df11b1b1cf71c.png", "youtube_url": ""}];
 let currentMemberFilter = '전체';
+let LIVE_STATUS = {};
 
 function filterMembers(part, btn){
     currentMemberFilter = part;
     document.querySelectorAll('.memberTab').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     renderMembers();
+    applyLiveStatus();
 }
 
 function escapeHtml(str){
@@ -954,9 +946,11 @@ function renderMembers(){
     grid.innerHTML = list.map(m => {
         const soop = m.soop_url || (m.soop_id ? `https://www.sooplive.com/station/${m.soop_id}` : '');
         const youtube = m.youtube_url || '';
+        const live = LIVE_STATUS[m.soop_id || ''];
+        const isLive = live && live.is_live;
         return `
             <div class="member real" data-part="${escapeHtml(m.part)}" data-soop-id="${escapeHtml(m.soop_id || '')}">
-                <div class="liveBadge">OFF</div>
+                <div class="liveBadge ${isLive ? 'on' : ''}">${isLive ? 'LIVE' : 'OFF'}</div>
                 <img class="avatarImg" src="${escapeHtml(m.profile_img)}" onerror="memberImageFallback(this)" alt="${escapeHtml(m.name)}">
                 <div class="partBadge">${escapeHtml(m.part)}</div>
                 <div class="nick">${escapeHtml(m.name)}</div>
@@ -969,45 +963,60 @@ function renderMembers(){
 
     const mainTotal = document.getElementById('mainTotalMembers');
     if(mainTotal) mainTotal.textContent = `${total}명`;
-
-    const mainLive = document.getElementById('mainLiveMembers');
-    if(mainLive) mainLive.textContent = 'LIVE 연동 대기';
 }
 
+function applyLiveStatus(){
+    let liveCount = 0;
 
-async function loadLiveStatus(){
-    try{
-        const res = await fetch('live_status.json?v=' + Date.now(), {cache:'no-store'});
-        if(!res.ok) throw new Error('live_status.json fetch failed');
-        const data = await res.json();
-        const liveMap = data.members || {};
+    document.querySelectorAll('.member.real').forEach(card => {
+        const id = card.getAttribute('data-soop-id') || '';
+        const badge = card.querySelector('.liveBadge');
+        const info = LIVE_STATUS[id];
 
-        document.querySelectorAll('.member.real').forEach(card=>{
-            const id = card.getAttribute('data-soop-id') || '';
-            const badge = card.querySelector('.liveBadge');
-            const info = liveMap[id];
+        if(info && info.is_live){
+            badge.textContent = 'LIVE';
+            badge.classList.add('on');
+        }else{
+            badge.textContent = 'OFF';
+            badge.classList.remove('on');
+        }
+    });
 
-            if(info && info.is_live){
-                badge.textContent = 'LIVE';
-                badge.classList.add('on');
-            }else{
-                badge.textContent = 'OFF';
-                badge.classList.remove('on');
-            }
-        });
+    Object.values(LIVE_STATUS).forEach(info => {
+        if(info && info.is_live) liveCount++;
+    });
 
-        const mainLive = document.getElementById('mainLiveMembers');
-        if(mainLive) mainLive.textContent = (data.live_count || 0) + '명';
+    const mainLive = document.getElementById('mainLiveMembers');
+    if(mainLive) mainLive.textContent = liveCount + '명';
 
-    }catch(e){
-        console.log('LIVE 상태 로딩 실패', e);
-        const mainLive = document.getElementById('mainLiveMembers');
-        if(mainLive) mainLive.textContent = '연동 실패';
+    const updated = document.getElementById('liveUpdated');
+    if(updated && window.LIVE_STATUS_META){
+        updated.textContent = 'LIVE 상태 갱신: ' + (window.LIVE_STATUS_META.updated_at || '-') + ' · LIVE ' + liveCount + '명';
     }
 }
 
+async function loadLiveStatus(){
+    try{
+        const res = await fetch('live_status.json?v=' + Date.now(), { cache:'no-store' });
+        if(!res.ok) throw new Error('live_status.json 없음');
+        const data = await res.json();
+        LIVE_STATUS = data.members || {};
+        window.LIVE_STATUS_META = data;
+        applyLiveStatus();
+    }catch(e){
+        const mainLive = document.getElementById('mainLiveMembers');
+        if(mainLive) mainLive.textContent = '연동 실패';
+        const updated = document.getElementById('liveUpdated');
+        if(updated) updated.textContent = 'LIVE 상태: live_status.json 없음 또는 로딩 실패';
+        console.log('LIVE 로딩 실패:', e);
+    }
+}
 
-document.addEventListener('DOMContentLoaded', ()=>{ renderMembers(); setTimeout(loadLiveStatus, 300); });
+document.addEventListener('DOMContentLoaded', () => {
+    renderMembers();
+    loadLiveStatus();
+    setInterval(loadLiveStatus, 60000);
+});
 </script>
 
 </body>

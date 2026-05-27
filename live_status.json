@@ -1,0 +1,358 @@
+{
+  "updated_at": "초기값",
+  "total": 39,
+  "live_count": 0,
+  "members": {
+    "byflash": {
+      "name": "이영호",
+      "part": "스타부",
+      "soop_id": "byflash",
+      "soop_url": "https://www.sooplive.com/station/byflash",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "dbsdydx": {
+      "name": "윤용태",
+      "part": "스타부",
+      "soop_id": "dbsdydx",
+      "soop_url": "https://www.sooplive.com/station/dbsdydx",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "imducko3o": {
+      "name": "오리꿍",
+      "part": "스타부",
+      "soop_id": "imducko3o",
+      "soop_url": "https://www.sooplive.com/station/imducko3o",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "jiwooris2": {
+      "name": "지우리",
+      "part": "스타부",
+      "soop_id": "jiwooris2",
+      "soop_url": "https://www.sooplive.com/station/jiwooris2",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "jmc06170": {
+      "name": "왜냐맨장민철",
+      "part": "스타부",
+      "soop_id": "jmc06170",
+      "soop_url": "https://www.sooplive.com/station/jmc06170",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "kuyol": {
+      "name": "강구열",
+      "part": "스타부",
+      "soop_id": "kuyol",
+      "soop_url": "https://www.sooplive.com/station/kuyol",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "mew030709": {
+      "name": "남수댕",
+      "part": "스타부",
+      "soop_id": "mew030709",
+      "soop_url": "https://www.sooplive.com/station/mew030709",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "moguleave": {
+      "name": "모리",
+      "part": "스타부",
+      "soop_id": "moguleave",
+      "soop_url": "https://www.sooplive.com/station/moguleave",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "qpqpro": {
+      "name": "디임",
+      "part": "스타부",
+      "soop_id": "qpqpro",
+      "soop_url": "https://www.sooplive.com/station/qpqpro",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "queen030": {
+      "name": "효짱",
+      "part": "스타부",
+      "soop_id": "queen030",
+      "soop_url": "https://www.sooplive.com/station/queen030",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "rhf104": {
+      "name": "란란",
+      "part": "스타부",
+      "soop_id": "rhf104",
+      "soop_url": "https://www.sooplive.com/station/rhf104",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "rlaxordyd": {
+      "name": "김택용",
+      "part": "스타부",
+      "soop_id": "rlaxordyd",
+      "soop_url": "https://www.sooplive.com/station/rlaxordyd",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "rlekfu6": {
+      "name": "박재혁",
+      "part": "스타부",
+      "soop_id": "rlekfu6",
+      "soop_url": "https://www.sooplive.com/station/rlekfu6",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "scan1014": {
+      "name": "유승곤",
+      "part": "스타부",
+      "soop_id": "scan1014",
+      "soop_url": "https://www.sooplive.com/station/scan1014",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "tjgpdus97": {
+      "name": "요닝",
+      "part": "스타부",
+      "soop_id": "tjgpdus97",
+      "soop_url": "https://www.sooplive.com/station/tjgpdus97",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "yjk011599": {
+      "name": "나무늘봉순",
+      "part": "스타부",
+      "soop_id": "yjk011599",
+      "soop_url": "https://www.sooplive.com/station/yjk011599",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "yochba0402": {
+      "name": "졈니",
+      "part": "스타부",
+      "soop_id": "yochba0402",
+      "soop_url": "https://www.sooplive.com/station/yochba0402",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "0929kelly": {
+      "name": "이다니",
+      "part": "엑셀부",
+      "soop_id": "0929kelly",
+      "soop_url": "https://www.sooplive.com/station/0929kelly",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "alwl1047": {
+      "name": "쁠리",
+      "part": "엑셀부",
+      "soop_id": "alwl1047",
+      "soop_url": "https://www.sooplive.com/station/alwl1047",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "ayoona": {
+      "name": "아윤",
+      "part": "엑셀부",
+      "soop_id": "ayoona",
+      "soop_url": "https://www.sooplive.com/station/ayoona",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "chocho12": {
+      "name": "초초",
+      "part": "엑셀부",
+      "soop_id": "chocho12",
+      "soop_url": "https://www.sooplive.com/station/chocho12",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "dain9804": {
+      "name": "설윤이",
+      "part": "엑셀부",
+      "soop_id": "dain9804",
+      "soop_url": "https://www.sooplive.com/station/dain9804",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "ddaggida3": {
+      "name": "주성",
+      "part": "엑셀부",
+      "soop_id": "ddaggida3",
+      "soop_url": "https://www.sooplive.com/station/ddaggida3",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "dhtnqls1238": {
+      "name": "초린",
+      "part": "엑셀부",
+      "soop_id": "dhtnqls1238",
+      "soop_url": "https://www.sooplive.com/station/dhtnqls1238",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "dlswldus107": {
+      "name": "인지연",
+      "part": "엑셀부",
+      "soop_id": "dlswldus107",
+      "soop_url": "https://www.sooplive.com/station/dlswldus107",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "epsthddus": {
+      "name": "혜루찡",
+      "part": "엑셀부",
+      "soop_id": "epsthddus",
+      "soop_url": "https://www.sooplive.com/station/epsthddus",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "jfiary0718": {
+      "name": "송채연",
+      "part": "엑셀부",
+      "soop_id": "jfiary0718",
+      "soop_url": "https://www.sooplive.com/station/jfiary0718",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "jk890202": {
+      "name": "김윤중",
+      "part": "엑셀부",
+      "soop_id": "jk890202",
+      "soop_url": "https://www.sooplive.com/station/jk890202",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "jkmjkm1236": {
+      "name": "하이희야",
+      "part": "엑셀부",
+      "soop_id": "jkmjkm1236",
+      "soop_url": "https://www.sooplive.com/station/jkmjkm1236",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "kaja0011": {
+      "name": "여을",
+      "part": "엑셀부",
+      "soop_id": "kaja0011",
+      "soop_url": "https://www.sooplive.com/station/kaja0011",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "kimkc3117": {
+      "name": "멘토세끼",
+      "part": "엑셀부",
+      "soop_id": "kimkc3117",
+      "soop_url": "https://www.sooplive.com/station/kimkc3117",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "ksdd7856": {
+      "name": "리하",
+      "part": "엑셀부",
+      "soop_id": "ksdd7856",
+      "soop_url": "https://www.sooplive.com/station/ksdd7856",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "lcy011027": {
+      "name": "채리",
+      "part": "엑셀부",
+      "soop_id": "lcy011027",
+      "soop_url": "https://www.sooplive.com/station/lcy011027",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "leeso0403": {
+      "name": "체온",
+      "part": "엑셀부",
+      "soop_id": "leeso0403",
+      "soop_url": "https://www.sooplive.com/station/leeso0403",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "luaa0803": {
+      "name": "히나",
+      "part": "엑셀부",
+      "soop_id": "luaa0803",
+      "soop_url": "https://www.sooplive.com/station/luaa0803",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "myby1221": {
+      "name": "연두",
+      "part": "엑셀부",
+      "soop_id": "myby1221",
+      "soop_url": "https://www.sooplive.com/station/myby1221",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "vlfvlf789": {
+      "name": "빵훈이",
+      "part": "엑셀부",
+      "soop_id": "vlfvlf789",
+      "soop_url": "https://www.sooplive.com/station/vlfvlf789",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "y1026": {
+      "name": "철구",
+      "part": "엑셀부",
+      "soop_id": "y1026",
+      "soop_url": "https://www.sooplive.com/station/y1026",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    },
+    "yunyeson3015": {
+      "name": "애순이",
+      "part": "엑셀부",
+      "soop_id": "yunyeson3015",
+      "soop_url": "https://www.sooplive.com/station/yunyeson3015",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "initial"
+    }
+  }
+}
