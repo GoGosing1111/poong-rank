@@ -3,896 +3,1012 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Poong Rank Maker V22</title>
+<title>C9 Dashboard</title>
+
 <style>
-body{
-margin:0;
-background:#070812;
-font-family:Pretendard,'Malgun Gothic','Noto Sans KR',sans-serif;
-color:white;
+* {
+    box-sizing:border-box;
 }
-.wrap{
-width:1180px;
-margin:auto;
-padding:14px;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:16px;
+
+body {
+    margin:0;
+    background:
+        radial-gradient(circle at top, rgba(255,31,31,0.22), transparent 32%),
+        linear-gradient(180deg,#08070a 0%,#12070a 48%,#050506 100%);
+    color:#fff;
+    font-family:Arial,'Malgun Gothic',sans-serif;
 }
-.card{
-position:relative;
-background:#11121d;
-border-radius:16px;
-overflow:hidden;
-border:1px solid rgba(255,255,255,.08);
-box-shadow:0 15px 35px rgba(0,0,0,.5);
+
+.wrap {
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    padding:18px 12px 36px;
 }
-.rank-badge{
-position:absolute;
-top:0;
-left:0;
-width:38px;
-height:38px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:19px;
-font-weight:1000;
-z-index:3;
-color:#fff;
-text-shadow:0 2px 0 rgba(0,0,0,.55),0 0 10px rgba(255,255,255,.4);
-clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%);
-background:rgba(255,255,255,.18);
+
+.hero {
+    position:relative;
+    overflow:hidden;
+    border:1px solid rgba(255,61,61,0.65);
+    border-radius:26px;
+    padding:28px 18px 24px;
+    background:
+        linear-gradient(135deg,rgba(255,0,0,0.28),rgba(0,0,0,0.72) 42%,rgba(120,0,0,0.35)),
+        #0b0b10;
+    box-shadow:
+        0 0 24px rgba(255,0,0,0.25),
+        inset 0 0 36px rgba(255,255,255,0.04);
+    text-align:center;
 }
-.top{
-height:126px;
-padding:18px 20px;
-font-weight:900;
-font-size:28px;
-display:flex;
-gap:16px;
-align-items:center;
+
+.hero:before {
+    content:"";
+    position:absolute;
+    inset:-80px;
+    background:
+        linear-gradient(120deg,transparent 20%,rgba(255,255,255,0.09) 42%,transparent 56%);
+    transform:rotate(-10deg);
+    pointer-events:none;
 }
-.crew-logo{
-width:104px;
-height:76px;
-border-radius:10px;
-object-fit:contain;
-background:transparent;
-padding:2px;
-flex:0 0 auto;
-filter:drop-shadow(0 0 10px rgba(255,255,255,.18));
+
+.logoBox {
+    position:relative;
+    z-index:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:118px;
+    height:118px;
+    margin-bottom:10px;
+    border-radius:50%;
+    background:radial-gradient(circle,#2b0505 0%,#070707 68%);
+    border:2px solid #ff3b3b;
+    box-shadow:0 0 30px rgba(255,0,0,0.48), inset 0 0 18px rgba(255,255,255,0.08);
 }
-.logo-empty{
-opacity:.2;
+
+.logo {
+    max-width:92px;
+    max-height:92px;
+    object-fit:contain;
+    filter:drop-shadow(0 0 8px rgba(255,255,255,0.35));
 }
-.crew-info{
-flex:1;
-min-width:0;
-text-align:right;
+
+.title {
+    position:relative;
+    z-index:1;
+    font-size:44px;
+    line-height:1;
+    font-weight:1000;
+    color:#fff;
+    letter-spacing:1px;
+    text-shadow:
+        0 0 8px rgba(255,0,0,0.95),
+        0 3px 0 #420000,
+        0 8px 18px #000;
 }
-.crew-title{
-font-size:30px;
-font-weight:1000;
-white-space:nowrap;
-overflow:hidden;
-text-overflow:ellipsis;
-text-shadow:0 1px 0 rgba(255,255,255,.45),0 3px 0 rgba(0,0,0,.75),0 0 12px rgba(255,255,255,.25);
+
+.subtitle {
+    position:relative;
+    z-index:1;
+    display:inline-block;
+    margin-top:12px;
+    padding:7px 16px;
+    border-radius:999px;
+    color:#ffd8d8;
+    font-size:13px;
+    font-weight:900;
+    border:1px solid rgba(255,80,80,0.55);
+    background:rgba(0,0,0,0.42);
 }
-.avg-label{
-font-size:12px;
-margin-top:12px;
-color:#e7ecff;
-font-weight:900;
-text-shadow:0 2px 0 rgba(0,0,0,.65);
+
+.menu {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:16px 0;
+    padding:12px;
+    border-radius:20px;
+    background:rgba(0,0,0,0.38);
+    border:1px solid rgba(255,45,45,0.26);
 }
-.avg-num{
-font-size:34px;
-line-height:1.15;
-font-weight:1000;
-text-shadow:0 1px 0 rgba(255,255,255,.32),0 3px 0 rgba(0,0,0,.78),0 0 13px currentColor;
+
+.menu button {
+    min-width:128px;
+    background:linear-gradient(180deg,#2a0b0d,#120608);
+    color:#ffd9d9;
+    border:1px solid #a72424;
+    padding:12px 16px;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:900;
+    box-shadow:inset 0 0 14px rgba(255,255,255,0.04),0 4px 10px rgba(0,0,0,0.28);
 }
-.green .avg-num{color:#36ff4f}
-.pink .avg-num{color:#ff5c9c}
-.cyan .avg-num{color:#35f8ff}
-.blue .avg-num{color:#4d67ff}
-.purple .avg-num{color:#bd6cff}
-.orange .avg-num{color:#ffad3d}
-.sales{
-padding:12px 18px;
-background:#1b1a17;
-color:#ffd34f;
-font-weight:900;
-display:flex;
-justify-content:space-between;
-text-shadow:0 2px 0 rgba(0,0,0,.75),0 0 10px rgba(255,210,74,.35);
+
+.menu button.active,
+.menu button:hover {
+    background:linear-gradient(180deg,#ff3939,#9b0909);
+    color:#fff;
+    border-color:#ff7777;
+    box-shadow:0 0 16px rgba(255,0,0,0.45);
 }
-.sales-sub{
-height:22px;
-padding:3px 18px 0;
-background:#171612;
-color:#bda870;
-font-size:11px;
-font-weight:800;
-white-space:nowrap;
-overflow:hidden;
-text-overflow:ellipsis;
-border-bottom:1px solid rgba(255,255,255,.06);
+
+.section {
+    display:none;
 }
-.row{
-position:relative;
-display:flex;
-align-items:center;
-gap:10px;
-padding:12px 14px;
-border-bottom:1px solid rgba(255,255,255,.06);
-font-weight:800;
-overflow:hidden;
+
+.section.active {
+    display:block;
 }
-.row:after{
-content:"";
-position:absolute;
-left:0;
-bottom:0;
-height:4px;
-width:var(--w);
-background:linear-gradient(90deg,var(--c),white);
-box-shadow:0 0 10px var(--c);
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
 }
-.rank{
-width:24px;
-height:22px;
-border-radius:7px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:rgba(255,255,255,.1);
-color:#a7aec5;
-font-size:12px;
-font-weight:1000;
-text-shadow:0 1px 0 #000;
+
+.card {
+    background:linear-gradient(180deg,rgba(37,9,11,0.95),rgba(10,10,13,0.96));
+    border:1px solid rgba(255,64,64,0.33);
+    border-radius:20px;
+    padding:18px;
+    box-shadow:0 10px 22px rgba(0,0,0,0.36), inset 0 1px 0 rgba(255,255,255,0.05);
 }
-.name{
-flex:1;
-min-width:0;
-white-space:nowrap;
-overflow:hidden;
-text-overflow:ellipsis;
-font-size:16px;
-font-weight:1000;
-text-shadow:0 1px 0 rgba(255,255,255,.28),0 2px 0 rgba(0,0,0,.85),0 0 8px rgba(255,255,255,.22);
+
+.card.wide {
+    grid-column:span 3;
 }
-.score{
-font-size:19px;
-font-weight:1000;
-text-shadow:0 1px 0 rgba(255,255,255,.2),0 2px 0 rgba(0,0,0,.85),0 0 10px currentColor;
+
+.card h2 {
+    margin:0 0 12px;
+    color:#ff4b4b;
+    font-size:22px;
+    text-shadow:0 0 10px rgba(255,0,0,0.38);
 }
-.first{
-height:70px;
-font-size:20px;
-background:rgba(255,255,255,.03);
+
+.card h3 {
+    margin:0 0 8px;
+    color:#fff;
+    font-size:17px;
 }
-.first .score{color:var(--c)}
-.first .name{font-size:18px}
-@media(max-width:1100px){
-.wrap{width:100%;grid-template-columns:repeat(2,1fr)}
+
+.metric {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:11px 0;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    font-weight:800;
 }
-@media(max-width:620px){
-.wrap{grid-template-columns:1fr}
+
+.metric:last-child {
+    border-bottom:0;
 }
+
+.value {
+    color:#ffdbdb;
+    font-size:18px;
+    font-weight:1000;
+}
+
+.memberGrid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.member {
+    border-radius:18px;
+    padding:14px;
+    background:rgba(0,0,0,0.32);
+    border:1px solid rgba(255,255,255,0.08);
+    text-align:center;
+}
+
+.avatar {
+    width:72px;
+    height:72px;
+    margin:0 auto 9px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#3a0b0b,#111);
+    border:1px solid #ff3f3f;
+    box-shadow:0 0 14px rgba(255,0,0,0.25);
+}
+
+.nick {
+    font-weight:1000;
+    font-size:16px;
+    margin-bottom:7px;
+}
+
+.linkBtn {
+    display:inline-block;
+    margin:3px;
+    padding:6px 9px;
+    border-radius:999px;
+    background:#24080a;
+    border:1px solid #8e2222;
+    color:#ffd1d1;
+    font-size:12px;
+    font-weight:900;
+    text-decoration:none;
+}
+
+.table {
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:16px;
+}
+
+.table th,
+.table td {
+    padding:12px 10px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    text-align:center;
+}
+
+.table th {
+    color:#ffb9b9;
+    background:rgba(255,0,0,0.16);
+    font-size:13px;
+}
+
+.table td {
+    font-weight:800;
+}
+
+.badge {
+    display:inline-block;
+    min-width:34px;
+    padding:5px 8px;
+    border-radius:999px;
+    background:#d71919;
+    color:#fff;
+    font-weight:1000;
+}
+
+.notice {
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:13px 0;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.notice b {
+    color:#fff;
+}
+
+.notice span {
+    color:#ffbaba;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+.inout {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.in, .out {
+    border-radius:18px;
+    padding:16px;
+    background:rgba(0,0,0,0.26);
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.in h3 {
+    color:#ffcece;
+}
+
+.out h3 {
+    color:#ff7777;
+}
+
+@media (max-width:760px) {
+    .wrap {
+        padding:10px 7px 28px;
+    }
+    .hero {
+        border-radius:18px;
+        padding:20px 10px;
+    }
+    .logoBox {
+        width:92px;
+        height:92px;
+    }
+    .logo {
+        max-width:72px;
+        max-height:72px;
+    }
+    .title {
+        font-size:32px;
+    }
+    .menu {
+        gap:7px;
+        padding:8px;
+    }
+    .menu button {
+        min-width:46%;
+        padding:10px 8px;
+        font-size:13px;
+    }
+    .grid {
+        grid-template-columns:1fr;
+    }
+    .card.wide {
+        grid-column:span 1;
+    }
+    .memberGrid {
+        grid-template-columns:repeat(2,1fr);
+    }
+    .inout {
+        grid-template-columns:1fr;
+    }
+    .table th,
+    .table td {
+        padding:9px 5px;
+        font-size:12px;
+    }
+}
+
+.scheduleHead {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:16px;
+    padding:14px 16px;
+    border-radius:18px;
+    background:linear-gradient(90deg,rgba(255,0,0,0.22),rgba(0,0,0,0.28));
+    border:1px solid rgba(255,70,70,0.28);
+}
+
+.scheduleHead .left strong {
+    display:block;
+    font-size:25px;
+    color:#fff;
+    text-shadow:0 0 10px rgba(255,0,0,0.65);
+}
+
+.scheduleHead .left span {
+    display:block;
+    margin-top:4px;
+    color:#ffbdbd;
+    font-size:13px;
+    font-weight:800;
+}
+
+.scheduleCount {
+    padding:9px 13px;
+    border-radius:999px;
+    background:#d71919;
+    color:#fff;
+    font-weight:1000;
+    box-shadow:0 0 14px rgba(255,0,0,0.38);
+    white-space:nowrap;
+}
+
+.scheduleBlock {
+    margin-top:14px;
+}
+
+.scheduleTitle {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin:0 0 12px;
+    padding-bottom:9px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.scheduleTitle h3 {
+    margin:0;
+    font-size:20px;
+    color:#ff4b4b;
+    letter-spacing:.5px;
+    text-shadow:0 0 10px rgba(255,0,0,0.38);
+}
+
+.scheduleTitle span {
+    color:#ffbaba;
+    font-size:13px;
+    font-weight:900;
+}
+
+.highlightGrid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.scheduleGrid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.scheduleCard {
+    position:relative;
+    overflow:hidden;
+    min-height:132px;
+    padding:16px;
+    border-radius:20px;
+    background:
+        linear-gradient(135deg,rgba(255,50,50,0.18),rgba(0,0,0,0.42) 48%,rgba(80,0,0,0.22)),
+        rgba(0,0,0,0.32);
+    border:1px solid rgba(255,70,70,0.34);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.05),0 10px 20px rgba(0,0,0,0.28);
+}
+
+.scheduleCard:before {
+    content:"⚔";
+    position:absolute;
+    right:14px;
+    top:9px;
+    font-size:34px;
+    color:rgba(255,255,255,0.08);
+}
+
+.scheduleCard .tag {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    margin-bottom:10px;
+    padding:6px 10px;
+    border-radius:999px;
+    background:rgba(255,0,0,0.2);
+    border:1px solid rgba(255,85,85,0.45);
+    color:#ffd6d6;
+    font-size:12px;
+    font-weight:1000;
+}
+
+.scheduleCard .dday {
+    display:inline-block;
+    margin-right:6px;
+    padding:5px 8px;
+    border-radius:999px;
+    background:#e31c1c;
+    color:#fff;
+    font-size:12px;
+    font-weight:1000;
+    box-shadow:0 0 10px rgba(255,0,0,0.35);
+}
+
+.scheduleCard .kind {
+    display:inline-block;
+    padding:5px 8px;
+    border-radius:999px;
+    background:#210608;
+    border:1px solid rgba(255,80,80,0.4);
+    color:#ffbaba;
+    font-size:12px;
+    font-weight:1000;
+}
+
+.scheduleName {
+    position:relative;
+    z-index:1;
+    margin:0 0 12px;
+    color:#fff;
+    font-size:16px;
+    line-height:1.45;
+    font-weight:1000;
+}
+
+.scheduleDate {
+    position:relative;
+    z-index:1;
+    color:#ffcdcd;
+    font-size:14px;
+    font-weight:900;
+}
+
+@media (max-width:760px) {
+    .scheduleHead {
+        display:block;
+        text-align:center;
+    }
+    .scheduleHead .left strong {
+        font-size:22px;
+    }
+    .scheduleCount {
+        display:inline-block;
+        margin-top:10px;
+    }
+    .highlightGrid,
+    .scheduleGrid {
+        grid-template-columns:1fr;
+    }
+    .scheduleCard {
+        min-height:auto;
+        padding:14px;
+    }
+}
+
+
+.memberToolbar {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:14px;
+    padding:12px;
+    border-radius:18px;
+    background:rgba(0,0,0,0.28);
+    border:1px solid rgba(255,65,65,0.22);
+}
+
+.memberTabs {
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.memberTab {
+    border:1px solid rgba(255,80,80,0.45);
+    background:#210608;
+    color:#ffd4d4;
+    padding:8px 12px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:1000;
+    cursor:pointer;
+}
+
+.memberTab.active,
+.memberTab:hover {
+    background:linear-gradient(180deg,#ff3939,#9b0909);
+    color:#fff;
+    box-shadow:0 0 12px rgba(255,0,0,0.35);
+}
+
+.memberSearch {
+    width:210px;
+    max-width:100%;
+    border:1px solid rgba(255,80,80,0.45);
+    background:#0d0708;
+    color:#fff;
+    border-radius:999px;
+    padding:9px 13px;
+    font-weight:800;
+    outline:none;
+}
+
+.memberSummary {
+    margin:0 0 13px;
+    color:#ffbaba;
+    font-size:13px;
+    font-weight:900;
+}
+
+.memberGrid.memberRealGrid {
+    grid-template-columns:repeat(5,1fr);
+}
+
+.member.real {
+    position:relative;
+    overflow:hidden;
+    padding:13px 10px 14px;
+    transition:.18s transform,.18s box-shadow,.18s border-color;
+}
+
+.member.real:hover {
+    transform:translateY(-3px);
+    border-color:rgba(255,80,80,0.72);
+    box-shadow:0 0 20px rgba(255,0,0,0.22);
+}
+
+.member.real:before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at top,rgba(255,50,50,0.18),transparent 45%);
+    pointer-events:none;
+}
+
+.avatarImg {
+    position:relative;
+    z-index:1;
+    width:78px;
+    height:78px;
+    margin:0 auto 9px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #ff3f3f;
+    background:#120507;
+    box-shadow:0 0 14px rgba(255,0,0,0.32);
+}
+
+.partBadge {
+    position:relative;
+    z-index:1;
+    display:inline-block;
+    margin-bottom:7px;
+    padding:4px 8px;
+    border-radius:999px;
+    color:#ffd6d6;
+    background:rgba(255,0,0,0.18);
+    border:1px solid rgba(255,90,90,0.38);
+    font-size:11px;
+    font-weight:1000;
+}
+
+.liveBadge {
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:2;
+    padding:4px 7px;
+    border-radius:999px;
+    background:#3a3a3a;
+    color:#cfcfcf;
+    font-size:10px;
+    font-weight:1000;
+}
+
+.liveBadge.on {
+    background:#ff1010;
+    color:#fff;
+    box-shadow:0 0 12px rgba(255,0,0,0.65);
+}
+
+.soopId {
+    position:relative;
+    z-index:1;
+    min-height:16px;
+    color:#ffbaba;
+    font-size:11px;
+    font-weight:800;
+    margin:-2px 0 6px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.linkBtn.disabled {
+    opacity:.35;
+    pointer-events:none;
+}
+
+@media (max-width:960px) {
+    .memberGrid.memberRealGrid {
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media (max-width:760px) {
+    .memberToolbar {
+        display:block;
+    }
+    .memberSearch {
+        width:100%;
+        margin-top:9px;
+    }
+    .memberGrid.memberRealGrid {
+        grid-template-columns:repeat(2,1fr);
+    }
+    .avatarImg {
+        width:68px;
+        height:68px;
+    }
+}
+
 </style>
 </head>
+
 <body>
 <div class="wrap">
 
-<div class="card green">
-  <div class="rank-badge">1</div>
-  <div class="top" style="background:linear-gradient(135deg,#00ff44,#10351a)">
-    <img class="crew-logo" src="assets/crew_logos/씨나인엑셀부.png" />
-    <div class="crew-info">
-      <div class="crew-title">씨나인엑셀</div>
-      <div class="avg-label">평균 별풍선</div>
-      <div class="avg-num">452,121</div>
+    <div class="hero">
+        <div class="logoBox">
+            <img class="logo" src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EC%94%A8%EB%82%98%EC%9D%B8%EC%97%91%EC%85%80%EB%B6%80.png">
+        </div>
+        <div class="title">C9 DASHBOARD</div>
+        <div class="subtitle">씨나인 통합 현황판</div>
     </div>
-  </div>
-  <div class="sales">
-    <span>👑 크루 매출풍</span>
-    <span>13,004,093</span>
-  </div>
-  <div class="sales-sub">철구형</div>
-  
-<div class="row first" style="--w:100%;--c:#2fff58;">
-  <div class="rank">1</div>
-  <div class="name">이다니</div>
-  <div class="score">1,488,446</div>
-</div>
 
-<div class="row" style="--w:78%;--c:#2fff58;">
-  <div class="rank">2</div>
-  <div class="name">혜루찡</div>
-  <div class="score">1,167,446</div>
-</div>
-
-<div class="row" style="--w:62%;--c:#2fff58;">
-  <div class="rank">3</div>
-  <div class="name">송채연</div>
-  <div class="score">926,888</div>
-</div>
-
-<div class="row" style="--w:38%;--c:#2fff58;">
-  <div class="rank">4</div>
-  <div class="name">체온</div>
-  <div class="score">568,827</div>
-</div>
-
-<div class="row" style="--w:35%;--c:#2fff58;">
-  <div class="rank">5</div>
-  <div class="name">하이희야</div>
-  <div class="score">522,257</div>
-</div>
-
-<div class="row" style="--w:34%;--c:#2fff58;">
-  <div class="rank">6</div>
-  <div class="name">쁠리야이겨내</div>
-  <div class="score">514,007</div>
-</div>
-
-<div class="row" style="--w:30%;--c:#2fff58;">
-  <div class="rank">7</div>
-  <div class="name">설윤이</div>
-  <div class="score">454,505</div>
-</div>
-
-<div class="row" style="--w:30%;--c:#2fff58;">
-  <div class="rank">8</div>
-  <div class="name">인지연</div>
-  <div class="score">450,174</div>
-</div>
-
-<div class="row" style="--w:30%;--c:#2fff58;">
-  <div class="rank">9</div>
-  <div class="name">채리</div>
-  <div class="score">448,485</div>
-</div>
-
-<div class="row" style="--w:26%;--c:#2fff58;">
-  <div class="rank">10</div>
-  <div class="name">초초</div>
-  <div class="score">387,979</div>
-</div>
-
-<div class="row" style="--w:25%;--c:#2fff58;">
-  <div class="rank">11</div>
-  <div class="name">여을</div>
-  <div class="score">385,035</div>
-</div>
-
-<div class="row" style="--w:20%;--c:#2fff58;">
-  <div class="rank">12</div>
-  <div class="name">주성</div>
-  <div class="score">303,252</div>
-</div>
-
-<div class="row" style="--w:18%;--c:#2fff58;">
-  <div class="rank">13</div>
-  <div class="name">빵훈이</div>
-  <div class="score">269,108</div>
-</div>
-
-<div class="row" style="--w:15%;--c:#2fff58;">
-  <div class="rank">14</div>
-  <div class="name">애순이</div>
-  <div class="score">234,931</div>
-</div>
-
-<div class="row" style="--w:13%;--c:#2fff58;">
-  <div class="rank">15</div>
-  <div class="name">아윤</div>
-  <div class="score">206,224</div>
-</div>
-
-<div class="row" style="--w:13%;--c:#2fff58;">
-  <div class="rank">16</div>
-  <div class="name">히나</div>
-  <div class="score">195,094</div>
-</div>
-
-<div class="row" style="--w:12%;--c:#2fff58;">
-  <div class="rank">17</div>
-  <div class="name">연두</div>
-  <div class="score">191,475</div>
-</div>
-
-<div class="row" style="--w:10%;--c:#2fff58;">
-  <div class="rank">18</div>
-  <div class="name">리하</div>
-  <div class="score">159,543</div>
-</div>
-
-<div class="row" style="--w:9%;--c:#2fff58;">
-  <div class="rank">19</div>
-  <div class="name">초린</div>
-  <div class="score">142,495</div>
-</div>
-
-<div class="row" style="--w:1%;--c:#2fff58;">
-  <div class="rank">20</div>
-  <div class="name">윤중</div>
-  <div class="score">26,260</div>
-</div>
-
-</div>
-
-<div class="card pink">
-  <div class="rank-badge">2</div>
-  <div class="top" style="background:linear-gradient(135deg,#ff2c7c,#401325)">
-    <img class="crew-logo" src="assets/crew_logos/광우상사.png" />
-    <div class="crew-info">
-      <div class="crew-title">광우상사</div>
-      <div class="avg-label">평균 별풍선</div>
-      <div class="avg-num">569,004</div>
+    <div class="menu">
+        <button class="active" onclick="showSection('main', this)">메인 현황</button>
+        <button onclick="showSection('member', this)">멤버 현황판</button>
+        <button onclick="showSection('rank', this)">낙수표</button>
+        <button onclick="showSection('notice', this)">SOOP 공지</button>
+        <button onclick="showSection('schedule', this)">씨나인 일정</button>
+        <button onclick="showSection('inout', this)">IN / OUT</button>
     </div>
-  </div>
-  <div class="sales">
-    <span>👑 크루 매출풍</span>
-    <span>23,461,935</span>
-  </div>
-  <div class="sales-sub">커맨더지코</div>
-  
-<div class="row first" style="--w:100%;--c:#ff5b9d;">
-  <div class="rank">1</div>
-  <div class="name">함지아</div>
-  <div class="score">881,075</div>
-</div>
 
-<div class="row" style="--w:95%;--c:#ff5b9d;">
-  <div class="rank">2</div>
-  <div class="name">미디</div>
-  <div class="score">843,490</div>
-</div>
-
-<div class="row" style="--w:92%;--c:#ff5b9d;">
-  <div class="rank">3</div>
-  <div class="name">임주연</div>
-  <div class="score">818,101</div>
-</div>
-
-<div class="row" style="--w:91%;--c:#ff5b9d;">
-  <div class="rank">4</div>
-  <div class="name">안둥</div>
-  <div class="score">804,944</div>
-</div>
-
-<div class="row" style="--w:87%;--c:#ff5b9d;">
-  <div class="rank">5</div>
-  <div class="name">아이빈</div>
-  <div class="score">774,824</div>
-</div>
-
-<div class="row" style="--w:80%;--c:#ff5b9d;">
-  <div class="rank">6</div>
-  <div class="name">원영님</div>
-  <div class="score">710,589</div>
-</div>
-
-<div class="row" style="--w:66%;--c:#ff5b9d;">
-  <div class="rank">7</div>
-  <div class="name">이온</div>
-  <div class="score">590,010</div>
-</div>
-
-<div class="row" style="--w:55%;--c:#ff5b9d;">
-  <div class="rank">8</div>
-  <div class="name">가을이</div>
-  <div class="score">493,285</div>
-</div>
-
-<div class="row" style="--w:46%;--c:#ff5b9d;">
-  <div class="rank">9</div>
-  <div class="name">서윤슬</div>
-  <div class="score">410,089</div>
-</div>
-
-<div class="row" style="--w:41%;--c:#ff5b9d;">
-  <div class="rank">10</div>
-  <div class="name">비제이홍이</div>
-  <div class="score">367,407</div>
-</div>
-
-<div class="row" style="--w:8%;--c:#ff5b9d;">
-  <div class="rank">11</div>
-  <div class="name">가왕</div>
-  <div class="score">71,754</div>
-</div>
-
-<div class="row" style="--w:7%;--c:#ff5b9d;">
-  <div class="rank">12</div>
-  <div class="name">숨댕</div>
-  <div class="score">62,483</div>
-</div>
-
-</div>
-
-<div class="card cyan">
-  <div class="rank-badge">3</div>
-  <div class="top" style="background:linear-gradient(135deg,#24f3ff,#143d46)">
-    <img class="crew-logo" src="assets/crew_logos/씨나인스타부.png" />
-    <div class="crew-info">
-      <div class="crew-title">씨나인스타</div>
-      <div class="avg-label">평균 별풍선</div>
-      <div class="avg-num">227,052</div>
+    <div id="main" class="section active">
+        <div class="grid">
+            <div class="card">
+                <h2>오늘 별풍선</h2>
+                <div class="metric"><span>전체 멤버</span><span id="mainTotalMembers" class="value">-</span></div>
+                <div class="metric"><span>현재 LIVE</span><span id="mainLiveMembers" class="value">준비중</span></div>
+                <div class="metric"><span>최종 갱신</span><span class="value">-</span></div>
+            </div>
+            <div class="card">
+                <h2>월간 별풍선</h2>
+                <div class="metric"><span>월간 합산</span><span class="value">집계 대기</span></div>
+                <div class="metric"><span>월간 1위</span><span class="value">-</span></div>
+                <div class="metric"><span>크루 평균</span><span class="value">-</span></div>
+            </div>
+            <div class="card">
+                <h2>공지 / 변동</h2>
+                <div class="metric"><span>최신 공지</span><span class="value">-</span></div>
+                <div class="metric"><span>신규 IN</span><span class="value">-</span></div>
+                <div class="metric"><span>최근 OUT</span><span class="value">-</span></div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="sales">
-    <span>👑 크루 매출풍</span>
-    <span>0</span>
-  </div>
-  <div class="sales-sub">별도 없음</div>
-  
-<div class="row first" style="--w:100%;--c:#35f5ff;">
-  <div class="rank">1</div>
-  <div class="name">디임</div>
-  <div class="score">1,077,830</div>
-</div>
 
-<div class="row" style="--w:47%;--c:#35f5ff;">
-  <div class="rank">2</div>
-  <div class="name">나무늘봉순</div>
-  <div class="score">511,943</div>
-</div>
+    <div id="member" class="section">
+        <div class="card wide">
+            <h2>멤버 현황판</h2>
 
-<div class="row" style="--w:35%;--c:#35f5ff;">
-  <div class="rank">3</div>
-  <div class="name">효짱</div>
-  <div class="score">378,528</div>
-</div>
+            <div class="memberToolbar">
+                <div class="memberTabs">
+                    <button class="memberTab active" onclick="filterMembers('전체', this)">전체</button>
+                    <button class="memberTab" onclick="filterMembers('스타부', this)">스타부</button>
+                    <button class="memberTab" onclick="filterMembers('엑셀부', this)">엑셀부</button>
+                </div>
+                <input id="memberSearch" class="memberSearch" type="text" placeholder="멤버 검색" oninput="renderMembers()">
+            </div>
 
-<div class="row" style="--w:34%;--c:#35f5ff;">
-  <div class="rank">4</div>
-  <div class="name">김택용</div>
-  <div class="score">375,560</div>
-</div>
-
-<div class="row" style="--w:26%;--c:#35f5ff;">
-  <div class="rank">5</div>
-  <div class="name">란란</div>
-  <div class="score">283,884</div>
-</div>
-
-<div class="row" style="--w:24%;--c:#35f5ff;">
-  <div class="rank">6</div>
-  <div class="name">빵훈이</div>
-  <div class="score">269,108</div>
-</div>
-
-<div class="row" style="--w:19%;--c:#35f5ff;">
-  <div class="rank">7</div>
-  <div class="name">남수댕</div>
-  <div class="score">205,005</div>
-</div>
-
-<div class="row" style="--w:18%;--c:#35f5ff;">
-  <div class="rank">8</div>
-  <div class="name">요닝</div>
-  <div class="score">203,353</div>
-</div>
-
-<div class="row" style="--w:17%;--c:#35f5ff;">
-  <div class="rank">9</div>
-  <div class="name">졈니</div>
-  <div class="score">186,612</div>
-</div>
-
-<div class="row" style="--w:13%;--c:#35f5ff;">
-  <div class="rank">10</div>
-  <div class="name">모리</div>
-  <div class="score">146,205</div>
-</div>
-
-<div class="row" style="--w:10%;--c:#35f5ff;">
-  <div class="rank">11</div>
-  <div class="name">히댕</div>
-  <div class="score">115,544</div>
-</div>
-
-<div class="row" style="--w:9%;--c:#35f5ff;">
-  <div class="rank">12</div>
-  <div class="name">박재혁</div>
-  <div class="score">106,073</div>
-</div>
-
-<div class="row" style="--w:5%;--c:#35f5ff;">
-  <div class="rank">13</div>
-  <div class="name">이영호</div>
-  <div class="score">55,694</div>
-</div>
-
-<div class="row" style="--w:4%;--c:#35f5ff;">
-  <div class="rank">14</div>
-  <div class="name">오리꿍</div>
-  <div class="score">46,559</div>
-</div>
-
-<div class="row" style="--w:3%;--c:#35f5ff;">
-  <div class="rank">15</div>
-  <div class="name">강구열</div>
-  <div class="score">39,174</div>
-</div>
-
-<div class="row" style="--w:3%;--c:#35f5ff;">
-  <div class="rank">16</div>
-  <div class="name">왜냐맨장민철</div>
-  <div class="score">38,265</div>
-</div>
-
-<div class="row" style="--w:2%;--c:#35f5ff;">
-  <div class="rank">17</div>
-  <div class="name">윤중</div>
-  <div class="score">26,260</div>
-</div>
-
-<div class="row" style="--w:1%;--c:#35f5ff;">
-  <div class="rank">18</div>
-  <div class="name">윤용태</div>
-  <div class="score">21,354</div>
-</div>
-
-</div>
-
-<div class="card blue">
-  <div class="rank-badge">4</div>
-  <div class="top" style="background:linear-gradient(135deg,#304dff,#11194f)">
-    <img class="crew-logo" src="assets/crew_logos/YXL.gif" />
-    <div class="crew-info">
-      <div class="crew-title">YXL</div>
-      <div class="avg-label">평균 별풍선</div>
-      <div class="avg-num">202,306</div>
+            <div id="memberSummary" class="memberSummary">멤버 로딩중...</div>
+            <div id="memberGrid" class="memberGrid memberRealGrid"></div>
+        </div>
     </div>
-  </div>
-  <div class="sales">
-    <span>👑 크루 매출풍</span>
-    <span>7,268,522</span>
-  </div>
-  <div class="sales-sub">염보성</div>
-  
-<div class="row first" style="--w:100%;--c:#4f68ff;">
-  <div class="rank">1</div>
-  <div class="name">리윤</div>
-  <div class="score">500,318</div>
-</div>
 
-<div class="row" style="--w:85%;--c:#4f68ff;">
-  <div class="rank">2</div>
-  <div class="name">후잉</div>
-  <div class="score">427,399</div>
-</div>
 
-<div class="row" style="--w:57%;--c:#4f68ff;">
-  <div class="rank">3</div>
-  <div class="name">너의멜로디</div>
-  <div class="score">288,799</div>
-</div>
-
-<div class="row" style="--w:54%;--c:#4f68ff;">
-  <div class="rank">4</div>
-  <div class="name">냥냥수주</div>
-  <div class="score">270,407</div>
-</div>
-
-<div class="row" style="--w:54%;--c:#4f68ff;">
-  <div class="rank">5</div>
-  <div class="name">류서하</div>
-  <div class="score">270,216</div>
-</div>
-
-<div class="row" style="--w:40%;--c:#4f68ff;">
-  <div class="rank">6</div>
-  <div class="name">미로</div>
-  <div class="score">201,827</div>
-</div>
-
-<div class="row" style="--w:38%;--c:#4f68ff;">
-  <div class="rank">7</div>
-  <div class="name">백나현</div>
-  <div class="score">194,911</div>
-</div>
-
-<div class="row" style="--w:34%;--c:#4f68ff;">
-  <div class="rank">8</div>
-  <div class="name">소다</div>
-  <div class="score">174,134</div>
-</div>
-
-<div class="row" style="--w:29%;--c:#4f68ff;">
-  <div class="rank">9</div>
-  <div class="name">서니</div>
-  <div class="score">148,551</div>
-</div>
-
-<div class="row" style="--w:29%;--c:#4f68ff;">
-  <div class="rank">10</div>
-  <div class="name">율무</div>
-  <div class="score">146,330</div>
-</div>
-
-<div class="row" style="--w:28%;--c:#4f68ff;">
-  <div class="rank">11</div>
-  <div class="name">김유정</div>
-  <div class="score">140,757</div>
-</div>
-
-<div class="row" style="--w:24%;--c:#4f68ff;">
-  <div class="rank">12</div>
-  <div class="name">유나연</div>
-  <div class="score">124,063</div>
-</div>
-
-<div class="row" style="--w:23%;--c:#4f68ff;">
-  <div class="rank">13</div>
-  <div class="name">김푸</div>
-  <div class="score">117,078</div>
-</div>
-
-<div class="row" style="--w:21%;--c:#4f68ff;">
-  <div class="rank">14</div>
-  <div class="name">하랑짱</div>
-  <div class="score">106,313</div>
-</div>
-
-<div class="row" style="--w:15%;--c:#4f68ff;">
-  <div class="rank">15</div>
-  <div class="name">아름</div>
-  <div class="score">75,516</div>
-</div>
-
-<div class="row" style="--w:10%;--c:#4f68ff;">
-  <div class="rank">16</div>
-  <div class="name">꺼니</div>
-  <div class="score">50,277</div>
-</div>
-
-</div>
-
-<div class="card purple">
-  <div class="rank-badge">5</div>
-  <div class="top" style="background:linear-gradient(135deg,#a83dff,#27153f)">
-    <img class="crew-logo" src="assets/crew_logos/이노레이블.gif" />
-    <div class="crew-info">
-      <div class="crew-title">이노레이블</div>
-      <div class="avg-label">평균 별풍선</div>
-      <div class="avg-num">151,219</div>
+    <div id="rank" class="section">
+        <div class="card wide">
+            <h2>엑셀크루 / 스타크루 낙수표</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>순위</th>
+                        <th>닉네임</th>
+                        <th>오늘 별풍선</th>
+                        <th>월간 별풍선</th>
+                        <th>크루 평균</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="badge">1</span></td><td>집계 대기</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td><span class="badge">2</span></td><td>집계 대기</td><td>-</td><td>-</td><td>-</td></tr>
+                    <tr><td><span class="badge">3</span></td><td>집계 대기</td><td>-</td><td>-</td><td>-</td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
-  <div class="sales">
-    <span>👑 크루 매출풍</span>
-    <span>6,405,557</span>
-  </div>
-  <div class="sales-sub">김인호</div>
-  
-<div class="row first" style="--w:100%;--c:#bd6cff;">
-  <div class="rank">1</div>
-  <div class="name">애지니</div>
-  <div class="score">507,843</div>
-</div>
 
-<div class="row" style="--w:69%;--c:#bd6cff;">
-  <div class="rank">2</div>
-  <div class="name">설탱</div>
-  <div class="score">355,479</div>
-</div>
-
-<div class="row" style="--w:57%;--c:#bd6cff;">
-  <div class="rank">3</div>
-  <div class="name">히냥이</div>
-  <div class="score">290,229</div>
-</div>
-
-<div class="row" style="--w:56%;--c:#bd6cff;">
-  <div class="rank">4</div>
-  <div class="name">이월</div>
-  <div class="score">289,259</div>
-</div>
-
-<div class="row" style="--w:52%;--c:#bd6cff;">
-  <div class="rank">5</div>
-  <div class="name">꽃부기</div>
-  <div class="score">265,375</div>
-</div>
-
-<div class="row" style="--w:47%;--c:#bd6cff;">
-  <div class="rank">6</div>
-  <div class="name">누리</div>
-  <div class="score">243,514</div>
-</div>
-
-<div class="row" style="--w:29%;--c:#bd6cff;">
-  <div class="rank">7</div>
-  <div class="name">리에</div>
-  <div class="score">151,687</div>
-</div>
-
-<div class="row" style="--w:24%;--c:#bd6cff;">
-  <div class="rank">8</div>
-  <div class="name">설인</div>
-  <div class="score">122,167</div>
-</div>
-
-<div class="row" style="--w:18%;--c:#bd6cff;">
-  <div class="rank">9</div>
-  <div class="name">이리원</div>
-  <div class="score">96,468</div>
-</div>
-
-<div class="row" style="--w:13%;--c:#bd6cff;">
-  <div class="rank">10</div>
-  <div class="name">다기형</div>
-  <div class="score">68,457</div>
-</div>
-
-<div class="row" style="--w:9%;--c:#bd6cff;">
-  <div class="rank">11</div>
-  <div class="name">♥밍초♥</div>
-  <div class="score">50,175</div>
-</div>
-
-<div class="row" style="--w:7%;--c:#bd6cff;">
-  <div class="rank">12</div>
-  <div class="name">유쾌쌍디풍디</div>
-  <div class="score">39,968</div>
-</div>
-
-<div class="row" style="--w:6%;--c:#bd6cff;">
-  <div class="rank">13</div>
-  <div class="name">연보민</div>
-  <div class="score">32,985</div>
-</div>
-
-<div class="row" style="--w:6%;--c:#bd6cff;">
-  <div class="rank">14</div>
-  <div class="name">노쭈꾸</div>
-  <div class="score">31,083</div>
-</div>
-
-<div class="row" style="--w:3%;--c:#bd6cff;">
-  <div class="rank">15</div>
-  <div class="name">소연</div>
-  <div class="score">19,530</div>
-</div>
-
-<div class="row" style="--w:1%;--c:#bd6cff;">
-  <div class="rank">16</div>
-  <div class="name">락준석</div>
-  <div class="score">5,206</div>
-</div>
-
-<div class="row" style="--w:0%;--c:#bd6cff;">
-  <div class="rank">17</div>
-  <div class="name">밤비</div>
-  <div class="score">1,314</div>
-</div>
-
-</div>
-
-<div class="card orange">
-  <div class="rank-badge">6</div>
-  <div class="top" style="background:linear-gradient(135deg,#ff961f,#3e2410)">
-    <img class="crew-logo" src="assets/crew_logos/정선컴퍼니.png" />
-    <div class="crew-info">
-      <div class="crew-title">정선컴퍼니</div>
-      <div class="avg-label">평균 별풍선</div>
-      <div class="avg-num">127,479</div>
+    <div id="notice" class="section">
+        <div class="card wide">
+            <h2>멤버 SOOP 공지사항</h2>
+            <div class="notice"><b>최신 공지 제목 영역</b><span>등록 시간</span></div>
+            <div class="notice"><b>멤버별 공지 링크 영역</b><span>등록 시간</span></div>
+            <div class="notice"><b>공지 수집 대기</b><span>-</span></div>
+        </div>
     </div>
-  </div>
-  <div class="sales">
-    <span>👑 크루 매출풍</span>
-    <span>12,599,954</span>
-  </div>
-  <div class="sales-sub">박퍼니</div>
-  
-<div class="row first" style="--w:100%;--c:#ffad3d;">
-  <div class="rank">1</div>
-  <div class="name">서이안</div>
-  <div class="score">288,146</div>
-</div>
 
-<div class="row" style="--w:79%;--c:#ffad3d;">
-  <div class="rank">2</div>
-  <div class="name">백설</div>
-  <div class="score">229,086</div>
-</div>
 
-<div class="row" style="--w:70%;--c:#ffad3d;">
-  <div class="rank">3</div>
-  <div class="name">윤수</div>
-  <div class="score">202,662</div>
-</div>
+    <div id="schedule" class="section">
+        <div class="card wide">
+            <div class="scheduleHead">
+                <div class="left">
+                    <strong>CNINE SCHEDULE</strong>
+                    <span>씨나인 통합 일정표 · 스타부 / 엑셀부</span>
+                </div>
+                <div class="scheduleCount">오늘 2개 · 예정 4개</div>
+            </div>
 
-<div class="row" style="--w:70%;--c:#ffad3d;">
-  <div class="rank">4</div>
-  <div class="name">아유님</div>
-  <div class="score">202,660</div>
-</div>
+            <div class="metric">
+                <span>집계시간</span>
+                <span class="value">2026-05-27 00:18:32</span>
+            </div>
 
-<div class="row" style="--w:67%;--c:#ffad3d;">
-  <div class="rank">5</div>
-  <div class="name">유서림</div>
-  <div class="score">193,126</div>
-</div>
+            <div class="scheduleBlock">
+                <div class="scheduleTitle">
+                    <h3>TODAY HIGHLIGHT</h3>
+                    <span>오늘 진행 일정</span>
+                </div>
 
-<div class="row" style="--w:57%;--c:#ffad3d;">
-  <div class="rank">6</div>
-  <div class="name">김규리</div>
-  <div class="score">166,948</div>
-</div>
+                <div class="highlightGrid">
+                    <div class="scheduleCard">
+                        <div class="tag">TODAY</div>
+                        <p class="scheduleName">스타부 : 이스코어 토너먼트 시즌2 - 특별전 &lt;feat. 박재혁&gt;</p>
+                        <div class="scheduleDate">2026.05.27 (수) · ⏰ 19:00</div>
+                    </div>
 
-<div class="row" style="--w:57%;--c:#ffad3d;">
-  <div class="rank">7</div>
-  <div class="name">율비</div>
-  <div class="score">166,287</div>
-</div>
+                    <div class="scheduleCard">
+                        <div class="tag">TODAY</div>
+                        <p class="scheduleName">스타부 : 이스코어 토너먼트 시즌2 - 특별전 &lt;feat. 왜냐맨장민철&gt;</p>
+                        <div class="scheduleDate">2026.05.27 (수) · ⏰ 19:00</div>
+                    </div>
+                </div>
+            </div>
 
-<div class="row" style="--w:53%;--c:#ffad3d;">
-  <div class="rank">8</div>
-  <div class="name">햇동이</div>
-  <div class="score">155,179</div>
-</div>
+            <div class="scheduleBlock">
+                <div class="scheduleTitle">
+                    <h3>UPCOMING SCHEDULE</h3>
+                    <span>다가오는 CNINE 콘텐츠 일정 · 예정 4개</span>
+                </div>
 
-<div class="row" style="--w:45%;--c:#ffad3d;">
-  <div class="rank">9</div>
-  <div class="name">윤세빈</div>
-  <div class="score">130,501</div>
-</div>
+                <div class="scheduleGrid">
+                    <div class="scheduleCard">
+                        <div><span class="dday">D-3</span><span class="kind">엑셀 #3</span></div>
+                        <p class="scheduleName">엑셀&lt;2026 시즌5&gt; 씨나인 댄스부 : 엑셀 3회차 - 팀 데스매치</p>
+                        <div class="scheduleDate">2026.05.30 (토) · ⏰ 17:00</div>
+                    </div>
 
-<div class="row" style="--w:35%;--c:#ffad3d;">
-  <div class="rank">10</div>
-  <div class="name">서윤</div>
-  <div class="score">102,317</div>
-</div>
+                    <div class="scheduleCard">
+                        <div><span class="dday">D-5</span><span class="kind">스타 #4</span></div>
+                        <p class="scheduleName">스타부 : 스타워즈 - 별들의 전쟁</p>
+                        <div class="scheduleDate">2026.06.01 (월) · ⏰ 17:00</div>
+                    </div>
 
-<div class="row" style="--w:29%;--c:#ffad3d;">
-  <div class="rank">11</div>
-  <div class="name">당신의채안</div>
-  <div class="score">85,761</div>
-</div>
+                    <div class="scheduleCard">
+                        <div><span class="dday">D-10</span><span class="kind">엑셀 #5</span></div>
+                        <p class="scheduleName">엑셀&lt;2026 시즌5&gt; 씨나인 댄스부 : 엑셀 계급전</p>
+                        <div class="scheduleDate">2026.06.06 (토) · ⏰ 17:00</div>
+                    </div>
 
-<div class="row" style="--w:27%;--c:#ffad3d;">
-  <div class="rank">12</div>
-  <div class="name">김베리</div>
-  <div class="score">79,495</div>
-</div>
+                    <div class="scheduleCard">
+                        <div><span class="dday">D-24</span><span class="kind">엑셀 #6</span></div>
+                        <p class="scheduleName">엑셀&lt;2026 시즌6&gt; 씨나인 댄스부 : 엑셀 1회차</p>
+                        <div class="scheduleDate">2026.06.20 (토) · ⏰ 17:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="row" style="--w:12%;--c:#ffad3d;">
-  <div class="rank">13</div>
-  <div class="name">권혁진</div>
-  <div class="score">36,804</div>
-</div>
 
-<div class="row" style="--w:12%;--c:#ffad3d;">
-  <div class="rank">14</div>
-  <div class="name">쿵쿵</div>
-  <div class="score">36,026</div>
-</div>
-
-<div class="row" style="--w:12%;--c:#ffad3d;">
-  <div class="rank">15</div>
-  <div class="name">조빅코</div>
-  <div class="score">35,275</div>
-</div>
-
-<div class="row" style="--w:10%;--c:#ffad3d;">
-  <div class="rank">16</div>
-  <div class="name">채보미</div>
-  <div class="score">28,838</div>
-</div>
-
-<div class="row" style="--w:9%;--c:#ffad3d;">
-  <div class="rank">17</div>
-  <div class="name">나의유주</div>
-  <div class="score">28,044</div>
-</div>
+    <div id="inout" class="section">
+        <div class="card wide">
+            <h2>IN / OUT</h2>
+            <div class="inout">
+                <div class="in">
+                    <h3>IN</h3>
+                    <p>신규 가입 멤버 기록 영역</p>
+                </div>
+                <div class="out">
+                    <h3>OUT</h3>
+                    <p>탈퇴 / 이동 멤버 기록 영역</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
-</div>
+<script>
+function showSection(id, btn){
+    document.querySelectorAll('.section').forEach(sec=>sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    document.querySelectorAll('.menu button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+}
+</script>
+
+
+<script>
+const CNINE_MEMBERS = [{"part": "스타부", "name": "이영호", "match": "이영호", "soop_id": "byflash", "soop_url": "https://www.sooplive.com/station/byflash", "profile_img": "https://dn.cnine.kr/file/20251124/0f41e7237cf54917a64d28357dfa757d.png", "youtube_url": ""}, {"part": "스타부", "name": "윤용태", "match": "윤용태", "soop_id": "dbsdydx", "soop_url": "https://www.sooplive.com/station/dbsdydx", "profile_img": "https://dn.cnine.kr/file/20251125/9f60cd3ccf814618a58e7c5383a07203.png", "youtube_url": ""}, {"part": "스타부", "name": "오리꿍", "match": "오리꿍", "soop_id": "imducko3o", "soop_url": "https://www.sooplive.com/station/imducko3o", "profile_img": "https://dn.cnine.kr/file/20251121/91cd25cba6024b3a8c2571f1d8edeac3.png", "youtube_url": ""}, {"part": "스타부", "name": "지우리", "match": "지우리", "soop_id": "jiwooris2", "soop_url": "https://www.sooplive.com/station/jiwooris2", "profile_img": "https://profile.img.sooplive.com/LOGO/ji/jiwooris2/jiwooris2.jpg", "youtube_url": ""}, {"part": "스타부", "name": "왜냐맨장민철", "match": "왜냐맨장민철", "soop_id": "jmc06170", "soop_url": "https://www.sooplive.com/station/jmc06170", "profile_img": "https://dn.cnine.kr/file/20251125/2a0fa5ac245a453e97b14e9a54b8bcd6.png", "youtube_url": ""}, {"part": "스타부", "name": "강구열", "match": "강구열", "soop_id": "kuyol", "soop_url": "https://www.sooplive.com/station/kuyol", "profile_img": "https://dn.cnine.kr/file/20251208/cb015391b4604dd59061ebdc0d9b596a.jpg", "youtube_url": ""}, {"part": "스타부", "name": "남수댕", "match": "남수댕", "soop_id": "mew030709", "soop_url": "https://www.sooplive.com/station/mew030709", "profile_img": "https://dn.cnine.kr/file/20251121/204cd6d4ae8a4ec28840650320cbe773.png", "youtube_url": ""}, {"part": "스타부", "name": "모리", "match": "모리", "soop_id": "moguleave", "soop_url": "https://www.sooplive.com/station/moguleave", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/mo/moguleave/moguleave.jpg", "youtube_url": ""}, {"part": "스타부", "name": "디임", "match": "디임", "soop_id": "qpqpro", "soop_url": "https://www.sooplive.com/station/qpqpro", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/qp/qpqpro/qpqpro.jpg", "youtube_url": ""}, {"part": "스타부", "name": "효짱", "match": "효짱", "soop_id": "queen030", "soop_url": "https://www.sooplive.com/station/queen030", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/qu/queen030/queen030.jpg", "youtube_url": ""}, {"part": "스타부", "name": "란란", "match": "란란", "soop_id": "rhf104", "soop_url": "https://www.sooplive.com/station/rhf104", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/rh/rhf104/rhf104.jpg", "youtube_url": ""}, {"part": "스타부", "name": "김택용", "match": "김택용", "soop_id": "rlaxordyd", "soop_url": "https://www.sooplive.com/station/rlaxordyd", "profile_img": "https://dn.cnine.kr/file/20251124/702ee331e36846f183ce2a854d324889.png", "youtube_url": ""}, {"part": "스타부", "name": "박재혁", "match": "박재혁", "soop_id": "rlekfu6", "soop_url": "https://www.sooplive.com/station/rlekfu6", "profile_img": "https://dn.cnine.kr/file/20251125/17aa9e03f61444ab88d0bda0582777a1.png", "youtube_url": ""}, {"part": "스타부", "name": "유승곤", "match": "유승곤", "soop_id": "scan1014", "soop_url": "https://www.sooplive.com/station/scan1014", "profile_img": "https://profile.img.sooplive.com/LOGO/sc/scan1014/scan1014.jpg", "youtube_url": ""}, {"part": "스타부", "name": "요닝", "match": "요닝", "soop_id": "tjgpdus97", "soop_url": "https://www.sooplive.com/station/tjgpdus97", "profile_img": "https://dn.cnine.kr/file/20251121/9c9e22c7ef2c413ab9de7cd7aa28a75b.png", "youtube_url": ""}, {"part": "스타부", "name": "나무늘봉순", "match": "나무늘봉순", "soop_id": "yjk011599", "soop_url": "https://www.sooplive.com/station/yjk011599", "profile_img": "https://dn.cnine.kr/file/20251121/d8add98883464b42ba76ce4d3e6e2de6.png", "youtube_url": ""}, {"part": "스타부", "name": "졈니", "match": "졈니", "soop_id": "yochba0402", "soop_url": "https://www.sooplive.com/station/yochba0402", "profile_img": "https://dn.cnine.kr/file/20251121/cb51d57824294260a469fc7990f4200c.png", "youtube_url": ""}, {"part": "엑셀부", "name": "이다니", "match": "이다니", "soop_id": "0929kelly", "soop_url": "https://www.sooplive.com/station/0929kelly", "profile_img": "https://profile.img.sooplive.com/LOGO/09/0929kelly/0929kelly.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "쁠리", "match": "쁠리", "soop_id": "alwl1047", "soop_url": "https://www.sooplive.com/station/alwl1047", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/al/alwl1047/alwl1047.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "아윤", "match": "아윤", "soop_id": "ayoona", "soop_url": "https://www.sooplive.com/station/ayoona", "profile_img": "https://dn.cnine.kr/file/20251120/08eed7b374d64a2da2218b910f9e4e33.png", "youtube_url": ""}, {"part": "엑셀부", "name": "초초", "match": "초초", "soop_id": "chocho12", "soop_url": "https://www.sooplive.com/station/chocho12", "profile_img": "https://dn.cnine.kr/file/20251121/4bdfb2f355e44afba8561be86953f63a.png", "youtube_url": ""}, {"part": "엑셀부", "name": "설윤이", "match": "설윤이", "soop_id": "dain9804", "soop_url": "https://www.sooplive.com/station/dain9804", "profile_img": "https://profile.img.sooplive.com/LOGO/da/dain9804/dain9804.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "주성", "match": "주성", "soop_id": "ddaggida3", "soop_url": "https://www.sooplive.com/station/ddaggida3", "profile_img": "https://dn.cnine.kr/file/20251125/8e5a736caf4d4a4c8f98aa4d9fa23e66.png", "youtube_url": ""}, {"part": "엑셀부", "name": "초린", "match": "초린", "soop_id": "dhtnqls1238", "soop_url": "https://www.sooplive.com/station/dhtnqls1238", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/dh/dhtnqls1238/dhtnqls1238.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "인지연", "match": "인지연", "soop_id": "dlswldus107", "soop_url": "https://www.sooplive.com/station/dlswldus107", "profile_img": "https://profile.img.sooplive.com/LOGO/dl/dlswldus107/dlswldus107.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "혜루찡", "match": "혜루찡", "soop_id": "epsthddus", "soop_url": "https://www.sooplive.com/station/epsthddus", "profile_img": "https://dn.cnine.kr/file/20251120/fece76c5655a48bf831655913e27c9c1.png", "youtube_url": ""}, {"part": "엑셀부", "name": "송채연", "match": "송채연", "soop_id": "jfiary0718", "soop_url": "https://www.sooplive.com/station/jfiary0718", "profile_img": "https://profile.img.sooplive.com/LOGO/jf/jfiary0718/jfiary0718.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "김윤중", "match": "김윤중", "soop_id": "jk890202", "soop_url": "https://www.sooplive.com/station/jk890202", "profile_img": "https://dn.cnine.kr/file/20251124/b1eee229133b498887c5c4541ffe3ec0.png", "youtube_url": ""}, {"part": "엑셀부", "name": "하이희야", "match": "하이희야", "soop_id": "jkmjkm1236", "soop_url": "https://www.sooplive.com/station/jkmjkm1236", "profile_img": "https://dn.cnine.kr/file/20251121/28e620017cdd4bf5a621e09551e6bcef.png", "youtube_url": ""}, {"part": "엑셀부", "name": "여을", "match": "여을", "soop_id": "kaja0011", "soop_url": "https://www.sooplive.com/station/kaja0011", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/ka/kaja0011/kaja0011.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "멘토세끼", "match": "멘토세끼", "soop_id": "kimkc3117", "soop_url": "https://www.sooplive.com/station/kimkc3117", "profile_img": "https://profile.img.sooplive.com/LOGO/ki/kimkc3117/kimkc3117.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "리하", "match": "리하", "soop_id": "ksdd7856", "soop_url": "https://www.sooplive.com/station/ksdd7856", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/ks/ksdd7856/ksdd7856.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "채리", "match": "채리", "soop_id": "lcy011027", "soop_url": "https://www.sooplive.com/station/lcy011027", "profile_img": "https://dn.cnine.kr/file/20251121/c5704e1521ff4814bb4ccad6d5fd169f.png", "youtube_url": ""}, {"part": "엑셀부", "name": "체온", "match": "체온", "soop_id": "leeso0403", "soop_url": "https://www.sooplive.com/station/leeso0403", "profile_img": "https://dn.cnine.kr/file/20251208/e5c64b68ff744f0bb2dd63d847d6bd42.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "히나", "match": "히나", "soop_id": "luaa0803", "soop_url": "https://www.sooplive.com/station/luaa0803", "profile_img": "https://profile.img.sooplive.co.kr/LOGO/lu/luaa0803/luaa0803.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "연두", "match": "연두", "soop_id": "myby1221", "soop_url": "https://www.sooplive.com/station/myby1221", "profile_img": "https://profile.img.sooplive.com/LOGO/my/myby1221/myby1221.jpg", "youtube_url": ""}, {"part": "엑셀부", "name": "빵훈이", "match": "빵훈이", "soop_id": "vlfvlf789", "soop_url": "https://www.sooplive.com/station/vlfvlf789", "profile_img": "https://dn.cnine.kr/file/20251125/6d2cda01d16540fd80d525dd23f47ecc.png", "youtube_url": ""}, {"part": "엑셀부", "name": "철구", "match": "철구", "soop_id": "y1026", "soop_url": "https://www.sooplive.com/station/y1026", "profile_img": "https://dn.cnine.kr/file/20251121/369e8a8d015e498989be3993d11dfd21.png", "youtube_url": ""}, {"part": "엑셀부", "name": "애순이", "match": "애순이", "soop_id": "yunyeson3015", "soop_url": "https://www.sooplive.com/station/yunyeson3015", "profile_img": "https://dn.cnine.kr/file/20251120/c3b74c45918f4a9e883df11b1b1cf71c.png", "youtube_url": ""}];
+let currentMemberFilter = '전체';
+
+function filterMembers(part, btn){
+    currentMemberFilter = part;
+    document.querySelectorAll('.memberTab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    renderMembers();
+}
+
+function escapeHtml(str){
+    return String(str || '')
+        .replaceAll('&','&amp;')
+        .replaceAll('<','&lt;')
+        .replaceAll('>','&gt;')
+        .replaceAll('"','&quot;')
+        .replaceAll("'","&#039;");
+}
+
+function memberImageFallback(img){
+    img.onerror = null;
+    img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+            <defs>
+                <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0" stop-color="#4b0909"/>
+                    <stop offset="1" stop-color="#111111"/>
+                </linearGradient>
+            </defs>
+            <rect width="120" height="120" rx="60" fill="url(#g)"/>
+            <text x="60" y="70" text-anchor="middle" font-size="40" fill="#ffbaba" font-family="Arial">C9</text>
+        </svg>
+    `);
+}
+
+function renderMembers(){
+    const grid = document.getElementById('memberGrid');
+    const summary = document.getElementById('memberSummary');
+    const keyword = (document.getElementById('memberSearch')?.value || '').trim().toLowerCase();
+
+    let list = CNINE_MEMBERS.filter(m => {
+        const partOk = currentMemberFilter === '전체' || m.part === currentMemberFilter;
+        const text = `${m.name || ''} ${m.match || ''} ${m.soop_id || ''}`.toLowerCase();
+        const searchOk = !keyword || text.includes(keyword);
+        return partOk && searchOk;
+    });
+
+    const total = CNINE_MEMBERS.length;
+    const star = CNINE_MEMBERS.filter(m => m.part === '스타부').length;
+    const excel = CNINE_MEMBERS.filter(m => m.part === '엑셀부').length;
+
+    summary.textContent = `전체 ${total}명 · 스타부 ${star}명 · 엑셀부 ${excel}명 · 현재 표시 ${list.length}명`;
+
+    grid.innerHTML = list.map(m => {
+        const soop = m.soop_url || (m.soop_id ? `https://www.sooplive.com/station/${m.soop_id}` : '');
+        const youtube = m.youtube_url || '';
+        return `
+            <div class="member real" data-part="${escapeHtml(m.part)}" data-soop-id="${escapeHtml(m.soop_id || '')}">
+                <div class="liveBadge">OFF</div>
+                <img class="avatarImg" src="${escapeHtml(m.profile_img)}" onerror="memberImageFallback(this)" alt="${escapeHtml(m.name)}">
+                <div class="partBadge">${escapeHtml(m.part)}</div>
+                <div class="nick">${escapeHtml(m.name)}</div>
+                <div class="soopId">@${escapeHtml(m.soop_id || '-')}</div>
+                <a class="linkBtn ${soop ? '' : 'disabled'}" href="${escapeHtml(soop)}" target="_blank" rel="noopener">SOOP</a>
+                <a class="linkBtn ${youtube ? '' : 'disabled'}" href="${escapeHtml(youtube)}" target="_blank" rel="noopener">YOUTUBE</a>
+            </div>
+        `;
+    }).join('');
+
+    const mainTotal = document.getElementById('mainTotalMembers');
+    if(mainTotal) mainTotal.textContent = `${total}명`;
+
+    const mainLive = document.getElementById('mainLiveMembers');
+    if(mainLive) mainLive.textContent = 'LIVE 연동 대기';
+}
+
+
+async function loadLiveStatus(){
+    try{
+        const res = await fetch('live_status.json?v=' + Date.now(), {cache:'no-store'});
+        if(!res.ok) throw new Error('live_status.json fetch failed');
+        const data = await res.json();
+        const liveMap = data.members || {};
+
+        document.querySelectorAll('.member.real').forEach(card=>{
+            const id = card.getAttribute('data-soop-id') || '';
+            const badge = card.querySelector('.liveBadge');
+            const info = liveMap[id];
+
+            if(info && info.is_live){
+                badge.textContent = 'LIVE';
+                badge.classList.add('on');
+            }else{
+                badge.textContent = 'OFF';
+                badge.classList.remove('on');
+            }
+        });
+
+        const mainLive = document.getElementById('mainLiveMembers');
+        if(mainLive) mainLive.textContent = (data.live_count || 0) + '명';
+
+    }catch(e){
+        console.log('LIVE 상태 로딩 실패', e);
+        const mainLive = document.getElementById('mainLiveMembers');
+        if(mainLive) mainLive.textContent = '연동 실패';
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', ()=>{ renderMembers(); setTimeout(loadLiveStatus, 300); });
+</script>
+
 </body>
 </html>
