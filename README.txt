@@ -1,43 +1,31 @@
-C9 대시보드 LIVE 자동화 v2
+C9 LIVE 상태 수집기 v3 - bjapi 방식
 
-포함 파일:
-1. index.html
-   - 멤버 현황판 + LIVE/OFF 표시 연동 완료
-   - live_status.json을 60초마다 다시 읽음
+이전 문제:
+- SOOP 일반 페이지 HTML에는 방송중 정보가 없어서 전원 OFF 처리됨.
 
-2. cnine_members.json
-   - 씨나인 멤버 39명
-   - soop_id / soop_url / profile_img 포함
+이번 해결:
+- https://bjapi.afreecatv.com/api/{soop_id}/station
+  API를 직접 조회해서 station.broad 정보를 기준으로 LIVE 판정.
 
-3. live_status.json
-   - 초기값. 전원 OFF 상태
-   - update_live_status.py 실행하면 최신 상태로 갱신
+사용법:
+1. 기존 대시보드 폴더에 이 파일들을 넣는다.
+   - update_live_status.py
+   - run_update_live_status.bat
 
-4. update_live_status.py
-   - SOOP 페이지를 확인해서 live_status.json 생성
+2. 같은 폴더에 cnine_members.json이 있어야 함.
 
-5. run_update_live_status.bat
-   - LIVE 상태 수집 원클릭 실행
+3. run_update_live_status.bat 실행.
 
-사용 순서:
-1. 이 압축을 풀어서 GitHub 저장소 최상단에 넣기
-   예:
-   poong-rank/
-    ├ index.html
-    ├ cnine_members.json
-    ├ live_status.json
-    ├ update_live_status.py
-    └ run_update_live_status.bat
+4. 생성/갱신되는 파일:
+   - live_status.json
+   - live_status_debug.txt
 
-2. GitHub Desktop에서 Commit + Push
-3. 사이트 확인:
-   https://keyman1335-maker.github.io/poong-rank/?v=live1
+5. live_status.json을 GitHub에 Commit + Push.
 
-4. LIVE 갱신:
-   run_update_live_status.bat 실행
-   live_status.json 바뀜
-   GitHub Desktop에서 live_status.json Commit + Push
+확인:
+- live_status_debug.txt에서 [LIVE]가 잡히는지 확인.
+- 홈페이지는 live_status.json을 읽어서 LIVE/OFF를 표시함.
 
 주의:
-- 현재는 GitHub Pages 정적 사이트라 live_status.json도 갱신해서 Push해야 사이트에 반영됨.
-- 완전 원클릭은 다음 단계에서 git push까지 bat에 묶으면 됨.
+- GitHub Pages는 정적 사이트라 live_status.json을 Push해야 반영됨.
+- 다음 단계에서 git add/commit/push까지 BAT에 묶으면 원클릭 가능.

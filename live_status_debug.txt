@@ -1,42 +1,43 @@
-UPDATED_AT=2026-05-27 20:37:54
+UPDATED_AT=2026-05-27 20:46:56
 TOTAL=39
+METHOD=bjapi_station
 
-[OFF] [스타부] 이영호 / byflash / no_pattern / https://www.sooplive.com/station/byflash
-[OFF] [스타부] 윤용태 / dbsdydx / no_pattern / https://www.sooplive.com/station/dbsdydx
-[OFF] [스타부] 오리꿍 / imducko3o / no_pattern / https://www.sooplive.com/station/imducko3o
-[OFF] [스타부] 지우리 / jiwooris2 / no_pattern / https://www.sooplive.com/station/jiwooris2
-[OFF] [스타부] 왜냐맨장민철 / jmc06170 / no_pattern / https://www.sooplive.com/station/jmc06170
-[OFF] [스타부] 강구열 / kuyol / no_pattern / https://www.sooplive.com/station/kuyol
-[OFF] [스타부] 남수댕 / mew030709 / no_pattern / https://www.sooplive.com/station/mew030709
-[OFF] [스타부] 모리 / moguleave / no_pattern / https://www.sooplive.com/station/moguleave
-[OFF] [스타부] 디임 / qpqpro / no_pattern / https://www.sooplive.com/station/qpqpro
-[OFF] [스타부] 효짱 / queen030 / no_pattern / https://www.sooplive.com/station/queen030
-[OFF] [스타부] 란란 / rhf104 / no_pattern / https://www.sooplive.com/station/rhf104
-[OFF] [스타부] 김택용 / rlaxordyd / no_pattern / https://www.sooplive.com/station/rlaxordyd
-[OFF] [스타부] 박재혁 / rlekfu6 / no_pattern / https://www.sooplive.com/station/rlekfu6
-[OFF] [스타부] 유승곤 / scan1014 / no_pattern / https://www.sooplive.com/station/scan1014
-[OFF] [스타부] 요닝 / tjgpdus97 / no_pattern / https://www.sooplive.com/station/tjgpdus97
-[OFF] [스타부] 나무늘봉순 / yjk011599 / no_pattern / https://www.sooplive.com/station/yjk011599
-[OFF] [스타부] 졈니 / yochba0402 / no_pattern / https://www.sooplive.com/station/yochba0402
-[OFF] [엑셀부] 이다니 / 0929kelly / no_pattern / https://www.sooplive.com/station/0929kelly
-[OFF] [엑셀부] 쁠리 / alwl1047 / no_pattern / https://www.sooplive.com/station/alwl1047
-[OFF] [엑셀부] 아윤 / ayoona / no_pattern / https://www.sooplive.com/station/ayoona
-[OFF] [엑셀부] 초초 / chocho12 / no_pattern / https://www.sooplive.com/station/chocho12
-[OFF] [엑셀부] 설윤이 / dain9804 / no_pattern / https://www.sooplive.com/station/dain9804
-[OFF] [엑셀부] 주성 / ddaggida3 / no_pattern / https://www.sooplive.com/station/ddaggida3
-[OFF] [엑셀부] 초린 / dhtnqls1238 / no_pattern / https://www.sooplive.com/station/dhtnqls1238
-[OFF] [엑셀부] 인지연 / dlswldus107 / no_pattern / https://www.sooplive.com/station/dlswldus107
-[OFF] [엑셀부] 혜루찡 / epsthddus / no_pattern / https://www.sooplive.com/station/epsthddus
-[OFF] [엑셀부] 송채연 / jfiary0718 / no_pattern / https://www.sooplive.com/station/jfiary0718
-[OFF] [엑셀부] 김윤중 / jk890202 / no_pattern / https://www.sooplive.com/station/jk890202
-[OFF] [엑셀부] 하이희야 / jkmjkm1236 / no_pattern / https://www.sooplive.com/station/jkmjkm1236
-[OFF] [엑셀부] 여을 / kaja0011 / no_pattern / https://www.sooplive.com/station/kaja0011
-[OFF] [엑셀부] 멘토세끼 / kimkc3117 / no_pattern / https://www.sooplive.com/station/kimkc3117
-[OFF] [엑셀부] 리하 / ksdd7856 / no_pattern / https://www.sooplive.com/station/ksdd7856
-[OFF] [엑셀부] 채리 / lcy011027 / no_pattern / https://www.sooplive.com/station/lcy011027
-[OFF] [엑셀부] 체온 / leeso0403 / no_pattern / https://www.sooplive.com/station/leeso0403
-[OFF] [엑셀부] 히나 / luaa0803 / no_pattern / https://www.sooplive.com/station/luaa0803
-[OFF] [엑셀부] 연두 / myby1221 / no_pattern / https://www.sooplive.com/station/myby1221
-[OFF] [엑셀부] 빵훈이 / vlfvlf789 / no_pattern / https://www.sooplive.com/station/vlfvlf789
-[OFF] [엑셀부] 철구 / y1026 / no_pattern / https://www.sooplive.com/station/y1026
-[OFF] [엑셀부] 애순이 / yunyeson3015 / no_pattern / https://www.sooplive.com/station/yunyeson3015
+[OFF] [스타부] 이영호 / byflash / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/byflash/station
+[LIVE] [스타부] 윤용태 / dbsdydx / viewers=0 / title=[씨나인] 스타 윤용태  긴급점검 볼게연 / reason=broad_object_found / https://bjapi.afreecatv.com/api/dbsdydx/station
+[LIVE] [스타부] 오리꿍 / imducko3o / viewers=0 / title=[씨나인★] 기습점검 감미닷!! 출동 (1440P ) / reason=broad_object_found / https://bjapi.afreecatv.com/api/imducko3o/station
+[LIVE] [스타부] 지우리 / jiwooris2 / viewers=0 / title=[씨나인] 기습정검 합니다 🐰 / reason=broad_object_found / https://bjapi.afreecatv.com/api/jiwooris2/station
+[LIVE] [스타부] 왜냐맨장민철 / jmc06170 / viewers=0 / title=[씨나인] 왜냐맨  7시 이스코어 잭드컵 우승 정조준 / reason=broad_object_found / https://bjapi.afreecatv.com/api/jmc06170/station
+[LIVE] [스타부] 강구열 / kuyol / viewers=0 / title=[씨나인] 실력점검 CK / reason=broad_object_found / https://bjapi.afreecatv.com/api/kuyol/station
+[OFF] [스타부] 남수댕 / mew030709 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/mew030709/station
+[OFF] [스타부] 모리 / moguleave / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/moguleave/station
+[LIVE] [스타부] 디임 / qpqpro / viewers=0 / title=씨나인💖] 디임 래더 ㅎㅅㅎ / reason=broad_object_found / https://bjapi.afreecatv.com/api/qpqpro/station
+[LIVE] [스타부] 효짱 / queen030 / viewers=0 / title=[씨나인⭐] 안냐세용 / reason=broad_object_found / https://bjapi.afreecatv.com/api/queen030/station
+[LIVE] [스타부] 란란 / rhf104 / viewers=0 / title=씨나인]안농하세여 수타부 중간ㅇ점검 / reason=broad_object_found / https://bjapi.afreecatv.com/api/rhf104/station
+[OFF] [스타부] 김택용 / rlaxordyd / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/rlaxordyd/station
+[OFF] [스타부] 박재혁 / rlekfu6 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/rlekfu6/station
+[OFF] [스타부] 유승곤 / scan1014 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/scan1014/station
+[LIVE] [스타부] 요닝 / tjgpdus97 / viewers=0 / title=[씨나인⭐]요닝 긴급점검 ㄷㄷ / reason=broad_object_found / https://bjapi.afreecatv.com/api/tjgpdus97/station
+[LIVE] [스타부] 나무늘봉순 / yjk011599 / viewers=0 / title=씨나인💖🏆망수니 스타부점검 승률50퍼이하시 올징용 / reason=broad_object_found / https://bjapi.afreecatv.com/api/yjk011599/station
+[LIVE] [스타부] 졈니 / yochba0402 / viewers=0 / title=[씨나인★] 실력점검갑니다.. 5할 안나올 시 ALL징용?/????? / reason=broad_object_found / https://bjapi.afreecatv.com/api/yochba0402/station
+[OFF] [엑셀부] 이다니 / 0929kelly / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/0929kelly/station
+[OFF] [엑셀부] 쁠리 / alwl1047 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/alwl1047/station
+[OFF] [엑셀부] 아윤 / ayoona / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/ayoona/station
+[OFF] [엑셀부] 초초 / chocho12 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/chocho12/station
+[LIVE] [엑셀부] 설윤이 / dain9804 / viewers=0 / title=[씨나인:신입] 시그단전원냠냠권이벤뚜 / reason=broad_object_found / https://bjapi.afreecatv.com/api/dain9804/station
+[OFF] [엑셀부] 주성 / ddaggida3 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/ddaggida3/station
+[LIVE] [엑셀부] 초린 / dhtnqls1238 / viewers=0 / title=[씨나인 : 버러지] 공주팀 저금이 15만개까지 13만개 남아뚬 오늘 잠방까지 ㄱㄱ / reason=broad_object_found / https://bjapi.afreecatv.com/api/dhtnqls1238/station
+[LIVE] [엑셀부] 인지연 / dlswldus107 / viewers=0 / title=[씨나인:귀족] 들어오세요 / reason=broad_object_found / https://bjapi.afreecatv.com/api/dlswldus107/station
+[OFF] [엑셀부] 혜루찡 / epsthddus / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/epsthddus/station
+[LIVE] [엑셀부] 송채연 / jfiary0718 / viewers=0 / title=[씨나인:신입] 오늘 청순좌 / reason=broad_object_found / https://bjapi.afreecatv.com/api/jfiary0718/station
+[OFF] [엑셀부] 김윤중 / jk890202 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/jk890202/station
+[OFF] [엑셀부] 하이희야 / jkmjkm1236 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/jkmjkm1236/station
+[OFF] [엑셀부] 여을 / kaja0011 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/kaja0011/station
+[LIVE] [엑셀부] 멘토세끼 / kimkc3117 / viewers=0 / title=[씨나인:셰프] 집 나간 갠방 시청자를 찾습니다. / reason=broad_object_found / https://bjapi.afreecatv.com/api/kimkc3117/station
+[LIVE] [엑셀부] 리하 / ksdd7856 / viewers=0 / title=[씨나인:개돼지] 리하의 손을 잡아주세요.. / reason=broad_object_found / https://bjapi.afreecatv.com/api/ksdd7856/station
+[OFF] [엑셀부] 채리 / lcy011027 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/lcy011027/station
+[LIVE] [엑셀부] 체온 / leeso0403 / viewers=0 / title=[씨나인:공주] 오늘의 목표 함께 / reason=broad_object_found / https://bjapi.afreecatv.com/api/leeso0403/station
+[OFF] [엑셀부] 히나 / luaa0803 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/luaa0803/station
+[LIVE] [엑셀부] 연두 / myby1221 / viewers=0 / title=[씨나인:신입] 메모장 다 채우면 3만개 묻 미션 시그단 2콩 5명 이벤트 !!! / reason=broad_object_found / https://bjapi.afreecatv.com/api/myby1221/station
+[LIVE] [엑셀부] 빵훈이 / vlfvlf789 / viewers=0 / title=[씨나인] 고래시티 철구 얼마 안남음... / reason=broad_object_found / https://bjapi.afreecatv.com/api/vlfvlf789/station
+[LIVE] [엑셀부] 철구 / y1026 / viewers=0 / title=철구 몰입합니다 기습점검갑니다 5할안나오면 다징용 1:1 란란vs유이 / reason=broad_object_found / https://bjapi.afreecatv.com/api/y1026/station
+[LIVE] [엑셀부] 애순이 / yunyeson3015 / viewers=0 / title=[씨나인 : 시녀2] 애겐단 나좀 도와주세요 ,.,, / reason=broad_object_found / https://bjapi.afreecatv.com/api/yunyeson3015/station

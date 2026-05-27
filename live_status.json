@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-27 20:37:54",
+  "updated_at": "2026-05-27 20:46:56",
   "total": 39,
-  "live_count": 0,
+  "live_count": 22,
   "members": {
     "byflash": {
       "name": "이영호",
@@ -10,58 +10,76 @@
       "soop_url": "https://www.sooplive.com/station/byflash",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/byflash"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/byflash/station"
     },
     "dbsdydx": {
       "name": "윤용태",
       "part": "스타부",
       "soop_id": "dbsdydx",
       "soop_url": "https://www.sooplive.com/station/dbsdydx",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/dbsdydx"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294339731",
+      "title": "[씨나인] 스타 윤용태  긴급점검 볼게연",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/dbsdydx/station"
     },
     "imducko3o": {
       "name": "오리꿍",
       "part": "스타부",
       "soop_id": "imducko3o",
       "soop_url": "https://www.sooplive.com/station/imducko3o",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/imducko3o"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294340545",
+      "title": "[씨나인★] 기습점검 감미닷!! 출동 (1440P )",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
     "jiwooris2": {
       "name": "지우리",
       "part": "스타부",
       "soop_id": "jiwooris2",
       "soop_url": "https://www.sooplive.com/station/jiwooris2",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/jiwooris2"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294335085",
+      "title": "[씨나인] 기습정검 합니다 🐰",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/jiwooris2/station"
     },
     "jmc06170": {
       "name": "왜냐맨장민철",
       "part": "스타부",
       "soop_id": "jmc06170",
       "soop_url": "https://www.sooplive.com/station/jmc06170",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/jmc06170"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294338853",
+      "title": "[씨나인] 왜냐맨  7시 이스코어 잭드컵 우승 정조준",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/jmc06170/station"
     },
     "kuyol": {
       "name": "강구열",
       "part": "스타부",
       "soop_id": "kuyol",
       "soop_url": "https://www.sooplive.com/station/kuyol",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/kuyol"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294341509",
+      "title": "[씨나인] 실력점검 CK",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/kuyol/station"
     },
     "mew030709": {
       "name": "남수댕",
@@ -70,8 +88,11 @@
       "soop_url": "https://www.sooplive.com/station/mew030709",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/mew030709"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/mew030709/station"
     },
     "moguleave": {
       "name": "모리",
@@ -80,38 +101,50 @@
       "soop_url": "https://www.sooplive.com/station/moguleave",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/moguleave"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/moguleave/station"
     },
     "qpqpro": {
       "name": "디임",
       "part": "스타부",
       "soop_id": "qpqpro",
       "soop_url": "https://www.sooplive.com/station/qpqpro",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/qpqpro"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294339813",
+      "title": "씨나인💖] 디임 래더 ㅎㅅㅎ",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/qpqpro/station"
     },
     "queen030": {
       "name": "효짱",
       "part": "스타부",
       "soop_id": "queen030",
       "soop_url": "https://www.sooplive.com/station/queen030",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/queen030"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294340583",
+      "title": "[씨나인⭐] 안냐세용",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
     "rhf104": {
       "name": "란란",
       "part": "스타부",
       "soop_id": "rhf104",
       "soop_url": "https://www.sooplive.com/station/rhf104",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/rhf104"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294340759",
+      "title": "씨나인]안농하세여 수타부 중간ㅇ점검",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
     "rlaxordyd": {
       "name": "김택용",
@@ -120,8 +153,11 @@
       "soop_url": "https://www.sooplive.com/station/rlaxordyd",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/rlaxordyd"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/rlaxordyd/station"
     },
     "rlekfu6": {
       "name": "박재혁",
@@ -130,8 +166,11 @@
       "soop_url": "https://www.sooplive.com/station/rlekfu6",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/rlekfu6"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/rlekfu6/station"
     },
     "scan1014": {
       "name": "유승곤",
@@ -140,38 +179,50 @@
       "soop_url": "https://www.sooplive.com/station/scan1014",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/scan1014"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/scan1014/station"
     },
     "tjgpdus97": {
       "name": "요닝",
       "part": "스타부",
       "soop_id": "tjgpdus97",
       "soop_url": "https://www.sooplive.com/station/tjgpdus97",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/tjgpdus97"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294338723",
+      "title": "[씨나인⭐]요닝 긴급점검 ㄷㄷ",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/tjgpdus97/station"
     },
     "yjk011599": {
       "name": "나무늘봉순",
       "part": "스타부",
       "soop_id": "yjk011599",
       "soop_url": "https://www.sooplive.com/station/yjk011599",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/yjk011599"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294340829",
+      "title": "씨나인💖🏆망수니 스타부점검 승률50퍼이하시 올징용",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/yjk011599/station"
     },
     "yochba0402": {
       "name": "졈니",
       "part": "스타부",
       "soop_id": "yochba0402",
       "soop_url": "https://www.sooplive.com/station/yochba0402",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/yochba0402"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294339971",
+      "title": "[씨나인★] 실력점검갑니다.. 5할 안나올 시 ALL징용?/?????",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/yochba0402/station"
     },
     "0929kelly": {
       "name": "이다니",
@@ -180,8 +231,11 @@
       "soop_url": "https://www.sooplive.com/station/0929kelly",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/0929kelly"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
     "alwl1047": {
       "name": "쁠리",
@@ -190,8 +244,11 @@
       "soop_url": "https://www.sooplive.com/station/alwl1047",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/alwl1047"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/alwl1047/station"
     },
     "ayoona": {
       "name": "아윤",
@@ -200,8 +257,11 @@
       "soop_url": "https://www.sooplive.com/station/ayoona",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/ayoona"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/ayoona/station"
     },
     "chocho12": {
       "name": "초초",
@@ -210,18 +270,24 @@
       "soop_url": "https://www.sooplive.com/station/chocho12",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/chocho12"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
     "dain9804": {
       "name": "설윤이",
       "part": "엑셀부",
       "soop_id": "dain9804",
       "soop_url": "https://www.sooplive.com/station/dain9804",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/dain9804"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294335033",
+      "title": "[씨나인:신입] 시그단전원냠냠권이벤뚜",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/dain9804/station"
     },
     "ddaggida3": {
       "name": "주성",
@@ -230,28 +296,37 @@
       "soop_url": "https://www.sooplive.com/station/ddaggida3",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/ddaggida3"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/ddaggida3/station"
     },
     "dhtnqls1238": {
       "name": "초린",
       "part": "엑셀부",
       "soop_id": "dhtnqls1238",
       "soop_url": "https://www.sooplive.com/station/dhtnqls1238",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/dhtnqls1238"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294338339",
+      "title": "[씨나인 : 버러지] 공주팀 저금이 15만개까지 13만개 남아뚬 오늘 잠방까지 ㄱㄱ",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/dhtnqls1238/station"
     },
     "dlswldus107": {
       "name": "인지연",
       "part": "엑셀부",
       "soop_id": "dlswldus107",
       "soop_url": "https://www.sooplive.com/station/dlswldus107",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/dlswldus107"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294344203",
+      "title": "[씨나인:귀족] 들어오세요",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/dlswldus107/station"
     },
     "epsthddus": {
       "name": "혜루찡",
@@ -260,18 +335,24 @@
       "soop_url": "https://www.sooplive.com/station/epsthddus",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/epsthddus"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/epsthddus/station"
     },
     "jfiary0718": {
       "name": "송채연",
       "part": "엑셀부",
       "soop_id": "jfiary0718",
       "soop_url": "https://www.sooplive.com/station/jfiary0718",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/jfiary0718"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294343953",
+      "title": "[씨나인:신입] 오늘 청순좌",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/jfiary0718/station"
     },
     "jk890202": {
       "name": "김윤중",
@@ -280,8 +361,11 @@
       "soop_url": "https://www.sooplive.com/station/jk890202",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/jk890202"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/jk890202/station"
     },
     "jkmjkm1236": {
       "name": "하이희야",
@@ -290,8 +374,11 @@
       "soop_url": "https://www.sooplive.com/station/jkmjkm1236",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/jkmjkm1236"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/jkmjkm1236/station"
     },
     "kaja0011": {
       "name": "여을",
@@ -300,28 +387,37 @@
       "soop_url": "https://www.sooplive.com/station/kaja0011",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/kaja0011"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/kaja0011/station"
     },
     "kimkc3117": {
       "name": "멘토세끼",
       "part": "엑셀부",
       "soop_id": "kimkc3117",
       "soop_url": "https://www.sooplive.com/station/kimkc3117",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/kimkc3117"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294345435",
+      "title": "[씨나인:셰프] 집 나간 갠방 시청자를 찾습니다.",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/kimkc3117/station"
     },
     "ksdd7856": {
       "name": "리하",
       "part": "엑셀부",
       "soop_id": "ksdd7856",
       "soop_url": "https://www.sooplive.com/station/ksdd7856",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/ksdd7856"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294336745",
+      "title": "[씨나인:개돼지] 리하의 손을 잡아주세요..",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/ksdd7856/station"
     },
     "lcy011027": {
       "name": "채리",
@@ -330,18 +426,24 @@
       "soop_url": "https://www.sooplive.com/station/lcy011027",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/lcy011027"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/lcy011027/station"
     },
     "leeso0403": {
       "name": "체온",
       "part": "엑셀부",
       "soop_id": "leeso0403",
       "soop_url": "https://www.sooplive.com/station/leeso0403",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/leeso0403"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294344377",
+      "title": "[씨나인:공주] 오늘의 목표 함께",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/leeso0403/station"
     },
     "luaa0803": {
       "name": "히나",
@@ -350,48 +452,63 @@
       "soop_url": "https://www.sooplive.com/station/luaa0803",
       "is_live": false,
       "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/luaa0803"
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/luaa0803/station"
     },
     "myby1221": {
       "name": "연두",
       "part": "엑셀부",
       "soop_id": "myby1221",
       "soop_url": "https://www.sooplive.com/station/myby1221",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/myby1221"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294338911",
+      "title": "[씨나인:신입] 메모장 다 채우면 3만개 묻 미션 시그단 2콩 5명 이벤트 !!!",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
     },
     "vlfvlf789": {
       "name": "빵훈이",
       "part": "엑셀부",
       "soop_id": "vlfvlf789",
       "soop_url": "https://www.sooplive.com/station/vlfvlf789",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/vlfvlf789"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294344319",
+      "title": "[씨나인] 고래시티 철구 얼마 안남음...",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/vlfvlf789/station"
     },
     "y1026": {
       "name": "철구",
       "part": "엑셀부",
       "soop_id": "y1026",
       "soop_url": "https://www.sooplive.com/station/y1026",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/y1026"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294335665",
+      "title": "철구 몰입합니다 기습점검갑니다 5할안나오면 다징용 1:1 란란vs유이",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
     "yunyeson3015": {
       "name": "애순이",
       "part": "엑셀부",
       "soop_id": "yunyeson3015",
       "soop_url": "https://www.sooplive.com/station/yunyeson3015",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_pattern",
-      "checked_url": "https://www.sooplive.com/station/yunyeson3015"
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294341965",
+      "title": "[씨나인 : 시녀2] 애겐단 나좀 도와주세요 ,.,,",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     }
   }
 }

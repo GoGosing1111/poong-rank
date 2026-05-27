@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-C9 LIVE 상태 수집기 v2
+C9 LIVE 상태 수집기 v3 - bjapi 방식
 
-사용:
-python update_live_status.py
+핵심:
+- 크롬/셀레니움 사용 안 함
+- https://bjapi.afreecatv.com/api/{soop_id}/station 직접 조회
+- station.broad 항목을 기준으로 LIVE 판정
+- live_status.json 생성
 
 입력:
 - cnine_members.json
@@ -12,13 +15,11 @@ python update_live_status.py
 - live_status.json
 - live_status_debug.txt
 
-주의:
-SOOP 공개 페이지/응답 구조에 따라 LIVE 탐지가 조정될 수 있음.
-처음 돌린 뒤 live_status_debug.txt를 보면 어떤 기준으로 LIVE/OFF 처리됐는지 확인 가능.
+실행:
+python update_live_status.py
 """
 
 import json
-import re
 import time
 import urllib.request
 from pathlib import Path
@@ -30,84 +31,160 @@ DEBUG_LOG = "live_status_debug.txt"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36",
-    "Accept": "text/html,application/json,text/plain,*/*",
+    "Accept": "application/json,text/plain,*/*",
     "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+    "Referer": "https://www.sooplive.com/",
 }
-
-def fetch(url, timeout=10):
-    req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=timeout) as res:
-        raw = res.read()
-        return raw.decode("utf-8", errors="ignore")
 
 def safe(value):
     return str(value or "").strip()
 
-def extract_id(url):
-    return safe(url).rstrip("/").split("/")[-1] if url else ""
+def extract_soop_id(url):
+    if not url:
+        return ""
+    return safe(url).rstrip("/").split("/")[-1]
 
-def detect_live(text):
-    if not text:
-        return False, "empty"
+def fetch_json(url, timeout=10):
+    req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=timeout) as res:
+        raw = res.read()
+        text = raw.decode("utf-8", errors="ignore")
+        return json.loads(text)
 
-    offline_patterns = [
-        r'"is_live"\s*:\s*false',
-        r'"isLive"\s*:\s*false',
-        r'"live"\s*:\s*false',
-        r'"isBroad"\s*:\s*false',
-        r'오프라인',
-        r'방송\s*종료',
-        r'방송\s*준비',
-    ]
+def get_nested(obj, *keys, default=None):
+    cur = obj
+    for k in keys:
+        if not isinstance(cur, dict):
+            return default
+        cur = cur.get(k)
+    return cur if cur is not None else default
 
-    live_patterns = [
-        r'"is_live"\s*:\s*true',
-        r'"isLive"\s*:\s*true',
-        r'"live"\s*:\s*true',
-        r'"isBroad"\s*:\s*true',
-        r'"broad_status"\s*:\s*"on"',
-        r'"broadcast_status"\s*:\s*"on"',
-        r'"status"\s*:\s*"live"',
-        r'방송중',
-        r'\bLIVE\b',
-    ]
+def detect_live_from_station(data):
+    """
+    bjapi station 응답에서 LIVE 판정.
 
-    for p in offline_patterns:
-        if re.search(p, text, re.I):
-            return False, "offline:" + p
+    방송중일 때 보통 station.broad 또는 broad 정보에:
+    - broad_no
+    - broad_title
+    - current_view_cnt / total_view_cnt / view_cnt
+    등이 존재함.
+    """
+    station = data.get("station") if isinstance(data, dict) else {}
+    broad = station.get("broad") if isinstance(station, dict) else None
 
-    for p in live_patterns:
-        if re.search(p, text, re.I):
-            return True, "live:" + p
+    if not isinstance(broad, dict):
+        # 응답 최상위에 broad가 있는 경우도 대비
+        broad = data.get("broad") if isinstance(data, dict) else None
 
-    return False, "no_pattern"
+    if not isinstance(broad, dict):
+        return False, {
+            "reason": "no_broad_object",
+            "broad_no": "",
+            "title": "",
+            "viewers": 0,
+        }
 
-def check_member(m):
-    soop_id = safe(m.get("soop_id")) or extract_id(m.get("soop_url"))
-    urls = [
-        f"https://www.sooplive.com/station/{soop_id}",
-        f"https://ch.sooplive.co.kr/{soop_id}",
-    ]
+    broad_no = safe(
+        broad.get("broad_no")
+        or broad.get("broadNo")
+        or broad.get("broad_no_hash")
+        or broad.get("id")
+    )
 
-    last_err = ""
+    title = safe(
+        broad.get("broad_title")
+        or broad.get("title")
+        or broad.get("subject")
+    )
 
-    for url in urls:
-        try:
-            text = fetch(url)
-            is_live, reason = detect_live(text)
-            return is_live, reason, url
-        except Exception as e:
-            last_err = str(e)
+    viewers_raw = (
+        broad.get("current_view_cnt")
+        or broad.get("current_viewer")
+        or broad.get("view_cnt")
+        or broad.get("viewer_cnt")
+        or broad.get("total_view_cnt")
+        or 0
+    )
 
-    return False, "fetch_failed:" + last_err, urls[0] if urls else ""
+    try:
+        viewers = int(str(viewers_raw).replace(",", ""))
+    except Exception:
+        viewers = 0
+
+    # broad 객체가 있고 broad_no 또는 제목이 있으면 LIVE로 판단
+    is_live = bool(broad_no or title)
+
+    return is_live, {
+        "reason": "broad_object_found" if is_live else "broad_object_empty",
+        "broad_no": broad_no,
+        "title": title,
+        "viewers": viewers,
+    }
+
+def check_member(member):
+    name = safe(member.get("name"))
+    part = safe(member.get("part"))
+    soop_id = safe(member.get("soop_id")) or extract_soop_id(member.get("soop_url"))
+    soop_url = safe(member.get("soop_url")) or f"https://www.sooplive.com/station/{soop_id}"
+
+    if not soop_id:
+        return {
+            "name": name,
+            "part": part,
+            "soop_id": "",
+            "soop_url": soop_url,
+            "is_live": False,
+            "status": "OFF",
+            "reason": "no_soop_id",
+            "broad_no": "",
+            "title": "",
+            "viewers": 0,
+            "checked_url": "",
+        }
+
+    api_url = f"https://bjapi.afreecatv.com/api/{soop_id}/station"
+
+    try:
+        data = fetch_json(api_url)
+        is_live, info = detect_live_from_station(data)
+        return {
+            "name": name,
+            "part": part,
+            "soop_id": soop_id,
+            "soop_url": soop_url,
+            "is_live": bool(is_live),
+            "status": "LIVE" if is_live else "OFF",
+            "reason": info.get("reason", ""),
+            "broad_no": info.get("broad_no", ""),
+            "title": info.get("title", ""),
+            "viewers": info.get("viewers", 0),
+            "checked_url": api_url,
+        }
+
+    except Exception as e:
+        return {
+            "name": name,
+            "part": part,
+            "soop_id": soop_id,
+            "soop_url": soop_url,
+            "is_live": False,
+            "status": "OFF",
+            "reason": f"fetch_failed:{e}",
+            "broad_no": "",
+            "title": "",
+            "viewers": 0,
+            "checked_url": api_url,
+        }
 
 def main():
-    path = Path(INPUT_MEMBERS)
-    if not path.exists():
-        print("[ERROR] cnine_members.json 없음")
+    members_path = Path(INPUT_MEMBERS)
+
+    if not members_path.exists():
+        print(f"[ERROR] {INPUT_MEMBERS} 파일이 없습니다.")
+        print("같은 폴더에 cnine_members.json을 넣고 다시 실행하세요.")
         return
 
-    members = json.loads(path.read_text(encoding="utf-8"))
+    members = json.loads(members_path.read_text(encoding="utf-8"))
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     result = {
@@ -117,33 +194,30 @@ def main():
         "members": {}
     }
 
-    logs = [f"UPDATED_AT={now}", f"TOTAL={len(members)}", ""]
+    logs = []
+    logs.append(f"UPDATED_AT={now}")
+    logs.append(f"TOTAL={len(members)}")
+    logs.append("METHOD=bjapi_station")
+    logs.append("")
 
-    for i, m in enumerate(members, 1):
-        name = safe(m.get("name"))
-        part = safe(m.get("part"))
-        soop_id = safe(m.get("soop_id")) or extract_id(m.get("soop_url"))
-        soop_url = safe(m.get("soop_url")) or f"https://www.sooplive.com/station/{soop_id}"
+    for idx, member in enumerate(members, 1):
+        info = check_member(member)
+        soop_id = info.get("soop_id") or info.get("name")
 
-        print(f"[{i}/{len(members)}] {part} / {name} / {soop_id}")
-
-        is_live, reason, checked_url = check_member(m)
-        if is_live:
+        if info["is_live"]:
             result["live_count"] += 1
 
-        result["members"][soop_id] = {
-            "name": name,
-            "part": part,
-            "soop_id": soop_id,
-            "soop_url": soop_url,
-            "is_live": is_live,
-            "status": "LIVE" if is_live else "OFF",
-            "reason": reason,
-            "checked_url": checked_url,
-        }
+        result["members"][soop_id] = info
 
-        logs.append(f"[{'LIVE' if is_live else 'OFF'}] [{part}] {name} / {soop_id} / {reason} / {checked_url}")
-        time.sleep(0.2)
+        print(f"[{idx}/{len(members)}] [{info['status']}] {info['part']} / {info['name']} / {soop_id}")
+
+        logs.append(
+            f"[{info['status']}] [{info['part']}] {info['name']} / {soop_id} "
+            f"/ viewers={info.get('viewers', 0)} / title={info.get('title', '')} "
+            f"/ reason={info.get('reason', '')} / {info.get('checked_url', '')}"
+        )
+
+        time.sleep(0.12)
 
     Path(OUTPUT_LIVE).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8")

@@ -1,7 +1,10 @@
 @echo off
 cd /d "%~dp0"
 
-echo C9_DASHBOARD_LIVE_UPDATE
+echo C9 LIVE STATUS UPDATE V3 - BJAPI
+echo.
+
+python --version
 echo.
 
 python update_live_status.py
