@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28 00:52:00",
+  "updated_at": "2026-05-28 00:58:01",
   "total": 14,
   "items": [
     {
@@ -31,7 +31,7 @@
       "createdAt": "2026-05-27T17:55:17",
       "updatedAt": "2026-05-27T18:16:52",
       "popularAt": "2026-05-27T18:16:52",
-      "viewCount": 296,
+      "viewCount": 297,
       "likeCount": 10,
       "commentCount": 0,
       "hasImage": false,
@@ -129,24 +129,6 @@
       "url": "https://www.cnine.kr/board/an/949091"
     },
     {
-      "id": "949672",
-      "source": "popular",
-      "board_slug": "an",
-      "board_name": "씨나인 숲 공지",
-      "title": "[초초 공지] 오늘 열혈식 와주신 분들 감사합니다 ❤️",
-      "author": "시스템",
-      "department": "엑셀",
-      "createdAt": "2026-05-27T02:51:37",
-      "updatedAt": "2026-05-27T11:52:47",
-      "popularAt": "2026-05-27T11:52:47",
-      "viewCount": 406,
-      "likeCount": 14,
-      "commentCount": 1,
-      "hasImage": true,
-      "thumbUrl": "https://stimg.sooplive.com/NORMAL_BBS/8/18585058/17526a15dbd244547.png",
-      "url": "https://www.cnine.kr/board/an/949672"
-    },
-    {
       "id": "949678",
       "source": "popular",
       "board_slug": "an",
@@ -163,6 +145,24 @@
       "hasImage": true,
       "thumbUrl": "https://stimg.sooplive.com/NORMAL_BBS/6/17627526/19766a15e70bcba0c.jpeg",
       "url": "https://www.cnine.kr/board/an/949678"
+    },
+    {
+      "id": "949672",
+      "source": "popular",
+      "board_slug": "an",
+      "board_name": "씨나인 숲 공지",
+      "title": "[초초 공지] 오늘 열혈식 와주신 분들 감사합니다 ❤️",
+      "author": "시스템",
+      "department": "엑셀",
+      "createdAt": "2026-05-27T02:51:37",
+      "updatedAt": "2026-05-27T11:52:47",
+      "popularAt": "2026-05-27T11:52:47",
+      "viewCount": 406,
+      "likeCount": 14,
+      "commentCount": 1,
+      "hasImage": true,
+      "thumbUrl": "https://stimg.sooplive.com/NORMAL_BBS/8/18585058/17526a15dbd244547.png",
+      "url": "https://www.cnine.kr/board/an/949672"
     },
     {
       "id": "949039",

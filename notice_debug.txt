@@ -1,11 +1,26 @@
-UPDATED_AT=2026-05-28 00:52:00
+UPDATED_AT=2026-05-28 00:56:56
 MODE=cnine_api
 
 TRY=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
-OK_URL=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
-FOUND_ITEMS=5
+FAIL=HTTPError: HTTP Error 401: 
+TRY=https://www.cnine.kr/api/main/all-page?page=1&size=20&order=latest
+FAIL=HTTPError: HTTP Error 401: 
+TRY=https://www.cnine.kr/api/main/all-page?page=1&size=20&order=createdAt,desc
+FAIL=HTTPError: HTTP Error 401: 
+TRY=https://www.cnine.kr/api/main/all-page?page=1&size=20
+FAIL=HTTPError: HTTP Error 401: 
+TRY=https://www.cnine.kr/api/boards/an/all-page?page=1&size=20&order=latest
+FAIL=HTTPError: HTTP Error 401: 
+TRY=https://www.cnine.kr/api/board/an/all-page?page=1&size=20&order=latest
+FAIL=HTTPError: HTTP Error 401: 
+TRY=https://www.cnine.kr/api/posts/all-page?page=1&size=20&board=an
+FAIL=HTTPError: HTTP Error 401: 
 
-DONE
-USED_URL=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
-LATEST_COUNT=5
-HISTORY_COUNT=14
+ERROR=공지 API 수집 실패
+LAST_ERROR=HTTPError: HTTP Error 401: 
+
+해결방법:
+1) 크롬 F12 > Network > Fetch/XHR > all-page 클릭
+2) Headers의 Request URL 전체를 복사
+3) cnine_notice_api.txt 파일에 1줄로 붙여넣기
+4) 다시 python update_cnine_notice.py 실행

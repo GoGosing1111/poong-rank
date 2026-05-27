@@ -1,6 +1,6 @@
 CNINE_UPDATE_ALL_START 
-CURRENT_FOLDER=C:\Users\User\Downloads\cnine_dashboard_cnine_notice_auto 
-DATE=2026-05-28  0:51:51.72 
+CURRENT_FOLDER=C:\Users\User\Downloads\upload\poong-rank 
+DATE=2026-05-28  0:56:47.42 
 LIVE_EXIT=0 
-NOTICE_EXIT=0 
-ALL_DONE 
+NOTICE_EXIT=1 
+ERROR_STOPPED 
