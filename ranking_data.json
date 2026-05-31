@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-06-01 06:21:20",
+  "updated_at": "2026-06-01 06:24:14",
   "source": "poong.today chart API direct v7",
+  "day1_today_equals_month": true,
   "used_month": "2026-06",
   "api_urls": {
     "month": "https://static.poong.today/chart/get?ctype=month&ks=false&year=2026&month=6&day=undefined",
