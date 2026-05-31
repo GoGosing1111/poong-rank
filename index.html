@@ -1646,6 +1646,7 @@ function renderMembers(){
         return bLive - aLive;
     });
 
+
     const total = CNINE_MEMBERS.length;
     const star = CNINE_MEMBERS.filter(m => m.part === '스타부').length;
     const excel = CNINE_MEMBERS.filter(m => m.part === '엑셀부').length;
@@ -1749,32 +1750,51 @@ function toggleNotice(id){
     item.classList.toggle('open');
 }
 
+
 function renderNoticeStatus(data){
     const listBox = document.getElementById('noticeList');
     const updated = document.getElementById('noticeUpdated');
     if(!listBox) return;
 
-    const items = (data.items || []).filter(x => x.board_slug === 'an').slice(0, 10);
+    // notice_status.json 구조가 items/notices/posts/data 어느 쪽이어도 읽게 처리
+    let raw = [];
+    if(Array.isArray(data)) raw = data;
+    else if(Array.isArray(data.items)) raw = data.items;
+    else if(Array.isArray(data.notices)) raw = data.notices;
+    else if(Array.isArray(data.posts)) raw = data.posts;
+    else if(data.data && Array.isArray(data.data.items)) raw = data.data.items;
+    else if(data.data && Array.isArray(data.data.content)) raw = data.data.content;
+    else if(data.data && Array.isArray(data.data)) raw = data.data;
+
+    // 기존 board_slug === 'an' 고정 필터 제거. 공지 수집기가 이미 CNINE 공지만 저장하므로 전체 표시.
+    const items = raw.slice(0, 10);
 
     if(updated){
-        updated.textContent = `공지 갱신: ${data.updated_at || '-'} · 씨나인 숲 공지 ${items.length}개`;
+        updated.textContent = `공지 갱신: ${data.updated_at || data.updatedAt || '-'} · 공지 ${items.length}개`;
+    }
+
+    const mainNotice = document.querySelector('#main .card:nth-child(3) .metric:first-child .value');
+    if(mainNotice && items.length){
+        mainNotice.textContent = items[0].title || items[0].subject || '-';
     }
 
     if(!items.length){
-        listBox.innerHTML = '<div class="noticeEmpty">표시할 씨나인 숲 공지가 없습니다.</div>';
+        listBox.innerHTML = '<div class="noticeEmpty">표시할 공지가 없습니다. notice_status.json 구조를 확인하세요.</div>';
         return;
     }
 
     listBox.innerHTML = items.map((n, i) => {
-        const id = escapeHtml(n.id || String(i));
-        const title = escapeHtml(n.title || '제목 없음');
-        const dept = escapeHtml(n.department || '공지');
-        const dt = escapeHtml(formatNoticeDate(n.popularAt || n.updatedAt || n.createdAt));
-        const views = Number(n.viewCount || 0).toLocaleString();
-        const thumb = n.thumbUrl ? `<img class="noticeThumb" src="${escapeHtml(n.thumbUrl)}" alt="">` : '';
-        const content = n.content
-            ? sanitizeNoticeHtml(n.content)
-            : '<p>본문 수집 대기 또는 원문에서 확인이 필요합니다.</p>';
+        const id = escapeHtml(n.id || n.postId || n.post_id || String(i));
+        const title = escapeHtml(n.title || n.subject || n.name || '제목 없음');
+        const dept = escapeHtml(n.department || n.boardName || n.board_slug || n.boardSlug || '공지');
+        const dt = escapeHtml(formatNoticeDate(n.popularAt || n.updatedAt || n.createdAt || n.created_at || n.date));
+        const views = Number(n.viewCount || n.view_count || n.views || 0).toLocaleString();
+        const thumbUrl = n.thumbUrl || n.thumbnail || n.thumbnailUrl || '';
+        const thumb = thumbUrl ? `<img class="noticeThumb" src="${escapeHtml(thumbUrl)}" alt="">` : '';
+        const body = n.content || n.body || n.html || n.description || n.summary || '';
+        const content = body ? sanitizeNoticeHtml(body) : '<p>본문 수집 대기 또는 원문에서 확인이 필요합니다.</p>';
+        const link = n.url || n.link || n.postUrl || '';
+        const openLink = link ? `<a class="noticeOpenLink" href="${escapeHtml(link)}" target="_blank" rel="noopener">원문 확인</a>` : '';
 
         return `
             <div class="noticeItem" id="noticeItem_${id}">
@@ -1788,11 +1808,13 @@ function renderNoticeStatus(data){
                 <div class="noticeBody">
                     ${thumb}
                     <div class="noticeContent">${content}</div>
+                    ${openLink}
                 </div>
             </div>
         `;
     }).join('');
 }
+
 
 async function loadNoticeStatus(){
     try{
@@ -1901,91 +1923,63 @@ document.addEventListener('DOMContentLoaded', loadRankData);
 
 
 <script>
-function safeScheduleText(v){
-    return String(v == null ? '' : v).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
-}
-function normalizeScheduleItems(data){
-    const raw = data?.items || data?.schedules || data?.schedule || data?.data || [];
-    if(Array.isArray(raw)) return raw;
-    if(raw && Array.isArray(raw.items)) return raw.items;
-    if(raw && Array.isArray(raw.content)) return raw.content;
-    return [];
-}
-function getScheduleDateText(s){
-    return s.display_date || s.date_text || s.datetime || s.start_at || s.startAt || s.startDate || s.date || s.time || '';
-}
-function getScheduleTitle(s){
-    return s.title || s.name || s.subject || s.content || s.description || '일정';
-}
-function isScheduleToday(s){
-    const txt = String(getScheduleDateText(s) || '');
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    const mm = String(today.getMonth()+1).padStart(2,'0');
-    const dd = String(today.getDate()).padStart(2,'0');
-    return txt.includes(`${yyyy}-${mm}-${dd}`) || txt.includes(`${yyyy}.${mm}.${dd}`) || txt.includes(`${mm}.${dd}`);
-}
+
 function renderScheduleStatus(data){
     const sec=document.getElementById('schedule');
     if(!sec || !data) return;
-    const all = normalizeScheduleItems(data);
-    const todayItems = all.filter(isScheduleToday);
-    const upcomingItems = all.filter(x => !isScheduleToday(x));
+
+    let items = [];
+    if(Array.isArray(data)) items = data;
+    else if(Array.isArray(data.items)) items = data.items;
+    else if(Array.isArray(data.schedules)) items = data.schedules;
+    else if(Array.isArray(data.events)) items = data.events;
+    else if(data.data && Array.isArray(data.data.items)) items = data.data.items;
+    else if(data.data && Array.isArray(data.data.content)) items = data.data.content;
+    else if(data.data && Array.isArray(data.data)) items = data.data;
 
     const countBox=sec.querySelector('.scheduleCount');
-    if(countBox) countBox.textContent = `오늘 ${todayItems.length}개 · 예정 ${upcomingItems.length}개`;
+    if(countBox) countBox.textContent='일정 '+items.length+'개';
 
     const metric=sec.querySelector('.metric .value');
-    if(metric) metric.textContent=data.updated_at || data.generated_at || '-';
+    if(metric) metric.textContent=data.updated_at || data.updatedAt || '-';
 
-    const titleSpans = sec.querySelectorAll('.scheduleTitle span');
-    if(titleSpans[0]) titleSpans[0].textContent = `오늘 진행 일정 · ${todayItems.length}개`;
-    if(titleSpans[1]) titleSpans[1].textContent = `다가오는 CNINE 콘텐츠 일정 · 예정 ${upcomingItems.length}개`;
-
-    const hi=sec.querySelector('.highlightGrid');
     const grid=sec.querySelector('.scheduleGrid');
-    if(hi) hi.innerHTML='';
+    const hi=sec.querySelector('.highlightGrid');
     if(grid) grid.innerHTML='';
+    if(hi) hi.innerHTML='';
 
-    if(hi){
-        if(todayItems.length){
-            hi.innerHTML = todayItems.map(s => `
-                <div class="scheduleCard">
-                    <div class="tag">TODAY</div>
-                    <p class="scheduleName">${safeScheduleText(getScheduleTitle(s))}</p>
-                    <div class="scheduleDate">${safeScheduleText(getScheduleDateText(s))}</div>
-                </div>`).join('');
-        }else{
-            hi.innerHTML = '<div class="noticeEmpty">오늘 진행 일정이 없습니다.</div>';
-        }
+    const todayItems = items.filter(s => String(s.dday || s.tag || '').includes('TODAY') || String(s.is_today || '').toLowerCase() === 'true').slice(0,2);
+    const todayRender = todayItems.length ? todayItems : items.slice(0,2);
+    const upcoming = items.slice(todayRender.length);
+
+    if(!items.length){
+        if(hi) hi.innerHTML = '<div class="noticeEmpty">표시할 일정이 없습니다.</div>';
+        const upTitle = sec.querySelector('.scheduleTitle span');
+        if(upTitle) upTitle.textContent = '수집된 일정 0개';
+        return;
     }
-    if(grid){
-        if(upcomingItems.length){
-            grid.innerHTML = upcomingItems.map((s, idx) => `
-                <div class="scheduleCard">
-                    <div><span class="kind">${safeScheduleText(s.type || s.part || s.category || '일정')}</span></div>
-                    <p class="scheduleName">${safeScheduleText(getScheduleTitle(s))}</p>
-                    <div class="scheduleDate">${safeScheduleText(getScheduleDateText(s))}</div>
-                </div>`).join('');
-        }else{
-            grid.innerHTML = '<div class="noticeEmpty">예정된 일정이 없습니다.</div>';
-        }
-    }
+
+    todayRender.forEach(s=>{
+        const title = escapeHtml(s.title||s.name||s.subject||'일정');
+        const date = escapeHtml(s.date||s.datetime||s.startAt||s.start_at||s.startedAt||'');
+        hi && (hi.innerHTML += `<div class="scheduleCard"><div class="tag">TODAY</div><p class="scheduleName">${title}</p><div class="scheduleDate">${date}</div></div>`);
+    });
+    upcoming.forEach(s=>{
+        const title = escapeHtml(s.title||s.name||s.subject||'일정');
+        const date = escapeHtml(s.date||s.datetime||s.startAt||s.start_at||s.startedAt||'');
+        const kind = escapeHtml(s.type||s.kind||s.category||'일정');
+        const dday = escapeHtml(s.dday||'');
+        grid && (grid.innerHTML += `<div class="scheduleCard"><div>${dday ? `<span class="dday">${dday}</span>` : ''}<span class="kind">${kind}</span></div><p class="scheduleName">${title}</p><div class="scheduleDate">${date}</div></div>`);
+    });
 }
+
 async function loadScheduleStatus(){
  try{
    const res=await fetch('schedule_status.json?v='+Date.now(),{cache:'no-store'});
-   if(!res.ok) throw new Error('schedule_status.json 로드 실패');
+   if(!res.ok) throw new Error();
    const data=await res.json();
    renderScheduleStatus(data);
- }catch(e){
-   console.log('schedule load fail',e);
-   const sec=document.getElementById('schedule');
-   const hi=sec?.querySelector('.highlightGrid');
-   const grid=sec?.querySelector('.scheduleGrid');
-   if(hi) hi.innerHTML='<div class="noticeEmpty">일정표 로딩 실패</div>';
-   if(grid) grid.innerHTML='';
- }
+ }catch(e){console.log('schedule load fail',e);}
 }
 document.addEventListener('DOMContentLoaded',loadScheduleStatus);
 </script>
