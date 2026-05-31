@@ -1862,6 +1862,10 @@ function escapeRankHtml(v){
 function renderRankCard(data, mountId){
     const mount = document.getElementById(mountId);
     if(!mount) return;
+    if(data && data.month_reset){
+        mount.innerHTML = `<div class="noticeEmpty">📢 ${escapeRankHtml(data.message || '월초 집계 초기화 중입니다.')}<br>풍투데이 월간 데이터 안정화 후 자동 집계됩니다.</div>`;
+        return;
+    }
     if(!data || !data.members || !data.members.length){
         mount.innerHTML = '<div class="noticeEmpty">별풍선표 데이터 없음</div>';
         return;
