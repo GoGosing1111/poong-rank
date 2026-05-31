@@ -1,199 +1,321 @@
 # -*- coding: utf-8 -*-
 """
-CNINE 일정표 수집기 v2
-- 여러 CNINE API 후보 + 페이지 HTML/Next 데이터 후보를 순차 시도
-- 실패해도 schedule_status.json 기본 구조 생성
+CNINE Dashboard schedule updater
+- 기존 cnine_timeline_bot 방식 기반
+- Playwright로 https://www.cnine.kr/timeline 렌더링 후 body 텍스트 파싱
+- schedule_status.json 생성
+- 자동화용: 실패해도 빈 JSON 생성 후 정상 종료(전체 자동화 중단 방지)
 """
-from __future__ import annotations
 
-import json
 import re
-import urllib.request
-from datetime import datetime
+import json
+import html
+import traceback
 from pathlib import Path
-from html import unescape
+from datetime import datetime, date, timedelta
+from typing import List, Dict, Optional, Tuple
 
-OUT = Path("schedule_status.json")
-DEBUG = Path("schedule_debug_body.txt")
-COOKIE_FILE = Path("cnine_cookies.txt")
-TIMEOUT = 20
+URL = "https://www.cnine.kr/timeline"
+OUT_JSON = Path("schedule_status.json")
+DEBUG_BODY = Path("schedule_debug_body.txt")
+DEBUG_RENDERED = Path("schedule_debug_rendered.html")
+DEBUG_LOG = Path("schedule_debug_log.txt")
 
-URLS = [
-    "https://www.cnine.kr/api/v2/p/schedule/all-page?page=1&size=50&order=asc&orderBy=startAt",
-    "https://www.cnine.kr/api/v2/p/calendar/all-page?page=1&size=50&order=asc&orderBy=startAt",
-    "https://www.cnine.kr/api/v2/p/event/all-page?page=1&size=50&order=asc&orderBy=startAt",
-    "https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=50&order=desc&orderBy=sortKey&boardSlug=schedule&viewMode=list",
-    "https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=50&order=desc&orderBy=sortKey&boardSlug=sc&viewMode=list",
-    "https://www.cnine.kr/schedule",
-    "https://www.cnine.kr/timeline",
-]
+MAX_DAYS = 45
+MAX_ITEMS = 30
+KST_WEEK = ["월", "화", "수", "목", "금", "토", "일"]
 
 
-def load_cookie() -> str:
-    """cnine_cookies.txt를 HTTP Cookie 헤더용 한 줄 문자열로 정리한다.
-    cURL에서 복사한 쿠키를 여러 줄로 저장해도 안전하게 처리한다.
-    """
-    if not COOKIE_FILE.exists():
-        return ""
-    txt = COOKIE_FILE.read_text(encoding="utf-8", errors="ignore")
-
-    # cURL/메모장 복사 과정에서 생긴 줄바꿈은 Cookie 헤더에서 금지된다.
-    txt = txt.replace("\r", ";").replace("\n", ";")
-
-    # 혹시 "-b \"...\"" 형태 전체를 저장한 경우 안쪽 쿠키만 최대한 정리
-    txt = txt.replace('-b "', '').replace("-b '", "")
-    txt = txt.replace('" ^', '').replace("' ^", "")
-    txt = txt.replace('"', '').replace("'", "")
-
-    parts = []
-    for part in txt.split(";"):
-        p = part.strip()
-        if not p:
-            continue
-        # 헤더명/명령 조각은 제외
-        low = p.lower()
-        if low.startswith("curl ") or low.startswith("-h ") or low.startswith("cookie:"):
-            continue
-        parts.append(p)
-
-    return "; ".join(parts)
+def now_kst_naive() -> datetime:
+    return datetime.now()
 
 
-def fetch(url: str) -> str:
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/148 Safari/537.36",
-        "Accept": "application/json,text/html,*/*",
-        "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
-        "Referer": "https://www.cnine.kr/",
-    }
-    ck = load_cookie()
-    if ck:
-        headers["Cookie"] = ck
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as res:
-        return res.read().decode("utf-8", errors="ignore")
-
-
-def clean_text(s):
-    s = re.sub(r"<[^>]+>", " ", str(s or ""))
-    s = unescape(s)
+def clean_space(s: str) -> str:
+    s = html.unescape(str(s or ""))
+    s = re.sub(r"[\u200b\xa0]+", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
 
 
-def find_items(obj):
-    found = []
-    def walk(x):
-        if isinstance(x, list):
-            for it in x:
-                walk(it)
-        elif isinstance(x, dict):
-            title = x.get("title") or x.get("name") or x.get("subject") or x.get("content")
-            date = x.get("startAt") or x.get("start_at") or x.get("startDate") or x.get("date") or x.get("datetime") or x.get("time")
-            if title and (date or any(k in x for k in ("endAt", "popularAt", "createdAt"))):
-                found.append(x)
-            for v in x.values():
-                if isinstance(v, (list, dict)):
-                    walk(v)
-    walk(obj)
-    return found
+DATE_RE = re.compile(
+    r"(?P<year>20\d{2})\s*년\s*(?P<month>\d{1,2})\s*월\s*(?P<day>\d{1,2})\s*일"
+    r"(?:\s*\((?P<w>[월화수목금토일])\))?"
+)
+TIME_RANGE_RE = re.compile(
+    r"(?P<h1>\d{1,2})\s*:\s*(?P<m1>\d{2})(?:\s*~\s*(?P<h2>\d{1,2})\s*:\s*(?P<m2>\d{2}))?"
+)
+DATE_ONLY_RE = re.compile(r"^(?:오늘|내일|모레)?\s*(?:\([월화수목금토일]\))?\s*(?:~\s*(?:\([월화수목금토일]\))?)?\s*$")
+BAD_TITLE_RE = re.compile(r"^(?:오늘|내일|모레|\([월화수목금토일]\)|~|\([월화수목금토일]\)\s*~|\([월화수목금토일]\)\s*~\s*\([월화수목금토일]\))$")
+DDAY_ONLY_RE = re.compile(r"^D\s*-\s*\d+$", re.I)
+BAD_UI_WORDS = {
+    "TODAY", "D-DAY", "D DAY", "일정", "스케줄", "타임라인",
+    "오늘 0개", "오늘 1개", "오늘 2개", "오늘 3개",
+}
 
 
-def normalize(raw):
-    items = []
-    for x in raw:
-        title = x.get("title") or x.get("name") or x.get("subject") or x.get("content") or x.get("description") or ""
-        date = x.get("startAt") or x.get("start_at") or x.get("startDate") or x.get("date") or x.get("datetime") or x.get("time") or x.get("popularAt") or x.get("createdAt") or ""
-        typ = x.get("type") or x.get("category") or x.get("department") or x.get("part") or "일정"
-        title = clean_text(title)
-        date = clean_text(date).replace("T", " ")[:19]
-        if not title:
-            continue
-        # 공지 본문 같은 긴 텍스트가 잘못 잡히는 것 방지
-        if len(title) > 160:
-            title = title[:160] + "..."
-        items.append({"title": title, "date": date, "type": clean_text(typ), "raw_id": x.get("id") or x.get("postId") or ""})
-    # 중복 제거
-    seen = set(); out=[]
-    for it in items:
-        key=(it["title"], it["date"])
-        if key in seen: continue
-        seen.add(key); out.append(it)
-    return out[:30]
+def parse_date_from_text(text: str) -> Optional[date]:
+    m = DATE_RE.search(text)
+    if not m:
+        return None
+    try:
+        return date(int(m.group("year")), int(m.group("month")), int(m.group("day")))
+    except ValueError:
+        return None
 
 
-def parse_html_for_json(text):
-    # Next.js __NEXT_DATA__ 우선
-    m = re.search(r'<script[^>]+id=["\']__NEXT_DATA__["\'][^>]*>(.*?)</script>', text, re.S)
-    if m:
-        try:
-            return json.loads(unescape(m.group(1)))
-        except Exception:
-            pass
-    # 큰 JSON 조각 후보
-    for pat in [r'window\.__INITIAL_STATE__\s*=\s*(\{.*?\})\s*</script>', r'window\.__NUXT__\s*=\s*(\{.*?\})\s*</script>']:
-        m = re.search(pat, text, re.S)
-        if m:
-            try: return json.loads(m.group(1))
-            except Exception: pass
+def parse_time_from_text(text: str) -> Optional[str]:
+    m = TIME_RANGE_RE.search(text)
+    if not m:
+        return None
+    h, mi = int(m.group("h1")), int(m.group("m1"))
+    if 0 <= h <= 23 and 0 <= mi <= 59:
+        return f"{h:02d}:{mi:02d}"
     return None
 
 
+def trim_repeated_phrase(s: str) -> str:
+    s = clean_space(s)
+    if not s:
+        return s
+    for sep in [" 스타부 :", " 엑셀<", " 김택용 :", " 혜루찡 :", " 쁠리 "]:
+        idx = s.find(sep, max(1, len(s)//3))
+        if idx > 0:
+            s = s[:idx].strip()
+            break
+    m = re.search(r"(<feat\.\s*[^>]+>)", s)
+    if m:
+        s = s[:m.end()].strip()
+    return clean_space(s)
 
-def parse_html_cards(text):
-    """JSON이 없을 때 HTML 텍스트에서 날짜/일정명 후보를 약식 추출."""
-    plain = clean_text(text)
-    # 날짜가 포함된 문장 단위 후보
-    candidates = []
-    # 2026.06.01 / 2026-06-01 / 06.01 형태 주변 문맥
-    for m in re.finditer(r'((?:20\d{2}[.\-/년]\s*)?\d{1,2}[.\-/월]\s*\d{1,2}(?:일)?(?:\s*\([^)]*\))?(?:\s*[·ㆍ-]?\s*(?:오전|오후)?\s*\d{1,2}:\d{2})?)', plain):
-        start = max(0, m.start() - 120)
-        end = min(len(plain), m.end() + 120)
-        chunk = plain[start:end].strip()
-        if any(word in chunk for word in ("엑셀", "스타", "씨나인", "일정", "토너먼트", "시즌", "콘텐츠")):
-            title = re.sub(r'\s+', ' ', chunk)
-            candidates.append({"title": title[:160], "date": m.group(1), "type": "일정"})
-    # 중복 제거
-    out=[]; seen=set()
-    for c in candidates:
-        key=(c["title"], c["date"])
-        if key not in seen:
-            seen.add(key); out.append(c)
-    return out[:30]
 
-def main():
-    logs=[]; all_items=[]; used=""
-    for url in URLS:
-        logs.append(f"TRY={url}")
-        try:
-            text=fetch(url)
-            logs.append(f"OK bytes={len(text)}")
-            obj=None
-            if text.lstrip().startswith(("{", "[")):
-                obj=json.loads(text)
-            else:
-                obj=parse_html_for_json(text)
-            if obj is not None:
-                raw=find_items(obj)
-                items=normalize(raw)
-                logs.append(f"ITEMS={len(items)}")
-                if items:
-                    all_items=items; used=url; break
-            else:
-                html_items = parse_html_cards(text)
-                logs.append(f"HTML_ITEMS={len(html_items)}")
-                if html_items:
-                    all_items = html_items
-                    used = url
-                    break
-        except Exception as e:
-            logs.append(f"FAIL={type(e).__name__}: {e}")
-    result={"updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "source": used or "none", "items": all_items, "schedules": all_items}
-    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    logs.append(f"FINAL_ITEMS={len(all_items)}")
-    DEBUG.write_text("\n".join(logs), encoding="utf-8-sig")
-    print(f"완료: {OUT} 일정 {len(all_items)} 건")
-    return 0
+def remove_date_time_noise(title: str) -> str:
+    s = clean_space(title)
+    s = DATE_RE.sub(" ", s)
+    s = TIME_RANGE_RE.sub(" ", s)
+    s = re.sub(r"\b오늘\b", " ", s)
+    s = re.sub(r"\b내일\b", " ", s)
+    s = re.sub(r"\b모레\b", " ", s)
+    s = re.sub(r"\([월화수목금토일]\)\s*~\s*\([월화수목금토일]\)", " ", s)
+    s = re.sub(r"\([월화수목금토일]\)\s*~", " ", s)
+    s = re.sub(r"~\s*\([월화수목금토일]\)", " ", s)
+    s = re.sub(r"(^|[\s:])개인(?=[가-힣A-Za-z0-9])", r"\1", s)
+    s = s.replace("스타스타부", "스타부")
+    s = s.replace("엑셀엑셀", "엑셀")
+    s = re.sub(r"^[\s\-\|·:~]+", "", s)
+    s = re.sub(r"[\s\-\|·:~]+$", "", s)
+    return trim_repeated_phrase(s)
+
+
+def is_bad_title(title: str) -> bool:
+    t = clean_space(title)
+    if not t or len(t) <= 2:
+        return True
+    if DDAY_ONLY_RE.match(t):
+        return True
+    if t.upper() in BAD_UI_WORDS:
+        return True
+    if DATE_ONLY_RE.match(t) or BAD_TITLE_RE.match(t):
+        return True
+    no = re.sub(r"[\s~()월화수목금토일0-9.\-/DdayTODAY]+", "", t, flags=re.I)
+    if not no:
+        return True
+    return False
+
+
+def classify(title: str) -> str:
+    t = title.lower()
+    if "엑셀" in title:
+        return "엑셀"
+    if "asl" in t or "스타" in title or "이스코어" in title or "김택용" in title or "이영호" in title:
+        return "스타"
+    if "생일" in title:
+        return "생일"
+    if "합방" in title:
+        return "합방"
+    return "컨텐츠"
+
+
+def normalize_title_key(title: str) -> str:
+    s = clean_space(title).lower()
+    s = DATE_RE.sub(" ", s)
+    s = TIME_RANGE_RE.sub(" ", s)
+    s = re.sub(r"\b(오늘|내일|모레)\b", " ", s)
+    s = re.sub(r"(^|[\s:])개인(?=[가-힣a-z0-9])", r"\1", s)
+    s = re.sub(r"[\s\-_·|]+", "", s)
+    s = re.sub(r"[\"'“”‘’]", "", s)
+    return s
+
+
+def event_sort_key(ev: Dict):
+    return (ev["date"], ev.get("time") or "99:99", normalize_title_key(ev["title"]))
+
+
+def dedupe_events(events: List[Dict]) -> List[Dict]:
+    cleaned = []
+    for ev in events:
+        title = remove_date_time_noise(ev.get("title", ""))
+        if is_bad_title(title):
+            continue
+        ev = dict(ev)
+        ev["title"] = title
+        ev["category"] = classify(title)
+        cleaned.append(ev)
+
+    by_title = {}
+    for ev in sorted(cleaned, key=event_sort_key):
+        key = normalize_title_key(ev["title"])
+        if not key:
+            continue
+        if len(key) < 5:
+            key = key + "|" + ev["date"].isoformat()
+        if key not in by_title or event_sort_key(ev) < event_sort_key(by_title[key]):
+            by_title[key] = ev
+
+    result = []
+    seen = set()
+    for ev in sorted(by_title.values(), key=event_sort_key):
+        k = (normalize_title_key(ev["title"]), ev["date"].isoformat(), ev.get("time") or "")
+        if k in seen:
+            continue
+        seen.add(k)
+        result.append(ev)
+    return result[:MAX_ITEMS]
+
+
+def extract_candidates_from_body(body: str) -> List[Dict]:
+    today = now_kst_naive().date()
+    lines = [clean_space(x) for x in body.splitlines()]
+    lines = [x for x in lines if x]
+    raw_events = []
+
+    for i, line in enumerate(lines):
+        d = parse_date_from_text(line)
+        if not d:
+            continue
+        if d < today or d > today + timedelta(days=MAX_DAYS):
+            continue
+        tm = parse_time_from_text(line)
+
+        candidates = []
+        for j in range(max(0, i - 8), i):
+            c = clean_space(lines[j])
+            if not c or DATE_RE.search(c) or TIME_RANGE_RE.fullmatch(c):
+                continue
+            if c in {"오늘", "내일", "모레", "TODAY"}:
+                continue
+            if DDAY_ONLY_RE.match(c):
+                continue
+            if c.startswith("오늘 ") and "개" in c and "예정" in c:
+                continue
+            candidates.append(c)
+
+        title = ""
+        for c in reversed(candidates):
+            cc = remove_date_time_noise(c)
+            if not is_bad_title(cc):
+                title = cc
+                break
+
+        if not title:
+            line_title = remove_date_time_noise(line)
+            if not is_bad_title(line_title):
+                title = line_title
+
+        if not title or is_bad_title(title):
+            continue
+
+        raw_events.append({"title": title, "date": d, "time": tm, "source_line": line})
+
+    return dedupe_events(raw_events)
+
+
+def dday_label(d: date, today: date) -> str:
+    diff = (d - today).days
+    return "TODAY" if diff == 0 else f"D-{diff}"
+
+
+def weekday_label(d: date) -> str:
+    return KST_WEEK[d.weekday()]
+
+
+def format_date(d: date) -> str:
+    return f"{d.year}.{d.month:02d}.{d.day:02d} ({weekday_label(d)})"
+
+
+def fetch_with_playwright() -> Tuple[str, str]:
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page(
+            viewport={"width": 1365, "height": 1800},
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+            ),
+        )
+        page.goto(URL, wait_until="networkidle", timeout=60000)
+        page.wait_for_timeout(2500)
+        body_text = page.locator("body").inner_text(timeout=15000)
+        content = page.content()
+        browser.close()
+    DEBUG_BODY.write_text(body_text, encoding="utf-8")
+    DEBUG_RENDERED.write_text(content, encoding="utf-8")
+    return content, body_text
+
+
+def save_json(events: List[Dict], ok: bool = True, error: str = ""):
+    now = now_kst_naive()
+    today = now.date()
+    items = []
+    for ev in events:
+        d = ev["date"]
+        tm = ev.get("time") or "시간미정"
+        items.append({
+            "title": ev.get("title", ""),
+            "date": format_date(d),
+            "raw_date": d.isoformat(),
+            "time": tm,
+            "datetime": f"{format_date(d)} · ⏰ {tm}",
+            "dday": dday_label(d, today),
+            "type": ev.get("category") or classify(ev.get("title", "")),
+            "source_line": ev.get("source_line", ""),
+        })
+    data = {
+        "ok": ok,
+        "updated_at": now.strftime("%Y-%m-%d %H:%M:%S"),
+        "source": URL,
+        "count": len(items),
+        "today_count": sum(1 for x in items if x.get("dday") == "TODAY"),
+        "future_count": sum(1 for x in items if x.get("dday") != "TODAY"),
+        "items": items,
+        "error": error,
+    }
+    OUT_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def main() -> int:
+    DEBUG_LOG.write_text("CNINE schedule updater start\n", encoding="utf-8")
+    try:
+        _html_source, body = fetch_with_playwright()
+        events = extract_candidates_from_body(body)
+        save_json(events, ok=True)
+        with DEBUG_LOG.open("a", encoding="utf-8") as f:
+            f.write(f"FINAL_ITEMS={len(events)}\n")
+            for i, e in enumerate(events, 1):
+                f.write(f"{i}. {e['date']} {e.get('time') or '시간미정'} | {e['title']}\n")
+        print(f"완료: schedule_status.json 일정 {len(events)} 건")
+        return 0
+    except Exception as e:
+        err = f"{type(e).__name__}: {e}"
+        save_json([], ok=False, error=err)
+        with DEBUG_LOG.open("a", encoding="utf-8") as f:
+            f.write(err + "\n")
+            f.write(traceback.format_exc())
+        print("완료: schedule_status.json 일정 0 건")
+        print(f"[WARN] 일정 수집 실패: {err}")
+        print("디버그: schedule_debug_log.txt / schedule_debug_body.txt")
+        return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
