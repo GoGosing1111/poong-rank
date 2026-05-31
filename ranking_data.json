@@ -1,0 +1,351 @@
+{
+  "updated_at": "2026-05-27 23:43",
+  "excel": {
+    "crew": "씨나인엑셀",
+    "rank_badge": "2",
+    "logo": "https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/%EC%94%A8%EB%82%98%EC%9D%B8%EC%97%91%EC%85%80%EB%B6%80.png",
+    "avg": "607,609",
+    "leader": "철구형",
+    "leader_sales": "18,746,622",
+    "top_style": "background:linear-gradient(135deg,#ff2c7c,#401325)",
+    "color": "#ff5b9d",
+    "members": [
+      {
+        "rank": "1",
+        "name": "이다니",
+        "today": "77,545",
+        "month": "1,986,163",
+        "width": "100%",
+        "color": "#ff5b9d",
+        "first": true
+      },
+      {
+        "rank": "2",
+        "name": "혜루찡",
+        "today": "682",
+        "month": "1,521,405",
+        "width": "76%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "3",
+        "name": "송채연",
+        "today": "13,816",
+        "month": "1,165,865",
+        "width": "58%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "4",
+        "name": "체온",
+        "today": "10,575",
+        "month": "772,053",
+        "width": "38%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "5",
+        "name": "초초",
+        "today": "4,731",
+        "month": "601,105",
+        "width": "30%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "6",
+        "name": "하이희야",
+        "today": "-",
+        "month": "587,595",
+        "width": "29%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "7",
+        "name": "인지연",
+        "today": "18,870",
+        "month": "565,969",
+        "width": "28%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "8",
+        "name": "채리",
+        "today": "14,883",
+        "month": "558,915",
+        "width": "28%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "9",
+        "name": "설윤이",
+        "today": "18,475",
+        "month": "530,391",
+        "width": "26%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "10",
+        "name": "여을",
+        "today": "-",
+        "month": "493,307",
+        "width": "24%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "11",
+        "name": "애순이",
+        "today": "23,554",
+        "month": "324,803",
+        "width": "16%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "12",
+        "name": "아윤",
+        "today": "1,009",
+        "month": "261,000",
+        "width": "13%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "13",
+        "name": "히나",
+        "today": "3,593",
+        "month": "242,507",
+        "width": "12%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "14",
+        "name": "연두",
+        "today": "6,032",
+        "month": "234,210",
+        "width": "11%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "15",
+        "name": "리하",
+        "today": "1,400",
+        "month": "217,608",
+        "width": "10%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "16",
+        "name": "초린",
+        "today": "2,186",
+        "month": "171,347",
+        "width": "8%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "17",
+        "name": "쁠리",
+        "today": "-",
+        "month": "95,112",
+        "width": "4%",
+        "color": "#ff5b9d",
+        "first": false
+      }
+    ]
+  },
+  "star": {
+    "crew": "씨나인",
+    "rank_badge": "2",
+    "logo": "",
+    "avg": "318,830",
+    "leader": "철구",
+    "leader_sales": "18,745,248",
+    "top_style": "background:linear-gradient(135deg,#ff2c7c,#401325)",
+    "color": "#ff5b9d",
+    "members": [
+      {
+        "rank": "1",
+        "name": "디임",
+        "today": "41,833",
+        "month": "1,312,879",
+        "width": "100%",
+        "color": "#ff5b9d",
+        "first": true
+      },
+      {
+        "rank": "2",
+        "name": "나무늘봉순",
+        "today": "9,112",
+        "month": "647,075",
+        "width": "49%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "3",
+        "name": "졈니",
+        "today": "29,223",
+        "month": "628,386",
+        "width": "47%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "4",
+        "name": "김택용",
+        "today": "-",
+        "month": "625,009",
+        "width": "47%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "5",
+        "name": "효짱",
+        "today": "7,727",
+        "month": "486,825",
+        "width": "37%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "6",
+        "name": "란란",
+        "today": "1,166",
+        "month": "394,310",
+        "width": "30%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "7",
+        "name": "빵훈이",
+        "today": "7,038",
+        "month": "383,490",
+        "width": "29%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "8",
+        "name": "남수댕",
+        "today": "-",
+        "month": "315,316",
+        "width": "24%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "9",
+        "name": "요닝",
+        "today": "7,375",
+        "month": "302,043",
+        "width": "23%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "10",
+        "name": "모리",
+        "today": "1",
+        "month": "242,366",
+        "width": "18%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "11",
+        "name": "이영호",
+        "today": "-",
+        "month": "193,815",
+        "width": "14%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "12",
+        "name": "박재혁",
+        "today": "1",
+        "month": "136,235",
+        "width": "10%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "13",
+        "name": "지우리",
+        "today": "1,368",
+        "month": "121,002",
+        "width": "9%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "14",
+        "name": "왜냐맨장민철",
+        "today": "2,021",
+        "month": "64,279",
+        "width": "4%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "15",
+        "name": "오리꿍",
+        "today": "-",
+        "month": "63,136",
+        "width": "4%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "16",
+        "name": "유승곤",
+        "today": "-",
+        "month": "48,819",
+        "width": "3%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "17",
+        "name": "강구열",
+        "today": "-",
+        "month": "44,959",
+        "width": "3%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "18",
+        "name": "윤중",
+        "today": "-",
+        "month": "26,260",
+        "width": "2%",
+        "color": "#ff5b9d",
+        "first": false
+      },
+      {
+        "rank": "19",
+        "name": "윤용태",
+        "today": "216",
+        "month": "21,570",
+        "width": "1%",
+        "color": "#ff5b9d",
+        "first": false
+      }
+    ]
+  }
+}
