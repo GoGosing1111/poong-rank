@@ -256,8 +256,11 @@ def main() -> int:
         return 1
     logs.append(f"MEMBERS={len(members)}")
 
-    # 매월 1일은 월간 누적이 오늘치와 같아야 하므로
-    # 아래 멤버별 집계 단계에서 today 값을 month 값으로 복사한다.
+    # 매월 1일은 지난달 fallback을 쓰지 않는다.
+    # 1일 기준 월간 누적은 오늘 누적과 같아야 하므로,
+    # 아래 월간 선택 단계에서 이번 달 데이터만 사용하고 멤버별 month=today로 보정한다.
+
+
 
     # 이번 달 / 최근 3개월 월간을 모두 보고 매칭이 더 많은 쪽 사용
     # 월초에는 poong.today 이번 달 데이터가 비어 있거나 일부만 잡히는 경우가 있어 fallback 필수.
@@ -282,8 +285,22 @@ def main() -> int:
         print("[ERROR] 월간 API 수집 실패")
         Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8-sig")
         return 1
-    month_candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
-    best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = month_candidates[0]
+
+    # 1일에는 지난달 데이터가 매칭률이 높아도 절대 fallback으로 쓰지 않는다.
+    # 예: 6월 1일에는 5월 월간 38/38보다 6월 현재 월간 4/38을 사용해야 한다.
+    if dt.day == 1:
+        current_candidates = [c for c in month_candidates if c[2] == "month_current"]
+        if current_candidates:
+            best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = current_candidates[0]
+            logs.append("DAY1_FORCE_CURRENT_MONTH=True")
+        else:
+            month_candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
+            best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = month_candidates[0]
+            logs.append("DAY1_FORCE_CURRENT_MONTH_FAILED=True")
+    else:
+        month_candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
+        best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = month_candidates[0]
+
     logs.append(f"MONTH_USED={best_tag} {used_year}-{used_month:02d} MATCHED={best_mc}/{len(members)}")
 
     # 오늘 데이터는 당일 API만 사용. 0건이어도 정상 진행.
@@ -310,9 +327,11 @@ def main() -> int:
         if today.get("value", 0) <= 0:
             today = find_value(m, day_idx)
 
-        # 매월 1일은 오늘 별풍선 = 월간 별풍선으로 처리
-        # poong.today 월간 API가 지난달/초기화 지연값을 잡아도 오늘값을 우선 사용한다.
+        # 매월 1일: 오늘 집계와 월간 집계를 동일하게 표시한다.
+        # poong.today today/day가 0건이어도 이번 달 month_current 값이 있으면 그 값을 사용한다.
         if dt.day == 1:
+            if today.get("value", 0) <= 0 and month.get("value", 0) > 0:
+                today = month
             month = today
 
         item = {
