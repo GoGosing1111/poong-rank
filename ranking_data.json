@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01 01:03:47",
+  "updated_at": "2026-06-01 01:16:38",
   "source": "poong.today chart API direct",
   "api_urls": {
     "month": "https://static.poong.today/chart/get?ctype=month&ks=false&year=2026&month=6&day=undefined",
@@ -18,7 +18,7 @@
       "soop_url": "",
       "profile_img": "",
       "today": 0,
-      "month": 31902,
+      "month": 35026,
       "today_api_name": "",
       "month_api_name": "이다니♥",
       "matched": true,
@@ -32,11 +32,25 @@
       "soop_url": "",
       "profile_img": "",
       "today": 0,
-      "month": 14101,
+      "month": 15923,
       "today_api_name": "",
       "month_api_name": "앵지",
       "matched": true,
       "rank": 2
+    },
+    {
+      "part": "엑셀부",
+      "name": "쁠리",
+      "match": "노알리입니두",
+      "soop_id": "alwl1047",
+      "soop_url": "",
+      "profile_img": "",
+      "today": 0,
+      "month": 14681,
+      "today_api_name": "",
+      "month_api_name": "노쁠리입니두",
+      "matched": true,
+      "rank": 3
     },
     {
       "part": "엑셀부",
@@ -49,20 +63,6 @@
       "month": 12386,
       "today_api_name": "",
       "month_api_name": "송채연",
-      "matched": true,
-      "rank": 3
-    },
-    {
-      "part": "엑셀부",
-      "name": "쁠리",
-      "match": "노알리입니두",
-      "soop_id": "alwl1047",
-      "soop_url": "",
-      "profile_img": "",
-      "today": 0,
-      "month": 9931,
-      "today_api_name": "",
-      "month_api_name": "노쁠리입니두",
       "matched": true,
       "rank": 4
     },
@@ -547,7 +547,7 @@
     {
       "part": "엑셀부",
       "today_total": 0,
-      "month_total": 54219,
+      "month_total": 62093,
       "members": [
         {
           "part": "엑셀부",
@@ -557,11 +557,25 @@
           "soop_url": "",
           "profile_img": "",
           "today": 0,
-          "month": 31902,
+          "month": 35026,
           "today_api_name": "",
           "month_api_name": "이다니♥",
           "matched": true,
           "rank": 1
+        },
+        {
+          "part": "엑셀부",
+          "name": "쁠리",
+          "match": "노알리입니두",
+          "soop_id": "alwl1047",
+          "soop_url": "",
+          "profile_img": "",
+          "today": 0,
+          "month": 14681,
+          "today_api_name": "",
+          "month_api_name": "노쁠리입니두",
+          "matched": true,
+          "rank": 3
         },
         {
           "part": "엑셀부",
@@ -574,20 +588,6 @@
           "month": 12386,
           "today_api_name": "",
           "month_api_name": "송채연",
-          "matched": true,
-          "rank": 3
-        },
-        {
-          "part": "엑셀부",
-          "name": "쁠리",
-          "match": "노알리입니두",
-          "soop_id": "alwl1047",
-          "soop_url": "",
-          "profile_img": "",
-          "today": 0,
-          "month": 9931,
-          "today_api_name": "",
-          "month_api_name": "노쁠리입니두",
           "matched": true,
           "rank": 4
         },
@@ -806,7 +806,7 @@
     {
       "part": "스타부",
       "today_total": 0,
-      "month_total": 14101,
+      "month_total": 15923,
       "members": [
         {
           "part": "스타부",
@@ -816,7 +816,7 @@
           "soop_url": "",
           "profile_img": "",
           "today": 0,
-          "month": 14101,
+          "month": 15923,
           "today_api_name": "",
           "month_api_name": "앵지",
           "matched": true,
