@@ -256,56 +256,8 @@ def main() -> int:
         return 1
     logs.append(f"MEMBERS={len(members)}")
 
-    # 월초 1일은 poong.today 월간/오늘 데이터가 초기화·지연되는 경우가 많아서
-    # 억지로 지난달 데이터를 끌어오지 않고 안내 상태를 출력한다.
-    if dt.day == 1:
-        reset_msg = "월초 집계 초기화 중입니다. 풍투데이 월간 데이터 반영 대기중입니다."
-        reset_card_excel = {
-            "crew": "엑셀부",
-            "rank_badge": "E",
-            "avg": "-",
-            "leader": reset_msg,
-            "leader_sales": "-",
-            "members": [],
-            "message": reset_msg,
-            "month_reset": True
-        }
-        reset_card_star = {
-            "crew": "스타부",
-            "rank_badge": "S",
-            "avg": "-",
-            "leader": reset_msg,
-            "leader_sales": "-",
-            "members": [],
-            "message": reset_msg,
-            "month_reset": True
-        }
-        result = {
-            "updated_at": dt.strftime("%Y-%m-%d %H:%M:%S"),
-            "source": "poong.today chart API direct v7",
-            "month_reset": True,
-            "message": reset_msg,
-            "used_month": dt.strftime("%Y-%m"),
-            "api_urls": {},
-            "total_members": len(members),
-            "matched_count": 0,
-            "unmatched_count": 0,
-            "ranking": [],
-            "excel": reset_card_excel,
-            "star": reset_card_star
-        }
-        Path(OUTPUT_JSON).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-        logs.append("MONTH_RESET_DAY1=True")
-        logs.append(reset_msg)
-        Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8-sig")
-        print("=" * 60)
-        print("완료:", OUTPUT_JSON)
-        print("멤버:", len(members))
-        print("월초 집계 초기화 대기중")
-        print("디버그:", DEBUG_LOG)
-        print("=" * 60)
-        return 0
-
+    # 매월 1일은 월간 누적이 오늘치와 같아야 하므로
+    # 아래 멤버별 집계 단계에서 today 값을 month 값으로 복사한다.
 
     # 이번 달 / 최근 3개월 월간을 모두 보고 매칭이 더 많은 쪽 사용
     # 월초에는 poong.today 이번 달 데이터가 비어 있거나 일부만 잡히는 경우가 있어 fallback 필수.
@@ -357,6 +309,12 @@ def main() -> int:
         today = find_value(m, today_idx)
         if today.get("value", 0) <= 0:
             today = find_value(m, day_idx)
+
+        # 매월 1일은 오늘 별풍선 = 월간 별풍선으로 처리
+        # poong.today 월간 API가 지난달/초기화 지연값을 잡아도 오늘값을 우선 사용한다.
+        if dt.day == 1:
+            month = today
+
         item = {
             "part": safe(m.get("part")),
             "name": safe(m.get("name")),
