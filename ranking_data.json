@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01 01:16:38",
+  "updated_at": "2026-06-01 01:26:22",
   "source": "poong.today chart API direct",
   "api_urls": {
     "month": "https://static.poong.today/chart/get?ctype=month&ks=false&year=2026&month=6&day=undefined",
@@ -29,8 +29,8 @@
       "name": "앵지",
       "match": "앵지",
       "soop_id": "gks2wl",
-      "soop_url": "",
-      "profile_img": "",
+      "soop_url": "https://www.sooplive.com/station/gks2wl",
+      "profile_img": "https://profile.img.sooplive.com/LOGO/gk/gks2wl/gks2wl.jpg",
       "today": 0,
       "month": 15923,
       "today_api_name": "",
@@ -813,8 +813,8 @@
           "name": "앵지",
           "match": "앵지",
           "soop_id": "gks2wl",
-          "soop_url": "",
-          "profile_img": "",
+          "soop_url": "https://www.sooplive.com/station/gks2wl",
+          "profile_img": "https://profile.img.sooplive.com/LOGO/gk/gks2wl/gks2wl.jpg",
           "today": 0,
           "month": 15923,
           "today_api_name": "",
