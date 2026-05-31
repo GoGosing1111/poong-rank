@@ -30,9 +30,33 @@ URLS = [
 
 
 def load_cookie() -> str:
-    if COOKIE_FILE.exists():
-        return COOKIE_FILE.read_text(encoding="utf-8", errors="ignore").strip()
-    return ""
+    """cnine_cookies.txt를 HTTP Cookie 헤더용 한 줄 문자열로 정리한다.
+    cURL에서 복사한 쿠키를 여러 줄로 저장해도 안전하게 처리한다.
+    """
+    if not COOKIE_FILE.exists():
+        return ""
+    txt = COOKIE_FILE.read_text(encoding="utf-8", errors="ignore")
+
+    # cURL/메모장 복사 과정에서 생긴 줄바꿈은 Cookie 헤더에서 금지된다.
+    txt = txt.replace("\r", ";").replace("\n", ";")
+
+    # 혹시 "-b \"...\"" 형태 전체를 저장한 경우 안쪽 쿠키만 최대한 정리
+    txt = txt.replace('-b "', '').replace("-b '", "")
+    txt = txt.replace('" ^', '').replace("' ^", "")
+    txt = txt.replace('"', '').replace("'", "")
+
+    parts = []
+    for part in txt.split(";"):
+        p = part.strip()
+        if not p:
+            continue
+        # 헤더명/명령 조각은 제외
+        low = p.lower()
+        if low.startswith("curl ") or low.startswith("-h ") or low.startswith("cookie:"):
+            continue
+        parts.append(p)
+
+    return "; ".join(parts)
 
 
 def fetch(url: str) -> str:
@@ -115,6 +139,28 @@ def parse_html_for_json(text):
     return None
 
 
+
+def parse_html_cards(text):
+    """JSON이 없을 때 HTML 텍스트에서 날짜/일정명 후보를 약식 추출."""
+    plain = clean_text(text)
+    # 날짜가 포함된 문장 단위 후보
+    candidates = []
+    # 2026.06.01 / 2026-06-01 / 06.01 형태 주변 문맥
+    for m in re.finditer(r'((?:20\d{2}[.\-/년]\s*)?\d{1,2}[.\-/월]\s*\d{1,2}(?:일)?(?:\s*\([^)]*\))?(?:\s*[·ㆍ-]?\s*(?:오전|오후)?\s*\d{1,2}:\d{2})?)', plain):
+        start = max(0, m.start() - 120)
+        end = min(len(plain), m.end() + 120)
+        chunk = plain[start:end].strip()
+        if any(word in chunk for word in ("엑셀", "스타", "씨나인", "일정", "토너먼트", "시즌", "콘텐츠")):
+            title = re.sub(r'\s+', ' ', chunk)
+            candidates.append({"title": title[:160], "date": m.group(1), "type": "일정"})
+    # 중복 제거
+    out=[]; seen=set()
+    for c in candidates:
+        key=(c["title"], c["date"])
+        if key not in seen:
+            seen.add(key); out.append(c)
+    return out[:30]
+
 def main():
     logs=[]; all_items=[]; used=""
     for url in URLS:
@@ -134,13 +180,18 @@ def main():
                 if items:
                     all_items=items; used=url; break
             else:
-                logs.append("NO_JSON_FOUND")
+                html_items = parse_html_cards(text)
+                logs.append(f"HTML_ITEMS={len(html_items)}")
+                if html_items:
+                    all_items = html_items
+                    used = url
+                    break
         except Exception as e:
             logs.append(f"FAIL={type(e).__name__}: {e}")
     result={"updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "source": used or "none", "items": all_items, "schedules": all_items}
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     logs.append(f"FINAL_ITEMS={len(all_items)}")
-    DEBUG.write_text("\n".join(logs), encoding="utf-8")
+    DEBUG.write_text("\n".join(logs), encoding="utf-8-sig")
     print(f"완료: {OUT} 일정 {len(all_items)} 건")
     return 0
 

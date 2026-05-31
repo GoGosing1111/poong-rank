@@ -62,10 +62,19 @@ def fmt_num(n: int) -> str:
     return f"{int(n):,}"
 
 
+def add_months(year: int, month: int, delta: int) -> Tuple[int, int]:
+    m = month + delta
+    y = year
+    while m <= 0:
+        y -= 1
+        m += 12
+    while m > 12:
+        y += 1
+        m -= 12
+    return y, m
+
 def prev_month(dt: datetime) -> Tuple[int, int]:
-    if dt.month == 1:
-        return dt.year - 1, 12
-    return dt.year, dt.month - 1
+    return add_months(dt.year, dt.month, -1)
 
 
 def build_url(ctype: str, year: int, month: int, day: int | str | None = None) -> str:
@@ -83,24 +92,59 @@ def fetch_json(url: str) -> Any:
 
 
 def extract_rows(data: Any) -> List[Dict[str, Any]]:
-    """poong.today 응답에서 방송자 row만 추출. nested f(후원자)는 제외."""
+    """poong.today 응답에서 방송자 row만 추출.
+    현재 구조 {"b":[{"i","n","b"}]} 대응.
+    nested f(후원자)는 제외하되, 구조 변경 시 재귀로 방송자 row를 다시 찾는다.
+    """
     rows: List[Dict[str, Any]] = []
 
     def valid_row(x: Any) -> bool:
-        return isinstance(x, dict) and safe(x.get("i")) and safe(x.get("n")) and to_int(x.get("b")) > 0
+        return (
+            isinstance(x, dict)
+            and safe(x.get("i"))
+            and safe(x.get("n"))
+            and to_int(x.get("b")) > 0
+        )
+
+    def add_row(x: Dict[str, Any]):
+        # f는 후원자 정보이므로 row 자체에 포함만 하고 별도 row로는 넣지 않는다.
+        if valid_row(x):
+            rows.append(x)
 
     if isinstance(data, dict):
-        # 현재 구조: {"b": [{"i":"...","n":"...","b":123,...}]}
         if isinstance(data.get("b"), list):
-            rows.extend([x for x in data["b"] if valid_row(x)])
-            return rows
-        for key in ("items", "data", "list", "rows", "content"):
+            for x in data["b"]:
+                if isinstance(x, dict):
+                    add_row(x)
+            if rows:
+                return rows
+        for key in ("items", "data", "list", "rows", "content", "result"):
             if isinstance(data.get(key), list):
-                rows.extend([x for x in data[key] if valid_row(x)])
+                for x in data[key]:
+                    if isinstance(x, dict):
+                        add_row(x)
                 if rows:
                     return rows
+
     if isinstance(data, list):
-        rows.extend([x for x in data if valid_row(x)])
+        for x in data:
+            if isinstance(x, dict):
+                add_row(x)
+        if rows:
+            return rows
+
+    # 마지막 방어: 전체 재귀. 단, f 내부는 후원자라 제외.
+    def walk(x: Any, parent_key: str = ""):
+        if isinstance(x, list):
+            for it in x:
+                walk(it, parent_key)
+        elif isinstance(x, dict):
+            if parent_key != "f":
+                add_row(x)
+                for k, v in x.items():
+                    if isinstance(v, (list, dict)):
+                        walk(v, str(k))
+    walk(data)
     return rows
 
 
@@ -212,9 +256,15 @@ def main() -> int:
         return 1
     logs.append(f"MEMBERS={len(members)}")
 
-    # 이번 달 / 지난달 월간을 모두 보고 매칭이 더 많은 쪽 사용
+    # 이번 달 / 최근 3개월 월간을 모두 보고 매칭이 더 많은 쪽 사용
+    # 월초에는 poong.today 이번 달 데이터가 비어 있거나 일부만 잡히는 경우가 있어 fallback 필수.
     month_candidates = []
-    for tag, (yy, mm) in [("month_current", (dt.year, dt.month)), ("month_prev", prev_month(dt))]:
+    month_targets = []
+    for back in range(0, 4):
+        yy, mm = add_months(dt.year, dt.month, -back)
+        tag = "month_current" if back == 0 else f"month_prev_{back}"
+        month_targets.append((tag, (yy, mm)))
+    for tag, (yy, mm) in month_targets:
         try:
             rows, url = fetch_chart("month", yy, mm, "undefined", tag, logs)
             idx = make_index(rows)
@@ -227,7 +277,7 @@ def main() -> int:
 
     if not month_candidates:
         print("[ERROR] 월간 API 수집 실패")
-        Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8")
+        Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8-sig")
         return 1
     month_candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
     best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = month_candidates[0]
@@ -291,7 +341,7 @@ def main() -> int:
     logs.append("")
     logs.append("UNMATCHED")
     logs.extend(unmatched[:300])
-    Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8")
+    Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8-sig")
 
     print("=" * 60)
     print("완료:", OUTPUT_JSON)
