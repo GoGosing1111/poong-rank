@@ -1855,5 +1855,40 @@ async function loadRankData(){
 document.addEventListener('DOMContentLoaded', loadRankData);
 </script>
 
+
+<script>
+function renderScheduleStatus(data){
+    const sec=document.getElementById('schedule');
+    if(!sec || !data) return;
+    const countBox=sec.querySelector('.scheduleCount');
+    if(countBox) countBox.textContent='일정 '+((data.items||data.schedules||[]).length)+'개';
+
+    const metric=sec.querySelector('.metric .value');
+    if(metric) metric.textContent=data.updated_at || '-';
+
+    const items=(data.items||data.schedules||[]);
+    const grid=sec.querySelector('.scheduleGrid');
+    const hi=sec.querySelector('.highlightGrid');
+    if(grid) grid.innerHTML='';
+    if(hi) hi.innerHTML='';
+
+    items.slice(0,2).forEach(s=>{
+        hi && (hi.innerHTML += `<div class="scheduleCard"><div class="tag">TODAY</div><p class="scheduleName">${s.title||s.name||''}</p><div class="scheduleDate">${s.date||s.datetime||''}</div></div>`);
+    });
+    items.slice(2).forEach(s=>{
+        grid && (grid.innerHTML += `<div class="scheduleCard"><div><span class="kind">${s.type||'일정'}</span></div><p class="scheduleName">${s.title||s.name||''}</p><div class="scheduleDate">${s.date||s.datetime||''}</div></div>`);
+    });
+}
+async function loadScheduleStatus(){
+ try{
+   const res=await fetch('schedule_status.json?v='+Date.now(),{cache:'no-store'});
+   if(!res.ok) throw new Error();
+   const data=await res.json();
+   renderScheduleStatus(data);
+ }catch(e){console.log('schedule load fail',e);}
+}
+document.addEventListener('DOMContentLoaded',loadScheduleStatus);
+</script>
+
 </body>
 </html>
