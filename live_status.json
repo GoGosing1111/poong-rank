@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-01 21:55:35",
-  "total": 37,
-  "live_count": 7,
+  "updated_at": "2026-06-01 23:36:26",
+  "total": 36,
+  "live_count": 8,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -34,11 +34,11 @@
       "part": "스타부",
       "soop_id": "vlfvlf789",
       "soop_url": "https://www.sooplive.com/station/vlfvlf789",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294482555",
+      "title": "진지하게 얘기좀 해보겠습니다 시벌...[씨나인]",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/vlfvlf789/station"
     },
@@ -224,19 +224,6 @@
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yochba0402/station"
     },
-    "moguleave": {
-      "name": "모리",
-      "part": "스타부",
-      "soop_id": "moguleave",
-      "soop_url": "https://www.sooplive.com/station/moguleave",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
-      "viewers": 0,
-      "checked_url": "https://bjapi.afreecatv.com/api/moguleave/station"
-    },
     "imducko3o": {
       "name": "오리꿍",
       "part": "스타부",
@@ -285,7 +272,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294467421",
-      "title": "[씨나인:신입] 6월이다 ㄷㄷ",
+      "title": "[씨나인:신입] 6월이다 ㄷㄷ 2부",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jfiary0718/station"
     },
@@ -363,7 +350,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294478611",
-      "title": "[씨나인:하녀]20분에 올게요 ! 감사인사핑",
+      "title": "[씨나인:하녀]위기를 기회로.. 감사인사핑",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/lcy011027/station"
     },
@@ -389,7 +376,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294473659",
-      "title": "[씨나인:신입] 수장님과 플단을 구합니도도도..",
+      "title": "[씨나인:신입] 7공수까지.... 5000개",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kaja0011/station"
     },
@@ -402,7 +389,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294465699",
-      "title": "[씨나인 : 시녀2]  숲에 온지 1주년",
+      "title": "[씨나인 : 시녀2]  숲에 온지 1주년 18층 감사합니다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     },
