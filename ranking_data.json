@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02 04:32:52",
+  "updated_at": "2026-06-02 05:53:58",
   "source": "poonggo ranking html direct v1",
   "used_month": "2026-06",
   "api_urls": {
@@ -8,8 +8,8 @@
     "today": "https://poonggo.com/ranking/broadcast?c=daily&s=b&page=1"
   },
   "total_members": 36,
-  "matched_count": 17,
-  "unmatched_count": 19,
+  "matched_count": 18,
+  "unmatched_count": 18,
   "ranking": [
     {
       "part": "엑셀부",
@@ -38,8 +38,8 @@
       "name": "이다니",
       "match": "이다니♥",
       "soop_id": "0929kelly",
-      "today": 10522,
-      "month": 120557,
+      "today": 17830,
+      "month": 127860,
       "today_api_name": "이다니♥",
       "month_api_name": "이다니♥",
       "matched": true
@@ -199,6 +199,17 @@
       "matched": true
     },
     {
+      "part": "엑셀부",
+      "name": "체온",
+      "match": "체온_♡",
+      "soop_id": "leeso0403",
+      "today": 1,
+      "month": 0,
+      "today_api_name": "체온♥",
+      "month_api_name": "",
+      "matched": true
+    },
+    {
       "part": "스타부",
       "name": "김택용",
       "match": "Bisu김택용",
@@ -343,17 +354,6 @@
     },
     {
       "part": "엑셀부",
-      "name": "체온",
-      "match": "체온_♡",
-      "soop_id": "leeso0403",
-      "today": 0,
-      "month": 0,
-      "today_api_name": "",
-      "month_api_name": "",
-      "matched": false
-    },
-    {
-      "part": "엑셀부",
       "name": "하이희야",
       "match": "하이희야♡",
       "soop_id": "jkmjkm1236",
@@ -411,7 +411,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "40,577",
+    "avg": "40,982",
     "leader": "애순이",
     "leader_sales": "205,574",
     "members": [
@@ -436,9 +436,9 @@
       {
         "rank": 3,
         "name": "이다니",
-        "today": "10,522",
-        "month": "120,557",
-        "width": "58%",
+        "today": "17,830",
+        "month": "127,860",
+        "width": "62%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -516,8 +516,8 @@
       },
       {
         "rank": 12,
-        "name": "혜루찡",
-        "today": "0",
+        "name": "체온",
+        "today": "1",
         "month": "0",
         "width": "0%",
         "first": false,
@@ -525,7 +525,7 @@
       },
       {
         "rank": 13,
-        "name": "체온",
+        "name": "혜루찡",
         "today": "0",
         "month": "0",
         "width": "0%",
