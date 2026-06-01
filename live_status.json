@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-01 14:33:13",
+  "updated_at": "2026-06-01 15:02:54",
   "total": 38,
-  "live_count": 3,
+  "live_count": 4,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -294,11 +294,11 @@
       "part": "엑셀부",
       "soop_id": "jfiary0718",
       "soop_url": "https://www.sooplive.com/station/jfiary0718",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294467421",
+      "title": "[씨나인:신입] 6월이다 ㄷㄷ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jfiary0718/station"
     },
