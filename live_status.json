@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-02 01:05:01",
+  "updated_at": "2026-06-02 02:10:51",
   "total": 36,
-  "live_count": 7,
+  "live_count": 6,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -337,7 +337,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294475509",
-      "title": "[씨나인:귀족] 조롱 열하^^7",
+      "title": "[씨나인:귀족] 조롱 열하^^7 쏘주한잔 ㄱ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dlswldus107/station"
     },
@@ -346,11 +346,11 @@
       "part": "엑셀부",
       "soop_id": "lcy011027",
       "soop_url": "https://www.sooplive.com/station/lcy011027",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294478611",
-      "title": "[씨나인:하녀]위기를 기회로.. 감사인사핑",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/lcy011027/station"
     },
