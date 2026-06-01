@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-01 16:42:14",
-  "total": 38,
+  "updated_at": "2026-06-01 17:00:01",
+  "total": 37,
   "live_count": 5,
   "members": {
     "y1026": {
@@ -93,19 +93,6 @@
       "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jmc06170/station"
-    },
-    "jk890202": {
-      "name": "윤중",
-      "part": "스타부",
-      "soop_id": "jk890202",
-      "soop_url": "https://www.sooplive.com/station/jk890202",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
-      "viewers": 0,
-      "checked_url": "https://bjapi.afreecatv.com/api/jk890202/station"
     },
     "dbsdydx": {
       "name": "윤용태",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01 16:42:23",
+  "updated_at": "2026-06-01 17:00:12",
   "source": "poong.today chart API direct v7",
   "month_reset": true,
   "message": "월초 집계 반영 대기중입니다. 풍투데이 1일 데이터 반영 후 자동 갱신됩니다.",
@@ -9,9 +9,9 @@
     "day": "",
     "today": ""
   },
-  "total_members": 38,
+  "total_members": 37,
   "matched_count": 0,
-  "unmatched_count": 38,
+  "unmatched_count": 37,
   "ranking": [
     {
       "part": "스타부",
@@ -84,17 +84,6 @@
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
       "soop_id": "jmc06170",
-      "today": 0,
-      "month": 0,
-      "today_api_name": "",
-      "month_api_name": "",
-      "matched": false
-    },
-    {
-      "part": "스타부",
-      "name": "윤중",
-      "match": "JuM.윤중2",
-      "soop_id": "jk890202",
       "today": 0,
       "month": 0,
       "today_api_name": "",
@@ -677,15 +666,6 @@
       },
       {
         "rank": 8,
-        "name": "윤중",
-        "today": "0",
-        "month": "0",
-        "width": "0%",
-        "first": false,
-        "color": "#ffd34f"
-      },
-      {
-        "rank": 9,
         "name": "윤용태",
         "today": "0",
         "month": "0",
@@ -694,7 +674,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 10,
+        "rank": 9,
         "name": "유승곤",
         "today": "0",
         "month": "0",
@@ -703,7 +683,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 11,
+        "rank": 10,
         "name": "디임",
         "today": "0",
         "month": "0",
@@ -712,7 +692,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 12,
+        "rank": 11,
         "name": "나무늘봉순",
         "today": "0",
         "month": "0",
@@ -721,7 +701,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 13,
+        "rank": 12,
         "name": "효짱",
         "today": "0",
         "month": "0",
@@ -730,7 +710,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 14,
+        "rank": 13,
         "name": "란란",
         "today": "0",
         "month": "0",
@@ -739,7 +719,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 15,
+        "rank": 14,
         "name": "남수댕",
         "today": "0",
         "month": "0",
@@ -748,7 +728,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 16,
+        "rank": 15,
         "name": "요닝",
         "today": "0",
         "month": "0",
@@ -757,7 +737,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 17,
+        "rank": 16,
         "name": "앵지",
         "today": "0",
         "month": "0",
@@ -766,7 +746,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 18,
+        "rank": 17,
         "name": "졈니",
         "today": "0",
         "month": "0",
@@ -775,7 +755,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 19,
+        "rank": 18,
         "name": "모리",
         "today": "0",
         "month": "0",
@@ -784,7 +764,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 20,
+        "rank": 19,
         "name": "오리꿍",
         "today": "0",
         "month": "0",
