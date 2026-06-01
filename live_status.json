@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01 23:36:26",
+  "updated_at": "2026-06-02 00:21:04",
   "total": 36,
   "live_count": 8,
   "members": {
@@ -47,11 +47,11 @@
       "part": "스타부",
       "soop_id": "rlekfu6",
       "soop_url": "https://www.sooplive.com/station/rlekfu6",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294483421",
+      "title": "[씨나인]박재혁 집",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rlekfu6/station"
     },
@@ -272,7 +272,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294467421",
-      "title": "[씨나인:신입] 6월이다 ㄷㄷ 2부",
+      "title": "[씨나인:신입] 6월이다 ㄷㄷ 2부 꼬치+새로 스겜",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jfiary0718/station"
     },
@@ -337,7 +337,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294475509",
-      "title": "[씨나인:귀족] 6월 첫방송!",
+      "title": "[씨나인:귀족] 조롱 열하^^7",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dlswldus107/station"
     },
@@ -359,11 +359,11 @@
       "part": "엑셀부",
       "soop_id": "chocho12",
       "soop_url": "https://www.sooplive.com/station/chocho12",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294478313",
-      "title": "[씨나인 : 황족] 툐툐 부활쓰 ... 팀전승리 감사인사 >_< ♥",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
@@ -376,7 +376,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294473659",
-      "title": "[씨나인:신입] 7공수까지.... 5000개",
+      "title": "[씨나인:신입] 8공수까지.... 단 1200개",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kaja0011/station"
     },
