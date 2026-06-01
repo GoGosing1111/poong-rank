@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-01 21:21:17",
-  "source": "poong.today chart API direct v7",
+  "updated_at": "2026-06-01 21:51:42",
+  "source": "poonggo ranking html direct v1",
   "month_reset": true,
-  "message": "월초 집계 반영 대기중입니다. 풍투데이 1일 데이터 반영 후 자동 갱신됩니다.",
+  "message": "월초 집계 반영 대기중입니다. 풍고 1일 데이터 반영 후 자동 갱신됩니다.",
   "used_month": "2026-06",
   "api_urls": {
-    "month": "https://static.poong.today/chart/get?ctype=month&ks=false&year=2026&month=6&day=undefined",
+    "month": "https://poonggo.com/ranking/broadcast?c=monthly&s=b&page=1",
     "day": "",
     "today": ""
   },
@@ -591,7 +591,7 @@
         "color": "#7dc7ff"
       }
     ],
-    "message": "월초 집계 반영 대기중입니다. 풍투데이 1일 데이터 반영 후 자동 갱신됩니다.",
+    "message": "월초 집계 반영 대기중입니다. 풍고 1일 데이터 반영 후 자동 갱신됩니다.",
     "month_reset": true
   },
   "star": {
@@ -773,7 +773,7 @@
         "color": "#ffd34f"
       }
     ],
-    "message": "월초 집계 반영 대기중입니다. 풍투데이 1일 데이터 반영 후 자동 갱신됩니다.",
+    "message": "월초 집계 반영 대기중입니다. 풍고 1일 데이터 반영 후 자동 갱신됩니다.",
     "month_reset": true
   }
 }
