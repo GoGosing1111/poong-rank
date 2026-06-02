@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-02 17:45:31",
+  "updated_at": "2026-06-02 18:52:01",
   "total": 38,
-  "live_count": 5,
+  "live_count": 6,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -12,7 +12,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294492583",
-      "title": "철구 씨나인vs캄몬 나락대학대전 7/4 2:2 오늘 지면 큰일납니다",
+      "title": "철구 씨나인vs캄몬 나락대학대전 7/4 3:3 오늘 지면 큰일납니다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
@@ -398,11 +398,11 @@
       "part": "엑셀부",
       "soop_id": "kaja0011",
       "soop_url": "https://www.sooplive.com/station/kaja0011",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294496437",
+      "title": "[씨나인:신입] 용식당 제일 매운 단계 ㄱㄱ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kaja0011/station"
     },
