@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02 19:06:13",
+  "updated_at": "2026-06-02 19:14:23",
   "source": "poong.today chart API direct v8 current-month-lock",
   "used_month": "2026-06",
   "api_urls": {
@@ -16,8 +16,8 @@
       "name": "송채연",
       "match": "송채연",
       "soop_id": "jfiary0718",
-      "today": 8008,
-      "month": 256768,
+      "today": 10068,
+      "month": 258828,
       "today_api_name": "송채연",
       "month_api_name": "송채연",
       "matched": true
@@ -71,8 +71,8 @@
       "name": "여을",
       "match": "여을♥",
       "soop_id": "kaja0011",
-      "today": 121,
-      "month": 80139,
+      "today": 336,
+      "month": 80354,
       "today_api_name": "여을♥",
       "month_api_name": "여을♥",
       "matched": true
@@ -137,8 +137,8 @@
       "name": "설윤이",
       "match": "설윤이♥",
       "soop_id": "dain9804",
-      "today": 18348,
-      "month": 18348,
+      "today": 19458,
+      "month": 19458,
       "today_api_name": "설윤이♥",
       "month_api_name": "설윤이♥",
       "matched": true
@@ -170,8 +170,8 @@
       "name": "히나",
       "match": "히나_♥",
       "soop_id": "luaa0803",
-      "today": 6778,
-      "month": 6778,
+      "today": 6782,
+      "month": 6782,
       "today_api_name": "히나_♥",
       "month_api_name": "히나_♥",
       "matched": true
@@ -203,8 +203,8 @@
       "name": "아윤",
       "match": "아윤♡",
       "soop_id": "ayoona",
-      "today": 11,
-      "month": 2052,
+      "today": 21,
+      "month": 2062,
       "today_api_name": "아윤",
       "month_api_name": "아윤",
       "matched": true
@@ -428,15 +428,15 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "53,898",
+    "avg": "54,098",
     "leader": "송채연",
-    "leader_sales": "256,768",
+    "leader_sales": "258,828",
     "members": [
       {
         "rank": 1,
         "name": "송채연",
-        "today": "8,008",
-        "month": "256,768",
+        "today": "10,068",
+        "month": "258,828",
         "width": "100%",
         "first": true,
         "color": "#7dc7ff"
@@ -446,7 +446,7 @@
         "name": "애순이",
         "today": "0",
         "month": "205,574",
-        "width": "80%",
+        "width": "79%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -471,8 +471,8 @@
       {
         "rank": 5,
         "name": "여을",
-        "today": "121",
-        "month": "80,139",
+        "today": "336",
+        "month": "80,354",
         "width": "31%",
         "first": false,
         "color": "#7dc7ff"
@@ -482,7 +482,7 @@
         "name": "쁠리",
         "today": "0",
         "month": "36,016",
-        "width": "14%",
+        "width": "13%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -498,8 +498,8 @@
       {
         "rank": 8,
         "name": "설윤이",
-        "today": "18,348",
-        "month": "18,348",
+        "today": "19,458",
+        "month": "19,458",
         "width": "7%",
         "first": false,
         "color": "#7dc7ff"
@@ -525,8 +525,8 @@
       {
         "rank": 11,
         "name": "히나",
-        "today": "6,778",
-        "month": "6,778",
+        "today": "6,782",
+        "month": "6,782",
         "width": "4%",
         "first": false,
         "color": "#7dc7ff"
@@ -534,8 +534,8 @@
       {
         "rank": 12,
         "name": "아윤",
-        "today": "11",
-        "month": "2,052",
+        "today": "21",
+        "month": "2,062",
         "width": "4%",
         "first": false,
         "color": "#7dc7ff"
