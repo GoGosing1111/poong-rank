@@ -1,0 +1,18 @@
+CNINE 공지 401 해결 방법
+
+원인:
+- Authorization 헤더는 필요 없음
+- CNINE2_REMEMBERME / CNINE2_S_ID 쿠키가 최신이어야 함
+- 브라우저를 끄는 것 자체가 문제가 아니라, cnine_cookies.txt 쿠키가 오래되면 401 발생
+
+갱신 방법:
+1. CNINE 로그인
+2. F12 > Network > Fetch/XHR
+3. 공지 페이지에서 all-page 요청 우클릭 > Copy as cURL
+4. cURL 안의 -b "..." 부분 안쪽 쿠키 전체를 cnine_cookies.txt에 덮어쓰기
+5. run_update_all.bat 실행
+
+확인 파일:
+- notice_status.json
+- notice_debug.txt
+- api_raw/notice_list.json

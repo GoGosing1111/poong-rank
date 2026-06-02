@@ -37,6 +37,18 @@
   },
   {
     "part": "스타부",
+    "name": "오조은",
+    "match": "오조은하루",
+    "soop_id": "zalalz"
+  },
+  {
+    "part": "스타부",
+    "name": "모리",
+    "match": "모리_",
+    "soop_id": "moguleave"
+  },
+  {
+    "part": "스타부",
     "name": "왜냐맨장민철",
     "match": "왜냐맨장민철",
     "soop_id": "jmc06170"
@@ -89,25 +101,19 @@
     "match": "요닝♡.",
     "soop_id": "tjgpdus97"
   },
-{
-  "part": "스타부",
-  "name": "앵지",
-  "match": "앵지",
-  "soop_id": "gks2wl",
-  "soop_url": "https://www.sooplive.com/station/gks2wl",
-  "profile_img": "https://profile.img.sooplive.com/LOGO/gk/gks2wl/gks2wl.jpg"
-},
+  {
+    "part": "스타부",
+    "name": "앵지",
+    "match": "앵지",
+    "soop_id": "gks2wl",
+    "soop_url": "https://www.sooplive.com/station/gks2wl",
+    "profile_img": "https://profile.img.sooplive.com/LOGO/gk/gks2wl/gks2wl.jpg"
+  },
   {
     "part": "스타부",
     "name": "졈니",
     "match": "졈니♥",
     "soop_id": "yochba0402"
-  },
-  {
-    "part": "스타부",
-    "name": "모리",
-    "match": "모리_",
-    "soop_id": "moguleave"
   },
   {
     "part": "스타부",

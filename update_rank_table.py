@@ -25,6 +25,11 @@ API_BASE = "https://static.poong.today/chart/get"
 TIMEOUT = 20
 REQUEST_DELAY = 0.25
 
+# 철구형은 수장으로만 1회 집계한다.
+# cnine_members.json에 스타부/엑셀부 양쪽으로 들어있어도 별풍선표 평균/순위에서는 제외된다.
+LEADER_SOOP_IDS = {"y1026"}
+LEADER_NAMES = {"철구형"}
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/148 Safari/537.36",
     "Accept": "application/json,text/plain,*/*",
@@ -42,6 +47,32 @@ def norm_name(v: Any) -> str:
     s = re.sub(r"\s+", "", s)
     s = re.sub(r"[♡♥❤★☆\[\]\(\){}<>ㆍ·_\-\.~,!/\\|#＠@;:+=\^˚´`'\"]", "", s)
     return s
+
+
+def is_leader_member(m: Dict[str, Any]) -> bool:
+    sid = safe(m.get("soop_id") or m.get("id")).lower()
+    name = safe(m.get("name"))
+    return sid in LEADER_SOOP_IDS or name in LEADER_NAMES
+
+
+def unique_members_by_soop_id(members: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen = set()
+    out = []
+    for m in members:
+        sid = safe(m.get("soop_id") or m.get("id")).lower()
+        key = sid or safe(m.get("name"))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(m)
+    return out
+
+
+def split_leader_members(members: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    unique = unique_members_by_soop_id(members)
+    leaders = [m for m in unique if is_leader_member(m)]
+    regulars = [m for m in unique if not is_leader_member(m)]
+    return leaders, regulars
 
 
 def to_int(v: Any) -> int:
@@ -215,7 +246,8 @@ def matched_count(members: List[Dict[str, Any]], idx: Dict[str, Dict[str, Any]])
 
 
 def make_rank_card(part: str, members: List[Dict[str, Any]], rank_badge: str) -> Dict[str, Any]:
-    part_members = [m for m in members if m.get("part") == part]
+    # 수장은 일반 부서 랭킹/월평균에서 제외한다.
+    part_members = [m for m in members if m.get("part") == part and not is_leader_member(m)]
     part_members.sort(key=lambda x: (x.get("month", 0), x.get("today", 0)), reverse=True)
     max_month = max([m.get("month", 0) for m in part_members] + [1])
     rows = []
@@ -242,6 +274,18 @@ def make_rank_card(part: str, members: List[Dict[str, Any]], rank_badge: str) ->
     }
 
 
+def make_leader_card(members: List[Dict[str, Any]]) -> Dict[str, Any]:
+    leaders = [m for m in members if is_leader_member(m)]
+    if not leaders:
+        return {"name": "철구형", "today": "0", "month": "0"}
+    best = sorted(leaders, key=lambda x: (x.get("month", 0), x.get("today", 0)), reverse=True)[0]
+    return {
+        "name": best.get("name", "철구형"),
+        "today": fmt_num(best.get("today", 0)),
+        "month": fmt_num(best.get("month", 0)),
+        "soop_id": best.get("soop_id", "y1026"),
+    }
+
 def main() -> int:
     logs: List[str] = []
     dt = datetime.now()
@@ -254,47 +298,116 @@ def main() -> int:
     if not isinstance(members, list):
         print("[ERROR] cnine_members.json 최상위는 리스트여야 합니다.")
         return 1
-    logs.append(f"MEMBERS={len(members)}")
+    leaders_for_count, regulars_for_count = split_leader_members(members)
+    display_member_count = len(leaders_for_count) + len(regulars_for_count)
+    logs.append(f"MEMBERS_RAW={len(members)}")
+    logs.append(f"MEMBERS_UNIQUE_DISPLAY={display_member_count} LEADER={len(leaders_for_count)} REGULAR={len(regulars_for_count)}")
 
-    # 매월 1일 전용 규칙:
-    # - 지난달 fallback을 쓰지 않는다.
-    # - 오늘/일간 API가 비어 있으면 이번 달 월간(month_current) 값을 오늘값으로 사용한다.
-    # - 최종적으로 오늘 = 월간 으로 맞춘다.
-    day1_mode = (dt.day == 1)
-    if day1_mode:
-        logs.append("DAY1_MODE=True today_equals_month")
+    # 매월 1일은 풍투데이 데이터 반영이 늦을 수 있으므로
+    # 아래에서 이번 달 데이터만 확인한 뒤, 매칭률이 낮으면 안전한 대기 모드로 출력한다.
 
-    # 이번 달 / 최근 3개월 월간을 모두 보고 매칭이 더 많은 쪽 사용
-    # 월초에는 poong.today 이번 달 데이터가 비어 있거나 일부만 잡히는 경우가 있어 fallback 필수.
+    # 월간 데이터는 무조건 현재월을 우선 사용한다.
+    # 기존 방식처럼 최근 3개월 중 매칭률이 높은 달을 고르면
+    # 월초/신규멤버 반영 시 지난달 데이터가 선택되는 문제가 생긴다.
+    # 현재월 매칭이 거의 0건 수준일 때만 과거월을 fallback 후보로 본다.
     month_candidates = []
-    month_targets = []
-    if day1_mode:
-        # 1일에는 지난달 데이터가 섞이면 안 되므로 이번 달만 사용
-        month_targets.append(("month_current", (dt.year, dt.month)))
-    else:
-        # 2일 이후에는 기존처럼 이번 달/최근 3개월 중 매칭률이 가장 좋은 월간 데이터 사용
-        for back in range(0, 4):
-            yy, mm = add_months(dt.year, dt.month, -back)
-            tag = "month_current" if back == 0 else f"month_prev_{back}"
-            month_targets.append((tag, (yy, mm)))
+    month_targets = [("month_current", (dt.year, dt.month))]
+    fallback_targets = []
+    for back in range(1, 4):
+        yy, mm = add_months(dt.year, dt.month, -back)
+        fallback_targets.append((f"month_prev_{back}", (yy, mm)))
     for tag, (yy, mm) in month_targets:
         try:
             rows, url = fetch_chart("month", yy, mm, "undefined", tag, logs)
             idx = make_index(rows)
-            mc = matched_count(members, idx)
-            logs.append(f"INDEX {tag}: {len(idx)} MATCHED_IF_USED={mc}/{len(members)}")
+            mc = matched_count(leaders_for_count + regulars_for_count, idx)
+            logs.append(f"INDEX {tag}: {len(idx)} MATCHED_IF_USED={mc}/{display_member_count}")
             month_candidates.append((mc, len(idx), tag, rows, idx, url, yy, mm))
         except Exception as e:
             logs.append(f"FETCH_FAILED {tag}: {type(e).__name__}: {e}")
         time.sleep(REQUEST_DELAY)
 
     if not month_candidates:
-        print("[ERROR] 월간 API 수집 실패")
+        print("[ERROR] 현재월 월간 API 수집 실패")
         Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8-sig")
         return 1
-    month_candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
-    best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = month_candidates[0]
-    logs.append(f"MONTH_USED={best_tag} {used_year}-{used_month:02d} MATCHED={best_mc}/{len(members)}")
+
+    current_mc, current_len, current_tag, current_rows, current_idx, current_url, current_year, current_month = month_candidates[0]
+    min_current_match = max(3, int(display_member_count * 0.15))
+
+    if current_mc >= min_current_match or current_len > 0:
+        # 현재월 데이터가 일부라도 정상적으로 잡히면 절대 지난달로 바꾸지 않는다.
+        best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = month_candidates[0]
+        logs.append(f"MONTH_USED_CURRENT_LOCK={best_tag} {used_year}-{used_month:02d} MATCHED={best_mc}/{display_member_count}")
+    else:
+        logs.append(f"CURRENT_MONTH_TOO_LOW={current_mc}/{display_member_count}; fallback_check")
+        fallback_candidates = []
+        for tag, (yy, mm) in fallback_targets:
+            try:
+                rows, url = fetch_chart("month", yy, mm, "undefined", tag, logs)
+                idx = make_index(rows)
+                mc = matched_count(leaders_for_count + regulars_for_count, idx)
+                logs.append(f"INDEX {tag}: {len(idx)} MATCHED_IF_USED={mc}/{display_member_count}")
+                fallback_candidates.append((mc, len(idx), tag, rows, idx, url, yy, mm))
+            except Exception as e:
+                logs.append(f"FETCH_FAILED {tag}: {type(e).__name__}: {e}")
+            time.sleep(REQUEST_DELAY)
+        if fallback_candidates:
+            fallback_candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
+            best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = fallback_candidates[0]
+            logs.append(f"MONTH_USED_FALLBACK={best_tag} {used_year}-{used_month:02d} MATCHED={best_mc}/{display_member_count}")
+        else:
+            best_mc, _, best_tag, month_rows, month_idx, month_url, used_year, used_month = month_candidates[0]
+            logs.append(f"MONTH_USED_EMPTY_CURRENT={best_tag} {used_year}-{used_month:02d} MATCHED={best_mc}/{display_member_count}")
+
+    # 1일에 이번 달 데이터 매칭이 너무 낮으면, 지난달 데이터로 오염시키지 않고 대기 모드 출력.
+    # 단, ranking/excel/star 구조는 그대로 유지해서 make_ygosu_c9_dashboard.py가 멈추지 않게 한다.
+    if dt.day == 1 and best_mc < max(5, int(display_member_count * 0.5)):
+        wait_msg = "월초 집계 반영 대기중입니다. 풍투데이 1일 데이터 반영 후 자동 갱신됩니다."
+        items = []
+        for m in (leaders_for_count + regulars_for_count):
+            items.append({
+                "part": "수장" if is_leader_member(m) else safe(m.get("part")),
+                "name": safe(m.get("name")),
+                "match": safe(m.get("match")),
+                "soop_id": safe(m.get("soop_id") or m.get("id")),
+                "today": 0,
+                "month": 0,
+                "today_api_name": "",
+                "month_api_name": "",
+                "matched": False,
+            })
+        result = {
+            "updated_at": dt.strftime("%Y-%m-%d %H:%M:%S"),
+            "source": "poong.today chart API direct v8 current-month-lock",
+            "month_reset": True,
+            "message": wait_msg,
+            "used_month": f"{used_year}-{used_month:02d}",
+            "api_urls": {"month": month_url, "day": "", "today": ""},
+            "total_members": display_member_count,
+            "matched_count": 0,
+            "unmatched_count": display_member_count,
+            "ranking": items,
+            "leader": make_leader_card(items),
+            "excel": make_rank_card("엑셀부", items, "E"),
+            "star": make_rank_card("스타부", items, "S"),
+        }
+        result["excel"]["message"] = wait_msg
+        result["excel"]["month_reset"] = True
+        result["star"]["message"] = wait_msg
+        result["star"]["month_reset"] = True
+        Path(OUTPUT_JSON).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+        logs.append("DAY1_WAIT_MODE=True")
+        logs.append(wait_msg)
+        logs.append(f"MATCHED=0/{display_member_count}")
+        Path(DEBUG_LOG).write_text("\n".join(logs), encoding="utf-8-sig")
+        print("=" * 60)
+        print("완료:", OUTPUT_JSON)
+        print("멤버:", display_member_count)
+        print("월초 집계 반영 대기중")
+        print("디버그:", DEBUG_LOG)
+        print("=" * 60)
+        return 0
 
     # 오늘 데이터는 당일 API만 사용. 0건이어도 정상 진행.
     day_idx: Dict[str, Dict[str, Any]] = {}
@@ -313,22 +426,14 @@ def main() -> int:
 
     items = []
     unmatched = []
-    for m in members:
+    for m in (leaders_for_count + regulars_for_count):
         m = dict(m)
         month = find_value(m, month_idx)
         today = find_value(m, today_idx)
         if today.get("value", 0) <= 0:
             today = find_value(m, day_idx)
-
-        if day1_mode:
-            # 1일은 today/day API가 비는 경우가 많으므로 month_current를 보조값으로 사용
-            # 최종 출력은 반드시 오늘 = 월간
-            base = today if today.get("value", 0) > 0 else month
-            today = base
-            month = base
-
         item = {
-            "part": safe(m.get("part")),
+            "part": "수장" if is_leader_member(m) else safe(m.get("part")),
             "name": safe(m.get("name")),
             "match": safe(m.get("match")),
             "soop_id": safe(m.get("soop_id") or m.get("id")),
@@ -344,14 +449,14 @@ def main() -> int:
 
     result = {
         "updated_at": dt.strftime("%Y-%m-%d %H:%M:%S"),
-        "source": "poong.today chart API direct v7",
-        "day1_today_equals_month": day1_mode,
+        "source": "poong.today chart API direct v8 current-month-lock",
         "used_month": f"{used_year}-{used_month:02d}",
         "api_urls": {"month": month_url, "day": day_url, "today": today_url},
-        "total_members": len(members),
+        "total_members": display_member_count,
         "matched_count": sum(1 for x in items if x["matched"]),
         "unmatched_count": len(unmatched),
         "ranking": sorted(items, key=lambda x: (x["month"], x["today"]), reverse=True),
+        "leader": make_leader_card(items),
         "excel": make_rank_card("엑셀부", items, "E"),
         "star": make_rank_card("스타부", items, "S"),
     }
@@ -360,8 +465,6 @@ def main() -> int:
     logs.append(f"MONTH_INDEX={len(month_idx)}")
     logs.append(f"TODAY_INDEX={len(today_idx)}")
     logs.append(f"MATCHED={result['matched_count']}/{result['total_members']}")
-    if day1_mode:
-        logs.append("DAY1_RULE_APPLIED=today_equals_month; no_prev_month_fallback")
     logs.append("")
     logs.append("UNMATCHED")
     logs.extend(unmatched[:300])

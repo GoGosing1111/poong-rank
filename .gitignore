@@ -2,7 +2,11 @@ cnine_cookies.txt
 live_status_debug.txt
 notice_api_debug.json
 notice_debug.txt
+rank_debug.txt
+rank_unmatched.txt
 update_all_log.txt
-
+api_raw/
+__pycache__/
+*.pyc
 ygosu_c9_dashboard_full*.html
 ygosu_c9_dashboard_full*.txt

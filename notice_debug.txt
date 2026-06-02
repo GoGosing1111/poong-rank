@@ -1,26 +1,18 @@
-UPDATED_AT=2026-05-28 00:56:56
-MODE=cnine_api
-
+UPDATED_AT=2026-06-02 18:52:09
+MODE=cnine_api_cookie_headers_v2
+COOKIE_HAS_CNINE2_S_ID=True
+COOKIE_HAS_REMEMBERME=True
 TRY=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
-FAIL=HTTPError: HTTP Error 401: 
-TRY=https://www.cnine.kr/api/main/all-page?page=1&size=20&order=latest
-FAIL=HTTPError: HTTP Error 401: 
-TRY=https://www.cnine.kr/api/main/all-page?page=1&size=20&order=createdAt,desc
-FAIL=HTTPError: HTTP Error 401: 
-TRY=https://www.cnine.kr/api/main/all-page?page=1&size=20
-FAIL=HTTPError: HTTP Error 401: 
-TRY=https://www.cnine.kr/api/boards/an/all-page?page=1&size=20&order=latest
-FAIL=HTTPError: HTTP Error 401: 
-TRY=https://www.cnine.kr/api/board/an/all-page?page=1&size=20&order=latest
-FAIL=HTTPError: HTTP Error 401: 
-TRY=https://www.cnine.kr/api/posts/all-page?page=1&size=20&board=an
-FAIL=HTTPError: HTTP Error 401: 
-
-ERROR=공지 API 수집 실패
-LAST_ERROR=HTTPError: HTTP Error 401: 
-
-해결방법:
-1) 크롬 F12 > Network > Fetch/XHR > all-page 클릭
-2) Headers의 Request URL 전체를 복사
-3) cnine_notice_api.txt 파일에 1줄로 붙여넣기
-4) 다시 python update_cnine_notice.py 실행
+POST_COUNT=20
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957649
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957616
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957607
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957576
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957559
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957535
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957454
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957444
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957414
+DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/957342
+CONTENT_OK_COUNT=10
+OUTPUT=notice_status.json
