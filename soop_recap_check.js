@@ -154,163 +154,199 @@
 
   function makeCanvas({ nick, soopId, startDate, endDate, results, updatedAt }) {
     const now = new Date();
-    const issuedAt = `${fmtDate(now)} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
+    const issuedDate = fmtDate(now);
+    const issuedAt = `${issuedDate} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
+    const certNo = `SR-${issuedDate.replace(/-/g, '')}-${pad(now.getHours())}${pad(now.getMinutes())}`;
     const c = document.createElement('canvas');
     c.width = 1200;
-    c.height = 820;
+    c.height = 840;
     const ctx = c.getContext('2d');
 
     // Premium black/gold certificate background
-    const bg = ctx.createLinearGradient(0, 0, 1200, 820);
-    bg.addColorStop(0, '#090604');
-    bg.addColorStop(0.46, '#16100a');
-    bg.addColorStop(1, '#050403');
+    const bg = ctx.createLinearGradient(0, 0, 1200, 840);
+    bg.addColorStop(0, '#060402');
+    bg.addColorStop(0.5, '#14100a');
+    bg.addColorStop(1, '#030302');
     ctx.fillStyle = bg;
-    ctx.fillRect(0, 0, 1200, 820);
+    ctx.fillRect(0, 0, 1200, 840);
 
-    // Warm glow spots
+    // Soft gold glow
     ctx.save();
-    ctx.globalAlpha = 0.18;
-    let g1 = ctx.createRadialGradient(185, 110, 20, 185, 110, 330);
-    g1.addColorStop(0, '#f7d27a');
-    g1.addColorStop(1, 'rgba(247,210,122,0)');
+    ctx.globalAlpha = 0.16;
+    let g1 = ctx.createRadialGradient(220, 120, 10, 220, 120, 360);
+    g1.addColorStop(0, '#f6d276');
+    g1.addColorStop(1, 'rgba(246,210,118,0)');
     ctx.fillStyle = g1;
-    ctx.fillRect(0, 0, 1200, 820);
-    let g2 = ctx.createRadialGradient(980, 735, 20, 980, 735, 360);
-    g2.addColorStop(0, '#b77a27');
-    g2.addColorStop(1, 'rgba(183,122,39,0)');
+    ctx.fillRect(0, 0, 1200, 840);
+    let g2 = ctx.createRadialGradient(980, 700, 10, 980, 700, 330);
+    g2.addColorStop(0, '#b57924');
+    g2.addColorStop(1, 'rgba(181,121,36,0)');
     ctx.fillStyle = g2;
-    ctx.fillRect(0, 0, 1200, 820);
+    ctx.fillRect(0, 0, 1200, 840);
     ctx.restore();
 
-    // Subtle diagonal watermark pattern
+    // Subtle watermark, smaller and quieter
     ctx.save();
-    ctx.globalAlpha = 0.035;
-    ctx.translate(15, 760);
-    ctx.rotate(-0.35);
-    ctx.font = 'bold 38px Malgun Gothic, Arial';
-    ctx.fillStyle = '#fff2c0';
-    const wm = `SOOP RECAP CERTIFICATE  ·  ${nick}  ·  ${startDate}~${endDate}`;
-    for (let y = -980; y < 610; y += 118) {
-      for (let x = -360; x < 1420; x += 720) ctx.fillText(wm, x, y);
-    }
+    ctx.globalAlpha = 0.028;
+    ctx.translate(135, 610);
+    ctx.rotate(-0.22);
+    ctx.font = 'bold 92px Georgia, Malgun Gothic, serif';
+    ctx.fillStyle = '#ffe7a6';
+    ctx.fillText('SOOP RECAP', 0, 0);
     ctx.restore();
 
-    // outer certificate
-    drawRoundRect(ctx, 70, 50, 1060, 720, 36);
-    ctx.fillStyle = 'rgba(13, 10, 7, 0.92)';
+    // Outer frame
+    drawRoundRect(ctx, 58, 52, 1084, 728, 22);
+    ctx.fillStyle = 'rgba(10, 8, 6, 0.92)';
     ctx.fill();
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 4;
     ctx.strokeStyle = '#d6a84f';
     ctx.stroke();
 
-    // inner double border
-    drawRoundRect(ctx, 100, 80, 1000, 660, 26);
+    // inner borders
+    drawRoundRect(ctx, 82, 76, 1036, 680, 16);
     ctx.lineWidth = 2;
-    ctx.strokeStyle = 'rgba(255, 231, 166, .62)';
+    ctx.strokeStyle = 'rgba(255, 231, 166, .58)';
     ctx.stroke();
-    drawRoundRect(ctx, 122, 102, 956, 616, 20);
-    ctx.lineWidth = 1.5;
-    ctx.strokeStyle = 'rgba(174, 122, 42, .55)';
+    drawRoundRect(ctx, 108, 102, 984, 628, 12);
+    ctx.lineWidth = 1.2;
+    ctx.strokeStyle = 'rgba(174, 122, 42, .46)';
     ctx.stroke();
 
-    // corner ornaments
+    // corner ornaments, smaller
     function corner(x, y, sx, sy) {
       ctx.save();
       ctx.translate(x, y); ctx.scale(sx, sy);
-      ctx.strokeStyle = '#e6be69'; ctx.lineWidth = 4; ctx.lineCap = 'round';
-      ctx.beginPath(); ctx.moveTo(0, 42); ctx.quadraticCurveTo(0, 0, 42, 0); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(17, 58); ctx.quadraticCurveTo(20, 20, 58, 17); ctx.stroke();
+      ctx.strokeStyle = '#e6be69'; ctx.lineWidth = 3; ctx.lineCap = 'round';
+      ctx.beginPath(); ctx.moveTo(0, 36); ctx.quadraticCurveTo(0, 0, 36, 0); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(15, 50); ctx.quadraticCurveTo(18, 18, 50, 15); ctx.stroke();
       ctx.restore();
     }
-    corner(145, 125, 1, 1); corner(1055, 125, -1, 1); corner(145, 695, 1, -1); corner(1055, 695, -1, -1);
+    corner(135, 128, 1, 1); corner(1065, 128, -1, 1); corner(135, 704, 1, -1); corner(1065, 704, -1, -1);
 
     ctx.textAlign = 'center';
 
-    // top official mark - no cheap round stamp
+    // Header
     ctx.fillStyle = '#d6a84f';
-    ctx.font = 'bold 28px Malgun Gothic, Arial';
-    ctx.fillText('SOOP RECAP', 600, 142);
-    ctx.strokeStyle = 'rgba(214,168,79,.70)';
-    ctx.lineWidth = 2;
+    ctx.font = 'bold 22px Georgia, Malgun Gothic, serif';
+    ctx.fillText('SOOP RECAP', 600, 132);
+    ctx.strokeStyle = 'rgba(214,168,79,.62)';
+    ctx.lineWidth = 1.5;
     ctx.beginPath();
-    ctx.moveTo(420, 150); ctx.lineTo(545, 150);
-    ctx.moveTo(655, 150); ctx.lineTo(780, 150);
+    ctx.moveTo(438, 140); ctx.lineTo(548, 140);
+    ctx.moveTo(652, 140); ctx.lineTo(762, 140);
     ctx.stroke();
-    ctx.fillStyle = '#f8e7b0';
-    ctx.font = 'bold 20px Malgun Gothic, Arial';
-    ctx.fillText('OFFICIAL WATCH RECORD CERTIFICATE', 600, 171);
 
     ctx.fillStyle = '#f8e7b0';
-    ctx.font = 'bold 58px Malgun Gothic, Arial';
-    ctx.fillText('리캡 셀프 인증서', 600, 225);
+    ctx.font = 'bold 60px Malgun Gothic, Arial';
+    ctx.fillText('리캡 셀프 인증서', 600, 207);
 
     ctx.fillStyle = '#caa15a';
-    ctx.font = 'bold 20px Malgun Gothic, Arial';
-    ctx.fillText('CERTIFICATE OF WATCH RECAP VERIFICATION', 600, 258);
+    ctx.font = 'bold 19px Georgia, Malgun Gothic, serif';
+    ctx.fillText('CERTIFICATE OF WATCH RECAP VERIFICATION', 600, 242);
 
-    // date ribbon
-    drawRoundRect(ctx, 370, 282, 460, 44, 22);
-    ctx.fillStyle = 'rgba(214,168,79,.16)';
+    // Date ribbon
+    drawRoundRect(ctx, 390, 264, 420, 42, 20);
+    ctx.fillStyle = 'rgba(214,168,79,.13)';
     ctx.fill();
-    ctx.strokeStyle = 'rgba(255,231,166,.38)'; ctx.lineWidth = 1.5; ctx.stroke();
+    ctx.strokeStyle = 'rgba(255,231,166,.38)';
+    ctx.lineWidth = 1.4;
+    ctx.stroke();
     ctx.fillStyle = '#ffe7a6';
     ctx.font = 'bold 20px Malgun Gothic, Arial';
-    ctx.fillText(`${startDate}  ~  ${endDate}`, 600, 311);
+    ctx.fillText(`${startDate}  ~  ${endDate}`, 600, 292);
 
-    ctx.fillStyle = '#b98b3c';
-    ctx.font = 'bold 22px Malgun Gothic, Arial';
-    ctx.fillText('본 인증서는 아래 와고닉의 SOOP 시청기록 기준으로 생성되었습니다.', 600, 372);
+    // body text
+    ctx.fillStyle = '#d9c595';
+    ctx.font = 'bold 21px Malgun Gothic, Arial';
+    ctx.fillText('본 인증서는 아래 와고닉의 SOOP 시청기록 기준으로 생성되었습니다.', 600, 348);
 
+    ctx.fillStyle = '#d6a84f';
+    ctx.font = 'bold 19px Malgun Gothic, Arial';
+    ctx.fillText('인증 대상자', 600, 390);
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 56px Malgun Gothic, Arial';
-    ctx.fillText(nick, 600, 445);
+    ctx.font = 'bold 54px Malgun Gothic, Arial';
+    ctx.fillText(nick, 600, 450);
 
     const chulgu = results.find(r => r.key === 'chulgu100');
     const chulguSeconds = chulgu ? Number(chulgu.seconds) || 0 : 0;
     const chulguHours = Math.floor(chulguSeconds / 3600);
+    const yeom = results.find(r => r.key === 'yeomboseong');
+    const kei = results.find(r => r.key === 'bjkei');
+    const h = (r) => `${Math.floor((Number(r && r.seconds) || 0) / 3600)}시간`;
 
-    // Chulgu highlight plaque
-    drawRoundRect(ctx, 255, 488, 690, 108, 26);
-    const plaque = ctx.createLinearGradient(255, 488, 945, 596);
-    plaque.addColorStop(0, 'rgba(92, 54, 16, .96)');
-    plaque.addColorStop(.5, 'rgba(188, 130, 40, .90)');
-    plaque.addColorStop(1, 'rgba(75, 43, 12, .96)');
-    ctx.fillStyle = plaque;
+    // Main watch time box
+    drawRoundRect(ctx, 250, 480, 700, 100, 12);
+    ctx.fillStyle = 'rgba(0,0,0,.22)';
     ctx.fill();
-    ctx.lineWidth = 3;
-    ctx.strokeStyle = '#ffe1a0';
+    ctx.lineWidth = 1.7;
+    ctx.strokeStyle = 'rgba(214,168,79,.70)';
+    ctx.stroke();
+    ctx.fillStyle = '#f5d98a';
+    ctx.font = 'bold 25px Malgun Gothic, Arial';
+    ctx.fillText('총 누적 시청시간', 600, 516);
+    ctx.fillStyle = '#f4d183';
+    ctx.font = 'bold 58px Georgia, Malgun Gothic, serif';
+    ctx.fillText(`${chulguHours}시간`, 600, 565);
+
+    // 3 columns
+    drawRoundRect(ctx, 172, 608, 856, 92, 10);
+    ctx.strokeStyle = 'rgba(214,168,79,.62)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(457, 624); ctx.lineTo(457, 686);
+    ctx.moveTo(743, 624); ctx.lineTo(743, 686);
+    ctx.strokeStyle = 'rgba(214,168,79,.40)';
     ctx.stroke();
 
-    ctx.fillStyle = '#fff5ca';
-    ctx.font = 'bold 28px Malgun Gothic, Arial';
-    ctx.fillText('철구 시청 누적', 600, 527);
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 50px Malgun Gothic, Arial';
-    ctx.fillText(`${chulguHours}시간`, 600, 580);
-
-    // Target rows: clean certificate verdicts
-    const checkRows = results.filter(r => r.key !== 'chulgu100');
-    let y = 646;
-    ctx.font = 'bold 27px Malgun Gothic, Arial';
-    checkRows.forEach((r) => {
-      const mark = r.found ? '확인됨' : '기록없음';
-      const timeText = r.found ? ` · ${secondsToHms(r.seconds)}` : '';
-      ctx.fillStyle = r.found ? '#ffb4a8' : '#bdf7c9';
-      ctx.fillText(`${r.label} : ${mark}${timeText}`, 600, y);
-      y += 42;
+    const cols = [
+      ['철구 시청 누적', `${chulguHours}시간`],
+      ['A-염보성!! 시청 누적', h(yeom)],
+      ['[BJ]케이 시청 누적', h(kei)]
+    ];
+    [315, 600, 885].forEach((x, i) => {
+      ctx.fillStyle = '#d6a84f';
+      ctx.font = 'bold 18px Malgun Gothic, Arial';
+      ctx.fillText(cols[i][0], x, 643);
+      ctx.fillStyle = i === 0 ? '#f4d183' : '#ffffff';
+      ctx.font = 'bold 31px Malgun Gothic, Arial';
+      ctx.fillText(cols[i][1], x, 680);
     });
 
-    // Footer
-    ctx.textAlign = 'center';
-    ctx.fillStyle = '#a9915d';
+    // Issue info and signature
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#d9c595';
     ctx.font = 'bold 15px Malgun Gothic, Arial';
-    ctx.fillText(`SOOP 시청기록 API 기준 · 조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 714);
-    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 737);
+    ctx.fillText('발급일', 170, 724);
+    ctx.fillStyle = '#f2d58a';
+    ctx.fillText(issuedDate, 235, 724);
+    ctx.fillStyle = '#d9c595';
+    ctx.fillText('인증번호', 170, 750);
+    ctx.fillStyle = '#f2d58a';
+    ctx.fillText(certNo, 250, 750);
+
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#d6a84f';
+    ctx.font = 'italic 34px Georgia, serif';
+    ctx.fillText('SOOP Recap Verified', 600, 735);
+    ctx.strokeStyle = 'rgba(214,168,79,.55)';
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(450, 748); ctx.lineTo(750, 748); ctx.stroke();
+    ctx.fillStyle = '#c9b27d';
+    ctx.font = 'bold 13px Georgia, Malgun Gothic, serif';
+    ctx.fillText('OFFICIAL VERIFICATION', 600, 768);
+
+    // Footer: moved safely inside frame, no overlap
+    ctx.fillStyle = '#b89a61';
+    ctx.font = 'bold 13px Malgun Gothic, Arial';
+    ctx.fillText(`SOOP 시청기록 API 기준 · 조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 790);
+    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 812);
 
     return c;
   }
 
+  
   function showResultOverlay(opts) {
     const old = document.getElementById('soop-recap-check-overlay');
     if (old) old.remove();
@@ -387,11 +423,11 @@
         #soop-recap-check-input input[type="date"]::-webkit-calendar-picker-indicator{
           opacity:1!important;
           cursor:pointer!important;
-          width:22px!important;
-          height:22px!important;
+          width:28px!important;
+          height:24px!important;
           padding:4px!important;
           border-radius:8px!important;
-          background-color:rgba(214,168,79,.18)!important;
+          background-color:transparent!important;
           filter:invert(77%) sepia(56%) saturate(553%) hue-rotate(359deg) brightness(105%) contrast(94%)!important;
         }
         #soop-recap-check-input input[type="date"]::-webkit-calendar-picker-indicator:hover{
@@ -418,11 +454,17 @@
         <div style="display:flex;gap:10px;margin-top:10px;">
           <div style="flex:1;">
             <label style="display:block;font-size:12px;font-weight:1000;color:#f8e7b0;margin-bottom:6px;">시작일</label>
-            <input id="rcStart" type="date" value="${defaultStart}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:11px 9px 11px 11px;font-size:14px;font-weight:900;outline:none;">
+            <div style="position:relative;">
+              <input id="rcStart" type="date" value="${defaultStart}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:12px 48px 12px 12px;font-size:15px;font-weight:1000;outline:none;">
+              <button id="rcStartPick" type="button" title="시작일 선택" style="position:absolute;right:7px;top:50%;transform:translateY(-50%);width:36px;height:32px;border:1px solid rgba(214,168,79,.50);border-radius:10px;background:rgba(214,168,79,.18);color:#f8e7b0;font-size:18px;font-weight:1000;cursor:pointer;line-height:1;">📅</button>
+            </div>
           </div>
           <div style="flex:1;">
             <label style="display:block;font-size:12px;font-weight:1000;color:#f8e7b0;margin-bottom:6px;">종료일</label>
-            <input id="rcEnd" type="date" value="${defaultEnd}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:11px 9px 11px 11px;font-size:14px;font-weight:900;outline:none;">
+            <div style="position:relative;">
+              <input id="rcEnd" type="date" value="${defaultEnd}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:12px 48px 12px 12px;font-size:15px;font-weight:1000;outline:none;">
+              <button id="rcEndPick" type="button" title="종료일 선택" style="position:absolute;right:7px;top:50%;transform:translateY(-50%);width:36px;height:32px;border:1px solid rgba(214,168,79,.50);border-radius:10px;background:rgba(214,168,79,.18);color:#f8e7b0;font-size:18px;font-weight:1000;cursor:pointer;line-height:1;">📅</button>
+            </div>
           </div>
         </div>
       </div>
@@ -447,13 +489,25 @@
     const startInput = panel.querySelector('#rcStart');
     const endInput = panel.querySelector('#rcEnd');
 
+    function openDatePicker(el) {
+      if (!el) return;
+      el.focus();
+      if (el.showPicker) {
+        try { el.showPicker(); return; } catch (e) {}
+      }
+      try { el.click(); } catch (e) {}
+    }
+
     [startInput, endInput].forEach(function (el) {
       el.addEventListener('click', function () {
-        if (this.showPicker) {
-          try { this.showPicker(); } catch (e) {}
-        }
+        openDatePicker(this);
       });
     });
+
+    const startPick = panel.querySelector('#rcStartPick');
+    const endPick = panel.querySelector('#rcEndPick');
+    if (startPick) startPick.onclick = function () { openDatePicker(startInput); };
+    if (endPick) endPick.onclick = function () { openDatePicker(endInput); };
 
     panel.querySelector('#rcClose').onclick = () => wrap.remove();
 
