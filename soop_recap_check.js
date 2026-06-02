@@ -81,9 +81,7 @@
       mode: 'cors',
       headers: {
         'Accept': 'application/json, text/javascript, */*; q=0.01',
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'X-Requested-With': 'XMLHttpRequest'
-      },
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',      },
       body: body.toString()
     });
 
