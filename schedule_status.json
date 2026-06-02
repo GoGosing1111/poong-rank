@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-02 19:24:08",
+  "updated_at": "2026-06-02 21:59:02",
   "source": "https://www.cnine.kr/timeline",
-  "count": 9,
+  "count": 10,
   "today_count": 2,
-  "future_count": 7,
+  "future_count": 8,
   "items": [
     {
       "title": "스타부 : 스타워즈 나락전 <vs 캄몬스터즈>",
@@ -25,6 +25,16 @@
       "dday": "TODAY",
       "type": "합방",
       "source_line": "2026년 06월 02일(화) 19:00 ~ 2026년 06월 03일(수) 04:00"
+    },
+    {
+      "title": "혜루찡 : 라이브커머스 < 멕시카나X애플하우스 치떡대전 >",
+      "date": "2026.06.03 (수)",
+      "raw_date": "2026-06-03",
+      "time": "17:00",
+      "datetime": "2026.06.03 (수) · ⏰ 17:00",
+      "dday": "D-1",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 03일(수) 17:00 ~ 20:00"
     },
     {
       "title": "씨나인 : 골빈벨 - 엑셀댄스부×스타부",
