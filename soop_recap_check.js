@@ -4,6 +4,7 @@
   const API_URL = 'https://broadstatistic.sooplive.com/api/watch_statistic.php';
 
   const TARGETS = [
+    { key: 'chulgu100', label: '철구형2↑', patterns: ['철구형2↑','철구형2','철구형'], thresholdSeconds: 360000 },
     { key: 'yeomboseong', label: 'A-염보성!!', patterns: ['A-염보성!!', 'A-염보성', '염보성', '염보'] },
     { key: 'bjkei', label: '[BJ]케이', patterns: ['[BJ]케이', 'BJ케이', '비제이케이', '비제이 케이', '케이'] }
   ];
@@ -233,6 +234,12 @@
     let y = 585;
     ctx.font = 'bold 30px Malgun Gothic, Arial';
     results.forEach((r) => {
+      if(r.key==='chulgu100'){
+        ctx.fillStyle = r.seconds >= 360000 ? '#fde68a' : '#cbd5e1';
+        ctx.fillText(`${r.seconds >= 360000 ? '🐵' : '⏳'} 철구 시청 ${Math.floor(r.seconds/3600)}시간 ${r.seconds >= 360000 ? '· 가축확인' : '· 100시간 미만'}`,145,y);
+        y += 48;
+        return;
+      }
       ctx.fillStyle = r.found ? '#fecaca' : '#bbf7d0';
       const timeText = r.found ? ` · ${secondsToHms(r.seconds)}` : '';
       ctx.fillText(`${r.found ? '✅' : '❌'} ${r.label}: ${r.found ? '감지' : '미감지'}${timeText}`, 145, y);
