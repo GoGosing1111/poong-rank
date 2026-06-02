@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03 05:44:18",
+  "updated_at": "2026-06-03 06:20:14",
   "source": "poong.today chart API direct v8 current-month-lock",
   "used_month": "2026-06",
   "api_urls": {
@@ -303,7 +303,7 @@
       "match": "#초린",
       "soop_id": "dhtnqls1238",
       "today": 0,
-      "month": 5823,
+      "month": 5835,
       "today_api_name": "",
       "month_api_name": "#초린",
       "matched": true
@@ -571,7 +571,7 @@
         "rank": 16,
         "name": "초린",
         "today": "0",
-        "month": "5,823",
+        "month": "5,835",
         "width": "4%",
         "first": false,
         "color": "#7dc7ff"
