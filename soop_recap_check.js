@@ -225,10 +225,10 @@
     ctx.textAlign = 'center';
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 58px Malgun Gothic, Arial';
-    ctx.fillText(anyFound ? '부검 대상 시청기록 감지' : '부검 대상 시청기록 미감지', 600, 435);
+    ctx.fillText('시청기록 분석 결과', 600, 435);
     ctx.font = 'bold 25px Malgun Gothic, Arial';
     ctx.fillStyle = anyFound ? '#fecaca' : '#bbf7d0';
-    ctx.fillText(anyFound ? 'A-염보성!! 또는 [BJ]케이 시청기록 감지' : 'A-염보성!! / [BJ]케이 시청기록 미감지', 600, 482);
+    ctx.fillText('선택 기간 기준 시청기록 조회', 600, 482);
 
     ctx.textAlign = 'left';
     let y = 585;
@@ -236,7 +236,7 @@
     results.forEach((r) => {
       if(r.key==='chulgu100'){
         ctx.fillStyle = r.seconds >= 360000 ? '#fde68a' : '#cbd5e1';
-        ctx.fillText(`${r.seconds >= 360000 ? '🐵' : '⏳'} 철구 시청 ${Math.floor(r.seconds/3600)}시간 ${r.seconds >= 360000 ? '· 가축확인' : '· 100시간 미만'}`,145,y);
+        ctx.fillText(`${r.seconds >= 360000 ? '🐵' : '⏳'} 철구 시청 ${Math.floor(r.seconds/3600)}시간 ${r.seconds >= 360000 ? '· ' : '· 100시간 미만'}`,145,y);
         y += 48;
         return;
       }
