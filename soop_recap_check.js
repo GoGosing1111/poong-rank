@@ -156,101 +156,108 @@
     const issuedAt = `${fmtDate(new Date())} ${pad(new Date().getHours())}:${pad(new Date().getMinutes())}`;
     const c = document.createElement('canvas');
     c.width = 1200;
-    c.height = 840;
+    c.height = 820;
     const ctx = c.getContext('2d');
 
-    const bg = ctx.createLinearGradient(0, 0, 1200, 840);
+    const bg = ctx.createLinearGradient(0, 0, 1200, 820);
     bg.addColorStop(0, '#071426');
-    bg.addColorStop(0.45, '#05070d');
+    bg.addColorStop(0.5, '#04070f');
     bg.addColorStop(1, '#001d36');
     ctx.fillStyle = bg;
-    ctx.fillRect(0, 0, 1200, 840);
+    ctx.fillRect(0, 0, 1200, 820);
 
+    // Soft glow
     ctx.save();
-    ctx.globalAlpha = 0.12;
+    ctx.globalAlpha = 0.14;
     ctx.fillStyle = '#60a5fa';
-    ctx.beginPath(); ctx.arc(200, 80, 230, 0, Math.PI * 2); ctx.fill();
-    ctx.beginPath(); ctx.arc(1030, 760, 280, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.arc(170, 85, 250, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.arc(1040, 760, 290, 0, Math.PI * 2); ctx.fill();
     ctx.restore();
 
+    // Watermark pattern
     ctx.save();
-    ctx.globalAlpha = 0.075;
-    ctx.translate(70, 760);
+    ctx.globalAlpha = 0.045;
+    ctx.translate(60, 760);
     ctx.rotate(-0.35);
-    ctx.font = 'bold 42px Malgun Gothic, Arial';
+    ctx.font = 'bold 38px Malgun Gothic, Arial';
     ctx.fillStyle = '#ffffff';
-    const wm = `YGOSU ${nick}  ·  RECAP SELF VERIFY  ·  ${startDate}~${endDate}`;
-    for (let y = -980; y < 500; y += 115) {
-      for (let x = -300; x < 1300; x += 650) ctx.fillText(wm, x, y);
+    const wm = `YGOSU ${nick}  ·  RECAP SELF CHECK  ·  ${startDate}~${endDate}`;
+    for (let y = -980; y < 560; y += 120) {
+      for (let x = -320; x < 1380; x += 700) ctx.fillText(wm, x, y);
     }
     ctx.restore();
 
-    drawRoundRect(ctx, 70, 55, 1060, 730, 34);
-    ctx.fillStyle = 'rgba(3, 8, 18, 0.78)';
+    // Main certificate card
+    drawRoundRect(ctx, 80, 55, 1040, 710, 40);
+    ctx.fillStyle = 'rgba(3, 8, 18, 0.84)';
     ctx.fill();
     ctx.lineWidth = 3;
-    ctx.strokeStyle = 'rgba(96, 165, 250, .75)';
+    ctx.strokeStyle = 'rgba(96, 165, 250, .72)';
+    ctx.stroke();
+
+    drawRoundRect(ctx, 110, 85, 980, 650, 32);
+    ctx.strokeStyle = 'rgba(147, 197, 253, .22)';
+    ctx.lineWidth = 2;
     ctx.stroke();
 
     ctx.textAlign = 'center';
+
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 54px Malgun Gothic, Arial';
+    ctx.font = 'bold 56px Malgun Gothic, Arial';
     ctx.fillText('📋 리캡 셀프 인증', 600, 145);
 
-    ctx.font = 'bold 25px Malgun Gothic, Arial';
+    ctx.font = 'bold 22px Malgun Gothic, Arial';
     ctx.fillStyle = '#bfdbfe';
-    ctx.fillText(`시청기록 확인 결과 · ${startDate} ~ ${endDate}`, 600, 192);
+    ctx.fillText(`${startDate} ~ ${endDate}`, 600, 188);
 
-    ctx.textAlign = 'left';
-    drawRoundRect(ctx, 115, 225, 970, 98, 22);
-    ctx.fillStyle = 'rgba(15, 23, 42, .92)';
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(147, 197, 253, .35)';
-    ctx.stroke();
+    // Nick certificate line
     ctx.fillStyle = '#93c5fd';
-    ctx.font = 'bold 23px Malgun Gothic, Arial';
-    ctx.fillText('와이고수 닉네임', 155, 262);
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 37px Malgun Gothic, Arial';
-    ctx.fillText(nick, 155, 305);
+    ctx.font = 'bold 24px Malgun Gothic, Arial';
+    ctx.fillText('🧑 와고닉', 600, 250);
 
-    const anyFound = results.some(r => r.found);
-    drawRoundRect(ctx, 115, 355, 970, 175, 28);
-    ctx.fillStyle = anyFound ? 'rgba(127, 29, 29, .78)' : 'rgba(6, 78, 59, .78)';
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 48px Malgun Gothic, Arial';
+    ctx.fillText(nick, 600, 305);
+
+    const chulgu = results.find(r => r.key === 'chulgu100');
+    const chulguHours = chulgu ? Math.floor((Number(chulgu.seconds) || 0) / 3600) : 0;
+
+    // Chulgu highlight
+    drawRoundRect(ctx, 225, 350, 750, 132, 30);
+    ctx.fillStyle = 'rgba(120, 53, 15, .72)';
     ctx.fill();
-    ctx.strokeStyle = anyFound ? 'rgba(248, 113, 113, .75)' : 'rgba(52, 211, 153, .75)';
     ctx.lineWidth = 3;
+    ctx.strokeStyle = 'rgba(253, 230, 138, .70)';
     ctx.stroke();
 
-    ctx.textAlign = 'center';
+    ctx.fillStyle = '#fde68a';
+    ctx.font = 'bold 34px Malgun Gothic, Arial';
+    ctx.fillText('🐵 철구 시청', 600, 402);
+
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 58px Malgun Gothic, Arial';
-    ctx.fillText('시청기록 분석 결과', 600, 435);
-    ctx.font = 'bold 25px Malgun Gothic, Arial';
-    ctx.fillStyle = anyFound ? '#fecaca' : '#bbf7d0';
-    ctx.fillText('선택 기간 기준 시청기록 조회', 600, 482);
+    ctx.fillText(`${chulguHours}시간`, 600, 460);
 
-    ctx.textAlign = 'left';
-    let y = 585;
-    ctx.font = 'bold 30px Malgun Gothic, Arial';
-    results.forEach((r) => {
-      if(r.key==='chulgu100'){
-        ctx.fillStyle = r.seconds >= 360000 ? '#fde68a' : '#cbd5e1';
-        ctx.fillText(`${r.seconds >= 360000 ? '🐵' : '⏳'} 철구 시청 ${Math.floor(r.seconds/3600)}시간 ${r.seconds >= 360000 ? '· ' : '· 100시간 미만'}`,145,y);
-        y += 48;
-        return;
-      }
+    // Target rows
+    const checkRows = results.filter(r => r.key !== 'chulgu100');
+    let y = 560;
+    ctx.font = 'bold 34px Malgun Gothic, Arial';
+    checkRows.forEach((r) => {
       ctx.fillStyle = r.found ? '#fecaca' : '#bbf7d0';
+      const mark = r.found ? '✅' : '❌';
+      const word = r.found ? '감지' : '미감지';
       const timeText = r.found ? ` · ${secondsToHms(r.seconds)}` : '';
-      ctx.fillText(`${r.found ? '✅' : '❌'} ${r.label}: ${r.found ? '감지' : '미감지'}${timeText}`, 145, y);
-      y += 48;
+      ctx.fillText(`${mark} ${r.label} ${word}${timeText}`, 600, y);
+      y += 58;
     });
 
+    // Footer
+    ctx.textAlign = 'left';
     ctx.fillStyle = '#cbd5e1';
-    ctx.font = 'bold 19px Malgun Gothic, Arial';
-    ctx.fillText(`※ SOOP 시청기록 API 기준으로 생성된 리캡 셀프 인증 이미지입니다.`, 145, 710);
-    ctx.fillText(`※ 조회갱신: ${updatedAt || '-'} · 생성시각: ${issuedAt}`, 145, 740);
-    ctx.fillText('※ 본인 로그인 상태에서만 조회되며, 타인의 기록은 조회하지 않습니다.', 145, 770);
+    ctx.font = 'bold 18px Malgun Gothic, Arial';
+    ctx.fillText('※ SOOP 시청기록 API 기준으로 생성된 리캡 셀프 인증 이미지입니다.', 145, 700);
+    ctx.fillText(`※ 조회갱신: ${updatedAt || '-'} · 생성시각: ${issuedAt}`, 145, 728);
+    ctx.fillText('※ 본인 로그인 상태에서만 조회되며, 타인의 기록은 조회하지 않습니다.', 145, 756);
 
     return c;
   }
@@ -318,37 +325,47 @@
 
     const wrap = document.createElement('div');
     wrap.id = 'soop-recap-check-input';
-    wrap.style.cssText = 'position:fixed;z-index:2147483647;inset:0;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:22px;font-family:Arial,Malgun Gothic,sans-serif;box-sizing:border-box;';
+    wrap.style.cssText = 'position:fixed;z-index:2147483647;inset:0;background:rgba(0,0,0,.74);display:flex;align-items:center;justify-content:center;padding:22px;font-family:Arial,Malgun Gothic,sans-serif;box-sizing:border-box;';
 
     const panel = document.createElement('div');
-    panel.style.cssText = 'width:460px;max-width:94vw;background:#071426;border:1px solid #60a5fa;border-radius:22px;padding:20px;box-shadow:0 0 45px rgba(96,165,250,.45);box-sizing:border-box;color:#fff;';
+    panel.style.cssText = 'width:500px;max-width:94vw;background:radial-gradient(circle at top,rgba(45,145,255,.24),transparent 38%),linear-gradient(180deg,#071426,#03070f);border:1px solid rgba(96,165,250,.72);border-radius:24px;padding:22px;box-shadow:0 0 45px rgba(96,165,250,.42);box-sizing:border-box;color:#fff;';
 
     panel.innerHTML = `
-      <div style="font-size:22px;font-weight:1000;text-align:center;margin-bottom:8px;">📋 리캡 셀프 인증</div>
-      <div style="font-size:12px;font-weight:800;color:#cbd5e1;text-align:center;line-height:1.55;margin-bottom:16px;">
-        SOOP 로그인 상태에서 기간을 선택하면<br>
-        A-염보성!! / [BJ]케이 기록만 자동 판독합니다.
+      <div style="text-align:center;margin-bottom:16px;">
+        <div style="display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(96,165,250,.14);border:1px solid rgba(147,197,253,.34);color:#bfdbfe;font-size:11px;font-weight:1000;">SOOP WATCH CHECK</div>
+        <div style="margin-top:10px;font-size:25px;font-weight:1000;letter-spacing:-.6px;">📋 리캡 셀프 인증</div>
+        <div style="margin-top:7px;font-size:12px;font-weight:800;color:#cbd5e1;line-height:1.55;">
+          SOOP 로그인 상태에서 기간을 선택하면<br>
+          A-염보성!! / [BJ]케이 기록만 자동 판독합니다.
+        </div>
       </div>
 
-      <label style="display:block;font-size:12px;font-weight:900;color:#93c5fd;margin:10px 0 5px;">와이고수 닉네임</label>
-      <input id="rcNick" type="text" placeholder="와이고수 닉네임" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:10px;background:#020617;color:#fff;padding:11px;font-weight:900;">
+      <div style="padding:14px;border-radius:16px;background:rgba(15,23,42,.72);border:1px solid rgba(147,197,253,.22);">
+        <label style="display:block;font-size:12px;font-weight:1000;color:#93c5fd;margin-bottom:6px;">와이고수 닉네임</label>
+        <input id="rcNick" type="text" placeholder="와이고수 닉네임 입력" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:12px;background:#020617;color:#fff;padding:12px;font-size:15px;font-weight:900;outline:none;">
 
-      <div style="display:flex;gap:8px;">
-        <div style="flex:1;">
-          <label style="display:block;font-size:12px;font-weight:900;color:#93c5fd;margin:10px 0 5px;">시작일</label>
-          <input id="rcStart" type="date" value="${defaultStart}" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:10px;background:#020617;color:#fff;padding:10px;font-weight:900;">
-        </div>
-        <div style="flex:1;">
-          <label style="display:block;font-size:12px;font-weight:900;color:#93c5fd;margin:10px 0 5px;">종료일</label>
-          <input id="rcEnd" type="date" value="${defaultEnd}" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:10px;background:#020617;color:#fff;padding:10px;font-weight:900;">
+        <div style="display:flex;gap:10px;margin-top:10px;">
+          <div style="flex:1;">
+            <label style="display:block;font-size:12px;font-weight:1000;color:#93c5fd;margin-bottom:6px;">시작일</label>
+            <input id="rcStart" type="date" value="${defaultStart}" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:12px;background:#020617;color:#fff;padding:11px;font-size:14px;font-weight:900;outline:none;">
+          </div>
+          <div style="flex:1;">
+            <label style="display:block;font-size:12px;font-weight:1000;color:#93c5fd;margin-bottom:6px;">종료일</label>
+            <input id="rcEnd" type="date" value="${defaultEnd}" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:12px;background:#020617;color:#fff;padding:11px;font-size:14px;font-weight:900;outline:none;">
+          </div>
         </div>
       </div>
 
       <div id="rcMsg" style="margin-top:12px;min-height:20px;font-size:12px;font-weight:900;color:#fcd34d;text-align:center;"></div>
 
-      <div style="margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
-        <button id="rcRun" style="cursor:pointer;border:0;border-radius:999px;padding:12px 20px;background:#dc2626;color:#fff;font-weight:1000;font-size:15px;">조회 후 이미지 생성</button>
-        <button id="rcClose" style="cursor:pointer;border:1px solid #64748b;border-radius:999px;padding:12px 20px;background:#111827;color:#fff;font-weight:1000;font-size:15px;">닫기</button>
+      <div style="margin-top:16px;display:flex;gap:9px;justify-content:center;flex-wrap:wrap;">
+        <button id="rcRun" style="cursor:pointer;border:0;border-radius:999px;padding:13px 22px;background:linear-gradient(135deg,#dc2626,#991b1b);color:#fff;font-weight:1000;font-size:15px;box-shadow:0 8px 20px rgba(220,38,38,.24);">조회 후 이미지 생성</button>
+        <button id="rcClose" style="cursor:pointer;border:1px solid #64748b;border-radius:999px;padding:13px 22px;background:#111827;color:#fff;font-weight:1000;font-size:15px;">닫기</button>
+      </div>
+
+      <div style="margin-top:12px;text-align:center;color:#94a3b8;font-size:11px;font-weight:800;line-height:1.45;">
+        ※ 조회 기간은 최대 30일까지만 가능합니다.<br>
+        ※ SOOP ID는 이미지에 표시하지 않습니다.
       </div>
     `;
 
@@ -356,18 +373,34 @@
     document.body.appendChild(wrap);
 
     const msg = panel.querySelector('#rcMsg');
+    const startInput = panel.querySelector('#rcStart');
+    const endInput = panel.querySelector('#rcEnd');
+
+    [startInput, endInput].forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (this.showPicker) {
+          try { this.showPicker(); } catch (e) {}
+        }
+      });
+    });
+
     panel.querySelector('#rcClose').onclick = () => wrap.remove();
 
     panel.querySelector('#rcRun').onclick = async function () {
       const nick = panel.querySelector('#rcNick').value.trim();
       const soopId = getSoopIdFromCookie();
-      const startDate = panel.querySelector('#rcStart').value;
-      const endDate = panel.querySelector('#rcEnd').value;
+      const startDate = startInput.value;
+      const endDate = endInput.value;
 
       if (!nick) return alert('와이고수 닉네임을 입력하세요.');
       if (!soopId) return alert('SOOP 로그인 상태를 확인할 수 없습니다. SOOP 로그인 후 다시 실행하세요.');
       if (!startDate || !endDate) return alert('시작일/종료일을 선택하세요.');
       if (startDate > endDate) return alert('시작일이 종료일보다 늦습니다.');
+
+      const s = new Date(startDate + 'T00:00:00');
+      const e = new Date(endDate + 'T00:00:00');
+      const diffDays = Math.floor((e - s) / (24 * 60 * 60 * 1000)) + 1;
+      if (diffDays > 30) return alert('조회 기간은 최대 30일까지만 가능합니다.');
 
       try {
         msg.textContent = 'SOOP 시청기록 조회 중...';
