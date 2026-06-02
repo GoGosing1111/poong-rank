@@ -2,8 +2,8 @@
   'use strict';
 
   const TARGETS = [
-    { key: 'yeomboseong', label: '염보성', patterns: ['염보성', '염보', 'y1026'] },
-    { key: 'bjkei', label: '비제이 케이', patterns: ['비제이케이', 'BJ케이', '케이', 'bjkei', 'kei'] }
+    { key: 'yeomboseong', label: '염보성', patterns: ['염보성', '염보'] },
+    { key: 'bjkei', label: '비제이 케이', patterns: ['비제이케이', 'BJ케이', '비제이 케이', '케이'] }
   ];
 
   const now = new Date();

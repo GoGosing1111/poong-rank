@@ -108,13 +108,16 @@ def render_dashboard_notice(text):
 
 def render_self_verify_card():
     verify_url = "https://m.sooplive.com/statistics/a/watch/?szModule=UserLiveWatchTimeData&szMethod=watch"
-    recap_code = "!function(){var s=document.createElement('script');s.id='soop-recap-loader';s.src='https://cdn.jsdelivr.net/gh/ygtqqq/soop_recap@main/recap.js';document.head.appendChild(s)}();"
 
-    # 와이고수 글(1073983) 방식과 동일하게 iframe + srcdoc + clipboard-write로 복사 버튼 구성
-    # 주의: clean_html_for_wago()가 <script>를 제거하므로 srcdoc은 html.escape로 엔티티 처리해서 넣는다.
-    iframe_srcdoc = f"""<!doctype html>
-<meta charset='utf-8'>
-<style>
+    # 자동 판독형 셀프인증 JS. GitHub 최상단에 soop_fandom_verify.js를 올려두면 동작한다.
+    auto_verify_js = f"{BASE_URL}/soop_fandom_verify.js?v=20260603"
+
+    # 1073983에서 실제 동작한 iframe srcdoc 구조 유지.
+    # srcdoc 내부는 &lt; / &gt; 엔티티 형태로 넣어야 와고에서 깨질 확률이 낮다.
+    iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
+&lt;meta charset='utf-8'&gt;
+
+&lt;style&gt;
 body{{margin:0}}
 button{{
   width:100%;
@@ -127,13 +130,15 @@ button{{
   font-weight:900;
   cursor:pointer;
 }}
-</style>
-<button id='btn'>📋 리캡 코드 복사</button>
-<script>
+&lt;/style&gt;
+
+&lt;button id='btn'&gt;📋 자동 인증 코드 복사&lt;/button&gt;
+
+&lt;script&gt;
 function copyText(text){{
-  if(navigator.clipboard && window.isSecureContext){{
+  if(navigator.clipboard &amp;&amp; window.isSecureContext){{
     return navigator.clipboard.writeText(text);
-  }} else {{
+  }}else{{
     var ta=document.createElement('textarea');
     ta.value=text;
     ta.style.position='fixed';
@@ -144,18 +149,19 @@ function copyText(text){{
     return Promise.resolve();
   }}
 }}
-var btn=document.getElementById('btn');
-var code={json.dumps(recap_code, ensure_ascii=False)};
-btn.onclick=function(){{
+
+var btn = document.getElementById('btn');
+var code = '!function(){{var s=document.createElement(\\'script\\');s.id=\\'soop-fandom-verify-loader\\';s.src=\\'{auto_verify_js}\\';document.head.appendChild(s)}}();';
+
+btn.onclick = function() {{
   copyText(code).then(function(){{
     alert('복사되었습니다');
   }}).catch(function(){{
     alert('복사 실패');
   }});
 }};
-</script>
-"""
-    iframe_srcdoc = html.escape(iframe_srcdoc, quote=True)
+&lt;/script&gt;
+" src=""></iframe>"""
 
     return f"""
 <div style="margin-top:10px;border:1px solid rgba(255,79,114,.42);border-radius:15px;background:linear-gradient(135deg,rgba(255,79,114,.15),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
@@ -164,11 +170,11 @@ btn.onclick=function(){{
   </div>
 
   <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
-    SOOP 시청기록을 통해<br>
-    <span style="color:#ffd34f;font-weight:1000;">똥/썩 시청 여부</span>를 직접 확인할 수 있습니다.
+    SOOP 시청기록에서<br>
+    <span style="color:#ffd34f;font-weight:1000;">염보성 / 비제이 케이</span> 기록을 자동 판독합니다.
 
     <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
-      <iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="{iframe_srcdoc}" src=""></iframe>
+      {iframe_html}
 
       <a href="{verify_url}" target="_blank" rel="nofollow"
          style="flex:1 1 160px;min-width:160px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:#16a34a;color:#fff;font-size:14px;font-weight:1000;text-decoration:none;box-sizing:border-box;">
@@ -177,18 +183,29 @@ btn.onclick=function(){{
     </div>
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
-      ※ 본인 로그인 상태에서만 확인 가능합니다.<br>
-      ※ 타인의 기록은 조회할 수 없습니다.
+      ※ 시청기록 페이지에서 복사한 코드를 주소창에 실행하면 자동 인증 이미지가 생성됩니다.<br>
+      ※ 본인 로그인 상태에서만 확인 가능합니다.
     </div>
   </div>
 </div>"""
 
-
 def clean_html_for_wago(src):
+    # iframe srcdoc 내부의 <script>는 와고 1073983 리캡 복사 버튼과 같은 방식이라 보호한다.
+    protected = []
+    def _keep_srcdoc(m):
+        protected.append(m.group(0))
+        return f"__SRC_DOC_BLOCK_{len(protected)-1}__"
+
+    src = re.sub(r'srcdoc=".*?"', _keep_srcdoc, src, flags=re.I | re.S)
+
     src = re.sub(r"<script\b[^>]*>.*?</script>", "", src, flags=re.I | re.S)
     src = re.sub(r"<style\b[^>]*>.*?</style>", "", src, flags=re.I | re.S)
     src = re.sub(r"\s+on\w+\s*=\s*(['\"]).*?\1", "", src, flags=re.I | re.S)
     src = re.sub(r"javascript\s*:", "", src, flags=re.I)
+
+    for i, block in enumerate(protected):
+        src = src.replace(f"__SRC_DOC_BLOCK_{i}__", block)
+
     src = src.replace("\r\n", "\n").replace("\r", "\n")
     src = re.sub(r"\n{3,}", "\n\n", src)
     return src.strip()

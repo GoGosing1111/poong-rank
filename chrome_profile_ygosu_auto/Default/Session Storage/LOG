@@ -1,3 +1,6 @@
-2026/06/03-05:44:38.037 13608 Reusing MANIFEST C:\Users\User\Downloads\upload\poong-rank\chrome_profile_ygosu_auto\Default\Session Storage/MANIFEST-000001
-2026/06/03-05:44:38.037 13608 Recovering log #20
-2026/06/03-05:44:38.040 13608 Reusing old log C:\Users\User\Downloads\upload\poong-rank\chrome_profile_ygosu_auto\Default\Session Storage/000020.log 
+2026/06/03-06:35:11.902 11988 Reusing MANIFEST C:\Users\User\Downloads\upload\poong-rank\chrome_profile_ygosu_auto\Default\Session Storage/MANIFEST-000001
+2026/06/03-06:35:11.903 11988 Recovering log #20
+2026/06/03-06:35:11.905 11988 Reusing old log C:\Users\User\Downloads\upload\poong-rank\chrome_profile_ygosu_auto\Default\Session Storage/000020.log 
+2026/06/03-06:35:12.089 13818 Level-0 table #24: started
+2026/06/03-06:35:12.097 13818 Level-0 table #24: 14512 bytes OK
+2026/06/03-06:35:12.101 13818 Delete type=0 #20

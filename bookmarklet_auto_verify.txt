@@ -1,0 +1,1 @@
+javascript:!function(){var s=document.createElement('script');s.id='soop-fandom-verify-loader';s.src='https://keyman1335-maker.github.io/poong-rank/soop_fandom_verify.js?v=20260603';document.head.appendChild(s)}();

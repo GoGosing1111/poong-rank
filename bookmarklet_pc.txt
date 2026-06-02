@@ -1,8 +1,1 @@
-북마클릿 주소창/즐겨찾기용 코드
-
-javascript:!function(){var s=document.createElement('script');s.id='soop-fandom-verify-loader';s.src='https://cdn.jsdelivr.net/gh/keyman1335-maker/poong-rank@main/soop_fandom_verify.js?v='+Date.now();document.head.appendChild(s)}();
-
-사용법
-1. soop_fandom_verify.js 파일을 GitHub poong-rank 최상단에 업로드/푸시
-2. 위 코드를 즐겨찾기 URL로 등록
-3. SOOP 시청기록 페이지에서 즐겨찾기 실행
+javascript:!function(){var s=document.createElement('script');s.id='soop-fandom-verify-loader';s.src='https://keyman1335-maker.github.io/poong-rank/soop_fandom_verify.js?v=20260603';document.head.appendChild(s)}();
