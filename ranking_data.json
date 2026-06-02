@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02 17:08:11",
+  "updated_at": "2026-06-02 17:13:01",
   "source": "poong.today chart API direct v8 current-month-lock",
   "used_month": "2026-06",
   "api_urls": {
@@ -166,6 +166,28 @@
       "matched": true
     },
     {
+      "part": "엑셀부",
+      "name": "설윤이",
+      "match": "설윤이♥",
+      "soop_id": "dain9804",
+      "today": 6633,
+      "month": 6633,
+      "today_api_name": "설윤이♥",
+      "month_api_name": "설윤이♥",
+      "matched": true
+    },
+    {
+      "part": "엑셀부",
+      "name": "히나",
+      "match": "히나_♥",
+      "soop_id": "luaa0803",
+      "today": 5013,
+      "month": 5013,
+      "today_api_name": "히나_♥",
+      "month_api_name": "히나_♥",
+      "matched": true
+    },
+    {
       "part": "스타부",
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
@@ -178,17 +200,6 @@
     },
     {
       "part": "엑셀부",
-      "name": "히나",
-      "match": "히나_♥",
-      "soop_id": "luaa0803",
-      "today": 3448,
-      "month": 3448,
-      "today_api_name": "히나_♥",
-      "month_api_name": "히나_♥",
-      "matched": true
-    },
-    {
-      "part": "엑셀부",
       "name": "아윤",
       "match": "아윤♡",
       "soop_id": "ayoona",
@@ -196,17 +207,6 @@
       "month": 2042,
       "today_api_name": "아윤",
       "month_api_name": "아윤",
-      "matched": true
-    },
-    {
-      "part": "엑셀부",
-      "name": "설윤이",
-      "match": "설윤이♥",
-      "soop_id": "dain9804",
-      "today": 1553,
-      "month": 1553,
-      "today_api_name": "설윤이♥",
-      "month_api_name": "설윤이♥",
       "matched": true
     },
     {
@@ -417,7 +417,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "52,235",
+    "avg": "52,626",
     "leader": "송채연",
     "leader_sales": "248,760",
     "members": [
@@ -504,27 +504,27 @@
       },
       {
         "rank": 10,
-        "name": "히나",
-        "today": "3,448",
-        "month": "3,448",
+        "name": "설윤이",
+        "today": "6,633",
+        "month": "6,633",
         "width": "4%",
         "first": false,
         "color": "#7dc7ff"
       },
       {
         "rank": 11,
-        "name": "아윤",
-        "today": "1",
-        "month": "2,042",
+        "name": "히나",
+        "today": "5,013",
+        "month": "5,013",
         "width": "4%",
         "first": false,
         "color": "#7dc7ff"
       },
       {
         "rank": 12,
-        "name": "설윤이",
-        "today": "1,553",
-        "month": "1,553",
+        "name": "아윤",
+        "today": "1",
+        "month": "2,042",
         "width": "4%",
         "first": false,
         "color": "#7dc7ff"
