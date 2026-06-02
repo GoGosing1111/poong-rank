@@ -1,16 +1,16 @@
-﻿UPDATED_AT=2026-06-03 06:35:01
+﻿UPDATED_AT=2026-06-03 06:39:59
 MEMBERS_RAW=38
 MEMBERS_UNIQUE_DISPLAY=37 LEADER=1 REGULAR=36
 FETCH month_current: https://static.poong.today/chart/get?ctype=month&ks=false&year=2026&month=6&day=undefined
-ROWS month_current: 7852
-SAMPLE month_current: id=bekuku name=베쿠♬ value=11041
-INDEX month_current: 17944 MATCHED_IF_USED=31/37
+ROWS month_current: 7864
+SAMPLE month_current: id=aaaa0614 name=샤샤♥。 value=722
+INDEX month_current: 17970 MATCHED_IF_USED=31/37
 MONTH_USED_CURRENT_LOCK=month_current 2026-06 MATCHED=31/37
 FETCH day: https://static.poong.today/chart/get?ctype=day&ks=false&year=2026&month=6&day=3
 ROWS day: 0
 FETCH today: https://static.poong.today/chart/get?ctype=today&ks=false&year=2026&month=6&day=3
 ROWS today: 0
-MONTH_INDEX=17944
+MONTH_INDEX=17970
 TODAY_INDEX=0
 MATCHED=31/37
 

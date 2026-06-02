@@ -2,8 +2,8 @@
   'use strict';
 
   const TARGETS = [
-    { key: 'yeomboseong', label: '염보성', patterns: ['염보성', '염보'] },
-    { key: 'bjkei', label: '비제이 케이', patterns: ['비제이케이', 'BJ케이', '비제이 케이', '케이'] }
+    { key: 'yeomboseong', label: 'A-염보성!!', patterns: ['A-염보성!!', 'A-염보성', '염보성', '염보'] },
+    { key: 'bjkei', label: '[BJ]케이', patterns: ['[BJ]케이', 'BJ케이', '비제이케이', '비제이 케이', '케이'] }
   ];
 
   const now = new Date();
@@ -97,7 +97,7 @@
     ctx.rotate(-0.35);
     ctx.font = 'bold 42px Malgun Gothic, Arial';
     ctx.fillStyle = '#ffffff';
-    const wm = `YGOSU ${nick}  ·  SELF VERIFY  ·  ${issuedAt}`;
+    const wm = `YGOSU ${nick}  ·  RECAP CHECK  ·  ${issuedAt}`;
     for (let y = -900; y < 500; y += 115) {
       for (let x = -300; x < 1300; x += 620) ctx.fillText(wm, x, y);
     }
@@ -113,11 +113,11 @@
     ctx.textAlign = 'center';
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 54px Malgun Gothic, Arial';
-    ctx.fillText('🚨 위장팬덤 셀프인증', 600, 145);
+    ctx.fillText('📋 리캡 부검 제출용', 600, 145);
 
     ctx.font = 'bold 26px Malgun Gothic, Arial';
     ctx.fillStyle = '#bfdbfe';
-    ctx.fillText(`SOOP 시청기록 확인 결과 · ${issuedAt}`, 600, 192);
+    ctx.fillText(`시청기록 확인 결과 · ${issuedAt}`, 600, 192);
 
     ctx.textAlign = 'left';
     drawRoundRect(ctx, 115, 225, 970, 86, 22);
@@ -143,23 +143,23 @@
     ctx.textAlign = 'center';
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 58px Malgun Gothic, Arial';
-    ctx.fillText(anyFound ? '시청 기록이 있습니다' : '시청 기록이 없습니다', 600, 425);
+    ctx.fillText(anyFound ? '부검 대상 기록 발견' : '부검 대상 기록 없음', 600, 425);
     ctx.font = 'bold 25px Malgun Gothic, Arial';
     ctx.fillStyle = anyFound ? '#fecaca' : '#bbf7d0';
-    ctx.fillText(anyFound ? '대상 BJ 기록 감지됨' : '염보성 / 비제이 케이 기록 미감지', 600, 470);
+    ctx.fillText(anyFound ? 'A-염보성!! 또는 [BJ]케이 기록 감지' : 'A-염보성!! / [BJ]케이 기록 미감지', 600, 470);
 
     ctx.textAlign = 'left';
     let y = 565;
     ctx.font = 'bold 28px Malgun Gothic, Arial';
     results.forEach((r) => {
       ctx.fillStyle = r.found ? '#fecaca' : '#bbf7d0';
-      ctx.fillText(`${r.found ? '✅' : '❌'} ${r.label}: ${r.found ? '시청 기록 있음' : '시청 기록 없음'}`, 145, y);
+      ctx.fillText(`${r.found ? '✅' : '❌'} ${r.label}: ${r.found ? '기록 있음' : '기록 없음'}`, 145, y);
       y += 44;
     });
 
     ctx.fillStyle = '#cbd5e1';
     ctx.font = 'bold 20px Malgun Gothic, Arial';
-    ctx.fillText('※ 본인 SOOP 로그인 상태의 브라우저에서 생성된 셀프 인증 이미지입니다.', 145, 690);
+    ctx.fillText('※ 본인 SOOP 로그인 상태의 브라우저에서 생성된 리캡 부검 이미지입니다.', 145, 690);
     ctx.fillText('※ 캡처/해명자료용이며, 타인의 기록은 조회하지 않습니다.', 145, 720);
 
     return c;
@@ -183,7 +183,7 @@
     panel.style.cssText = 'width:980px;max-width:96vw;max-height:96vh;overflow:auto;background:#071426;border:1px solid #60a5fa;border-radius:22px;padding:18px;box-shadow:0 0 45px rgba(96,165,250,.45);box-sizing:border-box;text-align:center;color:#fff;';
 
     const title = document.createElement('div');
-    title.textContent = '🚨 위장팬덤 셀프인증 이미지 생성 완료';
+    title.textContent = '📋 리캡 부검 제출용 이미지 생성 완료';
     title.style.cssText = 'font-size:22px;font-weight:1000;margin:4px 0 14px;color:#fff;';
 
     const btns = document.createElement('div');
@@ -195,7 +195,7 @@
     save.onclick = function () {
       const a = document.createElement('a');
       const safeNick = nick.replace(/[\\/:*?"<>|\s]+/g, '_').slice(0, 40) || 'ygosu';
-      a.download = `위장팬덤_셀프인증_${safeNick}_${now.getFullYear()}${pad(now.getMonth()+1)}${pad(now.getDate())}.png`;
+      a.download = `리캡부검제출용_${safeNick}_${now.getFullYear()}${pad(now.getMonth()+1)}${pad(now.getDate())}.png`;
       a.href = canvas.toDataURL('image/png');
       a.click();
     };
