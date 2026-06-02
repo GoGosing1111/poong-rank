@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-02 19:14:14",
+  "updated_at": "2026-06-02 19:23:48",
   "total": 38,
-  "live_count": 6,
+  "live_count": 4,
   "members": {
     "y1026": {
       "name": "철구형",
       "part": "엑셀부",
       "soop_id": "y1026",
       "soop_url": "https://www.sooplive.com/station/y1026",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294492583",
-      "title": "철구 씨나인vs캄몬 나락대학대전 7/4 3:3 오늘 지면 큰일납니다",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
@@ -402,7 +402,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294496437",
-      "title": "[씨나인:신입] 용짬뽕 2단계 성공 홍대 보안관 미션 받아요~",
+      "title": "[씨나인:신입] 용짬뽕 2단계 성공 집가는 길",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kaja0011/station"
     },
