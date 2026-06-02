@@ -471,8 +471,8 @@ try:
     options.add_argument("--start-maximized")
     options.add_argument("--disable-session-crashed-bubble")
     options.add_argument("--disable-features=InfiniteSessionRestore")
-    options.add_argument("--headless=new")
-    options.add_argument("--window-size=1920,3000")
+    #options.add_argument("--headless=new")
+    #options.add_argument("--window-size=1920,3000")
 
     driver = webdriver.Chrome(options=options)
 

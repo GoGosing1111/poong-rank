@@ -99,8 +99,25 @@ def remove_date_time_noise(title: str) -> str:
     s = re.sub(r"\([월화수목금토일]\)\s*~", " ", s)
     s = re.sub(r"~\s*\([월화수목금토일]\)", " ", s)
     s = re.sub(r"(^|[\s:])개인(?=[가-힣A-Za-z0-9])", r"\1", s)
-    s = s.replace("스타스타부", "스타부")
-    s = s.replace("엑셀엑셀", "엑셀")
+
+    # CNINE 타임라인에서 카테고리명이 제목 앞에 붙으면서
+    # 씨나인씨나인 / 스타스타부 / 엑셀엑셀댄스부처럼 중복되는 문제 정리
+    replacements = {
+        "씨나인씨나인": "씨나인",
+        "스타스타부": "스타부",
+        "엑셀엑셀댄스부": "엑셀댄스부",
+        "엑셀엑셀": "엑셀",
+        "뮤직뮤직부": "뮤직부",
+    }
+    for a, b in replacements.items():
+        s = s.replace(a, b)
+
+    # 혹시 같은 단어가 앞에서 바로 2번 반복되는 케이스 보정
+    # 예: 씨나인씨나인 : 제목 -> 씨나인 : 제목
+    s = re.sub(r"^(씨나인)\1\s*:", r"\1 :", s)
+    s = re.sub(r"^(스타부)\1\s*:", r"\1 :", s)
+    s = re.sub(r"^(엑셀댄스부)\1\s*:", r"\1 :", s)
+
     s = re.sub(r"^[\s\-\|·:~]+", "", s)
     s = re.sub(r"[\s\-\|·:~]+$", "", s)
     return trim_repeated_phrase(s)

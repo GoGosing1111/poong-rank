@@ -106,6 +106,84 @@ def render_dashboard_notice(text):
   <div style="padding:10px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.55;text-align:left;word-break:break-word;max-height:94px;overflow:auto;box-sizing:border-box;">{body}</div>
 </div>"""
 
+def render_self_verify_card():
+    verify_url = "https://m.sooplive.com/statistics/a/watch/?szModule=UserLiveWatchTimeData&szMethod=watch"
+    recap_code = "!function(){var s=document.createElement('script');s.id='soop-recap-loader';s.src='https://cdn.jsdelivr.net/gh/ygtqqq/soop_recap@main/recap.js';document.head.appendChild(s)}();"
+
+    # 와이고수 글(1073983) 방식과 동일하게 iframe + srcdoc + clipboard-write로 복사 버튼 구성
+    # 주의: clean_html_for_wago()가 <script>를 제거하므로 srcdoc은 html.escape로 엔티티 처리해서 넣는다.
+    iframe_srcdoc = f"""<!doctype html>
+<meta charset='utf-8'>
+<style>
+body{{margin:0}}
+button{{
+  width:100%;
+  height:48px;
+  background:#dc2626;
+  color:#fff;
+  border:0;
+  border-radius:9px;
+  font-size:14px;
+  font-weight:900;
+  cursor:pointer;
+}}
+</style>
+<button id='btn'>📋 리캡 코드 복사</button>
+<script>
+function copyText(text){{
+  if(navigator.clipboard && window.isSecureContext){{
+    return navigator.clipboard.writeText(text);
+  }} else {{
+    var ta=document.createElement('textarea');
+    ta.value=text;
+    ta.style.position='fixed';
+    ta.style.opacity='0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{{ document.execCommand('copy'); }} finally {{ document.body.removeChild(ta); }}
+    return Promise.resolve();
+  }}
+}}
+var btn=document.getElementById('btn');
+var code={json.dumps(recap_code, ensure_ascii=False)};
+btn.onclick=function(){{
+  copyText(code).then(function(){{
+    alert('복사되었습니다');
+  }}).catch(function(){{
+    alert('복사 실패');
+  }});
+}};
+</script>
+"""
+    iframe_srcdoc = html.escape(iframe_srcdoc, quote=True)
+
+    return f"""
+<div style="margin-top:10px;border:1px solid rgba(255,79,114,.42);border-radius:15px;background:linear-gradient(135deg,rgba(255,79,114,.15),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
+  <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(255,79,114,.25);color:#ff6b8a;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
+    🚨 위장팬덤 셀프인증
+  </div>
+
+  <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
+    SOOP 시청기록을 통해<br>
+    <span style="color:#ffd34f;font-weight:1000;">똥/썩 시청 여부</span>를 직접 확인할 수 있습니다.
+
+    <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
+      <iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="{iframe_srcdoc}" src=""></iframe>
+
+      <a href="{verify_url}" target="_blank" rel="nofollow"
+         style="flex:1 1 160px;min-width:160px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:#16a34a;color:#fff;font-size:14px;font-weight:1000;text-decoration:none;box-sizing:border-box;">
+        🔍 시청기록 확인
+      </a>
+    </div>
+
+    <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
+      ※ 본인 로그인 상태에서만 확인 가능합니다.<br>
+      ※ 타인의 기록은 조회할 수 없습니다.
+    </div>
+  </div>
+</div>"""
+
+
 def clean_html_for_wago(src):
     src = re.sub(r"<script\b[^>]*>.*?</script>", "", src, flags=re.I | re.S)
     src = re.sub(r"<style\b[^>]*>.*?</style>", "", src, flags=re.I | re.S)
@@ -414,6 +492,7 @@ def main():
   {metric("현재 LIVE", f"{live_count}명")}
   {metric("집계시간", updated)}
   {render_dashboard_notice(dashboard_notice)}
+  {render_self_verify_card()}
 </div>"""
 
     html_out = f"""<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(45,145,255,.22),transparent 34%),linear-gradient(180deg,#05070d 0%,#071426 52%,#030507 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(90,175,255,.45);">
