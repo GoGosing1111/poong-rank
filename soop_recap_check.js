@@ -162,72 +162,100 @@
     c.height = 840;
     const ctx = c.getContext('2d');
 
-    function goldText(text, x, y, font, fill='#f7df9b') {
+    function roundRect(x, y, w, h, r, fill, stroke, lw) {
+      drawRoundRect(ctx, x, y, w, h, r);
+      if (fill) {
+        ctx.fillStyle = fill;
+        ctx.fill();
+      }
+      if (stroke) {
+        ctx.lineWidth = lw || 1;
+        ctx.strokeStyle = stroke;
+        ctx.stroke();
+      }
+    }
+
+    function centerText(text, x, y, font, color, shadow) {
       ctx.save();
       ctx.textAlign = 'center';
+      ctx.textBaseline = 'alphabetic';
       ctx.font = font;
-      ctx.shadowColor = 'rgba(0,0,0,.75)';
-      ctx.shadowBlur = 8;
-      ctx.shadowOffsetY = 3;
-      ctx.fillStyle = fill;
+      ctx.fillStyle = color;
+      if (shadow) {
+        ctx.shadowColor = 'rgba(0,0,0,.72)';
+        ctx.shadowBlur = 8;
+        ctx.shadowOffsetY = 3;
+      }
       ctx.fillText(text, x, y);
       ctx.restore();
     }
 
-    function drawSeal(cx, cy, r) {
+    function drawGoldRule(y) {
+      ctx.save();
+      const g = ctx.createLinearGradient(210, y, 990, y);
+      g.addColorStop(0, 'rgba(214,168,79,0)');
+      g.addColorStop(.18, 'rgba(214,168,79,.75)');
+      g.addColorStop(.50, 'rgba(255,232,170,.95)');
+      g.addColorStop(.82, 'rgba(214,168,79,.75)');
+      g.addColorStop(1, 'rgba(214,168,79,0)');
+      ctx.strokeStyle = g;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(210, y); ctx.lineTo(990, y);
+      ctx.stroke();
+      ctx.fillStyle = '#d6a84f';
+      ctx.beginPath(); ctx.arc(600, y, 5, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+    }
+
+    function drawStamp(cx, cy, r) {
       ctx.save();
       ctx.translate(cx, cy);
-      ctx.rotate(-0.14);
+      ctx.rotate(-0.18);
       ctx.globalAlpha = 0.92;
 
-      // 도장 바깥 번짐
-      const grd = ctx.createRadialGradient(0, 0, r * .15, 0, 0, r);
-      grd.addColorStop(0, 'rgba(255, 53, 53, .13)');
-      grd.addColorStop(.62, 'rgba(210, 22, 22, .06)');
-      grd.addColorStop(1, 'rgba(210, 22, 22, 0)');
-      ctx.fillStyle = grd;
-      ctx.beginPath(); ctx.arc(0, 0, r + 18, 0, Math.PI * 2); ctx.fill();
+      // 붉은 직인 번짐
+      const bleed = ctx.createRadialGradient(0, 0, 8, 0, 0, r + 20);
+      bleed.addColorStop(0, 'rgba(210, 31, 31, .10)');
+      bleed.addColorStop(.58, 'rgba(210, 31, 31, .08)');
+      bleed.addColorStop(1, 'rgba(210, 31, 31, 0)');
+      ctx.fillStyle = bleed;
+      ctx.beginPath(); ctx.arc(0, 0, r + 22, 0, Math.PI * 2); ctx.fill();
 
-      // 찐 도장 느낌: 붉은 원형 이중선
-      ctx.strokeStyle = 'rgba(220, 35, 35, .78)';
-      ctx.lineWidth = 8;
+      // 찐 직인 라인
+      ctx.strokeStyle = 'rgba(214, 36, 36, .78)';
+      ctx.lineWidth = 7;
       ctx.beginPath(); ctx.arc(0, 0, r, 0, Math.PI * 2); ctx.stroke();
-      ctx.lineWidth = 3;
-      ctx.strokeStyle = 'rgba(255, 105, 105, .72)';
+      ctx.strokeStyle = 'rgba(255, 91, 91, .66)';
+      ctx.lineWidth = 2.8;
       ctx.beginPath(); ctx.arc(0, 0, r - 13, 0, Math.PI * 2); ctx.stroke();
+      ctx.strokeStyle = 'rgba(214, 36, 36, .45)';
+      ctx.lineWidth = 1.6;
+      ctx.beginPath(); ctx.arc(0, 0, r - 26, 0, Math.PI * 2); ctx.stroke();
 
-      // 도장 안쪽 약한 결
-      ctx.globalAlpha = 0.20;
-      ctx.strokeStyle = '#ff5757';
-      ctx.lineWidth = 2;
-      for (let i = 0; i < 10; i++) {
-        ctx.beginPath();
-        ctx.arc((i % 2 ? 6 : -5), (i - 5) * 8, r - 30 - i, Math.PI * .05, Math.PI * 1.68);
-        ctx.stroke();
-      }
-      ctx.globalAlpha = 0.95;
+      // 도장 내부 십자 분할선
+      ctx.strokeStyle = 'rgba(214, 36, 36, .42)';
+      ctx.lineWidth = 1.8;
+      ctx.beginPath(); ctx.moveTo(-r + 18, 0); ctx.lineTo(r - 18, 0); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(0, -r + 18); ctx.lineTo(0, r - 18); ctx.stroke();
 
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillStyle = 'rgba(255, 74, 74, .86)';
-      ctx.font = 'bold 35px Malgun Gothic, Arial';
-      ctx.fillText('인증', 0, -10);
-      ctx.font = 'bold 35px Malgun Gothic, Arial';
-      ctx.fillText('완료', 0, 31);
+      ctx.fillStyle = 'rgba(223, 48, 48, .88)';
+      ctx.font = '900 34px Malgun Gothic, Arial';
+      ctx.fillText('인증', 0, -17);
+      ctx.fillText('완료', 0, 27);
+      ctx.font = '900 15px Malgun Gothic, Arial';
+      ctx.fillText('SOOP 리캡', 0, 58);
 
-      ctx.globalAlpha = 0.72;
-      ctx.font = 'bold 12px Georgia, serif';
-      ctx.fillText('VERIFIED', 0, -52);
-      ctx.fillText('SOOP RECAP', 0, 61);
-
-      // 일부러 살짝 지워진 도장 질감
+      // 낡은 직인 질감
       ctx.globalCompositeOperation = 'destination-out';
-      ctx.globalAlpha = 0.17;
-      for (let i = 0; i < 38; i++) {
-        const a = Math.random() * Math.PI * 2;
-        const rr = Math.random() * r * .88;
+      ctx.globalAlpha = 0.14;
+      for (let i = 0; i < 50; i++) {
+        const a = (i * 2.399963) % (Math.PI * 2);
+        const rr = ((i * 37) % 100) / 100 * r * .88;
         ctx.beginPath();
-        ctx.arc(Math.cos(a) * rr, Math.sin(a) * rr, 1.2 + Math.random() * 3.2, 0, Math.PI * 2);
+        ctx.arc(Math.cos(a) * rr, Math.sin(a) * rr, 1.4 + (i % 4), 0, Math.PI * 2);
         ctx.fill();
       }
       ctx.restore();
@@ -235,92 +263,60 @@
 
     // 배경
     const bg = ctx.createLinearGradient(0, 0, 1200, 840);
-    bg.addColorStop(0, '#050301');
-    bg.addColorStop(0.45, '#151007');
+    bg.addColorStop(0, '#050302');
+    bg.addColorStop(.48, '#151007');
     bg.addColorStop(1, '#030302');
     ctx.fillStyle = bg;
     ctx.fillRect(0, 0, 1200, 840);
 
-    // 금빛 은은한 조명
+    // 은은한 금빛 조명
     ctx.save();
-    ctx.globalAlpha = 0.16;
-    let g1 = ctx.createRadialGradient(250, 100, 10, 250, 100, 390);
-    g1.addColorStop(0, '#f6d276');
-    g1.addColorStop(1, 'rgba(246,210,118,0)');
-    ctx.fillStyle = g1;
-    ctx.fillRect(0, 0, 1200, 840);
-    let g2 = ctx.createRadialGradient(970, 680, 10, 970, 680, 360);
-    g2.addColorStop(0, '#b57924');
-    g2.addColorStop(1, 'rgba(181,121,36,0)');
-    ctx.fillStyle = g2;
+    ctx.globalAlpha = .20;
+    let glow = ctx.createRadialGradient(610, 80, 20, 610, 80, 520);
+    glow.addColorStop(0, '#e7bd61');
+    glow.addColorStop(1, 'rgba(231,189,97,0)');
+    ctx.fillStyle = glow;
     ctx.fillRect(0, 0, 1200, 840);
     ctx.restore();
 
-    // 배경 워터마크: 중복 영어 제거, 아주 은은하게만
+    // 프레임 안쪽 배경
+    roundRect(58, 52, 1084, 736, 24, 'rgba(7, 5, 3, .95)', '#d6a84f', 5);
+    roundRect(84, 78, 1032, 684, 16, null, 'rgba(255,231,166,.60)', 2);
+    roundRect(110, 104, 980, 632, 12, null, 'rgba(174,122,42,.46)', 1.3);
+
+    // 배경 워터마크 복구: 내용 뒤에 크게, 너무 튀지 않게
     ctx.save();
-    ctx.globalAlpha = 0.026;
-    ctx.translate(600, 470);
-    ctx.rotate(-0.18);
+    ctx.translate(600, 462);
+    ctx.rotate(-0.20);
+    ctx.globalAlpha = 0.055;
     ctx.textAlign = 'center';
-    ctx.font = 'bold 118px Georgia, Malgun Gothic, serif';
-    ctx.fillStyle = '#ffe7a6';
-    ctx.fillText('VERIFIED', 0, 0);
+    ctx.fillStyle = '#f6d276';
+    ctx.font = '900 138px Georgia, Malgun Gothic, serif';
+    ctx.fillText('SOOP RECAP', 0, 0);
+    ctx.font = '900 66px Malgun Gothic, Arial';
+    ctx.fillText('셀프 인증', 0, 82);
     ctx.restore();
 
-    // 프레임
-    drawRoundRect(ctx, 58, 52, 1084, 732, 24);
-    ctx.fillStyle = 'rgba(8, 6, 4, 0.94)';
-    ctx.fill();
-    ctx.lineWidth = 5;
-    ctx.strokeStyle = '#d6a84f';
-    ctx.stroke();
-
-    drawRoundRect(ctx, 84, 78, 1032, 680, 16);
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = 'rgba(255, 231, 166, .62)';
-    ctx.stroke();
-    drawRoundRect(ctx, 110, 104, 980, 628, 12);
-    ctx.lineWidth = 1.2;
-    ctx.strokeStyle = 'rgba(174, 122, 42, .48)';
-    ctx.stroke();
-
-    // 상단 장식선
-    ctx.strokeStyle = 'rgba(214,168,79,.66)';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(350, 132); ctx.lineTo(525, 132);
-    ctx.moveTo(675, 132); ctx.lineTo(850, 132);
-    ctx.stroke();
+    // 상단 장식
+    drawGoldRule(142);
+    ctx.save();
     ctx.fillStyle = '#d6a84f';
-    ctx.beginPath(); ctx.arc(600, 132, 8, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(600, 111); ctx.lineTo(622, 132); ctx.lineTo(600, 153); ctx.lineTo(578, 132); ctx.closePath();
+    ctx.fill();
+    ctx.restore();
 
-    // 제목: 영어 중복 줄이고 한글 중심
-    goldText('리캡 셀프 인증서', 600, 205, 'bold 62px Malgun Gothic, Arial', '#f8e7b0');
-    goldText('SOOP RECAP VERIFIED', 600, 244, 'bold 18px Georgia, Malgun Gothic, serif', '#caa15a');
+    // 제목: 한글만 사용
+    centerText('SOOP 리캡 셀프 인증서', 600, 214, '900 58px Malgun Gothic, Arial', '#f8e7b0', true);
 
     // 기간
-    drawRoundRect(ctx, 390, 266, 420, 42, 20);
-    ctx.fillStyle = 'rgba(214,168,79,.13)';
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(255,231,166,.38)';
-    ctx.lineWidth = 1.4;
-    ctx.stroke();
-    ctx.fillStyle = '#ffe7a6';
-    ctx.font = 'bold 20px Malgun Gothic, Arial';
-    ctx.textAlign = 'center';
-    ctx.fillText(`${startDate}  ~  ${endDate}`, 600, 294);
+    roundRect(380, 246, 440, 46, 23, 'rgba(214,168,79,.13)', 'rgba(255,231,166,.34)', 1.5);
+    centerText(`${startDate}  ~  ${endDate}`, 600, 276, '900 21px Malgun Gothic, Arial', '#ffe7a6', false);
 
-    // 본문
-    ctx.fillStyle = '#d9c595';
-    ctx.font = 'bold 21px Malgun Gothic, Arial';
-    ctx.fillText('본 인증서는 SOOP 시청기록 기준으로 생성되었습니다.', 600, 344);
+    centerText('본 인증서는 SOOP 시청기록 기준으로 생성되었습니다.', 600, 330, '900 22px Malgun Gothic, Arial', '#d9c595', false);
 
-    ctx.fillStyle = '#d6a84f';
-    ctx.font = 'bold 19px Malgun Gothic, Arial';
-    ctx.fillText('인증 대상자', 600, 386);
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 54px Malgun Gothic, Arial';
-    ctx.fillText(nick, 600, 446);
+    centerText('인증 대상자', 600, 380, '900 19px Malgun Gothic, Arial', '#d6a84f', false);
+    centerText(nick, 600, 442, '900 56px Malgun Gothic, Arial', '#ffffff', true);
 
     const chulgu = results.find(r => r.key === 'chulgu100');
     const chulguSeconds = chulgu ? Number(chulgu.seconds) || 0 : 0;
@@ -329,66 +325,56 @@
     const kei = results.find(r => r.key === 'bjkei');
     const h = (r) => `${Math.floor((Number(r && r.seconds) || 0) / 3600)}시간`;
 
-    // 메인 시간 박스
-    drawRoundRect(ctx, 250, 478, 700, 96, 12);
-    ctx.fillStyle = 'rgba(0,0,0,.22)';
-    ctx.fill();
-    ctx.lineWidth = 1.7;
-    ctx.strokeStyle = 'rgba(214,168,79,.70)';
-    ctx.stroke();
-    ctx.fillStyle = '#f5d98a';
-    ctx.font = 'bold 25px Malgun Gothic, Arial';
-    ctx.fillText('철구 시청 누적', 600, 514);
-    ctx.fillStyle = '#f4d183';
-    ctx.font = 'bold 58px Georgia, Malgun Gothic, serif';
-    ctx.fillText(`${chulguHours}시간`, 600, 562);
+    // 메인: 총 누적 제거, 철구 시청만 강조
+    roundRect(250, 478, 700, 102, 14, 'rgba(0,0,0,.25)', 'rgba(214,168,79,.70)', 1.8);
+    centerText('철구 시청 누적', 600, 518, '900 26px Malgun Gothic, Arial', '#f5d98a', false);
+    centerText(`${chulguHours}시간`, 600, 568, '900 62px Georgia, Malgun Gothic, serif', '#f4d183', true);
 
-    // 하단 시청 항목
-    drawRoundRect(ctx, 172, 604, 856, 86, 10);
-    ctx.strokeStyle = 'rgba(214,168,79,.62)';
-    ctx.lineWidth = 1.5;
-    ctx.stroke();
+    // 세부 항목: 중복 최소화
+    roundRect(190, 613, 820, 74, 12, 'rgba(0,0,0,.18)', 'rgba(214,168,79,.48)', 1.5);
+    ctx.save();
+    ctx.strokeStyle = 'rgba(214,168,79,.33)';
+    ctx.lineWidth = 1.2;
     ctx.beginPath();
-    ctx.moveTo(457, 620); ctx.lineTo(457, 676);
-    ctx.moveTo(743, 620); ctx.lineTo(743, 676);
-    ctx.strokeStyle = 'rgba(214,168,79,.40)';
+    ctx.moveTo(463, 626); ctx.lineTo(463, 674);
+    ctx.moveTo(737, 626); ctx.lineTo(737, 674);
     ctx.stroke();
-
     const cols = [
       ['철구', `${chulguHours}시간`],
       ['염보성', h(yeom)],
       ['케이', h(kei)]
     ];
-    [315, 600, 885].forEach((x, i) => {
-      ctx.fillStyle = '#d6a84f';
-      ctx.font = 'bold 18px Malgun Gothic, Arial';
-      ctx.fillText(cols[i][0], x, 638);
-      ctx.fillStyle = i === 0 ? '#f4d183' : '#ffffff';
-      ctx.font = 'bold 31px Malgun Gothic, Arial';
-      ctx.fillText(cols[i][1], x, 674);
+    [326, 600, 874].forEach((x, i) => {
+      centerText(cols[i][0], x, 642, '900 17px Malgun Gothic, Arial', '#d6a84f', false);
+      centerText(cols[i][1], x, 673, '900 29px Malgun Gothic, Arial', i === 0 ? '#f4d183' : '#ffffff', false);
     });
+    ctx.restore();
 
-    // 발급 정보
+    // 발급 정보: 프레임 안쪽에 여유 있게
+    ctx.save();
     ctx.textAlign = 'left';
     ctx.fillStyle = '#d9c595';
-    ctx.font = 'bold 15px Malgun Gothic, Arial';
-    ctx.fillText('발급일', 170, 720);
+    ctx.font = '900 15px Malgun Gothic, Arial';
+    ctx.fillText('발급일', 174, 720);
     ctx.fillStyle = '#f2d58a';
     ctx.fillText(issuedDate, 235, 720);
     ctx.fillStyle = '#d9c595';
-    ctx.fillText('인증번호', 170, 745);
+    ctx.fillText('인증번호', 174, 745);
     ctx.fillStyle = '#f2d58a';
     ctx.fillText(certNo, 250, 745);
+    ctx.restore();
 
-    // 진짜 도장 느낌: 오른쪽 하단에 붉은 직인
-    drawSeal(902, 720, 58);
+    // 우측 하단 붉은 직인
+    drawStamp(914, 716, 62);
 
-    // 하단 문구: 프레임과 안 겹치게 더 위/작게
+    // 최하단 안내문: 프레임에 안 가리도록 완전히 안쪽으로 올림
+    ctx.save();
     ctx.textAlign = 'center';
-    ctx.fillStyle = '#b89a61';
-    ctx.font = 'bold 12px Malgun Gothic, Arial';
-    ctx.fillText(`조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 786);
-    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 807);
+    ctx.fillStyle = 'rgba(184,154,97,.92)';
+    ctx.font = '900 12px Malgun Gothic, Arial';
+    ctx.fillText(`조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 772);
+    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 790);
+    ctx.restore();
 
     return c;
   }
@@ -468,17 +454,9 @@
       st.textContent = `
         #soop-recap-check-input input[type="date"]{color-scheme:dark;}
         #soop-recap-check-input input[type="date"]::-webkit-calendar-picker-indicator{
-          opacity:1!important;
-          cursor:pointer!important;
-          width:28px!important;
-          height:24px!important;
-          padding:4px!important;
-          border-radius:8px!important;
-          background-color:transparent!important;
-          filter:invert(77%) sepia(56%) saturate(553%) hue-rotate(359deg) brightness(105%) contrast(94%)!important;
-        }
-        #soop-recap-check-input input[type="date"]::-webkit-calendar-picker-indicator:hover{
-          background-color:rgba(214,168,79,.32)!important;
+          opacity:0!important;
+          display:none!important;
+          pointer-events:none!important;
         }
       `;
       document.head.appendChild(st);
@@ -545,11 +523,6 @@
       try { el.click(); } catch (e) {}
     }
 
-    [startInput, endInput].forEach(function (el) {
-      el.addEventListener('click', function () {
-        openDatePicker(this);
-      });
-    });
 
     const startPick = panel.querySelector('#rcStartPick');
     const endPick = panel.querySelector('#rcEndPick');
