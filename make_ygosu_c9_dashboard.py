@@ -166,7 +166,7 @@ btn.onclick = function() {{
     return f"""
 <div style="margin-top:10px;border:1px solid rgba(255,79,114,.42);border-radius:15px;background:linear-gradient(135deg,rgba(255,79,114,.15),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
   <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(255,79,114,.25);color:#ff6b8a;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
-    🚨 위장팬덤 셀프인증
+    🚨 리캡 셀프인증
   </div>
 
   <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
