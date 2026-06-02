@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03 05:03:25",
+  "updated_at": "2026-06-03 05:44:18",
   "source": "poong.today chart API direct v8 current-month-lock",
   "used_month": "2026-06",
   "api_urls": {
@@ -127,7 +127,7 @@
       "match": "노알리입니두",
       "soop_id": "alwl1047",
       "today": 0,
-      "month": 58145,
+      "month": 60084,
       "today_api_name": "",
       "month_api_name": "노쁠리입니두",
       "matched": true
@@ -428,7 +428,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "81,659",
+    "avg": "81,773",
     "leader": "송채연",
     "leader_sales": "298,900",
     "members": [
@@ -490,8 +490,8 @@
         "rank": 7,
         "name": "쁠리",
         "today": "0",
-        "month": "58,145",
-        "width": "19%",
+        "month": "60,084",
+        "width": "20%",
         "first": false,
         "color": "#7dc7ff"
       },
