@@ -162,91 +162,144 @@
     c.height = 840;
     const ctx = c.getContext('2d');
 
-    // Premium black/gold certificate background
+    function goldText(text, x, y, font, fill='#f7df9b') {
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.font = font;
+      ctx.shadowColor = 'rgba(0,0,0,.75)';
+      ctx.shadowBlur = 8;
+      ctx.shadowOffsetY = 3;
+      ctx.fillStyle = fill;
+      ctx.fillText(text, x, y);
+      ctx.restore();
+    }
+
+    function drawSeal(cx, cy, r) {
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(-0.14);
+      ctx.globalAlpha = 0.92;
+
+      // 도장 바깥 번짐
+      const grd = ctx.createRadialGradient(0, 0, r * .15, 0, 0, r);
+      grd.addColorStop(0, 'rgba(255, 53, 53, .13)');
+      grd.addColorStop(.62, 'rgba(210, 22, 22, .06)');
+      grd.addColorStop(1, 'rgba(210, 22, 22, 0)');
+      ctx.fillStyle = grd;
+      ctx.beginPath(); ctx.arc(0, 0, r + 18, 0, Math.PI * 2); ctx.fill();
+
+      // 찐 도장 느낌: 붉은 원형 이중선
+      ctx.strokeStyle = 'rgba(220, 35, 35, .78)';
+      ctx.lineWidth = 8;
+      ctx.beginPath(); ctx.arc(0, 0, r, 0, Math.PI * 2); ctx.stroke();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = 'rgba(255, 105, 105, .72)';
+      ctx.beginPath(); ctx.arc(0, 0, r - 13, 0, Math.PI * 2); ctx.stroke();
+
+      // 도장 안쪽 약한 결
+      ctx.globalAlpha = 0.20;
+      ctx.strokeStyle = '#ff5757';
+      ctx.lineWidth = 2;
+      for (let i = 0; i < 10; i++) {
+        ctx.beginPath();
+        ctx.arc((i % 2 ? 6 : -5), (i - 5) * 8, r - 30 - i, Math.PI * .05, Math.PI * 1.68);
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 0.95;
+
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = 'rgba(255, 74, 74, .86)';
+      ctx.font = 'bold 35px Malgun Gothic, Arial';
+      ctx.fillText('인증', 0, -10);
+      ctx.font = 'bold 35px Malgun Gothic, Arial';
+      ctx.fillText('완료', 0, 31);
+
+      ctx.globalAlpha = 0.72;
+      ctx.font = 'bold 12px Georgia, serif';
+      ctx.fillText('VERIFIED', 0, -52);
+      ctx.fillText('SOOP RECAP', 0, 61);
+
+      // 일부러 살짝 지워진 도장 질감
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.globalAlpha = 0.17;
+      for (let i = 0; i < 38; i++) {
+        const a = Math.random() * Math.PI * 2;
+        const rr = Math.random() * r * .88;
+        ctx.beginPath();
+        ctx.arc(Math.cos(a) * rr, Math.sin(a) * rr, 1.2 + Math.random() * 3.2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+    }
+
+    // 배경
     const bg = ctx.createLinearGradient(0, 0, 1200, 840);
-    bg.addColorStop(0, '#060402');
-    bg.addColorStop(0.5, '#14100a');
+    bg.addColorStop(0, '#050301');
+    bg.addColorStop(0.45, '#151007');
     bg.addColorStop(1, '#030302');
     ctx.fillStyle = bg;
     ctx.fillRect(0, 0, 1200, 840);
 
-    // Soft gold glow
+    // 금빛 은은한 조명
     ctx.save();
     ctx.globalAlpha = 0.16;
-    let g1 = ctx.createRadialGradient(220, 120, 10, 220, 120, 360);
+    let g1 = ctx.createRadialGradient(250, 100, 10, 250, 100, 390);
     g1.addColorStop(0, '#f6d276');
     g1.addColorStop(1, 'rgba(246,210,118,0)');
     ctx.fillStyle = g1;
     ctx.fillRect(0, 0, 1200, 840);
-    let g2 = ctx.createRadialGradient(980, 700, 10, 980, 700, 330);
+    let g2 = ctx.createRadialGradient(970, 680, 10, 970, 680, 360);
     g2.addColorStop(0, '#b57924');
     g2.addColorStop(1, 'rgba(181,121,36,0)');
     ctx.fillStyle = g2;
     ctx.fillRect(0, 0, 1200, 840);
     ctx.restore();
 
-    // Subtle watermark, smaller and quieter
+    // 배경 워터마크: 중복 영어 제거, 아주 은은하게만
     ctx.save();
-    ctx.globalAlpha = 0.028;
-    ctx.translate(135, 610);
-    ctx.rotate(-0.22);
-    ctx.font = 'bold 92px Georgia, Malgun Gothic, serif';
+    ctx.globalAlpha = 0.026;
+    ctx.translate(600, 470);
+    ctx.rotate(-0.18);
+    ctx.textAlign = 'center';
+    ctx.font = 'bold 118px Georgia, Malgun Gothic, serif';
     ctx.fillStyle = '#ffe7a6';
-    ctx.fillText('SOOP RECAP', 0, 0);
+    ctx.fillText('VERIFIED', 0, 0);
     ctx.restore();
 
-    // Outer frame
-    drawRoundRect(ctx, 58, 52, 1084, 728, 22);
-    ctx.fillStyle = 'rgba(10, 8, 6, 0.92)';
+    // 프레임
+    drawRoundRect(ctx, 58, 52, 1084, 732, 24);
+    ctx.fillStyle = 'rgba(8, 6, 4, 0.94)';
     ctx.fill();
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 5;
     ctx.strokeStyle = '#d6a84f';
     ctx.stroke();
 
-    // inner borders
-    drawRoundRect(ctx, 82, 76, 1036, 680, 16);
+    drawRoundRect(ctx, 84, 78, 1032, 680, 16);
     ctx.lineWidth = 2;
-    ctx.strokeStyle = 'rgba(255, 231, 166, .58)';
+    ctx.strokeStyle = 'rgba(255, 231, 166, .62)';
     ctx.stroke();
-    drawRoundRect(ctx, 108, 102, 984, 628, 12);
+    drawRoundRect(ctx, 110, 104, 980, 628, 12);
     ctx.lineWidth = 1.2;
-    ctx.strokeStyle = 'rgba(174, 122, 42, .46)';
+    ctx.strokeStyle = 'rgba(174, 122, 42, .48)';
     ctx.stroke();
 
-    // corner ornaments, smaller
-    function corner(x, y, sx, sy) {
-      ctx.save();
-      ctx.translate(x, y); ctx.scale(sx, sy);
-      ctx.strokeStyle = '#e6be69'; ctx.lineWidth = 3; ctx.lineCap = 'round';
-      ctx.beginPath(); ctx.moveTo(0, 36); ctx.quadraticCurveTo(0, 0, 36, 0); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(15, 50); ctx.quadraticCurveTo(18, 18, 50, 15); ctx.stroke();
-      ctx.restore();
-    }
-    corner(135, 128, 1, 1); corner(1065, 128, -1, 1); corner(135, 704, 1, -1); corner(1065, 704, -1, -1);
-
-    ctx.textAlign = 'center';
-
-    // Header
-    ctx.fillStyle = '#d6a84f';
-    ctx.font = 'bold 22px Georgia, Malgun Gothic, serif';
-    ctx.fillText('SOOP RECAP', 600, 132);
-    ctx.strokeStyle = 'rgba(214,168,79,.62)';
-    ctx.lineWidth = 1.5;
+    // 상단 장식선
+    ctx.strokeStyle = 'rgba(214,168,79,.66)';
+    ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.moveTo(438, 140); ctx.lineTo(548, 140);
-    ctx.moveTo(652, 140); ctx.lineTo(762, 140);
+    ctx.moveTo(350, 132); ctx.lineTo(525, 132);
+    ctx.moveTo(675, 132); ctx.lineTo(850, 132);
     ctx.stroke();
+    ctx.fillStyle = '#d6a84f';
+    ctx.beginPath(); ctx.arc(600, 132, 8, 0, Math.PI * 2); ctx.fill();
 
-    ctx.fillStyle = '#f8e7b0';
-    ctx.font = 'bold 60px Malgun Gothic, Arial';
-    ctx.fillText('리캡 셀프 인증서', 600, 207);
+    // 제목: 영어 중복 줄이고 한글 중심
+    goldText('리캡 셀프 인증서', 600, 205, 'bold 62px Malgun Gothic, Arial', '#f8e7b0');
+    goldText('SOOP RECAP VERIFIED', 600, 244, 'bold 18px Georgia, Malgun Gothic, serif', '#caa15a');
 
-    ctx.fillStyle = '#caa15a';
-    ctx.font = 'bold 19px Georgia, Malgun Gothic, serif';
-    ctx.fillText('CERTIFICATE OF WATCH RECAP VERIFICATION', 600, 242);
-
-    // Date ribbon
-    drawRoundRect(ctx, 390, 264, 420, 42, 20);
+    // 기간
+    drawRoundRect(ctx, 390, 266, 420, 42, 20);
     ctx.fillStyle = 'rgba(214,168,79,.13)';
     ctx.fill();
     ctx.strokeStyle = 'rgba(255,231,166,.38)';
@@ -254,19 +307,20 @@
     ctx.stroke();
     ctx.fillStyle = '#ffe7a6';
     ctx.font = 'bold 20px Malgun Gothic, Arial';
-    ctx.fillText(`${startDate}  ~  ${endDate}`, 600, 292);
+    ctx.textAlign = 'center';
+    ctx.fillText(`${startDate}  ~  ${endDate}`, 600, 294);
 
-    // body text
+    // 본문
     ctx.fillStyle = '#d9c595';
     ctx.font = 'bold 21px Malgun Gothic, Arial';
-    ctx.fillText('본 인증서는 아래 와고닉의 SOOP 시청기록 기준으로 생성되었습니다.', 600, 348);
+    ctx.fillText('본 인증서는 SOOP 시청기록 기준으로 생성되었습니다.', 600, 344);
 
     ctx.fillStyle = '#d6a84f';
     ctx.font = 'bold 19px Malgun Gothic, Arial';
-    ctx.fillText('인증 대상자', 600, 390);
+    ctx.fillText('인증 대상자', 600, 386);
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 54px Malgun Gothic, Arial';
-    ctx.fillText(nick, 600, 450);
+    ctx.fillText(nick, 600, 446);
 
     const chulgu = results.find(r => r.key === 'chulgu100');
     const chulguSeconds = chulgu ? Number(chulgu.seconds) || 0 : 0;
@@ -275,8 +329,8 @@
     const kei = results.find(r => r.key === 'bjkei');
     const h = (r) => `${Math.floor((Number(r && r.seconds) || 0) / 3600)}시간`;
 
-    // Main watch time box
-    drawRoundRect(ctx, 250, 480, 700, 100, 12);
+    // 메인 시간 박스
+    drawRoundRect(ctx, 250, 478, 700, 96, 12);
     ctx.fillStyle = 'rgba(0,0,0,.22)';
     ctx.fill();
     ctx.lineWidth = 1.7;
@@ -284,64 +338,57 @@
     ctx.stroke();
     ctx.fillStyle = '#f5d98a';
     ctx.font = 'bold 25px Malgun Gothic, Arial';
-    ctx.fillText('총 누적 시청시간', 600, 516);
+    ctx.fillText('철구 시청 누적', 600, 514);
     ctx.fillStyle = '#f4d183';
     ctx.font = 'bold 58px Georgia, Malgun Gothic, serif';
-    ctx.fillText(`${chulguHours}시간`, 600, 565);
+    ctx.fillText(`${chulguHours}시간`, 600, 562);
 
-    // 3 columns
-    drawRoundRect(ctx, 172, 608, 856, 92, 10);
+    // 하단 시청 항목
+    drawRoundRect(ctx, 172, 604, 856, 86, 10);
     ctx.strokeStyle = 'rgba(214,168,79,.62)';
     ctx.lineWidth = 1.5;
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(457, 624); ctx.lineTo(457, 686);
-    ctx.moveTo(743, 624); ctx.lineTo(743, 686);
+    ctx.moveTo(457, 620); ctx.lineTo(457, 676);
+    ctx.moveTo(743, 620); ctx.lineTo(743, 676);
     ctx.strokeStyle = 'rgba(214,168,79,.40)';
     ctx.stroke();
 
     const cols = [
-      ['철구 시청 누적', `${chulguHours}시간`],
-      ['A-염보성!! 시청 누적', h(yeom)],
-      ['[BJ]케이 시청 누적', h(kei)]
+      ['철구', `${chulguHours}시간`],
+      ['염보성', h(yeom)],
+      ['케이', h(kei)]
     ];
     [315, 600, 885].forEach((x, i) => {
       ctx.fillStyle = '#d6a84f';
       ctx.font = 'bold 18px Malgun Gothic, Arial';
-      ctx.fillText(cols[i][0], x, 643);
+      ctx.fillText(cols[i][0], x, 638);
       ctx.fillStyle = i === 0 ? '#f4d183' : '#ffffff';
       ctx.font = 'bold 31px Malgun Gothic, Arial';
-      ctx.fillText(cols[i][1], x, 680);
+      ctx.fillText(cols[i][1], x, 674);
     });
 
-    // Issue info and signature
+    // 발급 정보
     ctx.textAlign = 'left';
     ctx.fillStyle = '#d9c595';
     ctx.font = 'bold 15px Malgun Gothic, Arial';
-    ctx.fillText('발급일', 170, 724);
+    ctx.fillText('발급일', 170, 720);
     ctx.fillStyle = '#f2d58a';
-    ctx.fillText(issuedDate, 235, 724);
+    ctx.fillText(issuedDate, 235, 720);
     ctx.fillStyle = '#d9c595';
-    ctx.fillText('인증번호', 170, 750);
+    ctx.fillText('인증번호', 170, 745);
     ctx.fillStyle = '#f2d58a';
-    ctx.fillText(certNo, 250, 750);
+    ctx.fillText(certNo, 250, 745);
 
+    // 진짜 도장 느낌: 오른쪽 하단에 붉은 직인
+    drawSeal(902, 720, 58);
+
+    // 하단 문구: 프레임과 안 겹치게 더 위/작게
     ctx.textAlign = 'center';
-    ctx.fillStyle = '#d6a84f';
-    ctx.font = 'italic 34px Georgia, serif';
-    ctx.fillText('SOOP Recap Verified', 600, 735);
-    ctx.strokeStyle = 'rgba(214,168,79,.55)';
-    ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(450, 748); ctx.lineTo(750, 748); ctx.stroke();
-    ctx.fillStyle = '#c9b27d';
-    ctx.font = 'bold 13px Georgia, Malgun Gothic, serif';
-    ctx.fillText('OFFICIAL VERIFICATION', 600, 768);
-
-    // Footer: moved safely inside frame, no overlap
     ctx.fillStyle = '#b89a61';
-    ctx.font = 'bold 13px Malgun Gothic, Arial';
-    ctx.fillText(`SOOP 시청기록 API 기준 · 조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 790);
-    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 812);
+    ctx.font = 'bold 12px Malgun Gothic, Arial';
+    ctx.fillText(`조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 786);
+    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 807);
 
     return c;
   }
