@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02 11:13:01",
+  "updated_at": "2026-06-02 15:33:40",
   "source": "poong.today chart API direct v7",
   "used_month": "2026-05",
   "api_urls": {
@@ -16,9 +16,9 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 0,
+      "today": 478,
       "month": 23759645,
-      "today_api_name": "",
+      "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
     },
@@ -27,9 +27,9 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 0,
+      "today": 478,
       "month": 23759645,
-      "today_api_name": "",
+      "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
     },
@@ -313,9 +313,9 @@
       "name": "리하",
       "match": "리하♥",
       "soop_id": "ksdd7856",
-      "today": 0,
+      "today": 394,
       "month": 249077,
-      "today_api_name": "",
+      "today_api_name": "리하♥",
       "month_api_name": "리하♥",
       "matched": true
     },
@@ -418,7 +418,7 @@
       {
         "rank": 1,
         "name": "철구형",
-        "today": "0",
+        "today": "478",
         "month": "23,759,645",
         "width": "100%",
         "first": true,
@@ -562,7 +562,7 @@
       {
         "rank": 17,
         "name": "리하",
-        "today": "0",
+        "today": "394",
         "month": "249,077",
         "width": "4%",
         "first": false,
@@ -589,7 +589,7 @@
       {
         "rank": 1,
         "name": "철구형",
-        "today": "0",
+        "today": "478",
         "month": "23,759,645",
         "width": "100%",
         "first": true,

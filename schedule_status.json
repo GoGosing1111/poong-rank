@@ -1,13 +1,13 @@
 {
   "ok": true,
-  "updated_at": "2026-06-02 11:13:17",
+  "updated_at": "2026-06-02 15:33:55",
   "source": "https://www.cnine.kr/timeline",
-  "count": 8,
+  "count": 9,
   "today_count": 2,
-  "future_count": 6,
+  "future_count": 7,
   "items": [
     {
-      "title": "스타부 : 스타워즈 나락전 <vs 츠캄몬스터즈>",
+      "title": "스타부 : 스타워즈 나락전 <vs 캄몬스터즈>",
       "date": "2026.06.02 (화)",
       "raw_date": "2026-06-02",
       "time": "14:00",
@@ -35,6 +35,16 @@
       "dday": "D-1",
       "type": "엑셀",
       "source_line": "2026년 06월 03일(수)"
+    },
+    {
+      "title": "박재혁 : 엄빠 어디가?",
+      "date": "2026.06.04 (목)",
+      "raw_date": "2026-06-04",
+      "time": "시간미정",
+      "datetime": "2026.06.04 (목) · ⏰ 시간미정",
+      "dday": "D-2",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 04일(목)"
     },
     {
       "title": "철구 : 킴성태 합방 - 여자친구 찾기",
