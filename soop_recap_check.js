@@ -209,12 +209,9 @@
     ctx.fillStyle = '#93c5fd';
     ctx.font = 'bold 23px Malgun Gothic, Arial';
     ctx.fillText('와이고수 닉네임', 155, 262);
-    ctx.fillText('SOOP ID', 720, 262);
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 37px Malgun Gothic, Arial';
     ctx.fillText(nick, 155, 305);
-    ctx.font = 'bold 26px Malgun Gothic, Arial';
-    ctx.fillText(soopId || '-', 720, 303);
 
     const anyFound = results.some(r => r.found);
     drawRoundRect(ctx, 115, 355, 970, 175, 28);
@@ -227,10 +224,10 @@
     ctx.textAlign = 'center';
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 58px Malgun Gothic, Arial';
-    ctx.fillText(anyFound ? '부검 대상 기록 발견' : '부검 대상 기록 없음', 600, 435);
+    ctx.fillText(anyFound ? '부검 대상 시청기록 감지' : '부검 대상 시청기록 미감지', 600, 435);
     ctx.font = 'bold 25px Malgun Gothic, Arial';
     ctx.fillStyle = anyFound ? '#fecaca' : '#bbf7d0';
-    ctx.fillText(anyFound ? 'A-염보성!! 또는 [BJ]케이 기록 감지' : 'A-염보성!! / [BJ]케이 기록 미감지', 600, 482);
+    ctx.fillText(anyFound ? 'A-염보성!! 또는 [BJ]케이 시청기록 감지' : 'A-염보성!! / [BJ]케이 시청기록 미감지', 600, 482);
 
     ctx.textAlign = 'left';
     let y = 585;
@@ -238,7 +235,7 @@
     results.forEach((r) => {
       ctx.fillStyle = r.found ? '#fecaca' : '#bbf7d0';
       const timeText = r.found ? ` · ${secondsToHms(r.seconds)}` : '';
-      ctx.fillText(`${r.found ? '✅' : '❌'} ${r.label}: ${r.found ? '기록 있음' : '기록 없음'}${timeText}`, 145, y);
+      ctx.fillText(`${r.found ? '✅' : '❌'} ${r.label}: ${r.found ? '감지' : '미감지'}${timeText}`, 145, y);
       y += 48;
     });
 
@@ -322,15 +319,12 @@
     panel.innerHTML = `
       <div style="font-size:22px;font-weight:1000;text-align:center;margin-bottom:8px;">📋 리캡 셀프 인증</div>
       <div style="font-size:12px;font-weight:800;color:#cbd5e1;text-align:center;line-height:1.55;margin-bottom:16px;">
-        기간을 선택하면 SOOP 시청기록 API를 조회해<br>
+        SOOP 로그인 상태에서 기간을 선택하면<br>
         A-염보성!! / [BJ]케이 기록만 자동 판독합니다.
       </div>
 
       <label style="display:block;font-size:12px;font-weight:900;color:#93c5fd;margin:10px 0 5px;">와이고수 닉네임</label>
       <input id="rcNick" type="text" placeholder="와이고수 닉네임" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:10px;background:#020617;color:#fff;padding:11px;font-weight:900;">
-
-      <label style="display:block;font-size:12px;font-weight:900;color:#93c5fd;margin:10px 0 5px;">SOOP ID</label>
-      <input id="rcSoopId" type="text" value="${escapeHtml(uid)}" placeholder="SOOP 아이디" style="width:100%;box-sizing:border-box;border:1px solid #334155;border-radius:10px;background:#020617;color:#fff;padding:11px;font-weight:900;">
 
       <div style="display:flex;gap:8px;">
         <div style="flex:1;">
@@ -359,12 +353,12 @@
 
     panel.querySelector('#rcRun').onclick = async function () {
       const nick = panel.querySelector('#rcNick').value.trim();
-      const soopId = panel.querySelector('#rcSoopId').value.trim();
+      const soopId = getSoopIdFromCookie();
       const startDate = panel.querySelector('#rcStart').value;
       const endDate = panel.querySelector('#rcEnd').value;
 
       if (!nick) return alert('와이고수 닉네임을 입력하세요.');
-      if (!soopId) return alert('SOOP ID를 입력하세요.');
+      if (!soopId) return alert('SOOP 로그인 상태를 확인할 수 없습니다. SOOP 로그인 후 다시 실행하세요.');
       if (!startDate || !endDate) return alert('시작일/종료일을 선택하세요.');
       if (startDate > endDate) return alert('시작일이 종료일보다 늦습니다.');
 
