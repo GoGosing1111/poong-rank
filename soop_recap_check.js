@@ -227,19 +227,19 @@
 
     ctx.textAlign = 'center';
 
-    // top emblem
-    const seal = ctx.createRadialGradient(600, 134, 8, 600, 134, 62);
-    seal.addColorStop(0, '#fff5c9');
-    seal.addColorStop(.45, '#d6a84f');
-    seal.addColorStop(1, '#694313');
-    ctx.fillStyle = seal;
-    ctx.beginPath(); ctx.arc(600, 134, 53, 0, Math.PI * 2); ctx.fill();
-    ctx.lineWidth = 3; ctx.strokeStyle = '#ffe6a4'; ctx.stroke();
-    ctx.fillStyle = '#171009';
-    ctx.font = 'bold 23px Malgun Gothic, Arial';
-    ctx.fillText('SOOP', 600, 127);
-    ctx.font = 'bold 15px Malgun Gothic, Arial';
-    ctx.fillText('RECAP', 600, 150);
+    // top official mark - no cheap round stamp
+    ctx.fillStyle = '#d6a84f';
+    ctx.font = 'bold 28px Malgun Gothic, Arial';
+    ctx.fillText('SOOP RECAP', 600, 142);
+    ctx.strokeStyle = 'rgba(214,168,79,.70)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(420, 150); ctx.lineTo(545, 150);
+    ctx.moveTo(655, 150); ctx.lineTo(780, 150);
+    ctx.stroke();
+    ctx.fillStyle = '#f8e7b0';
+    ctx.font = 'bold 20px Malgun Gothic, Arial';
+    ctx.fillText('OFFICIAL WATCH RECORD CERTIFICATE', 600, 171);
 
     ctx.fillStyle = '#f8e7b0';
     ctx.font = 'bold 58px Malgun Gothic, Arial';
@@ -305,8 +305,8 @@
     ctx.textAlign = 'center';
     ctx.fillStyle = '#a9915d';
     ctx.font = 'bold 15px Malgun Gothic, Arial';
-    ctx.fillText(`SOOP 시청기록 API 기준 · 조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 742);
-    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 765);
+    ctx.fillText(`SOOP 시청기록 API 기준 · 조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 714);
+    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 737);
 
     return c;
   }
@@ -379,6 +379,28 @@
     const panel = document.createElement('div');
     panel.style.cssText = 'width:500px;max-width:94vw;background:radial-gradient(circle at top,rgba(214,168,79,.22),transparent 42%),linear-gradient(180deg,#16100a,#050403);border:1px solid rgba(214,168,79,.84);border-radius:24px;padding:22px;box-shadow:0 0 45px rgba(214,168,79,.32);box-sizing:border-box;color:#fff;';
 
+    if (!document.getElementById('soop-recap-date-style')) {
+      const st = document.createElement('style');
+      st.id = 'soop-recap-date-style';
+      st.textContent = `
+        #soop-recap-check-input input[type="date"]{color-scheme:dark;}
+        #soop-recap-check-input input[type="date"]::-webkit-calendar-picker-indicator{
+          opacity:1!important;
+          cursor:pointer!important;
+          width:22px!important;
+          height:22px!important;
+          padding:4px!important;
+          border-radius:8px!important;
+          background-color:rgba(214,168,79,.18)!important;
+          filter:invert(77%) sepia(56%) saturate(553%) hue-rotate(359deg) brightness(105%) contrast(94%)!important;
+        }
+        #soop-recap-check-input input[type="date"]::-webkit-calendar-picker-indicator:hover{
+          background-color:rgba(214,168,79,.32)!important;
+        }
+      `;
+      document.head.appendChild(st);
+    }
+
     panel.innerHTML = `
       <div style="text-align:center;margin-bottom:16px;">
         <div style="display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(214,168,79,.15);border:1px solid rgba(255,231,166,.34);color:#f8e7b0;font-size:11px;font-weight:1000;">SOOP WATCH CHECK</div>
@@ -396,11 +418,11 @@
         <div style="display:flex;gap:10px;margin-top:10px;">
           <div style="flex:1;">
             <label style="display:block;font-size:12px;font-weight:1000;color:#f8e7b0;margin-bottom:6px;">시작일</label>
-            <input id="rcStart" type="date" value="${defaultStart}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:11px;font-size:14px;font-weight:900;outline:none;">
+            <input id="rcStart" type="date" value="${defaultStart}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:11px 9px 11px 11px;font-size:14px;font-weight:900;outline:none;">
           </div>
           <div style="flex:1;">
             <label style="display:block;font-size:12px;font-weight:1000;color:#f8e7b0;margin-bottom:6px;">종료일</label>
-            <input id="rcEnd" type="date" value="${defaultEnd}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:11px;font-size:14px;font-weight:900;outline:none;">
+            <input id="rcEnd" type="date" value="${defaultEnd}" style="width:100%;box-sizing:border-box;border:1px solid #76501e;border-radius:12px;background:#070503;color:#fff;padding:11px 9px 11px 11px;font-size:14px;font-weight:900;outline:none;">
           </div>
         </div>
       </div>
@@ -413,7 +435,7 @@
       </div>
 
       <div style="margin-top:12px;text-align:center;color:#a9915d;font-size:11px;font-weight:800;line-height:1.45;">
-        ※ 조회 기간은 최대 30일까지만 가능합니다.<br>
+        ※ 조회 기간은 최대 31일까지만 가능합니다.<br>
         ※ SOOP ID는 이미지에 표시하지 않습니다.
       </div>
     `;
@@ -449,7 +471,7 @@
       const s = new Date(startDate + 'T00:00:00');
       const e = new Date(endDate + 'T00:00:00');
       const diffDays = Math.floor((e - s) / (24 * 60 * 60 * 1000)) + 1;
-      if (diffDays > 30) return alert('조회 기간은 최대 30일까지만 가능합니다.');
+      if (diffDays > 31) return alert('조회 기간은 최대 31일까지만 가능합니다.');
 
       try {
         msg.textContent = 'SOOP 시청기록 조회 중...';
