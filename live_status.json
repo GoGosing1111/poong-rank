@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-02 05:53:49",
+  "updated_at": "2026-06-02 11:12:53",
   "total": 36,
-  "live_count": 1,
+  "live_count": 0,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -242,11 +242,11 @@
       "part": "엑셀부",
       "soop_id": "0929kelly",
       "soop_url": "https://www.sooplive.com/station/0929kelly",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294478439",
-      "title": "[씨나인:신입] 다니는 쑥제중!!",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
