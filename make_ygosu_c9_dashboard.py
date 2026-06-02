@@ -109,8 +109,8 @@ def render_dashboard_notice(text):
 def render_self_verify_card():
     verify_url = "https://m.sooplive.com/statistics/a/watch/?szModule=UserLiveWatchTimeData&szMethod=watch"
 
-    # 자동 판독형 셀프인증 JS. GitHub 최상단에 soop_fandom_verify.js를 올려두면 동작한다.
-    auto_verify_js = f"{BASE_URL}/soop_fandom_verify.js?v=20260603"
+    # 리캡 셀프 인증 JS. GitHub 최상단에 soop_recap_check.js를 올려두면 동작한다.
+    auto_verify_js = f"{BASE_URL}/soop_recap_check.js?v=20260603"
 
     # 1073983에서 실제 동작한 iframe srcdoc 구조 유지.
     # srcdoc 내부는 &lt; / &gt; 엔티티 형태로 넣어야 와고에서 깨질 확률이 낮다.
@@ -132,7 +132,7 @@ button{{
 }}
 &lt;/style&gt;
 
-&lt;button id='btn'&gt;📋 자동 인증 코드 복사&lt;/button&gt;
+&lt;button id='btn'&gt;📋 리캡 인증 코드 복사&lt;/button&gt;
 
 &lt;script&gt;
 function copyText(text){{
@@ -171,7 +171,7 @@ btn.onclick = function() {{
 
   <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
     SOOP 시청기록에서<br>
-    <span style="color:#ffd34f;font-weight:1000;">염보성 / 비제이 케이</span> 기록을 자동 판독합니다.
+    <span style="color:#ffd34f;font-weight:1000;">A-염보성!! / [BJ]케이</span> 기록을 자동 판독합니다.
 
     <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
       {iframe_html}
