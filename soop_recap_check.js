@@ -162,162 +162,6 @@
     c.height = 840;
     const ctx = c.getContext('2d');
 
-    function roundRect(x, y, w, h, r, fill, stroke, lw) {
-      drawRoundRect(ctx, x, y, w, h, r);
-      if (fill) {
-        ctx.fillStyle = fill;
-        ctx.fill();
-      }
-      if (stroke) {
-        ctx.lineWidth = lw || 1;
-        ctx.strokeStyle = stroke;
-        ctx.stroke();
-      }
-    }
-
-    function centerText(text, x, y, font, color, shadow) {
-      ctx.save();
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'alphabetic';
-      ctx.font = font;
-      ctx.fillStyle = color;
-      if (shadow) {
-        ctx.shadowColor = 'rgba(0,0,0,.72)';
-        ctx.shadowBlur = 8;
-        ctx.shadowOffsetY = 3;
-      }
-      ctx.fillText(text, x, y);
-      ctx.restore();
-    }
-
-    function drawGoldRule(y) {
-      ctx.save();
-      const g = ctx.createLinearGradient(210, y, 990, y);
-      g.addColorStop(0, 'rgba(214,168,79,0)');
-      g.addColorStop(.18, 'rgba(214,168,79,.75)');
-      g.addColorStop(.50, 'rgba(255,232,170,.95)');
-      g.addColorStop(.82, 'rgba(214,168,79,.75)');
-      g.addColorStop(1, 'rgba(214,168,79,0)');
-      ctx.strokeStyle = g;
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      ctx.moveTo(210, y); ctx.lineTo(990, y);
-      ctx.stroke();
-      ctx.fillStyle = '#d6a84f';
-      ctx.beginPath(); ctx.arc(600, y, 5, 0, Math.PI * 2); ctx.fill();
-      ctx.restore();
-    }
-
-    function drawStamp(cx, cy, r) {
-      ctx.save();
-      ctx.translate(cx, cy);
-      ctx.rotate(-0.18);
-      ctx.globalAlpha = 0.92;
-
-      // 붉은 직인 번짐
-      const bleed = ctx.createRadialGradient(0, 0, 8, 0, 0, r + 20);
-      bleed.addColorStop(0, 'rgba(210, 31, 31, .10)');
-      bleed.addColorStop(.58, 'rgba(210, 31, 31, .08)');
-      bleed.addColorStop(1, 'rgba(210, 31, 31, 0)');
-      ctx.fillStyle = bleed;
-      ctx.beginPath(); ctx.arc(0, 0, r + 22, 0, Math.PI * 2); ctx.fill();
-
-      // 찐 직인 라인
-      ctx.strokeStyle = 'rgba(214, 36, 36, .78)';
-      ctx.lineWidth = 7;
-      ctx.beginPath(); ctx.arc(0, 0, r, 0, Math.PI * 2); ctx.stroke();
-      ctx.strokeStyle = 'rgba(255, 91, 91, .66)';
-      ctx.lineWidth = 2.8;
-      ctx.beginPath(); ctx.arc(0, 0, r - 13, 0, Math.PI * 2); ctx.stroke();
-      ctx.strokeStyle = 'rgba(214, 36, 36, .45)';
-      ctx.lineWidth = 1.6;
-      ctx.beginPath(); ctx.arc(0, 0, r - 26, 0, Math.PI * 2); ctx.stroke();
-
-      // 도장 내부 십자 분할선
-      ctx.strokeStyle = 'rgba(214, 36, 36, .42)';
-      ctx.lineWidth = 1.8;
-      ctx.beginPath(); ctx.moveTo(-r + 18, 0); ctx.lineTo(r - 18, 0); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(0, -r + 18); ctx.lineTo(0, r - 18); ctx.stroke();
-
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillStyle = 'rgba(223, 48, 48, .88)';
-      ctx.font = '900 34px Malgun Gothic, Arial';
-      ctx.fillText('인증', 0, -17);
-      ctx.fillText('완료', 0, 27);
-      ctx.font = '900 15px Malgun Gothic, Arial';
-      ctx.fillText('SOOP 리캡', 0, 58);
-
-      // 낡은 직인 질감
-      ctx.globalCompositeOperation = 'destination-out';
-      ctx.globalAlpha = 0.14;
-      for (let i = 0; i < 50; i++) {
-        const a = (i * 2.399963) % (Math.PI * 2);
-        const rr = ((i * 37) % 100) / 100 * r * .88;
-        ctx.beginPath();
-        ctx.arc(Math.cos(a) * rr, Math.sin(a) * rr, 1.4 + (i % 4), 0, Math.PI * 2);
-        ctx.fill();
-      }
-      ctx.restore();
-    }
-
-    // 배경
-    const bg = ctx.createLinearGradient(0, 0, 1200, 840);
-    bg.addColorStop(0, '#050302');
-    bg.addColorStop(.48, '#151007');
-    bg.addColorStop(1, '#030302');
-    ctx.fillStyle = bg;
-    ctx.fillRect(0, 0, 1200, 840);
-
-    // 은은한 금빛 조명
-    ctx.save();
-    ctx.globalAlpha = .20;
-    let glow = ctx.createRadialGradient(610, 80, 20, 610, 80, 520);
-    glow.addColorStop(0, '#e7bd61');
-    glow.addColorStop(1, 'rgba(231,189,97,0)');
-    ctx.fillStyle = glow;
-    ctx.fillRect(0, 0, 1200, 840);
-    ctx.restore();
-
-    // 프레임 안쪽 배경
-    roundRect(58, 52, 1084, 736, 24, 'rgba(7, 5, 3, .95)', '#d6a84f', 5);
-    roundRect(84, 78, 1032, 684, 16, null, 'rgba(255,231,166,.60)', 2);
-    roundRect(110, 104, 980, 632, 12, null, 'rgba(174,122,42,.46)', 1.3);
-
-    // 배경 워터마크 복구: 내용 뒤에 크게, 너무 튀지 않게
-    ctx.save();
-    ctx.translate(600, 462);
-    ctx.rotate(-0.20);
-    ctx.globalAlpha = 0.055;
-    ctx.textAlign = 'center';
-    ctx.fillStyle = '#f6d276';
-    ctx.font = '900 138px Georgia, Malgun Gothic, serif';
-    ctx.fillText('SOOP RECAP', 0, 0);
-    ctx.font = '900 66px Malgun Gothic, Arial';
-    ctx.fillText('셀프 인증', 0, 82);
-    ctx.restore();
-
-    // 상단 장식
-    drawGoldRule(142);
-    ctx.save();
-    ctx.fillStyle = '#d6a84f';
-    ctx.beginPath();
-    ctx.moveTo(600, 111); ctx.lineTo(622, 132); ctx.lineTo(600, 153); ctx.lineTo(578, 132); ctx.closePath();
-    ctx.fill();
-    ctx.restore();
-
-    // 제목: 한글만 사용
-    centerText('SOOP 리캡 셀프 인증서', 600, 214, '900 58px Malgun Gothic, Arial', '#f8e7b0', true);
-
-    // 기간
-    roundRect(380, 246, 440, 46, 23, 'rgba(214,168,79,.13)', 'rgba(255,231,166,.34)', 1.5);
-    centerText(`${startDate}  ~  ${endDate}`, 600, 276, '900 21px Malgun Gothic, Arial', '#ffe7a6', false);
-
-    centerText('본 인증서는 SOOP 시청기록 기준으로 생성되었습니다.', 600, 330, '900 22px Malgun Gothic, Arial', '#d9c595', false);
-
-    centerText('인증 대상자', 600, 380, '900 19px Malgun Gothic, Arial', '#d6a84f', false);
-    centerText(nick, 600, 442, '900 56px Malgun Gothic, Arial', '#ffffff', true);
-
     const chulgu = results.find(r => r.key === 'chulgu100');
     const chulguSeconds = chulgu ? Number(chulgu.seconds) || 0 : 0;
     const chulguHours = Math.floor(chulguSeconds / 3600);
@@ -325,61 +169,217 @@
     const kei = results.find(r => r.key === 'bjkei');
     const h = (r) => `${Math.floor((Number(r && r.seconds) || 0) / 3600)}시간`;
 
-    // 메인: 총 누적 제거, 철구 시청만 강조
-    roundRect(250, 478, 700, 102, 14, 'rgba(0,0,0,.25)', 'rgba(214,168,79,.70)', 1.8);
-    centerText('철구 시청 누적', 600, 518, '900 26px Malgun Gothic, Arial', '#f5d98a', false);
-    centerText(`${chulguHours}시간`, 600, 568, '900 62px Georgia, Malgun Gothic, serif', '#f4d183', true);
+    function centerText(text, x, y, font, fill) {
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'alphabetic';
+      ctx.font = font;
+      ctx.fillStyle = fill;
+      ctx.fillText(text, x, y);
+      ctx.restore();
+    }
 
-    // 세부 항목: 중복 최소화
-    roundRect(190, 613, 820, 74, 12, 'rgba(0,0,0,.18)', 'rgba(214,168,79,.48)', 1.5);
+    function leftText(text, x, y, font, fill) {
+      ctx.save();
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'alphabetic';
+      ctx.font = font;
+      ctx.fillStyle = fill;
+      ctx.fillText(text, x, y);
+      ctx.restore();
+    }
+
+    function line(x1, y1, x2, y2, color, width) {
+      ctx.save();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width || 1;
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function ornament(cx, cy, scale) {
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.scale(scale, scale);
+      ctx.strokeStyle = 'rgba(188,143,67,.78)';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(-90, 0); ctx.lineTo(-20, 0);
+      ctx.moveTo(20, 0); ctx.lineTo(90, 0);
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(188,143,67,.86)';
+      ctx.beginPath();
+      ctx.moveTo(0, -7); ctx.lineTo(9, 0); ctx.lineTo(0, 7); ctx.lineTo(-9, 0); ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function drawCorner(x, y, sx, sy) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.scale(sx, sy);
+      ctx.strokeStyle = 'rgba(188,143,67,.72)';
+      ctx.lineWidth = 2.2;
+      ctx.beginPath();
+      ctx.moveTo(0, 62); ctx.quadraticCurveTo(28, 52, 34, 24); ctx.quadraticCurveTo(48, 42, 70, 34);
+      ctx.moveTo(8, 92); ctx.quadraticCurveTo(52, 62, 84, 20);
+      ctx.moveTo(0, 0); ctx.lineTo(0, 118);
+      ctx.moveTo(0, 0); ctx.lineTo(118, 0);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function drawStamp(x, y) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(-0.045);
+      ctx.globalAlpha = 0.92;
+      ctx.strokeStyle = 'rgba(180,26,22,.86)';
+      ctx.fillStyle = 'rgba(180,26,22,.09)';
+      ctx.lineWidth = 7;
+      drawRoundRect(ctx, -105, -75, 210, 150, 16);
+      ctx.fill(); ctx.stroke();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = 'rgba(180,26,22,.76)';
+      drawRoundRect(ctx, -90, -60, 180, 120, 10);
+      ctx.stroke();
+
+      // 거친 도장 질감: 지워진 부분을 규칙적으로 제거
+      ctx.save();
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.globalAlpha = 0.20;
+      ctx.fillStyle = '#000';
+      for (let i = 0; i < 46; i++) {
+        const xx = -90 + ((i * 37) % 180);
+        const yy = -62 + ((i * 53) % 124);
+        ctx.beginPath();
+        ctx.ellipse(xx, yy, 2 + (i % 5), 1.2 + (i % 4), (i % 7) * .4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+
+      ctx.textAlign = 'center';
+      ctx.fillStyle = 'rgba(165,22,19,.92)';
+      ctx.font = 'bold 36px Georgia, serif';
+      ctx.fillText('SOOP', 0, -26);
+      ctx.fillText('RECAP', 0, 14);
+      ctx.font = 'bold 34px Malgun Gothic, Arial';
+      ctx.fillText('인증완료', 0, 55);
+      ctx.restore();
+    }
+
+    // 종이 배경
+    const paper = ctx.createLinearGradient(0, 0, 1200, 840);
+    paper.addColorStop(0, '#fffaf0');
+    paper.addColorStop(0.5, '#f6eddb');
+    paper.addColorStop(1, '#fff8eb');
+    ctx.fillStyle = paper;
+    ctx.fillRect(0, 0, 1200, 840);
+
+    // 종이 질감
     ctx.save();
-    ctx.strokeStyle = 'rgba(214,168,79,.33)';
-    ctx.lineWidth = 1.2;
-    ctx.beginPath();
-    ctx.moveTo(463, 626); ctx.lineTo(463, 674);
-    ctx.moveTo(737, 626); ctx.lineTo(737, 674);
+    ctx.globalAlpha = 0.10;
+    for (let i = 0; i < 900; i++) {
+      const x = (i * 47) % 1200;
+      const y = (i * 83) % 840;
+      const v = 190 + (i % 55);
+      ctx.fillStyle = `rgb(${v},${v-18},${v-45})`;
+      ctx.fillRect(x, y, 1.2, 1.2);
+    }
+    ctx.restore();
+
+    // 큰 워터마크 복구
+    ctx.save();
+    ctx.globalAlpha = 0.070;
+    ctx.translate(595, 430);
+    ctx.rotate(-0.33);
+    ctx.textAlign = 'center';
+    ctx.font = 'bold 142px Georgia, serif';
+    ctx.fillStyle = '#6f6048';
+    ctx.fillText('SOOP RECAP', 0, 0);
+    ctx.font = 'bold 96px Malgun Gothic, Arial';
+    ctx.fillText('셀프 인증', 0, 120);
+    ctx.restore();
+
+    // 프레임
+    ctx.strokeStyle = '#b98d43';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(36, 36, 1128, 768);
+    ctx.lineWidth = 1.3;
+    ctx.strokeStyle = 'rgba(185,141,67,.70)';
+    ctx.strokeRect(52, 52, 1096, 736);
+    ctx.lineWidth = 1.1;
+    ctx.strokeStyle = 'rgba(185,141,67,.42)';
+    ctx.strokeRect(70, 70, 1060, 700);
+
+    drawCorner(56, 56, 1, 1);
+    drawCorner(1144, 56, -1, 1);
+    drawCorner(56, 784, 1, -1);
+    drawCorner(1144, 784, -1, -1);
+
+    // 제목부: 상단 영어 전부 제거
+    centerText('리캡 셀프 인증서', 600, 176, 'bold 58px Malgun Gothic, Arial', '#2d2418');
+    ornament(600, 210, 1.08);
+
+    drawRoundRect(ctx, 440, 234, 320, 42, 12);
+    ctx.fillStyle = 'rgba(255,255,255,.42)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(185,141,67,.50)';
+    ctx.lineWidth = 1.3;
     ctx.stroke();
-    const cols = [
-      ['철구', `${chulguHours}시간`],
-      ['염보성', h(yeom)],
-      ['케이', h(kei)]
-    ];
-    [326, 600, 874].forEach((x, i) => {
-      centerText(cols[i][0], x, 642, '900 17px Malgun Gothic, Arial', '#d6a84f', false);
-      centerText(cols[i][1], x, 673, '900 29px Malgun Gothic, Arial', i === 0 ? '#f4d183' : '#ffffff', false);
-    });
-    ctx.restore();
+    centerText(`${startDate}  ~  ${endDate}`, 600, 262, '20px Georgia, Malgun Gothic, serif', '#2d2418');
 
-    // 발급 정보: 프레임 안쪽에 여유 있게
-    ctx.save();
-    ctx.textAlign = 'left';
-    ctx.fillStyle = '#d9c595';
-    ctx.font = '900 15px Malgun Gothic, Arial';
-    ctx.fillText('발급일', 174, 720);
-    ctx.fillStyle = '#f2d58a';
-    ctx.fillText(issuedDate, 235, 720);
-    ctx.fillStyle = '#d9c595';
-    ctx.fillText('인증번호', 174, 745);
-    ctx.fillStyle = '#f2d58a';
-    ctx.fillText(certNo, 250, 745);
-    ctx.restore();
+    centerText('본 인증서는 아래 와고닉의 SOOP 시청기록 기준으로 생성되었습니다.', 600, 330, '22px Malgun Gothic, Arial', '#3a2f21');
+    centerText('인증 대상자', 600, 378, 'bold 20px Malgun Gothic, Arial', '#b98d43');
+    centerText(nick, 600, 438, 'bold 54px Malgun Gothic, Arial', '#16120d');
+
+    ornament(600, 490, 1.34);
+
+    // 시청기록 표: 총 누적 시청시간 계열 제거, 3칸만 표시
+    drawRoundRect(ctx, 220, 520, 760, 138, 10);
+    ctx.fillStyle = 'rgba(255,255,255,.22)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(185,141,67,.70)';
+    ctx.lineWidth = 1.8;
+    ctx.stroke();
+    line(473, 535, 473, 643, 'rgba(185,141,67,.45)', 1.5);
+    line(727, 535, 727, 643, 'rgba(185,141,67,.45)', 1.5);
+
+    const cols = [
+      ['철구 시청 누적', `${chulguHours}시간`],
+      ['염보성 시청 누적', h(yeom)],
+      ['케이 시청 누적', h(kei)]
+    ];
+    [347, 600, 853].forEach((x, i) => {
+      centerText(cols[i][0], x, 570, 'bold 20px Malgun Gothic, Arial', '#3a2f21');
+      centerText(cols[i][1], x, 622, 'bold 38px Malgun Gothic, Arial', '#15110c');
+    });
+
+    // 발급 정보
+    leftText('발급일', 118, 715, 'bold 17px Malgun Gothic, Arial', '#3a2f21');
+    leftText(issuedDate, 205, 715, '18px Georgia, Malgun Gothic, serif', '#2d2418');
+    line(118, 730, 360, 730, 'rgba(185,141,67,.50)', 1);
+    leftText('인증번호', 118, 755, 'bold 17px Malgun Gothic, Arial', '#3a2f21');
+    leftText(certNo, 205, 755, '18px Georgia, Malgun Gothic, serif', '#2d2418');
+    line(118, 770, 360, 770, 'rgba(185,141,67,.50)', 1);
 
     // 우측 하단 붉은 직인
-    drawStamp(914, 716, 62);
+    drawStamp(1000, 696);
 
-    // 최하단 안내문: 프레임에 안 가리도록 완전히 안쪽으로 올림
-    ctx.save();
+    // 하단 안내문: 프레임 안쪽에서 여유 있게
     ctx.textAlign = 'center';
-    ctx.fillStyle = 'rgba(184,154,97,.92)';
-    ctx.font = '900 12px Malgun Gothic, Arial';
-    ctx.fillText(`조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 772);
-    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 790);
-    ctx.restore();
+    ctx.fillStyle = '#4b4031';
+    ctx.font = '13px Malgun Gothic, Arial';
+    ctx.fillText(`SOOP 시청기록 API 기준 · 조회갱신 ${updatedAt || '-'} · 생성시각 ${issuedAt}`, 600, 790);
+    ctx.fillText('본인 로그인 상태에서만 조회되며 타인의 기록은 조회하지 않습니다.', 600, 812);
 
     return c;
   }
 
-  
+
   function showResultOverlay(opts) {
     const old = document.getElementById('soop-recap-check-overlay');
     if (old) old.remove();
@@ -522,7 +522,6 @@
       }
       try { el.click(); } catch (e) {}
     }
-
 
     const startPick = panel.querySelector('#rcStartPick');
     const endPick = panel.querySelector('#rcEndPick');
