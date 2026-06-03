@@ -18,7 +18,7 @@
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
 <span style="color:#dff2ff;">현재 LIVE</span><span style="color:#7ec8ff;text-align:right;">1명</span></div>
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
-<span style="color:#dff2ff;">집계시간</span><span style="color:#7ec8ff;text-align:right;">2026-06-03 08:18:12</span></div>
+<span style="color:#dff2ff;">집계시간</span><span style="color:#7ec8ff;text-align:right;">2026-06-03 09:03:23</span></div>
   
 <div style="margin-top:9px;border:1px solid rgba(255,211,79,.32);border-radius:15px;background:linear-gradient(135deg,rgba(255,211,79,.10),rgba(0,0,0,.22));overflow:hidden;box-sizing:border-box;">
   <div style="padding:9px 11px;background:rgba(0,0,0,.20);border-bottom:1px solid rgba(255,211,79,.22);color:#ffd34f;font-size:13px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">📢 특이사항</div>
@@ -72,7 +72,7 @@ function copyText(text){
 }
 
 var btn = document.getElementById('btn');
-var code = '!function(){var s=document.createElement(\'script\');s.id=\'soop-fandom-verify-loader\';s.src=\'https://keyman1335-maker.github.io/poong-rank/soop_recap_check.js?v=2026060308\';document.head.appendChild(s)}();';
+var code = '!function(){var s=document.createElement(\'script\');s.id=\'soop-fandom-verify-loader\';s.src=\'https://keyman1335-maker.github.io/poong-rank/soop_recap_check.js?v=2026060315\';document.head.appendChild(s)}();';
 
 btn.onclick = function() {
   copyText(code).then(function(){
@@ -511,7 +511,7 @@ btn.onclick = function() {
   </summary>
   <div style="padding:10px;background:#081525;border-top:1px solid rgba(255,255,255,.10);box-sizing:border-box;">
     
-<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(255,255,255,.045);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-03 07:33:31 · 기준 2026-06</div>
+<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(255,255,255,.045);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-03 08:27:47 · 기준 2026-06</div>
 
 <div style="margin-bottom:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,211,79,.45);background:linear-gradient(135deg,rgba(255,211,79,.16),rgba(0,0,0,.28));box-shadow:0 0 14px rgba(255,211,79,.18);text-align:center;">
   <div style="padding:12px;background:linear-gradient(135deg,#ffd34f,#4a3100);color:#fff;font-size:20px;font-weight:1000;text-shadow:0 2px 0 #000;">👑 수장 별풍선</div>
@@ -800,6 +800,41 @@ btn.onclick = function() {
   </summary>
   <div style="padding:10px;background:#081525;border-top:1px solid rgba(255,255,255,.10);box-sizing:border-box;">
     
+<details style="margin:0 0 9px;padding:0;border:1px solid rgba(159,123,255,.62);border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.13),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(159,123,255,.18);box-sizing:border-box;">
+  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(8,21,37,.88);border-bottom:1px solid rgba(159,123,255,.32);box-sizing:border-box;">
+    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#12345c;border:1px solid #9f7bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">초린</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">일어났습니댜</span>
+    </div>
+  </summary>
+  <div style="padding:10px 11px 12px;background:#071526;box-sizing:border-box;">
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">오늘 11시- 11시 30분까지 오도록 할께용 💝
+
+ 
+
+노방종 진행중 !! 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+그리고 오늘 여왕님 방송으로
+
+6시반에 골빈벨 있을예정이니 
+
+골빈벨도 많관부입니댜 !! 💓
+
+https://www.sooplive.com/station/dhtnqls1238/post/197576709</div>
+  </div>
+</details>
 <details style="margin:0 0 9px;padding:0;border:1px solid rgba(159,123,255,.62);border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.13),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(159,123,255,.18);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(8,21,37,.88);border-bottom:1px solid rgba(159,123,255,.32);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
@@ -2312,41 +2347,6 @@ https://www.sooplive.com/station/ddaggida3/post/197543489</div>
 https://www.sooplive.com/station/tjgpdus97/post/197539465</div>
   </div>
 </details>
-<details style="margin:0 0 9px;padding:0;border:1px solid rgba(159,123,255,.62);border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.13),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(159,123,255,.18);box-sizing:border-box;">
-  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(8,21,37,.88);border-bottom:1px solid rgba(159,123,255,.32);box-sizing:border-box;">
-    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#12345c;border:1px solid #9f7bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">졈니</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">졈ㅡㅡㅡㅡ황 Vv</span>
-    </div>
-  </summary>
-  <div style="padding:10px 11px 12px;background:#071526;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">휴우...휴우 ;;
-
-개빡시게 이겼네요
-
-뒷경기인 거 못뛸까봐 순번 정해지자마자 너무 아쉬웠는데
-
-어케 에결승을 하다니..🌈
-
-경기 이야기 할 거 많은데
-
-캄몬+씨나인 절반정도 다같이 밥먹고 하다보니
-
-이제 집 다와가네여😵‍💫
-
-리아들이랑 경기이야기는
-
-내일 와서 할게요
-
-다들 오늘 너무 고생많았다...
-
-ㄴㅇㅂㅈ🔥🔥🔥
-
- 
-
-https://www.sooplive.com/station/yochba0402/post/197536851</div>
-  </div>
-</details>
   </div>
 </details>
   
@@ -2400,5 +2400,5 @@ https://www.sooplive.com/station/yochba0402/post/197536851</div>
 </details>
 
   <div style="margin-top:12px;text-align:center;color:#7ec8ff;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(126,200,255,.35);">CNINE Dashboard Developed by 유두위생크림</div>
-  <div style="margin-top:5px;text-align:center;color:#8fcfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-03 08:18:12</div>
+  <div style="margin-top:5px;text-align:center;color:#8fcfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-03 09:03:23</div>
 </div>
