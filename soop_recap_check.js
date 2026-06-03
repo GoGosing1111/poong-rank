@@ -168,6 +168,11 @@
     const yeom = results.find(r => r.key === 'yeomboseong');
     const kei = results.find(r => r.key === 'bjkei');
     const h = (r) => `${Math.floor((Number(r && r.seconds) || 0) / 3600)}시간`;
+    const smartTime = (r) => {
+      const sec = Number(r && r.seconds) || 0;
+      if (sec < 3600) return `${Math.floor(sec / 60)}분`;
+      return `${Math.floor(sec / 3600)}시간`;
+    };
 
     function centerText(text, x, y, font, fill) {
       ctx.save();
@@ -350,8 +355,8 @@
 
     const cols = [
       ['철구 시청 누적', `${chulguHours}시간`],
-      ['염보성 시청 누적', h(yeom)],
-      ['케이 시청 누적', h(kei)]
+      ['염보성 시청 누적', smartTime(yeom)],
+      ['케이 시청 누적', smartTime(kei)]
     ];
     [347, 600, 853].forEach((x, i) => {
       centerText(cols[i][0], x, 570, 'bold 20px Malgun Gothic, Arial', '#3a2f21');
