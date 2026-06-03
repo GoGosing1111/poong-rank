@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-04 04:56:16",
+  "updated_at": "2026-06-04 05:01:15",
   "total": 38,
-  "live_count": 4,
+  "live_count": 3,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -164,11 +164,11 @@
       "part": "스타부",
       "soop_id": "yjk011599",
       "soop_url": "https://www.sooplive.com/station/yjk011599",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294534547",
-      "title": "씨나인💖🏆망수니",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yjk011599/station"
     },
