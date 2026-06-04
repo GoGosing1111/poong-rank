@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-04 17:05:37",
+  "updated_at": "2026-06-04 20:10:09",
   "source": "https://www.cnine.kr/timeline",
-  "count": 8,
+  "count": 7,
   "today_count": 2,
-  "future_count": 6,
+  "future_count": 5,
   "items": [
     {
       "title": "박재혁 : 엄빠 어디가? - 7번째 여행",
@@ -45,16 +45,6 @@
       "dday": "D-2",
       "type": "엑셀",
       "source_line": "2026년 06월 06일(토) 17:00 ~ 2026년 06월 07일(일) 05:00"
-    },
-    {
-      "title": "스타부 : 유스 오디션",
-      "date": "2026.06.07 (일)",
-      "raw_date": "2026-06-07",
-      "time": "시간미정",
-      "datetime": "2026.06.07 (일) · ⏰ 시간미정",
-      "dday": "D-3",
-      "type": "스타",
-      "source_line": "2026년 06월 07일(일)"
     },
     {
       "title": "씨나인 : 인간 vs 버튜버 대결",
