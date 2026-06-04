@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-04 21:23:41",
+  "updated_at": "2026-06-04 22:05:02",
   "total": 39,
-  "live_count": 19,
+  "live_count": 20,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -12,7 +12,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294553719",
-      "title": "철구 깅예솔...과연?스타판복귀?씨나인 입학?",
+      "title": "철구X빵훈 모든지 물어보세요 다대답해드립니다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
@@ -112,11 +112,11 @@
       "part": "스타부",
       "soop_id": "jmc06170",
       "soop_url": "https://www.sooplive.com/station/jmc06170",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294562729",
+      "title": "[씨나인] 왜냐맨  안녕하세용 ^^ 오랜만에 스타방송",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jmc06170/station"
     },
@@ -337,7 +337,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294536477",
-      "title": "[ 씨나인 : 시녀1] 자고올게요",
+      "title": "[ 씨나인 : 시녀1] 시녀장 가끄이까 ?!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jkmjkm1236/station"
     },
@@ -350,7 +350,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294560013",
-      "title": "[씨나인 : 하녀2] 에브리바디 조흔아침입니다 ^^*",
+      "title": "[씨나인 : 하녀2] 선착 3명 입니다 어서 차지하세요!!!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/alwl1047/station"
     },
@@ -467,7 +467,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294561081",
-      "title": "[씨나인:신입] 3회차 냠남핀볼 돌려유~",
+      "title": "[씨나인:신입] 연두퇴출막아 절대지켜 살려주세욥..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
     },
@@ -493,7 +493,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294500421",
-      "title": "[씨나인 : 버러지] 오늘의 목표 한강가서 어벤단오빠 구하기",
+      "title": "[씨나인 : 버러지] 압구정 까지 국토 퇴출되기 싫습미다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dhtnqls1238/station"
     }
