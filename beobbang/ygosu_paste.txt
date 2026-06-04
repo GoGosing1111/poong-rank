@@ -1,34 +1,11 @@
 <div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,#fff9ef 0,#fff1dc 45%,#f8dfbc 100%);padding:10px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#5b2a12;overflow:hidden;border-radius:24px;border:2px solid #f3c58c;">
   
 <div style="position:relative;border-radius:24px;overflow:hidden;border:2px solid #f3c58c;background:radial-gradient(circle at 18% 15%,#fff7ec 0,#ffe7c2 34%,#ffd6a3 100%);box-shadow:0 5px 0 rgba(91,42,18,.12);box-sizing:border-box;">
-  <div style="position:absolute;left:12px;top:12px;width:54px;height:54px;border-radius:50%;background:#fff7ec;border:2px dashed #f59e0b;box-sizing:border-box;"></div>
-  <div style="padding:18px 14px 20px;text-align:center;box-sizing:border-box;">
-    <img src="https://keyman1335-maker.github.io/poong-rank/beobbang/assets/beobbang_logo.png?v=20260605003912" style="display:block;max-width:185px;width:48%;height:auto;margin:0 auto 7px;border:0;">
-    <div style="color:#f97316;font-size:34px;line-height:1;font-weight:1000;letter-spacing:1px;text-shadow:3px 3px 0 #fff,0 2px 0 rgba(91,42,18,.18);">WELCOME</div>
-    <div style="display:inline-block;margin-top:8px;padding:5px 18px;border-radius:999px;background:#6b2f12;color:#fff;font-size:13px;font-weight:1000;letter-spacing:3px;box-shadow:0 3px 0 rgba(91,42,18,.18);">OFFICIAL</div>
-    <div style="margin-top:10px;color:#5b2a12;font-size:28px;line-height:1.05;font-weight:1000;text-shadow:2px 2px 0 #fff;">버빵동 현황판</div>
-    <div style="margin-top:10px;color:#7c2d12;font-size:13px;font-weight:1000;">좋은 날도, 힘든 날도, 빵이 함께할게요!</div>
-    <div style="margin:11px auto 0;max-width:330px;border-top:2px solid #f97316;height:1px;line-height:1px;"></div>
-    <div style="margin-top:9px;color:#8a4a21;font-size:11px;font-weight:900;">집계시간: 2026-06-05 00:39:12</div>
+  <div style="padding:18px 14px 14px;text-align:center;box-sizing:border-box;">
+    <img src="https://keyman1335-maker.github.io/poong-rank/beobbang/assets/beobbang_logo.png?v=20260604154714" style="display:block;max-width:230px;width:58%;height:auto;margin:0 auto;border:0;">
+    <div style="margin:8px auto 0;max-width:260px;border-top:2px solid #f97316;height:1px;line-height:1px;"></div>
+    <div style="margin-top:8px;color:#8a4a21;font-size:11px;font-weight:900;">집계시간: 2026-06-04 15:47:14</div>
   </div>
-</div>
-  
-<div style="margin-top:10px;text-align:center;padding:6px;border-radius:19px;background:#ffe8c9;border:2px dashed #f59e0b;box-sizing:border-box;">
-  <div style="display:inline-block;vertical-align:top;width:31.5%;min-width:150px;margin:4px .5%;padding:11px 8px;border-radius:16px;background:#fffdf8;border:2px solid #f3c58c;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.10);text-align:center;">
-  <div style="color:#f97316;font-size:18px;font-weight:1000;line-height:1;">👥</div>
-  <div style="margin-top:5px;color:#8a4a21;font-size:11px;font-weight:900;">전체 구성</div>
-  <div style="margin-top:3px;color:#4a220f;font-size:14px;font-weight:1000;word-break:break-word;">9명</div>
-</div>
-  <div style="display:inline-block;vertical-align:top;width:31.5%;min-width:150px;margin:4px .5%;padding:11px 8px;border-radius:16px;background:#fffdf8;border:2px solid #f3c58c;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.10);text-align:center;">
-  <div style="color:#f97316;font-size:18px;font-weight:1000;line-height:1;">📢</div>
-  <div style="margin-top:5px;color:#8a4a21;font-size:11px;font-weight:900;">공지 원문</div>
-  <div style="margin-top:3px;color:#4a220f;font-size:14px;font-weight:1000;word-break:break-word;">SOOP 버빵동</div>
-</div>
-  <div style="display:inline-block;vertical-align:top;width:31.5%;min-width:150px;margin:4px .5%;padding:11px 8px;border-radius:16px;background:#fffdf8;border:2px solid #f3c58c;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.10);text-align:center;">
-  <div style="color:#f97316;font-size:18px;font-weight:1000;line-height:1;">⏰</div>
-  <div style="margin-top:5px;color:#8a4a21;font-size:11px;font-weight:900;">집계시간</div>
-  <div style="margin-top:3px;color:#4a220f;font-size:14px;font-weight:1000;word-break:break-word;">2026-06-05 00:39:12</div>
-</div>
 </div>
   
 <details open style="margin:12px 0 14px;padding:0;border:2px solid #f97316;border-radius:22px;background:#fffdf8;overflow:hidden;box-sizing:border-box;box-shadow:0 5px 0 rgba(91,42,18,.10),0 0 0 4px rgba(255,255,255,.60) inset;">
@@ -144,5 +121,5 @@
   </div>
 </details>
   <div style="margin-top:12px;text-align:center;color:#8a4a21;font-size:11px;font-weight:900;text-shadow:0 1px 0 #fff;">BEOBBANG Dashboard Developed by 유두위생크림</div>
-  <div style="margin-top:5px;text-align:center;color:#a16207;font-size:10px;font-weight:800;">자동 변환: 2026-06-05 00:39:12</div>
+  <div style="margin-top:5px;text-align:center;color:#a16207;font-size:10px;font-weight:800;">자동 변환: 2026-06-04 15:47:14</div>
 </div>

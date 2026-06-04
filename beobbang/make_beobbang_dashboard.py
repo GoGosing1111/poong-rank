@@ -377,15 +377,10 @@ def render_notice(post):
 def render_hero(updated):
     return f"""
 <div style="position:relative;border-radius:24px;overflow:hidden;border:2px solid #f3c58c;background:radial-gradient(circle at 18% 15%,#fff7ec 0,#ffe7c2 34%,#ffd6a3 100%);box-shadow:0 5px 0 rgba(91,42,18,.12);box-sizing:border-box;">
-  <div style="position:absolute;left:12px;top:12px;width:54px;height:54px;border-radius:50%;background:#fff7ec;border:2px dashed #f59e0b;box-sizing:border-box;"></div>
-  <div style="padding:18px 14px 20px;text-align:center;box-sizing:border-box;">
-    <img src="{LOGO_URL}?v={CACHE_BUST}" style="display:block;max-width:185px;width:48%;height:auto;margin:0 auto 7px;border:0;">
-    <div style="color:#f97316;font-size:34px;line-height:1;font-weight:1000;letter-spacing:1px;text-shadow:3px 3px 0 #fff,0 2px 0 rgba(91,42,18,.18);">WELCOME</div>
-    <div style="display:inline-block;margin-top:8px;padding:5px 18px;border-radius:999px;background:#6b2f12;color:#fff;font-size:13px;font-weight:1000;letter-spacing:3px;box-shadow:0 3px 0 rgba(91,42,18,.18);">OFFICIAL</div>
-    <div style="margin-top:10px;color:#5b2a12;font-size:28px;line-height:1.05;font-weight:1000;text-shadow:2px 2px 0 #fff;">버빵동 현황판</div>
-    <div style="margin-top:10px;color:#7c2d12;font-size:13px;font-weight:1000;">좋은 날도, 힘든 날도, 빵이 함께할게요!</div>
-    <div style="margin:11px auto 0;max-width:330px;border-top:2px solid #f97316;height:1px;line-height:1px;"></div>
-    <div style="margin-top:9px;color:#8a4a21;font-size:11px;font-weight:900;">집계시간: {esc(updated)}</div>
+  <div style="padding:18px 14px 14px;text-align:center;box-sizing:border-box;">
+    <img src="{LOGO_URL}?v={CACHE_BUST}" style="display:block;max-width:230px;width:58%;height:auto;margin:0 auto;border:0;">
+    <div style="margin:8px auto 0;max-width:260px;border-top:2px solid #f97316;height:1px;line-height:1px;"></div>
+    <div style="margin-top:8px;color:#8a4a21;font-size:11px;font-weight:900;">집계시간: {esc(updated)}</div>
   </div>
 </div>"""
 
@@ -397,16 +392,8 @@ def main():
     special = extract_special(post.get("body", ""))
     schedule = load_schedule()
 
-    top = f"""
-<div style="margin-top:10px;text-align:center;padding:6px;border-radius:19px;background:#ffe8c9;border:2px dashed #f59e0b;box-sizing:border-box;">
-  {metric('전체 구성', f'{len(members)}명', '👥')}
-  {metric('공지 원문', 'SOOP 버빵동', '📢')}
-  {metric('집계시간', updated, '⏰')}
-</div>"""
-
     html_out = f"""<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,#fff9ef 0,#fff1dc 45%,#f8dfbc 100%);padding:10px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#5b2a12;overflow:hidden;border-radius:24px;border:2px solid #f3c58c;">
   {render_hero(updated)}
-  {top}
   {section('멤버 현황', render_members(members), True, '#f97316', '🥐')}
   {section('오늘의 특이사항', render_special(special), True, '#f59e0b', '⭐')}
   {section('버빵동 일정', render_schedule(schedule), True, '#f97316', '📅')}
