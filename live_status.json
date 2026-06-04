@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-04 14:23:31",
+  "updated_at": "2026-06-04 15:05:02",
   "total": 38,
-  "live_count": 3,
+  "live_count": 5,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -138,11 +138,11 @@
       "part": "스타부",
       "soop_id": "scan1014",
       "soop_url": "https://www.sooplive.com/station/scan1014",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294548925",
+      "title": "[씨나인] 스타 유승곤 갯벌스타 후기?",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/scan1014/station"
     },
@@ -255,11 +255,11 @@
       "part": "스타부",
       "soop_id": "imducko3o",
       "soop_url": "https://www.sooplive.com/station/imducko3o",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294549627",
+      "title": "[씨나인★] 오리꿍 와씀미다 노방종 레츠꼬 ( !노방종 룰렛 90/91/601/602 )",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
