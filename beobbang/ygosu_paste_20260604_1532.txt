@@ -1,0 +1,148 @@
+<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,#fff9ef 0,#fff1dc 45%,#f8dfbc 100%);padding:10px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#5b2a12;overflow:hidden;border-radius:24px;border:2px solid #f3c58c;">
+  
+<div style="position:relative;border-radius:24px;overflow:hidden;border:2px solid #f3c58c;background:radial-gradient(circle at 18% 15%,#fff7ec 0,#ffe7c2 34%,#ffd6a3 100%);box-shadow:0 5px 0 rgba(91,42,18,.12);box-sizing:border-box;">
+  <div style="position:absolute;left:12px;top:12px;width:54px;height:54px;border-radius:50%;background:#fff7ec;border:2px dashed #f59e0b;box-sizing:border-box;"></div>
+  <div style="padding:18px 14px 20px;text-align:center;box-sizing:border-box;">
+    <img src="https://keyman1335-maker.github.io/poong-rank/beobbang/assets/beobbang_logo.png?v=20260604153231" style="display:block;max-width:185px;width:48%;height:auto;margin:0 auto 7px;border:0;">
+    <div style="color:#f97316;font-size:34px;line-height:1;font-weight:1000;letter-spacing:1px;text-shadow:3px 3px 0 #fff,0 2px 0 rgba(91,42,18,.18);">WELCOME</div>
+    <div style="display:inline-block;margin-top:8px;padding:5px 18px;border-radius:999px;background:#6b2f12;color:#fff;font-size:13px;font-weight:1000;letter-spacing:3px;box-shadow:0 3px 0 rgba(91,42,18,.18);">OFFICIAL</div>
+    <div style="margin-top:10px;color:#5b2a12;font-size:28px;line-height:1.05;font-weight:1000;text-shadow:2px 2px 0 #fff;">버빵동 현황판</div>
+    <div style="margin-top:10px;color:#7c2d12;font-size:13px;font-weight:1000;">좋은 날도, 힘든 날도, 빵이 함께할게요!</div>
+    <div style="margin:11px auto 0;max-width:330px;border-top:2px solid #f97316;height:1px;line-height:1px;"></div>
+    <div style="margin-top:9px;color:#8a4a21;font-size:11px;font-weight:900;">집계시간: 2026-06-04 15:32:31</div>
+  </div>
+</div>
+  
+<div style="margin-top:10px;text-align:center;padding:6px;border-radius:19px;background:#ffe8c9;border:2px dashed #f59e0b;box-sizing:border-box;">
+  <div style="display:inline-block;vertical-align:top;width:31.5%;min-width:150px;margin:4px .5%;padding:11px 8px;border-radius:16px;background:#fffdf8;border:2px solid #f3c58c;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.10);text-align:center;">
+  <div style="color:#f97316;font-size:18px;font-weight:1000;line-height:1;">👥</div>
+  <div style="margin-top:5px;color:#8a4a21;font-size:11px;font-weight:900;">전체 구성</div>
+  <div style="margin-top:3px;color:#4a220f;font-size:14px;font-weight:1000;word-break:break-word;">9명</div>
+</div>
+  <div style="display:inline-block;vertical-align:top;width:31.5%;min-width:150px;margin:4px .5%;padding:11px 8px;border-radius:16px;background:#fffdf8;border:2px solid #f3c58c;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.10);text-align:center;">
+  <div style="color:#f97316;font-size:18px;font-weight:1000;line-height:1;">📢</div>
+  <div style="margin-top:5px;color:#8a4a21;font-size:11px;font-weight:900;">공지 원문</div>
+  <div style="margin-top:3px;color:#4a220f;font-size:14px;font-weight:1000;word-break:break-word;">SOOP 버빵동</div>
+</div>
+  <div style="display:inline-block;vertical-align:top;width:31.5%;min-width:150px;margin:4px .5%;padding:11px 8px;border-radius:16px;background:#fffdf8;border:2px solid #f3c58c;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.10);text-align:center;">
+  <div style="color:#f97316;font-size:18px;font-weight:1000;line-height:1;">⏰</div>
+  <div style="margin-top:5px;color:#8a4a21;font-size:11px;font-weight:900;">집계시간</div>
+  <div style="margin-top:3px;color:#4a220f;font-size:14px;font-weight:1000;word-break:break-word;">2026-06-04 15:32:31</div>
+</div>
+</div>
+  
+<details open style="margin:12px 0 14px;padding:0;border:2px solid #f97316;border-radius:22px;background:#fffdf8;overflow:hidden;box-sizing:border-box;box-shadow:0 5px 0 rgba(91,42,18,.10),0 0 0 4px rgba(255,255,255,.60) inset;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 14px;background:linear-gradient(180deg,#fff3df,#ffe0b9);color:#5b2a12;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 1px 0 #fff;border-bottom:2px dashed #f97316;letter-spacing:-.3px;">
+    🥐 멤버 현황
+  </summary>
+  <div style="padding:12px;background:linear-gradient(180deg,#fffdf8,#fff7ec);box-sizing:border-box;">
+    <div style="padding:10px 9px;margin-bottom:10px;border-radius:17px;background:#fff3df;border:2px dashed #f59e0b;color:#7c2d12;font-size:13px;font-weight:1000;text-align:center;box-sizing:border-box;">🍞 수장 1명 · 멤버 8명 · 닉네임 우선 표시</div><div style="text-align:center;">
+<div style="display:inline-block;vertical-align:top;width:98%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fff4d6,#ffe5b7);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">👑 수장</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/vl/vlfvlf789/vlfvlf789.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">빵훈</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · vlfvlf789</div>
+  <a href="https://www.sooplive.com/station/vlfvlf789" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🍞 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/yo/yotsubakoe/yotsubakoe.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">오츠바코에</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · yotsubakoe</div>
+  <a href="https://www.sooplive.com/station/yotsubakoe" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🥖 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/ch/choelssu/choelssu.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">철쓰</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · choelssu</div>
+  <a href="https://www.sooplive.com/station/choelssu" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🍞 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/ya/yaom0728/yaom0728.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">야옹이</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · yaom0728</div>
+  <a href="https://www.sooplive.com/station/yaom0728" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🥖 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/01/015234/015234.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">공이삼이</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · 015234</div>
+  <a href="https://www.sooplive.com/station/015234" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🍞 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/xi/xirus2/xirus2.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">시루스</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · xirus2</div>
+  <a href="https://www.sooplive.com/station/xirus2" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🥖 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/tp/tpdusdl0218/tpdusdl0218.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">이튼</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · tpdusdl0218</div>
+  <a href="https://www.sooplive.com/station/tpdusdl0218" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🍞 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/as/asdk0110/asdk0110.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">아스닥</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · asdk0110</div>
+  <a href="https://www.sooplive.com/station/asdk0110" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:linear-gradient(180deg,#fffdf8,#fff0db);border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+  <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">🥖 멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/do/dougie0328/dougie0328.jpg" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">더기</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · dougie0328</div>
+  <a href="https://www.sooplive.com/station/dougie0328" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
+</div></div>
+  </div>
+</details>
+  
+<details open style="margin:12px 0 14px;padding:0;border:2px solid #f59e0b;border-radius:22px;background:#fffdf8;overflow:hidden;box-sizing:border-box;box-shadow:0 5px 0 rgba(91,42,18,.10),0 0 0 4px rgba(255,255,255,.60) inset;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 14px;background:linear-gradient(180deg,#fff3df,#ffe0b9);color:#5b2a12;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 1px 0 #fff;border-bottom:2px dashed #f59e0b;letter-spacing:-.3px;">
+    ⭐ 오늘의 특이사항
+  </summary>
+  <div style="padding:12px;background:linear-gradient(180deg,#fffdf8,#fff7ec);box-sizing:border-box;">
+    <div style="padding:10px 11px;margin-bottom:8px;border-radius:16px;background:#fffaf0;border:2px solid #fed7aa;color:#5b2a12;font-size:13px;font-weight:900;line-height:1.55;word-break:break-word;box-sizing:border-box;">⭐ 특이사항 없음</div>
+  </div>
+</details>
+  
+<details open style="margin:12px 0 14px;padding:0;border:2px solid #f97316;border-radius:22px;background:#fffdf8;overflow:hidden;box-sizing:border-box;box-shadow:0 5px 0 rgba(91,42,18,.10),0 0 0 4px rgba(255,255,255,.60) inset;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 14px;background:linear-gradient(180deg,#fff3df,#ffe0b9);color:#5b2a12;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 1px 0 #fff;border-bottom:2px dashed #f97316;letter-spacing:-.3px;">
+    📅 버빵동 일정
+  </summary>
+  <div style="padding:12px;background:linear-gradient(180deg,#fffdf8,#fff7ec);box-sizing:border-box;">
+    
+<div style="margin-bottom:8px;padding:11px 12px;border-radius:16px;background:#fffaf0;border:2px solid #fed7aa;color:#5b2a12;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.08);">
+  <div style="display:inline-block;padding:4px 9px;border-radius:999px;background:#f97316;color:#fff;font-size:11px;font-weight:1000;box-shadow:0 2px 0 rgba(91,42,18,.12);">일정 없음</div>
+  <div style="margin-top:7px;font-size:14px;font-weight:1000;line-height:1.45;word-break:break-word;">등록된 버빵동 일정 없음</div>
+  <div style="margin-top:5px;color:#8a4a21;font-size:12px;font-weight:800;line-height:1.45;word-break:break-word;">일정이 생기면 이 파일에 YYYY-MM-DD</div>
+</div>
+  </div>
+</details>
+  
+<details open style="margin:12px 0 14px;padding:0;border:2px solid #7c2d12;border-radius:22px;background:#fffdf8;overflow:hidden;box-sizing:border-box;box-shadow:0 5px 0 rgba(91,42,18,.10),0 0 0 4px rgba(255,255,255,.60) inset;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 14px;background:linear-gradient(180deg,#fff3df,#ffe0b9);color:#5b2a12;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 1px 0 #fff;border-bottom:2px dashed #7c2d12;letter-spacing:-.3px;">
+    📢 SOOP 공지사항
+  </summary>
+  <div style="padding:12px;background:linear-gradient(180deg,#fffdf8,#fff7ec);box-sizing:border-box;">
+    
+<div style="margin:0 0 9px;padding:0;border:2px solid #f3c58c;border-radius:18px;background:#fffdf8;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);box-sizing:border-box;">
+  <div style="padding:12px 13px;background:linear-gradient(180deg,#fff0db,#ffe0b9);border-bottom:2px dashed #f97316;box-sizing:border-box;">
+    <div style="color:#5b2a12;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 1px 0 #fff;word-break:keep-all;">🍞 버빵동 공지사항</div>
+  </div>
+  <div style="padding:13px;background:#fffdf8;box-sizing:border-box;">
+    <div style="padding:12px;border-radius:15px;background:#fff7ec;border:1px solid #fed7aa;color:#5b2a12;font-size:13px;line-height:1.62;font-weight:800;word-break:break-word;box-sizing:border-box;">SOOP 공지 수집 실패 - 원문 링크에서 확인 필요</div>
+    <a href="https://www.sooplive.com/station/vlfvlf789/post/197602167" target="_blank" rel="nofollow" style="display:inline-block;margin-top:10px;padding:8px 12px;border-radius:999px;background:#7c2d12;color:#fff;font-size:12px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">원문 확인</a>
+  </div>
+</div>
+  </div>
+</details>
+  <div style="margin-top:12px;text-align:center;color:#8a4a21;font-size:11px;font-weight:900;text-shadow:0 1px 0 #fff;">BEOBBANG Dashboard Developed by 유두위생크림</div>
+  <div style="margin-top:5px;text-align:center;color:#a16207;font-size:10px;font-weight:800;">자동 변환: 2026-06-04 15:32:31</div>
+</div>

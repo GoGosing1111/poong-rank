@@ -1,0 +1,113 @@
+<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(245,158,11,.18),transparent 32%),linear-gradient(180deg,#050505 0%,#101010 52%,#030303 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(245,158,11,.48);">
+  
+<div style="border-radius:18px;overflow:hidden;border:1px solid rgba(245,158,11,.55);background:#050505;box-shadow:0 0 22px rgba(245,158,11,.20);">
+  <div style="padding:20px 12px 18px;text-align:center;background:radial-gradient(circle at top,rgba(245,158,11,.28),transparent 45%),linear-gradient(180deg,#15100a,#050505);">
+    <div style="color:#fff;font-size:30px;line-height:1.05;font-weight:1000;letter-spacing:.8px;text-shadow:0 0 10px rgba(245,158,11,.72),0 3px 0 #000;">버빵동 현황판</div>
+    <div style="margin-top:7px;color:#f59e0b;font-size:12px;font-weight:900;letter-spacing:3px;">SOOP NOTICE · MEMBER STATUS</div>
+    <div style="margin-top:10px;color:#fde68a;font-size:11px;font-weight:800;">집계시간: 2026-06-04 15:19:23</div>
+  </div>
+</div>
+  
+<div style="border:1px solid rgba(245,158,11,.28);border-radius:16px;background:rgba(0,0,0,.26);padding:10px;margin-top:10px;box-shadow:inset 0 0 18px rgba(245,158,11,.08);">
+  <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
+<span style="color:#fde68a;">전체 멤버</span><span style="color:#fff;text-align:right;">8명</span></div>
+  <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
+<span style="color:#fde68a;">공지 원문</span><span style="color:#fff;text-align:right;">SOOP 버빵동</span></div>
+  <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
+<span style="color:#fde68a;">집계시간</span><span style="color:#fff;text-align:right;">2026-06-04 15:19:23</span></div>
+</div>
+  
+<details open style="margin:11px 0 14px;padding:0;border:1px solid #f59e0b;border-radius:18px;background:#0b0b0b;overflow:hidden;box-sizing:border-box;box-shadow:0 0 16px #f59e0b55;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 12px;background:linear-gradient(180deg,#171717,#070707);color:#fff;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 0 8px #f59e0bAA,0 2px 0 #000;border-bottom:2px solid #f59e0b;letter-spacing:-.3px;">
+    멤버 현황
+  </summary>
+  <div style="padding:10px;background:linear-gradient(180deg,#101010,#050505);border-top:1px solid rgba(255,255,255,.08);box-sizing:border-box;">
+    <div style="padding:9px 8px;margin-bottom:8px;border-radius:12px;background:rgba(245,158,11,.10);border:1px solid rgba(245,158,11,.25);color:#fde68a;font-size:12px;font-weight:900;text-align:center;">전체 8명</div><div style="text-align:center;">
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/yo/yotsubakoe/yotsubakoe.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">yotsubakoe</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">yotsubakoe</div>
+  <a href="https://www.sooplive.com/station/yotsubakoe" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/ch/choelssu/choelssu.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">choelssu</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">choelssu</div>
+  <a href="https://www.sooplive.com/station/choelssu" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/ya/yaom0728/yaom0728.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">yaom0728</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">yaom0728</div>
+  <a href="https://www.sooplive.com/station/yaom0728" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/01/015234/015234.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">015234</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">015234</div>
+  <a href="https://www.sooplive.com/station/015234" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/xi/xirus2/xirus2.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">xirus2</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">xirus2</div>
+  <a href="https://www.sooplive.com/station/xirus2" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/tp/tpdusdl0218/tpdusdl0218.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">tpdusdl0218</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">tpdusdl0218</div>
+  <a href="https://www.sooplive.com/station/tpdusdl0218" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/as/asdk0110/asdk0110.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">asdk0110</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">asdk0110</div>
+  <a href="https://www.sooplive.com/station/asdk0110" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(0,0,0,.30));border:1px solid rgba(245,158,11,.30);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.10);">
+  <div style="margin-bottom:6px;text-align:left;"><span style="display:inline-block;padding:3px 7px;border-radius:999px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);color:#fff;font-size:10px;font-weight:900;">멤버</span></div>
+  <img src="https://profile.img.sooplive.com/LOGO/do/dougie0328/dougie0328.jpg" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #f59e0b;background:#111;box-shadow:0 0 10px rgba(245,158,11,.30);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">dougie0328</div>
+  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">dougie0328</div>
+  <a href="https://www.sooplive.com/station/dougie0328" target="_blank" rel="nofollow" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #f59e0b;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div></div>
+  </div>
+</details>
+  
+<details open style="margin:11px 0 14px;padding:0;border:1px solid #ef4444;border-radius:18px;background:#0b0b0b;overflow:hidden;box-sizing:border-box;box-shadow:0 0 16px #ef444455;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 12px;background:linear-gradient(180deg,#171717,#070707);color:#fff;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 0 8px #ef4444AA,0 2px 0 #000;border-bottom:2px solid #ef4444;letter-spacing:-.3px;">
+    특이사항
+  </summary>
+  <div style="padding:10px;background:linear-gradient(180deg,#101010,#050505);border-top:1px solid rgba(255,255,255,.08);box-sizing:border-box;">
+    <div style="padding:9px 10px;margin-bottom:7px;border-radius:12px;background:rgba(0,0,0,.26);border:1px solid rgba(245,158,11,.25);color:#fff;font-size:13px;font-weight:900;line-height:1.55;word-break:break-word;">특이사항 없음</div>
+  </div>
+</details>
+  
+<details open style="margin:11px 0 14px;padding:0;border:1px solid #3b82f6;border-radius:18px;background:#0b0b0b;overflow:hidden;box-sizing:border-box;box-shadow:0 0 16px #3b82f655;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 12px;background:linear-gradient(180deg,#171717,#070707);color:#fff;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 0 8px #3b82f6AA,0 2px 0 #000;border-bottom:2px solid #3b82f6;letter-spacing:-.3px;">
+    공지사항
+  </summary>
+  <div style="padding:10px;background:linear-gradient(180deg,#101010,#050505);border-top:1px solid rgba(255,255,255,.08);box-sizing:border-box;">
+    
+<div style="margin:0 0 9px;padding:0;border:1px solid rgba(245,158,11,.45);border-radius:15px;background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(245,158,11,.16);box-sizing:border-box;">
+  <div style="padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(245,158,11,.30);box-sizing:border-box;">
+    <div style="color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(245,158,11,.42);word-break:keep-all;">버빵동 공지사항</div>
+  </div>
+  <div style="padding:12px;background:#090909;box-sizing:border-box;">
+    <div style="padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">SOOP 공지 수집 실패 - 원문 링크에서 확인 필요</div>
+    <a href="https://www.sooplive.com/station/vlfvlf789/post/197602167" target="_blank" rel="nofollow" style="display:inline-block;margin-top:10px;padding:8px 11px;border-radius:999px;background:#f59e0b;color:#111;font-size:12px;font-weight:1000;text-decoration:none;">원문 확인</a>
+  </div>
+</div>
+  </div>
+</details>
+  <div style="margin-top:12px;text-align:center;color:#f59e0b;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(245,158,11,.35);">BEOBBANG Dashboard Developed by 유두위생크림</div>
+  <div style="margin-top:5px;text-align:center;color:#bda870;font-size:10px;font-weight:700;">자동 변환: 2026-06-04 15:19:23</div>
+</div>
