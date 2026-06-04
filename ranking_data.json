@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-04 23:05:30",
+  "updated_at": "2026-06-05 00:05:29",
   "source": "poong.today chart API direct v8 current-month-lock",
   "used_month": "2026-06",
   "api_urls": {
     "month": "https://static.poong.today/chart/get?ctype=month&ks=false&year=2026&month=6&day=undefined",
-    "day": "https://static.poong.today/chart/get?ctype=day&ks=false&year=2026&month=6&day=4",
-    "today": "https://static.poong.today/chart/get?ctype=today&ks=false&year=2026&month=6&day=4"
+    "day": "https://static.poong.today/chart/get?ctype=day&ks=false&year=2026&month=6&day=5",
+    "today": "https://static.poong.today/chart/get?ctype=today&ks=false&year=2026&month=6&day=5"
   },
   "total_members": 38,
   "matched_count": 34,
