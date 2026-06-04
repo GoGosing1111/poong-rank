@@ -271,11 +271,9 @@ def click_by_xpath_text(driver):
     xpaths = [
         "//*[self::button or self::a or self::input][contains(normalize-space(.), '수정')]",
         "//*[self::button or self::a or self::input][contains(normalize-space(.), '등록')]",
-        "//*[self::button or self::a or self::input][contains(normalize-space(.), '확인')]",
         "//*[self::button or self::a or self::input][contains(normalize-space(.), '저장')]",
         "//input[contains(@value, '수정')]",
         "//input[contains(@value, '등록')]",
-        "//input[contains(@value, '확인')]",
         "//input[contains(@value, '저장')]",
         "//*[contains(@onclick, 'write')]",
         "//*[contains(@onclick, 'modify')]",
@@ -314,6 +312,15 @@ def click_by_xpath_text(driver):
                     + " " + (el.get_attribute("class") or "")
                     + " " + (el.get_attribute("id") or "")
                 )
+                # 외부/SOOP/시청기록 링크는 절대 클릭 금지.
+                # 기존 성공하던 제출 흐름은 그대로 두고, 문제 버튼만 차단한다.
+                href = (el.get_attribute("href") or "")
+                low = (label + " " + href).lower()
+                block_words = ["시청기록", "soop", "sooplive", "숲공식", "방송국"]
+                if any(w in low for w in block_words):
+                    print("클릭 차단:", " ".join((label + " " + href).split())[:200])
+                    continue
+
                 print("클릭 시도:", " ".join(label.split())[:200])
 
                 driver.execute_script("arguments[0].scrollIntoView({block:'center'});", el)
@@ -471,8 +478,6 @@ try:
     options.add_argument("--start-maximized")
     options.add_argument("--disable-session-crashed-bubble")
     options.add_argument("--disable-features=InfiniteSessionRestore")
-    #options.add_argument("--headless=new")
-    #options.add_argument("--window-size=1920,3000")
 
     driver = webdriver.Chrome(options=options)
 

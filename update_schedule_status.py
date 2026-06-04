@@ -153,14 +153,41 @@ def classify(title: str) -> str:
 
 
 def normalize_title_key(title: str) -> str:
+    """일정 제목 중복 제거용 키.
+    날짜/시간/D-day/공백/기호 차이는 같은 제목으로 처리한다.
+    """
     s = clean_space(title).lower()
     s = DATE_RE.sub(" ", s)
     s = TIME_RANGE_RE.sub(" ", s)
     s = re.sub(r"\b(오늘|내일|모레)\b", " ", s)
+    s = re.sub(r"\bd\s*-\s*\d+\b", " ", s, flags=re.I)
+    s = re.sub(r"20\d{2}[.\-/]\d{1,2}[.\-/]\d{1,2}", " ", s)
+    s = re.sub(r"\([월화수목금토일]\)", " ", s)
     s = re.sub(r"(^|[\s:])개인(?=[가-힣a-z0-9])", r"\1", s)
-    s = re.sub(r"[\s\-_·|]+", "", s)
+    # 화면 표시용 구분 기호/공백은 모두 무시
+    s = re.sub(r"[\s\-_·|:!~<>.,/\[\]{}()]+", "", s)
     s = re.sub(r"[\"'“”‘’]", "", s)
     return s
+
+
+def dedupe_saved_items(items: List[Dict]) -> List[Dict]:
+    """마지막 저장 직전에도 한 번 더 중복 제거한다.
+    앞단 파싱이 바뀌거나 다른 코드에서 items가 추가돼도 제목 기준 1개만 남긴다.
+    """
+    result = []
+    seen = set()
+    for item in sorted(items, key=lambda x: (x.get("raw_date", "9999-99-99"), x.get("time", "99:99"), normalize_title_key(x.get("title", "")))):
+        title = item.get("title", "")
+        # 와플컵은 어떤 형태로 중복 수집되더라도 무조건 1건만 출력
+        if "와플컵" in title:
+            key = "__WAFFLECUP_SINGLE__"
+        else:
+            key = normalize_title_key(title)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        result.append(item)
+    return result[:MAX_ITEMS]
 
 
 def event_sort_key(ev: Dict):
@@ -178,23 +205,23 @@ def dedupe_events(events: List[Dict]) -> List[Dict]:
         ev["category"] = classify(title)
         cleaned.append(ev)
 
+    # 제목이 완전히 같은 일정은 날짜/시간이 달라도 1개만 남김.
+    # 같은 제목이 여러 번 잡히면 가장 빠른 날짜/시간 1건을 대표로 사용.
     by_title = {}
     for ev in sorted(cleaned, key=event_sort_key):
         key = normalize_title_key(ev["title"])
         if not key:
             continue
-        if len(key) < 5:
-            key = key + "|" + ev["date"].isoformat()
         if key not in by_title or event_sort_key(ev) < event_sort_key(by_title[key]):
             by_title[key] = ev
 
     result = []
-    seen = set()
+    seen_titles = set()
     for ev in sorted(by_title.values(), key=event_sort_key):
-        k = (normalize_title_key(ev["title"]), ev["date"].isoformat(), ev.get("time") or "")
-        if k in seen:
+        k = normalize_title_key(ev["title"])
+        if k in seen_titles:
             continue
-        seen.add(k)
+        seen_titles.add(k)
         result.append(ev)
     return result[:MAX_ITEMS]
 
@@ -297,6 +324,10 @@ def save_json(events: List[Dict], ok: bool = True, error: str = ""):
             "type": ev.get("category") or classify(ev.get("title", "")),
             "source_line": ev.get("source_line", ""),
         })
+    # 최종 안전장치: schedule_status.json 저장 직전 제목 기준으로 한 번 더 제거
+    # 예) 같은 "스타부 : 와플컵 5-6티어 대회"가 여러 멤버/카테고리에서 잡혀도 1건만 저장
+    items = dedupe_saved_items(items)
+
     data = {
         "ok": ok,
         "updated_at": now.strftime("%Y-%m-%d %H:%M:%S"),
@@ -315,9 +346,16 @@ def main() -> int:
     try:
         _html_source, body = fetch_with_playwright()
         events = extract_candidates_from_body(body)
+        before_count = len(events)
         save_json(events, ok=True)
+        # 저장 직전에도 중복 제거가 한 번 더 들어가므로 실제 저장 결과를 다시 읽어서 로그에 남김
+        try:
+            saved = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+            final_count = int(saved.get("count", before_count))
+        except Exception:
+            final_count = before_count
         with DEBUG_LOG.open("a", encoding="utf-8") as f:
-            f.write(f"FINAL_ITEMS={len(events)}\n")
+            f.write(f"FINAL_ITEMS={final_count}\n")
             for i, e in enumerate(events, 1):
                 f.write(f"{i}. {e['date']} {e.get('time') or '시간미정'} | {e['title']}\n")
         print(f"완료: schedule_status.json 일정 {len(events)} 건")
