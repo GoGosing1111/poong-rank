@@ -232,9 +232,11 @@ def is_live(member, live_map):
 
 def section(title, body, open_attr=False, color="#d4af37"):
     open_text = " open" if open_attr else ""
+    # 메인/서브 섹션을 색상으로 구분하기 위한 공통 프레임.
+    # 와이고수 호환 때문에 class/style 태그 없이 인라인 스타일만 사용한다.
     return f"""
-<details{open_text} style="margin:11px 0 14px;padding:0;border:1px solid {color};border-radius:18px;background:#0b0b0b;overflow:hidden;box-sizing:border-box;box-shadow:0 0 18px rgba(212,175,55,.20);">
-  <summary style="list-style:none;cursor:pointer;padding:14px 12px;background:linear-gradient(180deg,#2a2212,#090909);color:#fff;font-size:19px;font-weight:1000;text-align:center;text-shadow:0 0 9px rgba(212,175,55,.70),0 2px 0 #000;border-bottom:2px solid {color};letter-spacing:-.3px;">
+<details{open_text} style="margin:11px 0 14px;padding:0;border:1px solid {color};border-radius:18px;background:#0b0b0b;overflow:hidden;box-sizing:border-box;box-shadow:0 0 16px {color}55;">
+  <summary style="list-style:none;cursor:pointer;padding:13px 12px;background:linear-gradient(180deg,#171717,#070707);color:#fff;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 0 8px {color}AA,0 2px 0 #000;border-bottom:2px solid {color};letter-spacing:-.3px;">
     {esc(title)}
   </summary>
   <div style="padding:10px;background:linear-gradient(180deg,#101010,#050505);border-top:1px solid rgba(255,255,255,.08);box-sizing:border-box;">
@@ -502,11 +504,6 @@ def render_hero_banner(updated, total_members, live_count):
     <div style="padding:13px 10px 14px;text-align:center;background:linear-gradient(180deg,#15100a,#050505);border-top:1px solid rgba(212,175,55,.35);">
       <div style="color:#fff;font-size:24px;line-height:1.05;font-weight:1000;letter-spacing:.8px;text-shadow:0 0 10px rgba(212,175,55,.72),0 3px 0 #000;">C9 CREW DASHBOARD</div>
       <div style="margin-top:6px;color:#d4af37;font-size:12px;font-weight:900;letter-spacing:3px;">ONE TEAM · ONE DESTINY</div>
-      <div style="margin-top:10px;display:flex;justify-content:center;gap:7px;flex-wrap:wrap;">
-        <span style="display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.35);color:#f3ead0;font-size:11px;font-weight:900;">집계시간 {esc(updated)}</span>
-        <span style="display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.35);color:#f3ead0;font-size:11px;font-weight:900;">전체 {esc(total_members)}명</span>
-        <span style="display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.35);color:#ffd34f;font-size:11px;font-weight:1000;">LIVE {esc(live_count)}명</span>
-      </div>
     </div>
   </div>"""
 
@@ -537,9 +534,9 @@ def main():
 
   {main_body}
   {section("월간 별풍선", render_rank(rank), False, "#d4af37")}
-  {section("멤버 현황판", render_members(members, live_map), False, "#d4af37")}
-  {section("공지사항", render_notice(notice), False, "#d4af37")}
-  {section("씨나인 일정", render_schedule(schedule), False, "#d4af37")}
+  {section("멤버 현황판", render_members(members, live_map), False, "#3b82f6")}
+  {section("공지사항", render_notice(notice), False, "#ff4b6e")}
+  {section("씨나인 일정", render_schedule(schedule), False, "#22c55e")}
 
   <div style="margin-top:12px;text-align:center;color:#d4af37;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(212,175,55,.35);">{esc(WATERMARK)}</div>
   <div style="margin-top:5px;text-align:center;color:#bda870;font-size:10px;font-weight:700;">자동 변환: {esc(updated)}</div>
