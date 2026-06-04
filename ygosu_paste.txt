@@ -1,7 +1,7 @@
 <div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(212,175,55,.18),transparent 32%),linear-gradient(180deg,#050505 0%,#101010 52%,#030303 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(212,175,55,.48);">
   
   <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.52);background:#050505;box-shadow:0 0 22px rgba(212,175,55,.20);">
-    <img src="https://keyman1335-maker.github.io/poong-rank/assets/c9_main_banner.png?v=20260605034557" style="display:block;width:100%;height:auto;border:0;margin:0;padding:0;">
+    <img src="https://keyman1335-maker.github.io/poong-rank/assets/c9_main_banner.png?v=20260605035132" style="display:block;width:100%;height:auto;border:0;margin:0;padding:0;">
     <div style="padding:13px 10px 14px;text-align:center;background:linear-gradient(180deg,#15100a,#050505);border-top:1px solid rgba(212,175,55,.35);">
       <div style="color:#fff;font-size:24px;line-height:1.05;font-weight:1000;letter-spacing:.8px;text-shadow:0 0 10px rgba(212,175,55,.72),0 3px 0 #000;">C9 CREW DASHBOARD</div>
       <div style="margin-top:6px;color:#d4af37;font-size:12px;font-weight:900;letter-spacing:3px;">ONE TEAM · ONE DESTINY</div>
@@ -15,7 +15,7 @@
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
 <span style="color:#f3ead0;">현재 LIVE</span><span style="color:#f5d57a;text-align:right;">13명</span></div>
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
-<span style="color:#f3ead0;">집계시간</span><span style="color:#f5d57a;text-align:right;">2026-06-05 03:45:57</span></div>
+<span style="color:#f3ead0;">집계시간</span><span style="color:#f5d57a;text-align:right;">2026-06-05 03:51:32</span></div>
   
 <div style="margin-top:9px;border:1px solid rgba(255,211,79,.32);border-radius:15px;background:linear-gradient(135deg,rgba(255,211,79,.10),rgba(0,0,0,.22));overflow:hidden;box-sizing:border-box;">
   <div style="padding:9px 11px;background:rgba(0,0,0,.20);border-bottom:1px solid rgba(255,211,79,.22);color:#ffd34f;font-size:13px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">📢 특이사항</div>
@@ -101,7 +101,7 @@ btn.onclick = function() {
   </summary>
   <div style="padding:10px;background:linear-gradient(180deg,#101010,#050505);border-top:1px solid rgba(255,255,255,.08);box-sizing:border-box;">
     
-<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#f3ead0;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-05 03:45:35 · 기준 2026-06</div>
+<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#f3ead0;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-05 03:51:18 · 기준 2026-06</div>
 
 <div style="margin-bottom:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,211,79,.45);background:linear-gradient(135deg,rgba(255,211,79,.16),rgba(0,0,0,.28));box-shadow:0 0 14px rgba(255,211,79,.18);text-align:center;">
   <div style="padding:12px;background:linear-gradient(135deg,#ffd34f,#4a3100);color:#fff;font-size:20px;font-weight:1000;text-shadow:0 2px 0 #000;">👑 수장 별풍선</div>
@@ -1157,5 +1157,5 @@ https://www.sooplive.com/station/gks2wl/post/197738661</div>
 </details>
 
   <div style="margin-top:12px;text-align:center;color:#d4af37;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(212,175,55,.35);">CNINE Dashboard Developed by 유두위생크림</div>
-  <div style="margin-top:5px;text-align:center;color:#bda870;font-size:10px;font-weight:700;">자동 변환: 2026-06-05 03:45:57</div>
+  <div style="margin-top:5px;text-align:center;color:#bda870;font-size:10px;font-weight:700;">자동 변환: 2026-06-05 03:51:32</div>
 </div>
