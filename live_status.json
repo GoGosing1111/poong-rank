@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-04 21:05:02",
-  "total": 38,
-  "live_count": 17,
+  "updated_at": "2026-06-04 21:23:41",
+  "total": 39,
+  "live_count": 19,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -190,11 +190,11 @@
       "part": "스타부",
       "soop_id": "rhf104",
       "soop_url": "https://www.sooplive.com/station/rhf104",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294561867",
+      "title": "씨나인⭐]안농핫ㅇ세여",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -250,6 +250,19 @@
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yochba0402/station"
     },
+    "yunhee1222": {
+      "name": "깅예솔",
+      "part": "스타부",
+      "soop_id": "yunhee1222",
+      "soop_url": "https://www.sooplive.com/station/yunhee1222",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
+      "viewers": 0,
+      "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
+    },
     "imducko3o": {
       "name": "오리꿍",
       "part": "스타부",
@@ -268,11 +281,11 @@
       "part": "엑셀부",
       "soop_id": "0929kelly",
       "soop_url": "https://www.sooplive.com/station/0929kelly",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294561689",
+      "title": "[씨나인:신입]6월20일 첫출근 함께할 다플단 ?",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
@@ -454,7 +467,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294561081",
-      "title": "[씨나인:신입] 씨나인 오래하고싶어요... 퇴출조 살려줘",
+      "title": "[씨나인:신입] 3회차 냠남핀볼 돌려유~",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
     },

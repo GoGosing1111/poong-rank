@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-04 21:05:39",
+  "updated_at": "2026-06-04 21:24:14",
   "source": "https://www.cnine.kr/timeline",
-  "count": 7,
+  "count": 8,
   "today_count": 2,
-  "future_count": 5,
+  "future_count": 6,
   "items": [
     {
       "title": "박재혁 : 엄빠 어디가? - 7번째 여행",
@@ -25,6 +25,16 @@
       "dday": "TODAY",
       "type": "합방",
       "source_line": "2026년 06월 04일(목) 17:00 ~ 22:00"
+    },
+    {
+      "title": "성태랑 온라인 배그(남순 가능성 높음) !!!",
+      "date": "2026.06.05 (금)",
+      "raw_date": "2026-06-05",
+      "time": "09:00",
+      "datetime": "2026.06.05 (금) · ⏰ 09:00",
+      "dday": "D-1",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 05일(금) 09:00 ~ 2026년 06월 06일(토) 12:00"
     },
     {
       "title": "철구 : 메이저프로리그 - 데뷔전",

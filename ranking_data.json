@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04 21:05:24",
+  "updated_at": "2026-06-04 21:24:00",
   "source": "poong.today chart API direct v8 current-month-lock",
   "used_month": "2026-06",
   "api_urls": {
@@ -7,8 +7,8 @@
     "day": "https://static.poong.today/chart/get?ctype=day&ks=false&year=2026&month=6&day=4",
     "today": "https://static.poong.today/chart/get?ctype=today&ks=false&year=2026&month=6&day=4"
   },
-  "total_members": 37,
-  "matched_count": 33,
+  "total_members": 38,
+  "matched_count": 34,
   "unmatched_count": 4,
   "ranking": [
     {
@@ -332,6 +332,17 @@
     },
     {
       "part": "스타부",
+      "name": "깅예솔",
+      "match": "깅예솔",
+      "soop_id": "yunhee1222",
+      "today": 0,
+      "month": 9737,
+      "today_api_name": "",
+      "month_api_name": "깅예솔",
+      "matched": true
+    },
+    {
+      "part": "스타부",
       "name": "오리꿍",
       "match": "오리꿍_",
       "soop_id": "imducko3o",
@@ -590,7 +601,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "39,012",
+    "avg": "37,548",
     "leader": "앵지",
     "leader_sales": "154,917",
     "members": [
@@ -704,6 +715,15 @@
       },
       {
         "rank": 13,
+        "name": "깅예솔",
+        "today": "0",
+        "month": "9,737",
+        "width": "6%",
+        "first": false,
+        "color": "#ffd34f"
+      },
+      {
+        "rank": 14,
         "name": "오리꿍",
         "today": "0",
         "month": "7,497",
@@ -712,7 +732,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "name": "박재혁",
         "today": "0",
         "month": "2,373",
@@ -721,7 +741,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "강구열",
         "today": "0",
         "month": "906",
@@ -730,7 +750,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "name": "효짱",
         "today": "0",
         "month": "388",
@@ -739,7 +759,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "name": "김택용",
         "today": "0",
         "month": "0",
@@ -748,7 +768,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "name": "이영호",
         "today": "0",
         "month": "0",
@@ -757,7 +777,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "name": "유승곤",
         "today": "0",
         "month": "0",
