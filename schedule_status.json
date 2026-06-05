@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "updated_at": "2026-06-05 13:05:37",
+  "updated_at": "2026-06-05 17:29:48",
   "source": "https://www.cnine.kr/timeline",
-  "count": 6,
-  "today_count": 1,
+  "count": 7,
+  "today_count": 2,
   "future_count": 5,
   "items": [
     {
@@ -15,6 +15,16 @@
       "dday": "TODAY",
       "type": "컨텐츠",
       "source_line": "2026년 06월 05일(금) 09:00 ~ 2026년 06월 06일(토) 12:00"
+    },
+    {
+      "title": "초린 : 초코다이제 도전 먹방",
+      "date": "2026.06.05 (금)",
+      "raw_date": "2026-06-05",
+      "time": "19:30",
+      "datetime": "2026.06.05 (금) · ⏰ 19:30",
+      "dday": "TODAY",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 05일(금) 19:30 ~ 20:30"
     },
     {
       "title": "엑셀<2026 시즌5> 씨나인 댄스부 : 엑셀 계급전",
