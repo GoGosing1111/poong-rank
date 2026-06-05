@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-05 18:05:41",
+  "updated_at": "2026-06-05 20:41:01",
   "source": "https://www.cnine.kr/timeline",
-  "count": 7,
+  "count": 9,
   "today_count": 2,
-  "future_count": 5,
+  "future_count": 7,
   "items": [
     {
       "title": "성태랑 온라인 배그(남순 가능성 높음) !!!",
@@ -55,6 +55,26 @@
       "dday": "D-2",
       "type": "컨텐츠",
       "source_line": "2026년 06월 07일(일)"
+    },
+    {
+      "title": "빵훈이 : 버츄얼 동아리 수장 초대석",
+      "date": "2026.06.08 (월)",
+      "raw_date": "2026-06-08",
+      "time": "시간미정",
+      "datetime": "2026.06.08 (월) · ⏰ 시간미정",
+      "dday": "D-3",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 08일(월)"
+    },
+    {
+      "title": "스타부 : 씨나인 vs 엠비대 - 추매치 대결",
+      "date": "2026.06.11 (목)",
+      "raw_date": "2026-06-11",
+      "time": "시간미정",
+      "datetime": "2026.06.11 (목) · ⏰ 시간미정",
+      "dday": "D-6",
+      "type": "스타",
+      "source_line": "2026년 06월 11일(목)"
     },
     {
       "title": "스타부 : 와플컵 5-6티어 대회 <feat. 남수댕>",
