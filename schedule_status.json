@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-05 22:09:23",
+  "updated_at": "2026-06-05 23:08:01",
   "source": "https://www.cnine.kr/timeline",
-  "count": 8,
+  "count": 9,
   "today_count": 2,
-  "future_count": 6,
+  "future_count": 7,
   "items": [
     {
       "title": "성태랑 온라인 배그(남순 가능성 높음) !!!",
@@ -65,6 +65,16 @@
       "dday": "D-8",
       "type": "스타",
       "source_line": "2026년 06월 13일(토) 15:00 ~ 18:00"
+    },
+    {
+      "title": "스타부 학생회장 선거",
+      "date": "2026.06.13 (토)",
+      "raw_date": "2026-06-13",
+      "time": "17:00",
+      "datetime": "2026.06.13 (토) · ⏰ 17:00",
+      "dday": "D-8",
+      "type": "스타",
+      "source_line": "2026년 06월 13일(토) 17:00 ~ 2026년 06월 30일(화) 10:00"
     },
     {
       "title": "씨나인 : 인간 vs 버튜버 대결(날찌미정)",
