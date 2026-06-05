@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05 21:14:24",
+  "updated_at": "2026-06-05 22:05:03",
   "total": 39,
   "live_count": 23,
   "members": {
@@ -129,7 +129,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294582889",
-      "title": "[씨나인] 스타 윤용태  효짱 vs 오리꿍  집중탐구",
+      "title": "[씨나인] 스타 윤용태  vs 병우 3/2",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dbsdydx/station"
     },
@@ -155,7 +155,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294582881",
-      "title": "영씨나인💖] 디임 콩나물 국밥 전체 관람가능",
+      "title": "영씨나인💖] 디임 덜덜덜",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/qpqpro/station"
     },
@@ -177,11 +177,11 @@
       "part": "스타부",
       "soop_id": "queen030",
       "soop_url": "https://www.sooplive.com/station/queen030",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294577151",
-      "title": "[씨나인⭐] vs리꿍이 53",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
@@ -220,7 +220,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294578889",
-      "title": "[씨나인⭐]요닝 이웃사람안본눈 19 다시보기x클립x",
+      "title": "[씨나인⭐]요닝 네...??",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/tjgpdus97/station"
     },
@@ -346,11 +346,11 @@
       "part": "엑셀부",
       "soop_id": "alwl1047",
       "soop_url": "https://www.sooplive.com/station/alwl1047",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294588355",
+      "title": "[씨나인 : 하녀2] 나의 계급 .. 어디까지 올라갈 것인가 ⌁❤︎⌁﻿",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/alwl1047/station"
     },
@@ -402,7 +402,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294587481",
-      "title": "[씨나인 : 황족] 내일 계급전 함께하실분 !! 이벤트이써요 초플단 모집즁 !",
+      "title": "[씨나인 : 황족] 식빵45초 컷 15만개 미션 ㄱㄱㄱㄱㄱ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
@@ -440,8 +440,8 @@
       "is_live": true,
       "status": "LIVE",
       "reason": "broad_object_found",
-      "broad_no": "294569123",
-      "title": "[씨나인:추녀] 기상완료!!! 9시반까지 올게욧!!",
+      "broad_no": "294588577",
+      "title": "[씨나인:추녀] 시스루와이셔츠,, 어케참누,,  내일이계급전!!!!ㅠㅠㅠㅠㅜ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/ayoona/station"
     },
@@ -454,7 +454,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294577267",
-      "title": "[씨나인:잡녀]계급전 마지막날..신호탄 백개내놔...플단도 아무것도 없는히잡이..",
+      "title": "[씨나인:잡녀]계급전 진짜 살아남고싶습니다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/luaa0803/station"
     },
@@ -493,7 +493,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294500421",
-      "title": "[씨나인 : 버러지] 식빵 45초안에 먹을시 15만개미션",
+      "title": "[씨나인 : 버러지] 어벤단 (0/2) 시그단 (0/3) 뾱뾱단 (0/5)",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dhtnqls1238/station"
     }
