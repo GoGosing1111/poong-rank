@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-05 20:36:49",
+  "updated_at": "2026-06-05 21:05:02",
   "total": 39,
-  "live_count": 20,
+  "live_count": 22,
   "members": {
     "y1026": {
       "name": "철구형",
       "part": "엑셀부",
       "soop_id": "y1026",
       "soop_url": "https://www.sooplive.com/station/y1026",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294587049",
+      "title": "철구 씨나인 스타부 관련 얘기좀",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
@@ -51,7 +51,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294577607",
-      "title": "[씨나인⭐️]스타 박재혁 8시50분 vs중국 NO.1 테란 \"멸공\"",
+      "title": "[씨나인⭐️]스타 박재혁 vs중국 NO.1 테란 \"멸공\"",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rlekfu6/station"
     },
@@ -129,7 +129,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294582889",
-      "title": "[씨나인] 스타 윤용태  열심히살기 6일차",
+      "title": "[씨나인] 스타 윤용태  효짱 vs 오리꿍  웅장합니다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dbsdydx/station"
     },
@@ -181,7 +181,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294577151",
-      "title": "[씨나인⭐] vs아깽이 32",
+      "title": "[씨나인⭐] vs리꿍이 53",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
@@ -233,7 +233,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294585359",
-      "title": "씨나인❤]앵이루",
+      "title": "씨나인❤]수제버거 대기방",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294581997",
-      "title": "씨나인(별이모티콘) 애벌써 배틀크루져 뽑네",
+      "title": "씨나인(별이모티콘) 스타시절 블랙당하신분들 와서 말해주삼",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
     },
@@ -272,7 +272,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294549627",
-      "title": "[씨나인★] 85시간 노방종 본업 들어감미다 ( !노방종 룰렛 90/91/601/602 )",
+      "title": "[씨나인★] 85시간 노방종 효짱언니랑 5/3 5000개빵 원앙꿍님 감사띠띠요 ( !노방종 룰렛 90/91/601/602 )",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
@@ -389,7 +389,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294580977",
-      "title": "[씨나인:하녀]니토오빠 초코파이 3개미션 드가쟈이 ~~~계급전 D-1 ... 내 무습다 ..",
+      "title": "[씨나인:하녀]계급전 D-1 ... 내 무습다 ..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/lcy011027/station"
     },
