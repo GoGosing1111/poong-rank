@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-05 21:05:02",
+  "updated_at": "2026-06-05 21:14:24",
   "total": 39,
-  "live_count": 22,
+  "live_count": 23,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -129,7 +129,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294582889",
-      "title": "[씨나인] 스타 윤용태  효짱 vs 오리꿍  웅장합니다",
+      "title": "[씨나인] 스타 윤용태  효짱 vs 오리꿍  집중탐구",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dbsdydx/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294581997",
-      "title": "씨나인(별이모티콘) 스타시절 블랙당하신분들 와서 말해주삼",
+      "title": "씨나인⭐ 스타시절 블랙당하신분들 와서 말해주삼",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
     },
@@ -398,11 +398,11 @@
       "part": "엑셀부",
       "soop_id": "chocho12",
       "soop_url": "https://www.sooplive.com/station/chocho12",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294587481",
+      "title": "[씨나인 : 황족] 내일 계급전 함께하실분 !! 이벤트이써요 초플단 모집즁 !",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
