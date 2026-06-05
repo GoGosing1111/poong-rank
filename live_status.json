@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-05 07:05:02",
+  "updated_at": "2026-06-05 11:12:58",
   "total": 39,
-  "live_count": 8,
+  "live_count": 6,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -73,11 +73,11 @@
       "part": "스타부",
       "soop_id": "kuyol",
       "soop_url": "https://www.sooplive.com/station/kuyol",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294565445",
-      "title": "[씨나인] 스타 야호 ㅇ0ㅇ",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kuyol/station"
     },
@@ -294,11 +294,11 @@
       "part": "엑셀부",
       "soop_id": "epsthddus",
       "soop_url": "https://www.sooplive.com/station/epsthddus",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294564595",
-      "title": "[씨나인:여왕]  계급전 d-1 수장님모십니다.. 모을떄까지..",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/epsthddus/station"
     },
@@ -467,7 +467,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294561081",
-      "title": "[씨나인:신입] 자고올게요...연두 살려주세요,..",
+      "title": "[씨나인:신입] 준비하고 올게용",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
     },
