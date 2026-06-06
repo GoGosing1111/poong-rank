@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-07 02:05:03",
-  "total": 39,
-  "live_count": 11,
+  "updated_at": "2026-06-07 03:12:42",
+  "total": 37,
+  "live_count": 10,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -51,7 +51,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294619299",
-      "title": "[씨나인]박재혁 ;;;",
+      "title": "[씨나인]박재혁 역사현장 목도",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rlekfu6/station"
     },
@@ -90,7 +90,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294615655",
-      "title": "씨나인  레메장착중 ^^ 괴물되는중 with승곤쌤 //   오조은  스타",
+      "title": "씨나인 히흐히흐히흐희희 1주일뒤에보아요  오조은  스타",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/zalalz/station"
     },
@@ -168,7 +168,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294610413",
-      "title": "씨나인💖🏆망수니 방셀CCTV",
+      "title": "씨나인💖🏆망수니 방셀CCTV 띵곡만 신청곡받아연.",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yjk011599/station"
     },
@@ -194,7 +194,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294619385",
-      "title": "씨나인⭐]vs타밍ㅇ님 단판",
+      "title": "씨나인⭐]vs주양님32스폰",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -233,7 +233,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294610497",
-      "title": "씨나인❤]서민후보 1번의 삶.. 씨나인 학생회장선거 다시보기",
+      "title": "씨나인❤]변기통 보고싶은사람 ><",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
@@ -388,8 +388,8 @@
       "is_live": true,
       "status": "LIVE",
       "reason": "broad_object_found",
-      "broad_no": "294620723",
-      "title": "[씨나인:하녀] 지켜조 장급 !!! 곧 따이겠서 ~ㅠㅠ",
+      "broad_no": "294621465",
+      "title": "[씨나인:하녀] 시녀장싸움 2만개도 안돼 이건 지켜주라 제발 ..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/lcy011027/station"
     },
@@ -401,8 +401,8 @@
       "is_live": true,
       "status": "LIVE",
       "reason": "broad_object_found",
-      "broad_no": "294609559",
-      "title": "계급전 초플단 얼른오시오 ㅠㅠ",
+      "broad_no": "294621181",
+      "title": "따였슴니다..초초살려초초지켜ㅠ….",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
@@ -424,11 +424,11 @@
       "part": "엑셀부",
       "soop_id": "yunyeson3015",
       "soop_url": "https://www.sooplive.com/station/yunyeson3015",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294619655",
-      "title": "[씨나인 : 시녀2]  애셈블 ㄱㄱㄱㄱㄱㄱㄱㄱㄱ",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     },
@@ -470,32 +470,6 @@
       "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
-    },
-    "ksdd7856": {
-      "name": "리하",
-      "part": "엑셀부",
-      "soop_id": "ksdd7856",
-      "soop_url": "https://www.sooplive.com/station/ksdd7856",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
-      "viewers": 0,
-      "checked_url": "https://bjapi.afreecatv.com/api/ksdd7856/station"
-    },
-    "dhtnqls1238": {
-      "name": "초린",
-      "part": "엑셀부",
-      "soop_id": "dhtnqls1238",
-      "soop_url": "https://www.sooplive.com/station/dhtnqls1238",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
-      "viewers": 0,
-      "checked_url": "https://bjapi.afreecatv.com/api/dhtnqls1238/station"
     }
   }
 }
