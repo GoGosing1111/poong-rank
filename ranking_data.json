@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 00:58:53",
+  "updated_at": "2026-06-07 01:04:00",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -16,8 +16,8 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 569360,
-      "month": 2817994,
+      "today": 642225,
+      "month": 2859234,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -138,7 +138,7 @@
       "match": "나무늘봉순.",
       "soop_id": "yjk011599",
       "today": 64,
-      "month": 123621,
+      "month": 123680,
       "today_api_name": "나무늘봉순",
       "month_api_name": "나무늘봉순",
       "matched": true
@@ -182,7 +182,7 @@
       "match": "오조은하루",
       "soop_id": "zalalz",
       "today": 3060,
-      "month": 107953,
+      "month": 110812,
       "today_api_name": "오조은",
       "month_api_name": "오조은",
       "matched": true
@@ -432,8 +432,8 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "569,360",
-    "month": "2,817,994",
+    "today": "642,225",
+    "month": "2,859,234",
     "soop_id": "y1026"
   },
   "excel": {
@@ -601,7 +601,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "71,344",
+    "avg": "71,490",
     "leader": "앵지",
     "leader_sales": "236,699",
     "members": [
@@ -627,7 +627,7 @@
         "rank": 3,
         "name": "나무늘봉순",
         "today": "64",
-        "month": "123,621",
+        "month": "123,680",
         "width": "52%",
         "first": false,
         "color": "#ffd34f"
@@ -663,8 +663,8 @@
         "rank": 7,
         "name": "오조은",
         "today": "3,060",
-        "month": "107,953",
-        "width": "45%",
+        "month": "110,812",
+        "width": "46%",
         "first": false,
         "color": "#ffd34f"
       },
