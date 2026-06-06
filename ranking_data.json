@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06 23:05:23",
+  "updated_at": "2026-06-06 23:28:49",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -16,8 +16,8 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 2143234,
-      "month": 2103057,
+      "today": 2191624,
+      "month": 2241477,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -82,8 +82,8 @@
       "name": "앵지",
       "match": "앵지",
       "soop_id": "gks2wl",
-      "today": 96100,
-      "month": 235961,
+      "today": 96105,
+      "month": 235966,
       "today_api_name": "앵지",
       "month_api_name": "앵지",
       "matched": true
@@ -159,8 +159,8 @@
       "name": "깅예솔",
       "match": "깅예솔",
       "soop_id": "yunhee1222",
-      "today": 7102,
-      "month": 118539,
+      "today": 7250,
+      "month": 118687,
       "today_api_name": "깅예솔",
       "month_api_name": "깅예솔",
       "matched": true
@@ -170,8 +170,8 @@
       "name": "란란",
       "match": "란란_",
       "soop_id": "rhf104",
-      "today": 4648,
-      "month": 117415,
+      "today": 4659,
+      "month": 117426,
       "today_api_name": "란란_",
       "month_api_name": "란란_",
       "matched": true
@@ -357,8 +357,8 @@
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
       "soop_id": "jmc06170",
-      "today": 1307,
-      "month": 20512,
+      "today": 1407,
+      "month": 20612,
       "today_api_name": "왜냐맨장민철",
       "month_api_name": "왜냐맨장민철",
       "matched": true
@@ -390,8 +390,8 @@
       "name": "유승곤",
       "match": "Scan유승곤",
       "soop_id": "scan1014",
-      "today": 1887,
-      "month": 7287,
+      "today": 1987,
+      "month": 7387,
       "today_api_name": "Scan유승곤",
       "month_api_name": "Scan유승곤",
       "matched": true
@@ -401,8 +401,8 @@
       "name": "강구열",
       "match": "910★강구열",
       "soop_id": "kuyol",
-      "today": 2332,
-      "month": 4548,
+      "today": 2432,
+      "month": 4648,
       "today_api_name": "910★강구열",
       "month_api_name": "910★강구열",
       "matched": true
@@ -432,8 +432,8 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "2,143,234",
-    "month": "2,103,057",
+    "today": "2,191,624",
+    "month": "2,241,477",
     "soop_id": "y1026"
   },
   "excel": {
@@ -601,15 +601,15 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "70,968",
+    "avg": "70,991",
     "leader": "앵지",
-    "leader_sales": "235,961",
+    "leader_sales": "235,966",
     "members": [
       {
         "rank": 1,
         "name": "앵지",
-        "today": "96,100",
-        "month": "235,961",
+        "today": "96,105",
+        "month": "235,966",
         "width": "100%",
         "first": true,
         "color": "#ffd34f"
@@ -644,8 +644,8 @@
       {
         "rank": 5,
         "name": "깅예솔",
-        "today": "7,102",
-        "month": "118,539",
+        "today": "7,250",
+        "month": "118,687",
         "width": "50%",
         "first": false,
         "color": "#ffd34f"
@@ -653,8 +653,8 @@
       {
         "rank": 6,
         "name": "란란",
-        "today": "4,648",
-        "month": "117,415",
+        "today": "4,659",
+        "month": "117,426",
         "width": "49%",
         "first": false,
         "color": "#ffd34f"
@@ -725,8 +725,8 @@
       {
         "rank": 14,
         "name": "왜냐맨장민철",
-        "today": "1,307",
-        "month": "20,512",
+        "today": "1,407",
+        "month": "20,612",
         "width": "8%",
         "first": false,
         "color": "#ffd34f"
@@ -752,8 +752,8 @@
       {
         "rank": 17,
         "name": "유승곤",
-        "today": "1,887",
-        "month": "7,287",
+        "today": "1,987",
+        "month": "7,387",
         "width": "4%",
         "first": false,
         "color": "#ffd34f"
@@ -761,8 +761,8 @@
       {
         "rank": 18,
         "name": "강구열",
-        "today": "2,332",
-        "month": "4,548",
+        "today": "2,432",
+        "month": "4,648",
         "width": "4%",
         "first": false,
         "color": "#ffd34f"
