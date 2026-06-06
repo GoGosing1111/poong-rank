@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06 20:05:28",
+  "updated_at": "2026-06-06 21:05:22",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -16,8 +16,8 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 1761734,
-      "month": 1641956,
+      "today": 1843135,
+      "month": 1892988,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -115,8 +115,8 @@
       "name": "앵지",
       "match": "앵지",
       "soop_id": "gks2wl",
-      "today": 30111,
-      "month": 169972,
+      "today": 60423,
+      "month": 200284,
       "today_api_name": "앵지",
       "month_api_name": "앵지",
       "matched": true
@@ -148,8 +148,8 @@
       "name": "깅예솔",
       "match": "깅예솔",
       "soop_id": "yunhee1222",
-      "today": 4133,
-      "month": 115422,
+      "today": 5020,
+      "month": 116457,
       "today_api_name": "깅예솔",
       "month_api_name": "깅예솔",
       "matched": true
@@ -170,8 +170,8 @@
       "name": "나무늘봉순",
       "match": "나무늘봉순.",
       "soop_id": "yjk011599",
-      "today": 19959,
-      "month": 99524,
+      "today": 21776,
+      "month": 101341,
       "today_api_name": "나무늘봉순",
       "month_api_name": "나무늘봉순",
       "matched": true
@@ -258,8 +258,8 @@
       "name": "모리",
       "match": "모리_",
       "soop_id": "moguleave",
-      "today": 7567,
-      "month": 50459,
+      "today": 7767,
+      "month": 50659,
       "today_api_name": "모리_",
       "month_api_name": "모리_",
       "matched": true
@@ -387,24 +387,24 @@
     },
     {
       "part": "스타부",
-      "name": "유승곤",
-      "match": "Scan유승곤",
-      "soop_id": "scan1014",
-      "today": 642,
-      "month": 6042,
-      "today_api_name": "Scan유승곤",
-      "month_api_name": "Scan유승곤",
+      "name": "강구열",
+      "match": "910★강구열",
+      "soop_id": "kuyol",
+      "today": 1322,
+      "month": 0,
+      "today_api_name": "910★강구열",
+      "month_api_name": "",
       "matched": true
     },
     {
       "part": "스타부",
-      "name": "강구열",
-      "match": "910★강구열",
-      "soop_id": "kuyol",
-      "today": 1312,
-      "month": 3528,
-      "today_api_name": "910★강구열",
-      "month_api_name": "910★강구열",
+      "name": "유승곤",
+      "match": "Scan유승곤",
+      "soop_id": "scan1014",
+      "today": 942,
+      "month": 0,
+      "today_api_name": "Scan유승곤",
+      "month_api_name": "",
       "matched": true
     },
     {
@@ -432,8 +432,8 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "1,761,734",
-    "month": "1,641,956",
+    "today": "1,843,135",
+    "month": "1,892,988",
     "soop_id": "y1026"
   },
   "excel": {
@@ -601,7 +601,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "65,377",
+    "avg": "66,567",
     "leader": "디임",
     "leader_sales": "227,254",
     "members": [
@@ -617,9 +617,9 @@
       {
         "rank": 2,
         "name": "앵지",
-        "today": "30,111",
-        "month": "169,972",
-        "width": "74%",
+        "today": "60,423",
+        "month": "200,284",
+        "width": "88%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -635,9 +635,9 @@
       {
         "rank": 4,
         "name": "깅예솔",
-        "today": "4,133",
-        "month": "115,422",
-        "width": "50%",
+        "today": "5,020",
+        "month": "116,457",
+        "width": "51%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -653,9 +653,9 @@
       {
         "rank": 6,
         "name": "나무늘봉순",
-        "today": "19,959",
-        "month": "99,524",
-        "width": "43%",
+        "today": "21,776",
+        "month": "101,341",
+        "width": "44%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -689,8 +689,8 @@
       {
         "rank": 10,
         "name": "모리",
-        "today": "7,567",
-        "month": "50,459",
+        "today": "7,767",
+        "month": "50,659",
         "width": "22%",
         "first": false,
         "color": "#ffd34f"
@@ -751,19 +751,19 @@
       },
       {
         "rank": 17,
-        "name": "유승곤",
-        "today": "642",
-        "month": "6,042",
-        "width": "4%",
+        "name": "강구열",
+        "today": "1,322",
+        "month": "0",
+        "width": "0%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 18,
-        "name": "강구열",
-        "today": "1,312",
-        "month": "3,528",
-        "width": "4%",
+        "name": "유승곤",
+        "today": "942",
+        "month": "0",
+        "width": "0%",
         "first": false,
         "color": "#ffd34f"
       },
