@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 00:39:59",
+  "updated_at": "2026-06-07 00:44:07",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -16,8 +16,8 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 445238,
-      "month": 2673979,
+      "today": 450630,
+      "month": 2696007,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -159,7 +159,7 @@
       "name": "깅예솔",
       "match": "깅예솔",
       "soop_id": "yunhee1222",
-      "today": 8,
+      "today": 2685,
       "month": 118695,
       "today_api_name": "깅예솔",
       "month_api_name": "깅예솔",
@@ -170,9 +170,9 @@
       "name": "란란",
       "match": "란란_",
       "soop_id": "rhf104",
-      "today": 0,
-      "month": 117426,
-      "today_api_name": "",
+      "today": 100,
+      "month": 117526,
+      "today_api_name": "란란_",
       "month_api_name": "란란_",
       "matched": true
     },
@@ -369,7 +369,7 @@
       "match": "박재혁;;;",
       "soop_id": "rlekfu6",
       "today": 1220,
-      "month": 19757,
+      "month": 19767,
       "today_api_name": "박재혁;;;",
       "month_api_name": "박재혁;;;",
       "matched": true
@@ -432,8 +432,8 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "445,238",
-    "month": "2,673,979",
+    "today": "450,630",
+    "month": "2,696,007",
     "soop_id": "y1026"
   },
   "excel": {
@@ -601,7 +601,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "71,099",
+    "avg": "71,104",
     "leader": "앵지",
     "leader_sales": "236,699",
     "members": [
@@ -644,7 +644,7 @@
       {
         "rank": 5,
         "name": "깅예솔",
-        "today": "8",
+        "today": "2,685",
         "month": "118,695",
         "width": "50%",
         "first": false,
@@ -653,8 +653,8 @@
       {
         "rank": 6,
         "name": "란란",
-        "today": "0",
-        "month": "117,426",
+        "today": "100",
+        "month": "117,526",
         "width": "49%",
         "first": false,
         "color": "#ffd34f"
@@ -735,7 +735,7 @@
         "rank": 15,
         "name": "박재혁",
         "today": "1,220",
-        "month": "19,757",
+        "month": "19,767",
         "width": "8%",
         "first": false,
         "color": "#ffd34f"
