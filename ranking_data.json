@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 00:44:07",
+  "updated_at": "2026-06-07 00:58:53",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -16,8 +16,8 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 450630,
-      "month": 2696007,
+      "today": 569360,
+      "month": 2817994,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -137,7 +137,7 @@
       "name": "나무늘봉순",
       "match": "나무늘봉순.",
       "soop_id": "yjk011599",
-      "today": 5,
+      "today": 64,
       "month": 123621,
       "today_api_name": "나무늘봉순",
       "month_api_name": "나무늘봉순",
@@ -159,8 +159,8 @@
       "name": "깅예솔",
       "match": "깅예솔",
       "soop_id": "yunhee1222",
-      "today": 2685,
-      "month": 118695,
+      "today": 2748,
+      "month": 121435,
       "today_api_name": "깅예솔",
       "month_api_name": "깅예솔",
       "matched": true
@@ -170,8 +170,8 @@
       "name": "란란",
       "match": "란란_",
       "soop_id": "rhf104",
-      "today": 100,
-      "month": 117526,
+      "today": 101,
+      "month": 117527,
       "today_api_name": "란란_",
       "month_api_name": "란란_",
       "matched": true
@@ -181,7 +181,7 @@
       "name": "오조은",
       "match": "오조은하루",
       "soop_id": "zalalz",
-      "today": 201,
+      "today": 3060,
       "month": 107953,
       "today_api_name": "오조은",
       "month_api_name": "오조은",
@@ -354,6 +354,17 @@
     },
     {
       "part": "스타부",
+      "name": "박재혁",
+      "match": "박재혁;;;",
+      "soop_id": "rlekfu6",
+      "today": 3280,
+      "month": 21827,
+      "today_api_name": "박재혁;;;",
+      "month_api_name": "박재혁;;;",
+      "matched": true
+    },
+    {
+      "part": "스타부",
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
       "soop_id": "jmc06170",
@@ -361,17 +372,6 @@
       "month": 20612,
       "today_api_name": "",
       "month_api_name": "왜냐맨장민철",
-      "matched": true
-    },
-    {
-      "part": "스타부",
-      "name": "박재혁",
-      "match": "박재혁;;;",
-      "soop_id": "rlekfu6",
-      "today": 1220,
-      "month": 19767,
-      "today_api_name": "박재혁;;;",
-      "month_api_name": "박재혁;;;",
       "matched": true
     },
     {
@@ -432,8 +432,8 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "450,630",
-    "month": "2,696,007",
+    "today": "569,360",
+    "month": "2,817,994",
     "soop_id": "y1026"
   },
   "excel": {
@@ -601,7 +601,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "71,104",
+    "avg": "71,344",
     "leader": "앵지",
     "leader_sales": "236,699",
     "members": [
@@ -626,7 +626,7 @@
       {
         "rank": 3,
         "name": "나무늘봉순",
-        "today": "5",
+        "today": "64",
         "month": "123,621",
         "width": "52%",
         "first": false,
@@ -644,17 +644,17 @@
       {
         "rank": 5,
         "name": "깅예솔",
-        "today": "2,685",
-        "month": "118,695",
-        "width": "50%",
+        "today": "2,748",
+        "month": "121,435",
+        "width": "51%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 6,
         "name": "란란",
-        "today": "100",
-        "month": "117,526",
+        "today": "101",
+        "month": "117,527",
         "width": "49%",
         "first": false,
         "color": "#ffd34f"
@@ -662,7 +662,7 @@
       {
         "rank": 7,
         "name": "오조은",
-        "today": "201",
+        "today": "3,060",
         "month": "107,953",
         "width": "45%",
         "first": false,
@@ -724,18 +724,18 @@
       },
       {
         "rank": 14,
-        "name": "왜냐맨장민철",
-        "today": "0",
-        "month": "20,612",
-        "width": "8%",
+        "name": "박재혁",
+        "today": "3,280",
+        "month": "21,827",
+        "width": "9%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 15,
-        "name": "박재혁",
-        "today": "1,220",
-        "month": "19,767",
+        "name": "왜냐맨장민철",
+        "today": "0",
+        "month": "20,612",
         "width": "8%",
         "first": false,
         "color": "#ffd34f"
