@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-06 21:33:49",
+  "updated_at": "2026-06-06 22:05:03",
   "total": 39,
-  "live_count": 12,
+  "live_count": 13,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -86,11 +86,11 @@
       "part": "스타부",
       "soop_id": "zalalz",
       "soop_url": "https://www.sooplive.com/station/zalalz",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294615655",
+      "title": "씨나인 'ㅅ' 와다다다다닷 @  오조은  스타",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/zalalz/station"
     },
@@ -103,7 +103,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294606773",
-      "title": "[씨나인]모리 스타 vs 두링두링두링",
+      "title": "[씨나인]모리 스타  래더 강의",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/moguleave/station"
     },
@@ -142,7 +142,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294605855",
-      "title": "[씨나인] 스타 유승곤 스폰환영",
+      "title": "[씨나인] 스타 유승곤 vs 이창우 3/2",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/scan1014/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294605589",
-      "title": "씨나인⭐ 교육끗나고 맛밥",
+      "title": "씨나인⭐ 오느른 스타겜비깅 ^ㅡ^",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
     },
