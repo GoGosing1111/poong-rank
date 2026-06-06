@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 04:48:59",
+  "updated_at": "2026-06-07 05:05:11",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -27,8 +27,8 @@
       "name": "쁠리",
       "match": "노알리입니두",
       "soop_id": "alwl1047",
-      "today": 10,
-      "month": 327197,
+      "today": 13,
+      "month": 327210,
       "today_api_name": "쁠리vvely",
       "month_api_name": "쁠리vvely",
       "matched": true
@@ -90,6 +90,17 @@
     },
     {
       "part": "엑셀부",
+      "name": "하이희야",
+      "match": "하이희야♡",
+      "soop_id": "jkmjkm1236",
+      "today": 20555,
+      "month": 235262,
+      "today_api_name": "하이희야♡",
+      "month_api_name": "하이희야♡",
+      "matched": true
+    },
+    {
+      "part": "엑셀부",
       "name": "여을",
       "match": "여을♥",
       "soop_id": "kaja0011",
@@ -112,17 +123,6 @@
     },
     {
       "part": "엑셀부",
-      "name": "하이희야",
-      "match": "하이희야♡",
-      "soop_id": "jkmjkm1236",
-      "today": 6627,
-      "month": 220248,
-      "today_api_name": "하이희야♡",
-      "month_api_name": "하이희야♡",
-      "matched": true
-    },
-    {
-      "part": "엑셀부",
       "name": "인지연",
       "match": "인지연JYEON",
       "soop_id": "dlswldus107",
@@ -137,8 +137,8 @@
       "name": "나무늘봉순",
       "match": "나무늘봉순.",
       "soop_id": "yjk011599",
-      "today": 19539,
-      "month": 143155,
+      "today": 19839,
+      "month": 143455,
       "today_api_name": "나무늘봉순",
       "month_api_name": "나무늘봉순",
       "matched": true
@@ -192,8 +192,8 @@
       "name": "채리",
       "match": "BJ채리",
       "soop_id": "lcy011027",
-      "today": 3874,
-      "month": 100636,
+      "today": 14104,
+      "month": 100857,
       "today_api_name": "BJ채리",
       "month_api_name": "BJ채리",
       "matched": true
@@ -302,8 +302,8 @@
       "name": "히나",
       "match": "히나_♥",
       "soop_id": "luaa0803",
-      "today": 65,
-      "month": 30819,
+      "today": 239,
+      "month": 30993,
       "today_api_name": "히나_♥",
       "month_api_name": "히나_♥",
       "matched": true
@@ -324,8 +324,8 @@
       "name": "박재혁",
       "match": "박재혁;;;",
       "soop_id": "rlekfu6",
-      "today": 4867,
-      "month": 23414,
+      "today": 5017,
+      "month": 23563,
       "today_api_name": "박재혁;;;",
       "month_api_name": "박재혁;;;",
       "matched": true
@@ -417,15 +417,15 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "157,279",
+    "avg": "158,307",
     "leader": "쁠리",
-    "leader_sales": "327,197",
+    "leader_sales": "327,210",
     "members": [
       {
         "rank": 1,
         "name": "쁠리",
-        "today": "10",
-        "month": "327,197",
+        "today": "13",
+        "month": "327,210",
         "width": "100%",
         "first": true,
         "color": "#7dc7ff"
@@ -468,19 +468,19 @@
       },
       {
         "rank": 6,
-        "name": "여을",
-        "today": "0",
-        "month": "229,992",
-        "width": "70%",
+        "name": "하이희야",
+        "today": "20,555",
+        "month": "235,262",
+        "width": "71%",
         "first": false,
         "color": "#7dc7ff"
       },
       {
         "rank": 7,
-        "name": "하이희야",
-        "today": "6,627",
-        "month": "220,248",
-        "width": "67%",
+        "name": "여을",
+        "today": "0",
+        "month": "229,992",
+        "width": "70%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -496,8 +496,8 @@
       {
         "rank": 9,
         "name": "채리",
-        "today": "3,874",
-        "month": "100,636",
+        "today": "14,104",
+        "month": "100,857",
         "width": "30%",
         "first": false,
         "color": "#7dc7ff"
@@ -541,8 +541,8 @@
       {
         "rank": 14,
         "name": "히나",
-        "today": "65",
-        "month": "30,819",
+        "today": "239",
+        "month": "30,993",
         "width": "9%",
         "first": false,
         "color": "#7dc7ff"
@@ -561,7 +561,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "75,131",
+    "avg": "75,153",
     "leader": "앵지",
     "leader_sales": "271,058",
     "members": [
@@ -586,8 +586,8 @@
       {
         "rank": 3,
         "name": "나무늘봉순",
-        "today": "19,539",
-        "month": "143,155",
+        "today": "19,839",
+        "month": "143,455",
         "width": "52%",
         "first": false,
         "color": "#ffd34f"
@@ -685,8 +685,8 @@
       {
         "rank": 14,
         "name": "박재혁",
-        "today": "4,867",
-        "month": "23,414",
+        "today": "5,017",
+        "month": "23,563",
         "width": "8%",
         "first": false,
         "color": "#ffd34f"
