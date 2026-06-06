@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06 17:05:23",
+  "updated_at": "2026-06-06 18:05:29",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -137,8 +137,8 @@
       "name": "깅예솔",
       "match": "깅예솔",
       "soop_id": "yunhee1222",
-      "today": 1752,
-      "month": 113189,
+      "today": 1756,
+      "month": 113193,
       "today_api_name": "깅예솔",
       "month_api_name": "깅예솔",
       "matched": true
@@ -199,6 +199,17 @@
       "matched": true
     },
     {
+      "part": "수장",
+      "name": "철구형",
+      "match": "철구형2↑",
+      "soop_id": "y1026",
+      "today": 31478,
+      "month": 81222,
+      "today_api_name": "철구형2↑",
+      "month_api_name": "철구형2↑",
+      "matched": true
+    },
+    {
       "part": "엑셀부",
       "name": "초초",
       "match": "초초♡",
@@ -232,17 +243,6 @@
       "matched": true
     },
     {
-      "part": "수장",
-      "name": "철구형",
-      "match": "철구형2↑",
-      "soop_id": "y1026",
-      "today": 7676,
-      "month": 57329,
-      "today_api_name": "철구형2↑",
-      "month_api_name": "철구형2↑",
-      "matched": true
-    },
-    {
       "part": "스타부",
       "name": "오리꿍",
       "match": "오리꿍_",
@@ -258,9 +258,9 @@
       "name": "모리",
       "match": "모리_",
       "soop_id": "moguleave",
-      "today": 0,
-      "month": 42892,
-      "today_api_name": "",
+      "today": 1126,
+      "month": 43758,
+      "today_api_name": "모리_",
       "month_api_name": "모리_",
       "matched": true
     },
@@ -432,8 +432,8 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "7,676",
-    "month": "57,329",
+    "today": "31,478",
+    "month": "81,222",
     "soop_id": "y1026"
   },
   "excel": {
@@ -601,7 +601,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "64,073",
+    "avg": "64,116",
     "leader": "디임",
     "leader_sales": "227,254",
     "members": [
@@ -635,8 +635,8 @@
       {
         "rank": 4,
         "name": "깅예솔",
-        "today": "1,752",
-        "month": "113,189",
+        "today": "1,756",
+        "month": "113,193",
         "width": "49%",
         "first": false,
         "color": "#ffd34f"
@@ -689,9 +689,9 @@
       {
         "rank": 10,
         "name": "모리",
-        "today": "0",
-        "month": "42,892",
-        "width": "18%",
+        "today": "1,126",
+        "month": "43,758",
+        "width": "19%",
         "first": false,
         "color": "#ffd34f"
       },

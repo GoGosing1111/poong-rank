@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06 17:05:02",
+  "updated_at": "2026-06-06 18:05:05",
   "total": 39,
   "live_count": 7,
   "members": {
@@ -99,11 +99,11 @@
       "part": "스타부",
       "soop_id": "moguleave",
       "soop_url": "https://www.sooplive.com/station/moguleave",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294606773",
+      "title": "[씨나인]모리",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/moguleave/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294605589",
-      "title": "씨나인⭐ 나이제 겜스트리머 히히히",
+      "title": "씨나인⭐ 승곤쌤이랑 스타교육 4년쉰테란 ㅋㅋ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
     },
@@ -272,7 +272,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294549627",
-      "title": "[씨나인★] 85시간 노방종 학생회장 선거 누굴 뽑아야할까요 ( !노방종 룰렛 90/91/601/602 )",
+      "title": "[씨나인★] 85시간 노방종 스타욘습 ( !노방종 룰렛 90/91/601/602 )",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
@@ -424,11 +424,11 @@
       "part": "엑셀부",
       "soop_id": "yunyeson3015",
       "soop_url": "https://www.sooplive.com/station/yunyeson3015",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294604227",
-      "title": "[씨나인 : 시녀2]  오늘 애순이를 잡아주세요",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     },
