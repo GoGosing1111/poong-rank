@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-06 23:28:03",
+  "updated_at": "2026-06-07 00:05:03",
   "total": 39,
-  "live_count": 12,
+  "live_count": 11,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -112,11 +112,11 @@
       "part": "스타부",
       "soop_id": "jmc06170",
       "soop_url": "https://www.sooplive.com/station/jmc06170",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294613465",
-      "title": "[씨나인] 왜냐맨  안령하세연 ^.^",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jmc06170/station"
     },
@@ -233,7 +233,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294610497",
-      "title": "씨나인❤]서민후보 1번의 삶..",
+      "title": "씨나인❤]서민후보 1번의 삶.. 씨나인 학생회장선거 다시보기",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
