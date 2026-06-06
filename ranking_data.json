@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 04:05:26",
+  "updated_at": "2026-06-07 04:48:59",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -8,8 +8,8 @@
     "today": "https://poonggo.com/ranking/broadcast?c=daily&s=b&tab=1&date=2026-06-07"
   },
   "total_members": 36,
-  "matched_count": 32,
-  "unmatched_count": 4,
+  "matched_count": 34,
+  "unmatched_count": 2,
   "ranking": [
     {
       "part": "수장",
@@ -27,9 +27,9 @@
       "name": "쁠리",
       "match": "노알리입니두",
       "soop_id": "alwl1047",
-      "today": 0,
+      "today": 10,
       "month": 327197,
-      "today_api_name": "",
+      "today_api_name": "쁠리vvely",
       "month_api_name": "쁠리vvely",
       "matched": true
     },
@@ -49,8 +49,8 @@
       "name": "앵지",
       "match": "앵지",
       "soop_id": "gks2wl",
-      "today": 24349,
-      "month": 261048,
+      "today": 34359,
+      "month": 271058,
       "today_api_name": "앵지",
       "month_api_name": "앵지",
       "matched": true
@@ -82,9 +82,9 @@
       "name": "애순이",
       "match": "애순이",
       "soop_id": "yunyeson3015",
-      "today": 0,
-      "month": 236542,
-      "today_api_name": "",
+      "today": 15,
+      "month": 236557,
+      "today_api_name": "애순이",
       "month_api_name": "애순이",
       "matched": true
     },
@@ -115,8 +115,8 @@
       "name": "하이희야",
       "match": "하이희야♡",
       "soop_id": "jkmjkm1236",
-      "today": 481,
-      "month": 215010,
+      "today": 6627,
+      "month": 220248,
       "today_api_name": "하이희야♡",
       "month_api_name": "하이희야♡",
       "matched": true
@@ -126,10 +126,21 @@
       "name": "인지연",
       "match": "인지연JYEON",
       "soop_id": "dlswldus107",
-      "today": 0,
-      "month": 161917,
-      "today_api_name": "",
+      "today": 466,
+      "month": 162383,
+      "today_api_name": "인지연JYEON",
       "month_api_name": "인지연JYEON",
+      "matched": true
+    },
+    {
+      "part": "스타부",
+      "name": "나무늘봉순",
+      "match": "나무늘봉순.",
+      "soop_id": "yjk011599",
+      "today": 19539,
+      "month": 143155,
+      "today_api_name": "나무늘봉순",
+      "month_api_name": "나무늘봉순",
       "matched": true
     },
     {
@@ -141,17 +152,6 @@
       "month": 126932,
       "today_api_name": "란란_",
       "month_api_name": "란란_",
-      "matched": true
-    },
-    {
-      "part": "스타부",
-      "name": "나무늘봉순",
-      "match": "나무늘봉순.",
-      "soop_id": "yjk011599",
-      "today": 128,
-      "month": 123744,
-      "today_api_name": "나무늘봉순",
-      "month_api_name": "나무늘봉순",
       "matched": true
     },
     {
@@ -192,9 +192,9 @@
       "name": "채리",
       "match": "BJ채리",
       "soop_id": "lcy011027",
-      "today": 0,
-      "month": 96762,
-      "today_api_name": "",
+      "today": 3874,
+      "month": 100636,
+      "today_api_name": "BJ채리",
       "month_api_name": "BJ채리",
       "matched": true
     },
@@ -225,9 +225,9 @@
       "name": "아윤",
       "match": "아윤♡",
       "soop_id": "ayoona",
-      "today": 0,
-      "month": 65411,
-      "today_api_name": "",
+      "today": 4,
+      "month": 65415,
+      "today_api_name": "아윤♡",
       "month_api_name": "아윤♡",
       "matched": true
     },
@@ -302,9 +302,9 @@
       "name": "히나",
       "match": "히나_♥",
       "soop_id": "luaa0803",
-      "today": 0,
-      "month": 30754,
-      "today_api_name": "",
+      "today": 65,
+      "month": 30819,
+      "today_api_name": "히나_♥",
       "month_api_name": "히나_♥",
       "matched": true
     },
@@ -335,8 +335,8 @@
       "name": "연두",
       "match": "ε연두з",
       "soop_id": "myby1221",
-      "today": 614,
-      "month": 22675,
+      "today": 1127,
+      "month": 23188,
       "today_api_name": "ε연두з",
       "month_api_name": "ε연두з",
       "matched": true
@@ -365,6 +365,28 @@
     },
     {
       "part": "스타부",
+      "name": "유승곤",
+      "match": "Scan유승곤",
+      "soop_id": "scan1014",
+      "today": 0,
+      "month": 7387,
+      "today_api_name": "",
+      "month_api_name": "Scan유승곤",
+      "matched": true
+    },
+    {
+      "part": "스타부",
+      "name": "강구열",
+      "match": "910★강구열",
+      "soop_id": "kuyol",
+      "today": 0,
+      "month": 4648,
+      "today_api_name": "",
+      "month_api_name": "910★강구열",
+      "matched": true
+    },
+    {
+      "part": "스타부",
       "name": "김택용",
       "match": "Bisu김택용",
       "soop_id": "rlaxordyd",
@@ -384,28 +406,6 @@
       "today_api_name": "",
       "month_api_name": "",
       "matched": false
-    },
-    {
-      "part": "스타부",
-      "name": "강구열",
-      "match": "910★강구열",
-      "soop_id": "kuyol",
-      "today": 0,
-      "month": 0,
-      "today_api_name": "",
-      "month_api_name": "",
-      "matched": false
-    },
-    {
-      "part": "스타부",
-      "name": "유승곤",
-      "match": "Scan유승곤",
-      "soop_id": "scan1014",
-      "today": 0,
-      "month": 0,
-      "today_api_name": "",
-      "month_api_name": "",
-      "matched": false
     }
   ],
   "leader": {
@@ -417,14 +417,14 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "156,600",
+    "avg": "157,279",
     "leader": "쁠리",
     "leader_sales": "327,197",
     "members": [
       {
         "rank": 1,
         "name": "쁠리",
-        "today": "0",
+        "today": "10",
         "month": "327,197",
         "width": "100%",
         "first": true,
@@ -460,8 +460,8 @@
       {
         "rank": 5,
         "name": "애순이",
-        "today": "0",
-        "month": "236,542",
+        "today": "15",
+        "month": "236,557",
         "width": "72%",
         "first": false,
         "color": "#7dc7ff"
@@ -478,17 +478,17 @@
       {
         "rank": 7,
         "name": "하이희야",
-        "today": "481",
-        "month": "215,010",
-        "width": "65%",
+        "today": "6,627",
+        "month": "220,248",
+        "width": "67%",
         "first": false,
         "color": "#7dc7ff"
       },
       {
         "rank": 8,
         "name": "인지연",
-        "today": "0",
-        "month": "161,917",
+        "today": "466",
+        "month": "162,383",
         "width": "49%",
         "first": false,
         "color": "#7dc7ff"
@@ -496,9 +496,9 @@
       {
         "rank": 9,
         "name": "채리",
-        "today": "0",
-        "month": "96,762",
-        "width": "29%",
+        "today": "3,874",
+        "month": "100,636",
+        "width": "30%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -514,8 +514,8 @@
       {
         "rank": 11,
         "name": "아윤",
-        "today": "0",
-        "month": "65,411",
+        "today": "4",
+        "month": "65,415",
         "width": "19%",
         "first": false,
         "color": "#7dc7ff"
@@ -541,8 +541,8 @@
       {
         "rank": 14,
         "name": "히나",
-        "today": "0",
-        "month": "30,754",
+        "today": "65",
+        "month": "30,819",
         "width": "9%",
         "first": false,
         "color": "#7dc7ff"
@@ -550,9 +550,9 @@
       {
         "rank": 15,
         "name": "연두",
-        "today": "614",
-        "month": "22,675",
-        "width": "6%",
+        "today": "1,127",
+        "month": "23,188",
+        "width": "7%",
         "first": false,
         "color": "#7dc7ff"
       }
@@ -561,15 +561,15 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "73,058",
+    "avg": "75,131",
     "leader": "앵지",
-    "leader_sales": "261,048",
+    "leader_sales": "271,058",
     "members": [
       {
         "rank": 1,
         "name": "앵지",
-        "today": "24,349",
-        "month": "261,048",
+        "today": "34,359",
+        "month": "271,058",
         "width": "100%",
         "first": true,
         "color": "#ffd34f"
@@ -579,25 +579,25 @@
         "name": "디임",
         "today": "0",
         "month": "227,254",
-        "width": "87%",
+        "width": "83%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 3,
-        "name": "란란",
-        "today": "9,506",
-        "month": "126,932",
-        "width": "48%",
+        "name": "나무늘봉순",
+        "today": "19,539",
+        "month": "143,155",
+        "width": "52%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 4,
-        "name": "나무늘봉순",
-        "today": "128",
-        "month": "123,744",
-        "width": "47%",
+        "name": "란란",
+        "today": "9,506",
+        "month": "126,932",
+        "width": "46%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -606,7 +606,7 @@
         "name": "졈니",
         "today": "0",
         "month": "122,557",
-        "width": "46%",
+        "width": "45%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -615,7 +615,7 @@
         "name": "깅예솔",
         "today": "2,748",
         "month": "121,435",
-        "width": "46%",
+        "width": "44%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -624,7 +624,7 @@
         "name": "오조은",
         "today": "11,031",
         "month": "118,783",
-        "width": "45%",
+        "width": "43%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -633,7 +633,7 @@
         "name": "빵훈이",
         "today": "0",
         "month": "95,129",
-        "width": "36%",
+        "width": "35%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -651,7 +651,7 @@
         "name": "모리",
         "today": "10",
         "month": "50,669",
-        "width": "19%",
+        "width": "18%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -660,7 +660,7 @@
         "name": "남수댕",
         "today": "0",
         "month": "40,294",
-        "width": "15%",
+        "width": "14%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -678,7 +678,7 @@
         "name": "효짱",
         "today": "0",
         "month": "26,203",
-        "width": "10%",
+        "width": "9%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -711,6 +711,24 @@
       },
       {
         "rank": 17,
+        "name": "유승곤",
+        "today": "0",
+        "month": "7,387",
+        "width": "4%",
+        "first": false,
+        "color": "#ffd34f"
+      },
+      {
+        "rank": 18,
+        "name": "강구열",
+        "today": "0",
+        "month": "4,648",
+        "width": "4%",
+        "first": false,
+        "color": "#ffd34f"
+      },
+      {
+        "rank": 19,
         "name": "김택용",
         "today": "0",
         "month": "0",
@@ -719,26 +737,8 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 18,
-        "name": "이영호",
-        "today": "0",
-        "month": "0",
-        "width": "0%",
-        "first": false,
-        "color": "#ffd34f"
-      },
-      {
-        "rank": 19,
-        "name": "강구열",
-        "today": "0",
-        "month": "0",
-        "width": "0%",
-        "first": false,
-        "color": "#ffd34f"
-      },
-      {
         "rank": 20,
-        "name": "유승곤",
+        "name": "이영호",
         "today": "0",
         "month": "0",
         "width": "0%",
