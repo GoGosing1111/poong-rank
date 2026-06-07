@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08 06:01:16",
+  "updated_at": "2026-06-08 06:05:25",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -72,7 +72,7 @@
       "match": "이다니♥",
       "soop_id": "0929kelly",
       "today": 10095,
-      "month": 279466,
+      "month": 279471,
       "today_api_name": "이다니♥",
       "month_api_name": "이다니♥",
       "matched": true
@@ -417,7 +417,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "170,224",
+    "avg": "170,225",
     "leader": "쁠리",
     "leader_sales": "366,427",
     "members": [
@@ -452,7 +452,7 @@
         "rank": 4,
         "name": "이다니",
         "today": "10,095",
-        "month": "279,466",
+        "month": "279,471",
         "width": "76%",
         "first": false,
         "color": "#7dc7ff"
