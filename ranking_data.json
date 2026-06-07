@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 18:56:47",
+  "updated_at": "2026-06-07 19:05:26",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -39,7 +39,7 @@
       "match": "송채연",
       "soop_id": "jfiary0718",
       "today": 19739,
-      "month": 298286,
+      "month": 298512,
       "today_api_name": "송채연♥",
       "month_api_name": "송채연♥",
       "matched": true
@@ -247,8 +247,8 @@
       "name": "모리",
       "match": "모리_",
       "soop_id": "moguleave",
-      "today": 2975,
-      "month": 53634,
+      "today": 3885,
+      "month": 53764,
       "today_api_name": "모리_",
       "month_api_name": "모리_",
       "matched": true
@@ -324,8 +324,8 @@
       "name": "박재혁",
       "match": "박재혁;;;",
       "soop_id": "rlekfu6",
-      "today": 5310,
-      "month": 23857,
+      "today": 5321,
+      "month": 23867,
       "today_api_name": "박재혁;;;",
       "month_api_name": "박재혁;;;",
       "matched": true
@@ -417,7 +417,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "164,386",
+    "avg": "164,401",
     "leader": "쁠리",
     "leader_sales": "332,286",
     "members": [
@@ -434,7 +434,7 @@
         "rank": 2,
         "name": "송채연",
         "today": "19,739",
-        "month": "298,286",
+        "month": "298,512",
         "width": "89%",
         "first": false,
         "color": "#7dc7ff"
@@ -561,7 +561,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "76,421",
+    "avg": "76,428",
     "leader": "앵지",
     "leader_sales": "271,058",
     "members": [
@@ -640,8 +640,8 @@
       {
         "rank": 9,
         "name": "모리",
-        "today": "2,975",
-        "month": "53,634",
+        "today": "3,885",
+        "month": "53,764",
         "width": "19%",
         "first": false,
         "color": "#ffd34f"
@@ -685,8 +685,8 @@
       {
         "rank": 14,
         "name": "박재혁",
-        "today": "5,310",
-        "month": "23,857",
+        "today": "5,321",
+        "month": "23,867",
         "width": "8%",
         "first": false,
         "color": "#ffd34f"
