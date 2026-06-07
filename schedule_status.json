@@ -1,11 +1,21 @@
 {
   "ok": true,
-  "updated_at": "2026-06-07 05:08:30",
+  "updated_at": "2026-06-07 14:26:57",
   "source": "https://www.cnine.kr/timeline",
-  "count": 8,
-  "today_count": 0,
-  "future_count": 8,
+  "count": 10,
+  "today_count": 1,
+  "future_count": 9,
   "items": [
+    {
+      "title": "철구vs기뉴다 끝장전",
+      "date": "2026.06.07 (일)",
+      "raw_date": "2026-06-07",
+      "time": "16:00",
+      "datetime": "2026.06.07 (일) · ⏰ 16:00",
+      "dday": "TODAY",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 07일(일) 16:00 ~ 18:00"
+    },
     {
       "title": "스타부 : 스타 감금소 - 효짱",
       "date": "2026.06.08 (월)",
@@ -75,6 +85,16 @@
       "dday": "D-6",
       "type": "컨텐츠",
       "source_line": "2026년 06월 13일(토)"
+    },
+    {
+      "title": "엑셀혜루여왕님 주관 여캠부 디코회의",
+      "date": "2026.06.15 (월)",
+      "raw_date": "2026-06-15",
+      "time": "09:00",
+      "datetime": "2026.06.15 (월) · ⏰ 09:00",
+      "dday": "D-8",
+      "type": "엑셀",
+      "source_line": "2026년 06월 15일(월) 09:00 ~ 23:59"
     },
     {
       "title": "엑셀<2026 시즌6> 씨나인 댄스부 : 엑셀 1회차",
