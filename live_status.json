@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-07 14:23:09",
+  "updated_at": "2026-06-07 15:25:00",
   "total": 37,
-  "live_count": 2,
+  "live_count": 4,
   "members": {
     "y1026": {
       "name": "철구형",
       "part": "엑셀부",
       "soop_id": "y1026",
       "soop_url": "https://www.sooplive.com/station/y1026",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294630281",
+      "title": "철구 진지하게 드릴말있습니다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
@@ -272,7 +272,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294549627",
-      "title": "[씨나인★] 85시간 노방종 2시에 오겠습니다!! ( !노방종 룰렛 90/91/601/602 )",
+      "title": "[씨나인★] 85시간 노방종 밥 묵는 중 ( !노방종 룰렛 90/91/601/602 )",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },

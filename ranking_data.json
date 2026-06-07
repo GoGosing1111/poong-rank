@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 14:23:27",
+  "updated_at": "2026-06-07 15:25:18",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -203,8 +203,8 @@
       "name": "빵훈이",
       "match": "빵훈이.",
       "soop_id": "vlfvlf789",
-      "today": 2001,
-      "month": 97130,
+      "today": 7197,
+      "month": 102321,
       "today_api_name": "빵훈이",
       "month_api_name": "빵훈이",
       "matched": true
@@ -561,7 +561,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "75,328",
+    "avg": "75,588",
     "leader": "앵지",
     "leader_sales": "271,058",
     "members": [
@@ -631,9 +631,9 @@
       {
         "rank": 8,
         "name": "빵훈이",
-        "today": "2,001",
-        "month": "97,130",
-        "width": "35%",
+        "today": "7,197",
+        "month": "102,321",
+        "width": "37%",
         "first": false,
         "color": "#ffd34f"
       },
