@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-07 21:05:02",
+  "updated_at": "2026-06-08 00:06:40",
   "total": 37,
-  "live_count": 12,
+  "live_count": 15,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -51,7 +51,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294634529",
-      "title": "[씨나인⭐️]스타 박재혁 국가부도의날;;;",
+      "title": "[씨나인⭐️]스타 박재혁 이웃사람;;;",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rlekfu6/station"
     },
@@ -103,7 +103,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294632267",
-      "title": "[씨나인]모리",
+      "title": "[씨나인]모리 오랜마네 2부 배그 킬내기 펀딩 비상.....",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/moguleave/station"
     },
@@ -116,7 +116,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294636811",
-      "title": "[씨나인] 왜냐맨  대깨딤 쌍너스 구경 ^^",
+      "title": "[씨나인] 왜냐맨  킬내기 앵난지원금 ^^ 펀딩있나연?",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jmc06170/station"
     },
@@ -129,7 +129,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294635207",
-      "title": "[씨나인] 스타 윤용태",
+      "title": "[씨나인] 스타 윤용태   앵지x예솔x모리vs냐맨x졈니x효짱x란란 4:4배그",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dbsdydx/station"
     },
@@ -181,7 +181,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294631709",
-      "title": "[씨나인⭐] 스폰환영 ㅎㅎ",
+      "title": "[씨나인⭐] 배그 1티어 보여드립니다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
@@ -194,7 +194,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294636369",
-      "title": "씨나인⭐]철구오빠 핸디매치 질시 염색핀볼",
+      "title": "씨나인⭐]씨나인 4:4 내전 킬내기 24만개빵ㄷㄷ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -216,11 +216,11 @@
       "part": "스타부",
       "soop_id": "tjgpdus97",
       "soop_url": "https://www.sooplive.com/station/tjgpdus97",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294642683",
+      "title": "씨나인]요닝 밤산책",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/tjgpdus97/station"
     },
@@ -233,7 +233,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294636687",
-      "title": "씨나인❤]안녕하세요^^",
+      "title": "씨나인❤]벽킬내기 앵깅모용vs왜졈짱란",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
@@ -246,7 +246,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294636581",
-      "title": "[씨나인★] 진짜 그날이라 기분 안좋아요... 웃기싫다진짜",
+      "title": "[씨나인★] 졈여왕 추진 벽킬내기 22만개빵 갑니다... 오랜만에 배그 갑니다요!!!!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yochba0402/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294639103",
-      "title": "씨나인⭐ 1부 메이드의 건전한 소통방송 ^^",
+      "title": "씨나인⭐ 히히 배그합니다 멤버들이랑 ㅎ_ㅎ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
     },
@@ -272,7 +272,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294549627",
-      "title": "[씨나인★] 85시간 노방종 잠시 병원 갔다 오게뜹니다 ( !노방종 룰렛 90/91/601/602 )",
+      "title": "[씨나인★] 85시간 노방종 아침 7시 30분에 일어나겠습니다! ( !노방종 룰렛 90/91/601/602 )",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
@@ -311,7 +311,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294631871",
-      "title": "[씨나인:신입] 해줘 뽀송단 (4/9) 채울때까지 노방종 ㅜㅜ",
+      "title": "[씨나인:신입] 송이닉스 탑승하실분 단 한분 !!!!!!!!!!!!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jfiary0718/station"
     },
@@ -346,11 +346,11 @@
       "part": "엑셀부",
       "soop_id": "alwl1047",
       "soop_url": "https://www.sooplive.com/station/alwl1047",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294640793",
+      "title": "[씨나인 : 공주] 첫공주 축하해주때요 뿌뿌뿌",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/alwl1047/station"
     },
@@ -385,11 +385,11 @@
       "part": "엑셀부",
       "soop_id": "lcy011027",
       "soop_url": "https://www.sooplive.com/station/lcy011027",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294645049",
+      "title": "[씨나인:시녀] 이번시즌도 수장님없이 잘해냈다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/lcy011027/station"
     },
