@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09 04:48:55",
+  "updated_at": "2026-06-09 05:05:25",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -247,7 +247,7 @@
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
       "soop_id": "jmc06170",
-      "today": 8366,
+      "today": 8666,
       "month": 70840,
       "today_api_name": "왜냐맨장민철",
       "month_api_name": "왜냐맨장민철",
@@ -658,7 +658,7 @@
       {
         "rank": 11,
         "name": "왜냐맨장민철",
-        "today": "8,366",
+        "today": "8,666",
         "month": "70,840",
         "width": "22%",
         "first": false,
