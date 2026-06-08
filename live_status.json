@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-08 18:43:12",
+  "updated_at": "2026-06-08 19:05:02",
   "total": 37,
-  "live_count": 11,
+  "live_count": 13,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -73,11 +73,11 @@
       "part": "스타부",
       "soop_id": "kuyol",
       "soop_url": "https://www.sooplive.com/station/kuyol",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294659511",
+      "title": "[씨나인] 강구열 오늘도 좋은하루~~~",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kuyol/station"
     },
@@ -151,11 +151,11 @@
       "part": "스타부",
       "soop_id": "qpqpro",
       "soop_url": "https://www.sooplive.com/station/qpqpro",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294659021",
+      "title": "씨나인💖] 디임 하이요하이요",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/qpqpro/station"
     },
