@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-08 23:19:11",
+  "updated_at": "2026-06-09 00:05:02",
   "total": 37,
-  "live_count": 15,
+  "live_count": 13,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -47,11 +47,11 @@
       "part": "스타부",
       "soop_id": "rlekfu6",
       "soop_url": "https://www.sooplive.com/station/rlekfu6",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294656853",
-      "title": "[씨나인⭐️]스타 박재혁 ^^",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rlekfu6/station"
     },
@@ -99,11 +99,11 @@
       "part": "스타부",
       "soop_id": "moguleave",
       "soop_url": "https://www.sooplive.com/station/moguleave",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294656829",
-      "title": "[씨나인]모리 왓더버거 첫경험",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/moguleave/station"
     },
@@ -155,7 +155,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294659021",
-      "title": "씨나인💖] 디임vs닝국 2대떡 낼게요^^",
+      "title": "씨나인💖] 디임 ㅎㅅㅎ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/qpqpro/station"
     },
@@ -194,7 +194,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294660039",
-      "title": "씨나인⭐] 제주도가기전 스타공부vs 링가",
+      "title": "씨나인⭐] 제주도가기전 스타공부 vs비타밍님",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -233,7 +233,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294661223",
-      "title": "씨나인❤]안방극장 이웃사람 같이보기 안본눈 스포금지",
+      "title": "씨나인❤]ㅇㅅㅇ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
@@ -415,7 +415,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294668387",
-      "title": "[씨나인:신입] 저도 진짜 수장님 구해요...",
+      "title": "[씨나인:신입] 여을이의 왕자님이 되어주실 수장림 구합니다..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kaja0011/station"
     },
