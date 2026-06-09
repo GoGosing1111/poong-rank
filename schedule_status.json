@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-09 19:10:12",
+  "updated_at": "2026-06-09 23:02:23",
   "source": "https://www.cnine.kr/timeline",
-  "count": 7,
+  "count": 9,
   "today_count": 1,
-  "future_count": 6,
+  "future_count": 8,
   "items": [
     {
       "title": "박재혁 : 포장 ck",
@@ -15,6 +15,26 @@
       "dday": "TODAY",
       "type": "컨텐츠",
       "source_line": "2026년 06월 09일(화) 14:00 ~ 18:00"
+    },
+    {
+      "title": "스타부 : 3티어 PL <feat. 디임>",
+      "date": "2026.06.10 (수)",
+      "raw_date": "2026-06-10",
+      "time": "시간미정",
+      "datetime": "2026.06.10 (수) · ⏰ 시간미정",
+      "dday": "D-1",
+      "type": "스타",
+      "source_line": "2026년 06월 10일(수)"
+    },
+    {
+      "title": "스타부 : 3티어 PL <feat. 요닝>",
+      "date": "2026.06.10 (수)",
+      "raw_date": "2026-06-10",
+      "time": "시간미정",
+      "datetime": "2026.06.10 (수) · ⏰ 시간미정",
+      "dday": "D-1",
+      "type": "스타",
+      "source_line": "2026년 06월 10일(수)"
     },
     {
       "title": "스타부 : 씨나인 vs 엠비대 - 추매치 대결",
