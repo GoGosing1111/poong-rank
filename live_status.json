@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-09 22:56:33",
+  "updated_at": "2026-06-09 23:05:02",
   "total": 37,
-  "live_count": 15,
+  "live_count": 16,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -424,11 +424,11 @@
       "part": "엑셀부",
       "soop_id": "yunyeson3015",
       "soop_url": "https://www.sooplive.com/station/yunyeson3015",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294693933",
+      "title": "[씨나인 : 시녀2]  5년만에 회장님이바꼈습니다  중------멘",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     },
