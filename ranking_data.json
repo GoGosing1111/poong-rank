@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09 05:05:25",
+  "updated_at": "2026-06-09 13:13:06",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -177,6 +177,17 @@
       "matched": true
     },
     {
+      "part": "스타부",
+      "name": "오조은",
+      "match": "오조은하루",
+      "soop_id": "zalalz",
+      "today": 10419,
+      "month": 129202,
+      "today_api_name": "오조은",
+      "month_api_name": "오조은",
+      "matched": true
+    },
+    {
       "part": "엑셀부",
       "name": "채리",
       "match": "BJ채리",
@@ -189,13 +200,13 @@
     },
     {
       "part": "스타부",
-      "name": "오조은",
-      "match": "오조은하루",
-      "soop_id": "zalalz",
-      "today": 0,
-      "month": 118783,
-      "today_api_name": "",
-      "month_api_name": "오조은",
+      "name": "빵훈이",
+      "match": "빵훈이.",
+      "soop_id": "vlfvlf789",
+      "today": 4732,
+      "month": 116876,
+      "today_api_name": "빵훈이",
+      "month_api_name": "빵훈이",
       "matched": true
     },
     {
@@ -207,17 +218,6 @@
       "month": 113081,
       "today_api_name": "초초♡",
       "month_api_name": "초초♡",
-      "matched": true
-    },
-    {
-      "part": "스타부",
-      "name": "빵훈이",
-      "match": "빵훈이.",
-      "soop_id": "vlfvlf789",
-      "today": 0,
-      "month": 112145,
-      "today_api_name": "",
-      "month_api_name": "빵훈이",
       "matched": true
     },
     {
@@ -247,8 +247,8 @@
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
       "soop_id": "jmc06170",
-      "today": 8666,
-      "month": 70840,
+      "today": 8672,
+      "month": 71146,
       "today_api_name": "왜냐맨장민철",
       "month_api_name": "왜냐맨장민철",
       "matched": true
@@ -335,9 +335,9 @@
       "name": "체온",
       "match": "체온_♡",
       "soop_id": "leeso0403",
-      "today": 0,
+      "today": 1,
       "month": 39946,
-      "today_api_name": "",
+      "today_api_name": "체온♥",
       "month_api_name": "체온_♡",
       "matched": true
     },
@@ -532,7 +532,7 @@
       {
         "rank": 13,
         "name": "체온",
-        "today": "0",
+        "today": "1",
         "month": "39,946",
         "width": "10%",
         "first": false,
@@ -561,7 +561,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "107,037",
+    "avg": "107,809",
     "leader": "앵지",
     "leader_sales": "308,516",
     "members": [
@@ -622,18 +622,18 @@
       {
         "rank": 7,
         "name": "오조은",
-        "today": "0",
-        "month": "118,783",
-        "width": "38%",
+        "today": "10,419",
+        "month": "129,202",
+        "width": "41%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 8,
         "name": "빵훈이",
-        "today": "0",
-        "month": "112,145",
-        "width": "36%",
+        "today": "4,732",
+        "month": "116,876",
+        "width": "37%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -658,9 +658,9 @@
       {
         "rank": 11,
         "name": "왜냐맨장민철",
-        "today": "8,666",
-        "month": "70,840",
-        "width": "22%",
+        "today": "8,672",
+        "month": "71,146",
+        "width": "23%",
         "first": false,
         "color": "#ffd34f"
       },

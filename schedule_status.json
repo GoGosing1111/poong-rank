@@ -1,11 +1,21 @@
 {
   "ok": true,
-  "updated_at": "2026-06-09 05:08:33",
+  "updated_at": "2026-06-09 13:17:15",
   "source": "https://www.cnine.kr/timeline",
   "count": 7,
-  "today_count": 0,
-  "future_count": 7,
+  "today_count": 1,
+  "future_count": 6,
   "items": [
+    {
+      "title": "박재혁 : 포장 ck",
+      "date": "2026.06.09 (화)",
+      "raw_date": "2026-06-09",
+      "time": "14:00",
+      "datetime": "2026.06.09 (화) · ⏰ 14:00",
+      "dday": "TODAY",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 09일(화) 14:00 ~ 18:00"
+    },
     {
       "title": "스타부 : 씨나인 vs 엠비대 - 추매치 대결",
       "date": "2026.06.11 (목)",
@@ -25,16 +35,6 @@
       "dday": "D-2",
       "type": "스타",
       "source_line": "2026년 06월 11일(목)"
-    },
-    {
-      "title": "스타부 : 와플컵 5-6티어 대회 <feat. 남수댕>",
-      "date": "2026.06.13 (토)",
-      "raw_date": "2026-06-13",
-      "time": "15:00",
-      "datetime": "2026.06.13 (토) · ⏰ 15:00",
-      "dday": "D-4",
-      "type": "스타",
-      "source_line": "2026년 06월 13일(토) 15:00 ~ 18:00"
     },
     {
       "title": "스타부 학생회장 선거",
