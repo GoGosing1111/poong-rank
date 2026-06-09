@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09 23:05:22",
+  "updated_at": "2026-06-09 23:05:21",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -192,7 +192,7 @@
       "name": "초초",
       "match": "초초♡",
       "soop_id": "chocho12",
-      "today": 19958,
+      "today": 19968,
       "month": 130702,
       "today_api_name": "초초♡",
       "month_api_name": "초초♡",
@@ -247,7 +247,7 @@
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
       "soop_id": "jmc06170",
-      "today": 8673,
+      "today": 9682,
       "month": 71147,
       "today_api_name": "왜냐맨장민철",
       "month_api_name": "왜냐맨장민철",
@@ -505,7 +505,7 @@
       {
         "rank": 10,
         "name": "초초",
-        "today": "19,958",
+        "today": "19,968",
         "month": "130,702",
         "width": "33%",
         "first": false,
@@ -658,7 +658,7 @@
       {
         "rank": 11,
         "name": "왜냐맨장민철",
-        "today": "8,673",
+        "today": "9,682",
         "month": "71,147",
         "width": "22%",
         "first": false,
