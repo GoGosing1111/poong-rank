@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11 04:24:15",
+  "updated_at": "2026-06-11 06:15:20",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -60,8 +60,8 @@
       "name": "졈니",
       "match": "졈니♥",
       "soop_id": "yochba0402",
-      "today": 52616,
-      "month": 358429,
+      "today": 55488,
+      "month": 361301,
       "today_api_name": "졈니",
       "month_api_name": "졈니",
       "matched": true
@@ -561,7 +561,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "132,660",
+    "avg": "132,803",
     "leader": "디임",
     "leader_sales": "394,517",
     "members": [
@@ -577,9 +577,9 @@
       {
         "rank": 2,
         "name": "졈니",
-        "today": "52,616",
-        "month": "358,429",
-        "width": "90%",
+        "today": "55,488",
+        "month": "361,301",
+        "width": "91%",
         "first": false,
         "color": "#ffd34f"
       },
