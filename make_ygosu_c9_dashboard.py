@@ -104,7 +104,7 @@ def render_dashboard_notice(text):
     body = "<br>".join(esc(x) for x in lines)
     return f"""
 <div style="margin-top:9px;border:1px solid rgba(255,211,79,.32);border-radius:15px;background:linear-gradient(135deg,rgba(255,211,79,.10),rgba(0,0,0,.22));overflow:hidden;box-sizing:border-box;">
-  <div style="padding:9px 11px;background:rgba(0,0,0,.20);border-bottom:1px solid rgba(255,211,79,.22);color:#ffd34f;font-size:13px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">📢 특이사항</div>
+  <div style="padding:9px 11px;background:rgba(0,0,0,.20);border-bottom:1px solid rgba(255,211,79,.22);color:#7ec8ff;font-size:13px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">📢 특이사항</div>
   <div style="padding:10px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.55;text-align:left;word-break:break-word;max-height:94px;overflow:auto;box-sizing:border-box;">{body}</div>
 </div>"""
 
@@ -173,7 +173,7 @@ btn.onclick = function() {{
 
   <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
     SOOP 시청기록에서<br>
-    <span style="color:#ffd34f;font-weight:1000;">A-염보성!! / [BJ]케이</span> 기록을 자동 판독합니다.
+    <span style="color:#7ec8ff;font-weight:1000;">A-염보성!! / [BJ]케이</span> 기록을 자동 판독합니다.
 
     <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
       {iframe_html}
@@ -230,41 +230,40 @@ def is_live(member, live_map):
     info = live_map.get(sid) or {}
     return bool(info.get("is_live"))
 
-def section(title, body, open_attr=False, color="#d4af37"):
+def section(title, body, open_attr=False, color="#2f9bff"):
     open_text = " open" if open_attr else ""
-    # 메인/서브 섹션을 색상으로 구분하기 위한 공통 프레임.
-    # 와이고수 호환 때문에 class/style 태그 없이 인라인 스타일만 사용한다.
+    # v10 HTML 기준: 파란 네온/둥근 엣지/어두운 남청 배경
     return f"""
-<details{open_text} style="margin:11px 0 14px;padding:0;border:1px solid {color};border-radius:18px;background:#0b0b0b;overflow:hidden;box-sizing:border-box;box-shadow:0 0 16px {color}55;">
-  <summary style="list-style:none;cursor:pointer;padding:13px 12px;background:linear-gradient(180deg,#171717,#070707);color:#fff;font-size:18px;font-weight:1000;text-align:center;text-shadow:0 0 8px {color}AA,0 2px 0 #000;border-bottom:2px solid {color};letter-spacing:-.3px;">
+<details{open_text} style="margin:10px 0 13px;padding:0;border:1px solid {color};border-radius:18px;background:#071426;overflow:hidden;box-sizing:border-box;box-shadow:0 0 14px {color}73;">
+  <summary style="list-style:none;cursor:pointer;padding:14px 12px;background:linear-gradient(180deg,#12345c,#071526);color:#fff;font-size:19px;font-weight:1000;text-align:center;text-shadow:0 0 8px rgba(80,170,255,.85),0 2px 0 #000;border-bottom:2px solid {color};">
     {esc(title)}
   </summary>
-  <div style="padding:10px;background:linear-gradient(180deg,#101010,#050505);border-top:1px solid rgba(255,255,255,.08);box-sizing:border-box;">
+  <div style="padding:10px;background:#081525;border-top:1px solid rgba(255,255,255,.10);box-sizing:border-box;">
     {body}
   </div>
 </details>"""
 
 def metric(label, value):
     return f"""<div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
-<span style="color:#f3ead0;">{esc(label)}</span><span style="color:#f5d57a;text-align:right;">{esc(value)}</span></div>"""
+<span style="color:#dff2ff;">{esc(label)}</span><span style="color:#7ec8ff;text-align:right;">{esc(value)}</span></div>"""
 
 def member_card(m, live_map, single=False):
     sid = m.get("soop_id") or ""
     live = is_live(m, live_map)
-    badge_bg = "#c89b2c" if live else "#333"
+    badge_bg = "#1088ff" if live else "#333"
     badge = "LIVE" if live else "OFF"
     soop_url = m.get("soop_url") or (f"https://www.sooplive.com/station/{sid}" if sid else "#")
     img = profile_src(m)
     return f"""
-<div style="display:inline-block;vertical-align:top;width:{'68%' if single else '48%'};margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:linear-gradient(180deg,rgba(255,215,110,.08),rgba(0,0,0,.30));border:1px solid rgba(212,175,55,.28);text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 0 10px rgba(212,175,55,.10);">
+<div style="display:inline-block;vertical-align:top;width:{'68%' if single else '48%'};margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-    <span style="padding:3px 7px;border-radius:999px;background:rgba(212,175,55,.14);border:1px solid rgba(212,175,55,.38);color:#fff;font-size:10px;font-weight:900;">{esc(m.get("part","-"))}</span>
-    <span style="padding:3px 6px;border-radius:999px;background:{badge_bg};color:#fff;font-size:10px;font-weight:1000;box-shadow:0 0 8px rgba(212,175,55,.25);">{badge}</span>
+    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">{esc(m.get("part","-"))}</span>
+    <span style="padding:3px 6px;border-radius:999px;background:{badge_bg};color:#fff;font-size:10px;font-weight:1000;">{badge}</span>
   </div>
-  <img src="{esc(img)}" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #d4af37;background:#111;box-shadow:0 0 11px rgba(212,175,55,.32);">
+  <img src="{esc(img)}" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">{esc(m.get("name","-"))}</div>
-  <div style="color:#cfc3a4;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(sid)}</div>
-  <a href="{esc(soop_url)}" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#111;border:1px solid #d4af37;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+  <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(sid)}</div>
+  <a href="{esc(soop_url)}" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
 </div>"""
 
 def render_members(members, live_map):
@@ -278,13 +277,13 @@ def render_members(members, live_map):
     excel = [m for m in regulars if m.get("part") == "엑셀부"]
     live_count = sum(1 for m in unique if is_live(m, live_map))
 
-    summary = f"""<div style="padding:9px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#f3ead0;font-size:12px;font-weight:900;text-align:center;">
+    summary = f"""<div style="padding:9px 8px;margin-bottom:8px;border-radius:12px;background:rgba(255,255,255,.045);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">
 전체 {len(unique)}명 · 수장 {len(leaders)}명 · 스타부 {len(star)}명 · 엑셀부 {len(excel)}명 · LIVE {live_count}명
 </div>"""
 
     leader_html = "".join(member_card(m, live_map, True) for m in sorted_live_first(leaders))
     if not leader_html:
-        leader_html = '<div style="padding:16px;color:#f3ead0;font-weight:900;text-align:center;">수장 데이터 없음</div>'
+        leader_html = '<div style="padding:16px;color:#dff2ff;font-weight:900;text-align:center;">수장 데이터 없음</div>'
     leader_wrap = f'<div style="text-align:center;">{leader_html}</div>'
 
     all_html = "".join(member_card(m, live_map) for m in sorted_live_first(regulars))
@@ -308,7 +307,7 @@ def render_notice(notice_json):
             raw = notice_json["data"].get("items") or notice_json["data"].get("content") or []
 
     if not raw:
-        return '<div style="padding:16px;color:#f3ead0;font-weight:900;text-align:center;">표시할 공지가 없습니다.</div>'
+        return '<div style="padding:16px;color:#dff2ff;font-weight:900;text-align:center;">표시할 공지가 없습니다.</div>'
 
     def pick_author(n):
         def clean_author_value(v):
@@ -363,11 +362,11 @@ def render_notice(notice_json):
         content = n.get("content") or n.get("body") or n.get("html") or n.get("summary") or "본문 수집 대기 또는 원문에서 확인"
         content = clean_notice_content(content)
         blocks.append(f'''
-<details style="margin:0 0 9px;padding:0;border:1px solid rgba(212,175,55,.45);border-radius:15px;background:linear-gradient(135deg,rgba(212,175,55,.10),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(212,175,55,.16);box-sizing:border-box;">
-  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(212,175,55,.30);box-sizing:border-box;">
+<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
+  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#2a2212;border:1px solid #d4af37;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(author)}</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(212,175,55,.42);word-break:keep-all;">{esc(title)}</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(author)}</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">{esc(title)}</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
@@ -378,24 +377,24 @@ def render_notice(notice_json):
 
 def render_rank_card(card):
     if not isinstance(card, dict):
-        return '<div style="padding:16px;text-align:center;color:#f3ead0;font-weight:900;">별풍선표 데이터 없음</div>'
+        return '<div style="padding:16px;text-align:center;color:#dff2ff;font-weight:900;">별풍선표 데이터 없음</div>'
 
     if card.get("month_reset"):
         msg = card.get("message") or "월초 집계 초기화 중입니다. 풍투데이 월간 데이터 반영 대기중입니다."
-        return f"""<div style="padding:18px;border-radius:16px;background:rgba(0,0,0,.32);border:1px solid rgba(212,175,55,.30);text-align:center;color:#fff;font-size:15px;font-weight:1000;line-height:1.6;">
-📢 {esc(msg)}<br><span style="color:#f3ead0;font-size:12px;">풍투데이 데이터 안정화 후 자동 집계됩니다.</span>
+        return f"""<div style="padding:18px;border-radius:16px;background:rgba(0,0,0,.32);border:1px solid rgba(90,175,255,.30);text-align:center;color:#fff;font-size:15px;font-weight:1000;line-height:1.6;">
+📢 {esc(msg)}<br><span style="color:#dff2ff;font-size:12px;">풍투데이 데이터 안정화 후 자동 집계됩니다.</span>
 </div>"""
 
     rows = card.get("members") or []
     if not rows:
-        return '<div style="padding:16px;text-align:center;color:#f3ead0;font-weight:900;">별풍선표 데이터 없음</div>'
+        return '<div style="padding:16px;text-align:center;color:#dff2ff;font-weight:900;">별풍선표 데이터 없음</div>'
 
     head = f"""
 <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.40);background:#111;box-shadow:0 0 16px rgba(212,175,55,.18);">
-  <div style="padding:14px;background:linear-gradient(135deg,#d4af37,#2a1800 70%,#060606);text-align:center;">
+  <div style="padding:14px;background:linear-gradient(135deg,#2f9bff,#2a1800 70%,#060606);text-align:center;">
     <div style="color:#fff;font-size:26px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(card.get("crew",""))}</div>
-    <div style="margin-top:6px;color:#f3ead0;font-size:12px;font-weight:900;">월간 평균 별풍선</div>
-    <div style="color:#fff1b8;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">{esc(card.get("avg","-"))}</div>
+    <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">월간 평균 별풍선</div>
+    <div style="color:#dff2ff;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">{esc(card.get("avg","-"))}</div>
   </div>
   <div style="display:flex;background:#0b0b0b;color:#d8c99b;font-size:11px;font-weight:1000;border-bottom:1px solid rgba(255,255,255,.08);">
     <div style="width:38px;padding:8px 4px;text-align:center;">순위</div>
@@ -408,13 +407,13 @@ def render_rank_card(card):
     for r in rows:
         rank = str(r.get("rank", ""))
         medal = "🥇" if rank == "1" else ("🥈" if rank == "2" else ("🥉" if rank == "3" else rank))
-        bg = "rgba(212,175,55,.10)" if rank in ("1", "2", "3") else "rgba(255,255,255,.015)"
+        bg = "rgba(45,145,255,.12)" if rank in ("1", "2", "3") else "rgba(255,255,255,.015)"
         body.append(f"""
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:{bg};font-weight:900;">
-    <div style="width:38px;padding:9px 4px;text-align:center;color:#f5d57a;">{esc(medal)}</div>
+    <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">{esc(medal)}</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(r.get("name",""))}</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;">{esc(r.get("today","-"))}</div>
-    <div style="width:96px;padding:9px 8px;text-align:right;color:#fff1b8;white-space:nowrap;">{esc(r.get("month","-"))}</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">{esc(r.get("today","-"))}</div>
+    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">{esc(r.get("month","-"))}</div>
   </div>""")
     return head + "".join(body) + "</div>"
 
@@ -430,18 +429,18 @@ def render_leader_rank_card(rank_json):
     sid = leader.get("soop_id", "y1026")
     return f"""
 <div style="margin-bottom:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,211,79,.45);background:linear-gradient(135deg,rgba(255,211,79,.16),rgba(0,0,0,.28));box-shadow:0 0 14px rgba(255,211,79,.18);text-align:center;">
-  <div style="padding:12px;background:linear-gradient(135deg,#ffd34f,#4a3100);color:#fff;font-size:20px;font-weight:1000;text-shadow:0 2px 0 #000;">👑 수장 별풍선</div>
+  <div style="padding:12px;background:linear-gradient(135deg,#7ec8ff,#4a3100);color:#fff;font-size:20px;font-weight:1000;text-shadow:0 2px 0 #000;">👑 수장 별풍선</div>
   <div style="padding:14px 12px 15px;">
     <div style="color:#fff;font-size:21px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(name)}</div>
-    <div style="margin-top:3px;color:#bda870;font-size:11px;font-weight:900;">{esc(sid)}</div>
+    <div style="margin-top:3px;color:#9ccfff;font-size:11px;font-weight:900;">{esc(sid)}</div>
     <div style="display:flex;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap;">
       <div style="min-width:118px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
-        <div style="color:#f3ead0;font-size:11px;font-weight:900;">오늘</div>
-        <div style="color:#ffd34f;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(today)}</div>
+        <div style="color:#dff2ff;font-size:11px;font-weight:900;">오늘</div>
+        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(today)}</div>
       </div>
       <div style="min-width:142px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
-        <div style="color:#f3ead0;font-size:11px;font-weight:900;">월간</div>
-        <div style="color:#ffd34f;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(month)}</div>
+        <div style="color:#dff2ff;font-size:11px;font-weight:900;">월간</div>
+        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(month)}</div>
       </div>
     </div>
   </div>
@@ -457,7 +456,7 @@ def render_rank(rank_json):
     updated = rank_json.get("updated_at","-") if isinstance(rank_json, dict) else "-"
     used = rank_json.get("used_month","-") if isinstance(rank_json, dict) else "-"
     return f"""
-<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#f3ead0;font-size:12px;font-weight:900;text-align:center;">갱신 {esc(updated)} · 기준 {esc(used)}</div>
+<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 {esc(updated)} · 기준 {esc(used)}</div>
 {msg}
 {leader_card}
 {section("엑셀부 별풍선표", excel, True)}
@@ -477,7 +476,7 @@ def render_schedule(schedule_json):
             raw = schedule_json["data"]
 
     if not raw:
-        return '<div style="padding:16px;color:#f3ead0;font-weight:900;text-align:center;">표시할 일정이 없습니다.</div>'
+        return '<div style="padding:16px;color:#dff2ff;font-weight:900;text-align:center;">표시할 일정이 없습니다.</div>'
 
     blocks = []
     for s in raw[:20]:
@@ -493,19 +492,54 @@ def render_schedule(schedule_json):
 <div style="margin:8px 0;padding:12px;border-radius:14px;background:rgba(0,0,0,.25);border:1px solid rgba(90,175,255,.25);">
   <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;{badge_style}font-size:11px;font-weight:1000;">{esc(badge_text)}</span></div>
   <div style="color:#fff;font-size:14px;font-weight:1000;line-height:1.45;">{esc(title)}</div>
-  <div style="margin-top:6px;color:#f3ead0;font-size:12px;font-weight:900;">{esc(date)}</div>
+  <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">{esc(date)}</div>
 </div>''')
     return "".join(blocks)
 
 def render_hero_banner(updated, total_members, live_count):
+    logo_url = f"{BASE_URL}/assets//crew_logos/cninelogo.png?v=9999"
     return f"""
-  <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.52);background:#050505;box-shadow:0 0 22px rgba(212,175,55,.20);">
-    <img src="{BANNER_IMAGE_URL}?v={CACHE_BUST}" style="display:block;width:100%;height:auto;border:0;margin:0;padding:0;">
-    <div style="padding:13px 10px 14px;text-align:center;background:linear-gradient(180deg,#15100a,#050505);border-top:1px solid rgba(212,175,55,.35);">
-      <div style="color:#fff;font-size:24px;line-height:1.05;font-weight:1000;letter-spacing:.8px;text-shadow:0 0 10px rgba(212,175,55,.72),0 3px 0 #000;">C9 CREW DASHBOARD</div>
-      <div style="margin-top:6px;color:#d4af37;font-size:12px;font-weight:900;letter-spacing:3px;">ONE TEAM · ONE DESTINY</div>
-    </div>
+  <div style="padding:18px 10px 16px;text-align:center;border:1px solid rgba(90,175,255,.55);border-radius:18px;background:linear-gradient(135deg,rgba(25,125,255,.28),rgba(0,0,0,.70));box-shadow:0 0 18px rgba(40,145,255,.25);">
+    <img src="{logo_url}" style="display:block;width:112px;max-width:45%;height:auto;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(255,255,255,.30));">
+    <div style="font-size:27px;line-height:1.05;font-weight:1000;color:#fff;text-shadow:0 0 9px rgba(75,170,255,.95),0 3px 0 #002b55,0 8px 18px #000;">CNINE DASHBOARD</div>
+    <div style="display:inline-block;margin-top:9px;padding:6px 12px;border-radius:999px;color:#fff;font-size:12px;font-weight:900;border:1px solid rgba(105,185,255,.55);background:rgba(0,18,38,.50);">씨나인 통합 현황판</div>
   </div>"""
+
+
+def expand_card(title, subtitle, icon, body, color="#2f9bff", open_attr=False):
+    """리캡 버튼 폭에 맞춘 전체폭 펼침 메뉴.
+
+    핵심:
+    - 메뉴 summary를 width:100%로 출력해서 좁은 2열 카드처럼 보이지 않게 함
+    - 메뉴 세로 높이를 72px로 키워 얇아 보이지 않게 함
+    - 펼친 내용도 바로 아래 전체폭으로 출력되어 잘리지 않음
+    - JS 없이 details/summary만 사용
+    """
+    open_text = " open" if open_attr else ""
+    return f"""
+<details{open_text} style="display:block;width:100%;margin:0 0 10px 0;padding:0;box-sizing:border-box;">
+  <summary style="list-style:none;cursor:pointer;display:flex;width:100%;min-height:72px;margin:0;padding:0 16px;border:1px solid {color};border-radius:14px;background:linear-gradient(135deg,rgba(25,125,255,.22),rgba(0,0,0,.48));box-shadow:0 0 13px {color}59;color:#fff;text-align:center;box-sizing:border-box;overflow:hidden;align-items:center;justify-content:center;gap:10px;">
+    <span style="display:inline-block;font-size:24px;line-height:1;filter:drop-shadow(0 0 6px rgba(255,255,255,.28));">{icon}</span>
+    <span style="display:inline-block;color:#fff;font-size:18px;font-weight:1000;line-height:1.15;text-shadow:0 0 8px rgba(80,170,255,.90),0 2px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(title)}</span>
+  </summary>
+  <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid {color};border-radius:16px;box-shadow:0 0 13px {color}33;box-sizing:border-box;text-align:left;overflow:hidden;">
+    {body}
+  </div>
+</details>"""
+
+
+def render_expand_cards(rank, members, live_map, notice, schedule):
+    """리캡 아래 섹션을 앵커 점프가 아닌 2열 펼침 카드로 출력한다."""
+    cards = [
+        expand_card("월간 별풍선", "엑셀부 · 스타부 집계", "⭐", render_rank(rank), "#2f9bff", False),
+        expand_card("멤버 현황판", "LIVE · 파트별 현황", "👥", render_members(members, live_map), "#19c2ff", False),
+        expand_card("공지사항", "씨나인 SOOP 공지", "📢", render_notice(notice), "#ff4b6e", False),
+        expand_card("씨나인 일정", "TODAY · 주요 일정", "📅", render_schedule(schedule), "#22c55e", False),
+    ]
+    return f"""
+<div style="margin:10px 0 13px;padding:0;border:0;background:transparent;box-sizing:border-box;text-align:center;">
+  {''.join(cards)}
+</div>"""
 
 def main():
     members = load_json("cnine_members.json", [])
@@ -521,7 +555,7 @@ def main():
     dashboard_notice = read_dashboard_notice()
 
     main_body = f"""
-<div style="border:1px solid rgba(212,175,55,.28);border-radius:16px;background:rgba(0,0,0,.26);padding:10px;box-shadow:inset 0 0 18px rgba(212,175,55,.08);">
+<div style="border:1px solid rgba(90,175,255,.25);border-radius:16px;background:rgba(0,0,0,.22);padding:10px;">
   {metric("전체 멤버", f"{len(unique_members)}명")}
   {metric("현재 LIVE", f"{live_count}명")}
   {metric("집계시간", updated)}
@@ -529,17 +563,14 @@ def main():
   {render_self_verify_card()}
 </div>"""
 
-    html_out = f"""<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(212,175,55,.18),transparent 32%),linear-gradient(180deg,#050505 0%,#101010 52%,#030303 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(212,175,55,.48);">
+    html_out = f"""<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(45,145,255,.22),transparent 34%),linear-gradient(180deg,#05070d 0%,#071426 52%,#030507 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(90,175,255,.45);">
   {render_hero_banner(updated, len(unique_members), live_count)}
 
-  {main_body}
-  {section("월간 별풍선", render_rank(rank), False, "#d4af37")}
-  {section("멤버 현황판", render_members(members, live_map), False, "#3b82f6")}
-  {section("공지사항", render_notice(notice), False, "#ff4b6e")}
-  {section("씨나인 일정", render_schedule(schedule), False, "#22c55e")}
+  {section("메인 현황", main_body, True, "#2f9bff")}
+  {render_expand_cards(rank, members, live_map, notice, schedule)}
 
-  <div style="margin-top:12px;text-align:center;color:#d4af37;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(212,175,55,.35);">{esc(WATERMARK)}</div>
-  <div style="margin-top:5px;text-align:center;color:#bda870;font-size:10px;font-weight:700;">자동 변환: {esc(updated)}</div>
+  <div style="margin-top:12px;text-align:center;color:#7ec8ff;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(80,170,255,.35);">{esc(WATERMARK)}</div>
+  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: {esc(updated)}</div>
 </div>"""
 
     paste_txt = clean_html_for_wago(html_out)
