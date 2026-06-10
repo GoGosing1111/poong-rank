@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10 19:05:23",
+  "updated_at": "2026-06-10 19:05:21",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -27,7 +27,7 @@
       "name": "송채연",
       "match": "송채연",
       "soop_id": "jfiary0718",
-      "today": 8070,
+      "today": 9484,
       "month": 395122,
       "today_api_name": "송채연♥",
       "month_api_name": "송채연♥",
@@ -424,7 +424,7 @@
       {
         "rank": 1,
         "name": "송채연",
-        "today": "8,070",
+        "today": "9,484",
         "month": "395,122",
         "width": "100%",
         "first": true,
