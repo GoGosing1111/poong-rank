@@ -1,11 +1,21 @@
 {
   "ok": true,
-  "updated_at": "2026-06-10 13:10:10",
+  "updated_at": "2026-06-10 19:04:29",
   "source": "https://www.cnine.kr/timeline",
-  "count": 8,
-  "today_count": 2,
+  "count": 9,
+  "today_count": 3,
   "future_count": 6,
   "items": [
+    {
+      "title": "스타부 : 엠비대 저그 ck <feat. 왜냐맨장민철>",
+      "date": "2026.06.10 (수)",
+      "raw_date": "2026-06-10",
+      "time": "16:00",
+      "datetime": "2026.06.10 (수) · ⏰ 16:00",
+      "dday": "TODAY",
+      "type": "스타",
+      "source_line": "2026년 06월 10일(수) 16:00 ~ 19:00"
+    },
     {
       "title": "스타부 : 3티어 PL <feat. 디임>",
       "date": "2026.06.10 (수)",
