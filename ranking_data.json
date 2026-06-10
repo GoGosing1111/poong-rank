@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11 00:05:24",
+  "updated_at": "2026-06-11 00:05:27",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -38,9 +38,9 @@
       "name": "디임",
       "match": "디임♥",
       "soop_id": "qpqpro",
-      "today": 0,
+      "today": 20023,
       "month": 371722,
-      "today_api_name": "",
+      "today_api_name": "디임",
       "month_api_name": "디임",
       "matched": true
     },
@@ -93,9 +93,9 @@
       "name": "애순이",
       "match": "애순이",
       "soop_id": "yunyeson3015",
-      "today": 0,
+      "today": 2078,
       "month": 306567,
-      "today_api_name": "",
+      "today_api_name": "애순이",
       "month_api_name": "애순이",
       "matched": true
     },
@@ -280,9 +280,9 @@
       "name": "박재혁",
       "match": "박재혁;;;",
       "soop_id": "rlekfu6",
-      "today": 0,
+      "today": 22,
       "month": 66305,
-      "today_api_name": "",
+      "today_api_name": "박재혁;;;",
       "month_api_name": "박재혁;;;",
       "matched": true
     },
@@ -460,7 +460,7 @@
       {
         "rank": 5,
         "name": "애순이",
-        "today": "0",
+        "today": "2,078",
         "month": "306,567",
         "width": "74%",
         "first": false,
@@ -568,7 +568,7 @@
       {
         "rank": 1,
         "name": "디임",
-        "today": "0",
+        "today": "20,023",
         "month": "371,722",
         "width": "100%",
         "first": true,
@@ -676,7 +676,7 @@
       {
         "rank": 13,
         "name": "박재혁",
-        "today": "0",
+        "today": "22",
         "month": "66,305",
         "width": "17%",
         "first": false,
