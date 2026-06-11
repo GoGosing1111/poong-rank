@@ -266,12 +266,12 @@ btn.onclick = function() {{
     return f"""
 <div id="section_replay" style="margin-top:10px;border:1px solid rgba(126,200,255,.46);border-radius:15px;background:linear-gradient(135deg,rgba(47,155,255,.18),rgba(99,91,255,.16),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
   <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(126,200,255,.26);color:#7ec8ff;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
-    🎬 다시보기 채팅보기
+    🎬 CNINE 다시보기 분석
   </div>
 
   <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
     SOOP VOD·클립 페이지에서<br>
-    <span style="color:#7ec8ff;font-weight:1000;">채팅 로그 / 후원 / 도전 / 대결</span>을 한 번에 확인합니다.
+    <span style="color:#7ec8ff;font-weight:1000;">채팅 · 후원 · 도전 · 대결 데이터</span>를 한 번에 확인합니다.
 
     <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
       {iframe_html}
@@ -283,8 +283,7 @@ btn.onclick = function() {{
     </div>
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
-      ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
-      ※ 원본 패널 생성 후 CNINE 문구만 안전하게 적용됩니다.
+      ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.
     </div>
   </div>
 </div>"""
