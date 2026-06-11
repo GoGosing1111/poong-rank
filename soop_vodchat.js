@@ -143,3 +143,114 @@ function _0xae9d(_0x23d5be,_0x19da7a){_0x23d5be=_0x23d5be-(-0x17*0x69+-0x9*0x17+
   const timer=setInterval(()=>{skin(); if(++n>=30) clearInterval(timer);},250);
   window.addEventListener('load',()=>{setTimeout(skin,100);setTimeout(skin,700);setTimeout(skin,1500);setTimeout(skin,3000);});
 }catch(e){console.warn('[TQ official relayout skin]',e)}})();
+
+
+;(()=>{try{
+  if(window.__TQ_ADMIN_RELAYOUT_2026061222__) return;
+  window.__TQ_ADMIN_RELAYOUT_2026061222__ = 1;
+  const MARK='TQ_ADMIN_RELAYOUT_2026061222';
+  const C={
+    bg:'#f5f7fa', head:'#0f172a', head2:'#111827', panel:'#ffffff', panelAlt:'#f1f5f9',
+    line:'#cbd5e1', line2:'#94a3b8', text:'#111827', sub:'#64748b', blue:'#1684ff', blueDark:'#0068d9',
+    softBlue:'#e8f3ff', green:'#10b981', amber:'#f59e0b', pink:'#d9468f', cyan:'#0891b2'
+  };
+  const imp=(el,obj)=>{if(!el||!el.style)return;for(const k in obj)el.style.setProperty(k,obj[k],'important')};
+  const txt=el=>(el.textContent||'').replace(/\s+/g,' ').trim();
+  const vis=el=>{const r=el.getBoundingClientRect();return r.width>0&&r.height>0};
+  function findRoot(){
+    const arr=[...document.querySelectorAll('div,section,main,article')].filter(el=>{
+      if(el===document.body||el===document.documentElement||!vis(el))return false;
+      const t=txt(el),r=el.getBoundingClientRect(),cs=getComputedStyle(el);
+      if(!(t.includes('총 방송 시간')&&t.includes('채팅 순위')&&t.includes('채팅 내역')))return false;
+      if(r.width<430||r.height<260)return false;
+      if(r.width>innerWidth*.94&&r.height>innerHeight*.84)return false;
+      return (cs.position==='fixed'||cs.position==='absolute'||(parseInt(cs.zIndex)||0)>9);
+    }).map(el=>{const r=el.getBoundingClientRect(),cs=getComputedStyle(el);return{el,area:r.width*r.height,zi:parseInt(cs.zIndex)||0}})
+      .sort((a,b)=>a.area-b.area||b.zi-a.zi);
+    return arr[0]?.el||null;
+  }
+  function inject(){
+    if(document.getElementById(MARK))return;
+    const st=document.createElement('style'); st.id=MARK;
+    st.textContent=`
+      [data-tq-admin-skin="${MARK}"]{background:${C.bg}!important;color:${C.text}!important;border:1px solid ${C.line2}!important;border-radius:3px!important;box-shadow:0 18px 55px rgba(15,23,42,.32)!important;overflow:hidden!important;font-family:Arial,'Malgun Gothic',sans-serif!important;}
+      [data-tq-admin-skin="${MARK}"] *{box-sizing:border-box!important;text-shadow:none!important;outline:none!important;}
+      [data-tq-admin-skin="${MARK}"] div{border-radius:2px!important;box-shadow:none!important;}
+      [data-tq-admin-skin="${MARK}"] button,[data-tq-admin-skin="${MARK}"] input,[data-tq-admin-skin="${MARK}"] select{border-radius:2px!important;box-shadow:none!important;font-weight:700!important;}
+      [data-tq-admin-skin="${MARK}"] ::-webkit-scrollbar{width:9px!important;height:9px!important;}
+      [data-tq-admin-skin="${MARK}"] ::-webkit-scrollbar-track{background:#e2e8f0!important;border-left:1px solid ${C.line}!important;}
+      [data-tq-admin-skin="${MARK}"] ::-webkit-scrollbar-thumb{background:#64748b!important;border-radius:0!important;}
+    `;
+    (document.head||document.documentElement).appendChild(st);
+  }
+  function skin(){
+    const root=findRoot(); if(!root)return; inject(); root.setAttribute('data-tq-admin-skin',MARK);
+    const rr=root.getBoundingClientRect();
+    imp(root,{background:C.bg,color:C.text,border:`1px solid ${C.line2}`,borderRadius:'3px'});
+    const nodes=[root,...root.querySelectorAll('div,section,main,article,header,aside,button,input,select,span')];
+    nodes.forEach(el=>{
+      if(!vis(el))return; const r=el.getBoundingClientRect(),t=txt(el),tag=el.tagName;
+      // default: remove neon/dark rounded look from big containers
+      if(tag==='DIV'||tag==='SECTION'||tag==='MAIN'||tag==='ARTICLE'||tag==='HEADER'||tag==='ASIDE'){
+        if(r.width>60&&r.height>28){imp(el,{boxShadow:'none',textShadow:'none',borderRadius:'2px'});}
+      }
+      // title bar
+      if(t.includes('철구 형님들') && r.width>rr.width*.45 && r.height<72){
+        imp(el,{background:C.head,color:'#fff',border:'0',borderBottom:`3px solid ${C.blue}`,borderRadius:'0',boxShadow:'none'});
+        el.querySelectorAll('span,div,button').forEach(ch=>{ if(txt(ch).length<40) imp(ch,{color:'#fff'}); });
+      }
+      // tabs/buttons in header
+      if(['전체','후원','도전','대결'].includes(t)){
+        if(t==='전체') imp(el,{background:C.blue,color:'#fff',border:`1px solid ${C.blueDark}`,borderRadius:'2px',fontWeight:'800'});
+        else imp(el,{background:'#1f2937',color:'#d1d5db',border:'1px solid #374151',borderRadius:'2px'});
+      }
+      // top stats: flat official cards
+      if((t.includes('총 방송 시간')||t.includes('총 채팅 수')||t.includes('채팅 인원')||t.includes('상태')) && r.width>90 && r.height>40 && r.height<120){
+        imp(el,{background:C.panel,color:C.text,border:`1px solid ${C.line}`,borderLeft:`4px solid ${C.blue}`,borderRadius:'2px',boxShadow:'none'});
+        el.querySelectorAll('span,div').forEach(ch=>{ const ct=txt(ch); if(/^[0-9:,]+$/.test(ct)||ct.includes('완료')) imp(ch,{color:C.text,fontWeight:'900'}); });
+      }
+      // main panels
+      if((t.includes('채팅 순위')||t.includes('채팅 내역')) && r.width>150 && r.height>120){
+        imp(el,{background:C.panel,color:C.text,border:`1px solid ${C.line}`,borderRadius:'2px',boxShadow:'none'});
+      }
+      // panel headers: table/tool header look
+      if((t.includes('채팅 순위')||t.includes('채팅 내역')) && r.height<78 && r.width>130){
+        imp(el,{background:C.panelAlt,color:C.text,borderBottom:`1px solid ${C.line}`,borderRadius:'2px 2px 0 0'});
+      }
+      // chat log rows by timestamp
+      if(/\b\d{2}:\d{2}:\d{2}\b/.test(t) && r.width>220 && r.height>38 && r.height<110){
+        imp(el,{background:'#fff',color:C.text,border:'0',borderBottom:`1px solid #e5e7eb`,borderRadius:'0',paddingTop:'8px',paddingBottom:'8px'});
+      }
+      // selected/hover-ish current row that used dark gray -> blue tint
+      if(/\b\d{2}:\d{2}:\d{2}\b/.test(t) && t.includes('정수연') && r.width>220 && r.height>38 && r.height<110){
+        imp(el,{background:C.softBlue,borderLeft:`3px solid ${C.blue}`});
+      }
+      // rank rows: make table-like white rows
+      if(/^[1-9]\d?\s+/.test(t) && /회/.test(t) && r.width>120 && r.height>22 && r.height<52){
+        imp(el,{background:'#fff',borderBottom:`1px solid #e5e7eb`,borderRadius:'0'});
+      }
+      // count badges: blue square, not mint pill
+      if(/^[\d,]+회$/.test(t) && r.width<100 && r.height<36){
+        imp(el,{background:C.softBlue,color:C.blueDark,border:`1px solid #bfdbfe`,borderRadius:'2px',fontWeight:'900'});
+      }
+      // inputs / buttons
+      if(tag==='BUTTON'||tag==='INPUT'||tag==='SELECT'){
+        imp(el,{background:'#fff',color:C.text,border:`1px solid ${C.line2}`,borderRadius:'2px',boxShadow:'none'});
+      }
+      if(tag==='INPUT') imp(el,{background:'#f8fafc',color:C.text});
+      // Time column subdued
+      if(/^\d{2}:\d{2}:\d{2}$/.test(t)) imp(el,{color:C.sub,fontWeight:'800'});
+      // Simple rank numbers
+      if(/^(1|2|3)$/.test(t) && r.width<40) imp(el,{color:C.blueDark,fontWeight:'900'});
+      if(/^([4-9]|1[0-9])$/.test(t) && r.width<45) imp(el,{color:C.sub,fontWeight:'800'});
+      // nick colors keep readable but less neon
+      if(t.includes('정수연')) imp(el,{color:'#9a6b00'});
+      if(t.includes('BJ롤러')) imp(el,{color:C.cyan});
+      if(t.includes('KIMBAKLE')||t.includes('쫏구')) imp(el,{color:C.pink});
+      if(t.includes('완료')) imp(el,{color:C.green,fontWeight:'900'});
+    });
+  }
+  [80,250,600,1200,2200].forEach(ms=>setTimeout(skin,ms));
+  const mo=new MutationObserver(()=>{clearTimeout(window.__tqAdminSkinTimer);window.__tqAdminSkinTimer=setTimeout(skin,80)});
+  setTimeout(()=>{const root=findRoot(); if(root) mo.observe(root,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});},500);
+}catch(e){console.warn('TQ_ADMIN_RELAYOUT_2026061222 failed',e)}})();
