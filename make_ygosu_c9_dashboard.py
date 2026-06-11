@@ -212,7 +212,7 @@ def render_vodchat_card():
     - 원본 UI 생성은 loader가 담당하고, CNINE 패치는 원본 UI 생성 이후 문구만 안전하게 변경
     """
     vod_url = "https://vod.sooplive.co.kr/"
-    loader_js = f"{BASE_URL}/soop_vodchat_loader.js?v=2026061204"
+    loader_js = f"{BASE_URL}/soop_vodchat_loader.js?v=2026061207"
 
     iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
 &lt;meta charset='utf-8'&gt;
