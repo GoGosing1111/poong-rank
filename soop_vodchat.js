@@ -63,3 +63,80 @@ function _0xae9d(_0x23d5be,_0x19da7a){_0x23d5be=_0x23d5be-(-0x17*0x69+-0x9*0x17+
   }
   if(document.head) addStyle(); else document.addEventListener('DOMContentLoaded', addStyle, {once:true});
 }catch(e){console.warn('[TQ skin]', e)}})();
+
+
+;(()=>{try{
+  if(window.__TQ_SOOP_FORCE_SKIN_2026061219__) return;
+  window.__TQ_SOOP_FORCE_SKIN_2026061219__ = 1;
+  const MARK = 'tq-soop-force-skin-2026061219';
+  const C = {
+    bg:'#0f1117', top:'#171a22', panel:'#1a1d26', panel2:'#202431', soft:'#242936',
+    line:'#343a46', line2:'#465064', blue:'#2d7ff9', blue2:'#58a6ff',
+    text:'#f3f6fb', sub:'#aab2c0', green:'#33d69f', gold:'#f5b544'
+  };
+  function set(el, obj){ if(!el || !el.style) return; for(const k in obj) el.style.setProperty(k, obj[k], 'important'); }
+  function looksCard(el){
+    const r = el.getBoundingClientRect();
+    if(r.width < 80 || r.height < 40) return false;
+    const cs = getComputedStyle(el);
+    return (cs.backgroundColor && cs.backgroundColor !== 'rgba(0, 0, 0, 0)') || cs.borderRadius !== '0px';
+  }
+  function skin(){
+    if(document.body){
+      document.body.setAttribute('data-tq-skin', MARK);
+      set(document.body,{background:C.bg,color:C.text});
+    }
+    document.querySelectorAll('div,section,main,article,header,aside').forEach(el=>{
+      const t=(el.textContent||'').replace(/\s+/g,' ').trim();
+      const r=el.getBoundingClientRect();
+      if(!r.width || !r.height) return;
+      if(t.includes('철구 형님들') && r.height < 90){
+        set(el,{background:C.top,borderBottom:`1px solid ${C.line}`,boxShadow:'none'});
+      }
+      if(t.includes('총 방송 시간') || t.includes('총 채팅 수') || t.includes('채팅 인원') || t.includes('상태')){
+        if(r.width>90 && r.height>40 && r.height<100){
+          set(el,{background:C.panel,border:`1px solid ${C.line}`,borderRadius:'8px',boxShadow:'none'});
+        }
+      }
+      if((t.includes('채팅 순위') || t.includes('채팅 내역')) && r.width>180 && r.height>120){
+        set(el,{background:C.panel,border:`1px solid ${C.line}`,borderRadius:'8px',boxShadow:'none'});
+      }
+      if((t.includes('라로송골새롱') || t.includes('정수연') || t.includes('KIMBAKLE')) && looksCard(el)){
+        if(r.width>160 && r.height>30){
+          set(el,{background:'transparent',borderColor:C.line,boxShadow:'none'});
+        }
+      }
+      if(t === '전체' || t === '후원' || t === '도전' || t === '대결'){
+        set(el,{borderRadius:'7px',boxShadow:'none'});
+        if(t === '전체') set(el,{background:C.blue,border:`1px solid ${C.blue}`,color:'#fff'});
+        else set(el,{background:C.soft,border:`1px solid ${C.line}`,color:C.sub});
+      }
+    });
+    document.querySelectorAll('button,input,select').forEach(el=>{
+      set(el,{background:C.soft,border:`1px solid ${C.line}`,borderRadius:'7px',boxShadow:'none',color:C.text});
+    });
+    document.querySelectorAll('input').forEach(el=>set(el,{background:'#11141b'}));
+    document.querySelectorAll('*').forEach(el=>{
+      const t=(el.textContent||'').trim();
+      const r=el.getBoundingClientRect();
+      if(!r.width || !r.height) return;
+      const cs=getComputedStyle(el);
+      if(cs.color === 'rgb(16, 185, 129)' || cs.color === 'rgb(52, 211, 153)') set(el,{color:C.blue2});
+      if(t.endsWith('회') && r.width<80 && r.height<32) set(el,{background:'#16345f',color:C.blue2,borderRadius:'5px'});
+      if(/^\d+$/.test(t) && r.width<45 && r.height<35) set(el,{color:C.sub});
+      if(t === '완료' || t.includes('완료 ✨')) set(el,{color:C.blue2});
+      if(t.includes('채팅 순위') || t.includes('채팅 내역')) set(el,{color:C.text});
+    });
+  }
+  const css=document.createElement('style'); css.id=MARK; css.textContent=`
+    [data-tq-skin="${MARK}"] *{text-shadow:none!important;}
+    [data-tq-skin="${MARK}"] ::-webkit-scrollbar{width:8px!important;height:8px!important}
+    [data-tq-skin="${MARK}"] ::-webkit-scrollbar-track{background:#11141b!important}
+    [data-tq-skin="${MARK}"] ::-webkit-scrollbar-thumb{background:#485064!important;border-radius:8px!important}
+    [data-tq-skin="${MARK}"] ::-webkit-scrollbar-thumb:hover{background:#2d7ff9!important}
+  `;
+  (document.head||document.documentElement).appendChild(css);
+  let n=0;
+  const timer=setInterval(()=>{ skin(); if(++n>=12) clearInterval(timer); },250);
+  window.addEventListener('load',()=>{setTimeout(skin,100);setTimeout(skin,800);});
+}catch(e){console.warn('[TQ force skin]', e)}})();
