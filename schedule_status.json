@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-11 21:38:47",
+  "updated_at": "2026-06-11 22:10:38",
   "source": "https://www.cnine.kr/timeline",
-  "count": 5,
+  "count": 6,
   "today_count": 1,
-  "future_count": 4,
+  "future_count": 5,
   "items": [
     {
       "title": "스타부 : 학생회장 후보자 - 100분 토론회",
@@ -25,6 +25,16 @@
       "dday": "D-2",
       "type": "스타",
       "source_line": "2026년 06월 13일(토) 17:00 ~ 2026년 06월 30일(화) 10:00"
+    },
+    {
+      "title": "스타부 : 2부 패배팀 벌칙",
+      "date": "2026.06.13 (토)",
+      "raw_date": "2026-06-13",
+      "time": "시간미정",
+      "datetime": "2026.06.13 (토) · ⏰ 시간미정",
+      "dday": "D-2",
+      "type": "스타",
+      "source_line": "2026년 06월 13일(토)"
     },
     {
       "title": "씨나인 : 인간 vs 버튜버 대결(날찌미정)",
