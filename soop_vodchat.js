@@ -254,3 +254,341 @@ function _0xae9d(_0x23d5be,_0x19da7a){_0x23d5be=_0x23d5be-(-0x17*0x69+-0x9*0x17+
   const mo=new MutationObserver(()=>{clearTimeout(window.__tqAdminSkinTimer);window.__tqAdminSkinTimer=setTimeout(skin,80)});
   setTimeout(()=>{const root=findRoot(); if(root) mo.observe(root,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});},500);
 }catch(e){console.warn('TQ_ADMIN_RELAYOUT_2026061222 failed',e)}})();
+
+
+/* CNINE_DATA_CENTER_2026061223: scoped popup-only relayout skin */
+(function(){
+  const MARK = 'CNINE_DATA_CENTER_2026061223';
+  if (window[MARK]) return;
+  window[MARK] = true;
+
+  const C = {
+    bg: '#0b1220',
+    panel: '#111827',
+    panel2: '#162033',
+    card: '#101827',
+    line: '#26364f',
+    line2: '#365173',
+    blue: '#2d7ff9',
+    blue2: '#58a6ff',
+    text: '#f8fafc',
+    sub: '#94a3b8',
+    muted: '#64748b',
+    green: '#22c55e',
+    row: '#0f172a'
+  };
+
+  function imp(el, prop, val){ if(el) el.style.setProperty(prop, val, 'important'); }
+  function setText(el, txt){ if(el && el.textContent !== txt) el.textContent = txt; }
+
+  function commonAncestor(nodes){
+    nodes = nodes.filter(Boolean);
+    if (!nodes.length) return null;
+    let a = nodes[0];
+    while (a) {
+      if (nodes.every(n => a.contains(n))) return a;
+      a = a.parentElement;
+    }
+    return null;
+  }
+
+  function getRoot(){
+    const nodes = [
+      document.getElementById('sd-vod-title'),
+      document.getElementById('sd-panel-rank'),
+      document.getElementById('sd-panel-log'),
+      document.querySelector('.sd-stats-bar')
+    ];
+    let root = commonAncestor(nodes);
+    if (!root) root = document.getElementById('sd-vod-title')?.parentElement || document.body;
+    return root;
+  }
+
+  function q(sel, root){ return (root || getRoot()).querySelector(sel); }
+  function qa(sel, root){ return Array.from((root || getRoot()).querySelectorAll(sel)); }
+
+  function styleButton(el, active){
+    imp(el,'height','30px');
+    imp(el,'padding','0 13px');
+    imp(el,'border-radius','7px');
+    imp(el,'font-size','12px');
+    imp(el,'font-weight','800');
+    imp(el,'letter-spacing','-.2px');
+    imp(el,'border', active ? '1px solid '+C.blue2 : '1px solid '+C.line);
+    imp(el,'background', active ? C.blue : '#0f172a');
+    imp(el,'color', C.text);
+    imp(el,'box-shadow', active ? '0 0 0 3px rgba(45,127,249,.18)' : 'none');
+  }
+
+  function apply(){
+    const root = getRoot();
+    if (!root) return;
+
+    // popup/root base only: never touch SOOP page globally
+    imp(root,'background',C.bg);
+    imp(root,'color',C.text);
+    imp(root,'border','1px solid '+C.line2);
+    imp(root,'box-shadow','0 18px 50px rgba(0,0,0,.45)');
+    imp(root,'font-family','Pretendard, Inter, Arial, sans-serif');
+
+    // title / branding
+    const title = document.getElementById('sd-vod-title');
+    if (title) {
+      if (!title.dataset.cnine1223) {
+        title.dataset.cnine1223 = '1';
+        title.innerHTML = '<div style="font-size:18px;font-weight:950;letter-spacing:-.4px;line-height:1.05;">CNINE Data Center</div><div style="font-size:10px;font-weight:800;letter-spacing:.8px;color:#58a6ff;margin-top:4px;text-transform:uppercase;">VOD Replay Analytics</div>';
+      }
+      imp(title,'background','transparent');
+      imp(title,'color',C.text);
+      imp(title,'display','flex');
+      imp(title,'flex-direction','column');
+      imp(title,'align-items','flex-start');
+      imp(title,'justify-content','center');
+      imp(title,'min-width','230px');
+      imp(title,'height','44px');
+      imp(title,'padding','0 4px');
+      imp(title,'white-space','normal');
+      imp(title,'overflow','visible');
+      imp(title,'text-overflow','clip');
+    }
+
+    // top header wrapper inferred from title/tabs
+    const tabs = qa('.sd-main-tab', root);
+    tabs.forEach(tab => {
+      const txt = (tab.textContent || '').trim();
+      const active = tab.classList.contains('active') || txt === '전체' || tab.id === 'tab-all';
+      styleButton(tab, active);
+      if (txt.includes('전체')) tab.textContent = '전체';
+      else if (txt.includes('후원')) tab.textContent = '후원';
+      else if (txt.includes('도전')) tab.textContent = '도전';
+      else if (txt.includes('대결')) tab.textContent = '대결';
+    });
+
+    // stat cards
+    const stats = q('.sd-stats-bar', root);
+    if (stats) {
+      imp(stats,'background',C.bg);
+      imp(stats,'border-top','1px solid '+C.line);
+      imp(stats,'border-bottom','1px solid '+C.line);
+      imp(stats,'border-left','0');
+      imp(stats,'border-right','0');
+      imp(stats,'gap','10px');
+      imp(stats,'padding','12px 14px');
+      imp(stats,'color',C.text);
+    }
+    const labels = qa('.sd-stat-label', root);
+    if (labels[0]) setText(labels[0], 'BROADCAST TIME');
+    if (labels[1]) setText(labels[1], (labels[1].textContent || '').includes('대결') ? 'MISSION COUNT' : 'TOTAL COUNT');
+    if (labels[2]) setText(labels[2], (labels[2].textContent || '').includes('대결') ? 'MISSION USERS' : 'ACTIVE USERS');
+    if (labels[3]) setText(labels[3], 'SYSTEM STATUS');
+
+    qa('.sd-stat-card', root).forEach((card, i) => {
+      imp(card,'background', i===3 ? 'linear-gradient(180deg,#10233d,#0f172a)' : C.card);
+      imp(card,'border','1px solid '+(i===3 ? C.blue : C.line));
+      imp(card,'border-radius','9px');
+      imp(card,'box-shadow','none');
+      imp(card,'padding','11px 14px');
+      imp(card,'min-height','48px');
+      imp(card,'color',C.text);
+    });
+    qa('.sd-stat-label', root).forEach(el => {
+      imp(el,'display','block');
+      imp(el,'font-size','10px');
+      imp(el,'font-weight','900');
+      imp(el,'letter-spacing','.6px');
+      imp(el,'color',C.sub);
+      imp(el,'margin-bottom','5px');
+    });
+    qa('.sd-stat-value', root).forEach(el => {
+      imp(el,'display','block');
+      imp(el,'font-size','18px');
+      imp(el,'font-weight','950');
+      imp(el,'letter-spacing','-.3px');
+      imp(el,'color',C.text);
+    });
+    const status = document.getElementById('stat-status');
+    if (status) { imp(status,'color',C.green); imp(status,'font-size','18px'); }
+
+    // body and panel layout
+    const body = q('.sd-body', root);
+    if (body) {
+      imp(body,'background',C.bg);
+      imp(body,'color',C.text);
+      imp(body,'border','0');
+      imp(body,'gap','12px');
+      imp(body,'padding','12px 14px 14px');
+    }
+    const rankPanel = document.getElementById('sd-panel-rank');
+    const logPanel = document.getElementById('sd-panel-log');
+    if (rankPanel) {
+      imp(rankPanel,'width','30%');
+      imp(rankPanel,'background',C.panel);
+      imp(rankPanel,'color',C.text);
+      imp(rankPanel,'border','1px solid '+C.line);
+      imp(rankPanel,'border-radius','10px');
+      imp(rankPanel,'overflow','hidden');
+      imp(rankPanel,'box-shadow','none');
+    }
+    if (logPanel) {
+      imp(logPanel,'width','70%');
+      imp(logPanel,'background',C.panel);
+      imp(logPanel,'color',C.text);
+      imp(logPanel,'border','1px solid '+C.line);
+      imp(logPanel,'border-radius','10px');
+      imp(logPanel,'overflow','hidden');
+      imp(logPanel,'box-shadow','none');
+    }
+
+    setText(document.getElementById('title-rank'), 'RANKING BOARD');
+    setText(document.getElementById('title-log'), 'ACTIVITY LOG');
+    qa('.sd-panel-header', root).forEach(h => {
+      imp(h,'background',C.panel2);
+      imp(h,'border-bottom','1px solid '+C.line);
+      imp(h,'min-height','42px');
+      imp(h,'padding','0 12px');
+      imp(h,'color',C.text);
+    });
+    ['title-rank','title-log'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        imp(el,'font-size','12px');
+        imp(el,'font-weight','950');
+        imp(el,'letter-spacing','.4px');
+        imp(el,'color',C.text);
+      }
+    });
+
+    // icon buttons
+    qa('.sd-btn-icon', root).forEach(b => {
+      imp(b,'background','#0f172a');
+      imp(b,'border','1px solid '+C.line2);
+      imp(b,'border-radius','7px');
+      imp(b,'color',C.sub);
+      imp(b,'box-shadow','none');
+    });
+
+    // rank rows -> table-like
+    const rankList = document.getElementById('sd-rank-list');
+    if (rankList) {
+      imp(rankList,'background',C.panel);
+      imp(rankList,'padding','8px 8px 10px');
+      imp(rankList,'color',C.text);
+    }
+    qa('.sd-rank-item', root).forEach((row, idx) => {
+      imp(row,'height','34px');
+      imp(row,'display','grid');
+      imp(row,'grid-template-columns','34px 1fr auto');
+      imp(row,'align-items','center');
+      imp(row,'gap','8px');
+      imp(row,'padding','0 6px');
+      imp(row,'margin','0');
+      imp(row,'border-radius','6px');
+      imp(row,'border-bottom','1px solid rgba(148,163,184,.10)');
+      imp(row,'background', idx < 3 ? 'rgba(45,127,249,.08)' : 'transparent');
+      imp(row,'color',C.text);
+    });
+    qa('.sd-rank-num', root).forEach((n, idx) => {
+      imp(n,'display','flex');
+      imp(n,'align-items','center');
+      imp(n,'justify-content','center');
+      imp(n,'width','24px');
+      imp(n,'height','24px');
+      imp(n,'border-radius','6px');
+      imp(n,'font-size','12px');
+      imp(n,'font-weight','950');
+      imp(n,'font-style','normal');
+      imp(n,'color', idx < 3 ? '#ffffff' : C.sub);
+      imp(n,'background', idx < 3 ? C.blue : 'transparent');
+    });
+    qa('.sd-rank-nick,.sd-rank-name-span', root).forEach(el => {
+      imp(el,'color',C.text);
+      imp(el,'font-size','13px');
+      imp(el,'font-weight','850');
+      imp(el,'min-width','0');
+      imp(el,'overflow','hidden');
+      imp(el,'text-overflow','ellipsis');
+      imp(el,'white-space','nowrap');
+    });
+    qa('.sd-rank-cnt', root).forEach(el => {
+      imp(el,'background','rgba(45,127,249,.14)');
+      imp(el,'border','1px solid rgba(88,166,255,.35)');
+      imp(el,'border-radius','6px');
+      imp(el,'padding','3px 7px');
+      imp(el,'color',C.blue2);
+      imp(el,'font-size','12px');
+      imp(el,'font-weight','950');
+    });
+
+    // log list / rows
+    const logList = document.getElementById('sd-log-list');
+    if (logList) {
+      imp(logList,'background',C.panel);
+      imp(logList,'color',C.text);
+      imp(logList,'padding','8px');
+    }
+    qa('.sd-log-row', root).forEach(row => {
+      imp(row,'background',C.row);
+      imp(row,'border','1px solid rgba(148,163,184,.10)');
+      imp(row,'border-left','3px solid '+C.blue);
+      imp(row,'border-radius','7px');
+      imp(row,'margin','0 0 7px');
+      imp(row,'padding','9px 10px');
+      imp(row,'color',C.text);
+    });
+    qa('.sd-time', root).forEach(el => {
+      imp(el,'color',C.sub);
+      imp(el,'font-size','12px');
+      imp(el,'font-weight','850');
+      imp(el,'font-family','Consolas, monospace');
+    });
+    qa('.sd-chat-content,.sd-msg,.sd-msg-battle', root).forEach(el => {
+      imp(el,'color',C.text);
+      imp(el,'font-size','13px');
+      imp(el,'font-weight','700');
+    });
+    qa('.sd-nick', root).forEach(el => {
+      imp(el,'font-weight','950');
+      imp(el,'text-shadow','none');
+    });
+    qa('.sd-nick-id', root).forEach(el => {
+      imp(el,'color',C.sub);
+      imp(el,'font-size','11px');
+      imp(el,'font-weight','700');
+    });
+
+    // search box
+    qa('.sd-search-container', root).forEach(el => {
+      imp(el,'background','#0f172a');
+      imp(el,'border','1px solid '+C.line2);
+      imp(el,'border-radius','7px');
+      imp(el,'height','28px');
+    });
+    qa('.sd-search-select,.sd-search-input', root).forEach(el => {
+      imp(el,'background','#0f172a');
+      imp(el,'color',C.text);
+      imp(el,'border','0');
+      imp(el,'outline','0');
+      imp(el,'font-size','12px');
+      imp(el,'font-weight','700');
+    });
+    qa('.sd-search-input', root).forEach(el => imp(el,'min-width','110px'));
+    qa('.sd-search-clear', root).forEach(el => imp(el,'color',C.sub));
+  }
+
+  let timer = null;
+  function schedule(){
+    clearTimeout(timer);
+    timer = setTimeout(apply, 60);
+  }
+
+  [80, 250, 700, 1500, 3000, 6000].forEach(t => setTimeout(apply, t));
+  window.addEventListener('load', schedule, {once:false});
+  document.addEventListener('DOMContentLoaded', schedule, {once:false});
+
+  setTimeout(() => {
+    const root = getRoot();
+    if (!root || !window.MutationObserver) return;
+    const mo = new MutationObserver(schedule);
+    mo.observe(root, {subtree:true, childList:true, attributes:true, attributeFilter:['style','class']});
+  }, 900);
+})();
