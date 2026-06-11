@@ -207,14 +207,13 @@ btn.onclick = function() {{
 
 def render_vodchat_card():
     """SOOP VOD/클립 다시보기 채팅 패널 북마크릿 카드.
-    - 리캡 셀프인증과 완전히 같은 iframe srcdoc + copyText 구조 사용
-    - 복사되는 코드는 짧은 로더 1개만 호출
-    - 로더 파일에서 원본 VOD 채팅 JS + CNINE 패치를 순차 로드
+    - 리캡 셀프인증과 동일한 iframe srcdoc 복사 버튼 방식 사용
+    - 복사 코드는 짧은 loader 한 줄만 사용해서 와고 iframe 복사 실패를 줄임
+    - 원본 UI 생성은 loader가 담당하고, CNINE 패치는 원본 UI 생성 이후 문구만 안전하게 변경
     """
     vod_url = "https://vod.sooplive.co.kr/"
-    loader_js = f"{BASE_URL}/soop_vodchat_loader.js?v=20260612"
+    loader_js = f"{BASE_URL}/soop_vodchat_loader.js?v=2026061204"
 
-    # 리캡 셀프인증과 동일한 복사 버튼 구조 유지.
     iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
 &lt;meta charset='utf-8'&gt;
 
@@ -252,7 +251,7 @@ function copyText(text){{
 }}
 
 var btn = document.getElementById('btn');
-var code = '!function(){{var s=document.createElement(\\'script\\');s.id=\\'c9-vodchat-loader\\';s.src=\\'{loader_js}\\';document.head.appendChild(s)}}();';
+var code = '!function(){{var s=document.createElement(\'script\');s.id=\'c9-vodchat-loader\';s.src=\'{loader_js}\';document.head.appendChild(s)}}();';
 
 btn.onclick = function() {{
   copyText(code).then(function(){{
@@ -285,10 +284,11 @@ btn.onclick = function() {{
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
       ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
-      ※ 리캡 셀프인증과 동일한 복사 방식으로 동작합니다.
+      ※ 원본 패널 생성 후 CNINE 문구만 안전하게 적용됩니다.
     </div>
   </div>
 </div>"""
+
 
 def clean_html_for_wago(src):
     # iframe srcdoc 내부의 <script>는 와고 1073983 리캡 복사 버튼과 같은 방식이라 보호한다.
