@@ -212,7 +212,7 @@ def render_vodchat_card():
     - 리캡 셀프인증과 동일한 iframe srcdoc 복사 버튼 방식 사용
     """
     vod_url = "https://vod.sooplive.co.kr/"
-    vod_js = f"{BASE_URL}/soop_vodchat.js?v=2026061226"
+    vod_js = f"{BASE_URL}/soop_vodchat.js?v=2026061227"
 
     iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
 &lt;meta charset='utf-8'&gt;
