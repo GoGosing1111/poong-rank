@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "updated_at": "2026-06-11 12:10:43",
+  "updated_at": "2026-06-11 21:38:47",
   "source": "https://www.cnine.kr/timeline",
-  "count": 6,
-  "today_count": 2,
+  "count": 5,
+  "today_count": 1,
   "future_count": 4,
   "items": [
     {
@@ -15,16 +15,6 @@
       "dday": "TODAY",
       "type": "스타",
       "source_line": "2026년 06월 11일(목) 16:00 ~ 19:00"
-    },
-    {
-      "title": "스타부 : 씨나인 vs 엠비대 - 추매치 대결",
-      "date": "2026.06.11 (목)",
-      "raw_date": "2026-06-11",
-      "time": "시간미정",
-      "datetime": "2026.06.11 (목) · ⏰ 시간미정",
-      "dday": "TODAY",
-      "type": "스타",
-      "source_line": "2026년 06월 11일(목)"
     },
     {
       "title": "스타부 학생회장 선거",
