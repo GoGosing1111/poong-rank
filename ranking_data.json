@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11 11:20:32",
+  "updated_at": "2026-06-11 12:05:24",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -137,8 +137,8 @@
       "name": "깅예솔",
       "match": "깅예솔",
       "soop_id": "yunhee1222",
-      "today": 1474,
-      "month": 208448,
+      "today": 5862,
+      "month": 214299,
       "today_api_name": "깅예솔",
       "month_api_name": "깅예솔",
       "matched": true
@@ -200,6 +200,17 @@
     },
     {
       "part": "스타부",
+      "name": "빵훈이",
+      "match": "빵훈이.",
+      "soop_id": "vlfvlf789",
+      "today": 5293,
+      "month": 148292,
+      "today_api_name": "빵훈이",
+      "month_api_name": "빵훈이",
+      "matched": true
+    },
+    {
+      "part": "스타부",
       "name": "요닝",
       "match": "요닝♡.",
       "soop_id": "tjgpdus97",
@@ -207,17 +218,6 @@
       "month": 146789,
       "today_api_name": "요닝♡.",
       "month_api_name": "요닝♡.",
-      "matched": true
-    },
-    {
-      "part": "스타부",
-      "name": "빵훈이",
-      "match": "빵훈이.",
-      "soop_id": "vlfvlf789",
-      "today": 1315,
-      "month": 143020,
-      "today_api_name": "빵훈이",
-      "month_api_name": "빵훈이",
       "matched": true
     },
     {
@@ -561,7 +561,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "132,805",
+    "avg": "133,361",
     "leader": "디임",
     "leader_sales": "394,517",
     "members": [
@@ -595,9 +595,9 @@
       {
         "rank": 4,
         "name": "깅예솔",
-        "today": "1,474",
-        "month": "208,448",
-        "width": "52%",
+        "today": "5,862",
+        "month": "214,299",
+        "width": "54%",
         "first": false,
         "color": "#ffd34f"
       },
@@ -621,19 +621,19 @@
       },
       {
         "rank": 7,
-        "name": "요닝",
-        "today": "30,049",
-        "month": "146,789",
+        "name": "빵훈이",
+        "today": "5,293",
+        "month": "148,292",
         "width": "37%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 8,
-        "name": "빵훈이",
-        "today": "1,315",
-        "month": "143,020",
-        "width": "36%",
+        "name": "요닝",
+        "today": "30,049",
+        "month": "146,789",
+        "width": "37%",
         "first": false,
         "color": "#ffd34f"
       },
