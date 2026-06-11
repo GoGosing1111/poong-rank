@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11 06:15:20",
+  "updated_at": "2026-06-11 11:20:32",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -137,9 +137,9 @@
       "name": "깅예솔",
       "match": "깅예솔",
       "soop_id": "yunhee1222",
-      "today": 0,
-      "month": 208437,
-      "today_api_name": "",
+      "today": 1474,
+      "month": 208448,
+      "today_api_name": "깅예솔",
       "month_api_name": "깅예솔",
       "matched": true
     },
@@ -214,9 +214,9 @@
       "name": "빵훈이",
       "match": "빵훈이.",
       "soop_id": "vlfvlf789",
-      "today": 0,
-      "month": 142999,
-      "today_api_name": "",
+      "today": 1315,
+      "month": 143020,
+      "today_api_name": "빵훈이",
       "month_api_name": "빵훈이",
       "matched": true
     },
@@ -561,7 +561,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "132,803",
+    "avg": "132,805",
     "leader": "디임",
     "leader_sales": "394,517",
     "members": [
@@ -595,8 +595,8 @@
       {
         "rank": 4,
         "name": "깅예솔",
-        "today": "0",
-        "month": "208,437",
+        "today": "1,474",
+        "month": "208,448",
         "width": "52%",
         "first": false,
         "color": "#ffd34f"
@@ -631,8 +631,8 @@
       {
         "rank": 8,
         "name": "빵훈이",
-        "today": "0",
-        "month": "142,999",
+        "today": "1,315",
+        "month": "143,020",
         "width": "36%",
         "first": false,
         "color": "#ffd34f"
