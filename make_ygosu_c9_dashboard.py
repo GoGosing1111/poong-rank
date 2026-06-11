@@ -207,14 +207,14 @@ btn.onclick = function() {{
 
 def render_vodchat_card():
     """SOOP VOD/클립 다시보기 채팅 패널 북마크릿 카드.
-    - 원본 VOD 채팅 로더를 먼저 로드
-    - 로드 완료 후 CNINE 패치 JS를 추가 로드해서 UI 문구/컬러를 덮어씀
-    - 와고 호환을 위해 리캡 셀프인증과 동일한 iframe srcdoc 복사 버튼 방식 사용
+    - 리캡 셀프인증과 완전히 같은 iframe srcdoc + copyText 구조 사용
+    - 복사되는 코드는 짧은 로더 1개만 호출
+    - 로더 파일에서 원본 VOD 채팅 JS + CNINE 패치를 순차 로드
     """
     vod_url = "https://vod.sooplive.co.kr/"
-    vod_js = f"{BASE_URL}/soop_vodchat.js?v=20260612"
-    patch_js = f"{BASE_URL}/soop_vodchat_cnine_patch.js?v=20260612"
+    loader_js = f"{BASE_URL}/soop_vodchat_loader.js?v=20260612"
 
+    # 리캡 셀프인증과 동일한 복사 버튼 구조 유지.
     iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
 &lt;meta charset='utf-8'&gt;
 
@@ -231,7 +231,6 @@ button{{
   font-weight:900;
   cursor:pointer;
 }}
-button:active{{filter:brightness(.92)}}
 &lt;/style&gt;
 
 &lt;button id='btn'&gt;🎬 다시보기 채팅 코드 복사&lt;/button&gt;
@@ -253,7 +252,7 @@ function copyText(text){{
 }}
 
 var btn = document.getElementById('btn');
-var code = '!function(){{function l(u,c){{var s=document.createElement(\\'script\\');s.src=u;s.onload=c||function(){{}};document.head.appendChild(s)}}l(\\'{vod_js}\\',function(){{l(\\'{patch_js}\\')}})}}();';
+var code = '!function(){{var s=document.createElement(\'script\');s.id=\'c9-vodchat-loader\';s.src=\'{loader_js}\';document.head.appendChild(s)}}();';
 
 btn.onclick = function() {{
   copyText(code).then(function(){{
@@ -286,11 +285,10 @@ btn.onclick = function() {{
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
       ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
-      ※ 실행 후 우측에 CNINE 스타일 채팅 패널이 표시됩니다.
+      ※ 리캡 셀프인증과 동일한 복사 방식으로 동작합니다.
     </div>
   </div>
 </div>"""
-
 
 def clean_html_for_wago(src):
     # iframe srcdoc 내부의 <script>는 와고 1073983 리캡 복사 버튼과 같은 방식이라 보호한다.
