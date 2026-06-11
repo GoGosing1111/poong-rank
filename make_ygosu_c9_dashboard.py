@@ -66,6 +66,19 @@ def esc(v):
 def safe(v):
     return str(v or "").strip()
 
+def fmt_short_dt(v=None):
+    """2026-06-12 00:54:03 -> 26-06-12 00:54"""
+    if v is None:
+        v = datetime.now()
+    if isinstance(v, datetime):
+        return v.strftime("%y-%m-%d %H:%M")
+    s = str(v or "").strip()
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})", s)
+    if m:
+        return f"{m.group(1)[2:]}-{m.group(2)}-{m.group(3)} {m.group(4)}:{m.group(5)}"
+    return datetime.now().strftime("%y-%m-%d %H:%M")
+
+
 def is_leader_member(m):
     sid = safe(m.get("soop_id") or m.get("id")).lower()
     name = safe(m.get("name"))
@@ -190,6 +203,94 @@ btn.onclick = function() {{
     </div>
   </div>
 </div>"""
+
+
+def render_vodchat_card():
+    """SOOP VOD/클립 다시보기 채팅 패널 북마크릿 카드.
+    - 원본 VOD 채팅 로더를 먼저 로드
+    - 로드 완료 후 CNINE 패치 JS를 추가 로드해서 UI 문구/컬러를 덮어씀
+    - 와고 호환을 위해 리캡 셀프인증과 동일한 iframe srcdoc 복사 버튼 방식 사용
+    """
+    vod_url = "https://vod.sooplive.co.kr/"
+    vod_js = f"{BASE_URL}/soop_vodchat.js?v=20260612"
+    patch_js = f"{BASE_URL}/soop_vodchat_cnine_patch.js?v=20260612"
+
+    iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
+&lt;meta charset='utf-8'&gt;
+
+&lt;style&gt;
+body{{margin:0}}
+button{{
+  width:100%;
+  height:48px;
+  background:linear-gradient(135deg,#2f9bff,#635bff);
+  color:#fff;
+  border:0;
+  border-radius:9px;
+  font-size:14px;
+  font-weight:900;
+  cursor:pointer;
+}}
+button:active{{filter:brightness(.92)}}
+&lt;/style&gt;
+
+&lt;button id='btn'&gt;🎬 다시보기 채팅 코드 복사&lt;/button&gt;
+
+&lt;script&gt;
+function copyText(text){{
+  if(navigator.clipboard &amp;&amp; window.isSecureContext){{
+    return navigator.clipboard.writeText(text);
+  }}else{{
+    var ta=document.createElement('textarea');
+    ta.value=text;
+    ta.style.position='fixed';
+    ta.style.opacity='0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{{ document.execCommand('copy'); }} finally {{ document.body.removeChild(ta); }}
+    return Promise.resolve();
+  }}
+}}
+
+var btn = document.getElementById('btn');
+var code = '!function(){{function l(u,c){{var s=document.createElement(\\'script\\');s.src=u;s.onload=c||function(){{}};document.head.appendChild(s)}}l(\\'{vod_js}\\',function(){{l(\\'{patch_js}\\')}})}}();';
+
+btn.onclick = function() {{
+  copyText(code).then(function(){{
+    alert('복사되었습니다');
+  }}).catch(function(){{
+    alert('복사 실패');
+  }});
+}};
+&lt;/script&gt;
+" src=""></iframe>"""
+
+    return f"""
+<div id="section_replay" style="margin-top:10px;border:1px solid rgba(126,200,255,.46);border-radius:15px;background:linear-gradient(135deg,rgba(47,155,255,.18),rgba(99,91,255,.16),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
+  <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(126,200,255,.26);color:#7ec8ff;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
+    🎬 다시보기 채팅보기
+  </div>
+
+  <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
+    SOOP VOD·클립 페이지에서<br>
+    <span style="color:#7ec8ff;font-weight:1000;">채팅 로그 / 후원 / 도전 / 대결</span>을 한 번에 확인합니다.
+
+    <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
+      {iframe_html}
+
+      <a href="{vod_url}" target="_blank" rel="nofollow"
+         style="flex:1 1 160px;min-width:160px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:#0ea5e9;color:#fff;font-size:14px;font-weight:1000;text-decoration:none;box-sizing:border-box;">
+        🔍 SOOP 다시보기 열기
+      </a>
+    </div>
+
+    <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
+      ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
+      ※ 실행 후 우측에 CNINE 스타일 채팅 패널이 표시됩니다.
+    </div>
+  </div>
+</div>"""
+
 
 def clean_html_for_wago(src):
     # iframe srcdoc 내부의 <script>는 와고 1073983 리캡 복사 버튼과 같은 방식이라 보호한다.
@@ -498,15 +599,293 @@ def render_schedule(schedule_json):
 
 def render_hero_banner(updated, total_members, live_count):
     logo_url = f"{BASE_URL}/assets//crew_logos/cninelogo.png?v=9999"
+    contact_url = "https://ygosu.com/msg/?m2=write&member=152117"
+    short_updated = fmt_short_dt(updated)
     return f"""
-  <div style="padding:18px 10px 16px;text-align:center;border:1px solid rgba(90,175,255,.55);border-radius:18px;background:linear-gradient(135deg,rgba(25,125,255,.28),rgba(0,0,0,.70));box-shadow:0 0 18px rgba(40,145,255,.25);">
+  <div id="section_top" style="position:relative;padding:18px 10px 16px;text-align:center;border:1px solid rgba(90,175,255,.55);border-radius:18px;background:linear-gradient(135deg,rgba(25,125,255,.28),rgba(0,0,0,.70));box-shadow:0 0 18px rgba(40,145,255,.25);">
+    <div style="position:absolute;right:10px;top:9px;display:flex;align-items:center;gap:7px;z-index:2;">
+      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">{esc(short_updated)}</span>
+      <a href="{contact_url}" target="_blank" rel="nofollow" style="display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,#2f9bff,#635bff);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:11px;font-weight:1000;text-decoration:none;line-height:1;box-shadow:0 0 12px rgba(47,155,255,.30);">📩 관리자 문의</a>
+    </div>
     <img src="{logo_url}" style="display:block;width:112px;max-width:45%;height:auto;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(255,255,255,.30));">
     <div style="font-size:27px;line-height:1.05;font-weight:1000;color:#fff;text-shadow:0 0 9px rgba(75,170,255,.95),0 3px 0 #002b55,0 8px 18px #000;">CNINE DASHBOARD</div>
     <div style="display:inline-block;margin-top:9px;padding:6px 12px;border-radius:999px;color:#fff;font-size:12px;font-weight:900;border:1px solid rgba(105,185,255,.55);background:rgba(0,18,38,.50);">씨나인 통합 현황판</div>
   </div>"""
 
 
-def expand_card(title, subtitle, icon, body, color="#2f9bff", open_attr=False):
+
+def render_welcome_popup_iframe():
+    """와이고수 iframe srcdoc 팝업.
+    - 본문에 끼워지는 방식이 아니라 대시보드 전체 위에 absolute overlay로 덮음
+    - 닫기/오늘 하루 안보기 클릭 시 iframe 자체를 숨겨서 아래 본문 클릭 가능
+    """
+    srcdoc = """<!doctype html>
+<html lang='ko'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden}
+.popup-overlay{
+  position:fixed;inset:0;z-index:9999;
+  display:flex;align-items:flex-start;justify-content:center;
+  background:rgba(0,0,0,.62);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  padding:42px 14px 14px;
+}
+.popup-box{
+  width:min(94vw,520px);
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid rgba(126,200,255,.60);
+  background:radial-gradient(circle at top left,rgba(47,155,255,.30),transparent 38%),linear-gradient(180deg,#0b1830,#05070d);
+  box-shadow:0 24px 70px rgba(0,0,0,.78),0 0 28px rgba(47,155,255,.42);
+  text-align:center;
+}
+.popup-head{
+  padding:22px 18px 14px;
+  background:linear-gradient(135deg,rgba(47,155,255,.22),rgba(255,79,114,.14));
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid rgba(126,200,255,.55);
+  background:rgba(0,0,0,.25);
+  color:#7ec8ff;
+  font-size:12px;
+  font-weight:1000;
+  box-shadow:0 0 13px rgba(126,200,255,.22);
+}
+.title{
+  margin-top:12px;
+  font-size:28px;
+  line-height:1.1;
+  font-weight:1000;
+  color:#fff;
+  text-shadow:0 0 12px rgba(126,200,255,.85),0 3px 0 #001b36;
+}
+.sub{
+  margin-top:8px;
+  color:#cfeaff;
+  font-size:13px;
+  font-weight:900;
+  line-height:1.45;
+}
+.popup-body{padding:15px 16px 16px}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+.item{
+  min-height:74px;
+  padding:12px 9px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.10);
+  background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.18));
+  text-align:left;
+  color:#fff;
+  cursor:pointer;
+  font-family:inherit;
+}
+.item:hover{filter:brightness(1.15);border-color:rgba(126,200,255,.55)}
+.ico{font-size:21px;line-height:1}
+.item b{
+  display:block;
+  margin-top:6px;
+  color:#fff;
+  font-size:13px;
+  font-weight:1000;
+  text-shadow:0 2px 0 #000;
+}
+.item span{
+  display:block;
+  margin-top:4px;
+  color:#b9d9f5;
+  font-size:11px;
+  font-weight:800;
+  line-height:1.32;
+}
+.popup-actions{
+  display:flex;
+  gap:8px;
+  padding:0 16px 16px;
+}
+.btn{
+  flex:1;
+  height:44px;
+  border:0;
+  border-radius:13px;
+  color:#fff;
+  font-size:13px;
+  font-weight:1000;
+  cursor:pointer;
+}
+.btn-close{background:linear-gradient(135deg,#2f9bff,#0b4f95)}
+.btn-hide{background:linear-gradient(135deg,#475569,#111827)}
+.footer{
+  padding:9px 12px 13px;
+  color:#9ccfff;
+  font-size:10px;
+  font-weight:800;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.hidden{display:none!important}
+@media(max-width:420px){
+  .popup-overlay{padding-top:22px;align-items:flex-start}
+  .title{font-size:23px}
+  .grid{grid-template-columns:1fr}
+  .popup-actions{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div id='popup' class='popup-overlay'>
+  <div class='popup-box'>
+    <div class='popup-head'>
+      <span class='badge'>⚡ CNINE DASHBOARD GUIDE</span>
+      <div class='title'>어떤 기능들이<br>있는지 알아봐요</div>
+      <div class='sub'>씨나인 현황판에서 자주 쓰는 기능을 한눈에 확인하세요.</div>
+    </div>
+    <div class='popup-body'>
+      <div class='grid'>
+        <button class='item nav-item' data-target='section_members' type='button'><div class='ico'>📡</div><b>LIVE 현황</b><span>멤버 방송 상태를 자동 표시</span></button>
+        <button class='item nav-item' data-target='section_rank' type='button'><div class='ico'>⭐</div><b>월간 별풍선</b><span>엑셀부 · 스타부 집계표 확인</span></button>
+        <button class='item nav-item' data-target='section_notice' type='button'><div class='ico'>📢</div><b>공지사항</b><span>씨나인 SOOP 공지 펼쳐보기</span></button>
+        <button class='item nav-item' data-target='section_schedule' type='button'><div class='ico'>📅</div><b>씨나인 일정</b><span>TODAY 일정 자동 강조</span></button>
+        <button class='item nav-item' data-target='section_main' type='button'><div class='ico'>🚨</div><b>리캡 셀프인증</b><span>SOOP 시청기록 인증 코드 복사</span></button>
+        <button class='item nav-item' data-target='section_replay' type='button'><div class='ico'>🎬</div><b>다시보기 채팅</b><span>VOD 채팅 패널 코드 복사</span></button>
+      </div>
+    </div>
+    <div class='popup-actions'>
+      <button id='btnClose' class='btn btn-close' type='button'>확인했어요</button>
+      <button id='btnHide' class='btn btn-hide' type='button'>오늘 하루 안보기</button>
+    </div>
+    <div class='footer'>CNINE Dashboard Developed by 유두위생크림</div>
+  </div>
+</div>
+<script>
+(function(){
+  var key='c9_dashboard_popup_hide_until';
+
+  function hidePopupOnly(){
+    var p=document.getElementById('popup');
+    if(p){ p.className='popup-overlay hidden'; }
+    document.documentElement.style.display='none';
+    document.body.style.display='none';
+  }
+
+  function hideFrame(){
+    hidePopupOnly();
+    try{
+      var f = window.frameElement;
+      if(f){
+        f.style.display='none';
+        f.style.height='0px';
+        f.style.minHeight='0px';
+      }
+    }catch(e){}
+  }
+
+  function closePopup(){
+    hideFrame();
+  }
+
+  function hideToday(){
+    try{
+      var tomorrow = Date.now() + 24*60*60*1000;
+      localStorage.setItem(key, String(tomorrow));
+    }catch(e){}
+    hideFrame();
+  }
+
+  function init(){
+    try{
+      var until=localStorage.getItem(key);
+      if(until && Number(until) > Date.now()){
+        hideFrame();
+        return;
+      }
+    }catch(e){}
+
+    function goTarget(id){
+      try{
+        var el = window.parent.document.getElementById(id);
+        if(el){
+          if(String(el.tagName).toLowerCase()==='details'){ el.open = true; }
+          var inner = el.querySelector ? el.querySelector('details') : null;
+          if(inner){ inner.open = true; }
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }catch(e){}
+      hideFrame();
+    }
+
+    var navs=document.querySelectorAll('.nav-item');
+    for(var i=0;i<navs.length;i++){
+      navs[i].addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        goTarget(this.getAttribute('data-target'));
+      }, false);
+    }
+
+    var c=document.getElementById('btnClose');
+    var h=document.getElementById('btnHide');
+
+    if(c){
+      c.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        closePopup();
+      }, false);
+    }
+    if(h){
+      h.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        hideToday();
+      }, false);
+    }
+
+    // 혹시 버튼 이벤트가 막히는 환경 대비: 배경 클릭 시 닫기
+    var p=document.getElementById('popup');
+    if(p){
+      p.addEventListener('click', function(e){
+        if(e.target === p){ closePopup(); }
+      }, false);
+    }
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  }else{
+    init();
+  }
+
+  window.closePopup = closePopup;
+  window.hideToday = hideToday;
+})();
+</script>
+</body>
+</html>"""
+    srcdoc = srcdoc.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
+    return f"""<iframe
+  width="100%"
+  height="100%"
+  frameborder="0"
+  scrolling="no"
+  allow="clipboard-write"
+  referrerpolicy="strict-origin-when-cross-origin"
+  style="position:absolute;left:0;top:0;width:100%;height:100%;border:0;margin:0;border-radius:18px;overflow:hidden;background:transparent;z-index:9999;display:block;"
+  srcdoc="{srcdoc}"></iframe>"""
+
+
+def expand_card(title, subtitle, icon, body, color="#2f9bff", open_attr=False, anchor_id=""):
     """리캡 버튼 폭에 맞춘 전체폭 펼침 메뉴.
 
     핵심:
@@ -517,7 +896,7 @@ def expand_card(title, subtitle, icon, body, color="#2f9bff", open_attr=False):
     """
     open_text = " open" if open_attr else ""
     return f"""
-<details{open_text} style="display:block;width:100%;margin:0 0 10px 0;padding:0;box-sizing:border-box;">
+<details{open_text} id="{esc(anchor_id)}" style="display:block;width:100%;margin:0 0 10px 0;padding:0;box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;display:flex;width:100%;min-height:72px;margin:0;padding:0 16px;border:1px solid {color};border-radius:14px;background:linear-gradient(135deg,rgba(25,125,255,.22),rgba(0,0,0,.48));box-shadow:0 0 13px {color}59;color:#fff;text-align:center;box-sizing:border-box;overflow:hidden;align-items:center;justify-content:center;gap:10px;">
     <span style="display:inline-block;font-size:24px;line-height:1;filter:drop-shadow(0 0 6px rgba(255,255,255,.28));">{icon}</span>
     <span style="display:inline-block;color:#fff;font-size:18px;font-weight:1000;line-height:1.15;text-shadow:0 0 8px rgba(80,170,255,.90),0 2px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(title)}</span>
@@ -531,10 +910,10 @@ def expand_card(title, subtitle, icon, body, color="#2f9bff", open_attr=False):
 def render_expand_cards(rank, members, live_map, notice, schedule):
     """리캡 아래 섹션을 앵커 점프가 아닌 2열 펼침 카드로 출력한다."""
     cards = [
-        expand_card("월간 별풍선", "엑셀부 · 스타부 집계", "⭐", render_rank(rank), "#2f9bff", False),
-        expand_card("멤버 현황판", "LIVE · 파트별 현황", "👥", render_members(members, live_map), "#19c2ff", False),
-        expand_card("공지사항", "씨나인 SOOP 공지", "📢", render_notice(notice), "#ff4b6e", False),
-        expand_card("씨나인 일정", "TODAY · 주요 일정", "📅", render_schedule(schedule), "#22c55e", False),
+        expand_card("월간 별풍선", "엑셀부 · 스타부 집계", "⭐", render_rank(rank), "#2f9bff", False, "section_rank"),
+        expand_card("멤버 현황판", "LIVE · 파트별 현황", "👥", render_members(members, live_map), "#19c2ff", False, "section_members"),
+        expand_card("공지사항", "씨나인 SOOP 공지", "📢", render_notice(notice), "#ff4b6e", False, "section_notice"),
+        expand_card("씨나인 일정", "TODAY · 주요 일정", "📅", render_schedule(schedule), "#22c55e", False, "section_schedule"),
     ]
     return f"""
 <div style="margin:10px 0 13px;padding:0;border:0;background:transparent;box-sizing:border-box;text-align:center;">
@@ -558,15 +937,16 @@ def main():
 <div style="border:1px solid rgba(90,175,255,.25);border-radius:16px;background:rgba(0,0,0,.22);padding:10px;">
   {metric("전체 멤버", f"{len(unique_members)}명")}
   {metric("현재 LIVE", f"{live_count}명")}
-  {metric("집계시간", updated)}
   {render_dashboard_notice(dashboard_notice)}
   {render_self_verify_card()}
+  {render_vodchat_card()}
 </div>"""
 
-    html_out = f"""<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(45,145,255,.22),transparent 34%),linear-gradient(180deg,#05070d 0%,#071426 52%,#030507 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(90,175,255,.45);">
+    html_out = f"""<div style="position:relative;width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(45,145,255,.22),transparent 34%),linear-gradient(180deg,#05070d 0%,#071426 52%,#030507 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(90,175,255,.45);">
   {render_hero_banner(updated, len(unique_members), live_count)}
+  {render_welcome_popup_iframe()}
 
-  {section("메인 현황", main_body, True, "#2f9bff")}
+  <div id="section_main">{section("메인 현황", main_body, True, "#2f9bff")}</div>
   {render_expand_cards(rank, members, live_map, notice, schedule)}
 
   <div style="margin-top:12px;text-align:center;color:#7ec8ff;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(80,170,255,.35);">{esc(WATERMARK)}</div>
