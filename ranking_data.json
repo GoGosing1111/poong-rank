@@ -402,7 +402,7 @@
       "match": "짭호",
       "soop_id": "wjddlf4695",
       "today": 19575,
-      "month": 21631,
+      "month": 21531,
       "today_api_name": "짭호형2↑",
       "month_api_name": "짭호형2↑",
       "matched": true
@@ -583,7 +583,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "165,333",
+    "avg": "165,328",
     "leader": "졈니",
     "leader_sales": "452,832",
     "members": [
@@ -762,7 +762,7 @@
         "rank": 20,
         "name": "짭호",
         "today": "19,575",
-        "month": "21,631",
+        "month": "21,531",
         "width": "4%",
         "first": false,
         "color": "#ffd34f"
