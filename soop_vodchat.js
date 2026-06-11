@@ -2,14 +2,15 @@ function _0xae9d(_0x23d5be,_0x19da7a){_0x23d5be=_0x23d5be-(-0x17*0x69+-0x9*0x17+
 
 
 ;(()=>{try{
-  if (window.__CNINE_REPLAY_ANALYSIS_2026061227__) return;
-  window.__CNINE_REPLAY_ANALYSIS_2026061227__ = 1;
+  if (window.__CNINE_DATA_CENTER_2026061225__) return;
+  window.__CNINE_DATA_CENTER_2026061225__ = 1;
 
-  const MARK = 'CNINE_REPLAY_ANALYSIS_2026061227';
+  const MARK = 'CNINE_DATA_CENTER_2026061225';
   const C = {
-    bg:'#07111f', bg2:'#0b1d34', head:'#0d2542', head2:'#113b63', panel:'#07111f', panel2:'#0b1728', row:'#0b1627', row2:'#0e1b2f',
-    line:'rgba(84,126,180,.34)', line2:'rgba(76,166,255,.54)', text:'#f8fbff', sub:'#aab8ca', muted:'#718199',
-    blue:'#2687ff', blue2:'#5db6ff', cyan:'#42d5ff', green:'#20f28b', yellow:'#ffd43b', pink:'#ff8fb7', purple:'#9aa7ff', red:'#ff6b86'
+    page:'#050814', root:'#07101f', header:'#081426', header2:'#0b1b33', panel:'#0b1220', panel2:'#0f1b2e',
+    card:'#0d1b2f', row:'#0a1424', row2:'#0f1d31', line:'rgba(95,126,173,.38)', line2:'rgba(88,166,255,.45)',
+    text:'#f8fafc', text2:'#e2e8f0', sub:'#9fb0c8', muted:'#64748b', blue:'#2d7ff9', blue2:'#58a6ff',
+    cyan:'#38d9f7', yellow:'#facc15', green:'#35e28b', red:'#fb7185', purple:'#a78bfa'
   };
   const $ = (sel, base=document) => base.querySelector(sel);
   const $$ = (sel, base=document) => Array.from(base.querySelectorAll(sel));
@@ -21,7 +22,7 @@ function _0xae9d(_0x23d5be,_0x19da7a){_0x23d5be=_0x23d5be-(-0x17*0x69+-0x9*0x17+
     const title = document.getElementById('sd-vod-title');
     if (!title) return null;
     let n = title;
-    for (let i=0; i<9 && n; i++, n=n.parentElement) {
+    for (let i=0; i<8 && n; i++, n=n.parentElement) {
       if (n.querySelector && n.querySelector('.sd-stats-bar') && n.querySelector('#sd-panel-rank') && n.querySelector('#sd-panel-log')) return n;
     }
     return title.closest('div') || null;
@@ -32,126 +33,143 @@ function _0xae9d(_0x23d5be,_0x19da7a){_0x23d5be=_0x23d5be-(-0x17*0x69+-0x9*0x17+
     const st = document.createElement('style');
     st.id = MARK;
     st.textContent = `
-      [data-cnine-ui="${MARK}"]{background:${C.bg}!important;color:${C.text}!important;border:1px solid rgba(83,166,255,.55)!important;border-radius:16px!important;box-shadow:0 26px 78px rgba(0,0,0,.72),0 0 0 1px rgba(83,166,255,.16),0 0 46px rgba(38,135,255,.25)!important;overflow:hidden!important;font-family:Inter,Arial,'Malgun Gothic',sans-serif!important;}
+      [data-cnine-ui="${MARK}"]{background:${C.root}!important;color:${C.text}!important;border:1px solid ${C.line2}!important;border-radius:14px!important;box-shadow:0 24px 70px rgba(0,0,0,.65),0 0 0 1px rgba(45,127,249,.12),0 0 36px rgba(45,127,249,.18)!important;overflow:hidden!important;font-family:Inter,Arial,'Malgun Gothic',sans-serif!important;}
       [data-cnine-ui="${MARK}"] *{box-sizing:border-box!important;text-shadow:none!important;}
       [data-cnine-ui="${MARK}"] ::-webkit-scrollbar{width:10px!important;height:10px!important;}
-      [data-cnine-ui="${MARK}"] ::-webkit-scrollbar-track{background:#081221!important;}
-      [data-cnine-ui="${MARK}"] ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#40a0ff,#1977f3)!important;border-radius:999px!important;border:2px solid #081221!important;}
-      [data-cnine-ui="${MARK}"] ::selection{background:rgba(38,135,255,.38)!important;color:#fff!important;}
+      [data-cnine-ui="${MARK}"] ::-webkit-scrollbar-track{background:#060b15!important;}
+      [data-cnine-ui="${MARK}"] ::-webkit-scrollbar-thumb{background:#26476f!important;border-radius:12px!important;border:2px solid #060b15!important;}
+      [data-cnine-ui="${MARK}"] ::selection{background:rgba(45,127,249,.35)!important;color:#fff!important;}
     `;
     (document.head || document.documentElement).appendChild(st);
   }
 
-  function brandBar(r){
-    if (!r || document.getElementById('cnine-brand-bar-1227')) return;
-    const bar = document.createElement('div');
-    bar.id = 'cnine-brand-bar-1227';
-    bar.innerHTML = `<div class="cnine-brand-left"><span class="cnine-brand-icon">🎬</span><b>CNINE 다시보기 분석</b></div><div class="cnine-brand-pill">VOD CHAT LOG</div>`;
-    r.insertBefore(bar, r.firstChild);
-  }
-
   function decorateHeader(r){
-    brandBar(r);
-    const brand = document.getElementById('cnine-brand-bar-1227');
-    if (brand){
-      cssMany(brand,{height:'58px',display:'flex',alignItems:'center',justifyContent:'space-between',padding:'0 18px',background:`linear-gradient(135deg,${C.head2} 0%,${C.head} 50%,#071226 100%)`,borderBottom:`1px solid ${C.line2}`,boxShadow:'inset 0 -1px 0 rgba(255,255,255,.05)'});
-      cssMany($('.cnine-brand-left',brand),{display:'flex',alignItems:'center',gap:'9px',fontSize:'19px',fontWeight:'1000',letterSpacing:'-.7px',color:'#fff'});
-      cssMany($('.cnine-brand-icon',brand),{fontSize:'20px',filter:'drop-shadow(0 0 8px rgba(93,182,255,.8))'});
-      cssMany($('.cnine-brand-pill',brand),{height:'31px',padding:'0 14px',display:'flex',alignItems:'center',border:`1px solid ${C.line2}`,borderRadius:'999px',background:'rgba(7,17,31,.54)',color:'#d9efff',fontSize:'12px',fontWeight:'1000',letterSpacing:'.8px'});
-    }
-
     const title = document.getElementById('sd-vod-title');
     if (title) {
-      title.dataset.originTitle = title.dataset.originTitle || (title.textContent || '').trim();
-      title.textContent = title.dataset.originTitle || 'VOD 다시보기';
-      cssMany(title,{background:'transparent',color:C.text,fontSize:'18px',fontWeight:'1000',lineHeight:'1.25',whiteSpace:'normal',overflow:'hidden',textOverflow:'ellipsis',display:'block',maxWidth:'360px',padding:'0 4px'});
+      title.innerHTML = `
+        <div style="display:flex;align-items:center;gap:11px;min-width:0;">
+          <div style="width:9px;height:38px;border-radius:999px;background:linear-gradient(180deg,${C.blue},${C.cyan});box-shadow:0 0 18px rgba(45,127,249,.55);"></div>
+          <div style="min-width:0;">
+            <div style="font-size:24px;font-weight:1000;letter-spacing:-.8px;line-height:1;color:${C.text};">CNINE Data Center</div>
+            <div style="font-size:11px;font-weight:950;letter-spacing:1.7px;color:${C.blue2};margin-top:7px;text-transform:uppercase;">VOD Replay Analytics Platform</div>
+          </div>
+        </div>`;
+      cssMany(title,{background:'transparent',color:C.text,height:'62px',minWidth:'320px',padding:'0 4px',display:'flex',alignItems:'center',whiteSpace:'normal',overflow:'visible'});
     }
 
     const header = $('.sd-header', r) || title?.parentElement;
-    if (header) cssMany(header,{background:`linear-gradient(180deg,#0b1830,#081222)`,borderBottom:`1px solid ${C.line}`,minHeight:'73px',padding:'13px 16px',color:C.text,gap:'12px'});
+    if (header) cssMany(header,{background:`linear-gradient(135deg,${C.header} 0%,#0a1d39 55%,#06111f 100%)`,borderBottom:`1px solid ${C.line2}`,minHeight:'78px',padding:'12px 16px',color:C.text});
+
+    let badge = document.getElementById('cnine-ui-badge');
+    if (header && !badge) {
+      badge = document.createElement('div');
+      badge.id = 'cnine-ui-badge';
+      badge.innerHTML = '<span>DATA MODE</span><b>READY</b>';
+      header.appendChild(badge);
+    }
+    if (badge) cssMany(badge,{marginLeft:'auto',display:'flex',alignItems:'center',gap:'8px',height:'30px',padding:'0 12px',border:`1px solid ${C.line2}`,borderRadius:'999px',background:'rgba(45,127,249,.10)',color:C.blue2,fontSize:'11px',fontWeight:'950',letterSpacing:'.7px'});
+    if (badge?.querySelector('b')) cssMany(badge.querySelector('b'),{color:C.green,fontSize:'11px'});
 
     const tabs = $('.sd-main-tabs', r);
-    if (tabs) cssMany(tabs,{background:'#050b16',border:`1px solid ${C.line}`,borderRadius:'12px',padding:'4px',gap:'6px',boxShadow:'0 10px 24px rgba(0,0,0,.26),inset 0 0 0 1px rgba(255,255,255,.02)'});
-    $$('.sd-main-tab', r).forEach((t)=>{
-      const active = (t.className||'').includes('active') || /rgb\(45, 127, 249\)|#2d7ff9|rgb\(38, 135, 255\)/i.test(t.getAttribute('style')||'');
-      cssMany(t,{height:'36px',minWidth:'58px',padding:'0 13px',display:'flex',alignItems:'center',justifyContent:'center',borderRadius:'9px',fontSize:'13px',fontWeight:'1000',letterSpacing:'-.2px',border:`1px solid ${active?C.blue:'rgba(148,163,184,.22)'}`,background:active?`linear-gradient(180deg,#40a0ff,#1b73ee)`:'rgba(10,22,40,.92)',color:active?'#fff':C.sub,boxShadow:active?'0 7px 18px rgba(38,135,255,.35)':'none'});
+    if (tabs) cssMany(tabs,{background:'#050b16',border:`1px solid ${C.line}`,borderRadius:'13px',padding:'5px',gap:'6px',boxShadow:'inset 0 0 0 1px rgba(255,255,255,.02)'});
+    $$('.sd-main-tab', r).forEach((t,i)=>{
+      const active = (t.className||'').includes('active') || /rgb\(45, 127, 249\)|#2d7ff9/i.test(t.getAttribute('style')||'');
+      cssMany(t,{height:'33px',padding:'0 13px',display:'flex',alignItems:'center',justifyContent:'center',borderRadius:'10px',fontSize:'13px',fontWeight:'950',letterSpacing:'-.2px',border:`1px solid ${active?C.blue:'rgba(148,163,184,.20)'}`,background:active?`linear-gradient(180deg,${C.blue},#155fd2)`:'rgba(15,23,42,.78)',color:active?'#fff':C.sub,boxShadow:active?'0 8px 18px rgba(45,127,249,.28)':'none'});
     });
-    $$('.sd-header-btn,.sd-btn-icon', r).forEach(b=>cssMany(b,{background:'rgba(148,163,184,.15)',border:`1px solid rgba(148,163,184,.22)`,borderRadius:'9px',color:C.text,boxShadow:'none'}));
+    $$('.sd-header-btn,.sd-btn-icon', r).forEach(b=>cssMany(b,{background:'#071426',border:`1px solid ${C.line}`,borderRadius:'9px',color:C.sub,boxShadow:'none'}));
   }
 
   function decorateStats(r){
-    const stats = $('.sd-stats-bar', r); if(!stats) return;
-    cssMany(stats,{background:`linear-gradient(180deg,#07111f,#081221)`,color:C.text,border:'0',borderBottom:`1px solid ${C.line}`,gap:'12px',padding:'15px 16px'});
-    const names = ['총 방송 시간','채팅 수','참여 인원','상태'];
-    $$('.sd-stat-label', r).forEach((l,i)=>text(l,names[i]||l.textContent));
+    const stats = $('.sd-stats-bar', r);
+    if(!stats) return;
+    cssMany(stats,{background:`linear-gradient(180deg,${C.root},#050b16)`,color:C.text,border:'0',borderBottom:`1px solid ${C.line}`,gap:'12px',padding:'14px 16px'});
+    const labels = $$('.sd-stat-label', r);
+    const values = $$('.sd-stat-value', r);
+    const names = ['BROADCAST TIME','TOTAL COUNT','UNIQUE USERS','SYSTEM STATUS'];
+    labels.forEach((l,i)=>text(l,names[i]||l.textContent));
     $$('.sd-stat-card', r).forEach((card,i)=>{
-      const isStatus = i===3;
-      cssMany(card,{position:'relative',overflow:'hidden',background:isStatus?`linear-gradient(135deg,#18a5ff 0%,#218cf8 55%,#0c6fd9 100%)`:'linear-gradient(135deg,#071321,#09182b)',border:`1px solid ${isStatus?'rgba(106,199,255,.95)':C.line}`,borderRadius:isStatus?'999px':'14px',boxShadow:isStatus?'0 14px 28px rgba(33,140,248,.28),inset 0 0 0 1px rgba(255,255,255,.14)':'0 10px 24px rgba(0,0,0,.22)',padding:isStatus?'13px 18px':'13px 15px 12px',minHeight:'63px',color:isStatus?'#fff':C.text});
-      const a = card.querySelector('.cnine-card-accent') || document.createElement('i');
-      a.className='cnine-card-accent'; if(!a.parentNode) card.appendChild(a);
-      cssMany(a,{position:'absolute',top:'0',left:'0',right:'0',height:isStatus?'0':'3px',background:isStatus?'transparent':C.blue,display:'block'});
+      cssMany(card,{position:'relative',overflow:'hidden',background:i===3?'linear-gradient(135deg,#0c2b24,#0d1b2f)':'linear-gradient(135deg,#0d1b2f,#0a1424)',border:`1px solid ${i===3?'rgba(53,226,139,.48)':C.line}`,borderRadius:'14px',boxShadow:'0 10px 24px rgba(0,0,0,.20)',padding:'13px 15px 12px',minHeight:'68px',color:C.text});
+      if (!card.querySelector('.cnine-card-accent')) {
+        const a=document.createElement('i'); a.className='cnine-card-accent'; card.appendChild(a);
+      }
+      cssMany(card.querySelector('.cnine-card-accent'),{position:'absolute',top:'0',left:'0',right:'0',height:'3px',background:i===3?C.green:C.blue,display:'block'});
     });
-    $$('.sd-stat-label', r).forEach((el,i)=>cssMany(el,{display:'block',fontSize:'10px',fontWeight:'1000',letterSpacing:i===3?'.2px':'.8px',color:i===3?'rgba(255,255,255,.84)':C.sub,marginBottom:'6px'}));
-    $$('.sd-stat-value', r).forEach((el,i)=>cssMany(el,{display:'block',fontSize:i===3?'20px':'22px',fontWeight:'1000',letterSpacing:'-.7px',color:i===3?C.green:C.text,lineHeight:'1.05'}));
+    labels.forEach(el=>cssMany(el,{display:'block',fontSize:'10px',fontWeight:'1000',letterSpacing:'1.15px',color:C.sub,marginBottom:'7px'}));
+    values.forEach((el,i)=>cssMany(el,{display:'block',fontSize:i===3?'21px':'22px',fontWeight:'1000',letterSpacing:'-.7px',color:i===3?C.green:C.text,lineHeight:'1.05'}));
   }
 
   function decoratePanels(r){
     const body = $('.sd-body', r);
-    if(body) cssMany(body,{background:C.bg,color:C.text,border:'0',gap:'14px',padding:'14px 16px 16px'});
+    if(body) cssMany(body,{background:C.root,color:C.text,border:'0',gap:'14px',padding:'14px 16px 16px'});
     const rank = document.getElementById('sd-panel-rank');
     const log = document.getElementById('sd-panel-log');
-    if(rank) cssMany(rank,{width:'34%',background:C.panel,color:C.text,border:`1px solid ${C.line}`,borderRadius:'14px',overflow:'hidden',boxShadow:'0 14px 30px rgba(0,0,0,.24)'});
-    if(log) cssMany(log,{width:'66%',background:C.panel,color:C.text,border:`1px solid ${C.line}`,borderRadius:'14px',overflow:'hidden',boxShadow:'0 14px 30px rgba(0,0,0,.24)'});
-    text(document.getElementById('title-rank'),'채팅 랭킹');
-    text(document.getElementById('title-log'),'채팅 로그');
-    $$('.sd-panel-header', r).forEach(h=>cssMany(h,{background:`linear-gradient(180deg,#0d1b2f,#0a1424)`,borderBottom:`1px solid ${C.line}`,minHeight:'48px',padding:'0 13px',color:C.text}));
-    $$('#title-rank,#title-log', r).forEach(el=>cssMany(el,{fontSize:'14px',fontWeight:'1000',letterSpacing:'-.3px',color:C.text,textTransform:'none'}));
+    if(rank) cssMany(rank,{width:'32%',background:C.panel,color:C.text,border:`1px solid ${C.line}`,borderRadius:'14px',overflow:'hidden',boxShadow:'0 14px 30px rgba(0,0,0,.22)'});
+    if(log) cssMany(log,{width:'68%',background:C.panel,color:C.text,border:`1px solid ${C.line}`,borderRadius:'14px',overflow:'hidden',boxShadow:'0 14px 30px rgba(0,0,0,.22)'});
+    text(document.getElementById('title-rank'),'RANKING BOARD');
+    text(document.getElementById('title-log'),'ACTIVITY LOG');
+    $$('.sd-panel-header', r).forEach(h=>cssMany(h,{background:`linear-gradient(180deg,${C.panel2},#0a1424)`,borderBottom:`1px solid ${C.line}`,minHeight:'47px',padding:'0 13px',color:C.text}));
+    $$('#title-rank,#title-log', r).forEach(el=>cssMany(el,{fontSize:'12px',fontWeight:'1000',letterSpacing:'1px',color:C.text,textTransform:'uppercase'}));
   }
 
   function decorateRank(r){
-    const list = document.getElementById('sd-rank-list'); if(!list) return;
-    cssMany(list,{background:C.panel,color:C.text,padding:'8px 10px 10px'});
-    const old = document.getElementById('cnine-rank-head'); if(old) old.remove();
+    const list = document.getElementById('sd-rank-list');
+    if(!list) return;
+    cssMany(list,{background:C.panel,color:C.text,padding:'0 10px 10px'});
+    let head = document.getElementById('cnine-rank-head');
+    if(!head){
+      head=document.createElement('div');
+      head.id='cnine-rank-head';
+      head.innerHTML='<span>RANK</span><span>NICKNAME</span><span>COUNT</span>';
+      list.prepend(head);
+    }
+    cssMany(head,{display:'grid',gridTemplateColumns:'42px minmax(0,1fr) auto',gap:'9px',alignItems:'center',height:'31px',padding:'0 8px',margin:'0 0 6px',color:C.muted,fontSize:'10px',fontWeight:'1000',letterSpacing:'.7px',borderBottom:`1px solid ${C.line}`});
     $$('.sd-rank-item', list).forEach((row,idx)=>{
-      cssMany(row,{height:'38px',display:'grid',gridTemplateColumns:'34px minmax(0,1fr) auto',alignItems:'center',gap:'8px',padding:'0 6px',margin:'0 0 5px',borderRadius:'10px',border:'1px solid rgba(148,163,184,.10)',background:idx<3?'rgba(38,135,255,.08)':'rgba(10,20,36,.30)',color:C.text});
+      cssMany(row,{height:'38px',display:'grid',gridTemplateColumns:'42px minmax(0,1fr) auto',alignItems:'center',gap:'9px',padding:'0 8px',margin:'0 0 4px',borderRadius:'10px',border:`1px solid ${idx<3?'rgba(45,127,249,.38)':'rgba(148,163,184,.10)'}`,background:idx===0?'linear-gradient(90deg,rgba(45,127,249,.26),rgba(45,127,249,.05))':idx<3?'rgba(45,127,249,.12)':'rgba(15,23,42,.36)',color:C.text});
     });
-    $$('.sd-rank-num', list).forEach((n,idx)=>cssMany(n,{display:'flex',alignItems:'center',justifyContent:'center',width:idx<3?'30px':'28px',height:'28px',borderRadius:'8px',fontSize:'14px',fontWeight:'1000',fontStyle:'italic',color:idx===0?C.yellow:idx<3?'#fff':C.sub,background:idx<3?`linear-gradient(180deg,#3a9dff,#1773e8)`:'transparent',border:idx<3?'0':'0'}));
-    $$('.sd-rank-nick,.sd-rank-name-span', list).forEach(el=>cssMany(el,{color:C.text,fontSize:'13px',fontWeight:'1000',minWidth:'0',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}));
-    $$('.sd-rank-cnt', list).forEach(el=>cssMany(el,{minWidth:'64px',textAlign:'center',background:'linear-gradient(180deg,#37a0ff,#1673e9)',border:'1px solid rgba(122,199,255,.70)',borderRadius:'999px',padding:'5px 9px',color:'#eaf7ff',fontSize:'13px',fontWeight:'1000',boxShadow:'0 5px 14px rgba(38,135,255,.30)'}));
+    $$('.sd-rank-num', list).forEach((n,idx)=>cssMany(n,{display:'flex',alignItems:'center',justifyContent:'center',width:'28px',height:'26px',borderRadius:'8px',fontSize:'12px',fontWeight:'1000',color:idx<3?'#fff':C.sub,background:idx<3?`linear-gradient(180deg,${C.blue},#145bd1)`:'rgba(148,163,184,.10)',border:idx<3?'0':`1px solid ${C.line}`}));
+    $$('.sd-rank-nick,.sd-rank-name-span', list).forEach(el=>cssMany(el,{color:C.text,fontSize:'13px',fontWeight:'900',minWidth:'0',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}));
+    $$('.sd-rank-cnt', list).forEach(el=>cssMany(el,{background:'rgba(45,127,249,.16)',border:'1px solid rgba(88,166,255,.42)',borderRadius:'9px',padding:'4px 8px',color:C.blue2,fontSize:'12px',fontWeight:'1000'}));
   }
 
   function decorateLog(r){
     const list = document.getElementById('sd-log-list');
     if(list) cssMany(list,{background:C.panel,color:C.text,padding:'10px'});
-    $$('.sd-log-row', r).forEach((row,idx)=>cssMany(row,{background:idx%2?'rgba(12,25,44,.70)':'rgba(8,18,33,.86)',border:'0',borderBottom:'1px solid rgba(148,163,184,.11)',borderLeft:`4px solid ${C.blue}`,borderRadius:'8px',margin:'0 0 7px',padding:'10px 12px',color:C.text,boxShadow:'none'}));
-    $$('.sd-time', r).forEach(el=>cssMany(el,{color:C.sub,fontSize:'13px',fontWeight:'1000',fontFamily:'Consolas,Monaco,monospace',marginRight:'10px'}));
-    $$('.sd-chat-content,.sd-msg,.sd-msg-battle,.sd-msg-challenge,.sd-msg-dona', r).forEach(el=>cssMany(el,{color:C.text,fontSize:'15px',fontWeight:'900',textShadow:'none',lineHeight:'1.5'}));
-    $$('.sd-nick', r).forEach((el,i)=>cssMany(el,{color:[C.green,C.blue2,C.pink,C.purple][i%4],fontWeight:'1000',textShadow:'none'}));
-    $$('.sd-nick-id', r).forEach(el=>cssMany(el,{color:C.sub,fontSize:'12px',fontWeight:'800',marginLeft:'4px'}));
-    $$('.sd-msg-battle > div,.sd-msg-challenge > div,.sd-msg-dona > div,.sd-chat-content div', r).forEach(el=>cssMany(el,{display:'inline-block',background:'rgba(255,255,255,.08)',color:'#ffffff',border:'1px solid rgba(255,255,255,.24)',borderRadius:'9px',padding:'7px 10px',marginTop:'7px',fontWeight:'950',textShadow:'none'}));
+    $$('.sd-log-row', r).forEach((row,idx)=>cssMany(row,{background:idx%2?'rgba(15,29,49,.86)':'rgba(10,20,36,.92)',border:'1px solid rgba(148,163,184,.15)',borderLeft:`3px solid ${C.blue}`,borderRadius:'11px',margin:'0 0 8px',padding:'10px 11px',color:C.text,boxShadow:'none'}));
+    $$('.sd-time', r).forEach(el=>cssMany(el,{color:C.blue2,fontSize:'12px',fontWeight:'950',fontFamily:'Consolas,Monaco,monospace',marginRight:'8px'}));
+    $$('.sd-chat-content,.sd-msg,.sd-msg-battle,.sd-msg-challenge,.sd-msg-dona', r).forEach(el=>cssMany(el,{color:C.text2,fontSize:'13px',fontWeight:'800',textShadow:'none',lineHeight:'1.45'}));
+    $$('.sd-nick', r).forEach(el=>cssMany(el,{color:C.cyan,fontWeight:'1000',textShadow:'none'}));
+    $$('.sd-nick-id', r).forEach(el=>cssMany(el,{color:C.muted,fontSize:'11px',fontWeight:'750',marginLeft:'3px'}));
+    $$('.sd-msg-battle > div,.sd-msg-challenge > div,.sd-msg-dona > div,.sd-chat-content div', r).forEach(el=>cssMany(el,{background:'#101c2e',color:'#fff7d6',border:'1px solid rgba(250,204,21,.42)',borderLeft:`4px solid ${C.yellow}`,borderRadius:'9px',padding:'7px 9px',marginTop:'7px',fontWeight:'850',textShadow:'none'}));
   }
 
   function decorateSearch(r){
-    $$('.sd-search-container', r).forEach(el=>cssMany(el,{background:'#071221',border:`1px solid ${C.line2}`,borderRadius:'10px',height:'32px',padding:'0 6px'}));
-    $$('.sd-search-select,.sd-search-input', r).forEach(el=>cssMany(el,{background:'#071221',color:C.text,border:'0',outline:'0',fontSize:'12px',fontWeight:'850'}));
+    $$('.sd-search-container', r).forEach(el=>cssMany(el,{background:'#06101f',border:`1px solid ${C.line2}`,borderRadius:'10px',height:'32px',padding:'0 6px'}));
+    $$('.sd-search-select,.sd-search-input', r).forEach(el=>cssMany(el,{background:'#06101f',color:C.text,border:'0',outline:'0',fontSize:'12px',fontWeight:'850'}));
     $$('.sd-search-input', r).forEach(el=>cssMany(el,{minWidth:'150px'}));
     $$('.sd-search-clear', r).forEach(el=>cssMany(el,{color:C.sub,fontWeight:'1000'}));
-    $$('.sd-btn-icon', r).forEach(b=>cssMany(b,{background:'rgba(148,163,184,.13)',border:`1px solid ${C.line}`,borderRadius:'9px',color:C.text}));
+    const modal = document.getElementById('sd-time-modal');
+    if(modal) cssMany(modal,{background:C.panel2,border:`1px solid ${C.line2}`,borderRadius:'12px',boxShadow:'0 18px 40px rgba(0,0,0,.45)',color:C.text});
+    $$('.sd-tm-input,.sd-tm-btn', r).forEach(el=>cssMany(el,{background:'#06101f',border:`1px solid ${C.line}`,borderRadius:'8px',color:C.text,fontWeight:'900'}));
   }
 
   function apply(){
-    const r = root(); if(!r) return;
+    const r = root();
+    if(!r) return;
     injectCss();
     r.setAttribute('data-cnine-ui', MARK);
-    cssMany(r,{background:C.bg,color:C.text,border:`1px solid ${C.line2}`,borderRadius:'16px'});
+    cssMany(r,{background:C.root,color:C.text,border:`1px solid ${C.line2}`,borderRadius:'14px'});
     decorateHeader(r); decorateStats(r); decoratePanels(r); decorateRank(r); decorateLog(r); decorateSearch(r);
   }
 
   let t=null;
   function schedule(){ clearTimeout(t); t=setTimeout(apply, 80); }
-  [50,150,350,800,1400,2400,4200,7000].forEach(ms=>setTimeout(apply,ms));
+  [60,180,420,900,1600,2800,5000,8000].forEach(ms=>setTimeout(apply,ms));
   window.addEventListener('load', schedule, false);
   document.addEventListener('DOMContentLoaded', schedule, false);
   setInterval(apply, 2500);
-  setTimeout(()=>{ const r=root(); if(!r || !window.MutationObserver) return; new MutationObserver(schedule).observe(r,{subtree:true,childList:true,attributes:true,attributeFilter:['style','class']}); },900);
-}catch(e){ console.warn('[CNINE Replay Analysis 1227]', e); }})();
+  setTimeout(()=>{
+    const r=root();
+    if(!r || !window.MutationObserver) return;
+    new MutationObserver(schedule).observe(r,{subtree:true,childList:true,attributes:true,attributeFilter:['style','class']});
+  },900);
+}catch(e){ console.warn('[CNINE Data Center 1225]', e); }})();
