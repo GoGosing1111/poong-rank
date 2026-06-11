@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12 01:05:23",
+  "updated_at": "2026-06-12 01:05:26",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -49,7 +49,7 @@
       "name": "송채연",
       "match": "송채연",
       "soop_id": "jfiary0718",
-      "today": 2486,
+      "today": 2896,
       "month": 434399,
       "today_api_name": "송채연♥",
       "month_api_name": "송채연♥",
@@ -291,7 +291,7 @@
       "name": "설윤이",
       "match": "설윤이♥",
       "soop_id": "dain9804",
-      "today": 7245,
+      "today": 8691,
       "month": 98039,
       "today_api_name": "설윤이_",
       "month_api_name": "설윤이_",
@@ -324,7 +324,7 @@
       "name": "아윤",
       "match": "아윤♡",
       "soop_id": "ayoona",
-      "today": 4248,
+      "today": 4249,
       "month": 87276,
       "today_api_name": "아윤♡",
       "month_api_name": "아윤♡",
@@ -402,7 +402,7 @@
       "match": "짭호",
       "soop_id": "wjddlf4695",
       "today": 19575,
-      "month": 21531,
+      "month": 21631,
       "today_api_name": "짭호형2↑",
       "month_api_name": "짭호형2↑",
       "matched": true
@@ -446,7 +446,7 @@
       {
         "rank": 1,
         "name": "송채연",
-        "today": "2,486",
+        "today": "2,896",
         "month": "434,399",
         "width": "100%",
         "first": true,
@@ -536,7 +536,7 @@
       {
         "rank": 11,
         "name": "설윤이",
-        "today": "7,245",
+        "today": "8,691",
         "month": "98,039",
         "width": "22%",
         "first": false,
@@ -545,7 +545,7 @@
       {
         "rank": 12,
         "name": "아윤",
-        "today": "4,248",
+        "today": "4,249",
         "month": "87,276",
         "width": "20%",
         "first": false,
@@ -583,7 +583,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "165,328",
+    "avg": "165,333",
     "leader": "졈니",
     "leader_sales": "452,832",
     "members": [
@@ -762,7 +762,7 @@
         "rank": 20,
         "name": "짭호",
         "today": "19,575",
-        "month": "21,531",
+        "month": "21,631",
         "width": "4%",
         "first": false,
         "color": "#ffd34f"
