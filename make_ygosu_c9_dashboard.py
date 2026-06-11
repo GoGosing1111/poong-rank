@@ -252,7 +252,7 @@ function copyText(text){{
 }}
 
 var btn = document.getElementById('btn');
-var code = '!function(){{var s=document.createElement(\'script\');s.id=\'c9-vodchat-loader\';s.src=\'{loader_js}\';document.head.appendChild(s)}}();';
+var code = '!function(){{var s=document.createElement(\\'script\\');s.id=\\'c9-vodchat-loader\\';s.src=\\'{loader_js}\\';document.head.appendChild(s)}}();';
 
 btn.onclick = function() {{
   copyText(code).then(function(){{
