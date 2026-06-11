@@ -12,7 +12,7 @@ CNINE VOD loader v4
 
   var BASE = 'https://keyman1335-maker.github.io/poong-rank';
   var ORIGIN_JS = BASE + '/soop_vodchat.js?v=2026061211';
-  var PATCH_JS = BASE + '/soop_vodchat_cnine_patch.js?v=2026061211';
+  var PATCH_JS = BASE + '/soop_vodchat_cnine_patch.js?v=2026061215';
 
   window.__C9_VODCHAT_STORE__ = window.__C9_VODCHAT_STORE__ || {
     responses: [],
