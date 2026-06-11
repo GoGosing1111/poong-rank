@@ -2,141 +2,101 @@ function _0xae9d(_0x23d5be,_0x19da7a){_0x23d5be=_0x23d5be-(-0x17*0x69+-0x9*0x17+
 
 
 ;(()=>{try{
-  if(window.__TQ_SOOP_OFFICIAL_SKIN__) return;
-  window.__TQ_SOOP_OFFICIAL_SKIN__ = 1;
-  const STYLE_ID = 'tq-soop-official-skin-2026061218';
-  function addStyle(){
-    if(document.getElementById(STYLE_ID)) return;
-    const s = document.createElement('style');
-    s.id = STYLE_ID;
-    s.textContent = `
-      :root{
-        --tq-bg:#0f1117;
-        --tq-panel:#1a1d26;
-        --tq-panel2:#202431;
-        --tq-line:#343a46;
-        --tq-blue:#2d7ff9;
-        --tq-blue2:#58a6ff;
-        --tq-text:#f3f6fb;
-        --tq-sub:#aab2c0;
-      }
-      body{
-        background:var(--tq-bg)!important;
-        color:var(--tq-text)!important;
-      }
-      button, input, select{
-        border-radius:8px!important;
-        box-shadow:none!important;
-        outline:none!important;
-      }
-      button{
-        background:#242936!important;
-        border:1px solid var(--tq-line)!important;
-        color:var(--tq-text)!important;
-      }
-      button:hover{
-        border-color:var(--tq-blue)!important;
-      }
-      input, select{
-        background:#11141b!important;
-        border:1px solid var(--tq-line)!important;
-        color:var(--tq-text)!important;
-      }
-      [style*="border-radius: 999"], [style*="border-radius:999"]{
-        border-radius:8px!important;
-      }
-      [style*="background: linear-gradient"], [style*="background:linear-gradient"]{
-        background:var(--tq-panel)!important;
-      }
-      [style*="box-shadow"]{
-        box-shadow:none!important;
-      }
-      [style*="rgb(16, 185, 129)"], [style*="#10b981"], [style*="color: rgb(16, 185, 129)"]{
-        color:var(--tq-blue2)!important;
-      }
-      ::-webkit-scrollbar{width:8px!important;height:8px!important}
-      ::-webkit-scrollbar-track{background:#11141b!important}
-      ::-webkit-scrollbar-thumb{background:#485064!important;border-radius:8px!important}
-      ::-webkit-scrollbar-thumb:hover{background:var(--tq-blue)!important}
-    `;
-    document.head.appendChild(s);
-  }
-  if(document.head) addStyle(); else document.addEventListener('DOMContentLoaded', addStyle, {once:true});
-}catch(e){console.warn('[TQ skin]', e)}})();
-
-
-;(()=>{try{
-  if(window.__TQ_SOOP_FORCE_SKIN_2026061219__) return;
-  window.__TQ_SOOP_FORCE_SKIN_2026061219__ = 1;
-  const MARK = 'tq-soop-force-skin-2026061219';
+  if(window.__TQ_SCOPED_SOOP_SKIN_2026061220__) return;
+  window.__TQ_SCOPED_SOOP_SKIN_2026061220__ = 1;
+  const MARK = 'tq-scoped-soop-skin-2026061220';
   const C = {
-    bg:'#0f1117', top:'#171a22', panel:'#1a1d26', panel2:'#202431', soft:'#242936',
-    line:'#343a46', line2:'#465064', blue:'#2d7ff9', blue2:'#58a6ff',
-    text:'#f3f6fb', sub:'#aab2c0', green:'#33d69f', gold:'#f5b544'
+    root:'#101722', header:'#0c111b', panel:'#162235', panel2:'#1b2940', soft:'#22314b',
+    line:'#2d4566', blue:'#2d7ff9', blue2:'#58a6ff', text:'#f4f8ff', sub:'#a8b4c7',
+    gold:'#f5b544', green:'#4ade80', pink:'#f472b6'
   };
   function set(el, obj){ if(!el || !el.style) return; for(const k in obj) el.style.setProperty(k, obj[k], 'important'); }
-  function looksCard(el){
-    const r = el.getBoundingClientRect();
-    if(r.width < 80 || r.height < 40) return false;
-    const cs = getComputedStyle(el);
-    return (cs.backgroundColor && cs.backgroundColor !== 'rgba(0, 0, 0, 0)') || cs.borderRadius !== '0px';
+  function rectOk(el){ const r=el.getBoundingClientRect(); return r.width>0 && r.height>0; }
+  function hasPopupText(el){
+    const t=(el.textContent||'').replace(/\s+/g,' ');
+    return (t.includes('총 방송 시간') && t.includes('채팅 순위') && t.includes('채팅 내역')) ||
+           (t.includes('총 채팅 수') && t.includes('채팅 인원') && t.includes('채팅 내역'));
+  }
+  function findPopupRoot(){
+    const nodes=[...document.querySelectorAll('div,section,main,article')].filter(el=>{
+      if(el===document.body || el===document.documentElement) return false;
+      if(!rectOk(el) || !hasPopupText(el)) return false;
+      const r=el.getBoundingClientRect();
+      if(r.width<420 || r.height<260) return false;
+      // SOOP 원본 전체 페이지 같은 큰 영역은 제외
+      if(r.width>window.innerWidth*0.92 && r.height>window.innerHeight*0.75) return false;
+      return true;
+    }).map(el=>{
+      const r=el.getBoundingClientRect();
+      const cs=getComputedStyle(el);
+      const zi=parseInt(cs.zIndex||'0',10)||0;
+      const fixed=(cs.position==='fixed'||cs.position==='absolute'||zi>10);
+      return {el, area:r.width*r.height, fixed, zi, right:window.innerWidth-r.right, bottom:window.innerHeight-r.bottom};
+    }).sort((a,b)=>{
+      // 팝업은 보통 fixed/absolute + 가장 작은 전체 컨테이너
+      if(a.fixed!==b.fixed) return a.fixed ? -1 : 1;
+      return a.area-b.area;
+    });
+    return nodes[0]?.el || null;
+  }
+  function addStyle(root){
+    if(!document.getElementById(MARK)){
+      const css=document.createElement('style');
+      css.id=MARK;
+      css.textContent=`
+        [data-tq-popup-skin="${MARK}"]{background:${C.root}!important;color:${C.text}!important;border:1px solid ${C.line}!important;box-shadow:0 18px 55px rgba(0,0,0,.45)!important;}
+        [data-tq-popup-skin="${MARK}"] *{text-shadow:none!important;box-sizing:border-box!important;}
+        [data-tq-popup-skin="${MARK}"] button,
+        [data-tq-popup-skin="${MARK}"] input,
+        [data-tq-popup-skin="${MARK}"] select{background:${C.soft}!important;border:1px solid ${C.line}!important;color:${C.text}!important;border-radius:7px!important;box-shadow:none!important;outline:none!important;}
+        [data-tq-popup-skin="${MARK}"] input{background:#0f1726!important;}
+        [data-tq-popup-skin="${MARK}"] ::-webkit-scrollbar{width:8px!important;height:8px!important}
+        [data-tq-popup-skin="${MARK}"] ::-webkit-scrollbar-track{background:#0f1726!important}
+        [data-tq-popup-skin="${MARK}"] ::-webkit-scrollbar-thumb{background:#49617f!important;border-radius:8px!important}
+        [data-tq-popup-skin="${MARK}"] ::-webkit-scrollbar-thumb:hover{background:${C.blue}!important}
+      `;
+      (document.head||document.documentElement).appendChild(css);
+    }
+    root.setAttribute('data-tq-popup-skin', MARK);
   }
   function skin(){
-    if(document.body){
-      document.body.setAttribute('data-tq-skin', MARK);
-      set(document.body,{background:C.bg,color:C.text});
-    }
-    document.querySelectorAll('div,section,main,article,header,aside').forEach(el=>{
+    const root=findPopupRoot();
+    if(!root) return;
+    addStyle(root);
+    set(root,{background:C.root,color:C.text,border:`1px solid ${C.line}`,borderRadius:'18px',boxShadow:'0 18px 55px rgba(0,0,0,.45)'});
+    [...root.querySelectorAll('div,section,main,article,header,aside')].forEach(el=>{
       const t=(el.textContent||'').replace(/\s+/g,' ').trim();
       const r=el.getBoundingClientRect();
       if(!r.width || !r.height) return;
-      if(t.includes('철구 형님들') && r.height < 90){
-        set(el,{background:C.top,borderBottom:`1px solid ${C.line}`,boxShadow:'none'});
+      if(t.includes('철구 형님들') && r.height<80 && r.width>250){
+        set(el,{background:C.header,borderBottom:`1px solid ${C.line}`,boxShadow:'none'});
       }
-      if(t.includes('총 방송 시간') || t.includes('총 채팅 수') || t.includes('채팅 인원') || t.includes('상태')){
-        if(r.width>90 && r.height>40 && r.height<100){
-          set(el,{background:C.panel,border:`1px solid ${C.line}`,borderRadius:'8px',boxShadow:'none'});
-        }
+      if((t.includes('총 방송 시간')||t.includes('총 채팅 수')||t.includes('채팅 인원')||t.includes('상태')) && r.width>85 && r.height>38 && r.height<95){
+        set(el,{background:C.panel,border:`1px solid ${C.line}`,borderRadius:'10px',boxShadow:'none'});
       }
-      if((t.includes('채팅 순위') || t.includes('채팅 내역')) && r.width>180 && r.height>120){
-        set(el,{background:C.panel,border:`1px solid ${C.line}`,borderRadius:'8px',boxShadow:'none'});
+      if((t.includes('채팅 순위')||t.includes('채팅 내역')) && r.width>150 && r.height>110){
+        set(el,{background:C.panel,border:`1px solid ${C.line}`,borderRadius:'12px',boxShadow:'none'});
       }
-      if((t.includes('라로송골새롱') || t.includes('정수연') || t.includes('KIMBAKLE')) && looksCard(el)){
-        if(r.width>160 && r.height>30){
-          set(el,{background:'transparent',borderColor:C.line,boxShadow:'none'});
-        }
-      }
-      if(t === '전체' || t === '후원' || t === '도전' || t === '대결'){
+      if(t==='전체'||t==='후원'||t==='도전'||t==='대결'){
         set(el,{borderRadius:'7px',boxShadow:'none'});
-        if(t === '전체') set(el,{background:C.blue,border:`1px solid ${C.blue}`,color:'#fff'});
+        if(t==='전체') set(el,{background:C.blue,border:`1px solid ${C.blue}`,color:'#fff'});
         else set(el,{background:C.soft,border:`1px solid ${C.line}`,color:C.sub});
       }
+      if(t.endsWith('회') && r.width<95 && r.height<34){
+        set(el,{background:'#173a62',color:C.blue2,borderRadius:'6px'});
+      }
+      if(t==='완료'||t.includes('완료 ✨')) set(el,{color:C.blue2});
     });
-    document.querySelectorAll('button,input,select').forEach(el=>{
-      set(el,{background:C.soft,border:`1px solid ${C.line}`,borderRadius:'7px',boxShadow:'none',color:C.text});
-    });
-    document.querySelectorAll('input').forEach(el=>set(el,{background:'#11141b'}));
-    document.querySelectorAll('*').forEach(el=>{
-      const t=(el.textContent||'').trim();
-      const r=el.getBoundingClientRect();
-      if(!r.width || !r.height) return;
+    [...root.querySelectorAll('button,input,select')].forEach(el=>set(el,{background:C.soft,border:`1px solid ${C.line}`,borderRadius:'7px',boxShadow:'none',color:C.text}));
+    [...root.querySelectorAll('*')].forEach(el=>{
+      const r=el.getBoundingClientRect(); if(!r.width||!r.height) return;
       const cs=getComputedStyle(el);
-      if(cs.color === 'rgb(16, 185, 129)' || cs.color === 'rgb(52, 211, 153)') set(el,{color:C.blue2});
-      if(t.endsWith('회') && r.width<80 && r.height<32) set(el,{background:'#16345f',color:C.blue2,borderRadius:'5px'});
+      const t=(el.textContent||'').trim();
+      if(cs.color==='rgb(16, 185, 129)'||cs.color==='rgb(52, 211, 153)'||cs.color==='rgb(0, 255, 160)') set(el,{color:C.blue2});
       if(/^\d+$/.test(t) && r.width<45 && r.height<35) set(el,{color:C.sub});
-      if(t === '완료' || t.includes('완료 ✨')) set(el,{color:C.blue2});
-      if(t.includes('채팅 순위') || t.includes('채팅 내역')) set(el,{color:C.text});
     });
   }
-  const css=document.createElement('style'); css.id=MARK; css.textContent=`
-    [data-tq-skin="${MARK}"] *{text-shadow:none!important;}
-    [data-tq-skin="${MARK}"] ::-webkit-scrollbar{width:8px!important;height:8px!important}
-    [data-tq-skin="${MARK}"] ::-webkit-scrollbar-track{background:#11141b!important}
-    [data-tq-skin="${MARK}"] ::-webkit-scrollbar-thumb{background:#485064!important;border-radius:8px!important}
-    [data-tq-skin="${MARK}"] ::-webkit-scrollbar-thumb:hover{background:#2d7ff9!important}
-  `;
-  (document.head||document.documentElement).appendChild(css);
   let n=0;
-  const timer=setInterval(()=>{ skin(); if(++n>=12) clearInterval(timer); },250);
-  window.addEventListener('load',()=>{setTimeout(skin,100);setTimeout(skin,800);});
-}catch(e){console.warn('[TQ force skin]', e)}})();
+  const timer=setInterval(()=>{ skin(); if(++n>=20) clearInterval(timer); },250);
+  window.addEventListener('load',()=>{setTimeout(skin,100);setTimeout(skin,700);setTimeout(skin,1600);});
+}catch(e){console.warn('[TQ scoped skin]', e)}})();
