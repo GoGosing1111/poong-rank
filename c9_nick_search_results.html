@@ -11,7 +11,7 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111827;fon
 .col{flex:1;min-width:360px;height:100%;display:flex;flex-direction:column;border-right:1px solid #334155;background:#111827}
 .head{height:42px;display:flex;align-items:center;justify-content:center;background:#0f172a;color:#fff;font-weight:900;font-size:14px;border-bottom:1px solid #334155}
 iframe{flex:1;width:100%;border:0;background:#fff}
-#guard-pop{display:block;position:fixed;z-index:999999;left:50%;top:14px;transform:translateX(-50%);width:min(920px,calc(100vw - 24px));max-height:58vh;overflow:auto;border:1px solid #f59e0b;border-radius:16px;background:linear-gradient(135deg,#0f172a,#111827);box-shadow:0 18px 60px rgba(0,0,0,.55);color:#fff}
+#guard-pop{display:block;position:fixed;z-index:999999;left:50%;top:14px;transform:translateX(-50%);width:min(920px,calc(100vw - 24px));max-height:260px;overflow:auto;border:1px solid #f59e0b;border-radius:16px;background:linear-gradient(135deg,#0f172a,#111827);box-shadow:0 18px 60px rgba(0,0,0,.55);color:#fff}
 </style>
 </head>
 <body>
@@ -145,6 +145,8 @@ iframe{flex:1;width:100%;border:0;background:#fff}
   function collectArticleLinksFromSearch(html,boardName){
     var doc=new DOMParser().parseFromString(html,'text/html');
     var links=[];
+    var nickNorm=normalize(nick);
+
     var selectors=[
       'td.subject a[href*="/board/"]',
       '.subject a[href*="/board/"]',
@@ -162,7 +164,13 @@ iframe{flex:1;width:100%;border:0;background:#fff}
       if(t.length<2 || t.length>180)return;
       if(/^(전체|인기|와토|공지|정보|사진|영상|이벤트|관리자|추천|댓글|목록|실시간|일간|미네랄|일반|엽기자랑|자유게시판|정치\/이슈|연애\/상담)$/.test(t))return;
 
-      links.push({board:boardName,title:cleanTitle(t),href:href});
+      // 핵심: 검색한 닉네임이 작성자/행 영역에 있는 글만 분석한다.
+      // 사이드 인기글/다른 작성자 글이 같은 페이지에 섞여도 제외.
+      var box=a.closest('tr,li,.list-item,.article,.board_item,.board-list-item,.post,.item,tbody');
+      var rowText=(box ? box.textContent : a.parentElement ? a.parentElement.textContent : a.textContent || '').replace(/\s+/g,' ').trim();
+      if(nickNorm && normalize(rowText).indexOf(nickNorm)===-1)return;
+
+      links.push({board:boardName,title:cleanTitle(t),href:href,rowText:rowText});
     });
 
     var seen={};
@@ -183,7 +191,8 @@ iframe{flex:1;width:100%;border:0;background:#fff}
 
     if(!rows.length){
       p.style.border='1px solid #3b82f6';
-      p.innerHTML='<div style="padding:10px 42px 10px 13px;background:rgba(15,23,42,.94);border-bottom:1px solid rgba(59,130,246,.45);">'
+      p.style.maxHeight='120px';
+      p.innerHTML='<div style="padding:10px 42px 10px 13px;background:rgba(15,23,42,.94);">'
         +'<button id="guard-close" type="button" style="position:absolute;right:10px;top:8px;width:28px;height:28px;border:0;border-radius:8px;background:#475569;color:#fff;font-weight:1000;cursor:pointer;">×</button>'
         +'<div style="font-size:16px;font-weight:1000;color:#fff;">✅ 게시글 제목 감지</div>'
         +'<div style="margin-top:4px;color:#93c5fd;font-size:13px;font-weight:900;">감지 없음 · 점수 0점 · 감지글 0건</div>'
@@ -203,12 +212,12 @@ iframe{flex:1;width:100%;border:0;background:#fff}
 
     var catHtml=Object.keys(byCat).map(function(cat){
       var uniq=byCat[cat].filter(function(v,i,a){return a.indexOf(v)===i;});
-      return '<span style="display:inline-block;margin:3px;padding:5px 8px;border-radius:999px;background:#7f1d1d;border:1px solid #ef4444;color:#fff;font-size:12px;font-weight:900;">'+esc(cat)+' : '+esc(uniq.join(', '))+'</span>';
+      return '<span style="display:inline-block;margin:2px;padding:4px 7px;border-radius:999px;background:#7f1d1d;border:1px solid #ef4444;color:#fff;font-size:11px;font-weight:900;">'+esc(cat)+' : '+esc(uniq.join(', '))+'</span>';
     }).join('');
 
     var list=rows.slice(0,15).map(function(r){
       var hitText=r.hits.map(function(h){return h.word+(h.count>1?'×'+h.count:'')+' +'+h.sum;}).join(', ');
-      return '<div style="margin-top:8px;padding:9px;border-radius:10px;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.10);">'
+      return '<div style="margin-top:7px;padding:8px;border-radius:10px;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.10);">'
         +'<div style="color:#7ec8ff;font-size:12px;font-weight:1000;">'+esc(r.board)+'</div>'
         +'<div style="margin-top:3px;color:#fff;font-size:13px;font-weight:900;line-height:1.35;">'+esc(r.title)+'</div>'
         +'<div style="margin-top:5px;color:#ffb4b4;font-size:12px;font-weight:900;">감지: '+esc(hitText)+'</div>'
@@ -216,12 +225,17 @@ iframe{flex:1;width:100%;border:0;background:#fff}
     }).join('');
 
     p.style.border='1px solid #ef4444';
-    p.innerHTML='<div style="position:sticky;top:0;padding:12px 42px 10px 13px;background:rgba(15,23,42,.94);border-bottom:1px solid rgba(239,68,68,.45);">'
+    p.style.maxHeight='260px';
+    p.innerHTML='<div style="padding:10px 42px 10px 13px;background:rgba(15,23,42,.94);border-bottom:1px solid rgba(239,68,68,.45);">'
       +'<button id="guard-close" type="button" style="position:absolute;right:10px;top:8px;width:28px;height:28px;border:0;border-radius:8px;background:#475569;color:#fff;font-weight:1000;cursor:pointer;">×</button>'
-      +'<div style="font-size:17px;font-weight:1000;color:#fff;">'+esc(level.emoji||'🚨')+' 게시글 제목 감지</div>'
+      +'<div style="font-size:16px;font-weight:1000;color:#fff;">'+esc(level.emoji||'🚨')+' 게시글 제목 감지</div>'
       +'<div style="margin-top:4px;color:#ffb4b4;font-size:13px;font-weight:900;">'+esc(level.label||'감지')+' · 점수 '+total+'점 · 감지글 '+rows.length+'건</div>'
-      +'<div style="margin-top:7px;">'+catHtml+'</div>'
-      +'</div><div style="padding:10px 12px 13px;">'+list+'</div>';
+      +'<div style="margin-top:6px;">'+catHtml+'</div>'
+      +'<details style="margin-top:7px;">'
+      +'<summary style="cursor:pointer;color:#93c5fd;font-size:12px;font-weight:1000;">상세보기 / 접기</summary>'
+      +'<div style="padding:7px 0 2px;">'+list+'</div>'
+      +'</details>'
+      +'</div>';
     $('guard-close').onclick=closePanel;
   }
 
