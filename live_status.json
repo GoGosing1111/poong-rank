@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-12 22:05:02",
+  "updated_at": "2026-06-12 23:05:03",
   "total": 39,
-  "live_count": 11,
+  "live_count": 13,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -207,7 +207,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294760021",
-      "title": "[씨나인⭐] 안냐세요",
+      "title": "[씨나인⭐] vs메옹",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
@@ -220,7 +220,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294766155",
-      "title": "씨나인⭐]안노하세여 조금 피곤쓰 ㅎ",
+      "title": "씨나인⭐]피곤해서 짧방.. ㅎㅎ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -307,11 +307,11 @@
       "part": "엑셀부",
       "soop_id": "0929kelly",
       "soop_url": "https://www.sooplive.com/station/0929kelly",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294768855",
+      "title": "[씨나인:신입] 하이이이이이이이 ^_~",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
@@ -320,11 +320,11 @@
       "part": "엑셀부",
       "soop_id": "epsthddus",
       "soop_url": "https://www.sooplive.com/station/epsthddus",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294768755",
+      "title": "[씨나인:여왕] 불금 나랑 놀아쪼..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/epsthddus/station"
     },
@@ -402,7 +402,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294762751",
-      "title": "[씨나인:귀족] 나랑 상콤해질래 ?💛🍋",
+      "title": "[씨나인:귀족] 누나가 알려준다 ㅋ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dlswldus107/station"
     },

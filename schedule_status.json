@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-12 22:07:10",
+  "updated_at": "2026-06-12 23:10:02",
   "source": "https://www.cnine.kr/timeline",
-  "count": 7,
+  "count": 8,
   "today_count": 1,
-  "future_count": 6,
+  "future_count": 7,
   "items": [
     {
       "title": "빵훈이 : 홍대 야킹 <feat. 박진우>",
@@ -75,6 +75,16 @@
       "dday": "D-8",
       "type": "엑셀",
       "source_line": "2026년 06월 20일(토) 17:00 ~ 2026년 06월 21일(일) 05:00"
+    },
+    {
+      "title": "엑셀씨나인 시그 컨테스트",
+      "date": "2026.06.24 (수)",
+      "raw_date": "2026-06-24",
+      "time": "시간미정",
+      "datetime": "2026.06.24 (수) · ⏰ 시간미정",
+      "dday": "D-12",
+      "type": "엑셀",
+      "source_line": "2026년 06월 24일(수)"
     }
   ],
   "error": ""
