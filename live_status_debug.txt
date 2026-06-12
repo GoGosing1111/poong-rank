@@ -1,8 +1,10 @@
-UPDATED_AT=2026-06-03 06:39:50
-TOTAL=38
+UPDATED_AT=2026-06-13 00:05:02
+TOTAL=39
 METHOD=bjapi_station
 
 [OFF] [스타부] 철구형 / y1026 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/y1026/station
+[LIVE] [스타부] 윤중 / jk890202 / viewers=0 / title=씨나인 김윤중) 총28만개빵 5:5 대박 프로리그 / reason=broad_object_found / https://bjapi.afreecatv.com/api/jk890202/station
+[OFF] [스타부] 짭호 / wjddlf4695 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/wjddlf4695/station
 [OFF] [스타부] 김택용 / rlaxordyd / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/rlaxordyd/station
 [OFF] [스타부] 빵훈이 / vlfvlf789 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/vlfvlf789/station
 [OFF] [스타부] 박재혁 / rlekfu6 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/rlekfu6/station
@@ -11,32 +13,31 @@ METHOD=bjapi_station
 [OFF] [스타부] 오조은 / zalalz / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/zalalz/station
 [OFF] [스타부] 모리 / moguleave / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/moguleave/station
 [OFF] [스타부] 왜냐맨장민철 / jmc06170 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/jmc06170/station
-[OFF] [스타부] 윤용태 / dbsdydx / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/dbsdydx/station
+[LIVE] [스타부] 윤용태 / dbsdydx / viewers=0 / title=[씨나인] 스타 윤용태  VS 재혁형 3/2 / reason=broad_object_found / https://bjapi.afreecatv.com/api/dbsdydx/station
 [OFF] [스타부] 유승곤 / scan1014 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/scan1014/station
 [OFF] [스타부] 디임 / qpqpro / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/qpqpro/station
 [OFF] [스타부] 나무늘봉순 / yjk011599 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/yjk011599/station
-[OFF] [스타부] 효짱 / queen030 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/queen030/station
-[OFF] [스타부] 란란 / rhf104 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/rhf104/station
+[LIVE] [스타부] 효짱 / queen030 / viewers=0 / title=[씨나인⭐] 스폰환영 / reason=broad_object_found / https://bjapi.afreecatv.com/api/queen030/station
+[LIVE] [스타부] 란란 / rhf104 / viewers=0 / title=씨나인⭐]140m 1414개 5코인.. / reason=broad_object_found / https://bjapi.afreecatv.com/api/rhf104/station
 [OFF] [스타부] 남수댕 / mew030709 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/mew030709/station
 [OFF] [스타부] 요닝 / tjgpdus97 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/tjgpdus97/station
 [OFF] [스타부] 앵지 / gks2wl / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/gks2wl/station
 [OFF] [스타부] 졈니 / yochba0402 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/yochba0402/station
+[OFF] [스타부] 깅예솔 / yunhee1222 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/yunhee1222/station
 [OFF] [스타부] 오리꿍 / imducko3o / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/imducko3o/station
 [OFF] [엑셀부] 철구형 / y1026 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/y1026/station
-[OFF] [엑셀부] 이다니 / 0929kelly / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/0929kelly/station
-[OFF] [엑셀부] 혜루찡 / epsthddus / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/epsthddus/station
-[OFF] [엑셀부] 송채연 / jfiary0718 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/jfiary0718/station
+[LIVE] [엑셀부] 이다니 / 0929kelly / viewers=0 / title=[씨나인:신입]이아이는,,간절합니다.. 시그단(1/5) 소음단(2/5) / reason=broad_object_found / https://bjapi.afreecatv.com/api/0929kelly/station
+[LIVE] [엑셀부] 혜루찡 / epsthddus / viewers=0 / title=[씨나인:여왕] 불금 나랑 놀아쪼.. (1/5) 기사단 (0/2) / reason=broad_object_found / https://bjapi.afreecatv.com/api/epsthddus/station
+[LIVE] [엑셀부] 송채연 / jfiary0718 / viewers=0 / title=[씨나인:신입] 불금 빨간맛❤️ / reason=broad_object_found / https://bjapi.afreecatv.com/api/jfiary0718/station
 [OFF] [엑셀부] 체온 / leeso0403 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/leeso0403/station
 [OFF] [엑셀부] 하이희야 / jkmjkm1236 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/jkmjkm1236/station
 [OFF] [엑셀부] 쁠리 / alwl1047 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/alwl1047/station
 [OFF] [엑셀부] 설윤이 / dain9804 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/dain9804/station
-[OFF] [엑셀부] 인지연 / dlswldus107 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/dlswldus107/station
+[LIVE] [엑셀부] 인지연 / dlswldus107 / viewers=0 / title=[씨나인:귀족] 헤헿 / reason=broad_object_found / https://bjapi.afreecatv.com/api/dlswldus107/station
 [OFF] [엑셀부] 채리 / lcy011027 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/lcy011027/station
-[OFF] [엑셀부] 초초 / chocho12 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/chocho12/station
+[LIVE] [엑셀부] 초초 / chocho12 / viewers=0 / title=[씨나인 : 황족] 레전더리 과묵업 수냥업 ♥ / reason=broad_object_found / https://bjapi.afreecatv.com/api/chocho12/station
 [OFF] [엑셀부] 여을 / kaja0011 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/kaja0011/station
-[OFF] [엑셀부] 애순이 / yunyeson3015 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/yunyeson3015/station
+[LIVE] [엑셀부] 애순이 / yunyeson3015 / viewers=0 / title=[씨나인 : 시녀2]  5년만에 탕수육중독회장식 1086,2086 역팬 or 간단방셀 / reason=broad_object_found / https://bjapi.afreecatv.com/api/yunyeson3015/station
 [OFF] [엑셀부] 아윤 / ayoona / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/ayoona/station
-[OFF] [엑셀부] 히나 / luaa0803 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/luaa0803/station
-[OFF] [엑셀부] 연두 / myby1221 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/myby1221/station
-[OFF] [엑셀부] 리하 / ksdd7856 / viewers=0 / title= / reason=no_broad_object / https://bjapi.afreecatv.com/api/ksdd7856/station
-[LIVE] [엑셀부] 초린 / dhtnqls1238 / viewers=0 / title=[씨나인 : 버러지] 린플단 구해보쟈 !! / reason=broad_object_found / https://bjapi.afreecatv.com/api/dhtnqls1238/station
+[LIVE] [엑셀부] 히나 / luaa0803 / viewers=0 / title=[씨나인:추녀]부활!!! / reason=broad_object_found / https://bjapi.afreecatv.com/api/luaa0803/station
+[LIVE] [엑셀부] 연두 / myby1221 / viewers=0 / title=[씨나인:버러지] 심심해요 / reason=broad_object_found / https://bjapi.afreecatv.com/api/myby1221/station

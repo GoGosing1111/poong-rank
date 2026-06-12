@@ -1,18 +1,33 @@
-UPDATED_AT=2026-06-03 06:39:58
-MODE=cnine_api_cookie_headers_v2
+UPDATED_AT=2026-06-13 00:05:11
+MODE=cnine_api_auto_chrome_cookie_v3
+CHROME_COOKIE=FAIL domain=www.cnine.kr BrowserCookieError('Unable to get key for cookie decryption')
+CHROME_COOKIE=FAIL domain=cnine.kr BrowserCookieError('Unable to get key for cookie decryption')
+FILE_COOKIE=OK
 COOKIE_HAS_CNINE2_S_ID=True
 COOKIE_HAS_REMEMBERME=True
 TRY=https://www.cnine.kr/api/v2/p/post/all-page?page=1&size=20&order=desc&orderBy=sortKey&boardSlug=an&viewMode=list
-POST_COUNT=20
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958420
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958417
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958416
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958380
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958367
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958338
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958184
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958141
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958093
-DETAIL_TRY=https://www.cnine.kr/api/v2/p/post/958067
-CONTENT_OK_COUNT=10
-OUTPUT=notice_status.json
+FAIL=HTTPError: HTTP 401 {"path":"/api/v2/p/post/all-page","error":"Unauthorized","message":"로그인이 필요합니다","timestamp":"2026-06-13T00:05:21","status":401}
+LAST_ERROR=<HTTPError 401: ''>
+Traceback (most recent call last):
+  File "C:\Users\User\Downloads\upload\poong-rank\update_cnine_notice.py", line 304, in main
+    data = request_json(url, cookie, lines)
+  File "C:\Users\User\Downloads\upload\poong-rank\update_cnine_notice.py", line 151, in request_json
+    with urlopen(req, timeout=25) as r:
+         ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: 
+

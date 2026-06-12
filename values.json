@@ -3,7 +3,7 @@
     {
       "name": "철구형",
       "today": null,
-      "month": 20046,
+      "month": 4372018,
       "today_match": null,
       "month_match": "철구형2↑",
       "today_mode": "miss_strict",
@@ -11,8 +11,8 @@
     },
     {
       "name": "이다니",
-      "today": 17825,
-      "month": 127860,
+      "today": 18306,
+      "month": 357000,
       "today_match": "이다니♥",
       "month_match": "이다니♥",
       "today_mode": "strict",
@@ -21,47 +21,47 @@
     {
       "name": "혜루찡",
       "today": null,
-      "month": null,
+      "month": 291863,
       "today_match": null,
-      "month_match": null,
+      "month_match": "혜루찡",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "송채연",
-      "today": 26576,
-      "month": 130573,
-      "today_match": "송채연♥",
+      "today": null,
+      "month": 409475,
+      "today_match": null,
       "month_match": "송채연♥",
-      "today_mode": "exact",
+      "today_mode": "miss",
       "month_mode": "exact"
     },
     {
       "name": "체온",
       "today": null,
-      "month": null,
+      "month": 39946,
       "today_match": null,
-      "month_match": null,
+      "month_match": "체온_♡",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "하이희야",
       "today": null,
-      "month": null,
+      "month": 235272,
       "today_match": null,
-      "month_match": null,
+      "month_match": "하이희야♡",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "쁠리",
       "today": null,
-      "month": null,
+      "month": 366427,
       "today_match": null,
-      "month_match": null,
+      "month_match": "쁠리vvely",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "설윤이",
@@ -74,26 +74,26 @@
     },
     {
       "name": "인지연",
-      "today": 40310,
-      "month": 91287,
-      "today_match": "인지연JYEON",
+      "today": null,
+      "month": 163080,
+      "today_match": null,
       "month_match": "인지연JYEON",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
       "name": "채리",
-      "today": 1299,
-      "month": 20000,
-      "today_match": "BJ채리",
+      "today": null,
+      "month": 156076,
+      "today_match": null,
       "month_match": "BJ채리",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
       "name": "초초",
-      "today": 214,
-      "month": 16142,
+      "today": 996,
+      "month": 170703,
       "today_match": "초초♡",
       "month_match": "초초♡",
       "today_mode": "strict",
@@ -101,8 +101,8 @@
     },
     {
       "name": "여을",
-      "today": 5246,
-      "month": 80018,
+      "today": 10000,
+      "month": 332724,
       "today_match": "여을♥",
       "month_match": "여을♥",
       "today_mode": "strict",
@@ -110,8 +110,8 @@
     },
     {
       "name": "애순이",
-      "today": 20362,
-      "month": 205574,
+      "today": 9976,
+      "month": 314465,
       "today_match": "애순이",
       "month_match": "애순이",
       "today_mode": "strict",
@@ -120,75 +120,57 @@
     {
       "name": "아윤",
       "today": null,
-      "month": 2041,
+      "month": 65426,
       "today_match": null,
-      "month_match": "아윤",
+      "month_match": "아윤♡",
       "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
       "name": "히나",
       "today": null,
-      "month": null,
+      "month": 46890,
       "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
-    },
-    {
-      "name": "연두",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
-    },
-    {
-      "name": "리하",
-      "today": null,
-      "month": 8134,
-      "today_match": null,
-      "month_match": "리하♥",
+      "month_match": "히나_♥",
       "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
-      "name": "초린",
+      "name": "연두",
       "today": null,
-      "month": null,
+      "month": 30208,
       "today_match": null,
-      "month_match": null,
+      "month_match": "ε연두з",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     }
   ],
   "정선컴퍼니": [
     {
       "name": "박퍼니",
-      "today": null,
-      "month": 4120,
-      "today_match": null,
+      "today": 1113,
+      "month": 526216,
+      "today_match": "[JS]박퍼니",
       "month_match": "[JS]박퍼니",
-      "today_mode": "miss_strict",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
       "name": "서이안",
-      "today": null,
-      "month": 10100,
-      "today_match": null,
+      "today": 8810,
+      "month": 38095,
+      "today_match": "서이♥",
       "month_match": "서이♥",
-      "today_mode": "miss",
+      "today_mode": "fuzzy",
       "month_mode": "fuzzy"
     },
     {
       "name": "백설",
-      "today": 1962,
-      "month": 21106,
-      "today_match": "♥백설♥",
+      "today": null,
+      "month": 166199,
+      "today_match": null,
       "month_match": "♥백설♥",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
@@ -212,43 +194,43 @@
     {
       "name": "유서림",
       "today": null,
-      "month": null,
+      "month": 28573,
       "today_match": null,
-      "month_match": null,
+      "month_match": "유서림♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "김규리",
       "today": null,
-      "month": null,
+      "month": 30135,
       "today_match": null,
-      "month_match": null,
+      "month_match": "김규리♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "율비",
       "today": null,
-      "month": null,
+      "month": 21453,
       "today_match": null,
-      "month_match": null,
+      "month_match": "율비♡",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "햇동이",
-      "today": 10224,
-      "month": 46026,
-      "today_match": "햇동이♥",
+      "today": null,
+      "month": 122144,
+      "today_match": null,
       "month_match": "햇동이♥",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
       "name": "윤세빈",
       "today": null,
-      "month": 16222,
+      "month": 105211,
       "today_match": null,
       "month_match": "윤세빈♥",
       "today_mode": "miss_strict",
@@ -256,17 +238,17 @@
     },
     {
       "name": "서윤",
-      "today": 10,
-      "month": null,
-      "today_match": "서윤",
-      "month_match": null,
-      "today_mode": "strict",
-      "month_mode": "miss_strict"
+      "today": null,
+      "month": 54061,
+      "today_match": null,
+      "month_match": "서윤♥:)",
+      "today_mode": "miss_strict",
+      "month_mode": "strict"
     },
     {
       "name": "당신의채안",
-      "today": 290,
-      "month": 10208,
+      "today": 2259,
+      "month": 44563,
       "today_match": "당신의채안♥",
       "month_match": "당신의채안♥",
       "today_mode": "strict",
@@ -275,7 +257,7 @@
     {
       "name": "김베리",
       "today": null,
-      "month": 112822,
+      "month": 217479,
       "today_match": null,
       "month_match": "♡김베리♡",
       "today_mode": "miss_strict",
@@ -283,12 +265,12 @@
     },
     {
       "name": "채보미",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 12208,
+      "month": 142366,
+      "today_match": "채보미=3=",
+      "month_match": "채보미=3=",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "나의유주",
@@ -304,25 +286,25 @@
     {
       "name": "커맨더지코",
       "today": null,
-      "month": null,
+      "month": 11923799,
       "today_match": null,
-      "month_match": null,
+      "month_match": "커맨더지코",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "미디",
-      "today": null,
-      "month": 12040,
-      "today_match": null,
+      "today": 10508,
+      "month": 362464,
+      "today_match": "미디♡",
       "month_match": "미디♡",
-      "today_mode": "miss_strict",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
       "name": "임주연",
-      "today": 25849,
-      "month": 54950,
+      "today": 13944,
+      "month": 232358,
       "today_match": "임주연♥",
       "month_match": "임주연♥",
       "today_mode": "strict",
@@ -330,8 +312,8 @@
     },
     {
       "name": "아이빈",
-      "today": 24483,
-      "month": 35693,
+      "today": 7055,
+      "month": 184764,
       "today_match": "아이빈♥",
       "month_match": "아이빈♥",
       "today_mode": "strict",
@@ -339,17 +321,17 @@
     },
     {
       "name": "안둥",
-      "today": null,
-      "month": 22550,
-      "today_match": null,
+      "today": 32362,
+      "month": 225255,
+      "today_match": "안둥♥",
       "month_match": "안둥♥",
-      "today_mode": "miss_strict",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
       "name": "원영님",
-      "today": 20895,
-      "month": 26978,
+      "today": 61928,
+      "month": 304203,
       "today_match": "원영님♥",
       "month_match": "원영님♥",
       "today_mode": "strict",
@@ -357,8 +339,8 @@
     },
     {
       "name": "이온",
-      "today": 1653,
-      "month": 47470,
+      "today": 8955,
+      "month": 163926,
       "today_match": "이온♥",
       "month_match": "이온♥",
       "today_mode": "strict",
@@ -366,35 +348,35 @@
     },
     {
       "name": "가을이",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 31090,
+      "month": 552549,
+      "today_match": "가을이♡",
+      "month_match": "가을이♡",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "서윤슬",
-      "today": 10147,
-      "month": 28692,
-      "today_match": "서윤슬@",
+      "today": null,
+      "month": 207517,
+      "today_match": null,
       "month_match": "서윤슬@",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
       "name": "숨댕",
       "today": null,
-      "month": null,
+      "month": 53670,
       "today_match": null,
-      "month_match": null,
+      "month_match": "숨댕♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "함지아",
-      "today": 13809,
-      "month": 72279,
+      "today": 24791,
+      "month": 238073,
       "today_match": "함지아♥",
       "month_match": "함지아♥",
       "today_mode": "strict",
@@ -404,8 +386,8 @@
   "이노레이블": [
     {
       "name": "김인호",
-      "today": 2560506,
-      "month": 4577571,
+      "today": 131414,
+      "month": 10832312,
       "today_match": "[BJ]김인호",
       "month_match": "[BJ]김인호",
       "today_mode": "strict",
@@ -413,47 +395,56 @@
     },
     {
       "name": "애지니",
-      "today": null,
-      "month": 2398,
-      "today_match": null,
+      "today": 6282,
+      "month": 441310,
+      "today_match": "애지니♡",
       "month_match": "애지니♡",
-      "today_mode": "miss_strict",
+      "today_mode": "strict",
+      "month_mode": "strict"
+    },
+    {
+      "name": "남민아",
+      "today": 566,
+      "month": 92002,
+      "today_match": "남민아♥",
+      "month_match": "남민아♥",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
       "name": "설탱",
       "today": null,
-      "month": null,
+      "month": 111012,
       "today_match": null,
-      "month_match": null,
+      "month_match": "설탱♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "히냥이",
       "today": null,
-      "month": null,
+      "month": 45193,
       "today_match": null,
-      "month_match": null,
+      "month_match": "히냥이♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "이월",
       "today": null,
-      "month": null,
+      "month": 139973,
       "today_match": null,
-      "month_match": null,
+      "month_match": "이월♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "꽃부기",
-      "today": null,
-      "month": 4844,
-      "today_match": null,
+      "today": 336,
+      "month": 43931,
+      "today_match": "꽃부기♥",
       "month_match": "꽃부기♥",
-      "today_mode": "miss_strict",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
@@ -467,30 +458,30 @@
     },
     {
       "name": "리에",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 326,
+      "month": 119965,
+      "today_match": "리에♡",
+      "month_match": "리에♡",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "설인",
       "today": null,
-      "month": null,
+      "month": 47340,
       "today_match": null,
-      "month_match": null,
+      "month_match": "설인_♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "이리원",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 100,
+      "month": 52915,
+      "today_match": "이리원♥",
+      "month_match": "이리원♥",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "연보민",
@@ -503,28 +494,28 @@
     },
     {
       "name": "♥밍초♥",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss",
-      "month_mode": "miss"
+      "today": 303,
+      "month": 44490,
+      "today_match": "밍초♣",
+      "month_match": "밍초♣",
+      "today_mode": "exact",
+      "month_mode": "exact"
     }
   ],
   "YXL": [
     {
       "name": "염보성",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 3854,
+      "month": 186061,
+      "today_match": "A-염보성!!",
+      "month_match": "A-염보성!!",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "후잉",
-      "today": 10758,
-      "month": 51481,
+      "today": 18714,
+      "month": 379812,
       "today_match": "후잉♥",
       "month_match": "후잉♥",
       "today_mode": "strict",
@@ -533,11 +524,11 @@
     {
       "name": "너의멜로디",
       "today": null,
-      "month": null,
+      "month": 57262,
       "today_match": null,
-      "month_match": null,
+      "month_match": "너의˚멜로디",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "류서하",
@@ -550,8 +541,8 @@
     },
     {
       "name": "냥냥수주",
-      "today": 11244,
-      "month": 40023,
+      "today": 8291,
+      "month": 170848,
       "today_match": "냥냥수주",
       "month_match": "냥냥수주",
       "today_mode": "strict",
@@ -560,16 +551,16 @@
     {
       "name": "미로",
       "today": null,
-      "month": null,
+      "month": 124007,
       "today_match": null,
-      "month_match": null,
+      "month_match": "미로。",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "백나현",
-      "today": 10842,
-      "month": 46042,
+      "today": 2808,
+      "month": 164212,
       "today_match": "백나현_",
       "month_match": "백나현_",
       "today_mode": "exact",
@@ -578,16 +569,16 @@
     {
       "name": "소다",
       "today": null,
-      "month": null,
+      "month": 31282,
       "today_match": null,
-      "month_match": null,
+      "month_match": "소다♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "서니",
       "today": null,
-      "month": 23052,
+      "month": 116767,
       "today_match": null,
       "month_match": "서니_♥",
       "today_mode": "miss_strict",
@@ -596,7 +587,7 @@
     {
       "name": "김유정",
       "today": null,
-      "month": 6516,
+      "month": 211532,
       "today_match": null,
       "month_match": "김유정S2",
       "today_mode": "miss_strict",
@@ -605,27 +596,27 @@
     {
       "name": "하랑짱",
       "today": null,
-      "month": null,
+      "month": 21527,
       "today_match": null,
-      "month_match": null,
+      "month_match": "하랑짱♥",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "아름",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 4649,
+      "month": 45262,
+      "today_match": "아름[♡]",
+      "month_match": "아름[♡]",
+      "today_mode": "strict",
+      "month_mode": "strict"
     }
   ],
   "더케이": [
     {
       "name": "케이",
       "today": null,
-      "month": 2449422,
+      "month": 10330311,
       "today_match": null,
       "month_match": "[BJ]케이",
       "today_mode": "miss_strict",
@@ -633,20 +624,20 @@
     },
     {
       "name": "채채",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 5941,
+      "month": 91082,
+      "today_match": "！채채",
+      "month_match": "！채채",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "에디양",
-      "today": 17074,
-      "month": 17096,
-      "today_match": "[BJ]에디양",
+      "today": null,
+      "month": 60921,
+      "today_match": null,
       "month_match": "[BJ]에디양",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
@@ -660,29 +651,29 @@
     },
     {
       "name": "강한빛",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 2194,
+      "month": 100126,
+      "today_match": "강한빛♡",
+      "month_match": "강한빛♡",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "포카린",
       "today": null,
-      "month": null,
+      "month": 66315,
       "today_match": null,
-      "month_match": null,
+      "month_match": "포카린",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "엘",
-      "today": 135,
-      "month": 25027,
-      "today_match": "엘♥",
+      "today": null,
+      "month": 107485,
+      "today_match": null,
       "month_match": "엘♥",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
@@ -696,17 +687,17 @@
     },
     {
       "name": "차시월",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss",
-      "month_mode": "miss"
+      "today": 3580,
+      "month": 49163,
+      "today_match": "시월！",
+      "month_match": "차시월",
+      "today_mode": "fuzzy",
+      "month_mode": "strict"
     },
     {
       "name": "푸린",
-      "today": 14913,
-      "month": 14913,
+      "today": 511,
+      "month": 77202,
       "today_match": "푸린♡",
       "month_match": "푸린♡",
       "today_mode": "strict",
@@ -714,20 +705,20 @@
     },
     {
       "name": "단하나",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 17204,
+      "month": 64281,
+      "today_match": "단하나♡",
+      "month_match": "단하나♡",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "채리나",
-      "today": 1299,
-      "month": 20000,
-      "today_match": "BJ채리",
+      "today": null,
+      "month": 156076,
+      "today_match": null,
       "month_match": "BJ채리",
-      "today_mode": "fuzzy",
+      "today_mode": "miss",
       "month_mode": "fuzzy"
     },
     {
@@ -751,27 +742,27 @@
     {
       "name": "소냥이에요",
       "today": null,
-      "month": null,
+      "month": 34939,
       "today_match": null,
-      "month_match": null,
+      "month_match": "소냥이에요",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     }
   ],
   "GD컴퍼니": [
     {
       "name": "박가린",
       "today": null,
-      "month": null,
+      "month": 2330229,
       "today_match": null,
-      "month_match": null,
+      "month_match": "박가린님[♥]",
       "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "month_mode": "strict"
     },
     {
       "name": "아링",
       "today": null,
-      "month": 5214,
+      "month": 89389,
       "today_match": null,
       "month_match": "아링",
       "today_mode": "miss",
@@ -779,17 +770,17 @@
     },
     {
       "name": "쥬브리",
-      "today": 642,
-      "month": 16145,
-      "today_match": "쥬브리",
+      "today": null,
+      "month": 51565,
+      "today_match": null,
       "month_match": "쥬브리",
-      "today_mode": "strict",
+      "today_mode": "miss",
       "month_mode": "strict"
     },
     {
       "name": "유현",
       "today": null,
-      "month": 5760,
+      "month": 53070,
       "today_match": null,
       "month_match": "♥유현♥",
       "today_mode": "miss_strict",
@@ -797,21 +788,21 @@
     },
     {
       "name": "은아린!!",
-      "today": 2851,
-      "month": 5218,
-      "today_match": "은아린!",
+      "today": 166,
+      "month": 35830,
+      "today_match": "♥아린",
       "month_match": "은아린!",
-      "today_mode": "exact",
+      "today_mode": "fuzzy",
       "month_mode": "exact"
     },
     {
       "name": "윤아",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss_strict",
-      "month_mode": "miss_strict"
+      "today": 33,
+      "month": 44103,
+      "today_match": "E윤아♡",
+      "month_match": "E윤아♡",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "채아",
@@ -824,19 +815,19 @@
     },
     {
       "name": "유나라",
-      "today": null,
-      "month": 6352,
-      "today_match": null,
+      "today": 147,
+      "month": 23216,
+      "today_match": "유나라♥",
       "month_match": "유나라♥",
-      "today_mode": "miss_strict",
+      "today_mode": "strict",
       "month_mode": "strict"
     }
   ],
   "771": [
     {
       "name": "킹기훈",
-      "today": 423888,
-      "month": 1218582,
+      "today": 2,
+      "month": 2450398,
       "today_match": "킹기훈",
       "month_match": "킹기훈",
       "today_mode": "strict",
@@ -844,29 +835,29 @@
     },
     {
       "name": "예란",
-      "today": 739,
-      "month": null,
+      "today": 10000,
+      "month": 77598,
       "today_match": "예란",
-      "month_match": null,
-      "today_mode": "strict",
-      "month_mode": "miss"
-    },
-    {
-      "name": "푸글리",
-      "today": 3075,
-      "month": 3075,
-      "today_match": "푸글리♡",
-      "month_match": "푸글리♡",
+      "month_match": "예란",
       "today_mode": "strict",
       "month_mode": "strict"
     },
     {
+      "name": "푸글리",
+      "today": null,
+      "month": 42099,
+      "today_match": null,
+      "month_match": "푸글리♡",
+      "today_mode": "miss_strict",
+      "month_mode": "strict"
+    },
+    {
       "name": "이나율",
-      "today": 20013,
-      "month": 31921,
-      "today_match": "이나율♥",
+      "today": null,
+      "month": 115257,
+      "today_match": null,
       "month_match": "이나율♥",
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "strict"
     },
     {
@@ -881,16 +872,16 @@
     {
       "name": "예수",
       "today": null,
-      "month": 6969,
+      "month": null,
       "today_match": null,
-      "month_match": "예수",
+      "month_match": null,
       "today_mode": "miss",
-      "month_mode": "strict"
+      "month_mode": "miss"
     },
     {
       "name": "나래",
       "today": null,
-      "month": 30099,
+      "month": 143086,
       "today_match": null,
       "month_match": "나래♡",
       "today_mode": "miss_strict",
@@ -898,30 +889,30 @@
     },
     {
       "name": "한채아",
-      "today": 1300,
+      "today": null,
       "month": null,
-      "today_match": "한채아♥",
+      "today_match": null,
       "month_match": null,
-      "today_mode": "strict",
+      "today_mode": "miss_strict",
       "month_mode": "miss_strict"
     },
     {
       "name": "김봄비",
-      "today": 431,
-      "month": 6441,
-      "today_match": "김봄비",
+      "today": null,
+      "month": 27466,
+      "today_match": null,
       "month_match": "김봄비",
-      "today_mode": "strict",
+      "today_mode": "miss",
       "month_mode": "strict"
     },
     {
       "name": "박예솜",
       "today": null,
-      "month": 8699,
+      "month": null,
       "today_match": null,
-      "month_match": "박예솜:)",
+      "month_match": null,
       "today_mode": "miss_strict",
-      "month_mode": "strict"
+      "month_mode": "miss_strict"
     },
     {
       "name": "이밍",
@@ -937,7 +928,7 @@
     {
       "name": "케이",
       "today": null,
-      "month": 2449422,
+      "month": 10330311,
       "today_match": null,
       "month_match": "[BJ]케이",
       "today_mode": "miss_strict",
@@ -945,93 +936,93 @@
     },
     {
       "name": "＠서단",
-      "today": null,
-      "month": 3762,
-      "today_match": null,
-      "month_match": "서단아.",
-      "today_mode": "miss",
-      "month_mode": "fuzzy"
+      "today": 507,
+      "month": 47244,
+      "today_match": "서단♡",
+      "month_match": "＠서단",
+      "today_mode": "exact",
+      "month_mode": "strict"
     },
     {
       "name": "재온ly",
       "today": null,
-      "month": null,
+      "month": 101699,
       "today_match": null,
-      "month_match": null,
+      "month_match": "재온ly",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "송유이♥",
-      "today": 3205,
-      "month": 24238,
-      "today_match": "유이,",
-      "month_match": "유이,",
+      "today": 12623,
+      "month": 41484,
+      "today_match": "유이♡",
+      "month_match": "송유이♥",
       "today_mode": "fuzzy",
-      "month_mode": "fuzzy"
+      "month_mode": "strict"
     },
     {
       "name": "유이나.♡",
-      "today": 16,
+      "today": 12623,
       "month": null,
-      "today_match": "유이나",
+      "today_match": "유이♡",
       "month_match": null,
-      "today_mode": "exact",
+      "today_mode": "fuzzy",
       "month_mode": "miss"
     },
     {
       "name": "도예빈♥",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss",
-      "month_mode": "miss"
+      "today": 1801,
+      "month": 101509,
+      "today_match": "도예빈♥",
+      "month_match": "도예빈♥",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "쏘피♥",
       "today": null,
-      "month": null,
+      "month": 117982,
       "today_match": null,
-      "month_match": null,
+      "month_match": "쏘피♥",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "송화양",
-      "today": null,
-      "month": 9880,
-      "today_match": null,
+      "today": 2116,
+      "month": 209461,
+      "today_match": "송화양",
       "month_match": "송화양",
-      "today_mode": "miss",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
       "name": "정인♥",
       "today": null,
-      "month": null,
+      "month": 34191,
       "today_match": null,
-      "month_match": null,
+      "month_match": "정인♥",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "새봄_♡",
       "today": null,
-      "month": null,
+      "month": 43204,
       "today_match": null,
-      "month_match": null,
+      "month_match": "새봄_♡",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "코코_♥",
       "today": null,
-      "month": null,
+      "month": 30413,
       "today_match": null,
-      "month_match": null,
+      "month_match": "코코_♥",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "♥제니♥",
@@ -1044,12 +1035,12 @@
     },
     {
       "name": "이로♥",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss",
-      "month_mode": "miss"
+      "today": 976,
+      "month": 26194,
+      "today_match": "이로로♥",
+      "month_match": "츄이로",
+      "today_mode": "fuzzy",
+      "month_mode": "fuzzy"
     },
     {
       "name": "도하정♥",
@@ -1083,7 +1074,7 @@
     {
       "name": "파나나__",
       "today": null,
-      "month": 2360,
+      "month": 33466,
       "today_match": null,
       "month_match": "파나나__",
       "today_mode": "miss",
@@ -1092,24 +1083,15 @@
     {
       "name": "이소원♥",
       "today": null,
-      "month": null,
+      "month": 86902,
       "today_match": null,
-      "month_match": null,
+      "month_match": "이소_",
       "today_mode": "miss",
-      "month_mode": "miss"
+      "month_mode": "fuzzy"
     },
     {
       "name": "김뽀뇨",
       "today": null,
-      "month": 2491,
-      "today_match": null,
-      "month_match": "김뽀뇨",
-      "today_mode": "miss",
-      "month_mode": "strict"
-    },
-    {
-      "name": "가비[♥]",
-      "today": null,
       "month": null,
       "today_match": null,
       "month_match": null,
@@ -1117,18 +1099,27 @@
       "month_mode": "miss"
     },
     {
+      "name": "가비[♥]",
+      "today": 1003,
+      "month": 70464,
+      "today_match": "가비[♥]",
+      "month_match": "가비[♥]",
+      "today_mode": "strict",
+      "month_mode": "strict"
+    },
+    {
       "name": "만다♥",
-      "today": 5595,
-      "month": 10153,
-      "today_match": "본방단화만다",
+      "today": null,
+      "month": 51129,
+      "today_match": null,
       "month_match": "본방단화만다",
-      "today_mode": "fuzzy",
+      "today_mode": "miss",
       "month_mode": "fuzzy"
     },
     {
       "name": "유별♡",
-      "today": 10,
-      "month": 4249,
+      "today": 45,
+      "month": 37246,
       "today_match": "유별나♡",
       "month_match": "유별♡",
       "today_mode": "fuzzy",
@@ -1136,8 +1127,8 @@
     },
     {
       "name": "파닥♥",
-      "today": 1340,
-      "month": 8981,
+      "today": 2775,
+      "month": 47392,
       "today_match": "파닥♥",
       "month_match": "파닥♥",
       "today_mode": "strict",
@@ -1146,7 +1137,7 @@
     {
       "name": "#한시온",
       "today": null,
-      "month": 13361,
+      "month": 47326,
       "today_match": null,
       "month_match": "♡시온♡",
       "today_mode": "miss",
@@ -1154,12 +1145,12 @@
     },
     {
       "name": "김그루♡",
-      "today": 289,
-      "month": null,
+      "today": 2140,
+      "month": 28963,
       "today_match": "김그루♡",
-      "month_match": null,
+      "month_match": "김그루♡",
       "today_mode": "strict",
-      "month_mode": "miss"
+      "month_mode": "strict"
     },
     {
       "name": "한세은♥",
@@ -1172,8 +1163,8 @@
     },
     {
       "name": "윤아현",
-      "today": 2542,
-      "month": 3012,
+      "today": 6,
+      "month": 43659,
       "today_match": "윤아현",
       "month_match": "윤아현",
       "today_mode": "strict",
@@ -1181,17 +1172,17 @@
     },
     {
       "name": "미숑.♥",
-      "today": 38659,
-      "month": 80657,
-      "today_match": "[NO콘]미숑",
+      "today": null,
+      "month": 267612,
+      "today_match": null,
       "month_match": "[NO콘]미숑",
-      "today_mode": "fuzzy",
+      "today_mode": "miss",
       "month_mode": "fuzzy"
     },
     {
       "name": "쑤지",
       "today": null,
-      "month": 19764,
+      "month": 58583,
       "today_match": null,
       "month_match": "쑤지",
       "today_mode": "miss",
@@ -1201,17 +1192,17 @@
   "문에이": [
     {
       "name": "도아",
-      "today": null,
-      "month": 413481,
-      "today_match": null,
+      "today": 435335,
+      "month": 3524176,
+      "today_match": "『도아』",
       "month_match": "『도아』",
-      "today_mode": "miss_strict",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
       "name": "미지수♥",
-      "today": 11454,
-      "month": 12000,
+      "today": 12697,
+      "month": 102097,
       "today_match": "미지수♥",
       "month_match": "미지수♥",
       "today_mode": "strict",
@@ -1228,8 +1219,8 @@
     },
     {
       "name": "하임*",
-      "today": 284,
-      "month": 6419,
+      "today": 2193,
+      "month": 71541,
       "today_match": "하임*",
       "month_match": "하임*",
       "today_mode": "strict",
@@ -1237,26 +1228,26 @@
     },
     {
       "name": "햄벅",
-      "today": 33120,
-      "month": 33120,
-      "today_match": "햄벅",
+      "today": null,
+      "month": 62235,
+      "today_match": null,
       "month_match": "햄벅",
-      "today_mode": "strict",
+      "today_mode": "miss",
       "month_mode": "strict"
     },
     {
       "name": "♥채화",
-      "today": null,
-      "month": 15665,
-      "today_match": null,
+      "today": 330,
+      "month": 56244,
+      "today_match": "♥채화",
       "month_match": "♥채화",
-      "today_mode": "miss",
+      "today_mode": "strict",
       "month_mode": "strict"
     },
     {
       "name": "슈나♥",
       "today": null,
-      "month": 16150,
+      "month": 80128,
       "today_match": null,
       "month_match": "슈나♥",
       "today_mode": "miss",
@@ -1264,8 +1255,8 @@
     },
     {
       "name": "강형민이",
-      "today": 8235,
-      "month": 9617,
+      "today": 13582,
+      "month": 132268,
       "today_match": "강형민이",
       "month_match": "강형민이",
       "today_mode": "strict",
@@ -1273,17 +1264,17 @@
     },
     {
       "name": "예니__",
-      "today": null,
-      "month": null,
-      "today_match": null,
-      "month_match": null,
-      "today_mode": "miss",
-      "month_mode": "miss"
+      "today": 676,
+      "month": 28013,
+      "today_match": "예니__",
+      "month_match": "예니__",
+      "today_mode": "strict",
+      "month_mode": "strict"
     },
     {
       "name": "서언수",
-      "today": 1552,
-      "month": 4590,
+      "today": 293,
+      "month": 21164,
       "today_match": "서언수",
       "month_match": "서언수",
       "today_mode": "strict",
@@ -1291,17 +1282,17 @@
     },
     {
       "name": "뮤엘♥",
-      "today": 135,
-      "month": 3331,
-      "today_match": "엘♥",
-      "month_match": "뮤엘♥",
-      "today_mode": "fuzzy",
-      "month_mode": "strict"
+      "today": null,
+      "month": 107485,
+      "today_match": null,
+      "month_match": "엘♥",
+      "today_mode": "miss",
+      "month_mode": "fuzzy"
     },
     {
       "name": "설현미",
-      "today": 1329,
-      "month": 11405,
+      "today": 7045,
+      "month": 58388,
       "today_match": "설현미",
       "month_match": "설현미",
       "today_mode": "strict",
@@ -1309,26 +1300,26 @@
     },
     {
       "name": "E-;이은♥",
-      "today": 83,
-      "month": 7279,
-      "today_match": "E-;이은♥",
+      "today": null,
+      "month": 22744,
+      "today_match": null,
       "month_match": "E-;이은♥",
-      "today_mode": "strict",
+      "today_mode": "miss",
       "month_mode": "strict"
     },
     {
       "name": "박재열",
-      "today": 23414,
-      "month": 28531,
-      "today_match": "박재열.",
+      "today": null,
+      "month": 45196,
+      "today_match": null,
       "month_match": "박재열.",
-      "today_mode": "exact",
+      "today_mode": "miss",
       "month_mode": "exact"
     },
     {
       "name": ".장지민",
-      "today": 1811,
-      "month": 2388,
+      "today": 60,
+      "month": 32839,
       "today_match": ".장지민",
       "month_match": ".장지민",
       "today_mode": "strict",
@@ -1336,30 +1327,30 @@
     },
     {
       "name": "천시아S2",
-      "today": null,
+      "today": 100,
       "month": null,
-      "today_match": null,
+      "today_match": "BJ_S2",
       "month_match": null,
-      "today_mode": "miss",
+      "today_mode": "fuzzy",
       "month_mode": "miss"
     },
     {
       "name": "Im미나",
-      "today": null,
+      "today": 60,
       "month": null,
-      "today_match": null,
+      "today_match": "미나♡",
       "month_match": null,
-      "today_mode": "miss",
+      "today_mode": "fuzzy",
       "month_mode": "miss"
     },
     {
       "name": "#다인",
-      "today": null,
-      "month": 15760,
-      "today_match": null,
-      "month_match": "유다인♡",
-      "today_mode": "miss",
-      "month_mode": "fuzzy"
+      "today": 1145,
+      "month": 34298,
+      "today_match": "다인♥",
+      "month_match": "다인♥",
+      "today_mode": "exact",
+      "month_mode": "exact"
     }
   ]
 }

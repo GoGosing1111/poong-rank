@@ -1,0 +1,25 @@
+2026/06/07-03:07:20.972 2242c Reusing MANIFEST C:\Users\User\Downloads\upload\poong-rank\chrome_profile_cnine_notice\Default\IndexedDB\https_www.cnine.kr_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/07-03:07:20.973 2242c Recovering log #335
+2026/06/07-03:07:20.973 2242c Reusing old log C:\Users\User\Downloads\upload\poong-rank\chrome_profile_cnine_notice\Default\IndexedDB\https_www.cnine.kr_0.indexeddb.leveldb/000335.log 
+2026/06/07-03:07:20.974 2242c Delete type=2 #333
+2026/06/07-03:07:21.039 222d4 Level-0 table #340: started
+2026/06/07-03:07:21.048 222d4 Level-0 table #340: 2058 bytes OK
+2026/06/07-03:07:21.052 222d4 Delete type=0 #335
+2026/06/07-03:07:21.053 222d4 Manual compaction at level-0 from '\x00w\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00x\x00\x00\x00' @ 0 : 0; will stop at '\x00w\x00\x00\x05' @ 3707 : 1
+2026/06/07-03:07:21.053 222d4 Compacting 1@0 + 1@1 files
+2026/06/07-03:07:21.062 222d4 Generated table #341@0: 335 keys, 4565 bytes
+2026/06/07-03:07:21.062 222d4 Compacted 1@0 + 1@1 files => 4565 bytes
+2026/06/07-03:07:21.070 222d4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/07-03:07:21.071 222d4 Delete type=2 #340
+2026/06/07-03:07:21.071 222d4 Manual compaction at level-0 from '\x00w\x00\x00\x05' @ 3707 : 1 .. '\x00x\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/06/07-03:07:21.074 222d4 Level-0 table #343: started
+2026/06/07-03:07:21.088 222d4 Level-0 table #343: 663 bytes OK
+2026/06/07-03:07:21.093 222d4 Delete type=2 #337
+2026/06/07-03:07:21.093 222d4 Delete type=0 #339
+2026/06/07-03:07:21.095 2242c Manual compaction at level-0 from '\x00x\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00y\x00\x00\x00' @ 0 : 0; will stop at '\x00x\x00\x00\x05' @ 3724 : 1
+2026/06/07-03:07:21.095 2242c Compacting 1@0 + 1@1 files
+2026/06/07-03:07:21.100 2242c Generated table #344@0: 335 keys, 4562 bytes
+2026/06/07-03:07:21.100 2242c Compacted 1@0 + 1@1 files => 4562 bytes
+2026/06/07-03:07:21.105 2242c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/07-03:07:21.105 2242c Delete type=2 #343
+2026/06/07-03:07:21.106 2242c Manual compaction at level-0 from '\x00x\x00\x00\x05' @ 3724 : 1 .. '\x00y\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,42 @@
+{
+  "version": "20260613",
+  "categories": {
+    "팬덤비하자": [
+      { "word": "길견", "score": 3 },
+      { "word": "길나인", "score": 3 },
+	  { "word": "길나인", "score": 3 },
+	  	  { "word": "ㅣㅣ", "score": 3 },
+		  	  { "word": "길태", "score": 3 },
+			  	  { "word": "길태견", "score": 3 },
+      { "word": "젖퀴", "score": 3 },
+	  { "word": "왁싱", "score": 3 },
+	  { "word": "왁견", "score": 3 },
+      { "word": "깔창", "score": 2 }
+    ],
+    "타퀴의심": [
+      { "word": "덕구", "score": 2 },
+	  { "word": "강덕구", "score": 2 },
+      { "word": "덕어게인", "score": 1 },
+      { "word": "지우리", "score": 1 },
+	  { "word": "지아가", "score": 1 },
+      { "word": "함지아", "score": 1 },
+	  { "word": "덕신사", "score": 2 },
+	  { "word": "허지율", "score": 2 },
+	  { "word": "가을이", "score": 2 },
+	  { "word": "케이", "score": 2 },
+	  { "word": "보성", "score": 2 },
+	  { "word": "은유화", "score": 2 }
+    ],
+    "이간질": [
+      { "word": "방갤", "score": 2 },
+      { "word": "벽갤", "score": 2 },
+      { "word": "씨나갤", "score": 2 }
+    ]
+  },
+  "levels": [
+    { "min": 6, "label": "위험", "emoji": "🚨" },
+    { "min": 3, "label": "주의", "emoji": "⚠️" },
+    { "min": 1, "label": "감지", "emoji": "🟡" },
+    { "min": 0, "label": "정상", "emoji": "✅" }
+  ]
+}

@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 CNINE notice collector
-- Reads cnine_cookies.txt
+- 자동 우선: 현재 Windows Chrome에 저장된 cnine.kr 쿠키(browser-cookie3) 사용
+- 실패 시 예비: cnine_cookies.txt 사용
 - Calls CNINE board API directly, no Chrome/CDP needed
 - Writes notice_status.json and notice_debug.txt
 """
@@ -68,12 +69,65 @@ def normalize_cookie_text(text: str) -> str:
     return s
 
 
-def load_cookie(lines: List[str]) -> str:
+def cookiejar_to_header(cookiejar: Any) -> str:
+    pairs = []
+    for c in cookiejar:
+        name = getattr(c, "name", "")
+        value = getattr(c, "value", "")
+        if name and value:
+            pairs.append(f"{name}={value}")
+    return "; ".join(pairs)
+
+
+def load_cookie_from_chrome(lines: List[str]) -> str:
+    """현재 Windows Chrome에 로그인 저장된 cnine.kr 쿠키를 자동으로 읽는다."""
+    try:
+        import browser_cookie3  # type: ignore
+    except Exception as e:
+        lines.append("CHROME_COOKIE=SKIP_IMPORT_ERROR " + repr(e))
+        return ""
+
+    # www.cnine.kr / .cnine.kr 둘 다 시도
+    for domain in ("www.cnine.kr", "cnine.kr"):
+        try:
+            cj = browser_cookie3.chrome(domain_name=domain)
+            cookie = cookiejar_to_header(cj)
+            if "CNINE2_S_ID=" in cookie:
+                lines.append("CHROME_COOKIE=OK domain=" + domain)
+                return cookie
+            lines.append("CHROME_COOKIE=NO_CNINE2_S_ID domain=" + domain)
+        except Exception as e:
+            lines.append("CHROME_COOKIE=FAIL domain=" + domain + " " + repr(e))
+    return ""
+
+
+def load_cookie_from_file(lines: List[str]) -> str:
     if not COOKIE_FILE.exists():
-        fail(lines, "cnine_cookies.txt 파일이 없습니다")
+        lines.append("FILE_COOKIE=NOT_FOUND cnine_cookies.txt")
+        return ""
     cookie = normalize_cookie_text(COOKIE_FILE.read_text(encoding="utf-8", errors="ignore"))
     if "CNINE2_S_ID=" not in cookie:
-        fail(lines, "cnine_cookies.txt 안에 CNINE2_S_ID가 없습니다. F12 Copy as cURL의 -b 쿠키를 다시 넣으세요.")
+        lines.append("FILE_COOKIE=NO_CNINE2_S_ID")
+        return ""
+    lines.append("FILE_COOKIE=OK")
+    return cookie
+
+
+def load_cookie(lines: List[str]) -> str:
+    # 1순위: 크롬에 저장된 최신 쿠키 자동 사용
+    cookie = load_cookie_from_chrome(lines)
+
+    # 2순위: 기존 cnine_cookies.txt 예비 사용
+    if not cookie:
+        cookie = load_cookie_from_file(lines)
+
+    if not cookie:
+        fail(
+            lines,
+            "CNINE 쿠키를 못 읽었습니다. 먼저 크롬에서 cnine.kr 로그인 후 실행하세요. "
+            "browser-cookie3 미설치면: pip install browser-cookie3"
+        )
+
     if "CNINE2_REMEMBERME=" not in cookie:
         lines.append("WARN=CNINE2_REMEMBERME 쿠키가 없습니다. 세션 만료가 빨라질 수 있습니다.")
     return cookie
@@ -230,7 +284,7 @@ def normalize_post(post: Dict[str, Any], cookie: str, lines: List[str]) -> Dict[
 def main() -> None:
     lines: List[str] = [
         "UPDATED_AT=" + now_str(),
-        "MODE=cnine_api_cookie_headers_v2",
+        "MODE=cnine_api_auto_chrome_cookie_v3",
     ]
     try:
         cookie = load_cookie(lines)

@@ -1,0 +1,1157 @@
+<div style="width:100%;max-width:100%;background:#070812;padding:6px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:white;overflow:hidden;text-align:center;font-size:0;"><div style="display:block;text-align:center;font-size:30px;font-weight:900;color:#f7d98a;margin:8px 0 4px;text-shadow:0 2px 0 #000,0 0 18px rgba(247,217,138,.38);"><span style="display:inline-block;padding:10px 34px 11px;border:1px solid rgba(247,217,138,.44);border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(232,192,107,.08));">스타크루 낙수표 V10</span></div><div style="display:block;text-align:center;font-size:11px;font-weight:800;color:#bda870;margin:0 0 8px;">집계시간: 2026-06-11 04:21</div><div style="width:100%;max-width:1180px;margin:8px auto 8px;box-sizing:border-box;"><table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0c0e18;border:2px solid #2d8a55;border-radius:14px;overflow:hidden;"><tr><td style="padding:14px 18px;background:#171926;border-bottom:1px solid #343a4a;text-align:left;"><span style="display:inline-block;width:40px;height:40px;line-height:40px;text-align:center;border:1px solid #2d8a55;border-radius:10px;margin-right:10px;font-size:22px;vertical-align:middle;color:#ffd34f;">♜</span><span style="display:inline-block;vertical-align:middle;"><b style="display:block;color:#fff;font-size:18px;text-shadow:0 2px 0 #000;">개인 TOP 10</b><b style="display:block;color:#34d879;font-size:11px;margin-top:3px;">수장 제외 전체 멤버 별풍선 순위</b></span></td></tr><tr><td style="padding:14px 14px 16px;"><table style="width:100%;border-collapse:collapse;table-layout:fixed;margin-top:12px;"><tr><td style="width:32%;vertical-align:bottom;text-align:center;padding:0 5px;"><div style="height:104px;background:#111522;border:1px solid #5f4a2a;border-bottom:2px solid #ff5b9d;border-radius:14px 14px 0 0;padding:10px 6px 6px;box-sizing:border-box;overflow:hidden;"><div style="height:30px;line-height:30px;font-size:25px;margin:0 0 4px;">🥈</div><div style="height:22px;line-height:22px;font-size:14px;font-weight:900;color:#fff;text-shadow:0 2px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">애순이</div><div style="height:14px;line-height:14px;font-size:10px;font-weight:900;color:#9da6bf;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div><div style="height:18px;line-height:18px;font-size:13px;font-weight:900;color:#ff5b9d;text-shadow:0 1px 0 #000;white-space:nowrap;">314,465</div><div style="height:14px;line-height:14px;font-size:10px;font-weight:900;color:#ff5b9d;white-space:nowrap;">2ND</div></div></td><td style="width:36%;vertical-align:bottom;text-align:center;padding:0 5px;"><div style="height:126px;background:#111522;border:1px solid #5f4a2a;border-bottom:2px solid #ff5b9d;border-radius:14px 14px 0 0;padding:12px 6px 6px;box-sizing:border-box;overflow:hidden;"><div style="height:30px;line-height:30px;font-size:30px;margin:0 0 4px;">🥇</div><div style="height:22px;line-height:22px;font-size:16px;font-weight:900;color:#fff;text-shadow:0 2px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">여을</div><div style="height:14px;line-height:14px;font-size:10px;font-weight:900;color:#9da6bf;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div><div style="height:18px;line-height:18px;font-size:13px;font-weight:900;color:#ff5b9d;text-shadow:0 1px 0 #000;white-space:nowrap;">332,724</div><div style="height:14px;line-height:14px;font-size:10px;font-weight:900;color:#ff5b9d;white-space:nowrap;">1ST</div></div></td><td style="width:32%;vertical-align:bottom;text-align:center;padding:0 5px;"><div style="height:104px;background:#111522;border:1px solid #5f4a2a;border-bottom:2px solid #ff5b9d;border-radius:14px 14px 0 0;padding:10px 6px 6px;box-sizing:border-box;overflow:hidden;"><div style="height:30px;line-height:30px;font-size:25px;margin:0 0 4px;">🥉</div><div style="height:22px;line-height:22px;font-size:14px;font-weight:900;color:#fff;text-shadow:0 2px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">혜루찡</div><div style="height:14px;line-height:14px;font-size:10px;font-weight:900;color:#9da6bf;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div><div style="height:18px;line-height:18px;font-size:13px;font-weight:900;color:#ff5b9d;text-shadow:0 1px 0 #000;white-space:nowrap;">291,863</div><div style="height:14px;line-height:14px;font-size:10px;font-weight:900;color:#ff5b9d;white-space:nowrap;">3RD</div></div></td></tr></table><table style="width:100%;border-collapse:separate;border-spacing:8px 7px;table-layout:fixed;margin-top:8px;"><tr><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">1</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:100%;background:#ff5b9d;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">여을</div><div style="position:relative;height:12px;line-height:12px;color:#ff5b9d;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">332,724</td></tr></table></td><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">2</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:94%;background:#ff5b9d;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">애순이</div><div style="position:relative;height:12px;line-height:12px;color:#ff5b9d;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">314,465</td></tr></table></td></tr><tr><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">3</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:87%;background:#ff5b9d;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">혜루찡</div><div style="position:relative;height:12px;line-height:12px;color:#ff5b9d;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">291,863</td></tr></table></td><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">4</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:71%;background:#2fff58;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">함지아</div><div style="position:relative;height:12px;line-height:12px;color:#2fff58;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">광우상사</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">238,073</td></tr></table></td></tr><tr><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">5</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:70%;background:#ff5b9d;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">하이희야</div><div style="position:relative;height:12px;line-height:12px;color:#ff5b9d;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">235,272</td></tr></table></td><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">6</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:69%;background:#2fff58;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">임주연</div><div style="position:relative;height:12px;line-height:12px;color:#2fff58;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">광우상사</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">232,358</td></tr></table></td></tr><tr><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">7</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:67%;background:#2fff58;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">안둥</div><div style="position:relative;height:12px;line-height:12px;color:#2fff58;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">광우상사</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">225,255</td></tr></table></td><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">8</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:62%;background:#2fff58;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">서윤슬</div><div style="position:relative;height:12px;line-height:12px;color:#2fff58;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">광우상사</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">207,517</td></tr></table></td></tr><tr><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">9</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:55%;background:#2fff58;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">아이빈</div><div style="position:relative;height:12px;line-height:12px;color:#2fff58;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">광우상사</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">184,764</td></tr></table></td><td style="width:50%;padding:0;vertical-align:top;"><table style="width:100%;height:38px;border-collapse:collapse;table-layout:fixed;background:#111522;border:1px solid #343a4a;border-radius:8px;overflow:hidden;"><tr><td style="width:28px;text-align:center;color:#9da6bf;font-size:12px;font-weight:900;border-right:1px solid #343a4a;">10</td><td style="position:relative;padding:0 6px;overflow:hidden;"><div style="position:absolute;left:0;top:0;bottom:0;width:51%;background:#ff5b9d;opacity:.28;"></div><div style="position:relative;height:18px;line-height:18px;color:#fff;font-size:12px;font-weight:900;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">초초</div><div style="position:relative;height:12px;line-height:12px;color:#ff5b9d;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">씨나인엑셀</div></td><td style="width:82px;text-align:right;padding-right:6px;color:#dfe6ff;font-size:11px;font-weight:900;border-left:1px solid #343a4a;white-space:nowrap;">170,703</td></tr></table></td></tr></table></td></tr></table></div><div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">1</div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/광우상사.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">광우상사</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">252,477</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 11,923,799</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">커맨더지코</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">함지아</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">24,791</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#2fff58;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">238,073</td>
+</tr></table>
+<div style="height:4px;width:43%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">임주연</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">13,944</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">232,358</td>
+</tr></table>
+<div style="height:3px;width:42%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">안둥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">32,362</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">225,255</td>
+</tr></table>
+<div style="height:3px;width:40%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">서윤슬</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">207,517</td>
+</tr></table>
+<div style="height:3px;width:37%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">아이빈</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">7,055</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">184,764</td>
+</tr></table>
+<div style="height:3px;width:33%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">이온</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">8,955</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">163,926</td>
+</tr></table>
+<div style="height:3px;width:29%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">숨댕</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">53,670</td>
+</tr></table>
+<div style="height:3px;width:9%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">2</div>
+<div style="background:linear-gradient(135deg,#ff2c7c,#401325);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/씨나인엑셀부.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">씨나인엑셀</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#ff5b9d;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #ff5b9d,0 2px 0 #000;">198,637</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 4,372,018</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">철구형</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">여을</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">10,000</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#ff5b9d;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">332,724</td>
+</tr></table>
+<div style="height:4px;width:81%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">애순이</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">9,976</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">314,465</td>
+</tr></table>
+<div style="height:3px;width:76%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">혜루찡</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">291,863</td>
+</tr></table>
+<div style="height:3px;width:71%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">하이희야</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">235,272</td>
+</tr></table>
+<div style="height:3px;width:57%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">초초</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">996</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">170,703</td>
+</tr></table>
+<div style="height:3px;width:41%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">인지연</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">163,080</td>
+</tr></table>
+<div style="height:3px;width:39%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">채리</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">156,076</td>
+</tr></table>
+<div style="height:3px;width:38%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">아윤</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">65,426</td>
+</tr></table>
+<div style="height:3px;width:15%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">12</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">히나</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">46,890</td>
+</tr></table>
+<div style="height:3px;width:11%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">13</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">체온</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">39,946</td>
+</tr></table>
+<div style="height:3px;width:9%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">14</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">연두</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">30,208</td>
+</tr></table>
+<div style="height:3px;width:7%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">15</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">설윤이</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">3</div>
+<div style="background:linear-gradient(135deg,#00eaff,#0b3440);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/YXL.gif" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">YXL</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#34f5ff;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #34f5ff,0 2px 0 #000;">120,228</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 186,061</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">염보성</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">백나현</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">2,808</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#35f5ff;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">164,212</td>
+</tr></table>
+<div style="height:4px;width:43%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">미로</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">124,007</td>
+</tr></table>
+<div style="height:3px;width:32%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">서니</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">116,767</td>
+</tr></table>
+<div style="height:3px;width:30%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">너의멜로디</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">57,262</td>
+</tr></table>
+<div style="height:3px;width:15%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">아름</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">4,649</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">45,262</td>
+</tr></table>
+<div style="height:3px;width:11%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">소다</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">31,282</td>
+</tr></table>
+<div style="height:3px;width:8%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">하랑짱</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">21,527</td>
+</tr></table>
+<div style="height:3px;width:5%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">류서하</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">4</div>
+<div style="background:linear-gradient(135deg,#4a7dff,#101b44);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/이노레이블.gif" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">이노레이블</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#7da0ff;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #7da0ff,0 2px 0 #000;">94,844</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 10,832,312</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">김인호</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">설탱</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#4f68ff;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">111,012</td>
+</tr></table>
+<div style="height:4px;width:25%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">남민아</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">566</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">92,002</td>
+</tr></table>
+<div style="height:3px;width:20%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">이리원</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">100</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">52,915</td>
+</tr></table>
+<div style="height:3px;width:11%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">설인</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">47,340</td>
+</tr></table>
+<div style="height:3px;width:10%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">히냥이</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">45,193</td>
+</tr></table>
+<div style="height:3px;width:10%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">♥밍초♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">303</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">44,490</td>
+</tr></table>
+<div style="height:3px;width:10%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">꽃부기</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">336</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">43,931</td>
+</tr></table>
+<div style="height:3px;width:9%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">누리</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">12</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">연보민</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">5</div>
+<div style="background:linear-gradient(135deg,#b55cff,#28113d);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/정선컴퍼니.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">정선컴퍼니</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#c586ff;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #c586ff,0 2px 0 #000;">69,305</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 526,216</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">박퍼니</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">햇동이</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#bd6cff;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">122,144</td>
+</tr></table>
+<div style="height:4px;width:56%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">윤세빈</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">105,211</td>
+</tr></table>
+<div style="height:3px;width:48%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">서윤</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">54,061</td>
+</tr></table>
+<div style="height:3px;width:24%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">당신의채안</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">2,259</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">44,563</td>
+</tr></table>
+<div style="height:3px;width:20%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">서이안</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">8,810</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">38,095</td>
+</tr></table>
+<div style="height:3px;width:17%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">김규리</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">30,135</td>
+</tr></table>
+<div style="height:3px;width:13%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">유서림</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">28,573</td>
+</tr></table>
+<div style="height:3px;width:13%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">율비</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">21,453</td>
+</tr></table>
+<div style="height:3px;width:9%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">12</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">윤수</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">13</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">아유님</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">14</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">나의유주</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">6</div>
+<div style="background:linear-gradient(135deg,#ff9d00,#40230a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/판타지유.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">판타지유</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#ffbd45;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #ffbd45,0 2px 0 #000;">59,441</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 0</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">지유</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">쑤지</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#ffad3d;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">58,583</td>
+</tr></table>
+<div style="height:4px;width:21%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">만다♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">51,129</td>
+</tr></table>
+<div style="height:3px;width:19%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">파닥♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">2,775</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">47,392</td>
+</tr></table>
+<div style="height:3px;width:17%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">#한시온</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">47,326</td>
+</tr></table>
+<div style="height:3px;width:17%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">윤아현</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">6</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">43,659</td>
+</tr></table>
+<div style="height:3px;width:16%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">유별♡</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">45</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">37,246</td>
+</tr></table>
+<div style="height:3px;width:13%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">파나나__</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">33,466</td>
+</tr></table>
+<div style="height:3px;width:12%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">김그루♡</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">2,140</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">28,963</td>
+</tr></table>
+<div style="height:3px;width:10%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">12</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">김뽀뇨</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">13</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">한세은♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#ffad3d,#fff);box-shadow:0 0 8px #ffad3d;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">7</div>
+<div style="background:linear-gradient(135deg,#00ff44,#10351a);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/더케이.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">더케이</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#2fff58;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #2fff58,0 2px 0 #000;">57,685</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 10,330,311</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">케이</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">채채</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">5,941</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#2fff58;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">91,082</td>
+</tr></table>
+<div style="height:4px;width:58%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">푸린</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">511</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">77,202</td>
+</tr></table>
+<div style="height:3px;width:49%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">포카린</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">66,315</td>
+</tr></table>
+<div style="height:3px;width:42%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">단하나</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">17,204</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">64,281</td>
+</tr></table>
+<div style="height:3px;width:41%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">에디양</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">60,921</td>
+</tr></table>
+<div style="height:3px;width:39%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">차시월</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">3,580</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">49,163</td>
+</tr></table>
+<div style="height:3px;width:31%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">소냥이에요</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">34,939</td>
+</tr></table>
+<div style="height:3px;width:22%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">지아콩</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">12</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">퀸다미</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">13</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">한슬댕</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">14</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">쑤</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#2fff58,#fff);box-shadow:0 0 8px #2fff58;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">8</div>
+<div style="background:linear-gradient(135deg,#ff2c7c,#401325);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/쇼케이.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">쇼케이</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#ff5b9d;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #ff5b9d,0 2px 0 #000;">53,812</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 10,330,311</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">케이</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">도예빈♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">1,801</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#ff5b9d;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">101,509</td>
+</tr></table>
+<div style="height:4px;width:48%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">＠서단</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">507</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">47,244</td>
+</tr></table>
+<div style="height:3px;width:22%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">새봄_♡</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">43,204</td>
+</tr></table>
+<div style="height:3px;width:20%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">송유이♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">12,623</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">41,484</td>
+</tr></table>
+<div style="height:3px;width:19%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">정인♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">34,191</td>
+</tr></table>
+<div style="height:3px;width:16%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">코코_♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">30,413</td>
+</tr></table>
+<div style="height:3px;width:14%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">이로♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">976</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">26,194</td>
+</tr></table>
+<div style="height:3px;width:12%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">유이나.♡</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">12,623</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">12</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">♥제니♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">13</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">도하정♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">14</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">@유톨</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#ff5b9d,#fff);box-shadow:0 0 8px #ff5b9d;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">9</div>
+<div style="background:linear-gradient(135deg,#00eaff,#0b3440);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/문에이.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">문에이</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#34f5ff;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #34f5ff,0 2px 0 #000;">50,272</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 3,524,176</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">도아</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">슈나♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#35f5ff;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">80,128</td>
+</tr></table>
+<div style="height:4px;width:60%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">하임*</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">2,193</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">71,541</td>
+</tr></table>
+<div style="height:3px;width:54%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">햄벅</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">62,235</td>
+</tr></table>
+<div style="height:3px;width:47%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">설현미</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">7,045</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">58,388</td>
+</tr></table>
+<div style="height:3px;width:44%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">♥채화</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">330</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">56,244</td>
+</tr></table>
+<div style="height:3px;width:42%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">박재열</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">45,196</td>
+</tr></table>
+<div style="height:3px;width:34%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">#다인</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">1,145</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">34,298</td>
+</tr></table>
+<div style="height:3px;width:25%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">11</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">.장지민</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">60</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">32,839</td>
+</tr></table>
+<div style="height:3px;width:24%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">12</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">예니__</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">676</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">28,013</td>
+</tr></table>
+<div style="height:3px;width:21%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">13</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">E-;이은♥</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">22,744</td>
+</tr></table>
+<div style="height:3px;width:17%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">14</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">서언수</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">293</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">21,164</td>
+</tr></table>
+<div style="height:3px;width:16%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">15</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">천시아S2</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">100</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">16</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">Im미나</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">60</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">17</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">현강림2</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#35f5ff,#fff);box-shadow:0 0 8px #35f5ff;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">10</div>
+<div style="background:linear-gradient(135deg,#4a7dff,#101b44);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/GD컴퍼니.gif" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">GD컴퍼니</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#7da0ff;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #7da0ff,0 2px 0 #000;">42,453</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 2,330,229</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">박가린</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">윤아</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">33</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#4f68ff;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">44,103</td>
+</tr></table>
+<div style="height:4px;width:49%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">은아린!!</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">166</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">35,830</td>
+</tr></table>
+<div style="height:3px;width:40%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">유나라</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">147</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">23,216</td>
+</tr></table>
+<div style="height:3px;width:25%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">채아</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#4f68ff,#fff);box-shadow:0 0 8px #4f68ff;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;margin:0 0.55% 8px 0.55%;box-sizing:border-box;background:#11121d;border-radius:10px;overflow:hidden;border:1px solid #1f2937;font-size:12px;position:relative;">
+<div style="position:absolute;top:0;left:0;width:28px;height:28px;line-height:28px;text-align:center;font-size:14px;font-weight:900;color:#fff;background:rgba(255,255,255,.18);text-shadow:0 2px 0 #000;z-index:3;">11</div>
+<div style="background:linear-gradient(135deg,#b55cff,#28113d);padding:8px 6px 6px 6px;height:68px;min-height:68px;box-sizing:border-box;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:auto;"><tr>
+<td style="width:50px;vertical-align:middle;text-align:center;"><img src="https://keyman1335-maker.github.io/poong-rank/assets/crew_logos/771.png" style="width:46px;height:44px;object-fit:contain;display:block;margin:auto;"/></td>
+<td style="vertical-align:middle;text-align:right;overflow:visible;padding-right:4px;">
+<div style="font-size:17px;line-height:1.05;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">771</div>
+<div style="font-size:28px;line-height:1.0;font-weight:900;color:#c586ff;white-space:nowrap;letter-spacing:0.2px;text-shadow:0 0 10px #c586ff,0 2px 0 #000;">40,550</div>
+</td>
+</tr></table>
+</div>
+<div style="background:#1b1a17;padding:5px 6px;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:clip;text-shadow:0 2px 0 #000;text-align:center;">👑 수장 2,450,398</div>
+<div style="background:#171612;padding:3px 6px;color:#bda870;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-align:center;">킹기훈</div>
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;background:#0b0d16;"><tr>
+<td style="width:22px;padding:4px 0;color:#7f879e;font-size:8px;font-weight:900;text-align:center;">순위</td>
+<td style="width:72px;padding:4px 1px;color:#9da6bf;font-size:8px;font-weight:900;text-align:left;">멤버</td>
+<td style="width:52px;padding:4px 3px 4px 0px;color:#ffd34f;font-size:10px;font-weight:900;text-align:right;">오늘</td>
+<td style="width:74px;padding:4px 5px 4px 5px;color:#dfe6ff;font-size:10px;font-weight:900;text-align:right;border-left:1px solid rgba(255,255,255,0.12);">월간</td>
+</tr></table>
+<div style="position:relative;background:#141827;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:8px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">4</td>
+<td style="width:72px;padding:8px 1px;color:#fff;font-size:15px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">푸글리</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#bd6cff;font-size:14px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">42,099</td>
+</tr></table>
+<div style="height:4px;width:29%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">5</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">김봄비</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">27,466</td>
+</tr></table>
+<div style="height:3px;width:19%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">6</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">지숙</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">7</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">예수</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">8</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">한채아</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">9</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">박예솜</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+<div style="position:relative;background:#111522;border-top:1px solid #222;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;table-layout:fixed;"><tr>
+<td style="width:22px;padding:5px 0;color:#a7aec5;font-size:10px;font-weight:900;text-align:center;text-shadow:0 1px 0 #000;">10</td>
+<td style="width:72px;padding:5px 1px;color:#fff;font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;text-shadow:0 2px 0 #000;">이밍</td>
+<td style="width:52px;padding:5px 3px 5px 0px;text-align:right;color:#ffd34f;font-size:12px;font-weight:900;white-space:nowrap;text-shadow:0 2px 0 #000;">-</td>
+<td style="width:74px;padding:5px 5px 5px 5px;text-align:right;color:#dfe6ff;font-size:13px;font-weight:900;white-space:nowrap;border-left:1px solid rgba(255,255,255,0.12);text-shadow:0 2px 0 #000;">-</td>
+</tr></table>
+<div style="height:3px;width:0%;background:linear-gradient(90deg,#bd6cff,#fff);box-shadow:0 0 8px #bd6cff;"></div>
+</div>
+</div>
+<div style="display:inline-block;vertical-align:top;width:32%;min-width:300px;max-width:360px;height:1px;line-height:1px;margin:0 0.55% 0 0.55%;box-sizing:border-box;font-size:0;color:#070812;background:#070812;overflow:hidden;">&nbsp;</div></div>

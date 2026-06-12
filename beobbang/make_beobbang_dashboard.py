@@ -282,17 +282,18 @@ def clean_html_for_wago(src):
 
 
 def section(title, body, open_attr=False, color=ORANGE, icon="🍞"):
-    open_text = " open" if open_attr else ""
+    # SOOP 호환용: details/summary 제거 + 둥근 엣지 유지
+    # details/summary와 overflow:hidden 조합이 SOOP 게시글에서 테두리 끝선을 깨는 경우가 있어
+    # 일반 div 섹션으로 출력한다.
     return f"""
-<details{open_text} style="margin:12px 0 14px;padding:0;border:2px solid {color};border-radius:22px;background:{PAPER};overflow:hidden;box-sizing:border-box;box-shadow:0 5px 0 rgba(91,42,18,.10),0 0 0 4px rgba(255,255,255,.60) inset;">
-  <summary style="list-style:none;cursor:pointer;padding:13px 14px;background:linear-gradient(180deg,#fff3df,#ffe0b9);color:{BROWN};font-size:18px;font-weight:1000;text-align:center;text-shadow:0 1px 0 #fff;border-bottom:2px dashed {color};letter-spacing:-.3px;">
+<div style="margin:12px 0 14px;padding:0;border:2px solid {color};border-radius:22px;background:{PAPER};box-sizing:border-box;">
+  <div style="padding:13px 14px;background:linear-gradient(180deg,#fff3df,#ffe0b9);color:{BROWN};font-size:18px;font-weight:1000;text-align:center;text-shadow:0 1px 0 #fff;border-bottom:2px dashed {color};border-radius:19px 19px 0 0;letter-spacing:-.3px;">
     {icon} {esc(title)}
-  </summary>
-  <div style="padding:12px;background:linear-gradient(180deg,#fffdf8,#fff7ec);box-sizing:border-box;">
+  </div>
+  <div style="padding:12px;background:linear-gradient(180deg,#fffdf8,#fff7ec);border-radius:0 0 19px 19px;box-sizing:border-box;">
     {body}
   </div>
-</details>"""
-
+</div>"""
 
 def metric(label, value, icon="•"):
     return f"""<div style="display:inline-block;vertical-align:top;width:31.5%;min-width:150px;margin:4px .5%;padding:11px 8px;border-radius:16px;background:#fffdf8;border:2px solid #f3c58c;box-sizing:border-box;box-shadow:0 3px 0 rgba(91,42,18,.10);text-align:center;">
@@ -318,13 +319,13 @@ def member_card(m, idx=0):
     img_html = f'<img src="{esc(img)}" style="width:66px;height:66px;border-radius:50%;object-fit:cover;border:3px solid #f59e0b;background:#fff7ec;box-shadow:0 3px 0 rgba(91,42,18,.16);">' if img else '<div style="width:66px;height:66px;border-radius:50%;border:3px solid #f59e0b;background:#fff3df;display:inline-flex;align-items:center;justify-content:center;color:#f97316;font-size:24px;font-weight:1000;">빵</div>'
     label = "👑 수장" if is_leader else ("🥖 멤버" if (idx % 2 == 0) else "🍞 멤버")
     card_bg = "linear-gradient(180deg,#fff4d6,#ffe5b7)" if is_leader else "linear-gradient(180deg,#fffdf8,#fff0db)"
-    width = "98%" if is_leader else "48%"
+    width = "98%" if is_leader else "47.8%"
     return f"""
-<div style="display:inline-block;vertical-align:top;width:{width};margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:{card_bg};border:2px solid #f3c58c;text-align:center;box-sizing:border-box;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);">
+<div style="display:inline-block;vertical-align:top;width:{width};margin:0 .6% 9px;padding:12px 8px 13px;border-radius:19px;background:{card_bg};border:2px solid #f3c58c;text-align:center;box-sizing:border-box;font-size:13px;box-shadow:0 4px 0 rgba(91,42,18,.10);">
   <div style="margin-bottom:7px;text-align:left;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#fff7ec;border:1px solid #f59e0b;color:#8a4a21;font-size:10px;font-weight:1000;">{esc(label)}</span></div>
   {img_html}
-  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">{esc(m.get('name','-'))}</div>
-  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOOP ID · {esc(sid or '-')}</div>
+  <div style="margin-top:8px;color:#4a220f;font-size:20px;font-weight:1000;white-space:nowrap;text-overflow:ellipsis;text-shadow:0 1px 0 #fff;letter-spacing:-.5px;">{esc(m.get('name','-'))}</div>
+  <div style="margin-top:2px;color:#a16207;font-size:10px;font-weight:900;white-space:nowrap;text-overflow:ellipsis;">SOOP ID · {esc(sid or '-')}</div>
   <a href="{esc(m.get('soop_url') or '#')}" target="_blank" rel="nofollow" style="display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f97316;border:1px solid #c2410c;color:#fff;font-size:11px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">방송국 바로가기</a>
 </div>"""
 
@@ -334,7 +335,7 @@ def render_members(members):
     leader_count = sum(1 for m in members if (m.get("soop_id") or "").lower() == "vlfvlf789" or m.get("part") == "수장")
     regular_count = max(0, len(members) - leader_count)
     summary = f"""<div style="padding:10px 9px;margin-bottom:10px;border-radius:17px;background:#fff3df;border:2px dashed #f59e0b;color:#7c2d12;font-size:13px;font-weight:1000;text-align:center;box-sizing:border-box;">🍞 수장 {leader_count}명 · 멤버 {regular_count}명 · 닉네임 우선 표시</div>"""
-    return summary + '<div style="text-align:center;">' + ''.join(member_card(m, i) for i, m in enumerate(members)) + '</div>'
+    return summary + '<div style="text-align:left;font-size:0;">' + ''.join(member_card(m, i) for i, m in enumerate(members)) + '</div>'
 
 def render_special(text):
     lines = [x.strip() for x in str(text or "").splitlines() if x.strip()]
@@ -363,12 +364,12 @@ def render_schedule(items):
 def render_notice(post):
     body = summary_text(post.get("body", ""), 760)
     return f"""
-<div style="margin:0 0 9px;padding:0;border:2px solid #f3c58c;border-radius:18px;background:#fffdf8;overflow:hidden;box-shadow:0 4px 0 rgba(91,42,18,.10);box-sizing:border-box;">
+<div style="margin:0 0 9px;padding:0;border:2px solid #f3c58c;border-radius:12px;background:#fffdf8;box-sizing:border-box;">
   <div style="padding:12px 13px;background:linear-gradient(180deg,#fff0db,#ffe0b9);border-bottom:2px dashed #f97316;box-sizing:border-box;">
     <div style="color:#5b2a12;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 1px 0 #fff;word-break:keep-all;">🍞 {esc(post.get('title','버빵동 공지사항'))}</div>
   </div>
   <div style="padding:13px;background:#fffdf8;box-sizing:border-box;">
-    <div style="padding:12px;border-radius:15px;background:#fff7ec;border:1px solid #fed7aa;color:#5b2a12;font-size:13px;line-height:1.62;font-weight:800;word-break:break-word;box-sizing:border-box;">{esc(body)}</div>
+    <div style="padding:12px;border-radius:10px;background:#fff7ec;border:1px solid #fed7aa;color:#5b2a12;font-size:13px;line-height:1.62;font-weight:800;word-break:break-word;box-sizing:border-box;">{esc(body)}</div>
     <a href="{esc(post.get('url') or POST_URL)}" target="_blank" rel="nofollow" style="display:inline-block;margin-top:10px;padding:8px 12px;border-radius:999px;background:#7c2d12;color:#fff;font-size:12px;font-weight:1000;text-decoration:none;box-shadow:0 2px 0 rgba(91,42,18,.18);">원문 확인</a>
   </div>
 </div>"""
@@ -376,7 +377,7 @@ def render_notice(post):
 
 def render_hero(updated):
     return f"""
-<div style="position:relative;border-radius:24px;overflow:hidden;border:2px solid #f3c58c;background:radial-gradient(circle at 18% 15%,#fff7ec 0,#ffe7c2 34%,#ffd6a3 100%);box-shadow:0 5px 0 rgba(91,42,18,.12);box-sizing:border-box;">
+<div style="position:relative;border-radius:24px;border:2px solid #f3c58c;background:radial-gradient(circle at 18% 15%,#fff7ec 0,#ffe7c2 34%,#ffd6a3 100%);box-shadow:0 5px 0 rgba(91,42,18,.12);box-sizing:border-box;">
   <div style="padding:18px 14px 14px;text-align:center;box-sizing:border-box;">
     <img src="{LOGO_URL}?v={CACHE_BUST}" style="display:block;max-width:230px;width:58%;height:auto;margin:0 auto;border:0;">
     <div style="margin:8px auto 0;max-width:260px;border-top:2px solid #f97316;height:1px;line-height:1px;"></div>
@@ -392,7 +393,7 @@ def main():
     special = extract_special(post.get("body", ""))
     schedule = load_schedule()
 
-    html_out = f"""<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,#fff9ef 0,#fff1dc 45%,#f8dfbc 100%);padding:10px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#5b2a12;overflow:hidden;border-radius:24px;border:2px solid #f3c58c;">
+    html_out = f"""<div style="width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,#fff9ef 0,#fff1dc 45%,#f8dfbc 100%);padding:10px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#5b2a12;border-radius:24px;border:2px solid #f3c58c;">
   {render_hero(updated)}
   {section('멤버 현황', render_members(members), True, '#f97316', '🥐')}
   {section('오늘의 특이사항', render_special(special), True, '#f59e0b', '⭐')}

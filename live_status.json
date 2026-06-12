@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-12 23:05:03",
+  "updated_at": "2026-06-13 00:05:02",
   "total": 39,
-  "live_count": 13,
+  "live_count": 12,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -73,11 +73,11 @@
       "part": "스타부",
       "soop_id": "rlekfu6",
       "soop_url": "https://www.sooplive.com/station/rlekfu6",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294761191",
-      "title": "[씨나인⭐️]스타 박재혁 목도",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rlekfu6/station"
     },
@@ -155,7 +155,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294763495",
-      "title": "[씨나인] 스타 윤용태  효짱이 게임구경^^",
+      "title": "[씨나인] 스타 윤용태  VS 재혁형 3/2",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dbsdydx/station"
     },
@@ -207,7 +207,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294760021",
-      "title": "[씨나인⭐] vs메옹",
+      "title": "[씨나인⭐] 스폰환영",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
@@ -220,7 +220,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294766155",
-      "title": "씨나인⭐]피곤해서 짧방.. ㅎㅎ",
+      "title": "씨나인⭐]140m 1414개 5코인..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -311,7 +311,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294768855",
-      "title": "[씨나인:신입] 하이이이이이이이 ^_~",
+      "title": "[씨나인:신입]이아이는,,간절합니다.. 시그단(1/5) 소음단(2/5)",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
@@ -324,7 +324,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294768755",
-      "title": "[씨나인:여왕] 불금 나랑 놀아쪼..",
+      "title": "[씨나인:여왕] 불금 나랑 놀아쪼.. (1/5) 기사단 (0/2)",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/epsthddus/station"
     },
@@ -402,7 +402,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294762751",
-      "title": "[씨나인:귀족] 누나가 알려준다 ㅋ",
+      "title": "[씨나인:귀족] 헤헿",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dlswldus107/station"
     },
@@ -428,7 +428,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294762609",
-      "title": "[씨나인 : 황족] 이번주에 마지막방송...",
+      "title": "[씨나인 : 황족] 레전더리 과묵업 수냥업 ♥",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
@@ -493,7 +493,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294765199",
-      "title": "[씨나인:버러지] 연두해요",
+      "title": "[씨나인:버러지] 심심해요",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
     }

@@ -20,9 +20,11 @@ DRY_RUN = False
 
 
 def find_latest_txt():
+    # 현황판 기본 출력 파일을 우선 사용하고, 없으면 ygosu_paste*.txt 중 최신 파일 사용
     exact = BASE_DIR / TXT_PATTERN
     if exact.exists():
         return exact
+
     files = list(BASE_DIR.glob("ygosu_paste*.txt"))
     if not files:
         raise Exception(f"파일 없음: {exact}")
@@ -271,9 +273,11 @@ def click_by_xpath_text(driver):
     xpaths = [
         "//*[self::button or self::a or self::input][contains(normalize-space(.), '수정')]",
         "//*[self::button or self::a or self::input][contains(normalize-space(.), '등록')]",
+        "//*[self::button or self::a or self::input][contains(normalize-space(.), '확인')]",
         "//*[self::button or self::a or self::input][contains(normalize-space(.), '저장')]",
         "//input[contains(@value, '수정')]",
         "//input[contains(@value, '등록')]",
+        "//input[contains(@value, '확인')]",
         "//input[contains(@value, '저장')]",
         "//*[contains(@onclick, 'write')]",
         "//*[contains(@onclick, 'modify')]",
@@ -312,16 +316,24 @@ def click_by_xpath_text(driver):
                     + " " + (el.get_attribute("class") or "")
                     + " " + (el.get_attribute("id") or "")
                 )
-                # 외부/SOOP/시청기록 링크는 절대 클릭 금지.
-                # 기존 성공하던 제출 흐름은 그대로 두고, 문제 버튼만 차단한다.
+
                 href = (el.get_attribute("href") or "")
-                low = (label + " " + href).lower()
-                block_words = ["시청기록", "soop", "sooplive", "숲공식", "방송국"]
-                if any(w in low for w in block_words):
-                    print("클릭 차단:", " ".join((label + " " + href).split())[:200])
+                label_text = " ".join(label.split())
+                href_low = href.lower()
+                label_low = label_text.lower()
+
+                # 본문 안의 SOOP 시청기록 확인 버튼만 예외 처리
+                # 기존 낙수표 자동등록 로직은 유지하고, 문제 버튼 클릭만 차단한다.
+                if (
+                    "시청기록 확인" in label_text
+                    or "userlivewatchtimedata" in href_low
+                    or "m.sooplive.com/statistics" in href_low
+                    or "sooplive.com/statistics" in href_low
+                ):
+                    print("클릭 차단: 본문 시청기록 확인 버튼", (label_text + " " + href)[:220])
                     continue
 
-                print("클릭 시도:", " ".join(label.split())[:200])
+                print("클릭 시도:", label_text[:200])
 
                 driver.execute_script("arguments[0].scrollIntoView({block:'center'});", el)
                 time.sleep(0.5)

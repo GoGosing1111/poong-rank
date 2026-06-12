@@ -1,50 +1,56 @@
 [
   {
-    "name": "오츠바코에",
+    "name": "코에",
     "soop_id": "yotsubakoe",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/yotsubakoe"
   },
   {
-    "name": "철쓰",
+    "name": "철쑤_",
     "soop_id": "choelssu",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/choelssu"
   },
   {
-    "name": "야옹이",
+    "name": "야옴",
     "soop_id": "yaom0728",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/yaom0728"
   },
   {
-    "name": "공이삼이",
+    "name": "아눙",
     "soop_id": "015234",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/015234"
   },
   {
-    "name": "시루스",
+    "name": "시루냥",
     "soop_id": "xirus2",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/xirus2"
   },
   {
-    "name": "이튼",
+    "name": "뽀뽀_",
     "soop_id": "tpdusdl0218",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/tpdusdl0218"
   },
   {
-    "name": "아스닥",
+    "name": "쏭아야",
     "soop_id": "asdk0110",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/asdk0110"
   },
   {
-    "name": "더기",
+    "name": "올어바웃설이",
     "soop_id": "dougie0328",
     "part": "멤버",
     "soop_url": "https://www.sooplive.com/station/dougie0328"
+  },
+  {
+    "name": "코네",
+    "soop_id": "cone2026",
+    "part": "멤버",
+    "soop_url": "https://www.sooplive.com/station/cone2026"
   }
 ]

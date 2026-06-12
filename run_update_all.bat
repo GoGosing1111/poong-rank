@@ -52,7 +52,7 @@ if exist update_schedule_status.py (
 
 echo.
 echo STEP_5_GIT_PUSH
-git add live_status.json notice_status.json ranking_data.json schedule_status.json
+git add live_status.json notice_status.json ranking_data.json schedule_status.json make_ygosu_c9_dashboard.py soop_fandom_verify.js ygosu_paste.txt ygosu_c9_dashboard_full.html
 
 git diff --cached --quiet
 if errorlevel 1 (
@@ -78,6 +78,7 @@ echo - notice_status.json
 echo - ranking_data.json
 echo - schedule_status.json
 
+pause
 exit /b 0
 
 :ERROR_END
@@ -88,4 +89,5 @@ echo ERRORLEVEL=%ERR%
 echo ERROR_STOPPED >> update_all_log.txt
 echo ERRORLEVEL=%ERR% >> update_all_log.txt
 echo Check update_all_log.txt / ranking_debug.txt / schedule_debug_body.txt
+pause
 exit /b %ERR%

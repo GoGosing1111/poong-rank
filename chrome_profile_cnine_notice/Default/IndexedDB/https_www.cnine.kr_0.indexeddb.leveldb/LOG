@@ -1,0 +1,25 @@
+2026/06/07-03:09:33.707 1fcc0 Reusing MANIFEST C:\Users\User\Downloads\upload\poong-rank\chrome_profile_cnine_notice\Default\IndexedDB\https_www.cnine.kr_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/07-03:09:33.726 1fcc0 Recovering log #342
+2026/06/07-03:09:33.727 1fcc0 Reusing old log C:\Users\User\Downloads\upload\poong-rank\chrome_profile_cnine_notice\Default\IndexedDB\https_www.cnine.kr_0.indexeddb.leveldb/000342.log 
+2026/06/07-03:09:33.727 1fcc0 Delete type=2 #341
+2026/06/07-03:09:33.749 121c0 Level-0 table #347: started
+2026/06/07-03:09:33.757 121c0 Level-0 table #347: 2081 bytes OK
+2026/06/07-03:09:33.763 121c0 Delete type=0 #342
+2026/06/07-03:09:33.763 121c0 Manual compaction at level-0 from '\x00y\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00z\x00\x00\x00' @ 0 : 0; will stop at '\x00y\x00\x00\x05' @ 3769 : 1
+2026/06/07-03:09:33.763 121c0 Compacting 1@0 + 1@1 files
+2026/06/07-03:09:33.770 121c0 Generated table #348@0: 335 keys, 4559 bytes
+2026/06/07-03:09:33.771 121c0 Compacted 1@0 + 1@1 files => 4559 bytes
+2026/06/07-03:09:33.776 121c0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/07-03:09:33.776 121c0 Delete type=2 #347
+2026/06/07-03:09:33.777 1ac68 Manual compaction at level-0 from '\x00y\x00\x00\x05' @ 3769 : 1 .. '\x00z\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/06/07-03:09:33.778 1ac68 Level-0 table #350: started
+2026/06/07-03:09:33.787 1ac68 Level-0 table #350: 664 bytes OK
+2026/06/07-03:09:33.792 1ac68 Delete type=2 #344
+2026/06/07-03:09:33.792 1ac68 Delete type=0 #346
+2026/06/07-03:09:33.793 1ac68 Manual compaction at level-0 from '\x00z\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00{\x00\x00\x00' @ 0 : 0; will stop at '\x00z\x00\x00\x05' @ 3786 : 1
+2026/06/07-03:09:33.793 1ac68 Compacting 1@0 + 1@1 files
+2026/06/07-03:09:33.798 1ac68 Generated table #351@0: 335 keys, 4556 bytes
+2026/06/07-03:09:33.798 1ac68 Compacted 1@0 + 1@1 files => 4556 bytes
+2026/06/07-03:09:33.802 1ac68 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/07-03:09:33.802 1ac68 Delete type=2 #350
+2026/06/07-03:09:33.803 1ac68 Manual compaction at level-0 from '\x00z\x00\x00\x05' @ 3786 : 1 .. '\x00{\x00\x00\x00' @ 0 : 0; will stop at (end)
