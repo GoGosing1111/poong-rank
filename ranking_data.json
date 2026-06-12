@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12 18:05:21",
+  "updated_at": "2026-06-12 18:05:23",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -49,7 +49,7 @@
       "name": "앵지",
       "match": "앵지",
       "soop_id": "gks2wl",
-      "today": 86414,
+      "today": 86415,
       "month": 441990,
       "today_api_name": "앵지",
       "month_api_name": "앵지",
@@ -93,7 +93,7 @@
       "name": "애순이",
       "match": "애순이",
       "soop_id": "yunyeson3015",
-      "today": 7344,
+      "today": 8430,
       "month": 352481,
       "today_api_name": "애순이",
       "month_api_name": "애순이",
@@ -473,7 +473,7 @@
       {
         "rank": 4,
         "name": "애순이",
-        "today": "7,344",
+        "today": "8,430",
         "month": "352,481",
         "width": "80%",
         "first": false,
@@ -608,7 +608,7 @@
       {
         "rank": 3,
         "name": "앵지",
-        "today": "86,414",
+        "today": "86,415",
         "month": "441,990",
         "width": "91%",
         "first": false,
