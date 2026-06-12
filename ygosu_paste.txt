@@ -2,7 +2,7 @@
   
   <div id="section_top" style="position:relative;padding:18px 10px 16px;text-align:center;border:1px solid rgba(90,175,255,.55);border-radius:18px;background:linear-gradient(135deg,rgba(25,125,255,.28),rgba(0,0,0,.70));box-shadow:0 0 18px rgba(40,145,255,.25);">
     <div style="position:absolute;right:10px;top:9px;display:flex;align-items:center;gap:7px;z-index:2;">
-      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-13 02:56</span>
+      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-13 03:06</span>
       <a href="https://ygosu.com/msg/?m2=write&member=152117" target="_blank" rel="nofollow" style="display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,#2f9bff,#635bff);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:11px;font-weight:1000;text-decoration:none;line-height:1;box-shadow:0 0 12px rgba(47,155,255,.30);">📩 관리자 문의</a>
     </div>
     <img src="https://keyman1335-maker.github.io/poong-rank/assets//crew_logos/cninelogo.png?v=9999" style="display:block;width:112px;max-width:45%;height:auto;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(255,255,255,.30));">
@@ -16,7 +16,7 @@
   scrolling="no"
   allow="clipboard-write"
   referrerpolicy="strict-origin-when-cross-origin"
-  style="position:absolute;left:0;top:0;width:100%;height:100%;border:0;margin:0;border-radius:18px;overflow:hidden;background:transparent;z-index:9999;display:block;"
+  style="position:absolute;left:0;top:0;width:100%;height:100%;min-height:720px;border:0;margin:0;border-radius:18px;overflow:hidden;background:transparent;z-index:9999;display:block;"
   srcdoc="&lt;!doctype html&gt;
 &lt;html lang='ko'&gt;
 &lt;head&gt;
@@ -26,7 +26,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden}
 .popup-overlay{
-  position:fixed;inset:0;z-index:9999;
+  position:fixed;inset:0;z-index:999999;
   display:flex;align-items:flex-start;justify-content:center;
   background:rgba(0,0,0,.62);
   backdrop-filter:blur(5px);
@@ -42,103 +42,24 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   box-shadow:0 24px 70px rgba(0,0,0,.78),0 0 28px rgba(47,155,255,.42);
   text-align:center;
 }
-.popup-head{
-  padding:22px 18px 14px;
-  background:linear-gradient(135deg,rgba(47,155,255,.22),rgba(255,79,114,.14));
-  border-bottom:1px solid rgba(255,255,255,.10);
-}
-.badge{
-  display:inline-block;
-  padding:6px 12px;
-  border-radius:999px;
-  border:1px solid rgba(126,200,255,.55);
-  background:rgba(0,0,0,.25);
-  color:#7ec8ff;
-  font-size:12px;
-  font-weight:1000;
-  box-shadow:0 0 13px rgba(126,200,255,.22);
-}
-.title{
-  margin-top:12px;
-  font-size:28px;
-  line-height:1.1;
-  font-weight:1000;
-  color:#fff;
-  text-shadow:0 0 12px rgba(126,200,255,.85),0 3px 0 #001b36;
-}
-.sub{
-  margin-top:8px;
-  color:#cfeaff;
-  font-size:13px;
-  font-weight:900;
-  line-height:1.45;
-}
+.popup-head{padding:22px 18px 14px;background:linear-gradient(135deg,rgba(47,155,255,.22),rgba(255,79,114,.14));border-bottom:1px solid rgba(255,255,255,.10)}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;border:1px solid rgba(126,200,255,.55);background:rgba(0,0,0,.25);color:#7ec8ff;font-size:12px;font-weight:1000;box-shadow:0 0 13px rgba(126,200,255,.22)}
+.title{margin-top:12px;font-size:28px;line-height:1.1;font-weight:1000;color:#fff;text-shadow:0 0 12px rgba(126,200,255,.85),0 3px 0 #001b36}
+.sub{margin-top:8px;color:#cfeaff;font-size:13px;font-weight:900;line-height:1.45}
 .popup-body{padding:15px 16px 16px}
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:9px;
-}
-.item{
-  min-height:74px;
-  padding:12px 9px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.10);
-  background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.18));
-  text-align:left;
-  color:#fff;
-  cursor:pointer;
-  font-family:inherit;
-}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.item{min-height:74px;padding:12px 9px;border-radius:16px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.18));text-align:left;color:#fff;cursor:pointer;font-family:inherit}
 .item:hover{filter:brightness(1.15);border-color:rgba(126,200,255,.55)}
 .ico{font-size:21px;line-height:1}
-.item b{
-  display:block;
-  margin-top:6px;
-  color:#fff;
-  font-size:13px;
-  font-weight:1000;
-  text-shadow:0 2px 0 #000;
-}
-.item span{
-  display:block;
-  margin-top:4px;
-  color:#b9d9f5;
-  font-size:11px;
-  font-weight:800;
-  line-height:1.32;
-}
-.popup-actions{
-  display:flex;
-  gap:8px;
-  padding:0 16px 16px;
-}
-.btn{
-  flex:1;
-  height:44px;
-  border:0;
-  border-radius:13px;
-  color:#fff;
-  font-size:13px;
-  font-weight:1000;
-  cursor:pointer;
-}
+.item b{display:block;margin-top:6px;color:#fff;font-size:13px;font-weight:1000;text-shadow:0 2px 0 #000}
+.item span{display:block;margin-top:4px;color:#b9d9f5;font-size:11px;font-weight:800;line-height:1.32}
+.popup-actions{display:flex;gap:8px;padding:0 16px 16px}
+.btn{flex:1;height:44px;border:0;border-radius:13px;color:#fff;font-size:13px;font-weight:1000;cursor:pointer}
 .btn-close{background:linear-gradient(135deg,#2f9bff,#0b4f95)}
 .btn-hide{background:linear-gradient(135deg,#475569,#111827)}
-.footer{
-  padding:9px 12px 13px;
-  color:#9ccfff;
-  font-size:10px;
-  font-weight:800;
-  border-top:1px solid rgba(255,255,255,.08);
-}
+.footer{padding:9px 12px 13px;color:#9ccfff;font-size:10px;font-weight:800;border-top:1px solid rgba(255,255,255,.08)}
 .hidden{display:none!important}
-@media(max-width:420px){
-  .popup-overlay{padding-top:22px;align-items:flex-start}
-  .title{font-size:23px}
-  .grid{grid-template-columns:1fr}
-  .popup-actions{flex-direction:column}
-}
+@media(max-width:420px){.popup-overlay{padding-top:22px;align-items:flex-start}.title{font-size:23px}.grid{grid-template-columns:1fr}.popup-actions{flex-direction:column}}
 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -151,12 +72,12 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
     &lt;/div&gt;
     &lt;div class='popup-body'&gt;
       &lt;div class='grid'&gt;
-        &lt;button class='item nav-item' data-target='section_members' type='button'&gt;&lt;div class='ico'&gt;📡&lt;/div&gt;&lt;b&gt;LIVE 현황&lt;/b&gt;&lt;span&gt;멤버 방송 상태를 자동 표시&lt;/span&gt;&lt;/button&gt;
-        &lt;button class='item nav-item' data-target='section_rank' type='button'&gt;&lt;div class='ico'&gt;⭐&lt;/div&gt;&lt;b&gt;월간 별풍선&lt;/b&gt;&lt;span&gt;엑셀부 · 스타부 집계표 확인&lt;/span&gt;&lt;/button&gt;
-        &lt;button class='item nav-item' data-target='section_notice' type='button'&gt;&lt;div class='ico'&gt;📢&lt;/div&gt;&lt;b&gt;공지사항&lt;/b&gt;&lt;span&gt;씨나인 SOOP 공지 펼쳐보기&lt;/span&gt;&lt;/button&gt;
-        &lt;button class='item nav-item' data-target='section_schedule' type='button'&gt;&lt;div class='ico'&gt;📅&lt;/div&gt;&lt;b&gt;씨나인 일정&lt;/b&gt;&lt;span&gt;TODAY 일정 자동 강조&lt;/span&gt;&lt;/button&gt;
-        &lt;button class='item nav-item' data-target='section_main' type='button'&gt;&lt;div class='ico'&gt;🚨&lt;/div&gt;&lt;b&gt;리캡 셀프인증&lt;/b&gt;&lt;span&gt;SOOP 시청기록 인증 코드 복사&lt;/span&gt;&lt;/button&gt;
-        &lt;button class='item nav-item' data-target='section_replay' type='button'&gt;&lt;div class='ico'&gt;🎬&lt;/div&gt;&lt;b&gt;다시보기 채팅&lt;/b&gt;&lt;span&gt;VOD 채팅 패널 코드 복사&lt;/span&gt;&lt;/button&gt;
+        &lt;button class='item nav-item' type='button'&gt;&lt;div class='ico'&gt;📡&lt;/div&gt;&lt;b&gt;LIVE 현황&lt;/b&gt;&lt;span&gt;멤버 방송 상태를 자동 표시&lt;/span&gt;&lt;/button&gt;
+        &lt;button class='item nav-item' type='button'&gt;&lt;div class='ico'&gt;⭐&lt;/div&gt;&lt;b&gt;월간 별풍선&lt;/b&gt;&lt;span&gt;엑셀부 · 스타부 집계표 확인&lt;/span&gt;&lt;/button&gt;
+        &lt;button class='item nav-item' type='button'&gt;&lt;div class='ico'&gt;📢&lt;/div&gt;&lt;b&gt;공지사항&lt;/b&gt;&lt;span&gt;씨나인 SOOP 공지 펼쳐보기&lt;/span&gt;&lt;/button&gt;
+        &lt;button class='item nav-item' type='button'&gt;&lt;div class='ico'&gt;📅&lt;/div&gt;&lt;b&gt;씨나인 일정&lt;/b&gt;&lt;span&gt;TODAY 일정 자동 강조&lt;/span&gt;&lt;/button&gt;
+        &lt;button class='item nav-item' type='button'&gt;&lt;div class='ico'&gt;🚨&lt;/div&gt;&lt;b&gt;리캡 셀프인증&lt;/b&gt;&lt;span&gt;SOOP 시청기록 인증 코드 복사&lt;/span&gt;&lt;/button&gt;
+        &lt;button class='item nav-item' type='button'&gt;&lt;div class='ico'&gt;🔎&lt;/div&gt;&lt;b&gt;닉네임 검색센터&lt;/b&gt;&lt;span&gt;4개 게시판 검색결과 확인&lt;/span&gt;&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class='popup-actions'&gt;
@@ -170,103 +91,47 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
 (function(){
   var key='c9_dashboard_popup_hide_until';
 
-  function hidePopupOnly(){
-    var p=document.getElementById('popup');
-    if(p){ p.className='popup-overlay hidden'; }
-    document.documentElement.style.display='none';
-    document.body.style.display='none';
-  }
-
   function hideFrame(){
-    hidePopupOnly();
     try{
-      var f = window.frameElement;
+      var p=document.getElementById('popup');
+      if(p){p.className='popup-overlay hidden';}
+      var f=window.frameElement;
       if(f){
         f.style.display='none';
         f.style.height='0px';
         f.style.minHeight='0px';
+        f.style.pointerEvents='none';
       }
     }catch(e){}
   }
 
-  function closePopup(){
-    hideFrame();
-  }
-
   function hideToday(){
-    try{
-      var tomorrow = Date.now() + 24*60*60*1000;
-      localStorage.setItem(key, String(tomorrow));
-    }catch(e){}
+    try{localStorage.setItem(key,String(Date.now()+24*60*60*1000));}catch(e){}
     hideFrame();
   }
 
   function init(){
     try{
       var until=localStorage.getItem(key);
-      if(until &amp;&amp; Number(until) &gt; Date.now()){
-        hideFrame();
-        return;
-      }
+      if(until &amp;&amp; Number(until)&gt;Date.now()){hideFrame();return;}
     }catch(e){}
-
-    function goTarget(id){
-      try{
-        var el = window.parent.document.getElementById(id);
-        if(el){
-          if(String(el.tagName).toLowerCase()==='details'){ el.open = true; }
-          var inner = el.querySelector ? el.querySelector('details') : null;
-          if(inner){ inner.open = true; }
-          el.scrollIntoView({behavior:'smooth', block:'start'});
-        }
-      }catch(e){}
-      hideFrame();
-    }
-
-    var navs=document.querySelectorAll('.nav-item');
-    for(var i=0;i&lt;navs.length;i++){
-      navs[i].addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        goTarget(this.getAttribute('data-target'));
-      }, false);
-    }
 
     var c=document.getElementById('btnClose');
     var h=document.getElementById('btnHide');
+    if(c){c.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();hideFrame();},false);}
+    if(h){h.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();hideToday();},false);}
 
-    if(c){
-      c.addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        closePopup();
-      }, false);
-    }
-    if(h){
-      h.addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        hideToday();
-      }, false);
-    }
-
-    // 혹시 버튼 이벤트가 막히는 환경 대비: 배경 클릭 시 닫기
     var p=document.getElementById('popup');
-    if(p){
-      p.addEventListener('click', function(e){
-        if(e.target === p){ closePopup(); }
-      }, false);
+    if(p){p.addEventListener('click',function(e){if(e.target===p){hideFrame();}},false);}
+
+    var navs=document.querySelectorAll('.nav-item');
+    for(var i=0;i&lt;navs.length;i++){
+      navs[i].addEventListener('click',function(e){e.preventDefault();e.stopPropagation();hideFrame();},false);
     }
   }
 
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', init);
-  }else{
-    init();
-  }
-
-  window.closePopup = closePopup;
-  window.hideToday = hideToday;
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}
+  else{init();}
 })();
 &lt;/script&gt;
 &lt;/body&gt;
@@ -431,6 +296,34 @@ btn.onclick = function() {
       ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;"></span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
       ※ 다시보기 툴 제작자 : 티큐양봉피꺼솟.
     </div>
+  </div>
+</div>
+  
+<div style="margin-top:10px;border:1px solid rgba(126,200,255,.46);border-radius:15px;background:linear-gradient(135deg,rgba(47,155,255,.18),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
+  <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(126,200,255,.26);color:#7ec8ff;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
+    🔎 닉네임 검색센터
+  </div>
+  <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
+    <iframe height="132" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;border:0;border-radius:11px;overflow:hidden;background:#071426;" srcdoc="&lt;!doctype html&gt;
+&lt;meta charset='utf-8'&gt;
+&lt;style&gt;
+*{box-sizing:border-box}
+body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sans-serif;overflow:hidden}
+.wrap{height:132px;padding:10px;background:linear-gradient(135deg,rgba(47,155,255,.16),rgba(0,0,0,.26));border:1px solid rgba(126,200,255,.35);border-radius:11px}
+.row{display:flex;gap:7px}
+.inp{flex:1;height:42px;border-radius:9px;border:1px solid rgba(126,200,255,.42);background:#020617;color:#fff;padding:0 11px;font-size:14px;font-weight:900;outline:none}
+.btn{width:86px;height:42px;border:0;border-radius:9px;background:linear-gradient(135deg,#2f9bff,#635bff);color:#fff;font-size:14px;font-weight:1000;cursor:pointer}
+.hint{margin-top:9px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;text-align:center}
+.hint b{color:#7ec8ff}
+&lt;/style&gt;
+&lt;div class='wrap'&gt;
+  &lt;form class='row' method='get' action='https://keyman1335-maker.github.io/poong-rank/c9_nick_search_results.html' target='_blank'&gt;
+   &lt;input type='hidden' name='v' value='20260613030652'&gt;
+    &lt;input name='nick' class='inp' placeholder='닉네임 입력 예) 족버지' autocomplete='off' required&gt;
+    &lt;button class='btn' type='submit'&gt;검색&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;div class='hint'&gt;&lt;b&gt;SOOP(숲) · 인터넷방송 · 스타방송 · 스타대학&lt;/b&gt;&lt;br&gt;검색 버튼을 누르면 새 탭에 4개 검색결과가 뜹니다.&lt;/div&gt;
+&lt;/div&gt;" src=""></iframe>
   </div>
 </div>
 </div>
@@ -1430,5 +1323,5 @@ https://www.sooplive.com/station/gks2wl/post/198471035</div>
 </div>
 
   <div style="margin-top:12px;text-align:center;color:#7ec8ff;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(80,170,255,.35);">CNINE Dashboard Developed by 유두위생크림</div>
-  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-13 02:56:00</div>
+  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-13 03:06:52</div>
 </div>
