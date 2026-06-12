@@ -37,7 +37,7 @@ iframe{flex:1;width:100%;border:0;background:#fff}
   ];
   function esc(s){return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]||c;});}
   document.title='와이고수 닉네임 검색 - '+nick;
-  window.C9_GUARD_CONFIG={keywordUrl:BASE+'/bad_words.json?v=202606131000',query:nick};
+  window.C9_GUARD_CONFIG={keywordUrl:BASE+'/bad_words.json?v=202606131130',query:nick};
 
   var enc=encodeURIComponent(nick);
   document.getElementById('frames').innerHTML=boards.map(function(b){
@@ -46,7 +46,7 @@ iframe{flex:1;width:100%;border:0;background:#fff}
   }).join('');
 
   var s=document.createElement('script');
-  s.src=BASE+'/c9_search_result_guard.js?v=202606131000';
+  s.src=BASE+'/c9_search_result_guard.js?v=202606131130';
   document.body.appendChild(s);
 })();
 </script>
