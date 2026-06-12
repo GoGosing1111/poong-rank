@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "updated_at": "2026-06-12 18:12:50",
+  "updated_at": "2026-06-12 21:51:41",
   "source": "https://www.cnine.kr/timeline",
-  "count": 6,
+  "count": 7,
   "today_count": 1,
-  "future_count": 5,
+  "future_count": 6,
   "items": [
     {
       "title": "빵훈이 : 홍대 야킹 <feat. 박진우>",
@@ -45,6 +45,16 @@
       "dday": "D-1",
       "type": "컨텐츠",
       "source_line": "2026년 06월 13일(토)"
+    },
+    {
+      "title": "씨나인 : 빠지 여행",
+      "date": "2026.06.14 (일)",
+      "raw_date": "2026-06-14",
+      "time": "시간미정",
+      "datetime": "2026.06.14 (일) · ⏰ 시간미정",
+      "dday": "D-2",
+      "type": "컨텐츠",
+      "source_line": "2026년 06월 14일(일)"
     },
     {
       "title": "엑셀혜루여왕님 주관 여캠부 디코회의",
