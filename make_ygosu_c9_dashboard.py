@@ -290,6 +290,97 @@ btn.onclick = function() {{
 </div>"""
 
 
+
+def _srcdoc_escape(src):
+    return src.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+
+def render_nick_search_card():
+    """와이고수 4개 게시판 닉네임 통합검색 카드.
+    - 와고 iframe에서 window.open / allow=popups가 불안정하므로 JS 클릭 방식 폐기.
+    - 순수 HTML form target=_blank 방식으로 검색 결과 페이지를 연다.
+    - 제목 감지바는 c9_nick_search_results.html 결과 페이지에서만 실행한다.
+    """
+    result_url = f"{BASE_URL}/c9_nick_search_results.html"
+
+    srcdoc = f"""<!doctype html>
+<meta charset='utf-8'>
+<style>
+*{{box-sizing:border-box}}
+body{{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sans-serif;overflow:hidden}}
+.wrap{{height:132px;padding:10px;background:linear-gradient(135deg,rgba(47,155,255,.16),rgba(0,0,0,.26));border:1px solid rgba(126,200,255,.35);border-radius:11px}}
+.row{{display:flex;gap:7px}}
+.inp{{flex:1;height:42px;border-radius:9px;border:1px solid rgba(126,200,255,.42);background:#020617;color:#fff;padding:0 11px;font-size:14px;font-weight:900;outline:none}}
+.btn{{width:86px;height:42px;border:0;border-radius:9px;background:linear-gradient(135deg,#2f9bff,#635bff);color:#fff;font-size:14px;font-weight:1000;cursor:pointer}}
+.hint{{margin-top:9px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;text-align:center}}
+.hint b{{color:#7ec8ff}}
+</style>
+<div class='wrap'>
+  <form class='row' method='get' action='{result_url}' target='_blank'>
+   <input type='hidden' name='v' value='{CACHE_BUST}'>
+    <input name='nick' class='inp' placeholder='닉네임 입력 예) 족버지' autocomplete='off' required>
+    <button class='btn' type='submit'>검색</button>
+  </form>
+  <div class='hint'><b>SOOP(숲) · 인터넷방송 · 스타방송 · 스타대학</b><br>검색 버튼을 누르면 새 탭에 4개 검색결과가 뜹니다.</div>
+</div>"""
+    iframe_html = f"""<iframe height="132" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;border:0;border-radius:11px;overflow:hidden;background:#071426;" srcdoc="{_srcdoc_escape(srcdoc)}" src=""></iframe>"""
+
+    return f"""
+<div style="margin-top:10px;border:1px solid rgba(126,200,255,.46);border-radius:15px;background:linear-gradient(135deg,rgba(47,155,255,.18),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
+  <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(126,200,255,.26);color:#7ec8ff;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
+    🔎 닉네임 검색센터
+  </div>
+  <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
+    {iframe_html}
+  </div>
+</div>"""
+
+def render_title_guard_card():
+    """와고 게시글 제목 비하 키워드 감지 북마크릿 카드.
+    - 키워드는 GitHub의 bad_words.json에서 외부 관리
+    - 와고 게시글에서 코드 실행 시 현재 페이지 제목만 분석하고 팝업 출력
+    """
+    guard_js = f"{BASE_URL}/ygosu_title_guard.js?v=20260613"
+    ygosu_url = "https://ygosu.com/board/soop"
+
+    iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
+&lt;meta charset='utf-8'&gt;
+&lt;style&gt;
+body{{margin:0}}
+button{{width:100%;height:48px;background:linear-gradient(135deg,#ef4444,#7f1d1d);color:#fff;border:0;border-radius:9px;font-size:14px;font-weight:900;cursor:pointer}}
+&lt;/style&gt;
+&lt;button id='btn'&gt;🚨 제목 감지 코드 복사&lt;/button&gt;
+&lt;script&gt;
+function copyText(text){{
+  if(navigator.clipboard &amp;&amp; window.isSecureContext){{return navigator.clipboard.writeText(text);}}
+  var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+  try{{document.execCommand('copy');}}finally{{document.body.removeChild(ta);}}
+  return Promise.resolve();
+}}
+var code='!function(){{var s=document.createElement(\\'script\\');s.id=\\'ygosu-title-guard-loader\\';s.src=\\'{guard_js}\\';document.head.appendChild(s)}}();';
+document.getElementById('btn').onclick=function(){{copyText(code).then(function(){{alert('복사되었습니다')}}).catch(function(){{alert('복사 실패')}})}};
+&lt;/script&gt;" src=""></iframe>"""
+
+    return f"""
+<div style="margin-top:10px;border:1px solid rgba(255,79,114,.46);border-radius:15px;background:linear-gradient(135deg,rgba(239,68,68,.17),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
+  <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(255,79,114,.26);color:#ff8a8a;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
+    🚨 게시글 제목 감지
+  </div>
+  <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
+    와이고수 게시글 제목에서<br>
+    <span style="color:#ffb4b4;font-weight:1000;">팬덤비하 · 타퀴의심 · 이간질 키워드</span>를 감지합니다.
+    <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
+      {iframe_html}
+      <a href="{ygosu_url}" target="_blank" rel="nofollow" style="flex:1 1 160px;min-width:160px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:#475569;color:#fff;font-size:14px;font-weight:1000;text-decoration:none;box-sizing:border-box;">🔍 와이고수 열기</a>
+    </div>
+    <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
+      ※ 와고 게시글에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
+      ※ 키워드는 bad_words.json 파일만 수정해서 외부 관리합니다.
+    </div>
+  </div>
+</div>"""
+
 def clean_html_for_wago(src):
     # iframe srcdoc 내부의 <script>는 와고 1073983 리캡 복사 버튼과 같은 방식이라 보호한다.
     protected = []
@@ -613,9 +704,11 @@ def render_hero_banner(updated, total_members, live_count):
 
 
 def render_welcome_popup_iframe():
-    """와이고수 iframe srcdoc 팝업.
-    - 본문에 끼워지는 방식이 아니라 대시보드 전체 위에 absolute overlay로 덮음
-    - 닫기/오늘 하루 안보기 클릭 시 iframe 자체를 숨겨서 아래 본문 클릭 가능
+    """와이고수용 설명 팝업 iframe.
+    - 기존 설명 팝업 복구
+    - 전체 대시보드 위에 absolute overlay로 덮음
+    - 확인/오늘 하루 안보기/배경 클릭 시 iframe 자체 숨김
+    - nav 버튼은 와고에서 #top_menu 튐 방지를 위해 스크롤 이동 없이 닫기만 처리
     """
     srcdoc = """<!doctype html>
 <html lang='ko'>
@@ -626,7 +719,7 @@ def render_welcome_popup_iframe():
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden}
 .popup-overlay{
-  position:fixed;inset:0;z-index:9999;
+  position:fixed;inset:0;z-index:999999;
   display:flex;align-items:flex-start;justify-content:center;
   background:rgba(0,0,0,.62);
   backdrop-filter:blur(5px);
@@ -642,103 +735,24 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   box-shadow:0 24px 70px rgba(0,0,0,.78),0 0 28px rgba(47,155,255,.42);
   text-align:center;
 }
-.popup-head{
-  padding:22px 18px 14px;
-  background:linear-gradient(135deg,rgba(47,155,255,.22),rgba(255,79,114,.14));
-  border-bottom:1px solid rgba(255,255,255,.10);
-}
-.badge{
-  display:inline-block;
-  padding:6px 12px;
-  border-radius:999px;
-  border:1px solid rgba(126,200,255,.55);
-  background:rgba(0,0,0,.25);
-  color:#7ec8ff;
-  font-size:12px;
-  font-weight:1000;
-  box-shadow:0 0 13px rgba(126,200,255,.22);
-}
-.title{
-  margin-top:12px;
-  font-size:28px;
-  line-height:1.1;
-  font-weight:1000;
-  color:#fff;
-  text-shadow:0 0 12px rgba(126,200,255,.85),0 3px 0 #001b36;
-}
-.sub{
-  margin-top:8px;
-  color:#cfeaff;
-  font-size:13px;
-  font-weight:900;
-  line-height:1.45;
-}
+.popup-head{padding:22px 18px 14px;background:linear-gradient(135deg,rgba(47,155,255,.22),rgba(255,79,114,.14));border-bottom:1px solid rgba(255,255,255,.10)}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;border:1px solid rgba(126,200,255,.55);background:rgba(0,0,0,.25);color:#7ec8ff;font-size:12px;font-weight:1000;box-shadow:0 0 13px rgba(126,200,255,.22)}
+.title{margin-top:12px;font-size:28px;line-height:1.1;font-weight:1000;color:#fff;text-shadow:0 0 12px rgba(126,200,255,.85),0 3px 0 #001b36}
+.sub{margin-top:8px;color:#cfeaff;font-size:13px;font-weight:900;line-height:1.45}
 .popup-body{padding:15px 16px 16px}
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:9px;
-}
-.item{
-  min-height:74px;
-  padding:12px 9px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.10);
-  background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.18));
-  text-align:left;
-  color:#fff;
-  cursor:pointer;
-  font-family:inherit;
-}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.item{min-height:74px;padding:12px 9px;border-radius:16px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.18));text-align:left;color:#fff;cursor:pointer;font-family:inherit}
 .item:hover{filter:brightness(1.15);border-color:rgba(126,200,255,.55)}
 .ico{font-size:21px;line-height:1}
-.item b{
-  display:block;
-  margin-top:6px;
-  color:#fff;
-  font-size:13px;
-  font-weight:1000;
-  text-shadow:0 2px 0 #000;
-}
-.item span{
-  display:block;
-  margin-top:4px;
-  color:#b9d9f5;
-  font-size:11px;
-  font-weight:800;
-  line-height:1.32;
-}
-.popup-actions{
-  display:flex;
-  gap:8px;
-  padding:0 16px 16px;
-}
-.btn{
-  flex:1;
-  height:44px;
-  border:0;
-  border-radius:13px;
-  color:#fff;
-  font-size:13px;
-  font-weight:1000;
-  cursor:pointer;
-}
+.item b{display:block;margin-top:6px;color:#fff;font-size:13px;font-weight:1000;text-shadow:0 2px 0 #000}
+.item span{display:block;margin-top:4px;color:#b9d9f5;font-size:11px;font-weight:800;line-height:1.32}
+.popup-actions{display:flex;gap:8px;padding:0 16px 16px}
+.btn{flex:1;height:44px;border:0;border-radius:13px;color:#fff;font-size:13px;font-weight:1000;cursor:pointer}
 .btn-close{background:linear-gradient(135deg,#2f9bff,#0b4f95)}
 .btn-hide{background:linear-gradient(135deg,#475569,#111827)}
-.footer{
-  padding:9px 12px 13px;
-  color:#9ccfff;
-  font-size:10px;
-  font-weight:800;
-  border-top:1px solid rgba(255,255,255,.08);
-}
+.footer{padding:9px 12px 13px;color:#9ccfff;font-size:10px;font-weight:800;border-top:1px solid rgba(255,255,255,.08)}
 .hidden{display:none!important}
-@media(max-width:420px){
-  .popup-overlay{padding-top:22px;align-items:flex-start}
-  .title{font-size:23px}
-  .grid{grid-template-columns:1fr}
-  .popup-actions{flex-direction:column}
-}
+@media(max-width:420px){.popup-overlay{padding-top:22px;align-items:flex-start}.title{font-size:23px}.grid{grid-template-columns:1fr}.popup-actions{flex-direction:column}}
 </style>
 </head>
 <body>
@@ -751,12 +765,12 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
     </div>
     <div class='popup-body'>
       <div class='grid'>
-        <button class='item nav-item' data-target='section_members' type='button'><div class='ico'>📡</div><b>LIVE 현황</b><span>멤버 방송 상태를 자동 표시</span></button>
-        <button class='item nav-item' data-target='section_rank' type='button'><div class='ico'>⭐</div><b>월간 별풍선</b><span>엑셀부 · 스타부 집계표 확인</span></button>
-        <button class='item nav-item' data-target='section_notice' type='button'><div class='ico'>📢</div><b>공지사항</b><span>씨나인 SOOP 공지 펼쳐보기</span></button>
-        <button class='item nav-item' data-target='section_schedule' type='button'><div class='ico'>📅</div><b>씨나인 일정</b><span>TODAY 일정 자동 강조</span></button>
-        <button class='item nav-item' data-target='section_main' type='button'><div class='ico'>🚨</div><b>리캡 셀프인증</b><span>SOOP 시청기록 인증 코드 복사</span></button>
-        <button class='item nav-item' data-target='section_replay' type='button'><div class='ico'>🎬</div><b>다시보기 채팅</b><span>VOD 채팅 패널 코드 복사</span></button>
+        <button class='item nav-item' type='button'><div class='ico'>📡</div><b>LIVE 현황</b><span>멤버 방송 상태를 자동 표시</span></button>
+        <button class='item nav-item' type='button'><div class='ico'>⭐</div><b>월간 별풍선</b><span>엑셀부 · 스타부 집계표 확인</span></button>
+        <button class='item nav-item' type='button'><div class='ico'>📢</div><b>공지사항</b><span>씨나인 SOOP 공지 펼쳐보기</span></button>
+        <button class='item nav-item' type='button'><div class='ico'>📅</div><b>씨나인 일정</b><span>TODAY 일정 자동 강조</span></button>
+        <button class='item nav-item' type='button'><div class='ico'>🚨</div><b>리캡 셀프인증</b><span>SOOP 시청기록 인증 코드 복사</span></button>
+        <button class='item nav-item' type='button'><div class='ico'>🔎</div><b>닉네임 검색센터</b><span>4개 게시판 검색결과 확인</span></button>
       </div>
     </div>
     <div class='popup-actions'>
@@ -770,103 +784,47 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
 (function(){
   var key='c9_dashboard_popup_hide_until';
 
-  function hidePopupOnly(){
-    var p=document.getElementById('popup');
-    if(p){ p.className='popup-overlay hidden'; }
-    document.documentElement.style.display='none';
-    document.body.style.display='none';
-  }
-
   function hideFrame(){
-    hidePopupOnly();
     try{
-      var f = window.frameElement;
+      var p=document.getElementById('popup');
+      if(p){p.className='popup-overlay hidden';}
+      var f=window.frameElement;
       if(f){
         f.style.display='none';
         f.style.height='0px';
         f.style.minHeight='0px';
+        f.style.pointerEvents='none';
       }
     }catch(e){}
   }
 
-  function closePopup(){
-    hideFrame();
-  }
-
   function hideToday(){
-    try{
-      var tomorrow = Date.now() + 24*60*60*1000;
-      localStorage.setItem(key, String(tomorrow));
-    }catch(e){}
+    try{localStorage.setItem(key,String(Date.now()+24*60*60*1000));}catch(e){}
     hideFrame();
   }
 
   function init(){
     try{
       var until=localStorage.getItem(key);
-      if(until && Number(until) > Date.now()){
-        hideFrame();
-        return;
-      }
+      if(until && Number(until)>Date.now()){hideFrame();return;}
     }catch(e){}
-
-    function goTarget(id){
-      try{
-        var el = window.parent.document.getElementById(id);
-        if(el){
-          if(String(el.tagName).toLowerCase()==='details'){ el.open = true; }
-          var inner = el.querySelector ? el.querySelector('details') : null;
-          if(inner){ inner.open = true; }
-          el.scrollIntoView({behavior:'smooth', block:'start'});
-        }
-      }catch(e){}
-      hideFrame();
-    }
-
-    var navs=document.querySelectorAll('.nav-item');
-    for(var i=0;i<navs.length;i++){
-      navs[i].addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        goTarget(this.getAttribute('data-target'));
-      }, false);
-    }
 
     var c=document.getElementById('btnClose');
     var h=document.getElementById('btnHide');
+    if(c){c.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();hideFrame();},false);}
+    if(h){h.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();hideToday();},false);}
 
-    if(c){
-      c.addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        closePopup();
-      }, false);
-    }
-    if(h){
-      h.addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        hideToday();
-      }, false);
-    }
-
-    // 혹시 버튼 이벤트가 막히는 환경 대비: 배경 클릭 시 닫기
     var p=document.getElementById('popup');
-    if(p){
-      p.addEventListener('click', function(e){
-        if(e.target === p){ closePopup(); }
-      }, false);
+    if(p){p.addEventListener('click',function(e){if(e.target===p){hideFrame();}},false);}
+
+    var navs=document.querySelectorAll('.nav-item');
+    for(var i=0;i<navs.length;i++){
+      navs[i].addEventListener('click',function(e){e.preventDefault();e.stopPropagation();hideFrame();},false);
     }
   }
 
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', init);
-  }else{
-    init();
-  }
-
-  window.closePopup = closePopup;
-  window.hideToday = hideToday;
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}
+  else{init();}
 })();
 </script>
 </body>
@@ -879,9 +837,8 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   scrolling="no"
   allow="clipboard-write"
   referrerpolicy="strict-origin-when-cross-origin"
-  style="position:absolute;left:0;top:0;width:100%;height:100%;border:0;margin:0;border-radius:18px;overflow:hidden;background:transparent;z-index:9999;display:block;"
+  style="position:absolute;left:0;top:0;width:100%;height:100%;min-height:720px;border:0;margin:0;border-radius:18px;overflow:hidden;background:transparent;z-index:9999;display:block;"
   srcdoc="{srcdoc}"></iframe>"""
-
 
 def expand_card(title, subtitle, icon, body, color="#2f9bff", open_attr=False, anchor_id=""):
     """리캡 버튼 폭에 맞춘 전체폭 펼침 메뉴.
@@ -938,6 +895,7 @@ def main():
   {render_dashboard_notice(dashboard_notice)}
   {render_self_verify_card()}
   {render_vodchat_card()}
+  {render_nick_search_card()}
 </div>"""
 
     html_out = f"""<div style="position:relative;width:100%;max-width:760px;margin:0 auto;background:radial-gradient(circle at top,rgba(45,145,255,.22),transparent 34%),linear-gradient(180deg,#05070d 0%,#071426 52%,#030507 100%);padding:8px;box-sizing:border-box;font-family:Arial,'Malgun Gothic',sans-serif;color:#fff;overflow:hidden;border-radius:18px;border:1px solid rgba(90,175,255,.45);">
