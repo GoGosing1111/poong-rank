@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-12 17:20:41",
+  "updated_at": "2026-06-12 18:05:02",
   "total": 39,
-  "live_count": 3,
+  "live_count": 4,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -389,7 +389,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294753961",
-      "title": "[씨나인:잡녀] 외로운 설윤이",
+      "title": "[씨나인:잡녀] 빨래방오픈",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dain9804/station"
     },
@@ -450,11 +450,11 @@
       "part": "엑셀부",
       "soop_id": "yunyeson3015",
       "soop_url": "https://www.sooplive.com/station/yunyeson3015",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294758205",
+      "title": "[씨나인 : 시녀2]  5년만에 탕수육중독회장식 1086,2086 역팬 or 방셀",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     },

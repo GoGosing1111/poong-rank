@@ -284,7 +284,7 @@ btn.onclick = function() {{
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
       ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
-      ※ 원본 패널 생성 후 CNINE 문구만 안전하게 적용됩니다.
+      ※ 다시보기 툴 제작자 : 티큐양봉피꺼솟.
     </div>
   </div>
 </div>"""
