@@ -1,218 +1,115 @@
-/*
-CNINE VOD patch - CSS only
-- 티큐 원본 UI 유지
-- 원본 패널 숨김/삭제/재생성 없음
-- 문구 변경 + 색상/배경만 보정
-*/
 (function(){
   'use strict';
 
-  if(window.__C9_VOD_CSS_ONLY_PATCH__) return;
-  window.__C9_VOD_CSS_ONLY_PATCH__ = true;
+  if (window.__CNINE_VODCHAT_SAFE_PATCH__) return;
+  window.__CNINE_VODCHAT_SAFE_PATCH__ = true;
 
-  var STYLE_ID = 'c9-vod-css-only-style';
+  var MAP = {
+    '채팅 순위': '채팅 랭킹',
+    '후원 순위': '후원 랭킹',
+    '도전 순위': '도전 랭킹',
+    '대결 순위': '대결 랭킹',
+    '채팅 내역': '채팅 로그',
+    '후원 내역': '후원 로그',
+    '도전미션 내역': '도전 로그',
+    '대결미션 내역': '대결 로그',
+    '총 방송 시간': '방송 시간',
+    '총 채팅 수': '채팅 수',
+    '채팅 인원': '참여 인원',
+    '상태': '분석 상태',
+    '완료 ✨': '분석완료',
+    '완료': '분석완료'
+  };
 
-  var replacePairs = [
-    ['채팅 순위', '채팅 랭킹'],
-    ['채팅 내역', '채팅 로그'],
-    ['후원 순위', '후원 랭킹'],
-    ['후원 내역', '후원 로그'],
-    ['도전 순위', '도전 랭킹'],
-    ['도전미션 내역', '도전 로그'],
-    ['대결 순위', '대결 랭킹'],
-    ['대결미션 내역', '대결 로그'],
-    ['완료 ✨', '수집완료']
-  ];
+  var KEYS = Object.keys(MAP);
 
-  function addStyle(){
-    if(document.getElementById(STYLE_ID)) return;
-
-    var css = `
-      .c9-vod-themed{
-        background:linear-gradient(180deg,#071a31 0%,#071426 52%,#030711 100%)!important;
-        border:1px solid rgba(78,168,255,.68)!important;
-        box-shadow:0 0 0 1px rgba(78,168,255,.16),0 18px 44px rgba(0,0,0,.62),0 0 26px rgba(47,155,255,.25)!important;
-      }
-      .c9-vod-titlebar{
-        display:flex!important;
-        align-items:center!important;
-        justify-content:space-between!important;
-        gap:10px!important;
-        padding:13px 16px!important;
-        background:linear-gradient(135deg,#0b2849,#10265a 58%,#06101f)!important;
-        border-bottom:1px solid rgba(126,200,255,.42)!important;
-        color:#fff!important;
-        font-family:Arial,'Malgun Gothic',sans-serif!important;
-      }
-      .c9-vod-titlebar b{
-        font-size:18px!important;
-        font-weight:1000!important;
-        color:#fff!important;
-        text-shadow:0 0 10px rgba(78,168,255,.58)!important;
-        letter-spacing:-.5px!important;
-      }
-      .c9-vod-titlebar span{
-        padding:5px 11px!important;
-        border-radius:999px!important;
-        border:1px solid rgba(126,200,255,.65)!important;
-        color:#dff2ff!important;
-        background:rgba(2,12,24,.62)!important;
-        font-size:11px!important;
-        font-weight:1000!important;
-        letter-spacing:.4px!important;
-      }
-      .c9-vod-themed input,
-      .c9-vod-themed select{
-        background:#06101f!important;
-        border:1px solid rgba(126,200,255,.35)!important;
-        color:#eaf6ff!important;
-      }
-      .c9-vod-themed button{
-        border-color:rgba(126,200,255,.35)!important;
-      }
-      .c9-vod-blue{
-        background:linear-gradient(135deg,#1d6dff,#0ea5e9)!important;
-        color:#fff!important;
-        border-color:rgba(126,200,255,.35)!important;
-        box-shadow:0 0 10px rgba(47,155,255,.24)!important;
-      }
-      .c9-vod-themed::-webkit-scrollbar,
-      .c9-vod-themed *::-webkit-scrollbar{width:9px!important;height:9px!important}
-      .c9-vod-themed::-webkit-scrollbar-thumb,
-      .c9-vod-themed *::-webkit-scrollbar-thumb{
-        background:linear-gradient(180deg,#4ea8ff,#1d6dff)!important;
-        border-radius:999px!important;
-      }
-      .c9-vod-themed::-webkit-scrollbar-track,
-      .c9-vod-themed *::-webkit-scrollbar-track{
-        background:#06101f!important;
-      }
-    `;
-
-    var s = document.createElement('style');
-    s.id = STYLE_ID;
-    s.textContent = css;
-    document.head.appendChild(s);
+  function replaceTextNode(node){
+    var before = node.nodeValue;
+    if (!before) return;
+    var after = before;
+    for (var i=0;i<KEYS.length;i++) {
+      var k = KEYS[i];
+      if (after.indexOf(k) !== -1) after = after.split(k).join(MAP[k]);
+    }
+    if (after !== before) node.nodeValue = after;
   }
 
-  function patchText(root){
-    if(!root) return;
-    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
-    var nodes = [];
-    while(walker.nextNode()) nodes.push(walker.currentNode);
-
-    nodes.forEach(function(n){
-      var v = n.nodeValue || '';
-      if(!v.trim()) return;
-
-      if(v.indexOf('분석 분석') > -1 || v.indexOf('분석완료분석완료') > -1){
-        n.nodeValue = '수집완료';
-        return;
-      }
-
-      replacePairs.forEach(function(p){
-        if(v.indexOf(p[0]) > -1){
-          v = v.split(p[0]).join(p[1]);
+  function walk(root){
+    if (!root) return;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node){
+        var p = node.parentNode;
+        if (!p) return NodeFilter.FILTER_REJECT;
+        var tag = (p.nodeName || '').toLowerCase();
+        if (tag === 'script' || tag === 'style' || tag === 'textarea' || tag === 'input') return NodeFilter.FILTER_REJECT;
+        var v = node.nodeValue || '';
+        for (var i=0;i<KEYS.length;i++) {
+          if (v.indexOf(KEYS[i]) !== -1) return NodeFilter.FILTER_ACCEPT;
         }
-      });
-
-      n.nodeValue = v;
+        return NodeFilter.FILTER_REJECT;
+      }
     });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (var j=0;j<nodes.length;j++) replaceTextNode(nodes[j]);
   }
 
-  function scorePanel(el){
-    if(!el || !el.getBoundingClientRect) return 0;
-    var r = el.getBoundingClientRect();
-    var t = el.innerText || '';
-    var score = 0;
-
-    if(r.width > 500 && r.height > 320) score += 3;
-    if(t.indexOf('채팅') > -1) score += 2;
-    if(t.indexOf('후원') > -1) score += 1;
-    if(t.indexOf('도전') > -1) score += 1;
-    if(t.indexOf('대결') > -1) score += 1;
-    if(t.indexOf('방송 시간') > -1 || t.indexOf('총 방송 시간') > -1) score += 2;
-    if(t.indexOf('닉네임') > -1 || t.indexOf('검색') > -1) score += 1;
-
-    return score;
-  }
-
-  function findPanel(){
-    var best = null;
-    var bestScore = 0;
-    var list = document.querySelectorAll('body div');
-
-    for(var i=0;i<list.length;i++){
-      var el = list[i];
-      if(el.closest && el.closest('.c9-vod-titlebar')) continue;
-      var s = scorePanel(el);
-      if(s > bestScore){
-        bestScore = s;
-        best = el;
-      }
-    }
-
-    return bestScore >= 6 ? best : null;
-  }
-
-  function addTitle(panel){
-    if(!panel || panel.querySelector('.c9-vod-titlebar')) return;
-
-    var bar = document.createElement('div');
-    bar.className = 'c9-vod-titlebar';
-    bar.innerHTML = '<b>🎬 CNINE 다시보기 분석</b><span>VOD CHAT LOG</span>';
-    panel.insertBefore(bar, panel.firstChild);
-  }
-
-  function blueAccents(panel){
-    if(!panel) return;
-
-    var nodes = panel.querySelectorAll('button, div, span, b');
-    for(var i=0;i<nodes.length;i++){
-      var el = nodes[i];
-      if(el.closest && el.closest('.c9-vod-titlebar')) continue;
-
-      var t = (el.textContent || '').trim();
-      var r = el.getBoundingClientRect ? el.getBoundingClientRect() : {width:999,height:999};
-
-      if(/^[\d,]+회$/.test(t) && r.width < 120 && r.height < 45){
-        el.classList.add('c9-vod-blue');
-      }
-      if(t === '전체' || t === '수집완료'){
-        el.classList.add('c9-vod-blue');
+  function removeBadges(){
+    // 이전 테스트 패치가 만든 좌측 상단 배지 제거용. 원본 패널은 건드리지 않음.
+    var all = document.querySelectorAll('div,span');
+    for (var i=0;i<all.length;i++) {
+      var el = all[i];
+      var txt = (el.textContent || '').trim();
+      if (txt === '🎬 CNINE VOD TOOL' || txt === 'CNINE VOD TOOL') {
+        var st = window.getComputedStyle(el);
+        if (st.position === 'fixed' || st.position === 'absolute') {
+          el.remove();
+        }
       }
     }
   }
 
-  function apply(){
-    addStyle();
-    patchText(document.body);
-
-    var panel = findPanel();
-    if(panel){
-      panel.classList.add('c9-vod-themed');
-      addTitle(panel);
-      blueAccents(panel);
-    }
+  function injectStyle(){
+    if (document.getElementById('cnine-vodchat-safe-style')) return;
+    var css = document.createElement('style');
+    css.id = 'cnine-vodchat-safe-style';
+    css.textContent = [
+      '/* CNINE safe skin: no layout override */',
+      '[class*="rank"], [class*="chat"], [class*="mission"]{scrollbar-color:#2f9bff #071426;}',
+      'button{font-family:Arial,"Malgun Gothic",sans-serif;}'
+    ].join('\n');
+    document.head.appendChild(css);
   }
 
-  var count = 0;
-  var timer = setInterval(function(){
-    count++;
-    apply();
-    if(count > 50) clearInterval(timer);
-  }, 150);
+  function run(){
+    removeBadges();
+    walk(document.body);
+    injectStyle();
+  }
 
-  try{
-    var mo = new MutationObserver(function(){
-      apply();
-    });
-    mo.observe(document.body || document.documentElement, {
-      childList:true,
-      subtree:true,
-      characterData:true
-    });
-  }catch(e){}
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
 
-  setTimeout(apply, 0);
+  var timer = setInterval(run, 1000);
+  setTimeout(function(){ clearInterval(timer); }, 30000);
+
+  try {
+    var obs = new MutationObserver(function(muts){
+      for (var i=0;i<muts.length;i++) {
+        var m = muts[i];
+        for (var j=0;j<m.addedNodes.length;j++) {
+          var n = m.addedNodes[j];
+          if (n.nodeType === 1 || n.nodeType === 3) {
+            setTimeout(run, 50);
+            return;
+          }
+        }
+      }
+    });
+    obs.observe(document.documentElement || document.body, {childList:true, subtree:true});
+    setTimeout(function(){ try{ obs.disconnect(); }catch(e){} }, 60000);
+  } catch(e) {}
 })();
