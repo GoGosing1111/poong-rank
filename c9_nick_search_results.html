@@ -11,22 +11,21 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111827;fon
 .col{flex:1;min-width:360px;height:100%;display:flex;flex-direction:column;border-right:1px solid #334155;background:#111827}
 .head{height:42px;display:flex;align-items:center;justify-content:center;background:#0f172a;color:#fff;font-weight:900;font-size:14px;border-bottom:1px solid #334155}
 iframe{flex:1;width:100%;border:0;background:#fff}
-#guard-pop{display:block;position:fixed;z-index:999999;left:50%;top:14px;transform:translateX(-50%);width:min(920px,calc(100vw - 24px));max-height:58vh;overflow:auto;border:1px solid #3b82f6;border-radius:16px;background:linear-gradient(135deg,#0f172a,#111827);box-shadow:0 18px 60px rgba(0,0,0,.55);color:#fff}
+#guard-pop{display:block;position:fixed;z-index:999999;left:50%;top:14px;transform:translateX(-50%);width:min(920px,calc(100vw - 24px));max-height:58vh;overflow:auto;border:1px solid #f59e0b;border-radius:16px;background:linear-gradient(135deg,#0f172a,#111827);box-shadow:0 18px 60px rgba(0,0,0,.55);color:#fff}
 </style>
 </head>
 <body>
 <div id="guard-pop">
-  <div style="padding:10px 42px 10px 13px;background:rgba(15,23,42,.94);border-bottom:1px solid rgba(59,130,246,.45);">
+  <div style="padding:10px 42px 10px 13px;background:rgba(15,23,42,.94);border-bottom:1px solid rgba(245,158,11,.45);">
     <button id="guard-close-ready" type="button" style="position:absolute;right:10px;top:8px;width:28px;height:28px;border:0;border-radius:8px;background:#475569;color:#fff;font-weight:1000;cursor:pointer;">×</button>
-    <div style="font-size:16px;font-weight:1000;color:#fff;">🚨 게시글 제목 감지</div>
-    <div id="guard-status" style="margin-top:4px;color:#93c5fd;font-size:13px;font-weight:900;">제목 감지 준비중... · iframe 로딩 대기</div>
+    <div style="font-size:16px;font-weight:1000;color:#fff;">🔎 닉네임 검색 결과</div>
+    <div id="guard-status" style="margin-top:4px;color:#fbbf24;font-size:13px;font-weight:900;">검색 결과 출력중 · 브라우저 보안상 제목 자동 점수는 제한될 수 있음</div>
   </div>
 </div>
 <div id="frames"></div>
 
 <script>
 (function(){
-  var BASE='https://keyman1335-maker.github.io/poong-rank';
   var params=new URLSearchParams(location.search);
   var nick=params.get('nick')||'';
   var boards=[
@@ -37,17 +36,13 @@ iframe{flex:1;width:100%;border:0;background:#fff}
   ];
   function esc(s){return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]||c;});}
   document.title='와이고수 닉네임 검색 - '+nick;
-  window.C9_GUARD_CONFIG={keywordUrl:BASE+'/bad_words.json?v=202606131230',query:nick};
+  document.getElementById('guard-close-ready').onclick=function(){document.getElementById('guard-pop').style.display='none';};
 
   var enc=encodeURIComponent(nick);
   document.getElementById('frames').innerHTML=boards.map(function(b){
     var src=b.url+'?best_article=N&searcht=w&search='+enc;
     return '<div class="col"><div class="head">'+esc(b.name)+' 검색 : '+esc(nick)+'</div><iframe class="yg-frame" data-board="'+esc(b.name)+'" src="'+src+'"></iframe></div>';
   }).join('');
-
-  var s=document.createElement('script');
-  s.src=BASE+'/c9_search_result_guard.js?v=202606131230';
-  document.body.appendChild(s);
 })();
 </script>
 </body>
