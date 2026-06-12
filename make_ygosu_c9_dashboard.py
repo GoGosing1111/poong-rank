@@ -212,7 +212,7 @@ def render_vodchat_card():
     - 리캡 셀프인증과 동일한 iframe srcdoc 복사 버튼 방식 사용
     """
     vod_url = "https://vod.sooplive.co.kr/"
-    vod_js = f"{BASE_URL}/soop_vodchat.js?v=2026061231"
+    vod_js = f"{BASE_URL}/soop_vodchat.js?v=2026061232"
 
     iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
 &lt;meta charset='utf-8'&gt;
@@ -799,7 +799,49 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
     hideFrame();
   }
 
+  function isEditPage(){
+    try{
+      var href = String(window.parent.location.href || '').toLowerCase();
+      if(href.indexOf('/edit') > -1 || href.indexOf('/write') > -1 || href.indexOf('write') > -1 || href.indexOf('edit') > -1){
+        return true;
+      }
+      var d = window.parent.document;
+      if(d.querySelector('textarea, [contenteditable="true"], .note-editable, iframe[id*="editor"], iframe[name*="editor"], input[type="submit"], button[type="submit"]')){
+        var txt = (d.body && d.body.innerText) ? d.body.innerText : '';
+        if(txt.indexOf('완료') > -1 || txt.indexOf('수정') > -1 || txt.indexOf('글쓰기') > -1 || txt.indexOf('등록') > -1){
+          return true;
+        }
+      }
+    }catch(e){
+      return true;
+    }
+    return false;
+  }
+
+  function showFrame(){
+    try{
+      var f = window.frameElement;
+      if(f){
+        f.style.display='block';
+        f.style.position='fixed';
+        f.style.left='0';
+        f.style.top='0';
+        f.style.width='100vw';
+        f.style.height='100vh';
+        f.style.zIndex='2147483647';
+        f.style.opacity='1';
+        f.style.pointerEvents='auto';
+      }
+    }catch(e){}
+  }
+
   function init(){
+    // 글쓰기/수정 화면에서는 절대 표시하지 않고, 게시글 보기 화면에서만 표시
+    if(isEditPage()){
+      hideFrame();
+      return;
+    }
+
     try{
       var until=localStorage.getItem(key);
       if(until && Number(until) > Date.now()){
@@ -807,6 +849,8 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
         return;
       }
     }catch(e){}
+
+    showFrame();
 
     function goTarget(id){
       try{
@@ -871,13 +915,13 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
 </html>"""
     srcdoc = srcdoc.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
     return f"""<iframe
-  width="100%"
-  height="100%"
+  width="1"
+  height="1"
   frameborder="0"
   scrolling="no"
   allow="clipboard-write"
   referrerpolicy="strict-origin-when-cross-origin"
-  style="position:absolute;left:0;top:0;width:100%;height:100%;border:0;margin:0;border-radius:18px;overflow:hidden;background:transparent;z-index:9999;display:block;"
+  style="display:none;position:fixed;left:0;top:0;width:1px;height:1px;border:0;margin:0;overflow:hidden;background:transparent;z-index:2147483647;opacity:0;pointer-events:none;"
   srcdoc="{srcdoc}"></iframe>"""
 
 
