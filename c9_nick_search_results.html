@@ -171,8 +171,11 @@ body{overflow:auto}
       var t = (a.textContent || '').replace(/\s+/g,' ').trim();
       var href = absoluteUrl(a.getAttribute('href') || a.href || '');
       if(t.length < 2 || t.length > 160) return;
-      if(/^(전체|인기|와토|공지|정보|사진|영상|이벤트|관리자|추천|댓글|목록)$/.test(t)) return;
-      if(!/\/board\//.test(href)) return;
+      if(/^(전체|인기|와토|공지|정보|사진|영상|이벤트|관리자|추천|댓글|목록|군대\/밀리터리\/예비군|패션\/뷰티|힙합|동물\/곤충|그림|여행|캠핑|독서\/서적|게임\/방송|스타방송|스타대학|SOOP\(숲\))$/.test(t)) return;
+      // 게시판 메뉴/카테고리 링크 제거: 실제 글 URL만 통과시킴. 예) /board/soop/1685076
+      var path = '';
+      try { path = new URL(href).pathname; } catch(e) { path = href; }
+      if(!/^\/board\/[^\/]+\/\d+/.test(path)) return;
       titles.push({board:boardName, title:cleanTitle(t), href:href});
     });
     var seen = {};
