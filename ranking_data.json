@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12 22:05:21",
+  "updated_at": "2026-06-12 22:05:22",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -49,7 +49,7 @@
       "name": "송채연",
       "match": "송채연",
       "soop_id": "jfiary0718",
-      "today": 21037,
+      "today": 21038,
       "month": 452950,
       "today_api_name": "송채연♥",
       "month_api_name": "송채연♥",
@@ -368,7 +368,7 @@
       "name": "히나",
       "match": "히나_♥",
       "soop_id": "luaa0803",
-      "today": 2544,
+      "today": 2592,
       "month": 0,
       "today_api_name": "히나_♥",
       "month_api_name": "",
@@ -446,7 +446,7 @@
       {
         "rank": 1,
         "name": "송채연",
-        "today": "21,037",
+        "today": "21,038",
         "month": "452,950",
         "width": "100%",
         "first": true,
@@ -554,7 +554,7 @@
       {
         "rank": 13,
         "name": "히나",
-        "today": "2,544",
+        "today": "2,592",
         "month": "0",
         "width": "0%",
         "first": false,
