@@ -8,6 +8,7 @@
     let t = String(raw || '').trim();
     t = t.replace(/\s*\|\s*YGOSU.*$/i, '');
     t = t.replace(/\s*-\s*와이고수.*$/i, '');
+    t = t.replace(/\s*:\s*SOOP\(숲\)\s*-\s*와이고수\s*$/i, '');
     return t.trim();
   }
 
@@ -28,7 +29,10 @@
   }
 
   function normalize(s) {
-    return String(s || '').toLowerCase().replace(/\s+/g, '');
+    return String(s || '')
+      .toLowerCase()
+      .replace(/[|｜┃│∣❘❙❚]/g, 'ㅣ')
+      .replace(/\s+/g, '');
   }
 
   function countMatches(text, word) {

@@ -3,6 +3,7 @@
 
   var q = window.C9_SEARCH_QUERY || '';
   var KEYWORD_URL = window.C9_BAD_WORDS_URL || 'https://keyman1335-maker.github.io/poong-rank/bad_words.json?v=' + Date.now();
+  var YGOSU_PROXY = window.C9_YGOSU_PROXY || 'https://ygosu-proxy.keyman1335.workers.dev/?url=';
 
   var boards = [
     {name:'SOOP(숲)', url:'https://ygosu.com/board/soop'},
@@ -50,7 +51,6 @@
     var root = dict && dict.categories ? dict.categories : dict;
     var out = [];
     if(!root || typeof root !== 'object') return out;
-
     Object.keys(root).forEach(function(cat){
       var arr = root[cat];
       if(!Array.isArray(arr)) return;
@@ -59,7 +59,6 @@
         else if(x && x.word) out.push({category:cat, word:String(x.word), score:Number(x.score||1)});
       });
     });
-
     var seen = {};
     out = out.filter(function(k){
       var key = k.category + '|' + k.word;
@@ -103,35 +102,46 @@
   }
 
   function build(){
-    var enc=encodeURIComponent(q);
     document.title='와이고수 닉네임 검색 - '+q;
     document.body.innerHTML =
       '<div id="guard-pop" style="display:block;position:fixed;z-index:999999;left:50%;top:14px;transform:translateX(-50%);width:min(920px,calc(100vw - 24px));max-height:58vh;overflow:auto;border:1px solid #3b82f6;border-radius:16px;background:linear-gradient(135deg,#0f172a,#111827);box-shadow:0 18px 60px rgba(0,0,0,.55);color:#fff;">'
       +'<div style="padding:10px 42px 10px 13px;background:rgba(15,23,42,.94);border-bottom:1px solid rgba(59,130,246,.45);">'
       +'<button id="guard-close-ready" type="button" style="position:absolute;right:10px;top:8px;width:28px;height:28px;border:0;border-radius:8px;background:#475569;color:#fff;font-weight:1000;cursor:pointer;">×</button>'
       +'<div style="font-size:16px;font-weight:1000;color:#fff;">🚨 게시글 제목 감지</div>'
-      +'<div id="guard-status" style="margin-top:4px;color:#93c5fd;font-size:13px;font-weight:900;">제목 감지 준비중... · iframe 로딩 대기</div>'
+      +'<div id="guard-status" style="margin-top:4px;color:#93c5fd;font-size:13px;font-weight:900;">Worker 검색 준비중...</div>'
       +'</div></div>'
-      +'<div id="frames" style="display:flex;width:100%;height:100%;overflow:auto;"></div>';
+      +'<div id="frames" style="display:flex;width:100%;height:100%;overflow:auto;background:#111827;color:#fff;font-family:Arial,Malgun Gothic,sans-serif;"></div>';
 
     document.getElementById('guard-close-ready').onclick=closePanel;
-
     var html = boards.map(function(b){
-      var src=b.url+'?best_article=N&searcht=w&search='+enc;
       return '<div style="flex:1;min-width:360px;height:100%;display:flex;flex-direction:column;border-right:1px solid #334155;background:#111827;">'
         +'<div style="height:42px;display:flex;align-items:center;justify-content:center;background:#0f172a;color:#fff;font-weight:900;font-size:14px;border-bottom:1px solid #334155;">'+esc(b.name)+' 검색 : '+esc(q)+'</div>'
-        +'<iframe class="yg-frame" data-board="'+esc(b.name)+'" src="'+src+'" style="flex:1;width:100%;border:0;background:#fff;"></iframe>'
+        +'<div class="board-result" data-board="'+esc(b.name)+'" style="flex:1;overflow:auto;padding:10px;color:#cbd5e1;font-size:13px;">로딩중...</div>'
         +'</div>';
     }).join('');
     document.getElementById('frames').innerHTML=html;
+  }
+
+  function absolutize(href){
+    try { return new URL(href || '', 'https://ygosu.com').href; }
+    catch(e) { return href || ''; }
+  }
+
+  function cleanTitle(raw){
+    return String(raw||'')
+      .replace(/\s*\|\s*YGOSU.*$/i,'')
+      .replace(/\s*-\s*와이고수.*$/i,'')
+      .replace(/\s*:\s*SOOP\(숲\)\s*-\s*와이고수\s*$/i,'')
+      .replace(/\s+/g,' ')
+      .trim();
   }
 
   function collectTitles(doc){
     var titles=[];
     var selectors=['td.subject a','.subject a','.list_subject a','a[href*="/board/"]'].join(',');
     doc.querySelectorAll(selectors).forEach(function(a){
-      var t=(a.textContent||'').replace(/\s+/g,' ').trim();
-      var href=a.href||'';
+      var t=cleanTitle(a.textContent||'');
+      var href=absolutize(a.getAttribute('href') || a.href || '');
       if(t.length<2 || t.length>140) return;
       if(/^(전체|인기|와토|공지|정보|사진|영상|이벤트|관리자|추천|댓글|목록)$/.test(t)) return;
       if(!/\/board\//.test(href) && !a.closest('td.subject,.subject,.list_subject')) return;
@@ -164,19 +174,40 @@
     return hits;
   }
 
-  function scanFrame(f, keywords){
-    try{
-      var doc=f.contentDocument || f.contentWindow.document;
-      var board=f.getAttribute('data-board') || '게시판';
-      var rows=[];
-      collectTitles(doc).forEach(function(t){
-        var hits=scanTitle(t.title, keywords);
-        if(hits.length) rows.push({board:board,title:t.title,href:t.href,hits:hits});
-      });
-      return rows;
-    }catch(e){
-      return [];
+  function renderBoardList(boardName, titles){
+    var box = Array.prototype.slice.call(document.querySelectorAll('.board-result')).filter(function(el){
+      return el.getAttribute('data-board') === boardName;
+    })[0];
+    if(!box) return;
+    if(!titles.length){
+      box.innerHTML = '<div style="color:#94a3b8;font-weight:900;">검색 결과 없음</div>';
+      return;
     }
+    box.innerHTML = titles.slice(0,25).map(function(t){
+      return '<div style="padding:7px 6px;border-bottom:1px solid rgba(255,255,255,.08);line-height:1.35;">'+esc(t.title)+'</div>';
+    }).join('');
+  }
+
+  function fetchBoard(board, keywords){
+    var url = board.url + '?best_article=N&searcht=w&search=' + encodeURIComponent(q);
+    var proxyUrl = YGOSU_PROXY + encodeURIComponent(url);
+    return fetch(proxyUrl, {cache:'no-store'})
+      .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+      .then(function(html){
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var titles = collectTitles(doc);
+        renderBoardList(board.name, titles);
+        var rows=[];
+        titles.forEach(function(t){
+          var hits=scanTitle(t.title, keywords);
+          if(hits.length) rows.push({board:board.name,title:t.title,href:t.href,hits:hits});
+        });
+        return rows;
+      })
+      .catch(function(e){
+        renderBoardList(board.name, [{title:'Worker 로딩 실패: '+e.message, href:''}]);
+        return [];
+      });
   }
 
   function render(rows, lv){
@@ -231,11 +262,13 @@
   }
 
   function run(keywords, lv){
-    var all=[];
-    document.querySelectorAll('iframe.yg-frame').forEach(function(f){
-      all=all.concat(scanFrame(f,keywords));
-    });
-    render(all,lv);
+    status('Worker로 검색결과 수집중...', '#93c5fd');
+    Promise.all(boards.map(function(b){ return fetchBoard(b, keywords); }))
+      .then(function(list){
+        var all=[];
+        list.forEach(function(rows){ all=all.concat(rows); });
+        render(all,lv);
+      });
   }
 
   build();
@@ -243,11 +276,8 @@
   loadDict().then(function(dict){
     var keywords=flatten(dict);
     var lv=levels(dict);
-    status('키워드 '+keywords.length+'개 로드 완료 · 검색결과 로딩중...','#93c5fd');
-    document.querySelectorAll('iframe.yg-frame').forEach(function(f){
-      f.addEventListener('load',function(){setTimeout(function(){run(keywords,lv);},700);});
-    });
-    setTimeout(function(){run(keywords,lv);},1800);
-    setTimeout(function(){run(keywords,lv);},3500);
+    status('키워드 '+keywords.length+'개 로드 완료 · Worker 검색결과 로딩중...','#93c5fd');
+    run(keywords,lv);
+    setTimeout(function(){run(keywords,lv);},2500);
   });
 })();

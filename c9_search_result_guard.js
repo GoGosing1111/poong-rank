@@ -93,11 +93,15 @@
     }).slice(0, 80);
   }
 
+  function normalizeText(s) {
+    return String(s || '').toLowerCase().replace(/[|｜┃│∣❘❙❚]/g, 'ㅣ').replace(/\s+/g, '');
+  }
+
   function scanTitle(title, keywords) {
-    var low = String(title || '').toLowerCase().replace(/\s+/g, '');
+    var low = normalizeText(title);
     var hits = [];
     keywords.forEach(function (k) {
-      var w = String(k.word || '').toLowerCase().replace(/\s+/g, '');
+      var w = normalizeText(k.word);
       if (!w) return;
       var pos = 0, count = 0;
       while ((pos = low.indexOf(w, pos)) !== -1) {
