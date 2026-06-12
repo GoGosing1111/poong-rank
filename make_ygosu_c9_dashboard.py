@@ -207,12 +207,12 @@ btn.onclick = function() {{
 
 def render_vodchat_card():
     """SOOP VOD/클립 다시보기 채팅 패널 북마크릿 카드.
-    - patch/loader 방식 제거
-    - 수정된 soop_vodchat.js 원본을 직접 로드
     - 리캡 셀프인증과 동일한 iframe srcdoc 복사 버튼 방식 사용
+    - 복사 코드는 짧은 loader 한 줄만 사용해서 와고 iframe 복사 실패를 줄임
+    - 원본 UI 생성은 loader가 담당하고, CNINE 패치는 원본 UI 생성 이후 문구만 안전하게 변경
     """
     vod_url = "https://vod.sooplive.co.kr/"
-    vod_js = f"{BASE_URL}/soop_vodchat.js?v=2026061232"
+    loader_js = f"{BASE_URL}/soop_vodchat_loader.js?v=2026061204"
 
     iframe_html = f"""<iframe height="48" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" style="flex:1 1 160px;min-width:160px;width:0;border:0;border-radius:9px;overflow:hidden;" srcdoc="&lt;!doctype html&gt;
 &lt;meta charset='utf-8'&gt;
@@ -251,7 +251,7 @@ function copyText(text){{
 }}
 
 var btn = document.getElementById('btn');
-var code = '!function(){{var s=document.createElement(\\'script\\');s.id=\\'c9-vodchat\\';s.src=\\'{vod_js}\\';document.head.appendChild(s)}}();';
+var code = '!function(){{var s=document.createElement(\\'script\\');s.id=\\'c9-vodchat-loader\\';s.src=\\'{loader_js}\\';document.head.appendChild(s)}}();';
 
 btn.onclick = function() {{
   copyText(code).then(function(){{
@@ -266,12 +266,12 @@ btn.onclick = function() {{
     return f"""
 <div id="section_replay" style="margin-top:10px;border:1px solid rgba(126,200,255,.46);border-radius:15px;background:linear-gradient(135deg,rgba(47,155,255,.18),rgba(99,91,255,.16),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
   <div style="padding:10px 12px;background:rgba(0,0,0,.24);border-bottom:1px solid rgba(126,200,255,.26);color:#7ec8ff;font-size:14px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">
-    🎬 CNINE 다시보기 분석
+    🎬 다시보기 채팅보기
   </div>
 
   <div style="padding:12px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.62;text-align:center;word-break:keep-all;box-sizing:border-box;">
     SOOP VOD·클립 페이지에서<br>
-    <span style="color:#7ec8ff;font-weight:1000;">채팅 · 후원 · 도전 · 대결 데이터</span>를 한 번에 확인합니다.
+    <span style="color:#7ec8ff;font-weight:1000;">채팅 로그 / 후원 / 도전 / 대결</span>을 한 번에 확인합니다.
 
     <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;align-items:stretch;flex-wrap:wrap;box-sizing:border-box;">
       {iframe_html}
@@ -283,10 +283,12 @@ btn.onclick = function() {{
     </div>
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
-      ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.
+      ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
+      ※ 원본 패널 생성 후 CNINE 문구만 안전하게 적용됩니다.
     </div>
   </div>
 </div>"""
+
 
 def clean_html_for_wago(src):
     # iframe srcdoc 내부의 <script>는 와고 1073983 리캡 복사 버튼과 같은 방식이라 보호한다.
@@ -799,49 +801,7 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
     hideFrame();
   }
 
-  function isEditPage(){
-    try{
-      var href = String(window.parent.location.href || '').toLowerCase();
-      if(href.indexOf('/edit') > -1 || href.indexOf('/write') > -1 || href.indexOf('write') > -1 || href.indexOf('edit') > -1){
-        return true;
-      }
-      var d = window.parent.document;
-      if(d.querySelector('textarea, [contenteditable="true"], .note-editable, iframe[id*="editor"], iframe[name*="editor"], input[type="submit"], button[type="submit"]')){
-        var txt = (d.body && d.body.innerText) ? d.body.innerText : '';
-        if(txt.indexOf('완료') > -1 || txt.indexOf('수정') > -1 || txt.indexOf('글쓰기') > -1 || txt.indexOf('등록') > -1){
-          return true;
-        }
-      }
-    }catch(e){
-      return true;
-    }
-    return false;
-  }
-
-  function showFrame(){
-    try{
-      var f = window.frameElement;
-      if(f){
-        f.style.display='block';
-        f.style.position='fixed';
-        f.style.left='0';
-        f.style.top='0';
-        f.style.width='100vw';
-        f.style.height='100vh';
-        f.style.zIndex='2147483647';
-        f.style.opacity='1';
-        f.style.pointerEvents='auto';
-      }
-    }catch(e){}
-  }
-
   function init(){
-    // 글쓰기/수정 화면에서는 절대 표시하지 않고, 게시글 보기 화면에서만 표시
-    if(isEditPage()){
-      hideFrame();
-      return;
-    }
-
     try{
       var until=localStorage.getItem(key);
       if(until && Number(until) > Date.now()){
@@ -849,8 +809,6 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
         return;
       }
     }catch(e){}
-
-    showFrame();
 
     function goTarget(id){
       try{
@@ -915,13 +873,13 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
 </html>"""
     srcdoc = srcdoc.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
     return f"""<iframe
-  width="1"
-  height="1"
+  width="100%"
+  height="100%"
   frameborder="0"
   scrolling="no"
   allow="clipboard-write"
   referrerpolicy="strict-origin-when-cross-origin"
-  style="display:none;position:fixed;left:0;top:0;width:1px;height:1px;border:0;margin:0;overflow:hidden;background:transparent;z-index:2147483647;opacity:0;pointer-events:none;"
+  style="position:absolute;left:0;top:0;width:100%;height:100%;border:0;margin:0;border-radius:18px;overflow:hidden;background:transparent;z-index:9999;display:block;"
   srcdoc="{srcdoc}"></iframe>"""
 
 
