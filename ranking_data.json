@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13 05:10:52",
+  "updated_at": "2026-06-13 10:48:45",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -27,8 +27,8 @@
       "name": "송채연",
       "match": "송채연",
       "soop_id": "jfiary0718",
-      "today": 36607,
-      "month": 497696,
+      "today": 49896,
+      "month": 510985,
       "today_api_name": "송채연♥",
       "month_api_name": "송채연♥",
       "matched": true
@@ -71,8 +71,8 @@
       "name": "이다니",
       "match": "이다니♥",
       "soop_id": "0929kelly",
-      "today": 29793,
-      "month": 433726,
+      "today": 32690,
+      "month": 436623,
       "today_api_name": "이다니♥",
       "month_api_name": "이다니♥",
       "matched": true
@@ -439,15 +439,15 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "255,501",
+    "avg": "256,580",
     "leader": "송채연",
-    "leader_sales": "497,696",
+    "leader_sales": "510,985",
     "members": [
       {
         "rank": 1,
         "name": "송채연",
-        "today": "36,607",
-        "month": "497,696",
+        "today": "49,896",
+        "month": "510,985",
         "width": "100%",
         "first": true,
         "color": "#7dc7ff"
@@ -455,9 +455,9 @@
       {
         "rank": 2,
         "name": "이다니",
-        "today": "29,793",
-        "month": "433,726",
-        "width": "87%",
+        "today": "32,690",
+        "month": "436,623",
+        "width": "85%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -466,7 +466,7 @@
         "name": "애순이",
         "today": "9,984",
         "month": "433,223",
-        "width": "87%",
+        "width": "84%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -475,7 +475,7 @@
         "name": "혜루찡",
         "today": "33,394",
         "month": "380,520",
-        "width": "76%",
+        "width": "74%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -484,7 +484,7 @@
         "name": "쁠리",
         "today": "0",
         "month": "366,427",
-        "width": "73%",
+        "width": "71%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -493,7 +493,7 @@
         "name": "여을",
         "today": "0",
         "month": "348,328",
-        "width": "69%",
+        "width": "68%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -502,7 +502,7 @@
         "name": "하이희야",
         "today": "0",
         "month": "335,304",
-        "width": "67%",
+        "width": "65%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -511,7 +511,7 @@
         "name": "인지연",
         "today": "38,398",
         "month": "255,481",
-        "width": "51%",
+        "width": "49%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -520,7 +520,7 @@
         "name": "초초",
         "today": "102",
         "month": "236,058",
-        "width": "47%",
+        "width": "46%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -529,7 +529,7 @@
         "name": "채리",
         "today": "0",
         "month": "156,076",
-        "width": "31%",
+        "width": "30%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -547,7 +547,7 @@
         "name": "아윤",
         "today": "0",
         "month": "89,864",
-        "width": "18%",
+        "width": "17%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -556,7 +556,7 @@
         "name": "히나",
         "today": "5,717",
         "month": "70,115",
-        "width": "14%",
+        "width": "13%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -574,7 +574,7 @@
         "name": "체온",
         "today": "0",
         "month": "39,946",
-        "width": "8%",
+        "width": "7%",
         "first": false,
         "color": "#7dc7ff"
       }
