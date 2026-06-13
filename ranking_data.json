@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 01:05:23",
+  "updated_at": "2026-06-14 01:05:21",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -38,7 +38,7 @@
       "name": "디임",
       "match": "디임♥",
       "soop_id": "qpqpro",
-      "today": 30163,
+      "today": 30164,
       "month": 494710,
       "today_api_name": "디임",
       "month_api_name": "디임",
@@ -104,7 +104,7 @@
       "name": "여을",
       "match": "여을♥",
       "soop_id": "kaja0011",
-      "today": 201,
+      "today": 10503,
       "month": 358584,
       "today_api_name": "여을♥",
       "month_api_name": "여을♥",
@@ -254,17 +254,6 @@
       "matched": true
     },
     {
-      "part": "엑셀부",
-      "name": "설윤이",
-      "match": "설윤이♥",
-      "soop_id": "dain9804",
-      "today": 0,
-      "month": 145458,
-      "today_api_name": "",
-      "month_api_name": "설윤이_",
-      "matched": true
-    },
-    {
       "part": "스타부",
       "name": "윤중",
       "match": "윤중",
@@ -353,6 +342,17 @@
       "matched": true
     },
     {
+      "part": "엑셀부",
+      "name": "연두",
+      "match": "ε연두з",
+      "soop_id": "myby1221",
+      "today": 0,
+      "month": 68599,
+      "today_api_name": "",
+      "month_api_name": "ε연두з",
+      "matched": true
+    },
+    {
       "part": "스타부",
       "name": "짭호",
       "match": "짭호",
@@ -409,9 +409,9 @@
     },
     {
       "part": "엑셀부",
-      "name": "연두",
-      "match": "ε연두з",
-      "soop_id": "myby1221",
+      "name": "설윤이",
+      "match": "설윤이♥",
+      "soop_id": "dain9804",
       "today": 0,
       "month": 0,
       "today_api_name": "",
@@ -428,7 +428,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "249,340",
+    "avg": "243,850",
     "leader": "송채연",
     "leader_sales": "517,392",
     "members": [
@@ -471,7 +471,7 @@
       {
         "rank": 5,
         "name": "여을",
-        "today": "201",
+        "today": "10,503",
         "month": "358,584",
         "width": "69%",
         "first": false,
@@ -515,15 +515,6 @@
       },
       {
         "rank": 10,
-        "name": "설윤이",
-        "today": "0",
-        "month": "145,458",
-        "width": "28%",
-        "first": false,
-        "color": "#7dc7ff"
-      },
-      {
-        "rank": 11,
         "name": "아윤",
         "today": "0",
         "month": "89,864",
@@ -532,11 +523,20 @@
         "color": "#7dc7ff"
       },
       {
-        "rank": 12,
+        "rank": 11,
         "name": "히나",
         "today": "1,314",
         "month": "76,905",
         "width": "14%",
+        "first": false,
+        "color": "#7dc7ff"
+      },
+      {
+        "rank": 12,
+        "name": "연두",
+        "today": "0",
+        "month": "68,599",
+        "width": "13%",
         "first": false,
         "color": "#7dc7ff"
       },
@@ -551,7 +551,7 @@
       },
       {
         "rank": 14,
-        "name": "연두",
+        "name": "설윤이",
         "today": "0",
         "month": "0",
         "width": "0%",
@@ -570,7 +570,7 @@
       {
         "rank": 1,
         "name": "디임",
-        "today": "30,163",
+        "today": "30,164",
         "month": "494,710",
         "width": "100%",
         "first": true,
