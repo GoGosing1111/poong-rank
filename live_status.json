@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-13 18:05:35",
-  "total": 39,
-  "live_count": 3,
+  "updated_at": "2026-06-13 20:45:07",
+  "total": 38,
+  "live_count": 2,
   "members": {
     "y1026": {
       "name": "철구형",
       "part": "엑셀부",
       "soop_id": "y1026",
       "soop_url": "https://www.sooplive.com/station/y1026",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294782369",
-      "title": "철구 앵지 컨텐츠갑니다 과연?",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
@@ -311,7 +311,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294768855",
-      "title": "[씨나인:신입]주말내내노방종! 샵다녀온다요! 보이스보고있어랑",
+      "title": "[씨나인:신입]다니 와따요!!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
@@ -366,19 +366,6 @@
       "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jkmjkm1236/station"
-    },
-    "alwl1047": {
-      "name": "쁠리",
-      "part": "엑셀부",
-      "soop_id": "alwl1047",
-      "soop_url": "https://www.sooplive.com/station/alwl1047",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
-      "viewers": 0,
-      "checked_url": "https://bjapi.afreecatv.com/api/alwl1047/station"
     },
     "dain9804": {
       "name": "설윤이",
@@ -489,11 +476,11 @@
       "part": "엑셀부",
       "soop_id": "myby1221",
       "soop_url": "https://www.sooplive.com/station/myby1221",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294785627",
+      "title": "[씨나인:버러지] 야스연두 2866 인생네컷 방셀!!💗",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
     }

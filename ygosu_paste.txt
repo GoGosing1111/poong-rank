@@ -2,7 +2,7 @@
   
   <div id="section_top" style="position:relative;padding:18px 10px 16px;text-align:center;border:1px solid rgba(90,175,255,.55);border-radius:18px;background:linear-gradient(135deg,rgba(25,125,255,.28),rgba(0,0,0,.70));box-shadow:0 0 18px rgba(40,145,255,.25);">
     <div style="position:absolute;right:10px;top:9px;display:flex;align-items:center;gap:7px;z-index:2;">
-      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-13 10:54</span>
+      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-13 18:12</span>
       <a href="https://ygosu.com/msg/?m2=write&member=152117" target="_blank" rel="nofollow" style="display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,#2f9bff,#635bff);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:11px;font-weight:1000;text-decoration:none;line-height:1;box-shadow:0 0 12px rgba(47,155,255,.30);">📩 관리자 문의</a>
     </div>
     <img src="https://keyman1335-maker.github.io/poong-rank/assets//crew_logos/cninelogo.png?v=9999" style="display:block;width:112px;max-width:45%;height:auto;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(255,255,255,.30));">
@@ -148,7 +148,7 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
 <span style="color:#dff2ff;">전체 멤버</span><span style="color:#7ec8ff;text-align:right;">38명</span></div>
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
-<span style="color:#dff2ff;">현재 LIVE</span><span style="color:#7ec8ff;text-align:right;">3명</span></div>
+<span style="color:#dff2ff;">현재 LIVE</span><span style="color:#7ec8ff;text-align:right;">2명</span></div>
   
 <div style="margin-top:9px;border:1px solid rgba(255,211,79,.32);border-radius:15px;background:linear-gradient(135deg,rgba(255,211,79,.10),rgba(0,0,0,.22));overflow:hidden;box-sizing:border-box;">
   <div style="padding:9px 11px;background:rgba(0,0,0,.20);border-bottom:1px solid rgba(255,211,79,.22);color:#7ec8ff;font-size:13px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">📢 특이사항</div>
@@ -294,7 +294,7 @@ btn.onclick = function() {
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
       ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;"></span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
-      ※ 다시보기 툴 제작자 : 티큐양봉피꺼솟.
+      ※ 다시보기 툴 제작자 : 티큐양봉피꺼솟
     </div>
   </div>
 </div>
@@ -318,8 +318,8 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
 &lt;/style&gt;
 &lt;div class='wrap'&gt;
   &lt;form class='row' method='get' action='https://keyman1335-maker.github.io/poong-rank/c9_nick_search_results.html' target='_blank'&gt;
-   &lt;input type='hidden' name='v' value='20260613105403'&gt;
-    &lt;input name='nick' class='inp' placeholder='닉네임 입력 예) 족버지' autocomplete='off' required&gt;
+   &lt;input type='hidden' name='v' value='20260613181215'&gt;
+    &lt;input name='nick' class='inp' placeholder='닉네임 입력 예) 경화수월' autocomplete='off' required&gt;
     &lt;button class='btn' type='submit'&gt;검색&lt;/button&gt;
   &lt;/form&gt;
   &lt;div class='hint'&gt;&lt;b&gt;SOOP(숲) · 인터넷방송 · 스타방송 · 스타대학&lt;/b&gt;&lt;br&gt;검색 버튼을 누르면 새 탭에 4개 검색결과가 뜹니다.&lt;/div&gt;
@@ -339,7 +339,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   </summary>
   <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid #2f9bff;border-radius:16px;box-shadow:0 0 13px #2f9bff33;box-sizing:border-box;text-align:left;overflow:hidden;">
     
-<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-13 10:48:45 · 기준 2026-06</div>
+<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-13 18:05:54 · 기준 2026-06</div>
 
 <div style="margin-bottom:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,211,79,.45);background:linear-gradient(135deg,rgba(255,211,79,.16),rgba(0,0,0,.28));box-shadow:0 0 14px rgba(255,211,79,.18);text-align:center;">
   <div style="padding:12px;background:linear-gradient(135deg,#7ec8ff,#4a3100);color:#fff;font-size:20px;font-weight:1000;text-shadow:0 2px 0 #000;">👑 수장 별풍선</div>
@@ -349,11 +349,11 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
     <div style="display:flex;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap;">
       <div style="min-width:118px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
         <div style="color:#dff2ff;font-size:11px;font-weight:900;">오늘</div>
-        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">0</div>
+        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">251</div>
       </div>
       <div style="min-width:142px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
         <div style="color:#dff2ff;font-size:11px;font-weight:900;">월간</div>
-        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">4,426,431</div>
+        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">4,426,682</div>
       </div>
     </div>
   </div>
@@ -369,7 +369,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="padding:14px;background:linear-gradient(135deg,#2f9bff,#2a1800 70%,#060606);text-align:center;">
     <div style="color:#fff;font-size:26px;font-weight:1000;text-shadow:0 2px 0 #000;">엑셀부</div>
     <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">월간 평균 별풍선</div>
-    <div style="color:#dff2ff;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">256,580</div>
+    <div style="color:#dff2ff;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">260,915</div>
   </div>
   <div style="display:flex;background:#0b0b0b;color:#d8c99b;font-size:11px;font-weight:1000;border-bottom:1px solid rgba(255,255,255,.08);">
     <div style="width:38px;padding:8px 4px;text-align:center;">순위</div>
@@ -381,8 +381,8 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥇</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">송채연</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">49,896</div>
-    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">510,985</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">56,303</div>
+    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">517,392</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥈</div>
@@ -399,8 +399,8 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">4</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">혜루찡</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">33,394</div>
-    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">380,520</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">85,081</div>
+    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">432,207</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">5</div>
@@ -441,8 +441,8 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">11</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">설윤이</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
-    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">138,523</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">6,935</div>
+    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">145,458</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">12</div>
@@ -465,7 +465,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">15</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">체온</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">2</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">39,946</div>
   </div></div>
   </div>
@@ -634,7 +634,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   </summary>
   <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid #19c2ff;border-radius:16px;box-shadow:0 0 13px #19c2ff33;box-sizing:border-box;text-align:left;overflow:hidden;">
     <div style="padding:9px 8px;margin-bottom:8px;border-radius:12px;background:rgba(255,255,255,.045);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">
-전체 38명 · 수장 1명 · 스타부 22명 · 엑셀부 15명 · LIVE 3명
+전체 38명 · 수장 1명 · 스타부 22명 · 엑셀부 15명 · LIVE 2명
 </div>
 <details open style="margin:10px 0 13px;padding:0;border:1px solid #2f9bff;border-radius:18px;background:#071426;overflow:hidden;box-sizing:border-box;box-shadow:0 0 14px #2f9bff73;">
   <summary style="list-style:none;cursor:pointer;padding:14px 12px;background:linear-gradient(180deg,#12345c,#071526);color:#fff;font-size:19px;font-weight:1000;text-align:center;text-shadow:0 0 8px rgba(80,170,255,.85),0 2px 0 #000;border-bottom:2px solid #2f9bff;">
@@ -645,7 +645,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
 <div style="display:inline-block;vertical-align:top;width:68%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
     <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">스타부</span>
-    <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
+    <span style="padding:3px 6px;border-radius:999px;background:#1088ff;color:#fff;font-size:10px;font-weight:1000;">LIVE</span>
   </div>
   <img src="https://profile.img.sooplive.com/LOGO/y1/y1026/y1026.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">철구형</div>
@@ -901,32 +901,22 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
 <div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
     <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
-    <span style="padding:3px 6px;border-radius:999px;background:#1088ff;color:#fff;font-size:10px;font-weight:1000;">LIVE</span>
-  </div>
-  <img src="https://profile.img.sooplive.com/LOGO/jf/jfiary0718/jfiary0718.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
-  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">송채연</div>
-  <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">jfiary0718</div>
-  <a href="https://www.sooplive.com/station/jfiary0718" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
-</div>
-<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
-    <span style="padding:3px 6px;border-radius:999px;background:#1088ff;color:#fff;font-size:10px;font-weight:1000;">LIVE</span>
-  </div>
-  <img src="https://profile.img.sooplive.com/LOGO/da/dain9804/dain9804.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
-  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">설윤이</div>
-  <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">dain9804</div>
-  <a href="https://www.sooplive.com/station/dain9804" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
-</div>
-<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
     <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
   </div>
   <img src="https://profile.img.sooplive.com/LOGO/ep/epsthddus/epsthddus.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">혜루찡</div>
   <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">epsthddus</div>
   <a href="https://www.sooplive.com/station/epsthddus" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
+    <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
+  </div>
+  <img src="https://profile.img.sooplive.com/LOGO/jf/jfiary0718/jfiary0718.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">송채연</div>
+  <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">jfiary0718</div>
+  <a href="https://www.sooplive.com/station/jfiary0718" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
 </div>
 <div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
@@ -957,6 +947,16 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">쁠리</div>
   <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">alwl1047</div>
   <a href="https://www.sooplive.com/station/alwl1047" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
+    <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
+  </div>
+  <img src="https://profile.img.sooplive.com/LOGO/da/dain9804/dain9804.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">설윤이</div>
+  <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">dain9804</div>
+  <a href="https://www.sooplive.com/station/dain9804" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
 </div>
 <div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
@@ -1052,615 +1052,188 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">설윤이</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">ㅇ오늘</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">연두</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">오늘</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">11시에오께
-너무졸ㄹ리다 ㅜㅜ
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">6시 반쯤 킬거같아요!!
+ 
+야방 초보 연두 고고링
+ 
+근데 비제인데 주목공포증있는데..
+ 
+잘 해낼수있을것인가....
 
-https://www.sooplive.com/station/dain9804/post/198527673</div>
+https://www.sooplive.com/station/myby1221/post/198554273</div>
   </div>
 </details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">채리</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">2026.06.13 씨나인 인스타/유튜브/틱톡 업로드🔥</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">나무늘봉순</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">요로분</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">히나 Make it #LEMONADE
- 🍋
- 
-유튜브
-히나 Make it #LEMONADE 🍋
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">저 집도착햇습니당@@
+근데 너무꼬질꼬질한상태라 무조건다시씻어야할거같아서..
+씻고준비해서 가겟습니닷... 
+철구오빠방송에서보쟈~~
 
- 
-인스타그램
-Instagram
-
- 
-틱톡
-(99+)CNINE(씨나인) (@c.nine_official) | TikTok
-
- 
- 
-좋댓구알 많관부!
- 
-
- 
- 
- 
-
-https://www.sooplive.com/station/lcy011027/post/198526293</div>
+https://www.sooplive.com/station/yjk011599/post/198552997</div>
   </div>
 </details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">빵훈이</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">좌표</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">초초</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">초이룽</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">양팡이 방송으로 와주세요 
-행님들 와서 살려주세요ㅠ 돈반이랑 같이 가는중입니다 거의다옴
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">오늘은 말씀드렸다싶이 !!!!!!! 짧게나마 휴우우우식 드감니다잉
+대구에서 이틀정도 쉬다 올라갈예정임니당
+아무생각없이 푹 쉬고싶네용 히히
+잘 쉬고오겠뜹니당 폰 잘 안볼꺼라 연락이 잘안될수도있움니당 !
+그래도 숙제는 차근차근해둘께여 >_<...!! 
+ 
+(ps. 초플단들 헛짓그리 하고댕기면 속상할거같아유 ..^_^
+초림자부대 24시 항시대기중)
 
-https://www.sooplive.com/station/vlfvlf789/post/198524965</div>
+ 
+
+https://www.sooplive.com/station/chocho12/post/198552919</div>
   </div>
 </details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">히나</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">와</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">앵지</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">철구오빠 방송으루</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">아까워 죽어버려
-하
-이게뭐야
-쿠팡에서
-사처넌도 안되는데
-ㅠㅠ
-왤케비쌈? 너무하네
-하디만
-일단 모기가 몇시간째
-아무리 뒤져봐도 안보이기때무네...
-비싼 돈 주고 사서 오늘 자는대 안물리길
-기도해봄..
- 
- 
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">ㄱ-ㄱ
+디임이 컨텐츠 끝나고 저 합니당!
+철구오빠가 대략8시쯤? 투표공지 올린다하셨는데
+그 공지에 앵지 뽑아주시면 됩니다ㅏㅏㅏ 감사해용
+이따보쟈
 
-https://www.sooplive.com/station/luaa0803/post/198521545</div>
+https://www.sooplive.com/station/gks2wl/post/198551981</div>
   </div>
 </details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">히나</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">안자는사람</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">디임</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">결전의 날이네요</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">혹시
-내가 모기잡기에 달인이다
-하는사람?
-우리집 어떤상태인지 대부분 다 아시져..?ㅠ
-택배 상자 하나 가져오다가
-모기가 한마리들어왔는데
-컴터앞에서 감공쓰다가
-모기 발견하고 잡을라다 실패한이후로
-1시간째 안보이거든요?
-저 이거 잡을때까지 못자여ㅠ
-복층이라 진짜 안잡고 잠들면 잠깨서 그거
-잡는거 지옥 그자체인데
-이거 어케잡아여?
-아무리찾아도 안보여여
-모기약 없어여ㅠㅠ
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">기호 2번 황디임 오늘 열심히 보여드리겠습니다
+철구 오빠 방송에서 봬요
+가축 여러분 8시에 1인 1투표 해주십쇼
 
-https://www.sooplive.com/station/luaa0803/post/198520881</div>
+https://www.sooplive.com/station/qpqpro/post/198547099</div>
   </div>
 </details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">히나</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">❤️씨나인 5번째 계급전 감사공지❤️</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">쁠리</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">안녕하세요 제의견입니다.</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">이번에 진짜 퇴출되는줄알고
-너무 마음졸였는데ㅠㅠ
-이렇게 또 살아남을수있게
-도와주셔서 너무 감사합니다..
-5번째 시즌중 통틀어
-가장많은 어벤단이 있었어오...
-또 살아잇을수있게 도와주신만큼
-더 열심히해서 살아남겠습니댜!!!
-감사합니다
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">우선 소란을 일으켜 정말 죄송합니다. 하지만 정말 아닌 건 아니라고 생각하기에 공지를 작성합니다.  방송하면서 작년부터 참다사다난 하네요. 
 
-❤️로즈오빠❤️
-진짜 나는 힘들 때마다 
-항상 오빠한테 큰 도움 받는 것 같아
-ㅠㅠ
-이번 원쁠원 때도 오빠 도움아니었으면 
-내가 살아있을수있었을까?
- 싶고....너무 큰 힘이 됐어
-지연귀족님께서 챙겨주신 덕분에 
-오빠가 이렇게 나와준거라는 것도 
-알고 있어서 더 감사한 마음이 크구ㅜㅜ
-나도 지연귀족님께 도움이 되는 사람이 될 수 있게 
-더 열심히 할게!!
-항상 친오빠처럼 이것저것 챙겨주고
-걱정해주고 고민도 많이들어주고
-오빠가 있어서 너무 든든하다 항상
-너무 고마워
-나이스 아이폰 ㅅㅅㅅㅅ!!!
-❤️❤️
- 
+- 승신과 저의 일은 둘만의 일인데 굳이 이걸 밖으로 공지로 적어서 많은 사람들이 알아야하나요 그리고 대표님 머리아프게 하는게 참 이해안가고 쪽팔립니다 !!! 전 지난일 다 끝낫다고 생각하고 리턴하고 승신과 잘 풀엇다고 생각하고 앞으로 잘하겠다구 하고 그 공지도 승신 이야기가 아닌데 왜그러십니까!!!! 
 
-❤️다원❤️
-끝까지 포기하지않고 함께해준
-우리 다원빵..
-진짜 매회차 누구보다 더
-진심으로 나를 생각해주는 사람 ㅠㅠ
-이번에도 아무도 안나오고있을때
-또 이렇게 조금만 더 힘내보자고 영차영차
-해준덕분에 또 히플단들이 다 나와준거같아
-매회차 이렇게 진심으로 함께해주는
-다원빵이있어서 나는 너무 감사한거같아
-다원빵이 잇기에 또 내가 더 열심히해서
-올라가야지 항상 포기하지않고 다잡을수있는거같고
-너무 고마워요
-❤️
- 
+저에 대한 수많은 억측과 저격 속에서도, 저는 찐으로 크루와 팬분들을 위해 이 악물고 귀 닫으며 방송에만 몰두했습니다. 하지만 교묘하게 앞뒤 맥락을 자르고 저를 '앞뒤 다른 이기적인 사람'으로 몰아가는 추악한 여론 조작과, 상대방의 극심한 '내로남불'을 더는 묵과할 수 없어 명확한 팩트를 밝힙니다.
 
-히나 시앙련 총총총..
-ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
-태앙아..나눈 진짜 태양이한테 너무 고맙고 미안해
-근데 나 또 말 잘들어서
-너 아니니까 나오지마 했다고
-진짜 안나오고 얼탄것도 봤지..?
-힘든일 잇는것도 알아서 내가 아무말도 못하고
-있었는데
-또 이렇게 위험한순간에 나타나줄줄 몰랐는데
-이런 나..이런 나를 항상 옙뻐해주는
-우리태양이
-또 울어서 세상 못난이 된 나도
-진짜 못생겼다 하지만 태양이눈에 제일 이쁘다는거 알앙(ㅎㅎ)
-영원한 내 히사태
-내가 더 잘할게 고마워
-❤️
+1. 제가 모든 조리돌림을 참았던 유일한 이유: 철구대표님과 크루를 위해서였습니다.
+저는 상대가 강자든 약자든 제 사람 건드리는 것을 정말 싫어합니다. 그동안 승신이 저를 조리돌림 하고 제 수장님들을 비웃음거리로 만들 때도, 제가 왜 가만히 참고 방송만 해왔는지 아십니까? 오로지 씨나인의 수장인 대표님이 중간에서 피곤해질까 봐, 크루에 누를 끼치기 싫어서 제 자존심 다 버려가며 참았던 것입니다.
+그저께 승신이 꼴망오빠를 조리돌림 했을 때도, 제가 공지로 "생각이 짧았다"며 고개 숙이고 넘어간 이유 역시 전부 그것 때문이었습니다. 크루를 위해 제 자존심까지 내려놓으며 배려한 결과가, 결국 저를 '앞뒤 다른 쓰레기'로 만드는 억지 저격입니까?
 
- 
-❤️크로켓❤️
-이번시즌 묵묵히 나의 큰 힘이된
-로켓오빠
-또 마지막 계급전까지 묵묵히 함께해주었어요ㅠㅠ
-히플단안한다매!!!
-근데 누구보다 히플단이자나!!!
-이번시즌 로켓오빠의 도움이 너무 컷고
-오빠 덕분에 또 이렇게 한시즌
-살아남고 버틸수있었어요
-매회차 큰 힘이됫는데 계급전에도
-이렇게 큰 힘이되어줘서
-너무 고마워요
-오래오래 함께하자
-❤️
+2. 크루 내부의 '밀고 행위'와 억지 프레임, 진짜 분란을 만드는 게 누구입니까?
+현재 씨나인 내에는 제가 하지도 않은 말을 지어내거나, 내부의 사소한 이야기까지 본인의 이득을 위해 쪼르르 달려가 일러바치는 멤버들이 몇몇 존재하나봅니다. 동료를 팔아넘겨 본인 혼자 승신에게 예쁨 받겠다는 그 이기적인 행동들 때문에, 저는 일부 멤버들을 믿지 않습니다. 이건 정상적인 사람이라면 당연한 자기방어가 아닐까요? 그런데 왜 이게 제가 멤버들 간의 분란을 만드는 행동이 됩니까? 진짜 크루의 분란을 조장하는 사람은, 동료를 밀고해 라인을 타려는 그 이기적인 멤버들과, 그 이간질을 받아먹으며 저를 고립시키려는 사람일지도 모릅니다.
 
-❤️히나봇❤️
-왜 맹날 웃음 자처하냐고
-ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
-다들 웃는데 내 표정은 울기직전이다
-이자식아
-다들 너 전자녀보고 웃어도 나는 안웃어ㅠ
-나는 ㅠ 울어ㅠ 나는 감동이야ㅠ
-에휴 진짜 어쩜 맹날 이렇게 티격태격 하면서도
-이렇게 감동주냐
-이거쓰면서 갑자기 예전에 너 노언급했다고
-개삐진거 갑자기 생각나는뎈ㅋㅋㅋㅋㅋㅋ
-그게 어디였더라....?
-이번에도 성공적이였어...
-딱말한다 너는 어디가지말고 진짜 걍 지옥까지 함께해
-너 지금 나한테 너모 소홀해 ㅋㅎㅋㅎ
-고마오❤️
- 
- 
+3. 말과 행동이 다른 역대급 '내로남불', 가식의 끝은 어디입니까?
+제가 처음 신입이었을 때 "장급의 대우 중요하다" 고 말하던 분이 누구였습니까? 그랬던 분이 정작 제가 여왕이 되니, 제 밑의 계급 사람들 방송에 가서는 '더 쎈 사람한테 들박하자' 느니 어쩌니 하며 선동과 드립을 일삼았습니다. 앞에서는 저에게 "쁠리야, 씨나인 와줘서 고마워" 라고 말해놓고, 후에 데스매치 당일에 공지로 제 수장님을 저격하고 민심 안좋아지니 갑자기 안티들 색출해 내기 위한거 엿다구요? 어느 바보가 그걸 믿습니까 ㅋㅋ 늘 제 플단에 대한 존중은 눈 씻고 찾아볼 수 없는 행동을 해왔습니다. 왜 본인의 행동들을 가리기 위해 왜 저를 앞뒤 다른 사람으로 만드시나요? 모든일에는 결과값이 있지않습니까 그래서 제가 씨나인 여왕, 공주 하기 싫다고 갠방에서 말했습니다. 비참해지기 싫다고 노래를 불렀는데 그건 못 들으셨나 봅니다. 
 
- 
-❤️꼴멘❤️
-제가 씨나인 입사전부터...
-쁠리공주님과 꼴멘의 팬이였습니됴..
-항상 진짜 멋있다고 생각해왔었는데
-제가 엑셀을 하명서 꼴멘시그를
-출수있을거라곤 생각도 못해봤어요..
-쁠리공쥬님과도 제가 말섞을 기회가 있을까
-싶었는데 이렇게 씨나인에 와서
-너무 신기했었는데
-이렇게 낙수주시고 도와주셔서
-너무 감사합니다
-앞으로 공주님 곁에서 더 도움되는 사람되도록
-하겠습니다
-너무 감사합니다
-❤️
- 
+4. 제 언행은 내 사람들을 지키기 위한 '정당방위'였습니다.
+이유 없는 증오는 없습니다. 상대방은 본인이 직접 "누구 하나 빨래질할 생각에 뜨거워진다"라며, 팬들과 수장님, 그리고 제가 밤새워가며 쌓아 올린 소중한 팬덤을 그저 본인의 '재미 소재'로 취급했습니다. 과거 제가 퇴사했던 진짜 이유 또한 개인 사정이 아니라,  '빨래질' 행위에 환멸을 느꼈기 때문입니다. 하지만 그때 당시에도 전 대표님께 불만 한번 토로한 적 없고, 계급전 신나게 빨래질하신 그날 너무 크게 충격받아서 그날 바로 이야기한 게 끝입니다. 그 후 어렵게 입사했던 씨나인을 다시 하고 싶었지만 그때 트라우마가 너무 컸기에 무서웠고, 재입사를 계속 미뤄왔던 이유 또한 그렇습니다. 저는 돈보다 2년 동안 함께 피땀 흘려준 제 사람들이 훨씬 소중합니다. 아무 잘못 없는 제 팬들이 상처받고 내 사람들이 웃음거리로 저격당하는 상황에서, 본인이 한 행동으로 인해 내 사람들을 지키기 위해 격분해 한 언행이 왜 잘못인지요? 불은 본인이 먼저 지폈습니다.
 
- 
-❤️니토❤️
-가장 중요한 신호탄을
-또 이렇게 해준 니토야
-바쁜와중에도 신호탄 너무 중요한건데
-또 이렇게 히셈블 시작이라고
-알려주고 함께해줘서 너무 고맙고
-이번시즌 또 이렇게 꾸준히 함께해주고 도와줘서
-너무 든든했어
-나는 니토가 이렇게 신호탄을 해줘서
-너무 행복하더라 헤헿
-5자리 신호탄을 또 해볼수있을까 했는데
-니토 덕분에 또 해볼수있게됬거든
-앞으로도 나 이쁘게 봐줬으면 좋겠어
-너무 고마워
-❤️
- 
+5. "진실이 밝혀진다?" 네, 제발 낱낱이 밝혀봅시다.
+상대방이 본인 입으로 진실을 밝히자고 하시더니 잘되었습니다. 저 역시 제발 다 밝혀지기를 원합니다. 최근 논란이 된 계급전 의견 제시 또한, '공주' 로서 밑 계급을 생각하지 않은 이기적인 행동이 아니라, 크루 전체의 긴장감과 재미를 위해 경쟁 체제를 다시 살리자는 순수한 의도였을 뿐입니다. 혹여나 그점이 제가 선을 넘었다면 이건 진심으로 죄송합니다. 제가 생각이 너무 짧앗습니다. 하지만 그렇게나 씨나인을 위하시는 분이, 내수풍보다 외수풍이 정말 귀하고 중요한건데 정작 외부 큰손을 지닌 소중한 팬덤들은 왜 항상 저격하고 내쫓으려하고 지켜주지 않으십니까?
 
-❤️김지비❤️
-지비지비...고마워
-빵훈아 니새끼 쳐먹는꼴 못본다
-ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
-진짜 무슨 생각치도 못한 사람이 나타낫어..?
-이거완젼..
-히나만의 지비오빵이...?
-홀리...히지비....?
-....홀리.....
-히플단 김지비...?
-장난이규ㅋㅋㅋㅋㅋ항상 뒤에서 잘 챙겨줬는데
-이렇게 퇴출위기때 또 챙겨줘서 너무고마워 네모네모
-히나만의 네모네모 업~_~
-❤️
- 
+6. 내 진심이 왜곡되지 않기를 바랍니다. 그리고 내 소중한 사람들께.
+이번 일로 인해서 제가 씨나인에 가졌던 진심과, 5년 동안 방송에 쏟아부은 애착, 그리고 제 팬들을 향한 사랑이 누군가의 악의적인 모함에 의해 왜곡되지 않기를 간절히 바랍니다. 저는 5년 동안 가식 없이, 회수율 1도 생각하지 않고 오로지 엑셀과 방송에만 몰두하며 제 가치를 증명해 온 사람입니다. 저를 오래 보신 분들은 제 진심과 뚝심을 다 아십니다. 그리고 이런 진흙탕 싸움으로 인해 마음 아파하실 꼴멘, 중년오빠, 카블라 너무 고맙고 미안합니다. 그리고 저만 바라보고 이 힘든 시간 같이 견뎌내 주고 계신 우리 쁠쁠단, 진심으로 고맙고 정말 미안합니다. 방송하면서 여러 부류의 사람들을 만나며 협박에 치이고, 화가 나도 억지로 참아야만 했던 억울한 일들도 많았고, 워낙 그런 풍파를 많이 겪어서 그런지 단단해진 저이기에 이제 이 정도 흔들기에는 솔직히 아무렇지도 않습니다. 저 정말 멘탈 튼튼합니다.
+익명의 경고 쪽지나 저격으로 저에게 색안경을 씌우려 해도 저는 흔들리지 않습니다. 상대의 악의적인 프레임에 밀려 먼저 나가는 일 절대 없습니다. 제 사람들과 제 자리는 제가 이 악물고 끝까지 지키겠습니다.
 
- 
-❤️아이폰내꺼❤️
-레전더리 큰손
-빵훈 업!!!!!!
-히나 ㅅㅂ ㅈ같네
-그치 오빠 내가 오빠였어도
-히나 ㅅㅂ ㅈ같네 했을거야
-아이폰 빵훈이 가져갓엇어야했는데
-설윤이 핀볼에는 꼭 가져가길
-내가 물떠놓고 기도할게
-내가 진짜 이번시즌 살아남을수있었던건
-다 빵훈오빠 덕분이야..
-금쪽이 챙기는거맹키로 나항상 챙겨줘서
-너무 고마워
-레전더리 큰손 빵훈오빠 업!!!!
-❤️
- 
+마지막으로, 전 이 기회에 존나나나나나나나나나 억울함도 풀고 승신에게 대놓고 하고 싶은 말도 많았는데 너무 좋습니다. 먼저 그렇게 장문의 글 적어주셔서 승신께 대단히 감사합니다. 그리고 재입사 햇을때 승신께 다시 잘해보겠다 말햇던거 진심이였습니다. 물흘러가는대로 그냥 마음비우고 해보겟다 그마인드로 내려가면 내려가는대로 그런 생각으로 다 비우고 입사한거였습니다.
 
-❤️크노빵❤️
-나눈 이렇게..오빠가 어벤단을 해줄줄은 몰라써...
-늘 열심히 하니깐 한번은 도와줄게 라는말이
-얼마나 고맙던지..
-퇴근전쟁때랑 항상 밑에서 힘들어할때
-히나야 좀 열심히좀해라 하면서 조금씩 도와줬는데
-이번에도 퇴출위기면 족텔파티간다 했는데
-이렇게 어벤단으로 와줄줄이야...
-갠방도 그렇고 항상 이렇게 도와줘서
-너무 고마워ㅠㅠ
-더 열심히해서 올라가볼게 퇴출위기 벗어날게
-크노오빠 고마워
-❤️
- 
-❤️히나리❤️
-히나만의 나리나리
-나는 퇴근전쟁이 정말 싫었지만
-지금은 퇴근전쟁이 너무 고마워
-우리 나리오빠를 만날수있게 해줬잖아
-다들 그러더라 퇴근전쟁엔 항상 귀인이 붙는대
-내귀인은 우리 나리오빠야
-그래서 진짜 싫었던 퇴근전쟁
-진짜 사람이였으면 뽀뽀해줬다^_^
-나리나리 한눈팔지말고
-히나리 영원한 히나리로 함께해죠
-항상 너무 고마워
-❤️
- 
-❤️[C9]커담족구❤️
-커담아아..진짜 이번에 깜짝으로 함께해준
-우리커담이
-내가 시그단 한명한명 모으기 힘들고
-퇴출걱정으로 힘들어할때
-이렇게 나타나주고 생각치도 못하게
-이렇게 큰 도움을 준 커담이
-얼마나 고마운지 모르겠어
-나도 앞으로 커담이한테 더 좋은모습
-열심히하는 모습 보여주고싶어
-오래오래 함께해줘
-살아남으면 어벤단 한번은 해주기로
-약속해따?
-너무고마워
-❤️
- 
-❤️도댕❤️
-도댕아 이렇게 항상 큰 힘이 되어줘서
-너무 고맙댜ㅠㅠ
-이렇게 포로 이거진 인연 이제
-3개월 지낫을걸?!
-그래도 너를위해 항상 공홈 활동도 놓치지않고
-너를위해 항상 열심히 모으고있어
-그래도 도댕이가 이렇게 항상 큰 힘을주고
-나한테 또 일일퀘스트 맹키로
-하루하루 의지를 줘서 너무 고맙다구생각해
-오래오래 도박하쟝>_<?
-❤️❤️
- 
-❤️기대주47❤️
-휴가 안보냈는데 또 안보이지 
-우리 47빵은...?
-어디를 간거지잉..?
-이거보면 빨리 나타나도록 하세요
-그대로 휴가 끝낫다고 또 이렇게
-머시냐 축구였나 그거 보다가
-또 달려와서 함께해준게
-너무 감동이여떠
-비록 발목이 분지러져서 시그는 제대로 못했지만 
-너무 고맙규
-휴가는 아니니까 빨리오세요
-❤️
- 
-❤️르옴므❤️
-신기해 골빈벨에서
-빵훈오빠 스튜디오 근처에서
-실물보고 내 플단이 되준 옴므오빠
-이런경험은 또 처음이라 너무 신기하고 소중하네..?
-한명한명 너무 소중하고 감사할때에
-이렇게 특별하게 히플단이 되어준 옴므오빠
-이번에 이렇게 함께해줘서 고맙구
-더 오래오래 함께하쟈
-나도 잘할게
-너무 고마워
-❤️
- 
-❤️화가존나나네❤️
-나네가 이번에 라라한테 멱살 잡혀찌..?
-두개재에서 깜짝 놀랏는데
-이번에 또 이렇게 시그단 함께해준 나네야
-나는 이제 누가 뭐래도
-히가존나나네인거 알지?
-우리 매일 물떠놓고 30만개 히나플
-기도하자
-그게 안되면 그냥 소음단 시그단 굽신굽신 같이해
-앞으로도 쭉 나랑 함께해 
-고마워
-❤️
- 
-❤️별이❤️
-별아 이번에 내가 또 윷놀이를 이겨버려찌모얌..
-헤헤
-내가 질때는 연패하지만
-또 잘할때는 잘하나봥 헤헤..
-별이 처음 봣을때가 생각나눈데
-이제는 또 내 매니져로써
-항상 도와주는 별이
-오래오래 함께하자
-너무 고마워
-❤️
- 
- 
-❤️kkkk1668❤️
-ㅠㅠ 소음단 하기도 힘들다구
-지갑 찾아본다 했으면서
-퇴출위기때 이렇게 생각치도 못하게
-시그단으로 함께해주고
-갠방에서도 항상 이것저것 나핟테 도움되게
-잘 챙겨주는데 너무 고마웠여
-68빵
-나도 더 잘할게에
-❤️
- 
-❤️시간을구독중❤️
-구독오빠의 멘트는 항상
-지려..
-이번에 생각도 못했는데
-나까지 도와준 구독오빠
-나진짜 첫눈오는 그날까지
-또 이렇게 살아남아서
-구독오빠 플받고 이날을 추억이라고 
-이렇게 또 플을받았네? 하면서 회상하고싶어
-너무 고마워
-❤️
- 
-❤️도전❤️
-이번에 소음단 이벤트 걸어준
-구독오빠
-너무 고마워요ㅠㅠ
-항상 시그단 함께해주면서
-또 이렇게 진심으로 챙겨주고
-이벤트 걸어줘서
-너무 감사합니다
-❤️
- 
-❤️으악❤️
-퇴출위기면 시그하나 해줄게
-멤버중
-가장먼저 나타난 으악이
-물론 마지막인사로 시그 하나 던저줄게 느낌이라고 햇지만
-나는 그게 아니라고 생각한다
-으악아 제일 먼저 나와줘서 고맙구
-함께해줘서 너무 고마워
-❤️
- 
-❤️빵빵딘❤️
-빵딘오빠ㅠㅠ
-진짜 퇴출위기에도 이렇게 함께해주고
-시그하나하나가 너무 도움되는 시점에
-이렇게 함께해준게
-저에겐 너무 큰 도움이 됬어요
-너무 고마워요
-앞으로 더 열심히할게요 오래보쟈앙
-...❤️
- 
-❤️[c9]늙짱구❤️
-짱구짱 이렇게 시그단으로 
-함께해줘서 고마오 헤헤
-원래 처음이 어렵지 
-두번은 어렵지않다..?
-또 이렇게 시그단을 해준덕분에 퇴출을 면했는데
-앞으로도 오래 함께해쥬라!!!
-❤️
- 
-❤️때구때구❤️
-진짜 이렇게 시그 해주는게
-너무 소중한데 또 함께해쥰
-때구때구 갠방도 마니 들려주는데
-쪽지가 막혀서 감사쪽지를 못보냇더ㅠㅠㅠㅠ
-가장 힘든 퇴출위험 계급전
-함께 도와줘서
-너무 고마워요❤️
- 
-❤️엿보기구멍99❤️
-우리 구멍이
-또 이렇게 시그단 함께해주고
-나 항상 지켜봐줘서
-고마워
-내 매력을 하나하나 다 찾아낼때까지
-우리는 함께하자
-알게찌?
-❤️
- 
-
-우리 머쨍이 소음단
-:죽어도Moosu,고기:),미동To,금뿡어입니다,꼴릴때쏜다,라파#,방어력올인,옥뚜,곰탱.....,파도웅니,씨구탱탱,#발베니
-
-함께해줘서 너무 고마워요
-12명이나 된다규ㅠㅠㅠㅠㅠ
-모두의 도움이 있었기에
-또 이렇게 살아남았더요
-여러분 진짜 너무 감사합니다
-너무 살아남고싶었었은데
-이렇게 살아남았구 ㅠㅠ
-어릴때부터 시험기간이나 이렇게 신경 많이 쓰는일이
-있으면 앓아누웠었는데
-2번째 퇴출 위기였을때 
-사실 그때도 계급전에 너무 살아남고싶다생각하면서
-걱정 불안이 커서 계급전하면서도 계속 토하고오고
-그렇게  끝나구
-아팟던거같거든요..
-시간이 지나면 지날수록 쉼없이 달려와서
-체력이 많이 안좋아져서인지
-이번엔 진짜 퇴출일까 싶어서 너무 신경을 많이 쓴 탓인지
-이렇게 갑자기 막 열나고 아프고 할줄은 몰라서
-생각보다 갑자기 아픈거때문에 많이 쉬게됬던거같아요
-속상해죽겠습니댜ㅠㅠ
-이렇게 쉴생각은 없었는데
-그래서 공약이 좀 늦어져도
-이번주중에는 감사영상빼고는 다 끝낼 예정이니
-조금만 기다려주세오
-어제 감사영상 찍으려고 샵 예약해둔거
-못가가지고😢😢
-또 한번 기회주셔서 감사하고
-이번엔 또 좋은 성적이 있길 기도하며..
-히플단 항상 함께해주세여
-따랑해연
-❤️❤️❤️❤️❤️❤️❤️
- 
-모든 공약은 꼭 댓글이나 쪽지 해주셔야
-제가 갈수있습니댜
-!!!
- 
- 
- 
- 
- 
- 
-
-https://www.sooplive.com/station/luaa0803/post/198520359</div>
-  </div>
-</details>
-<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
-  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
-    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">아윤</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">저눙 이제 자러갑니당,,</span>
-    </div>
-  </summary>
-  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">오소이방셀 많관부,,
- 
-https://www.sooplive.com/station/sinam0918/post/198501473
-
- 
-
-https://www.sooplive.com/station/ayoona/post/198503167</div>
-  </div>
-</details>
-<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
-  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
-    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">철구</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">토요일 방송 공지입니다!!</span>
-    </div>
-  </summary>
-  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">방송 3시에 키겠습니다.
-스타부 전체 모입니다!
- 내일 뵐게요!!!
-
-https://www.sooplive.com/station/y1026/post/198482841</div>
+https://www.sooplive.com/station/alwl1047/post/198545943</div>
   </div>
 </details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
       <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">오리꿍</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">꿍다이..</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">오늘 방송</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">혹시나 방송을 못 보셨을
-꿍사단분들을 위하여..
-오리꿍 오늘 3시간 자구
-합방 갔다가 방송 키니깐
-잠이 너무옵니당..
-오리꿍꿍이 조금만 자구
-오게씀미다요!!!!!!!
- 
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">족장님방송에서 봐욥
 
- 
-낼 합방에서 봐여어
-에너지 충전했다가
-커튼 무너진거 수리 알아보고
-목 병원갔다가 가게씀더
-나를 찾지마,,,,,,
- 
-방종 후 오리꿍 찾을거면 여서 찾으셈
-근디 자면 안봄.. 저 화장만 지우고 자러
-갈게연
- 
-⬇️⬇️⬇️
- 
-https://discord.gg/fwpA83xnF
-
- 
-
-https://www.sooplive.com/station/imducko3o/post/198482139</div>
+https://www.sooplive.com/station/imducko3o/post/198545661</div>
   </div>
 </details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">여을</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">오이잉</span>
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">이다니</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">샵다녀오게따요!</span>
     </div>
   </summary>
   <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">마사지 이제 끈남 밥먹으면 너무 늦을듯하오
-오방휴할게용
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">7-8시??
+사이에 올게여옹
+좀따보쟛!!!
 
-https://www.sooplive.com/station/kaja0011/post/198480789</div>
+https://www.sooplive.com/station/0929kelly/post/198545485</div>
+  </div>
+</details>
+<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
+  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
+    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">졈니</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">0613</span>
+    </div>
+  </summary>
+  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">철구오빠 방송으로 이따 와주세용
+오늘 선거날입니닷 - !
+
+어제부터 탈나서 🫠상태중..
+손이 ㄷㄷ 떨림;;
+
+https://www.sooplive.com/station/yochba0402/post/198545337</div>
+  </div>
+</details>
+<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
+  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
+    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">오조은</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">오늘 ~!</span>
+    </div>
+  </summary>
+  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">족장님 방송에서 뵐게요! 
+학생회장 뽑는거합니닷!! 
+
+https://www.sooplive.com/station/zalalz/post/198545221</div>
   </div>
 </details>
   </div>
@@ -1712,5 +1285,5 @@ https://www.sooplive.com/station/kaja0011/post/198480789</div>
 </div>
 
   <div style="margin-top:12px;text-align:center;color:#7ec8ff;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(80,170,255,.35);">CNINE Dashboard Developed by 유두위생크림</div>
-  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-13 10:54:03</div>
+  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-13 18:12:15</div>
 </div>
