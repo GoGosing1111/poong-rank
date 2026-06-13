@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 00:05:21",
+  "updated_at": "2026-06-14 00:05:22",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -335,8 +335,8 @@
       "name": "강구열",
       "match": "910★강구열",
       "soop_id": "kuyol",
-      "today": 40,
-      "month": 81020,
+      "today": 73,
+      "month": 81053,
       "today_api_name": "910★강구열",
       "month_api_name": "910★강구열",
       "matched": true
@@ -563,7 +563,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "173,471",
+    "avg": "173,473",
     "leader": "졈니",
     "leader_sales": "481,310",
     "members": [
@@ -723,8 +723,8 @@
       {
         "rank": 18,
         "name": "강구열",
-        "today": "40",
-        "month": "81,020",
+        "today": "73",
+        "month": "81,053",
         "width": "16%",
         "first": false,
         "color": "#ffd34f"
