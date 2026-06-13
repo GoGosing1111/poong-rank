@@ -284,7 +284,7 @@ btn.onclick = function() {{
 
     <div style="margin-top:10px;color:#cbd5e1;font-size:11px;font-weight:800;line-height:1.45;">
       ※ VOD/클립 페이지에서 주소창에 <span style="color:#fff;">javascript:</span> 입력 후 복사한 코드를 붙여넣고 실행하세요.<br>
-      ※ 다시보기 툴 제작자 : 티큐양봉피꺼솟.
+      ※ 다시보기 툴 제작자 : 티큐양봉피꺼솟
     </div>
   </div>
 </div>"""
@@ -319,7 +319,7 @@ body{{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',s
 <div class='wrap'>
   <form class='row' method='get' action='{result_url}' target='_blank'>
    <input type='hidden' name='v' value='{CACHE_BUST}'>
-    <input name='nick' class='inp' placeholder='닉네임 입력 예) 족버지' autocomplete='off' required>
+    <input name='nick' class='inp' placeholder='닉네임 입력 예) 경화수월' autocomplete='off' required>
     <button class='btn' type='submit'>검색</button>
   </form>
   <div class='hint'><b>SOOP(숲) · 인터넷방송 · 스타방송 · 스타대학</b><br>검색 버튼을 누르면 새 탭에 4개 검색결과가 뜹니다.</div>
