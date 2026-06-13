@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-13 20:59:18",
+  "updated_at": "2026-06-13 21:05:02",
   "total": 38,
-  "live_count": 4,
+  "live_count": 5,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -463,11 +463,11 @@
       "part": "엑셀부",
       "soop_id": "luaa0803",
       "soop_url": "https://www.sooplive.com/station/luaa0803",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294791055",
+      "title": "[씨나인:추녀]제발 히플단하자 응 ??",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/luaa0803/station"
     },
@@ -479,7 +479,7 @@
       "is_live": true,
       "status": "LIVE",
       "reason": "broad_object_found",
-      "broad_no": "294785627",
+      "broad_no": "294791049",
       "title": "[씨나인:버러지] 야스연두 2866 인생네컷 방셀!!💗",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
