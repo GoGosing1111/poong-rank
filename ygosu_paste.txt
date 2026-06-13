@@ -2,7 +2,7 @@
   
   <div id="section_top" style="position:relative;padding:18px 10px 16px;text-align:center;border:1px solid rgba(90,175,255,.55);border-radius:18px;background:linear-gradient(135deg,rgba(25,125,255,.28),rgba(0,0,0,.70));box-shadow:0 0 18px rgba(40,145,255,.25);">
     <div style="position:absolute;right:10px;top:9px;display:flex;align-items:center;gap:7px;z-index:2;">
-      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-13 23:59</span>
+      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-14 00:01</span>
       <a href="https://ygosu.com/msg/?m2=write&member=152117" target="_blank" rel="nofollow" style="display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,#2f9bff,#635bff);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:11px;font-weight:1000;text-decoration:none;line-height:1;box-shadow:0 0 12px rgba(47,155,255,.30);">📩 관리자 문의</a>
     </div>
     <img src="https://keyman1335-maker.github.io/poong-rank/assets//crew_logos/cninelogo.png?v=9999" style="display:block;width:112px;max-width:45%;height:auto;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(255,255,255,.30));">
@@ -152,7 +152,7 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   
 <div style="margin-top:9px;border:1px solid rgba(255,211,79,.32);border-radius:15px;background:linear-gradient(135deg,rgba(255,211,79,.10),rgba(0,0,0,.22));overflow:hidden;box-sizing:border-box;">
   <div style="padding:9px 11px;background:rgba(0,0,0,.20);border-bottom:1px solid rgba(255,211,79,.22);color:#7ec8ff;font-size:13px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">📢 특이사항</div>
-  <div style="padding:10px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.55;text-align:left;word-break:break-word;max-height:94px;overflow:auto;box-sizing:border-box;">📢 중립기어 없이 쁠리 삭제 📢</div>
+  <div style="padding:10px 11px;color:#fff;font-size:13px;font-weight:900;line-height:1.55;text-align:left;word-break:break-word;max-height:94px;overflow:auto;box-sizing:border-box;">📢 쁠리 삭제 📢</div>
 </div>
   
 <div style="margin-top:10px;border:1px solid rgba(255,79,114,.42);border-radius:15px;background:linear-gradient(135deg,rgba(255,79,114,.15),rgba(0,0,0,.24));overflow:hidden;box-sizing:border-box;">
@@ -318,7 +318,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
 &lt;/style&gt;
 &lt;div class='wrap'&gt;
   &lt;form class='row' method='get' action='https://keyman1335-maker.github.io/poong-rank/c9_nick_search_results.html' target='_blank'&gt;
-   &lt;input type='hidden' name='v' value='20260613235905'&gt;
+   &lt;input type='hidden' name='v' value='20260614000151'&gt;
     &lt;input name='nick' class='inp' placeholder='닉네임 입력 예) 경화수월' autocomplete='off' required&gt;
     &lt;button class='btn' type='submit'&gt;검색&lt;/button&gt;
   &lt;/form&gt;
@@ -339,7 +339,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   </summary>
   <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid #2f9bff;border-radius:16px;box-shadow:0 0 13px #2f9bff33;box-sizing:border-box;text-align:left;overflow:hidden;">
     
-<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-13 23:57:57 · 기준 2026-06</div>
+<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-14 00:01:12 · 기준 2026-06</div>
 
 <div style="margin-bottom:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,211,79,.45);background:linear-gradient(135deg,rgba(255,211,79,.16),rgba(0,0,0,.28));box-shadow:0 0 14px rgba(255,211,79,.18);text-align:center;">
   <div style="padding:12px;background:linear-gradient(135deg,#7ec8ff,#4a3100);color:#fff;font-size:20px;font-weight:1000;text-shadow:0 2px 0 #000;">👑 수장 별풍선</div>
@@ -349,7 +349,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
     <div style="display:flex;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap;">
       <div style="min-width:118px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
         <div style="color:#dff2ff;font-size:11px;font-weight:900;">오늘</div>
-        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">10,637</div>
+        <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">0</div>
       </div>
       <div style="min-width:142px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
         <div style="color:#dff2ff;font-size:11px;font-weight:900;">월간</div>
@@ -381,31 +381,31 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥇</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">송채연</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">56,303</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">517,392</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥈</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">이다니</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">49,182</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">453,115</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥉</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">애순이</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">9,984</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">433,223</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">4</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">혜루찡</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">85,081</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">432,207</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">5</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">여을</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">10,055</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">358,383</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -417,7 +417,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">7</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">인지연</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">38,398</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">255,481</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -435,7 +435,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">10</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">설윤이</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">6,935</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">145,458</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -447,18 +447,18 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">12</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">히나</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">11,193</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">75,591</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">13</div>
-    <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">연두</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">18,867</div>
+    <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">체온</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">0</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">14</div>
-    <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">체온</div>
+    <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">연두</div>
     <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">0</div>
   </div></div>
@@ -475,7 +475,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="padding:14px;background:linear-gradient(135deg,#2f9bff,#2a1800 70%,#060606);text-align:center;">
     <div style="color:#fff;font-size:26px;font-weight:1000;text-shadow:0 2px 0 #000;">스타부</div>
     <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">월간 평균 별풍선</div>
-    <div style="color:#dff2ff;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">173,469</div>
+    <div style="color:#dff2ff;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">173,471</div>
   </div>
   <div style="display:flex;background:#0b0b0b;color:#d8c99b;font-size:11px;font-weight:1000;border-bottom:1px solid rgba(255,255,255,.08);">
     <div style="width:38px;padding:8px 4px;text-align:center;">순위</div>
@@ -493,7 +493,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥈</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">앵지</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">38,323</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">480,314</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
@@ -505,13 +505,13 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">4</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">란란</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">18,261</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">292,886</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">5</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">빵훈이</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">5,682</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">237,519</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -547,7 +547,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">11</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">효짱</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">7,262</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">158,135</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -559,7 +559,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">13</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">윤중</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">11,805</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
     <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">130,897</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -589,8 +589,8 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">18</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">강구열</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
-    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">80,980</div>
+    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">40</div>
+    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">81,020</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">19</div>
@@ -1273,32 +1273,17 @@ https://www.sooplive.com/station/rhf104/post/198573529</div>
   <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid #22c55e;border-radius:16px;box-shadow:0 0 13px #22c55e33;box-sizing:border-box;text-align:left;overflow:hidden;">
     
 <div style="margin:8px 0;padding:12px;border-radius:14px;background:rgba(0,0,0,.25);border:1px solid rgba(90,175,255,.25);">
-  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#ff3b3b;border:1px solid #ff8a8a;color:#fff;box-shadow:0 0 12px rgba(255,0,0,.40);font-size:11px;font-weight:1000;">TODAY</span></div>
-  <div style="color:#fff;font-size:14px;font-weight:1000;line-height:1.45;">스타부 학생회장 선거</div>
-  <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">2026.06.13 (토)</div>
-</div>
-<div style="margin:8px 0;padding:12px;border-radius:14px;background:rgba(0,0,0,.25);border:1px solid rgba(90,175,255,.25);">
-  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#ff3b3b;border:1px solid #ff8a8a;color:#fff;box-shadow:0 0 12px rgba(255,0,0,.40);font-size:11px;font-weight:1000;">TODAY</span></div>
-  <div style="color:#fff;font-size:14px;font-weight:1000;line-height:1.45;">스타부 : 2부 패배팀 벌칙</div>
-  <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">2026.06.13 (토)</div>
-</div>
-<div style="margin:8px 0;padding:12px;border-radius:14px;background:rgba(0,0,0,.25);border:1px solid rgba(90,175,255,.25);">
-  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#ff3b3b;border:1px solid #ff8a8a;color:#fff;box-shadow:0 0 12px rgba(255,0,0,.40);font-size:11px;font-weight:1000;">TODAY</span></div>
-  <div style="color:#fff;font-size:14px;font-weight:1000;line-height:1.45;">씨나인 : 인간 vs 버튜버 대결(날찌미정)</div>
-  <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">2026.06.13 (토)</div>
-</div>
-<div style="margin:8px 0;padding:12px;border-radius:14px;background:rgba(0,0,0,.25);border:1px solid rgba(90,175,255,.25);">
-  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#c89b2c;color:#fff;font-size:11px;font-weight:1000;">D-4</span></div>
+  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#c89b2c;color:#fff;font-size:11px;font-weight:1000;">D-3</span></div>
   <div style="color:#fff;font-size:14px;font-weight:1000;line-height:1.45;">엑셀혜루여왕님 주관 여캠부 디코회의</div>
   <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">2026.06.17 (수)</div>
 </div>
 <div style="margin:8px 0;padding:12px;border-radius:14px;background:rgba(0,0,0,.25);border:1px solid rgba(90,175,255,.25);">
-  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#c89b2c;color:#fff;font-size:11px;font-weight:1000;">D-7</span></div>
+  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#c89b2c;color:#fff;font-size:11px;font-weight:1000;">D-6</span></div>
   <div style="color:#fff;font-size:14px;font-weight:1000;line-height:1.45;">엑셀&lt;2026 시즌6&gt; 씨나인 댄스부 : 엑셀 1회차</div>
   <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">2026.06.20 (토)</div>
 </div>
 <div style="margin:8px 0;padding:12px;border-radius:14px;background:rgba(0,0,0,.25);border:1px solid rgba(90,175,255,.25);">
-  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#c89b2c;color:#fff;font-size:11px;font-weight:1000;">D-11</span></div>
+  <div style="margin-bottom:7px;"><span style="display:inline-block;padding:4px 8px;border-radius:999px;background:#c89b2c;color:#fff;font-size:11px;font-weight:1000;">D-10</span></div>
   <div style="color:#fff;font-size:14px;font-weight:1000;line-height:1.45;">엑셀씨나인 시그 컨테스트</div>
   <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">2026.06.24 (수)</div>
 </div>
@@ -1307,5 +1292,5 @@ https://www.sooplive.com/station/rhf104/post/198573529</div>
 </div>
 
   <div style="margin-top:12px;text-align:center;color:#7ec8ff;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(80,170,255,.35);">CNINE Dashboard Developed by 유두위생크림</div>
-  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-13 23:59:05</div>
+  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-14 00:01:51</div>
 </div>

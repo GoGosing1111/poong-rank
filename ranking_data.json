@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 00:01:12",
+  "updated_at": "2026-06-14 00:05:21",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -8,8 +8,8 @@
     "today": "https://poonggo.com/ranking/broadcast?c=daily&s=b&tab=1&date=2026-06-14"
   },
   "total_members": 37,
-  "matched_count": 31,
-  "unmatched_count": 6,
+  "matched_count": 32,
+  "unmatched_count": 5,
   "ranking": [
     {
       "part": "수장",
@@ -357,11 +357,11 @@
       "name": "짭호",
       "match": "짭호",
       "soop_id": "wjddlf4695",
-      "today": 0,
+      "today": 130,
       "month": 0,
-      "today_api_name": "",
+      "today_api_name": "짭호형2↑",
       "month_api_name": "",
-      "matched": false
+      "matched": true
     },
     {
       "part": "스타부",
@@ -732,7 +732,7 @@
       {
         "rank": 19,
         "name": "짭호",
-        "today": "0",
+        "today": "130",
         "month": "0",
         "width": "0%",
         "first": false,
