@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 04:24:43",
+  "updated_at": "2026-06-14 08:16:20",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -148,9 +148,9 @@
       "name": "빵훈이",
       "match": "빵훈이.",
       "soop_id": "vlfvlf789",
-      "today": 362,
+      "today": 0,
       "month": 237881,
-      "today_api_name": "빵훈이",
+      "today_api_name": "",
       "month_api_name": "빵훈이",
       "matched": true
     },
@@ -606,7 +606,7 @@
       {
         "rank": 5,
         "name": "빵훈이",
-        "today": "362",
+        "today": "0",
         "month": "237,881",
         "width": "42%",
         "first": false,

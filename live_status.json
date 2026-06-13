@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-14 04:24:25",
+  "updated_at": "2026-06-14 08:16:01",
   "total": 38,
-  "live_count": 1,
+  "live_count": 0,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -307,11 +307,11 @@
       "part": "엑셀부",
       "soop_id": "0929kelly",
       "soop_url": "https://www.sooplive.com/station/0929kelly",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294768855",
-      "title": "[씨나인:신입]숙제하면서 소통할게여어! 도저니 망강부!",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
