@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 CNINE Dashboard -> 와이고수 업로드용 정적 HTML/TXT 변환기
 
@@ -589,8 +589,9 @@ def render_rank_card(card):
   <div style="display:flex;background:#0b0b0b;color:#d8c99b;font-size:11px;font-weight:1000;border-bottom:1px solid rgba(255,255,255,.08);">
     <div style="width:38px;padding:8px 4px;text-align:center;">순위</div>
     <div style="flex:1;padding:8px 4px;text-align:left;">멤버</div>
-    <div style="width:70px;padding:8px 4px;text-align:right;">오늘</div>
-    <div style="width:96px;padding:8px 8px;text-align:right;">월간</div>
+    <div style="width:64px;padding:8px 4px;text-align:right;">오늘</div>
+    <div style="width:78px;padding:8px 4px;text-align:right;">방송시간</div>
+    <div style="width:90px;padding:8px 8px;text-align:right;">월간</div>
   </div>
 """
     body = []
@@ -602,8 +603,9 @@ def render_rank_card(card):
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:{bg};font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">{esc(medal)}</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(r.get("name",""))}</div>
-    <div style="width:70px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">{esc(r.get("today","-"))}</div>
-    <div style="width:96px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">{esc(r.get("month","-"))}</div>
+    <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">{esc(r.get("today","-"))}</div>
+    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">{esc(r.get("air_time","-"))}</div>
+    <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">{esc(r.get("month","-"))}</div>
   </div>""")
     return head + "".join(body) + "</div>"
 
@@ -616,6 +618,7 @@ def render_leader_rank_card(rank_json):
     name = leader.get("name", "철구형")
     today = leader.get("today", "0")
     month = leader.get("month", "0")
+    air_time = leader.get("air_time", "-")
     sid = leader.get("soop_id", "y1026")
     return f"""
 <div style="margin-bottom:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,211,79,.45);background:linear-gradient(135deg,rgba(255,211,79,.16),rgba(0,0,0,.28));box-shadow:0 0 14px rgba(255,211,79,.18);text-align:center;">
@@ -627,6 +630,10 @@ def render_leader_rank_card(rank_json):
       <div style="min-width:118px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
         <div style="color:#dff2ff;font-size:11px;font-weight:900;">오늘</div>
         <div style="color:#7ec8ff;font-size:18px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(today)}</div>
+      </div>
+      <div style="min-width:118px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
+        <div style="color:#dff2ff;font-size:11px;font-weight:900;">방송시간</div>
+        <div style="color:#ffd34f;font-size:17px;font-weight:1000;text-shadow:0 2px 0 #000;">{esc(air_time)}</div>
       </div>
       <div style="min-width:142px;padding:9px 10px;border-radius:13px;background:rgba(0,0,0,.25);border:1px solid rgba(255,211,79,.28);">
         <div style="color:#dff2ff;font-size:11px;font-weight:900;">월간</div>
