@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 04:06:44",
+  "updated_at": "2026-06-15 04:15:59",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -9,8 +9,8 @@
     "station_month": "https://poonggo.com/station/{soop_id}?c=monthly&s=b"
   },
   "total_members": 37,
-  "matched_count": 32,
-  "unmatched_count": 5,
+  "matched_count": 35,
+  "unmatched_count": 2,
   "ranking": [
     {
       "part": "수장",
@@ -416,16 +416,55 @@
       "matched": true
     },
     {
+      "part": "엑셀부",
+      "name": "연두",
+      "match": "ε연두з",
+      "soop_id": "myby1221",
+      "today": 0,
+      "month": 68599,
+      "month_air_time": "54시간 17분",
+      "month_air_minutes": 3257,
+      "today_api_name": "",
+      "month_api_name": "ε연두з",
+      "matched": true
+    },
+    {
+      "part": "스타부",
+      "name": "남수댕",
+      "match": "남수댕♥",
+      "soop_id": "mew030709",
+      "today": 0,
+      "month": 40294,
+      "month_air_time": "5시간 29분",
+      "month_air_minutes": 329,
+      "today_api_name": "",
+      "month_api_name": "남수댕",
+      "matched": true
+    },
+    {
+      "part": "엑셀부",
+      "name": "체온",
+      "match": "체온_♡",
+      "soop_id": "leeso0403",
+      "today": 0,
+      "month": 39946,
+      "month_air_time": "12시간 40분",
+      "month_air_minutes": 760,
+      "today_api_name": "",
+      "month_api_name": "체온_♡",
+      "matched": true
+    },
+    {
       "part": "스타부",
       "name": "짭호",
       "match": "짭호",
       "soop_id": "wjddlf4695",
       "today": 3006,
-      "month": 0,
+      "month": 34282,
       "month_air_time": "28시간 49분",
       "month_air_minutes": 1729,
       "today_api_name": "짭호형2↑",
-      "month_api_name": "",
+      "month_api_name": "짭호형2↑",
       "matched": true
     },
     {
@@ -453,45 +492,6 @@
       "today_api_name": "",
       "month_api_name": "",
       "matched": false
-    },
-    {
-      "part": "스타부",
-      "name": "남수댕",
-      "match": "남수댕♥",
-      "soop_id": "mew030709",
-      "today": 0,
-      "month": 0,
-      "month_air_time": "5시간 29분",
-      "month_air_minutes": 329,
-      "today_api_name": "",
-      "month_api_name": "",
-      "matched": false
-    },
-    {
-      "part": "엑셀부",
-      "name": "체온",
-      "match": "체온_♡",
-      "soop_id": "leeso0403",
-      "today": 0,
-      "month": 0,
-      "month_air_time": "12시간 40분",
-      "month_air_minutes": 760,
-      "today_api_name": "",
-      "month_api_name": "",
-      "matched": false
-    },
-    {
-      "part": "엑셀부",
-      "name": "연두",
-      "match": "ε연두з",
-      "soop_id": "myby1221",
-      "today": 0,
-      "month": 0,
-      "month_air_time": "54시간 17분",
-      "month_air_minutes": 3257,
-      "today_api_name": "",
-      "month_api_name": "",
-      "matched": false
     }
   ],
   "leader": {
@@ -505,7 +505,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "271,427",
+    "avg": "279,180",
     "leader": "송채연",
     "leader_sales": "589,393",
     "members": [
@@ -643,23 +643,23 @@
       },
       {
         "rank": 13,
-        "name": "체온",
+        "name": "연두",
         "today": "0",
-        "month": "0",
-        "air_time": "12시간 40분",
-        "air_minutes": 760,
-        "width": "0%",
+        "month": "68,599",
+        "air_time": "54시간 17분",
+        "air_minutes": 3257,
+        "width": "11%",
         "first": false,
         "color": "#7dc7ff"
       },
       {
         "rank": 14,
-        "name": "연두",
+        "name": "체온",
         "today": "0",
-        "month": "0",
-        "air_time": "54시간 17분",
-        "air_minutes": 3257,
-        "width": "0%",
+        "month": "39,946",
+        "air_time": "12시간 40분",
+        "air_minutes": 760,
+        "width": "6%",
         "first": false,
         "color": "#7dc7ff"
       }
@@ -668,7 +668,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "188,638",
+    "avg": "192,028",
     "leader": "디임",
     "leader_sales": "595,447",
     "members": [
@@ -872,17 +872,28 @@
       },
       {
         "rank": 19,
-        "name": "짭호",
-        "today": "3,006",
-        "month": "0",
-        "air_time": "28시간 49분",
-        "air_minutes": 1729,
-        "width": "0%",
+        "name": "남수댕",
+        "today": "0",
+        "month": "40,294",
+        "air_time": "5시간 29분",
+        "air_minutes": 329,
+        "width": "6%",
         "first": false,
         "color": "#ffd34f"
       },
       {
         "rank": 20,
+        "name": "짭호",
+        "today": "3,006",
+        "month": "34,282",
+        "air_time": "28시간 49분",
+        "air_minutes": 1729,
+        "width": "5%",
+        "first": false,
+        "color": "#ffd34f"
+      },
+      {
+        "rank": 21,
         "name": "김택용",
         "today": "0",
         "month": "0",
@@ -893,23 +904,12 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 21,
+        "rank": 22,
         "name": "이영호",
         "today": "0",
         "month": "0",
         "air_time": "-",
         "air_minutes": 0,
-        "width": "0%",
-        "first": false,
-        "color": "#ffd34f"
-      },
-      {
-        "rank": 22,
-        "name": "남수댕",
-        "today": "0",
-        "month": "0",
-        "air_time": "5시간 29분",
-        "air_minutes": 329,
         "width": "0%",
         "first": false,
         "color": "#ffd34f"
