@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 18:04:27",
+  "updated_at": "2026-06-14 18:05:23",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -16,7 +16,7 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 9877,
+      "today": 9878,
       "month": 4446945,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
@@ -421,7 +421,7 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "9,877",
+    "today": "9,878",
     "month": "4,446,945",
     "soop_id": "y1026"
   },
