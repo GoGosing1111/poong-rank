@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 02:05:24",
+  "updated_at": "2026-06-15 04:05:27",
   "source": "poonggo broadcast ranking HTML v9",
   "used_month": "2026-06",
   "api_urls": {
@@ -357,7 +357,7 @@
       "name": "짭호",
       "match": "짭호",
       "soop_id": "wjddlf4695",
-      "today": 1512,
+      "today": 3006,
       "month": 0,
       "today_api_name": "짭호형2↑",
       "month_api_name": "",
@@ -732,7 +732,7 @@
       {
         "rank": 19,
         "name": "짭호",
-        "today": "1,512",
+        "today": "3,006",
         "month": "0",
         "width": "0%",
         "first": false,
