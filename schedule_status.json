@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "updated_at": "2026-06-16 09:07:09",
+  "updated_at": "2026-06-16 17:59:46",
   "source": "https://www.cnine.kr/timeline",
-  "count": 4,
-  "today_count": 1,
+  "count": 5,
+  "today_count": 2,
   "future_count": 3,
   "items": [
     {
@@ -15,6 +15,16 @@
       "dday": "TODAY",
       "type": "엑셀",
       "source_line": "2026년 06월 16일(화) 09:30 ~ 18:30"
+    },
+    {
+      "title": "애순이 :: 혜밍 & 윤이솔 주루마블 합방",
+      "date": "2026.06.16 (화)",
+      "raw_date": "2026-06-16",
+      "time": "20:00",
+      "datetime": "2026.06.16 (화) · ⏰ 20:00",
+      "dday": "TODAY",
+      "type": "합방",
+      "source_line": "2026년 06월 16일(화) 20:00 ~ 2026년 06월 17일(수) 10:59"
     },
     {
       "title": "엑셀혜루여왕님 주관 여캠부 디코회의",
