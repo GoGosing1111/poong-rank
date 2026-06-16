@@ -767,8 +767,8 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   <div class='popup-box'>
     <div class='popup-head'>
       <span class='badge'>⚡ CNINE DASHBOARD GUIDE</span>
-      <div class='title'>어떤 기능들이<br>있는지 알아봐요</div>
-      <div class='sub'>씨나인 현황판에서 자주 쓰는 기능을 한눈에 확인하세요.</div>
+      <div class='title'>현황판 설명서<br></div>
+      <div class='sub'>똥,썩,납은 뒤로가기.</div>
     </div>
     <div class='popup-body'>
       <div class='grid'>

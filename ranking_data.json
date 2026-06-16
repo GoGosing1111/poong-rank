@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 08:58:53",
+  "updated_at": "2026-06-16 09:05:27",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -108,10 +108,10 @@
       "name": "이다니",
       "match": "이다니♥",
       "soop_id": "0929kelly",
-      "today": 6934,
+      "today": 8045,
       "month": 508036,
-      "month_air_time": "115시간 49분",
-      "month_air_minutes": 6949,
+      "month_air_time": "115시간 55분",
+      "month_air_minutes": 6955,
       "today_api_name": "이다니♥",
       "month_api_name": "이다니♥",
       "matched": true
@@ -123,8 +123,8 @@
       "soop_id": "kaja0011",
       "today": 0,
       "month": 502091,
-      "month_air_time": "62시간 24분",
-      "month_air_minutes": 3744,
+      "month_air_time": "62시간 30분",
+      "month_air_minutes": 3750,
       "today_api_name": "",
       "month_api_name": "여을♥",
       "matched": true
@@ -292,8 +292,8 @@
       "soop_id": "lcy011027",
       "today": 4439,
       "month": 168236,
-      "month_air_time": "60시간 8분",
-      "month_air_minutes": 3608,
+      "month_air_time": "-",
+      "month_air_minutes": 0,
       "today_api_name": "BJ채리",
       "month_api_name": "BJ채리",
       "matched": true
@@ -545,10 +545,10 @@
       {
         "rank": 4,
         "name": "이다니",
-        "today": "6,934",
+        "today": "8,045",
         "month": "508,036",
-        "air_time": "115시간 49분",
-        "air_minutes": 6949,
+        "air_time": "115시간 55분",
+        "air_minutes": 6955,
         "width": "80%",
         "first": false,
         "color": "#7dc7ff"
@@ -558,8 +558,8 @@
         "name": "여을",
         "today": "0",
         "month": "502,091",
-        "air_time": "62시간 24분",
-        "air_minutes": 3744,
+        "air_time": "62시간 30분",
+        "air_minutes": 3750,
         "width": "79%",
         "first": false,
         "color": "#7dc7ff"
@@ -602,8 +602,8 @@
         "name": "채리",
         "today": "4,439",
         "month": "168,236",
-        "air_time": "60시간 8분",
-        "air_minutes": 3608,
+        "air_time": "-",
+        "air_minutes": 0,
         "width": "26%",
         "first": false,
         "color": "#7dc7ff"
