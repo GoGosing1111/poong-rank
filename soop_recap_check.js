@@ -358,6 +358,33 @@
       ['염보성 시청 누적', smartTime(yeom)],
       ['케이 시청 누적', smartTime(kei)]
     ];
+
+    // 주작 방지용 워터마크: 각 시청 누적 칸에 와고닉 + 생성시각을 흐리게 삽입
+    // 기존 레이아웃/디자인은 건드리지 않고, 글자 뒤쪽에만 표시한다.
+    function drawCellWatermark(text, timeText, x, y, clipX, clipW) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(clipX, 535, clipW, 108);
+      ctx.clip();
+      ctx.translate(x, y);
+      ctx.rotate(-0.33);
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = '#6f6048';
+      ctx.globalAlpha = 0.105;
+      ctx.font = 'bold 26px Malgun Gothic, Arial';
+      ctx.fillText(text, 0, -10);
+      ctx.globalAlpha = 0.095;
+      ctx.font = 'bold 19px Georgia, Malgun Gothic, serif';
+      ctx.fillText(timeText, 0, 20);
+      ctx.restore();
+    }
+
+    const watermarkTime = issuedAt;
+    drawCellWatermark(nick, watermarkTime, 347, 627, 220, 253);
+    drawCellWatermark(nick, watermarkTime, 600, 627, 473, 254);
+    drawCellWatermark(nick, watermarkTime, 853, 627, 727, 253);
+
     [347, 600, 853].forEach((x, i) => {
       centerText(cols[i][0], x, 570, 'bold 20px Malgun Gothic, Arial', '#3a2f21');
       centerText(cols[i][1], x, 622, 'bold 38px Malgun Gothic, Arial', '#15110c');
