@@ -370,20 +370,21 @@
       ctx.rotate(-0.33);
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
+      // 더 잘 보이도록 닉네임은 크게, 시간은 짧게 표시
       ctx.fillStyle = '#5b4b36';
-      ctx.globalAlpha = 0.20;
-      ctx.font = 'bold 34px Malgun Gothic, Arial';
-      ctx.fillText(text, 0, -12);
-      ctx.globalAlpha = 0.17;
-      ctx.font = 'bold 23px Georgia, Malgun Gothic, serif';
-      ctx.fillText(timeText, 0, 22);
+      ctx.globalAlpha = 0.32;
+      ctx.font = 'bold 42px Malgun Gothic, Arial';
+      ctx.fillText(text, 0, -14);
+      ctx.globalAlpha = 0.26;
+      ctx.font = 'bold 26px Georgia, Malgun Gothic, serif';
+      ctx.fillText(timeText, 0, 24);
       ctx.restore();
     }
 
-    const watermarkTime = issuedAt;
-    drawCellWatermark(nick, watermarkTime, 347, 615, 220, 253);
-    drawCellWatermark(nick, watermarkTime, 600, 615, 473, 254);
-    drawCellWatermark(nick, watermarkTime, 853, 615, 727, 253);
+    const watermarkTime = issuedAt.replace(/^20/, '');
+    drawCellWatermark(nick, watermarkTime, 347, 604, 220, 253);
+    drawCellWatermark(nick, watermarkTime, 600, 604, 473, 254);
+    drawCellWatermark(nick, watermarkTime, 853, 604, 727, 253);
 
     [347, 600, 853].forEach((x, i) => {
       centerText(cols[i][0], x, 570, 'bold 20px Malgun Gothic, Arial', '#3a2f21');
