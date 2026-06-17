@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17 15:58:02",
+  "updated_at": "2026-06-17 16:12:38",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -17,10 +17,10 @@
       "name": "철구형",
       "match": "철구형2↑",
       "soop_id": "y1026",
-      "today": 1172,
-      "month": 4448950,
-      "month_air_time": "58시간 47분",
-      "month_air_minutes": 3527,
+      "today": 1733,
+      "month": 4449521,
+      "month_air_time": "59시간 1분",
+      "month_air_minutes": 3541,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -97,8 +97,8 @@
       "soop_id": "yunyeson3015",
       "today": 25627,
       "month": 564564,
-      "month_air_time": "92시간 5분",
-      "month_air_minutes": 5525,
+      "month_air_time": "92시간 19분",
+      "month_air_minutes": 5539,
       "today_api_name": "애순이",
       "month_api_name": "애순이",
       "matched": true
@@ -483,10 +483,10 @@
   ],
   "leader": {
     "name": "철구형",
-    "today": "1,172",
-    "month": "4,448,950",
-    "air_time": "58시간 47분",
-    "air_minutes": 3527,
+    "today": "1,733",
+    "month": "4,449,521",
+    "air_time": "59시간 1분",
+    "air_minutes": 3541,
     "soop_id": "y1026"
   },
   "excel": {
@@ -534,8 +534,8 @@
         "name": "애순이",
         "today": "25,627",
         "month": "564,564",
-        "air_time": "92시간 5분",
-        "air_minutes": 5525,
+        "air_time": "92시간 19분",
+        "air_minutes": 5539,
         "width": "86%",
         "first": false,
         "color": "#7dc7ff"

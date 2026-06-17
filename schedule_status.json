@@ -1,11 +1,21 @@
 {
   "ok": true,
-  "updated_at": "2026-06-17 15:59:37",
+  "updated_at": "2026-06-17 16:14:14",
   "source": "https://www.cnine.kr/timeline",
-  "count": 6,
-  "today_count": 1,
+  "count": 7,
+  "today_count": 2,
   "future_count": 5,
   "items": [
+    {
+      "title": "철구 : 뉴캄 옥션 합방",
+      "date": "2026.06.17 (수)",
+      "raw_date": "2026-06-17",
+      "time": "18:30",
+      "datetime": "2026.06.17 (수) · ⏰ 18:30",
+      "dday": "TODAY",
+      "type": "합방",
+      "source_line": "2026년 06월 17일(수) 18:30 ~ 21:30"
+    },
     {
       "title": "엑셀혜루여왕님 주관 여캠부 디코회의",
       "date": "2026.06.17 (수)",
