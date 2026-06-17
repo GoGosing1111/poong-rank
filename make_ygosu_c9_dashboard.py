@@ -125,7 +125,7 @@ def render_self_verify_card():
     verify_url = "https://m.sooplive.com/statistics/a/watch/?szModule=UserLiveWatchTimeData&szMethod=watch"
 
     # 리캡 셀프 인증 JS. GitHub 최상단에 soop_recap_check.js를 올려두면 동작한다.
-    auto_verify_js = f"{BASE_URL}/soop_recap_check.js?v=2026061718"
+    auto_verify_js = f"{BASE_URL}/soop_recap_check.js?v=2026061720"
 
     # 1073983에서 실제 동작한 iframe srcdoc 구조 유지.
     # srcdoc 내부는 &lt; / &gt; 엔티티 형태로 넣어야 와고에서 깨질 확률이 낮다.
