@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-17 15:45:45",
-  "total": 38,
+  "updated_at": "2026-06-17 15:57:44",
+  "total": 37,
   "live_count": 3,
   "members": {
     "y1026": {
@@ -366,19 +366,6 @@
       "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jkmjkm1236/station"
-    },
-    "dain9804": {
-      "name": "설윤이",
-      "part": "엑셀부",
-      "soop_id": "dain9804",
-      "soop_url": "https://www.sooplive.com/station/dain9804",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
-      "viewers": 0,
-      "checked_url": "https://bjapi.afreecatv.com/api/dain9804/station"
     },
     "dlswldus107": {
       "name": "인지연",
