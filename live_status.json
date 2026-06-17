@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-06-17 23:05:02",
+  "updated_at": "2026-06-18 00:05:02",
   "total": 37,
-  "live_count": 26,
+  "live_count": 23,
   "members": {
     "y1026": {
       "name": "철구형",
       "part": "엑셀부",
       "soop_id": "y1026",
       "soop_url": "https://www.sooplive.com/station/y1026",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294891521",
-      "title": "기뉴다<<방송으로",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/y1026/station"
     },
@@ -64,7 +64,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294890699",
-      "title": "빵훈 버빵동 위기입니다....",
+      "title": "빵훈 버빵동 위기입니다.... 씨나인",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/vlfvlf789/station"
     },
@@ -116,7 +116,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294891801",
-      "title": "씨나인:스타] 족장님응원방 ㅡㅡ   조은",
+      "title": "씨나인:스타] 걸즈파티 빙고,,,있을까욥,,,,,귀인이,,ㅠㅠ   조은",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/zalalz/station"
     },
@@ -194,7 +194,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294888773",
-      "title": "씨나인💖🏆망수니 족암VS흑뉴다 철구오빠응원방 // 망플단구합니둥..",
+      "title": "씨나인💖🏆망수니 펀딩해쥬실오라보니.,시그룰렛185 폐지단환영함니다 ㅠ_ㅠ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yjk011599/station"
     },
@@ -207,7 +207,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294888619",
-      "title": "[씨나인⭐] ㅎ-ㅎ 스폰환영",
+      "title": "[씨나인⭐] 스폰환영",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
@@ -220,7 +220,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294895495",
-      "title": "씨나인⭐]x됐습니다 오늘 111개 랜덤시그 1+1",
+      "title": "씨나인⭐]다이어트1일차 새우두부포케",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294889667",
-      "title": "씨나인:학생회장❤]",
+      "title": "씨나인:학생회장❤]앵기통 오픈",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
@@ -285,7 +285,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294896915",
-      "title": "씨나인⭐ 어ㅓ 미안 .. 그날이라...",
+      "title": "씨나인⭐ 머리가 안 마른 것임",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
     },
@@ -324,7 +324,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294893971",
-      "title": "[씨나인:여왕] 시그단한분 기사단한분 구하면 퇴근..살..",
+      "title": "[씨나인:여왕] 시그단(0/4) 기사단(0/2) 오늘도 구할때까지..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/epsthddus/station"
     },
@@ -337,7 +337,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294890417",
-      "title": "[씨나인:신입] 제 손을 잡아주세요 🫱🏻🫲🏻",
+      "title": "[씨나인:신입] 시그단(0/3) 제 손을 잡아주세요 🫱🏻🫲🏻",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jfiary0718/station"
     },
@@ -376,7 +376,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294891827",
-      "title": "[씨나인:귀족] 스타부랑 팀전!?",
+      "title": "[씨나인:귀족] 젼플단 진짜 젭알 흐악..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/dlswldus107/station"
     },
@@ -424,11 +424,11 @@
       "part": "엑셀부",
       "soop_id": "yunyeson3015",
       "soop_url": "https://www.sooplive.com/station/yunyeson3015",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294882835",
-      "title": "[씨나인 : 시녀2] 올려줘 애순이",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     },
@@ -467,7 +467,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294893243",
-      "title": "[씨나인:버러지] 1회차 씨나인 스튜디오에서의 첫 시작 응원해주세요..",
+      "title": "[씨나인:버러지] 1414 한개만요 (제발 커피가 녹고있어요)",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/myby1221/station"
     }
