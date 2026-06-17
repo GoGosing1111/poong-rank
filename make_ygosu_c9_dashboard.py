@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 CNINE Dashboard -> 와이고수 업로드용 정적 HTML/TXT 변환기
 
@@ -420,6 +420,50 @@ def is_live(member, live_map):
     info = live_map.get(sid) or {}
     return bool(info.get("is_live"))
 
+def member_sub_info(m):
+    """멤버 카드 닉네임 하단 표시용 정보.
+    - 스타부: 종족 · 티어
+    - 엑셀부: 계급
+    - 수장: 수장 표시
+    기존 SOOP ID 노출 대신 보여준다.
+    """
+    if is_leader_member(m):
+        return "👑 수장"
+
+    part = safe(m.get("part"))
+    if part == "스타부":
+        race = safe(m.get("race") or m.get("species") or m.get("race_name"))
+        tier = safe(m.get("tier") or m.get("star_tier"))
+        if race and tier:
+            return f"{race} · {tier}티어" if not tier.endswith("티어") else f"{race} · {tier}"
+        if race:
+            return race
+        if tier:
+            return f"{tier}티어" if not tier.endswith("티어") else tier
+        return "종족 미입력 · 티어 미입력"
+
+    if part == "엑셀부":
+        rank = safe(m.get("rank") or m.get("grade") or m.get("position"))
+        return rank if rank else "계급 미입력"
+
+    return safe(m.get("role") or m.get("position") or "-")
+
+def member_sub_color(m):
+    txt = member_sub_info(m)
+    if "수장" in txt:
+        return "#ffd34f"
+    if "테란" in txt:
+        return "#7ec8ff"
+    if "저그" in txt:
+        return "#d49bff"
+    if "프로토스" in txt or "토스" in txt:
+        return "#ffd34f"
+    if "S" in txt or "임원" in txt or "대표" in txt:
+        return "#ff6b8a"
+    if "A" in txt or "부장" in txt:
+        return "#ffb86b"
+    return "#dff2ff"
+
 def section(title, body, open_attr=False, color="#2f9bff"):
     open_text = " open" if open_attr else ""
     # v10 HTML 기준: 파란 네온/둥근 엣지/어두운 남청 배경
@@ -452,7 +496,7 @@ def member_card(m, live_map, single=False):
   </div>
   <img src="{esc(img)}" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">{esc(m.get("name","-"))}</div>
-  <div style="color:#dff2ff;font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{esc(sid)}</div>
+  <div style="margin-top:3px;color:{member_sub_color(m)};font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">{esc(member_sub_info(m))}</div>
   <a href="{esc(soop_url)}" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
 </div>"""
 
