@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17 10:01:43",
+  "updated_at": "2026-06-17 15:46:03",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -18,9 +18,9 @@
       "match": "철구형2↑",
       "soop_id": "y1026",
       "today": 0,
-      "month": 4447821,
-      "month_air_time": "58시간 23분",
-      "month_air_minutes": 3503,
+      "month": 4447941,
+      "month_air_time": "58시간 35분",
+      "month_air_minutes": 3515,
       "today_api_name": "",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -108,10 +108,10 @@
       "name": "애순이",
       "match": "애순이",
       "soop_id": "yunyeson3015",
-      "today": 23495,
-      "month": 562432,
-      "month_air_time": "90시간 12분",
-      "month_air_minutes": 5412,
+      "today": 23623,
+      "month": 562560,
+      "month_air_time": "91시간 53분",
+      "month_air_minutes": 5513,
       "today_api_name": "애순이",
       "month_api_name": "애순이",
       "matched": true
@@ -212,10 +212,10 @@
       "name": "왜냐맨장민철",
       "match": "왜냐맨장민철",
       "soop_id": "jmc06170",
-      "today": 39668,
-      "month": 204081,
-      "month_air_time": "74시간 54분",
-      "month_air_minutes": 4494,
+      "today": 49189,
+      "month": 213602,
+      "month_air_time": "77시간 49분",
+      "month_air_minutes": 4669,
       "today_api_name": "왜냐맨장민철",
       "month_api_name": "왜냐맨장민철",
       "matched": true
@@ -497,15 +497,15 @@
   "leader": {
     "name": "철구형",
     "today": "0",
-    "month": "4,447,821",
-    "air_time": "58시간 23분",
-    "air_minutes": 3503,
+    "month": "4,447,941",
+    "air_time": "58시간 35분",
+    "air_minutes": 3515,
     "soop_id": "y1026"
   },
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "342,739",
+    "avg": "342,748",
     "leader": "송채연",
     "leader_sales": "650,125",
     "members": [
@@ -545,10 +545,10 @@
       {
         "rank": 4,
         "name": "애순이",
-        "today": "23,495",
-        "month": "562,432",
-        "air_time": "90시간 12분",
-        "air_minutes": 5412,
+        "today": "23,623",
+        "month": "562,560",
+        "air_time": "91시간 53분",
+        "air_minutes": 5513,
         "width": "86%",
         "first": false,
         "color": "#7dc7ff"
@@ -668,7 +668,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "210,608",
+    "avg": "211,041",
     "leader": "졈니",
     "leader_sales": "614,050",
     "members": [
@@ -741,11 +741,11 @@
       {
         "rank": 7,
         "name": "왜냐맨장민철",
-        "today": "39,668",
-        "month": "204,081",
-        "air_time": "74시간 54분",
-        "air_minutes": 4494,
-        "width": "33%",
+        "today": "49,189",
+        "month": "213,602",
+        "air_time": "77시간 49분",
+        "air_minutes": 4669,
+        "width": "34%",
         "first": false,
         "color": "#ffd34f"
       },
