@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 10:05:27",
+  "updated_at": "2026-06-18 12:41:18",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -186,10 +186,10 @@
       "name": "빵훈이",
       "match": "빵훈이.",
       "soop_id": "vlfvlf789",
-      "today": 792,
-      "month": 295324,
-      "month_air_time": "98시간 5분",
-      "month_air_minutes": 5885,
+      "today": 3772,
+      "month": 298294,
+      "month_air_time": "99시간 12분",
+      "month_air_minutes": 5952,
       "today_api_name": "빵훈이",
       "month_api_name": "빵훈이",
       "matched": true
@@ -212,11 +212,11 @@
       "name": "나무늘봉순",
       "match": "나무늘봉순.",
       "soop_id": "yjk011599",
-      "today": 546,
+      "today": 0,
       "month": 222478,
       "month_air_time": "71시간",
       "month_air_minutes": 4260,
-      "today_api_name": "나무늘봉순",
+      "today_api_name": "",
       "month_api_name": "나무늘봉순",
       "matched": true
     },
@@ -303,11 +303,11 @@
       "name": "윤용태",
       "match": "free윤용태",
       "soop_id": "dbsdydx",
-      "today": 481,
+      "today": 0,
       "month": 180704,
       "month_air_time": "91시간 51분",
       "month_air_minutes": 5511,
-      "today_api_name": "free윤용태",
+      "today_api_name": "",
       "month_api_name": "free윤용태",
       "matched": true
     },
@@ -396,8 +396,8 @@
       "soop_id": "kuyol",
       "today": 818,
       "month": 83403,
-      "month_air_time": "61시간 31분",
-      "month_air_minutes": 3691,
+      "month_air_time": "61시간 38분",
+      "month_air_minutes": 3698,
       "today_api_name": "910★강구열",
       "month_api_name": "910★강구열",
       "matched": true
@@ -644,7 +644,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "218,187",
+    "avg": "218,322",
     "leader": "졈니",
     "leader_sales": "614,050",
     "members": [
@@ -706,10 +706,10 @@
       {
         "rank": 6,
         "name": "빵훈이",
-        "today": "792",
-        "month": "295,324",
-        "air_time": "98시간 5분",
-        "air_minutes": 5885,
+        "today": "3,772",
+        "month": "298,294",
+        "air_time": "99시간 12분",
+        "air_minutes": 5952,
         "width": "48%",
         "first": false,
         "color": "#ffd34f"
@@ -717,7 +717,7 @@
       {
         "rank": 7,
         "name": "나무늘봉순",
-        "today": "546",
+        "today": "0",
         "month": "222,478",
         "air_time": "71시간",
         "air_minutes": 4260,
@@ -783,7 +783,7 @@
       {
         "rank": 13,
         "name": "윤용태",
-        "today": "481",
+        "today": "0",
         "month": "180,704",
         "air_time": "91시간 51분",
         "air_minutes": 5511,
@@ -840,8 +840,8 @@
         "name": "강구열",
         "today": "818",
         "month": "83,403",
-        "air_time": "61시간 31분",
-        "air_minutes": 3691,
+        "air_time": "61시간 38분",
+        "air_minutes": 3698,
         "width": "13%",
         "first": false,
         "color": "#ffd34f"
