@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 19:04:02",
+  "updated_at": "2026-06-18 19:05:21",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -9,8 +9,8 @@
     "station_month": "https://poonggo.com/station/{soop_id}?c=monthly&s=b"
   },
   "total_members": 36,
-  "matched_count": 34,
-  "unmatched_count": 2,
+  "matched_count": 33,
+  "unmatched_count": 3,
   "ranking": [
     {
       "part": "수장",
@@ -19,8 +19,8 @@
       "soop_id": "y1026",
       "today": 12392,
       "month": 4462575,
-      "month_air_time": "63시간 19분",
-      "month_air_minutes": 3799,
+      "month_air_time": "63시간 20분",
+      "month_air_minutes": 3800,
       "today_api_name": "철구형2↑",
       "month_api_name": "철구형2↑",
       "matched": true
@@ -32,8 +32,8 @@
       "soop_id": "jfiary0718",
       "today": 4761,
       "month": 683807,
-      "month_air_time": "127시간 43분",
-      "month_air_minutes": 7663,
+      "month_air_time": "127시간 44분",
+      "month_air_minutes": 7664,
       "today_api_name": "송채연♥",
       "month_api_name": "송채연♥",
       "matched": true
@@ -97,8 +97,8 @@
       "soop_id": "gks2wl",
       "today": 0,
       "month": 583522,
-      "month_air_time": "75시간 22분",
-      "month_air_minutes": 4522,
+      "month_air_time": "75시간 23분",
+      "month_air_minutes": 4523,
       "today_api_name": "",
       "month_api_name": "앵지",
       "matched": true
@@ -110,8 +110,8 @@
       "soop_id": "yunyeson3015",
       "today": 2791,
       "month": 580087,
-      "month_air_time": "100시간 40분",
-      "month_air_minutes": 6040,
+      "month_air_time": "100시간 41분",
+      "month_air_minutes": 6041,
       "today_api_name": "애순이",
       "month_api_name": "애순이",
       "matched": true
@@ -123,8 +123,8 @@
       "soop_id": "0929kelly",
       "today": 9925,
       "month": 549905,
-      "month_air_time": "139시간 16분",
-      "month_air_minutes": 8356,
+      "month_air_time": "139시간 17분",
+      "month_air_minutes": 8357,
       "today_api_name": "이다니♥",
       "month_api_name": "이다니♥",
       "matched": true
@@ -135,9 +135,9 @@
       "match": "여을♥",
       "soop_id": "kaja0011",
       "today": 6414,
-      "month": 534291,
-      "month_air_time": "82시간 44분",
-      "month_air_minutes": 4964,
+      "month": 534502,
+      "month_air_time": "82시간 45분",
+      "month_air_minutes": 4965,
       "today_api_name": "여을♥",
       "month_api_name": "여을♥",
       "matched": true
@@ -162,8 +162,8 @@
       "soop_id": "rhf104",
       "today": 5720,
       "month": 329673,
-      "month_air_time": "70시간 28분",
-      "month_air_minutes": 4228,
+      "month_air_time": "70시간 29분",
+      "month_air_minutes": 4229,
       "today_api_name": "란란_",
       "month_api_name": "란란_",
       "matched": true
@@ -253,8 +253,8 @@
       "soop_id": "lcy011027",
       "today": 14372,
       "month": 213414,
-      "month_air_time": "76시간 31분",
-      "month_air_minutes": 4591,
+      "month_air_time": "76시간 32분",
+      "month_air_minutes": 4592,
       "today_api_name": "BJ채리",
       "month_api_name": "BJ채리",
       "matched": true
@@ -264,10 +264,10 @@
       "name": "효짱",
       "match": "효짱♥",
       "soop_id": "queen030",
-      "today": 10911,
-      "month": 201674,
-      "month_air_time": "69시간 53분",
-      "month_air_minutes": 4193,
+      "today": 12325,
+      "month": 201804,
+      "month_air_time": "69시간 54분",
+      "month_air_minutes": 4194,
       "today_api_name": "효짱♥",
       "month_api_name": "효짱♥",
       "matched": true
@@ -292,8 +292,8 @@
       "soop_id": "imducko3o",
       "today": 3180,
       "month": 186616,
-      "month_air_time": "158시간 20분",
-      "month_air_minutes": 9500,
+      "month_air_time": "158시간 21분",
+      "month_air_minutes": 9501,
       "today_api_name": "오리꿍_",
       "month_api_name": "오리꿍_",
       "matched": true
@@ -305,8 +305,8 @@
       "soop_id": "tjgpdus97",
       "today": 3681,
       "month": 183265,
-      "month_air_time": "62시간 28분",
-      "month_air_minutes": 3748,
+      "month_air_time": "62시간 29분",
+      "month_air_minutes": 3749,
       "today_api_name": "요닝♡.",
       "month_api_name": "요닝♡.",
       "matched": true
@@ -357,8 +357,8 @@
       "soop_id": "luaa0803",
       "today": 7959,
       "month": 108091,
-      "month_air_time": "77시간 50분",
-      "month_air_minutes": 4670,
+      "month_air_time": "77시간 51분",
+      "month_air_minutes": 4671,
       "today_api_name": "히나_♥",
       "month_api_name": "히나_♥",
       "matched": true
@@ -374,19 +374,6 @@
       "month_air_minutes": 2933,
       "today_api_name": "아윤♡",
       "month_api_name": "아윤♡",
-      "matched": true
-    },
-    {
-      "part": "스타부",
-      "name": "박재혁",
-      "match": "박재혁;;;",
-      "soop_id": "rlekfu6",
-      "today": 0,
-      "month": 93506,
-      "month_air_time": "72시간 54분",
-      "month_air_minutes": 4374,
-      "today_api_name": "",
-      "month_api_name": "박재혁;;;",
       "matched": true
     },
     {
@@ -469,6 +456,19 @@
     },
     {
       "part": "스타부",
+      "name": "박재혁",
+      "match": "박재혁;;;",
+      "soop_id": "rlekfu6",
+      "today": 0,
+      "month": 0,
+      "month_air_time": "72시간 54분",
+      "month_air_minutes": 4374,
+      "today_api_name": "",
+      "month_api_name": "",
+      "matched": false
+    },
+    {
+      "part": "스타부",
       "name": "이영호",
       "match": "FlaSh.이영호",
       "soop_id": "byflash",
@@ -485,14 +485,14 @@
     "name": "철구형",
     "today": "12,392",
     "month": "4,462,575",
-    "air_time": "63시간 19분",
-    "air_minutes": 3799,
+    "air_time": "63시간 20분",
+    "air_minutes": 3800,
     "soop_id": "y1026"
   },
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "378,650",
+    "avg": "378,667",
     "leader": "송채연",
     "leader_sales": "683,807",
     "members": [
@@ -501,8 +501,8 @@
         "name": "송채연",
         "today": "4,761",
         "month": "683,807",
-        "air_time": "127시간 43분",
-        "air_minutes": 7663,
+        "air_time": "127시간 44분",
+        "air_minutes": 7664,
         "width": "100%",
         "first": true,
         "color": "#7dc7ff"
@@ -534,8 +534,8 @@
         "name": "애순이",
         "today": "2,791",
         "month": "580,087",
-        "air_time": "100시간 40분",
-        "air_minutes": 6040,
+        "air_time": "100시간 41분",
+        "air_minutes": 6041,
         "width": "84%",
         "first": false,
         "color": "#7dc7ff"
@@ -545,8 +545,8 @@
         "name": "이다니",
         "today": "9,925",
         "month": "549,905",
-        "air_time": "139시간 16분",
-        "air_minutes": 8356,
+        "air_time": "139시간 17분",
+        "air_minutes": 8357,
         "width": "80%",
         "first": false,
         "color": "#7dc7ff"
@@ -555,9 +555,9 @@
         "rank": 6,
         "name": "여을",
         "today": "6,414",
-        "month": "534,291",
-        "air_time": "82시간 44분",
-        "air_minutes": 4964,
+        "month": "534,502",
+        "air_time": "82시간 45분",
+        "air_minutes": 4965,
         "width": "78%",
         "first": false,
         "color": "#7dc7ff"
@@ -589,8 +589,8 @@
         "name": "채리",
         "today": "14,372",
         "month": "213,414",
-        "air_time": "76시간 31분",
-        "air_minutes": 4591,
+        "air_time": "76시간 32분",
+        "air_minutes": 4592,
         "width": "31%",
         "first": false,
         "color": "#7dc7ff"
@@ -600,8 +600,8 @@
         "name": "히나",
         "today": "7,959",
         "month": "108,091",
-        "air_time": "77시간 50분",
-        "air_minutes": 4670,
+        "air_time": "77시간 51분",
+        "air_minutes": 4671,
         "width": "15%",
         "first": false,
         "color": "#7dc7ff"
@@ -644,7 +644,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "218,550",
+    "avg": "214,306",
     "leader": "졈니",
     "leader_sales": "614,050",
     "members": [
@@ -675,8 +675,8 @@
         "name": "앵지",
         "today": "0",
         "month": "583,522",
-        "air_time": "75시간 22분",
-        "air_minutes": 4522,
+        "air_time": "75시간 23분",
+        "air_minutes": 4523,
         "width": "95%",
         "first": false,
         "color": "#ffd34f"
@@ -686,8 +686,8 @@
         "name": "란란",
         "today": "5,720",
         "month": "329,673",
-        "air_time": "70시간 28분",
-        "air_minutes": 4228,
+        "air_time": "70시간 29분",
+        "air_minutes": 4229,
         "width": "53%",
         "first": false,
         "color": "#ffd34f"
@@ -750,10 +750,10 @@
       {
         "rank": 10,
         "name": "효짱",
-        "today": "10,911",
-        "month": "201,674",
-        "air_time": "69시간 53분",
-        "air_minutes": 4193,
+        "today": "12,325",
+        "month": "201,804",
+        "air_time": "69시간 54분",
+        "air_minutes": 4194,
         "width": "32%",
         "first": false,
         "color": "#ffd34f"
@@ -774,8 +774,8 @@
         "name": "오리꿍",
         "today": "3,180",
         "month": "186,616",
-        "air_time": "158시간 20분",
-        "air_minutes": 9500,
+        "air_time": "158시간 21분",
+        "air_minutes": 9501,
         "width": "30%",
         "first": false,
         "color": "#ffd34f"
@@ -785,8 +785,8 @@
         "name": "요닝",
         "today": "3,681",
         "month": "183,265",
-        "air_time": "62시간 28분",
-        "air_minutes": 3748,
+        "air_time": "62시간 29분",
+        "air_minutes": 3749,
         "width": "29%",
         "first": false,
         "color": "#ffd34f"
@@ -826,17 +826,6 @@
       },
       {
         "rank": 17,
-        "name": "박재혁",
-        "today": "0",
-        "month": "93,506",
-        "air_time": "72시간 54분",
-        "air_minutes": 4374,
-        "width": "15%",
-        "first": false,
-        "color": "#ffd34f"
-      },
-      {
-        "rank": 18,
         "name": "강구열",
         "today": "0",
         "month": "83,403",
@@ -847,7 +836,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 19,
+        "rank": 18,
         "name": "남수댕",
         "today": "0",
         "month": "40,294",
@@ -858,7 +847,7 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 20,
+        "rank": 19,
         "name": "짭호",
         "today": "0",
         "month": "35,178",
@@ -869,12 +858,23 @@
         "color": "#ffd34f"
       },
       {
-        "rank": 21,
+        "rank": 20,
         "name": "김택용",
         "today": "0",
         "month": "0",
         "air_time": "-",
         "air_minutes": 0,
+        "width": "0%",
+        "first": false,
+        "color": "#ffd34f"
+      },
+      {
+        "rank": 21,
+        "name": "박재혁",
+        "today": "0",
+        "month": "0",
+        "air_time": "72시간 54분",
+        "air_minutes": 4374,
         "width": "0%",
         "first": false,
         "color": "#ffd34f"
