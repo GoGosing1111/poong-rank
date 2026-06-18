@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 12:41:18",
+  "updated_at": "2026-06-18 13:05:10",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -95,11 +95,11 @@
       "name": "앵지",
       "match": "앵지",
       "soop_id": "gks2wl",
-      "today": 568,
+      "today": 0,
       "month": 583522,
       "month_air_time": "75시간 20분",
       "month_air_minutes": 4520,
-      "today_api_name": "앵지",
+      "today_api_name": "",
       "month_api_name": "앵지",
       "matched": true
     },
@@ -186,10 +186,10 @@
       "name": "빵훈이",
       "match": "빵훈이.",
       "soop_id": "vlfvlf789",
-      "today": 3772,
-      "month": 298294,
-      "month_air_time": "99시간 12분",
-      "month_air_minutes": 5952,
+      "today": 3872,
+      "month": 298404,
+      "month_air_time": "99시간 36분",
+      "month_air_minutes": 5976,
       "today_api_name": "빵훈이",
       "month_api_name": "빵훈이",
       "matched": true
@@ -644,7 +644,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "218,322",
+    "avg": "218,327",
     "leader": "졈니",
     "leader_sales": "614,050",
     "members": [
@@ -673,7 +673,7 @@
       {
         "rank": 3,
         "name": "앵지",
-        "today": "568",
+        "today": "0",
         "month": "583,522",
         "air_time": "75시간 20분",
         "air_minutes": 4520,
@@ -706,10 +706,10 @@
       {
         "rank": 6,
         "name": "빵훈이",
-        "today": "3,772",
-        "month": "298,294",
-        "air_time": "99시간 12분",
-        "air_minutes": 5952,
+        "today": "3,872",
+        "month": "298,404",
+        "air_time": "99시간 36분",
+        "air_minutes": 5976,
         "width": "48%",
         "first": false,
         "color": "#ffd34f"
