@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 09:57:04",
+  "updated_at": "2026-06-18 10:05:27",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -396,8 +396,8 @@
       "soop_id": "kuyol",
       "today": 818,
       "month": 83403,
-      "month_air_time": "61시간 23분",
-      "month_air_minutes": 3683,
+      "month_air_time": "61시간 31분",
+      "month_air_minutes": 3691,
       "today_api_name": "910★강구열",
       "month_api_name": "910★강구열",
       "matched": true
@@ -840,8 +840,8 @@
         "name": "강구열",
         "today": "818",
         "month": "83,403",
-        "air_time": "61시간 23분",
-        "air_minutes": 3683,
+        "air_time": "61시간 31분",
+        "air_minutes": 3691,
         "width": "13%",
         "first": false,
         "color": "#ffd34f"
