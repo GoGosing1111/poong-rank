@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-19 03:48:44",
+  "updated_at": "2026-06-19 04:05:02",
   "total": 37,
-  "live_count": 6,
+  "live_count": 5,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -294,11 +294,11 @@
       "part": "스타부",
       "soop_id": "imducko3o",
       "soop_url": "https://www.sooplive.com/station/imducko3o",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294911897",
-      "title": "[씨나인★] 오리꿍 사랑니 부음 주의...",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
