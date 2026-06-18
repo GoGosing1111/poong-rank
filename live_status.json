@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 22:05:03",
+  "updated_at": "2026-06-18 23:05:02",
   "total": 37,
   "live_count": 23,
   "members": {
@@ -60,11 +60,11 @@
       "part": "스타부",
       "soop_id": "vlfvlf789",
       "soop_url": "https://www.sooplive.com/station/vlfvlf789",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294920073",
-      "title": "빵훈 하....한번만 살려주세요 씨나인",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/vlfvlf789/station"
     },
@@ -99,11 +99,11 @@
       "part": "스타부",
       "soop_id": "kuyol",
       "soop_url": "https://www.sooplive.com/station/kuyol",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294924347",
+      "title": "[씨나인] 오늘도 신나게 ^^!!!!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/kuyol/station"
     },
@@ -142,7 +142,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294920315",
-      "title": "[씨나인] 왜냐맨  안녕하세연 ^^ 재밌는거하네",
+      "title": "[씨나인] 왜냐맨  K리그 오랜만에 출전 ^^ 펀딩 있나연?",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jmc06170/station"
     },
@@ -194,7 +194,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294919165",
-      "title": "씨나인💖🏆망수니 짜장면+탕수육+짬뽕국물 ㅇㅅㅇ /",
+      "title": "씨나인💖🏆망수니 vs 슬돌이 32",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yjk011599/station"
     },
@@ -220,7 +220,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294915061",
-      "title": "씨나인⭐]다이어트2일차 젖엇다",
+      "title": "씨나인⭐]다이어트2일차 스타2연승 노방종..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -246,7 +246,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294918829",
-      "title": "[씨나인⭐]요닝 닝한림 철구 참교육갑니다",
+      "title": "[씨나인⭐]요닝 ㅇㅅㅇ",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/tjgpdus97/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294915305",
-      "title": "씨나인:학생회장]앵플단 5000개 vs 역팬 500개 롤 1:1",
+      "title": "씨나인:학생회장]예실 3/2",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
@@ -337,7 +337,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294913239",
-      "title": "[씨나인:신입] 큰일이닭.. 진짜 비상입니다 d-2",
+      "title": "[씨나인:신입] 큰일이닭.. 진짜 비상입니다ㅠㅠㅠㅠㅠ d-2",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jfiary0718/station"
     },
@@ -428,7 +428,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294914095",
-      "title": "[씨나인 : 시녀2] 총쏘게 해주세연",
+      "title": "[씨나인 : 시녀2] 페이는 조조",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunyeson3015/station"
     },
@@ -441,7 +441,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294921805",
-      "title": "[씨나인:하녀1] 위아래,,ㄷㄷ♡",
+      "title": "[씨나인:하녀1] 떼인공약있으신가요? 대신 복수해드립니다♡ 난사데이",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/ayoona/station"
     },
