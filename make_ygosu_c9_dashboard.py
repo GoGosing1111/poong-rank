@@ -811,8 +811,8 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   <div class='popup-box'>
     <div class='popup-head'>
       <span class='badge'>⚡ CNINE DASHBOARD GUIDE</span>
-      <div class='title'>현황판 설명서<br></div>
-      <div class='sub'>타퀴 접근 사절</div>
+      <div class='title'>Welcome Cnine<br></div>
+      <div class='sub'>Space for Cine's fans</div>
     </div>
     <div class='popup-body'>
       <div class='grid'>

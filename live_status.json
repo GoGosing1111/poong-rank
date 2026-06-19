@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 09:05:02",
+  "updated_at": "2026-06-19 12:07:47",
   "total": 37,
   "live_count": 5,
   "members": {
@@ -21,11 +21,11 @@
       "part": "스타부",
       "soop_id": "jk890202",
       "soop_url": "https://www.sooplive.com/station/jk890202",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294917973",
-      "title": "씨나인 김윤중) 대한민국 vs 멕시코 배트맨걸고보기",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/jk890202/station"
     },
@@ -203,11 +203,11 @@
       "part": "스타부",
       "soop_id": "queen030",
       "soop_url": "https://www.sooplive.com/station/queen030",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294931109",
+      "title": "[씨나인⭐] 월드컵 보러 와찜다",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/queen030/station"
     },
@@ -285,7 +285,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294929481",
-      "title": "씨나인⭐ 모닝스타하다가 저녁에 다시올게",
+      "title": "씨나인⭐ 러지테란",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yunhee1222/station"
     },
@@ -311,7 +311,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294929105",
-      "title": "[씨나인:신입] 내일 첫출근이에여,, 진짜 비상입니다 ㅠㅠ",
+      "title": "[씨나인:신입] 운동화좀 사고올게여! 20일 첫출근 망강부!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
