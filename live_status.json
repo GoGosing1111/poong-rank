@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 19:50:04",
+  "updated_at": "2026-06-19 20:05:03",
   "total": 37,
   "live_count": 21,
   "members": {
@@ -34,11 +34,11 @@
       "part": "스타부",
       "soop_id": "wjddlf4695",
       "soop_url": "https://www.sooplive.com/station/wjddlf4695",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294935007",
-      "title": "씨나인 짭호 vs 2026족구 맛보기",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/wjddlf4695/station"
     },
@@ -194,7 +194,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294939741",
-      "title": "씨나인💖🏆망수니 저그코치테스트 .. ? ?",
+      "title": "씨나인💖🏆망수니 보리굴비정식 > < !!!!!!!!!!!!",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/yjk011599/station"
     },
@@ -259,7 +259,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294940631",
-      "title": "씨나인:학생회장❤]8시 45PL 첫출격",
+      "title": "씨나인:학생회장❤]8시 45PL 입장료 귀인 구합니다..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/gks2wl/station"
     },
@@ -298,7 +298,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294936159",
-      "title": "[씨나인★] 저그반 코치님 오시는건...가여..!!",
+      "title": "[씨나인★] 사랑니 부음 주의...",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
@@ -311,7 +311,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294929105",
-      "title": "[씨나인:신입]8시에 올게엽 보고이떠",
+      "title": "[씨나인:신입]낼 첫출근 ㅠㅠㅠㅠㅠㅠㅠ 살려조 저격데이...",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/0929kelly/station"
     },
@@ -398,11 +398,11 @@
       "part": "엑셀부",
       "soop_id": "chocho12",
       "soop_url": "https://www.sooplive.com/station/chocho12",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294942387",
+      "title": "[씨나인 : 황족] 내일 저격데이 총알좀 굽신굽신..",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
