@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-20 01:05:04",
+  "updated_at": "2026-06-20 01:44:11",
   "total": 37,
-  "live_count": 17,
+  "live_count": 15,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -220,7 +220,7 @@
       "status": "LIVE",
       "reason": "broad_object_found",
       "broad_no": "294951331",
-      "title": "씨나인⭐]안녕하세여 란란아닙니다",
+      "title": "씨나인⭐]진득한 스타디 스폰환영 (란란아님)",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/rhf104/station"
     },
@@ -294,11 +294,11 @@
       "part": "스타부",
       "soop_id": "imducko3o",
       "soop_url": "https://www.sooplive.com/station/imducko3o",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294947917",
-      "title": "[씨나인★] 현재 방 온도 35도",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/imducko3o/station"
     },
@@ -398,11 +398,11 @@
       "part": "엑셀부",
       "soop_id": "chocho12",
       "soop_url": "https://www.sooplive.com/station/chocho12",
-      "is_live": true,
-      "status": "LIVE",
-      "reason": "broad_object_found",
-      "broad_no": "294942387",
-      "title": "[씨나인 : 황족] 내일 저격데이 총알좀 굽신굽신..",
+      "is_live": false,
+      "status": "OFF",
+      "reason": "no_broad_object",
+      "broad_no": "",
+      "title": "",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/chocho12/station"
     },
