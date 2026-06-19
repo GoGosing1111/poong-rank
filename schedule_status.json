@@ -1,30 +1,40 @@
 {
   "ok": true,
-  "updated_at": "2026-06-19 12:09:46",
+  "updated_at": "2026-06-19 19:52:03",
   "source": "https://www.cnine.kr/timeline",
-  "count": 8,
-  "today_count": 2,
+  "count": 9,
+  "today_count": 3,
   "future_count": 6,
   "items": [
     {
-      "title": "스타부 : 4티어 PL <feat. 앵지>",
+      "title": "스타부 : 4-5티어 PL <feat. 앵지>",
       "date": "2026.06.19 (금)",
       "raw_date": "2026-06-19",
-      "time": "시간미정",
-      "datetime": "2026.06.19 (금) · ⏰ 시간미정",
+      "time": "20:00",
+      "datetime": "2026.06.19 (금) · ⏰ 20:00",
       "dday": "TODAY",
       "type": "스타",
-      "source_line": "2026년 06월 19일(금)"
+      "source_line": "2026년 06월 19일(금) 20:00 ~ 23:59"
     },
     {
-      "title": "스타부 : 4티어 PL <feat. 졈니>",
+      "title": "스타부 : 4-5티어 PL <feat. 오조은>",
       "date": "2026.06.19 (금)",
       "raw_date": "2026-06-19",
-      "time": "시간미정",
-      "datetime": "2026.06.19 (금) · ⏰ 시간미정",
+      "time": "20:00",
+      "datetime": "2026.06.19 (금) · ⏰ 20:00",
       "dday": "TODAY",
       "type": "스타",
-      "source_line": "2026년 06월 19일(금)"
+      "source_line": "2026년 06월 19일(금) 20:00 ~ 23:59"
+    },
+    {
+      "title": "스타부 : 4-5티어 PL <feat. 졈니>",
+      "date": "2026.06.19 (금)",
+      "raw_date": "2026-06-19",
+      "time": "20:00",
+      "datetime": "2026.06.19 (금) · ⏰ 20:00",
+      "dday": "TODAY",
+      "type": "스타",
+      "source_line": "2026년 06월 19일(금) 20:00 ~ 23:59"
     },
     {
       "title": "엑셀<2026 시즌6> 씨나인 댄스부 : 엑셀 1회차 - 난사데이",
