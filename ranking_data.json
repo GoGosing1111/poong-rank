@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 08:53:21",
+  "updated_at": "2026-06-19 09:05:22",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -45,8 +45,8 @@
       "soop_id": "dlswldus107",
       "today": 20427,
       "month": 715829,
-      "month_air_time": "87시간 27분",
-      "month_air_minutes": 5247,
+      "month_air_time": "87시간 39분",
+      "month_air_minutes": 5259,
       "today_api_name": "인지연JYEON",
       "month_api_name": "인지연JYEON",
       "matched": true
@@ -134,10 +134,10 @@
       "name": "이다니",
       "match": "이다니♥",
       "soop_id": "0929kelly",
-      "today": 450,
-      "month": 554144,
-      "month_air_time": "145시간 21분",
-      "month_air_minutes": 8721,
+      "today": 827,
+      "month": 554640,
+      "month_air_time": "145시간 33분",
+      "month_air_minutes": 8733,
       "today_api_name": "이다니♥",
       "month_api_name": "이다니♥",
       "matched": true
@@ -149,8 +149,8 @@
       "soop_id": "jkmjkm1236",
       "today": 15243,
       "month": 447906,
-      "month_air_time": "105시간 39분",
-      "month_air_minutes": 6339,
+      "month_air_time": "105시간 51분",
+      "month_air_minutes": 6351,
       "today_api_name": "하이희야♡",
       "month_api_name": "하이희야♡",
       "matched": true
@@ -175,8 +175,8 @@
       "soop_id": "yunhee1222",
       "today": 0,
       "month": 307315,
-      "month_air_time": "68시간 53분",
-      "month_air_minutes": 4133,
+      "month_air_time": "69시간 5분",
+      "month_air_minutes": 4145,
       "today_api_name": "",
       "month_api_name": "깅예솔",
       "matched": true
@@ -225,10 +225,10 @@
       "name": "윤중",
       "match": "윤중",
       "soop_id": "jk890202",
-      "today": 2163,
-      "month": 220570,
-      "month_air_time": "131시간 16분",
-      "month_air_minutes": 7876,
+      "today": 2247,
+      "month": 220654,
+      "month_air_time": "131시간 28분",
+      "month_air_minutes": 7888,
       "today_api_name": "JuM.윤중2",
       "month_api_name": "JuM.윤중2",
       "matched": true
@@ -492,7 +492,7 @@
   "excel": {
     "crew": "엑셀부",
     "rank_badge": "E",
-    "avg": "410,744",
+    "avg": "410,782",
     "leader": "혜루찡",
     "leader_sales": "777,771",
     "members": [
@@ -512,8 +512,8 @@
         "name": "인지연",
         "today": "20,427",
         "month": "715,829",
-        "air_time": "87시간 27분",
-        "air_minutes": 5247,
+        "air_time": "87시간 39분",
+        "air_minutes": 5259,
         "width": "92%",
         "first": false,
         "color": "#7dc7ff"
@@ -554,10 +554,10 @@
       {
         "rank": 6,
         "name": "이다니",
-        "today": "450",
-        "month": "554,144",
-        "air_time": "145시간 21분",
-        "air_minutes": 8721,
+        "today": "827",
+        "month": "554,640",
+        "air_time": "145시간 33분",
+        "air_minutes": 8733,
         "width": "71%",
         "first": false,
         "color": "#7dc7ff"
@@ -567,8 +567,8 @@
         "name": "하이희야",
         "today": "15,243",
         "month": "447,906",
-        "air_time": "105시간 39분",
-        "air_minutes": 6339,
+        "air_time": "105시간 51분",
+        "air_minutes": 6351,
         "width": "57%",
         "first": false,
         "color": "#7dc7ff"
@@ -644,7 +644,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "227,076",
+    "avg": "227,080",
     "leader": "졈니",
     "leader_sales": "614,050",
     "members": [
@@ -697,8 +697,8 @@
         "name": "깅예솔",
         "today": "0",
         "month": "307,315",
-        "air_time": "68시간 53분",
-        "air_minutes": 4133,
+        "air_time": "69시간 5분",
+        "air_minutes": 4145,
         "width": "50%",
         "first": false,
         "color": "#ffd34f"
@@ -728,10 +728,10 @@
       {
         "rank": 8,
         "name": "윤중",
-        "today": "2,163",
-        "month": "220,570",
-        "air_time": "131시간 16분",
-        "air_minutes": 7876,
+        "today": "2,247",
+        "month": "220,654",
+        "air_time": "131시간 28분",
+        "air_minutes": 7888,
         "width": "35%",
         "first": false,
         "color": "#ffd34f"
