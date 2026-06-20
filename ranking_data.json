@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 13:47:54",
+  "updated_at": "2026-06-20 14:05:21",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -123,8 +123,8 @@
       "soop_id": "kaja0011",
       "today": 0,
       "month": 584808,
-      "month_air_time": "92시간 37분",
-      "month_air_minutes": 5557,
+      "month_air_time": "92시간 54분",
+      "month_air_minutes": 5574,
       "today_api_name": "",
       "month_api_name": "여을♥",
       "matched": true
@@ -173,10 +173,10 @@
       "name": "빵훈이",
       "match": "빵훈이.",
       "soop_id": "vlfvlf789",
-      "today": 50598,
-      "month": 376084,
-      "month_air_time": "109시간 38분",
-      "month_air_minutes": 6578,
+      "today": 50618,
+      "month": 376104,
+      "month_air_time": "109시간 55분",
+      "month_air_minutes": 6595,
       "today_api_name": "빵훈이",
       "month_api_name": "빵훈이",
       "matched": true
@@ -331,8 +331,8 @@
       "soop_id": "luaa0803",
       "today": 1435,
       "month": 116164,
-      "month_air_time": "89시간 56분",
-      "month_air_minutes": 5396,
+      "month_air_time": "89시간 57분",
+      "month_air_minutes": 5397,
       "today_api_name": "히나_♥",
       "month_api_name": "히나_♥",
       "matched": true
@@ -545,8 +545,8 @@
         "name": "여을",
         "today": "0",
         "month": "584,808",
-        "air_time": "92시간 37분",
-        "air_minutes": 5557,
+        "air_time": "92시간 54분",
+        "air_minutes": 5574,
         "width": "73%",
         "first": false,
         "color": "#7dc7ff"
@@ -600,8 +600,8 @@
         "name": "히나",
         "today": "1,435",
         "month": "116,164",
-        "air_time": "89시간 56분",
-        "air_minutes": 5396,
+        "air_time": "89시간 57분",
+        "air_minutes": 5397,
         "width": "14%",
         "first": false,
         "color": "#7dc7ff"
@@ -644,7 +644,7 @@
   "star": {
     "crew": "스타부",
     "rank_badge": "S",
-    "avg": "239,237",
+    "avg": "239,238",
     "leader": "졈니",
     "leader_sales": "666,995",
     "members": [
@@ -695,10 +695,10 @@
       {
         "rank": 5,
         "name": "빵훈이",
-        "today": "50,598",
-        "month": "376,084",
-        "air_time": "109시간 38분",
-        "air_minutes": 6578,
+        "today": "50,618",
+        "month": "376,104",
+        "air_time": "109시간 55분",
+        "air_minutes": 6595,
         "width": "56%",
         "first": false,
         "color": "#ffd34f"
