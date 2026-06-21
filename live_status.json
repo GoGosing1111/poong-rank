@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-21 11:05:02",
+  "updated_at": "2026-06-21 12:05:02",
   "total": 37,
-  "live_count": 1,
+  "live_count": 2,
   "members": {
     "y1026": {
       "name": "철구형",
@@ -60,11 +60,11 @@
       "part": "스타부",
       "soop_id": "vlfvlf789",
       "soop_url": "https://www.sooplive.com/station/vlfvlf789",
-      "is_live": false,
-      "status": "OFF",
-      "reason": "no_broad_object",
-      "broad_no": "",
-      "title": "",
+      "is_live": true,
+      "status": "LIVE",
+      "reason": "broad_object_found",
+      "broad_no": "294982693",
+      "title": "빵훈 오늘 중요합니다  [씨나인:웨이터]",
       "viewers": 0,
       "checked_url": "https://bjapi.afreecatv.com/api/vlfvlf789/station"
     },
