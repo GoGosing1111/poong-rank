@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 10:34:28",
+  "updated_at": "2026-06-21 11:05:23",
   "source": "poonggo broadcast ranking HTML v10 + station monthly air time",
   "used_month": "2026-06",
   "api_urls": {
@@ -201,8 +201,8 @@
       "soop_id": "yjk011599",
       "today": 13821,
       "month": 318133,
-      "month_air_time": "105시간 49분",
-      "month_air_minutes": 6349,
+      "month_air_time": "106시간 20분",
+      "month_air_minutes": 6380,
       "today_api_name": "나무늘봉순",
       "month_api_name": "나무늘봉순",
       "matched": true
@@ -719,8 +719,8 @@
         "name": "나무늘봉순",
         "today": "13,821",
         "month": "318,133",
-        "air_time": "105시간 49분",
-        "air_minutes": 6349,
+        "air_time": "106시간 20분",
+        "air_minutes": 6380,
         "width": "45%",
         "first": false,
         "color": "#ffd34f"

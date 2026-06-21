@@ -2,7 +2,7 @@
   
   <div id="section_top" style="position:relative;padding:18px 10px 16px;text-align:center;border:1px solid rgba(90,175,255,.55);border-radius:18px;background:linear-gradient(135deg,rgba(25,125,255,.28),rgba(0,0,0,.70));box-shadow:0 0 18px rgba(40,145,255,.25);">
     <div style="position:absolute;right:10px;top:9px;display:flex;align-items:center;gap:7px;z-index:2;">
-      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-21 06:24</span>
+      <span style="display:inline-block;padding:6px 9px;border-radius:999px;background:rgba(0,18,38,.48);border:1px solid rgba(105,185,255,.35);color:#9ccfff;font-size:11px;font-weight:900;line-height:1;white-space:nowrap;">26-06-21 10:38</span>
       <a href="https://ygosu.com/msg/?m2=write&member=152117" target="_blank" rel="nofollow" style="display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,#2f9bff,#635bff);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:11px;font-weight:1000;text-decoration:none;line-height:1;box-shadow:0 0 12px rgba(47,155,255,.30);">📩 관리자 문의</a>
     </div>
     <img src="https://keyman1335-maker.github.io/poong-rank/assets//crew_logos/cninelogo.png?v=9999" style="display:block;width:112px;max-width:45%;height:auto;margin:0 auto 8px;filter:drop-shadow(0 0 8px rgba(255,255,255,.30));">
@@ -147,7 +147,7 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;font-
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
 <span style="color:#dff2ff;">전체 멤버</span><span style="color:#7ec8ff;text-align:right;">36명</span></div>
   <div style="display:flex;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;font-weight:900;">
-<span style="color:#dff2ff;">현재 LIVE</span><span style="color:#7ec8ff;text-align:right;">4명</span></div>
+<span style="color:#dff2ff;">현재 LIVE</span><span style="color:#7ec8ff;text-align:right;">1명</span></div>
   
 <div style="margin-top:9px;border:1px solid rgba(255,211,79,.32);border-radius:15px;background:linear-gradient(135deg,rgba(255,211,79,.10),rgba(0,0,0,.22));overflow:hidden;box-sizing:border-box;">
   <div style="padding:9px 11px;background:rgba(0,0,0,.20);border-bottom:1px solid rgba(255,211,79,.22);color:#7ec8ff;font-size:13px;font-weight:1000;text-align:left;text-shadow:0 2px 0 #000;">📢 특이사항</div>
@@ -317,7 +317,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
 &lt;/style&gt;
 &lt;div class='wrap'&gt;
   &lt;form class='row' method='get' action='https://keyman1335-maker.github.io/poong-rank/c9_nick_search_results.html' target='_blank'&gt;
-   &lt;input type='hidden' name='v' value='20260621062426'&gt;
+   &lt;input type='hidden' name='v' value='20260621103849'&gt;
     &lt;input name='nick' class='inp' placeholder='닉네임 입력 예) 경화수월' autocomplete='off' required&gt;
     &lt;button class='btn' type='submit'&gt;검색&lt;/button&gt;
   &lt;/form&gt;
@@ -338,7 +338,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   </summary>
   <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid #2f9bff;border-radius:16px;box-shadow:0 0 13px #2f9bff33;box-sizing:border-box;text-align:left;overflow:hidden;">
     
-<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-21 06:05:23 · 기준 2026-06</div>
+<div style="padding:8px 8px;margin-bottom:8px;border-radius:12px;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.20);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">갱신 2026-06-21 10:34:28 · 기준 2026-06</div>
 
 <div style="margin-bottom:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,211,79,.45);background:linear-gradient(135deg,rgba(255,211,79,.16),rgba(0,0,0,.28));box-shadow:0 0 14px rgba(255,211,79,.18);text-align:center;">
   <div style="padding:12px;background:linear-gradient(135deg,#7ec8ff,#4a3100);color:#fff;font-size:20px;font-weight:1000;text-shadow:0 2px 0 #000;">👑 수장 별풍선</div>
@@ -372,7 +372,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="padding:14px;background:linear-gradient(135deg,#2f9bff,#2a1800 70%,#060606);text-align:center;">
     <div style="color:#fff;font-size:26px;font-weight:1000;text-shadow:0 2px 0 #000;">엑셀부</div>
     <div style="margin-top:6px;color:#dff2ff;font-size:12px;font-weight:900;">월간 평균 별풍선</div>
-    <div style="color:#dff2ff;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">432,625</div>
+    <div style="color:#dff2ff;font-size:30px;font-weight:1000;text-shadow:0 2px 0 #000,0 0 8px rgba(255,215,110,.55);">433,876</div>
   </div>
   <div style="display:flex;background:#0b0b0b;color:#d8c99b;font-size:11px;font-weight:1000;border-bottom:1px solid rgba(255,255,255,.08);">
     <div style="width:38px;padding:8px 4px;text-align:center;">순위</div>
@@ -392,23 +392,23 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥈</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">인지연</div>
-    <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">7,539</div>
-    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">-</div>
-    <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">762,302</div>
+    <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">17,775</div>
+    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">106시간 18분</div>
+    <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">774,058</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(45,145,255,.12);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">🥉</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">애순이</div>
     <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
-    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">119시간 8분</div>
+    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">120시간 14분</div>
     <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">753,359</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">4</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">송채연</div>
-    <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">13,628</div>
-    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">142시간 48분</div>
-    <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">716,352</div>
+    <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">18,131</div>
+    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">143시간 8분</div>
+    <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">720,855</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">5</div>
@@ -428,7 +428,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">7</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">하이희야</div>
     <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">0</div>
-    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">-</div>
+    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">123시간 20분</div>
     <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">468,067</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -542,7 +542,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
     <div style="width:38px;padding:9px 4px;text-align:center;color:#7ec8ff;">7</div>
     <div style="flex:1;min-width:0;padding:9px 4px;text-align:left;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">나무늘봉순</div>
     <div style="width:64px;padding:9px 4px;text-align:right;color:#7ec8ff;white-space:nowrap;">13,821</div>
-    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">101시간 20분</div>
+    <div style="width:78px;padding:9px 4px;text-align:right;color:#ffd34f;white-space:nowrap;font-size:12px;">105시간 49분</div>
     <div style="width:90px;padding:9px 8px;text-align:right;color:#dff2ff;white-space:nowrap;">318,133</div>
   </div>
   <div style="display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015);font-weight:900;">
@@ -662,7 +662,7 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   </summary>
   <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid #19c2ff;border-radius:16px;box-shadow:0 0 13px #19c2ff33;box-sizing:border-box;text-align:left;overflow:hidden;">
     <div style="padding:9px 8px;margin-bottom:8px;border-radius:12px;background:rgba(255,255,255,.045);color:#dff2ff;font-size:12px;font-weight:900;text-align:center;">
-전체 36명 · 수장 1명 · 스타부 22명 · 엑셀부 13명 · LIVE 4명
+전체 36명 · 수장 1명 · 스타부 22명 · 엑셀부 13명 · LIVE 1명
 </div>
 <details open style="margin:10px 0 13px;padding:0;border:1px solid #2f9bff;border-radius:18px;background:#071426;overflow:hidden;box-sizing:border-box;box-shadow:0 0 14px #2f9bff73;">
   <summary style="list-style:none;cursor:pointer;padding:14px 12px;background:linear-gradient(180deg,#12345c,#071526);color:#fff;font-size:19px;font-weight:1000;text-align:center;text-shadow:0 0 8px rgba(80,170,255,.85),0 2px 0 #000;border-bottom:2px solid #2f9bff;">
@@ -919,36 +919,6 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
 <div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
     <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
-    <span style="padding:3px 6px;border-radius:999px;background:#1088ff;color:#fff;font-size:10px;font-weight:1000;">LIVE</span>
-  </div>
-  <img src="https://profile.img.sooplive.com/LOGO/jf/jfiary0718/jfiary0718.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
-  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">송채연</div>
-  <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">신입</div>
-  <a href="https://www.sooplive.com/station/jfiary0718" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
-</div>
-<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
-    <span style="padding:3px 6px;border-radius:999px;background:#1088ff;color:#fff;font-size:10px;font-weight:1000;">LIVE</span>
-  </div>
-  <img src="https://profile.img.sooplive.com/LOGO/dl/dlswldus107/dlswldus107.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
-  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">인지연</div>
-  <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">귀족</div>
-  <a href="https://www.sooplive.com/station/dlswldus107" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
-</div>
-<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
-    <span style="padding:3px 6px;border-radius:999px;background:#1088ff;color:#fff;font-size:10px;font-weight:1000;">LIVE</span>
-  </div>
-  <img src="https://profile.img.sooplive.com/LOGO/yu/yunyeson3015/yunyeson3015.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
-  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">애순이</div>
-  <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">시녀2</div>
-  <a href="https://www.sooplive.com/station/yunyeson3015" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
-</div>
-<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
     <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
   </div>
   <img src="https://profile.img.sooplive.com/LOGO/09/0929kelly/0929kelly.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
@@ -971,6 +941,16 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
     <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
     <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
   </div>
+  <img src="https://profile.img.sooplive.com/LOGO/jf/jfiary0718/jfiary0718.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">송채연</div>
+  <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">신입</div>
+  <a href="https://www.sooplive.com/station/jfiary0718" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
+    <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
+  </div>
   <img src="https://profile.img.sooplive.com/LOGO/le/leeso0403/leeso0403.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">체온</div>
   <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">휴직</div>
@@ -985,6 +965,16 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">하이희야</div>
   <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">시녀장</div>
   <a href="https://www.sooplive.com/station/jkmjkm1236" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
+    <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
+  </div>
+  <img src="https://profile.img.sooplive.com/LOGO/dl/dlswldus107/dlswldus107.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">인지연</div>
+  <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">귀족</div>
+  <a href="https://www.sooplive.com/station/dlswldus107" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
 </div>
 <div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
@@ -1015,6 +1005,16 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">여을</div>
   <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">신입</div>
   <a href="https://www.sooplive.com/station/kaja0011" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
+</div>
+<div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+    <span style="padding:3px 7px;border-radius:999px;background:rgba(45,145,255,.18);border:1px solid rgba(90,175,255,.35);color:#fff;font-size:10px;font-weight:900;">엑셀부</span>
+    <span style="padding:3px 6px;border-radius:999px;background:#333;color:#fff;font-size:10px;font-weight:1000;">OFF</span>
+  </div>
+  <img src="https://profile.img.sooplive.com/LOGO/yu/yunyeson3015/yunyeson3015.jpg" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #7ec8ff;background:#111;box-shadow:0 0 10px rgba(80,170,255,.35);">
+  <div style="margin-top:6px;color:#fff;font-size:14px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 0 #000;">애순이</div>
+  <div style="margin-top:3px;color:#dff2ff;font-size:10px;font-weight:1000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #000;">시녀2</div>
+  <a href="https://www.sooplive.com/station/yunyeson3015" target="_blank" style="display:inline-block;margin-top:6px;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2b88df;color:#fff;font-size:11px;font-weight:900;text-decoration:none;">SOOP</a>
 </div>
 <div style="display:inline-block;vertical-align:top;width:48%;margin:0 .6% 8px;padding:9px 6px;border-radius:14px;background:rgba(0,0,0,.26);border:1px solid rgba(90,175,255,.24);text-align:center;box-sizing:border-box;overflow:hidden;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
@@ -1057,6 +1057,78 @@ body{margin:0;background:#071426;color:#fff;font-family:Arial,'Malgun Gothic',sa
   </summary>
   <div style="display:block;width:100%;margin:9px 0 12px 0;padding:10px;background:#081525;border:1px solid #ff4b6e;border-radius:16px;box-shadow:0 0 13px #ff4b6e33;box-sizing:border-box;text-align:left;overflow:hidden;">
     
+<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
+  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
+    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">빵훈이</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">빵가</span>
+    </div>
+  </summary>
+  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">여윽시 대나인 어제 액셀 플해주신 모든분들 감사합니다
+우리 도링이형 레이디누나 꿀단지형 플해주셔서
+너무 감사합니다
+오늘 버튜버VS인간 컨텐츠 있어서 일단 저는
+11시30분안에 키겠습니다
+
+https://www.sooplive.com/station/vlfvlf789/post/199260425</div>
+  </div>
+</details>
+<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
+  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
+    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">이다니</span>
+      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">✌️2~다니 공약명단!!✌️</span>
+    </div>
+  </summary>
+  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
+    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">다플단 앗뇽❤️
+ 
+오늘 일회차 정말 정신이 하나도 없어서,,
+연락도 제대로 못하고,,,
+나 백댄서 더블링 정말 열심히 하느랴
+배 꼬르르르륵 거리는중이야
+흑흑
+ 
+그래도 정말 4개월만에 또 이렇게
+무대뛰니깐 넘 신났다요 히히히
+ 
+공약은!!!!!!!!!!!!
+ 
+요청시 가드리는거라!
+ 
+기존 다플단분들은 제가 알아서할게여 ^^
+어차피 제가 알아서 하니깐여~
+새로 플해주신분들만!
+요청 해주세요!!!!!!!!!!!!!!!
+(요청필수임돳!!!!!!!!!!!!!!)
+ 
+오늘 역대급 영수증을 찍었는데!
+ 
+아갈? 못온사람? 도 많았지만!
+온사람들에게 박수 짝짝짝❤️
+ 
+
+ 
+긴 영수증 갖고싶었는데
+선물해줘서 고마옹 히히히
+ 
+무려!!!! 161명!!!!!!!!!!!!!!
+ 
+200명은 아숩게됐다,,흑
+ 
+앞으로도 긴영수증 마니마니 만들고싶다!!!
+ 
+다플단 오늘 고생해따요❤️
+ 
+
+ 
+ 
+ 
+
+https://www.sooplive.com/station/0929kelly/post/199253417</div>
+  </div>
+</details>
 <details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
   <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:8px;min-width:0;">
@@ -1302,131 +1374,6 @@ https://www.sooplive.com/station/yunyeson3015/post/199241785</div>
 https://www.sooplive.com/station/ayoona/post/199240917</div>
   </div>
 </details>
-<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
-  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
-    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">요닝</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">하이디라오 먹으로</span>
-    </div>
-  </summary>
-  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">갑니당 
-효짱언니방송으로 소소히게
-항거같아용 
-이따 효짱방 ㄱㄱㄱㄱㄱㄱ
-
-https://www.sooplive.com/station/tjgpdus97/post/199238719</div>
-  </div>
-</details>
-<details style="margin:0 0 9px;padding:0;border:1px solid #2f9bff;border-radius:15px;background:linear-gradient(135deg,rgba(45,145,255,.12),rgba(0,0,0,.24));overflow:hidden;box-shadow:0 0 10px rgba(47,155,255,.16);box-sizing:border-box;">
-  <summary style="list-style:none;cursor:pointer;padding:11px 12px;background:rgba(12,12,12,.92);border-bottom:1px solid rgba(90,175,255,.30);box-sizing:border-box;">
-    <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-      <span style="flex:0 0 auto;display:inline-block;padding:5px 8px;border-radius:999px;background:#081c33;border:1px solid #2f9bff;color:#fff;font-size:11px;font-weight:1000;text-shadow:0 1px 0 #000;max-width:92px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">혜루찡</span>
-      <span style="flex:1 1 auto;min-width:0;color:#fff;font-size:16px;line-height:1.35;font-weight:1000;letter-spacing:-.4px;text-shadow:0 2px 0 #000,0 0 8px rgba(80,170,255,.42);word-break:keep-all;">2차 1시9분 어셈블 신호탄 : 티야 난사 가보자아아!! 🔫</span>
-    </div>
-  </summary>
-  <div style="padding:10px 11px 12px;background:#090909;box-sizing:border-box;">
-    <div style="margin-top:0;padding:12px;border-radius:13px;background:rgba(0,0,0,.24);color:#f3f9ff;font-size:13px;line-height:1.62;word-break:break-word;box-sizing:border-box;">나 난사당햇어어어!!!!!
-보고만있을거야?!?!😎
-난사가자아아아 반대로  공격가보쟈!!
-아직안온 혜플단들 다나와주세요!
-보고있는 혜플단분들 나와주어어어!!
-
-📢 [저격데이 컨텐츠 공지]
- 
-1️⃣ 기본 정산 방식
-순위에 따른 직급 프리데이 퍼센트 적용 (멤버 총합 55%)
- 
-2️⃣ 저격 규칙 (총알 시스템)
-별풍선 1만 개당 원하는 멤버의 일급 10만 원을 뺏어올 수 있습니다.
-상한선 & 제한: 인당 뺏길 수 있는 최대 벌금은 1,000만 원입니다. (1,000만 원을 모두 뺏긴 멤버는 더 이상 저격 불가)
- 
- 
-신규 기능: 🎯 스나이퍼 (고정 조준)
-- 원하는 멤버 1명을 고정 조준해 둘 수 있는 기능입니다.
-효과: 스나이퍼를 설정해 두면, 이후
-본인에게 별풍선이 터져 총알이 생길 때마다 즉시 조준 대상의 상금을 자동으로 뺏어옵니다.
- 
- 
- 
-오늘의 이벤트와 뉴시그 많관부!!
- 
-[  혜루의 뉴시그 ]
- 
- 
-11952 구해줘,도링
-해짱님의 3번째시그!
-이번에 해장님이 이벤트를 걸어주셔서
-자신감이없을뻔한 회차에 힘을낼수있었습니다!
-이번에 뉴시그도 많이 사랑받을수있게 많관부!!
- 
- 
- 
- 
-30020 빅호구모오?
-드디어 정해진 부해장님시그
-3번째 모오의 열혈시그 !!!!!
-비싸지만... 그래두 모오 혼자만 쓰는일이 없길바라며..
- 모오시그도 많관부우!!
- 
- 
- 
- 
-[  변경시그 ] 
- 
- 
-10080 야매형
- 
- 
-=============== 이벤트 ===============
- 
- 
-그리고 이번에만있을 이벤트!!!!!
-한정판 씨나인 바람막이
-요즘같이  비오는날,에어컨바람에 추울때 아주좋은
-잠바입니다!
-현재...마니 치열하지않습니다아아!!
-많관부우우!!!!
- 
- 
-* 기사단 원하시면 4K 직캠 영상도 갑니다!!!! *
- 
- 
-잘하는시그/하고싶은시그는
-현재 변경 삭제된 시그가 많아서 밑에 주소로 들어가면
-더 정확합니다!
-
- 
-
-⇩⇩⇩ 시그표 공지 ⇩⇩⇩
- 
-철구형2↑의 방송국 | SOOP
-
- 
-여기서 한눈에 뉴시그와 현재있는시그들
-바로 확인가능합니다!
- 
-
- 
-
- 
-⇩⇩⇩  시그영상 ⇩⇩⇩
- 
-엑셀시그표 | 씨나인
-
- 
-어떤시그인지 궁금하다면 여기서 보셔서
-혜루찡 누르면 제가 춘 영상들이 보일꺼에요!
-
- 
-
- 
- 
- 
-
-https://www.sooplive.com/station/epsthddus/post/199233003</div>
-  </div>
-</details>
   </div>
 </details>
 <details id="section_schedule" style="display:block;width:100%;margin:0 0 10px 0;padding:0;box-sizing:border-box;">
@@ -1476,5 +1423,5 @@ https://www.sooplive.com/station/epsthddus/post/199233003</div>
 </div>
 
   <div style="margin-top:12px;text-align:center;color:#7ec8ff;font-size:11px;font-weight:800;text-shadow:0 0 6px rgba(80,170,255,.35);">CNINE Dashboard Developed by 유두위생크림</div>
-  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-21 06:24:26</div>
+  <div style="margin-top:5px;text-align:center;color:#9ccfff;font-size:10px;font-weight:700;">자동 변환: 2026-06-21 10:38:49</div>
 </div>
