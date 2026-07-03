@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-03T18:10:31.955+09:00",
+  "updated": "2026-07-03T18:24:07.077+09:00",
   "notice": [
     {
       "id": "1522436709936140319",
@@ -380,6 +380,56 @@
     }
   ],
   "guide": [
+    {
+      "id": "1522531919504478328",
+      "type": "가이드",
+      "title": "[통합시스템]",
+      "date": "2026-07-03",
+      "content": "우측 하단의 톱니바퀴 버튼을 누르면 통합시스템 창이 활성화 됩니다.\n\n통합시스템 내 버튼 및 설정하시는 방법 등 모르시는 부분은 고객센터에 연락해주시면 친절히 설명해드립니다.\n\n\n[자동사냥 PSS]\n\n우측 하단의 해당 버튼이 자동사냥 PSS 버튼 입니다.\n\nAlt + w 를 눌러 버튼을 활성화 할 수도 있습니다.\n\n[공격] 란 에서의 설정은 따로 하실 필요가 없습니다.\n└ 버프형 패시브스킬 & 공격 스킬 설정은 [통합시스템] → [물약/버프 , 자동액티브] 참고 바랍니다.\n\n[탈출] 란 에서의 설정은 순간이동 주문서 or 무한 순간이동 주문서를 TAB 키를 눌러 인벤토리에서 드래그 하여 넣으시면 됩니다.\n※ 체크박스에 체크표시를 반드시 확인 하시기 바랍니다.\n\n[귀환] 란 에서의 설정은 귀환 주문서를 인벤토리에서 드래그 하여 넣으시면 됩니다.\n※ 체크박스에 체크표시를 반드시 확인 하시기 바랍니다.\n\n모든 설정을 마치셨다면 '저장' 을 누르신 후 Alt + G 를 통해 빠른 On/Off 가 가능합니다.\n\n\n[다이아 상점]\n\n우측 하단의 NEW 라고 표기된 버튼을 클릭하시면 다이아 상점이 활성화 됩니다.\n\n다이아 상점에서 필요한 물품을 구매하실 수 있으며 , 다이아는 후원으로 얻는 것이 아닌\n사냥터 드랍으로 쉽게 파밍하실 수 있습니다.\n\n다이아 상점 판매 품목은 지속적인 업데이트가 예정되어 있습니다.\n\n\n[채팅창 명령어]\n\n/혈맹가입 > XXXX\n/매크로\n/입장시간\n외 .도움말\n\n입력하시면 다양한 명령어를 확인 할 수 있습니다.",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "c3b431fdb62cb9cd.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1522531918170558465/c3b431fdb62cb9cd.png?ex=6a48cfd8&is=6a477e58&hm=7d2e7c95a8386ca2a6ffc2f47cc345acb3282beca402a10c9b4215fb50f5f0de&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1522531918170558465/c3b431fdb62cb9cd.png?ex=6a48cfd8&is=6a477e58&hm=7d2e7c95a8386ca2a6ffc2f47cc345acb3282beca402a10c9b4215fb50f5f0de&",
+          "content_type": "image/webp",
+          "size": 43990
+        },
+        {
+          "name": "1_PSS.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1522531918481068072/1_PSS.png?ex=6a48cfd8&is=6a477e58&hm=0306acef1826ca785ee23fc215cfb370ba89b145df554ecc8c83f457841d0c44&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1522531918481068072/1_PSS.png?ex=6a48cfd8&is=6a477e58&hm=0306acef1826ca785ee23fc215cfb370ba89b145df554ecc8c83f457841d0c44&",
+          "content_type": "image/webp",
+          "size": 226844
+        },
+        {
+          "name": "2_PSS.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1522531918867070996/2_PSS.png?ex=6a48cfd8&is=6a477e58&hm=233050853f67ef8685704713b885385334500f842fd104a87adc233fa8189d0c&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1522531918867070996/2_PSS.png?ex=6a48cfd8&is=6a477e58&hm=233050853f67ef8685704713b885385334500f842fd104a87adc233fa8189d0c&",
+          "content_type": "image/webp",
+          "size": 244424
+        },
+        {
+          "name": "3_PSS.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1522531919177187439/3_PSS.png?ex=6a48cfd8&is=6a477e58&hm=68070163b887433a79f49b66dae5f57fce68ecfb65e0c17393d8160e075325bd&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1522531919177187439/3_PSS.png?ex=6a48cfd8&is=6a477e58&hm=68070163b887433a79f49b66dae5f57fce68ecfb65e0c17393d8160e075325bd&",
+          "content_type": "image/webp",
+          "size": 228276
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1522531918170558465/c3b431fdb62cb9cd.png?ex=6a48cfd8&is=6a477e58&hm=7d2e7c95a8386ca2a6ffc2f47cc345acb3282beca402a10c9b4215fb50f5f0de&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1522531918481068072/1_PSS.png?ex=6a48cfd8&is=6a477e58&hm=0306acef1826ca785ee23fc215cfb370ba89b145df554ecc8c83f457841d0c44&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1522531918867070996/2_PSS.png?ex=6a48cfd8&is=6a477e58&hm=233050853f67ef8685704713b885385334500f842fd104a87adc233fa8189d0c&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1522531919177187439/3_PSS.png?ex=6a48cfd8&is=6a477e58&hm=68070163b887433a79f49b66dae5f57fce68ecfb65e0c17393d8160e075325bd&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1522531918170558465/c3b431fdb62cb9cd.png?ex=6a48cfd8&is=6a477e58&hm=7d2e7c95a8386ca2a6ffc2f47cc345acb3282beca402a10c9b4215fb50f5f0de&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1522531919504478328",
+      "created_at": "2026-07-03T18:18:16.885+09:00",
+      "updated_at": "2026-07-03T18:18:16.885+09:00"
+    },
     {
       "id": "1517013005886554212",
       "type": "가이드",
