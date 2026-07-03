@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-03T17:37:07.750+09:00",
+  "updated": "2026-07-03T17:42:51.426+09:00",
   "notice": [
     {
       "id": "1522436709936140319",
@@ -707,6 +707,157 @@
     }
   ],
   "boss": [
+    {
+      "id": "1516345679948025866",
+      "type": "보스",
+      "title": "보스 드랍품 (공용) : [축] 오림의 장신구 마법 주문서 , 신화 마안 도안 , 무기 보호 주문서 , 방어구 보호 주문서 , 1억 수표 , 다이아 랜덤 상자 , 실렌의 조각 , 명예코인 , 전설 비법서 , 영웅 비법서 , 역별의 정수 , 전설 장비 상자 , 영웅 장비 상자 , 골드 코인 , 보스 킬러 1 , 보스 킬러 2 , 보스 킬러 3 , 3차 신화 스킬",
+      "date": "2026-06-16",
+      "content": "보스 드랍품 (공용) : [축] 오림의 장신구 마법 주문서 , 신화 마안 도안 , 무기 보호 주문서 , 방어구 보호 주문서 , 1억 수표 , 다이아 랜덤 상자 , 실렌의 조각 , 명예코인 , 전설 비법서 , 영웅 비법서 , 역별의 정수 , 전설 장비 상자 , 영웅 장비 상자 , 골드 코인 , 보스 킬러 1 , 보스 킬러 2 , 보스 킬러 3 , 3차 신화 스킬",
+      "author": "lin1ares",
+      "attachments": [],
+      "images": [],
+      "discord_message_id": "1516345679948025866",
+      "created_at": "2026-06-16T16:36:22.440+09:00",
+      "updated_at": "2026-06-16T16:36:22.440+09:00"
+    },
+    {
+      "id": "1516345610125447238",
+      "type": "보스",
+      "title": "[혹한의 가디언]",
+      "date": "2026-06-16",
+      "content": "출현지역 : 오렌 설벽\n출현시간 : 22시",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "3_22.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516345609748091023/3_22.png?ex=6a48b7e5&is=6a476665&hm=0ae1f87727085299874f29611f7ef2a7e45fb895aeff5d093bd2e77f48059aed&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516345609748091023/3_22.png?ex=6a48b7e5&is=6a476665&hm=0ae1f87727085299874f29611f7ef2a7e45fb895aeff5d093bd2e77f48059aed&",
+          "content_type": "image/webp",
+          "size": 100640
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1516345609748091023/3_22.png?ex=6a48b7e5&is=6a476665&hm=0ae1f87727085299874f29611f7ef2a7e45fb895aeff5d093bd2e77f48059aed&"
+      ],
+      "discord_message_id": "1516345610125447238",
+      "created_at": "2026-06-16T16:36:05.793+09:00",
+      "updated_at": "2026-06-16T16:36:05.793+09:00"
+    },
+    {
+      "id": "1516345512859668630",
+      "type": "보스",
+      "title": "[듀페리온]",
+      "date": "2026-06-16",
+      "content": "출현지역 : 에스카로스 3구역\n출현시간 : 21시 (토,일)",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "6-1_21_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516345512544960592/6-1_21_.png?ex=6a48b7ce&is=6a47664e&hm=3782d477d78268393595a4553fed20fb44c6ee3956cbb38a4db14a9753de68a4&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516345512544960592/6-1_21_.png?ex=6a48b7ce&is=6a47664e&hm=3782d477d78268393595a4553fed20fb44c6ee3956cbb38a4db14a9753de68a4&",
+          "content_type": "image/webp",
+          "size": 93444
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1516345512544960592/6-1_21_.png?ex=6a48b7ce&is=6a47664e&hm=3782d477d78268393595a4553fed20fb44c6ee3956cbb38a4db14a9753de68a4&"
+      ],
+      "discord_message_id": "1516345512859668630",
+      "created_at": "2026-06-16T16:35:42.603+09:00",
+      "updated_at": "2026-06-16T16:35:42.603+09:00"
+    },
+    {
+      "id": "1516345399831433337",
+      "type": "보스",
+      "title": "[유마 박사]",
+      "date": "2026-06-16",
+      "content": "출현지역 : 혼돈의 개미굴 1층\n출현시간 : 20시",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "4_20.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516345399453941832/4_20.png?ex=6a48b7b3&is=6a476633&hm=a81ffb9f5196bb04db16ee2cd6a94b66d3a0de0420a48dc23e1abc5606334f5d&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516345399453941832/4_20.png?ex=6a48b7b3&is=6a476633&hm=a81ffb9f5196bb04db16ee2cd6a94b66d3a0de0420a48dc23e1abc5606334f5d&",
+          "content_type": "image/webp",
+          "size": 92846
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1516345399453941832/4_20.png?ex=6a48b7b3&is=6a476633&hm=a81ffb9f5196bb04db16ee2cd6a94b66d3a0de0420a48dc23e1abc5606334f5d&"
+      ],
+      "discord_message_id": "1516345399831433337",
+      "created_at": "2026-06-16T16:35:15.655+09:00",
+      "updated_at": "2026-06-16T16:35:15.655+09:00"
+    },
+    {
+      "id": "1516345242972983467",
+      "type": "보스",
+      "title": "[욥니르]",
+      "date": "2026-06-16",
+      "content": "출현지역 : 에스카로스 2구역\n출현시간 : 18시",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "6_18.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516345242691829860/6_18.png?ex=6a48b78e&is=6a47660e&hm=665f146f798e71e8ee21e9e99f67a46ecfccc93ccb9670715cb9028f8db0e8e9&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516345242691829860/6_18.png?ex=6a48b78e&is=6a47660e&hm=665f146f798e71e8ee21e9e99f67a46ecfccc93ccb9670715cb9028f8db0e8e9&",
+          "content_type": "image/webp",
+          "size": 70170
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1516345242691829860/6_18.png?ex=6a48b78e&is=6a47660e&hm=665f146f798e71e8ee21e9e99f67a46ecfccc93ccb9670715cb9028f8db0e8e9&"
+      ],
+      "discord_message_id": "1516345242972983467",
+      "created_at": "2026-06-16T16:34:38.257+09:00",
+      "updated_at": "2026-06-16T16:34:38.257+09:00"
+    },
+    {
+      "id": "1516345052706902056",
+      "type": "보스",
+      "title": "[대부 텍투스]",
+      "date": "2026-06-16",
+      "content": "출현지역 : 혹한의 신전\n출현시간 : 02시",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "1_02.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516345052354314320/1_02.png?ex=6a48b760&is=6a4765e0&hm=bdffffa60501cfb8a215960bfdd3a3aaa81a14904edc9dd070ed5a44790b20c5&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516345052354314320/1_02.png?ex=6a48b760&is=6a4765e0&hm=bdffffa60501cfb8a215960bfdd3a3aaa81a14904edc9dd070ed5a44790b20c5&",
+          "content_type": "image/webp",
+          "size": 136792
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1516345052354314320/1_02.png?ex=6a48b760&is=6a4765e0&hm=bdffffa60501cfb8a215960bfdd3a3aaa81a14904edc9dd070ed5a44790b20c5&"
+      ],
+      "discord_message_id": "1516345052706902056",
+      "created_at": "2026-06-16T16:33:52.894+09:00",
+      "updated_at": "2026-06-16T16:33:52.894+09:00"
+    },
+    {
+      "id": "1516344945944825946",
+      "type": "보스",
+      "title": "[카슈베]",
+      "date": "2026-06-16",
+      "content": "출현지역 : 풍룡의 둥지\n출현시간 : 00시",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "2_00.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516344945458282496/2_00.png?ex=6a48b747&is=6a4765c7&hm=b029c91e3228721b5e9a2e546b6a21f42e3c70a0b6a0a0b528caee4169eaeb3c&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516344945458282496/2_00.png?ex=6a48b747&is=6a4765c7&hm=b029c91e3228721b5e9a2e546b6a21f42e3c70a0b6a0a0b528caee4169eaeb3c&",
+          "content_type": "image/webp",
+          "size": 173088
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1516344945458282496/2_00.png?ex=6a48b747&is=6a4765c7&hm=b029c91e3228721b5e9a2e546b6a21f42e3c70a0b6a0a0b528caee4169eaeb3c&"
+      ],
+      "discord_message_id": "1516344945944825946",
+      "created_at": "2026-06-16T16:33:27.440+09:00",
+      "updated_at": "2026-06-16T16:33:27.440+09:00"
+    },
     {
       "id": "1519916027041812550",
       "type": "보스",
