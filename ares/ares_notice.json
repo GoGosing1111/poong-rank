@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-03T17:16:24.272+09:00",
+  "updated": "2026-07-03T17:37:07.750+09:00",
   "notice": [
     {
       "id": "1522436709936140319",
@@ -449,6 +449,516 @@
       "discord_message_id": "1516094292941340813",
       "created_at": "2026-06-15T23:57:27.107+09:00",
       "updated_at": "2026-06-15T23:57:27.107+09:00"
+    }
+  ],
+  "hunt": [
+    {
+      "id": "1519916027041812550",
+      "type": "사냥터",
+      "title": "[오만의 탑 2층]",
+      "date": "2026-06-26",
+      "content": "입장료 : 1000만 아데나\n이용시간 : 3시간 (1층과 시간 공유)\n주요드랍 : 희귀 오만의 지배석 , [전설] 고강 무기 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "image.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&",
+          "content_type": "image/webp",
+          "size": 309742
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&"
+      ],
+      "discord_message_id": "1519916027041812550",
+      "created_at": "2026-06-26T13:03:39.521+09:00",
+      "updated_at": "2026-06-26T13:03:39.521+09:00"
+    },
+    {
+      "id": "1519915559645347921",
+      "type": "사냥터",
+      "title": "[테베라스 사막]",
+      "date": "2026-06-26",
+      "content": "입장료 : 1000만 아데나\n이용시간 : 3시간\n주요드랍 : 윈다우드의 카탈리스트 , 전설 장비 상자 , [전설] 고강 방어구 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "image.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a4885ab&is=6a47342b&hm=59a4318bf2b52d602e97d99a55f369e8f376dcb5100dae6b1647265efc364bdd&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a4885ab&is=6a47342b&hm=59a4318bf2b52d602e97d99a55f369e8f376dcb5100dae6b1647265efc364bdd&",
+          "content_type": "image/webp",
+          "size": 151454
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a4885ab&is=6a47342b&hm=59a4318bf2b52d602e97d99a55f369e8f376dcb5100dae6b1647265efc364bdd&"
+      ],
+      "discord_message_id": "1519915559645347921",
+      "created_at": "2026-06-26T13:01:48.085+09:00",
+      "updated_at": "2026-06-26T13:01:48.085+09:00"
+    },
+    {
+      "id": "1516338649183158282",
+      "type": "사냥터",
+      "title": "[시련의 탑 1층] ※미지인 사냥터※",
+      "date": "2026-06-16",
+      "content": "입장료 : 500만 아데나\n오픈시간 : 01시 , 12시 , 19시\n이용시간 : 오픈 후 2시간 씩\n주요드랍 : 할파스 갑옷 3종 , 토템 강화석\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X\n\n※ 미지인 사냥터 = 누구나 PK가 가능합니다. 중립 라인 구분 없습니다. 라인은 해당 맵에서의 PK로 인한 통제사냥터 & 무필 신청 불허합니다. ※",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "8_1_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&",
+          "content_type": "image/webp",
+          "size": 144914
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&"
+      ],
+      "discord_message_id": "1516338649183158282",
+      "created_at": "2026-06-16T16:08:26.175+09:00",
+      "updated_at": "2026-06-16T16:08:26.175+09:00"
+    },
+    {
+      "id": "1516337831318913054",
+      "type": "사냥터",
+      "title": "[오만의 탑 1층]",
+      "date": "2026-06-16",
+      "content": "입장료 : 500만 아데나\n이용시간 : 3시간\n주요드랍 : 에보루타인의 무기 (전설급)\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "7_1.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a48b0a7&is=6a475f27&hm=91b31a03e1f6c2f933ebf0d5de04f3adafb1f778525b61e9a594627590cbfe24&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a48b0a7&is=6a475f27&hm=91b31a03e1f6c2f933ebf0d5de04f3adafb1f778525b61e9a594627590cbfe24&",
+          "content_type": "image/webp",
+          "size": 260714
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a48b0a7&is=6a475f27&hm=91b31a03e1f6c2f933ebf0d5de04f3adafb1f778525b61e9a594627590cbfe24&"
+      ],
+      "discord_message_id": "1516337831318913054",
+      "created_at": "2026-06-16T16:05:11.181+09:00",
+      "updated_at": "2026-06-16T16:05:11.181+09:00"
+    },
+    {
+      "id": "1516327857817915502",
+      "type": "사냥터",
+      "title": "[에스카로스 3구역]",
+      "date": "2026-06-16",
+      "content": "※ 에스카로스 2구역과 3구역은 입장료 , 이용시간 , 드랍품 전부 동일합니다 ※\n\n에스카로스 2구역과 공유하오니 인지바랍니다.\n\n보스 : 21시 듀페리온 (토,일) 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "6-1_3.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516327857536761906/6-1_3.png?ex=6a48a75d&is=6a4755dd&hm=e3ffaa73f94eece31484aa703113144928d0066abedd64b399eb42c9231be0b4&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516327857536761906/6-1_3.png?ex=6a48a75d&is=6a4755dd&hm=e3ffaa73f94eece31484aa703113144928d0066abedd64b399eb42c9231be0b4&",
+          "content_type": "image/webp",
+          "size": 300628
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516327857536761906/6-1_3.png?ex=6a48a75d&is=6a4755dd&hm=e3ffaa73f94eece31484aa703113144928d0066abedd64b399eb42c9231be0b4&"
+      ],
+      "discord_message_id": "1516327857817915502",
+      "created_at": "2026-06-16T15:25:33.313+09:00",
+      "updated_at": "2026-06-16T15:25:33.313+09:00"
+    },
+    {
+      "id": "1516326975566905486",
+      "type": "사냥터",
+      "title": "[에스카로스 2구역]",
+      "date": "2026-06-16",
+      "content": "입장료 : 500만 아데나\n이용시간 : 5시간\n주요드랍 : 블루디카의 맹독 , 우그누스의 충절 , 라즈엘의 목걸이 , 사신의 벨트 , 사신의 반지\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 18시 욥니르 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "6_2.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326975025713213/6_2.png?ex=6a48a68a&is=6a47550a&hm=2402730e81be1c1fe3da159d9ecda4c5bdb3c4a7384c0c311808093ecf5614a4&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326975025713213/6_2.png?ex=6a48a68a&is=6a47550a&hm=2402730e81be1c1fe3da159d9ecda4c5bdb3c4a7384c0c311808093ecf5614a4&",
+          "content_type": "image/webp",
+          "size": 375190
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326975025713213/6_2.png?ex=6a48a68a&is=6a47550a&hm=2402730e81be1c1fe3da159d9ecda4c5bdb3c4a7384c0c311808093ecf5614a4&"
+      ],
+      "discord_message_id": "1516326975566905486",
+      "created_at": "2026-06-16T15:22:02.968+09:00",
+      "updated_at": "2026-06-16T15:22:02.968+09:00"
+    },
+    {
+      "id": "1516326492252930159",
+      "type": "사냥터",
+      "title": "[혼돈의 개미굴 2층]",
+      "date": "2026-06-16",
+      "content": "입장료 : 100만 아데나\n이용시간 : 5시간\n주요드랍 : 타락한 성좌의 장갑 , 타락한 성좌의 부츠 , 칼투란의 각반\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "5_2.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a48a617&is=6a475497&hm=ab3eaab03e494baeaf4e32bfe43b135927b1f038cd81732ce26ec511981ef799&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a48a617&is=6a475497&hm=ab3eaab03e494baeaf4e32bfe43b135927b1f038cd81732ce26ec511981ef799&",
+          "content_type": "image/webp",
+          "size": 174866
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a48a617&is=6a475497&hm=ab3eaab03e494baeaf4e32bfe43b135927b1f038cd81732ce26ec511981ef799&"
+      ],
+      "discord_message_id": "1516326492252930159",
+      "created_at": "2026-06-16T15:20:07.737+09:00",
+      "updated_at": "2026-06-16T15:20:07.737+09:00"
+    },
+    {
+      "id": "1516326179672686712",
+      "type": "사냥터",
+      "title": "[혼돈의 개미굴 1층]",
+      "date": "2026-06-16",
+      "content": "입장료 : 100만 아데나\n이용시간 : 5시간\n주요드랍 : 타락한 성좌의 면갑 , 타락한 성좌의 갑옷 , 칼투란의 망토\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 20시 유마 박사 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "4_1.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a48a5cd&is=6a47544d&hm=d33ebbe3f81afb7e62518b4ad4d0e21169c0c6b36da2529ccee4f66da7e3b112&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a48a5cd&is=6a47544d&hm=d33ebbe3f81afb7e62518b4ad4d0e21169c0c6b36da2529ccee4f66da7e3b112&",
+          "content_type": "image/webp",
+          "size": 157716
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a48a5cd&is=6a47544d&hm=d33ebbe3f81afb7e62518b4ad4d0e21169c0c6b36da2529ccee4f66da7e3b112&"
+      ],
+      "discord_message_id": "1516326179672686712",
+      "created_at": "2026-06-16T15:18:53.212+09:00",
+      "updated_at": "2026-06-16T15:18:53.212+09:00"
+    },
+    {
+      "id": "1516317841597403146",
+      "type": "사냥터",
+      "title": "[오렌 설벽]",
+      "date": "2026-06-16",
+      "content": "입장료 : 70만 아데나\n이용시간 : 5시간\n주요드랍 : 샌드웜의 가더 , 반역자의 방패 , 데스나이트의 목걸이 , 오우거 킹의 벨트 , 신성한 아누비스의 반지\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 22시 혹한의 가디언 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "3_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a489e09&is=6a474c89&hm=de88e65cad5c5c9f94610792efb3f9ff98b5ae1c5ebf48f0256b969fff0944f1&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a489e09&is=6a474c89&hm=de88e65cad5c5c9f94610792efb3f9ff98b5ae1c5ebf48f0256b969fff0944f1&",
+          "content_type": "image/webp",
+          "size": 154728
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a489e09&is=6a474c89&hm=de88e65cad5c5c9f94610792efb3f9ff98b5ae1c5ebf48f0256b969fff0944f1&"
+      ],
+      "discord_message_id": "1516317841597403146",
+      "created_at": "2026-06-16T14:45:45.260+09:00",
+      "updated_at": "2026-06-16T14:45:45.260+09:00"
+    },
+    {
+      "id": "1516317112862380172",
+      "type": "사냥터",
+      "title": "[풍룡의 둥지]",
+      "date": "2026-06-16",
+      "content": "입장료 : 50만 아데나\n이용시간 : 5시간\n주요드랍 : 성흔의 장갑 , 성흔의 부츠 , 나그바스의 각반\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 00시 카슈베 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "2_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a489d5b&is=6a474bdb&hm=3b2768d4f79fe3ebd6b5c05f7846b1db1c214a06953f4f85aca3618d5b76796a&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a489d5b&is=6a474bdb&hm=3b2768d4f79fe3ebd6b5c05f7846b1db1c214a06953f4f85aca3618d5b76796a&",
+          "content_type": "image/webp",
+          "size": 267058
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a489d5b&is=6a474bdb&hm=3b2768d4f79fe3ebd6b5c05f7846b1db1c214a06953f4f85aca3618d5b76796a&"
+      ],
+      "discord_message_id": "1516317112862380172",
+      "created_at": "2026-06-16T14:42:51.516+09:00",
+      "updated_at": "2026-06-16T14:42:51.516+09:00"
+    },
+    {
+      "id": "1516316663643898027",
+      "type": "사냥터",
+      "title": "[혹한의 신전]",
+      "date": "2026-06-16",
+      "content": "입장료 : 30만 아데나\n이용시간 : 5시간\n주요드랍 : 성흔의 면갑 , 성흔의 갑옷 , 나그바스의 망토\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 02시 대부 텍투스 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "1_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a489cf0&is=6a474b70&hm=316c3cb165c77c2b77ca2bbbd42e3bedeaceb06490c308de53d249f45da51642&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a489cf0&is=6a474b70&hm=316c3cb165c77c2b77ca2bbbd42e3bedeaceb06490c308de53d249f45da51642&",
+          "content_type": "image/webp",
+          "size": 226160
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a489cf0&is=6a474b70&hm=316c3cb165c77c2b77ca2bbbd42e3bedeaceb06490c308de53d249f45da51642&"
+      ],
+      "discord_message_id": "1516316663643898027",
+      "created_at": "2026-06-16T14:41:04.414+09:00",
+      "updated_at": "2026-06-16T14:41:04.414+09:00"
+    }
+  ],
+  "boss": [
+    {
+      "id": "1519916027041812550",
+      "type": "보스",
+      "title": "[오만의 탑 2층]",
+      "date": "2026-06-26",
+      "content": "입장료 : 1000만 아데나\n이용시간 : 3시간 (1층과 시간 공유)\n주요드랍 : 희귀 오만의 지배석 , [전설] 고강 무기 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "image.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&",
+          "content_type": "image/webp",
+          "size": 309742
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&"
+      ],
+      "discord_message_id": "1519916027041812550",
+      "created_at": "2026-06-26T13:03:39.521+09:00",
+      "updated_at": "2026-06-26T13:03:39.521+09:00"
+    },
+    {
+      "id": "1519915559645347921",
+      "type": "보스",
+      "title": "[테베라스 사막]",
+      "date": "2026-06-26",
+      "content": "입장료 : 1000만 아데나\n이용시간 : 3시간\n주요드랍 : 윈다우드의 카탈리스트 , 전설 장비 상자 , [전설] 고강 방어구 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "image.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a4885ab&is=6a47342b&hm=59a4318bf2b52d602e97d99a55f369e8f376dcb5100dae6b1647265efc364bdd&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a4885ab&is=6a47342b&hm=59a4318bf2b52d602e97d99a55f369e8f376dcb5100dae6b1647265efc364bdd&",
+          "content_type": "image/webp",
+          "size": 151454
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a4885ab&is=6a47342b&hm=59a4318bf2b52d602e97d99a55f369e8f376dcb5100dae6b1647265efc364bdd&"
+      ],
+      "discord_message_id": "1519915559645347921",
+      "created_at": "2026-06-26T13:01:48.085+09:00",
+      "updated_at": "2026-06-26T13:01:48.085+09:00"
+    },
+    {
+      "id": "1516338649183158282",
+      "type": "보스",
+      "title": "[시련의 탑 1층] ※미지인 사냥터※",
+      "date": "2026-06-16",
+      "content": "입장료 : 500만 아데나\n오픈시간 : 01시 , 12시 , 19시\n이용시간 : 오픈 후 2시간 씩\n주요드랍 : 할파스 갑옷 3종 , 토템 강화석\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X\n\n※ 미지인 사냥터 = 누구나 PK가 가능합니다. 중립 라인 구분 없습니다. 라인은 해당 맵에서의 PK로 인한 통제사냥터 & 무필 신청 불허합니다. ※",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "8_1_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&",
+          "content_type": "image/webp",
+          "size": 144914
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&"
+      ],
+      "discord_message_id": "1516338649183158282",
+      "created_at": "2026-06-16T16:08:26.175+09:00",
+      "updated_at": "2026-06-16T16:08:26.175+09:00"
+    },
+    {
+      "id": "1516337831318913054",
+      "type": "보스",
+      "title": "[오만의 탑 1층]",
+      "date": "2026-06-16",
+      "content": "입장료 : 500만 아데나\n이용시간 : 3시간\n주요드랍 : 에보루타인의 무기 (전설급)\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "7_1.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a48b0a7&is=6a475f27&hm=91b31a03e1f6c2f933ebf0d5de04f3adafb1f778525b61e9a594627590cbfe24&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a48b0a7&is=6a475f27&hm=91b31a03e1f6c2f933ebf0d5de04f3adafb1f778525b61e9a594627590cbfe24&",
+          "content_type": "image/webp",
+          "size": 260714
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a48b0a7&is=6a475f27&hm=91b31a03e1f6c2f933ebf0d5de04f3adafb1f778525b61e9a594627590cbfe24&"
+      ],
+      "discord_message_id": "1516337831318913054",
+      "created_at": "2026-06-16T16:05:11.181+09:00",
+      "updated_at": "2026-06-16T16:05:11.181+09:00"
+    },
+    {
+      "id": "1516327857817915502",
+      "type": "보스",
+      "title": "[에스카로스 3구역]",
+      "date": "2026-06-16",
+      "content": "※ 에스카로스 2구역과 3구역은 입장료 , 이용시간 , 드랍품 전부 동일합니다 ※\n\n에스카로스 2구역과 공유하오니 인지바랍니다.\n\n보스 : 21시 듀페리온 (토,일) 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "6-1_3.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516327857536761906/6-1_3.png?ex=6a48a75d&is=6a4755dd&hm=e3ffaa73f94eece31484aa703113144928d0066abedd64b399eb42c9231be0b4&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516327857536761906/6-1_3.png?ex=6a48a75d&is=6a4755dd&hm=e3ffaa73f94eece31484aa703113144928d0066abedd64b399eb42c9231be0b4&",
+          "content_type": "image/webp",
+          "size": 300628
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516327857536761906/6-1_3.png?ex=6a48a75d&is=6a4755dd&hm=e3ffaa73f94eece31484aa703113144928d0066abedd64b399eb42c9231be0b4&"
+      ],
+      "discord_message_id": "1516327857817915502",
+      "created_at": "2026-06-16T15:25:33.313+09:00",
+      "updated_at": "2026-06-16T15:25:33.313+09:00"
+    },
+    {
+      "id": "1516326975566905486",
+      "type": "보스",
+      "title": "[에스카로스 2구역]",
+      "date": "2026-06-16",
+      "content": "입장료 : 500만 아데나\n이용시간 : 5시간\n주요드랍 : 블루디카의 맹독 , 우그누스의 충절 , 라즈엘의 목걸이 , 사신의 벨트 , 사신의 반지\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 18시 욥니르 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "6_2.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326975025713213/6_2.png?ex=6a48a68a&is=6a47550a&hm=2402730e81be1c1fe3da159d9ecda4c5bdb3c4a7384c0c311808093ecf5614a4&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326975025713213/6_2.png?ex=6a48a68a&is=6a47550a&hm=2402730e81be1c1fe3da159d9ecda4c5bdb3c4a7384c0c311808093ecf5614a4&",
+          "content_type": "image/webp",
+          "size": 375190
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326975025713213/6_2.png?ex=6a48a68a&is=6a47550a&hm=2402730e81be1c1fe3da159d9ecda4c5bdb3c4a7384c0c311808093ecf5614a4&"
+      ],
+      "discord_message_id": "1516326975566905486",
+      "created_at": "2026-06-16T15:22:02.968+09:00",
+      "updated_at": "2026-06-16T15:22:02.968+09:00"
+    },
+    {
+      "id": "1516326492252930159",
+      "type": "보스",
+      "title": "[혼돈의 개미굴 2층]",
+      "date": "2026-06-16",
+      "content": "입장료 : 100만 아데나\n이용시간 : 5시간\n주요드랍 : 타락한 성좌의 장갑 , 타락한 성좌의 부츠 , 칼투란의 각반\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "5_2.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a48a617&is=6a475497&hm=ab3eaab03e494baeaf4e32bfe43b135927b1f038cd81732ce26ec511981ef799&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a48a617&is=6a475497&hm=ab3eaab03e494baeaf4e32bfe43b135927b1f038cd81732ce26ec511981ef799&",
+          "content_type": "image/webp",
+          "size": 174866
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a48a617&is=6a475497&hm=ab3eaab03e494baeaf4e32bfe43b135927b1f038cd81732ce26ec511981ef799&"
+      ],
+      "discord_message_id": "1516326492252930159",
+      "created_at": "2026-06-16T15:20:07.737+09:00",
+      "updated_at": "2026-06-16T15:20:07.737+09:00"
+    },
+    {
+      "id": "1516326179672686712",
+      "type": "보스",
+      "title": "[혼돈의 개미굴 1층]",
+      "date": "2026-06-16",
+      "content": "입장료 : 100만 아데나\n이용시간 : 5시간\n주요드랍 : 타락한 성좌의 면갑 , 타락한 성좌의 갑옷 , 칼투란의 망토\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 20시 유마 박사 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "4_1.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a48a5cd&is=6a47544d&hm=d33ebbe3f81afb7e62518b4ad4d0e21169c0c6b36da2529ccee4f66da7e3b112&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a48a5cd&is=6a47544d&hm=d33ebbe3f81afb7e62518b4ad4d0e21169c0c6b36da2529ccee4f66da7e3b112&",
+          "content_type": "image/webp",
+          "size": 157716
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a48a5cd&is=6a47544d&hm=d33ebbe3f81afb7e62518b4ad4d0e21169c0c6b36da2529ccee4f66da7e3b112&"
+      ],
+      "discord_message_id": "1516326179672686712",
+      "created_at": "2026-06-16T15:18:53.212+09:00",
+      "updated_at": "2026-06-16T15:18:53.212+09:00"
+    },
+    {
+      "id": "1516317841597403146",
+      "type": "보스",
+      "title": "[오렌 설벽]",
+      "date": "2026-06-16",
+      "content": "입장료 : 70만 아데나\n이용시간 : 5시간\n주요드랍 : 샌드웜의 가더 , 반역자의 방패 , 데스나이트의 목걸이 , 오우거 킹의 벨트 , 신성한 아누비스의 반지\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 22시 혹한의 가디언 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "3_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a489e09&is=6a474c89&hm=de88e65cad5c5c9f94610792efb3f9ff98b5ae1c5ebf48f0256b969fff0944f1&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a489e09&is=6a474c89&hm=de88e65cad5c5c9f94610792efb3f9ff98b5ae1c5ebf48f0256b969fff0944f1&",
+          "content_type": "image/webp",
+          "size": 154728
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a489e09&is=6a474c89&hm=de88e65cad5c5c9f94610792efb3f9ff98b5ae1c5ebf48f0256b969fff0944f1&"
+      ],
+      "discord_message_id": "1516317841597403146",
+      "created_at": "2026-06-16T14:45:45.260+09:00",
+      "updated_at": "2026-06-16T14:45:45.260+09:00"
+    },
+    {
+      "id": "1516317112862380172",
+      "type": "보스",
+      "title": "[풍룡의 둥지]",
+      "date": "2026-06-16",
+      "content": "입장료 : 50만 아데나\n이용시간 : 5시간\n주요드랍 : 성흔의 장갑 , 성흔의 부츠 , 나그바스의 각반\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 00시 카슈베 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "2_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a489d5b&is=6a474bdb&hm=3b2768d4f79fe3ebd6b5c05f7846b1db1c214a06953f4f85aca3618d5b76796a&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a489d5b&is=6a474bdb&hm=3b2768d4f79fe3ebd6b5c05f7846b1db1c214a06953f4f85aca3618d5b76796a&",
+          "content_type": "image/webp",
+          "size": 267058
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a489d5b&is=6a474bdb&hm=3b2768d4f79fe3ebd6b5c05f7846b1db1c214a06953f4f85aca3618d5b76796a&"
+      ],
+      "discord_message_id": "1516317112862380172",
+      "created_at": "2026-06-16T14:42:51.516+09:00",
+      "updated_at": "2026-06-16T14:42:51.516+09:00"
+    },
+    {
+      "id": "1516316663643898027",
+      "type": "보스",
+      "title": "[혹한의 신전]",
+      "date": "2026-06-16",
+      "content": "입장료 : 30만 아데나\n이용시간 : 5시간\n주요드랍 : 성흔의 면갑 , 성흔의 갑옷 , 나그바스의 망토\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 02시 대부 텍투스 출현",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "1_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a489cf0&is=6a474b70&hm=316c3cb165c77c2b77ca2bbbd42e3bedeaceb06490c308de53d249f45da51642&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a489cf0&is=6a474b70&hm=316c3cb165c77c2b77ca2bbbd42e3bedeaceb06490c308de53d249f45da51642&",
+          "content_type": "image/webp",
+          "size": 226160
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a489cf0&is=6a474b70&hm=316c3cb165c77c2b77ca2bbbd42e3bedeaceb06490c308de53d249f45da51642&"
+      ],
+      "discord_message_id": "1516316663643898027",
+      "created_at": "2026-06-16T14:41:04.414+09:00",
+      "updated_at": "2026-06-16T14:41:04.414+09:00"
     }
   ]
 }
