@@ -1,7 +1,23 @@
 {
   "version": "3.0",
-  "updated": "2026-07-03T18:40:52.984+09:00",
+  "updated": "2026-07-03T19:22:36.137+09:00",
   "notice": [
+    {
+      "id": "1522548105785114765",
+      "type": "공지",
+      "title": "📢 [ 홈페이지 개설 안내 ]",
+      "date": "2026-07-03",
+      "content": "새로 단장 된 홈페이지가 오픈 되었습니다\n\nhttps://linares1sv.blogspot.com/\n\n디스코드 게시글을 연동하여 업로드 되는 방식입니다\n\n홈페이지가 오픈 되더라도 주 사용 은 디스코드가 될 예정이니 이용에 참고하시길 바랍니다\n\n홍보 문구에도 신규 홈페이지 문구가 추가 될 예정이니 반드시 최신화 하시길 바랍니다\n\n감사합니다\n\n-아레스 운영팀-",
+      "author": "lin1ares",
+      "attachments": [],
+      "images": [],
+      "url": "https://linares1sv.blogspot.com/",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1522548105785114765",
+      "created_at": "2026-07-03T19:22:35.995+09:00",
+      "updated_at": "2026-07-03T19:22:35.995+09:00"
+    },
     {
       "id": "1522436709936140319",
       "type": "공지",
@@ -536,31 +552,6 @@
       "discord_message_id": "1522531919504478328",
       "created_at": "2026-07-03T18:18:16.885+09:00",
       "updated_at": "2026-07-03T18:21:14.391+09:00"
-    },
-    {
-      "id": "1517013005886554212",
-      "type": "가이드",
-      "title": "[통합시스템]",
-      "date": "2026-06-18",
-      "content": "우측 하단의 톱니바퀴 버튼을 누르면 통합시스템 창이 활성화 됩니다.\n\n통합시스템 내 버튼 및 설정하시는 방법 등 모르시는 부분은 고객센터에 연락해주시면 친절히 설명해드립니다.",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "image.png",
-          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1517013005089509506/image.png?ex=6a488275&is=6a4730f5&hm=c0421f40306b84245d20768966170c2694f29003bd6c7979a23501209568ba68&",
-          "content_type": "image/webp",
-          "size": 50928
-        },
-        {
-          "name": "image.png",
-          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1517013005437505586/image.png?ex=6a488275&is=6a4730f5&hm=db1f3b7c6b3e6c4eb3916764c01a40f483db3e32df557ddfaa524f4638a735cf&",
-          "content_type": "image/webp",
-          "size": 65400
-        }
-      ],
-      "discord_message_id": "1517013005886554212",
-      "created_at": "2026-06-18T12:48:05.342+09:00",
-      "updated_at": "2026-06-18T12:48:05.342+09:00"
     },
     {
       "id": 1,
