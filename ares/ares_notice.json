@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-03T20:16:44.997+09:00",
+  "updated": "2026-07-03T20:16:47.390+09:00",
   "notice": [
     {
       "id": "1522548105785114765",
@@ -220,25 +220,17 @@
           "proxy_url": "https://media.discordapp.net/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
           "content_type": "image/jpeg",
           "size": 24026
-        },
-        {
-          "name": "4.jpg",
-          "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&",
-          "content_type": "image/jpeg",
-          "size": 81045
         }
       ],
       "images": [
-        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
-        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&"
+        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&"
       ],
       "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
       "version": null,
       "size": null,
       "discord_message_id": "1516917376250286222",
       "created_at": "2026-06-18T06:28:05.460+09:00",
-      "updated_at": "2026-07-03T20:16:44.729+09:00"
+      "updated_at": "2026-07-03T20:16:47.239+09:00"
     },
     {
       "id": "1522190220886409417",
