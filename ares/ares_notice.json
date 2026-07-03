@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-03T19:56:33.536+09:00",
+  "updated": "2026-07-03T20:16:44.997+09:00",
   "notice": [
     {
       "id": "1522548105785114765",
@@ -207,6 +207,40 @@
   ],
   "update": [
     {
+      "id": "1516917376250286222",
+      "type": "업데이트",
+      "title": "첨부 공지",
+      "date": "2026-06-18",
+      "content": "첨부 공지",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "3.jpg",
+          "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
+          "content_type": "image/jpeg",
+          "size": 24026
+        },
+        {
+          "name": "4.jpg",
+          "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&",
+          "content_type": "image/jpeg",
+          "size": 81045
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
+        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1516917376250286222",
+      "created_at": "2026-06-18T06:28:05.460+09:00",
+      "updated_at": "2026-07-03T20:16:44.729+09:00"
+    },
+    {
       "id": "1522190220886409417",
       "type": "업데이트",
       "title": "📢 [ 업데이트 및 패치 내역 ]",
@@ -359,48 +393,6 @@
       "discord_message_id": "1517260596238745600",
       "created_at": "2026-06-19T05:11:55.482+09:00",
       "updated_at": "2026-06-19T05:11:55.482+09:00"
-    },
-    {
-      "id": "1516917376250286222",
-      "type": "업데이트",
-      "title": "첨부 공지",
-      "date": "2026-06-18",
-      "content": "첨부 공지",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "2.jpg",
-          "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375340118117/2.jpg?ex=6a48d225&is=6a4780a5&hm=b50faf626154937b56530a3a7b840d2dfdad21c470912178bbf8be538cd25a74&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516072824995971204/1516917375340118117/2.jpg?ex=6a48d225&is=6a4780a5&hm=b50faf626154937b56530a3a7b840d2dfdad21c470912178bbf8be538cd25a74&",
-          "content_type": "image/jpeg",
-          "size": 91011
-        },
-        {
-          "name": "3.jpg",
-          "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
-          "content_type": "image/jpeg",
-          "size": 24026
-        },
-        {
-          "name": "4.jpg",
-          "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&",
-          "content_type": "image/jpeg",
-          "size": 81045
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375340118117/2.jpg?ex=6a48d225&is=6a4780a5&hm=b50faf626154937b56530a3a7b840d2dfdad21c470912178bbf8be538cd25a74&",
-        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375818006538/3.jpg?ex=6a48d225&is=6a4780a5&hm=2773beb818f2144330805604b527ab9012b78c30c8ee504f7782599e88136a60&",
-        "https://cdn.discordapp.com/attachments/1516072824995971204/1516917376153686036/4.jpg?ex=6a48d225&is=6a4780a5&hm=15674d9d5083bd8e458ec3567eac4d629b9f0e67b90af84553ef022bf3315001&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516072824995971204/1516917375340118117/2.jpg?ex=6a48d225&is=6a4780a5&hm=b50faf626154937b56530a3a7b840d2dfdad21c470912178bbf8be538cd25a74&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516917376250286222",
-      "created_at": "2026-06-18T06:28:05.460+09:00",
-      "updated_at": "2026-06-18T06:28:05.460+09:00"
     },
     {
       "id": "1516917135706689708",
