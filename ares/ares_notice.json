@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-03T17:42:51.426+09:00",
+  "updated": "2026-07-03T18:10:31.955+09:00",
   "notice": [
     {
       "id": "1522436709936140319",
@@ -1110,6 +1110,206 @@
       "discord_message_id": "1516316663643898027",
       "created_at": "2026-06-16T14:41:04.414+09:00",
       "updated_at": "2026-06-16T14:41:04.414+09:00"
+    }
+  ],
+  "item": [
+    {
+      "id": "1522522502314725529",
+      "type": "아이템",
+      "title": "< 방어구 및 악세사리 >",
+      "date": "2026-07-03",
+      "content": "[영웅]\n투구 > 성흔의 면갑\n갑옷 > 성흔의 갑옷\n장갑 > 성흔의 장갑\n부츠 > 성흔의 부츠\n망토 > 나그바스의 망토\n각반 > 나그바스의 각반\n방패/가더 > 반역자의 방패 / 샌드웜의 가더\n\n목걸이 > 데스나이트의 목걸이\n벨트 > 오우거 킹의 벨트\n반지 > 신성한 아누비스의 반지\n\n\n[전설]\n투구 > 타락한 성좌의 면갑\n갑옷 > 타락한 성좌의 갑옷\n장갑 > 타락한 성좌의 장갑\n부츠 > 타락한 성좌의 부츠\n망토 > 칼투란의 망토\n각반 > 칼투란의 각반\n방패/가더 > 우그누스의 충절 / 블루디카의 맹독\n\n목걸이 > 라즈엘의 목걸이\n벨트 > 사신의 벨트\n반지 > 사신의 반지\n\n\n[신화]\n갑옷 > 할파스 완력,예지력,마력",
+      "author": "lin1ares",
+      "attachments": [],
+      "images": [],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1522522502314725529",
+      "created_at": "2026-07-03T17:40:51.652+09:00",
+      "updated_at": "2026-07-03T17:40:51.652+09:00"
+    },
+    {
+      "id": "1516602618468765899",
+      "type": "아이템",
+      "title": "< 무기 종류 >",
+      "date": "2026-06-17",
+      "content": "[영웅]\n오시리스의 단검\n오시리스의 장검\n오시리스의 크로우\n오시리스의 지팡이\n오시리스의 활\n오시리스의 양손검\n오시리스의 도끼\n오시리스의 창\n오시리스의 사이드\n\n\n[전설]\n단검 > 군터의 단도\n한손검 > 에보루타인의 장검\n양손검 > 에보루타인의 양손검\n지팡이 > 게렝의 지팡이\n활 > 우그누스의 장궁\n이도류 > 슬레이브의 이도류\n사이드 > 그림리퍼의 사이드\n창 > 포세이돈의 삼지창\n도끼 > 태풍의 도끼",
+      "author": "lin1ares",
+      "attachments": [],
+      "images": [],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1516602618468765899",
+      "created_at": "2026-06-17T09:37:21.357+09:00",
+      "updated_at": "2026-06-17T09:37:21.357+09:00"
+    }
+  ],
+  "content": [
+    {
+      "id": "1522455431635796138",
+      "type": "컨텐츠",
+      "title": "[몬스터 디펜스] : 20시 45분",
+      "date": "2026-07-03",
+      "content": "< 몬스터 라운드 보상 > (총 6라운드)\n§ 확정 §\n500만 아데나\n명예코인 80개\n다이아 300개\n역별의 정수 1개\n변신 뽑기 팩 1개\n인형 뽑기 팩 2개\n\n< 보스 라운드 보상 > (총 3라운드)\n§ 확정 §\n2000만 아데나\n명예코인 500개\n다이아 1000개\n역별의 정수 5개\n변신 뽑기 팩 5개\n인형 뽑기 팩 10개\n\n§ 랜덤 §\n500만 아데나\n인형 뽑기 팩 5개\n영웅 장비 상자 1개\n전설 장비 상자 1개\n아이템변경권 1개\n\n\n⚠️ < 몬스터 디펜스 주의사항 >\n\n1️⃣ '카운터 매직' 아이템을 반드시 준비해 주세요.\n\n2️⃣ 진행 도중 💀 사망 후 리스타트할 경우 보상을 획득할 수 없습니다.\n\n3️⃣ 해당 라운드의 👾 몬스터를 모두 처치해야 다음 라운드가 진행됩니다.\n\n4️⃣ 몬스터를 모두 처치하면 즉시 다음 라운드가 시작되므로, 🚨 보스 라운드 시작 전에 '카운터 매직'을 미리 사용하세요.\n\n\n📋 < 라운드 구성 >\n\n1라운드 👾 몬스터 침공\n2라운드 👾 몬스터 침공\n3라운드 👑 보스 침공\n\n4라운드 👾 몬스터 침공\n5라운드 👾 몬스터 침공\n6라운드 👑 보스 침공\n\n7라운드 👾 몬스터 침공\n8라운드 👾 몬스터 침공\n9라운드 👑 보스 침공\n\n전투 컨텐츠가 아닙니다. 서로 협력하여 몬스터의 침공을 막으시길 바랍니다.",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "image.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a48889c&is=6a47371c&hm=3a4e5bfb8d6ef914039f39c6e3929d8f0c817e613a021cc471311d11e30e7a23&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a48889c&is=6a47371c&hm=3a4e5bfb8d6ef914039f39c6e3929d8f0c817e613a021cc471311d11e30e7a23&",
+          "content_type": "image/webp",
+          "size": 151870
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a48889c&is=6a47371c&hm=3a4e5bfb8d6ef914039f39c6e3929d8f0c817e613a021cc471311d11e30e7a23&"
+      ],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1522455431635796138",
+      "created_at": "2026-07-03T13:14:20.756+09:00",
+      "updated_at": "2026-07-03T13:14:20.756+09:00"
+    },
+    {
+      "id": "1516353505936539738",
+      "type": "컨텐츠",
+      "title": "[보물섬] : 09시 , 14시 , 18시 , 23시 30분",
+      "date": "2026-06-16",
+      "content": "일반 보물\n└ 20만 아데나\n\n고급 보물\n└ 25만 아데나\n└ 인형 뽑기 팩 2개\n└ 명예코인 25개\n\n최고급 보물\n└ 100만 아데나\n└ 인형 뽑기 팩 5개\n└ 오림의 장신구 마법 주문서 상자 5개\n└ 명예코인 50개\n└ 역별의 정수 1개\n\n유니크 보물\n└ 500만 아데나\n└ 인형 뽑기 팩 10개\n└ 오림의 장신구 마법 주문서 상자 10개\n└ 명예코인 200개\n└ 역별의 정수 3개",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "36a49aadf1f44b7f.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1516353505500201041/36a49aadf1f44b7f.png?ex=6a48bf40&is=6a476dc0&hm=851f61e5ffbb932446bb7e312030990ec272bfc03099a58c265956200d7cacfd&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1516353505500201041/36a49aadf1f44b7f.png?ex=6a48bf40&is=6a476dc0&hm=851f61e5ffbb932446bb7e312030990ec272bfc03099a58c265956200d7cacfd&",
+          "content_type": "image/webp",
+          "size": 99994
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1516353505500201041/36a49aadf1f44b7f.png?ex=6a48bf40&is=6a476dc0&hm=851f61e5ffbb932446bb7e312030990ec272bfc03099a58c265956200d7cacfd&"
+      ],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1516353505936539738",
+      "created_at": "2026-06-16T17:07:28.301+09:00",
+      "updated_at": "2026-06-16T17:07:28.301+09:00"
+    },
+    {
+      "id": "1516348277417705574",
+      "type": "컨텐츠",
+      "title": "[미니공성] : 22시 30분",
+      "date": "2026-06-16",
+      "content": "< 승리팀 보상 >\n§ 확정 §\n3000만 아데나\n명예코인 1000개\n오림의 장신구 마법 주문서 상자 15개\n다이아 1000개\n역별의 정수 10개\n인형 뽑기 팩 20개\n숙련도 부스팅 2개\n\n§ 랜덤 §\n500만 아데나\n인형 뽑기 팩 5개\n영웅 장비 상자 1개\n전설 장비 상자 1개\n아이템변경권 1개\n\n\n< 패배팀 보상 >\n§ 확정 §\n1000만 아데나\n명예코인 300개\n오림의 장신구 마법 주문서 상자 5개\n다이아 300개\n역별의 정수 3개\n인형 뽑기 팩 5개\n숙련도 부스팅 1개\n\n§ 랜덤 §\n500만 아데나\n인형 뽑기 팩 5개\n영웅 장비 상자 1개\n전설 장비 상자 1개\n아이템변경권 1개",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "94ce0ea0e4d4c2b4.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1516348277111656448/94ce0ea0e4d4c2b4.png?ex=6a48ba61&is=6a4768e1&hm=b18998926029116478165ec047b12ec764770d53097cdfc50b69244c8b8d8165&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1516348277111656448/94ce0ea0e4d4c2b4.png?ex=6a48ba61&is=6a4768e1&hm=b18998926029116478165ec047b12ec764770d53097cdfc50b69244c8b8d8165&",
+          "content_type": "image/webp",
+          "size": 136664
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1516348277111656448/94ce0ea0e4d4c2b4.png?ex=6a48ba61&is=6a4768e1&hm=b18998926029116478165ec047b12ec764770d53097cdfc50b69244c8b8d8165&"
+      ],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1516348277417705574",
+      "created_at": "2026-06-16T16:46:41.725+09:00",
+      "updated_at": "2026-06-16T16:46:41.725+09:00"
+    },
+    {
+      "id": "1516347557926670398",
+      "type": "컨텐츠",
+      "title": "[시련 던전] : 상시",
+      "date": "2026-06-16",
+      "content": "└ 감옥 탈출 , 턴 언데드 , 수호탑 방어 // 총 3회 가능\n\n< 클리어 보상 >\n§ 확정 §\n1000만 아데나\n명예코인 300개\n오림의 장신구 마법 주문서 상자 5개\n다이아 300개\n역별의 정수 2개\n인형 뽑기 팩 5개\n\n§ 랜덤 §\n500만 아데나\n인형 뽑기 팩 5개\n영웅 장비 상자 1개\n전설 장비 상자 1개\n아이템변경권 1개",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "e7ff67230337b8da.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1516347557637525554/e7ff67230337b8da.png?ex=6a48b9b6&is=6a476836&hm=7ccb81cb435444eb39473520da06c1e884f0ff648ceaf177e1b4821c2acc5ba5&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1516347557637525554/e7ff67230337b8da.png?ex=6a48b9b6&is=6a476836&hm=7ccb81cb435444eb39473520da06c1e884f0ff648ceaf177e1b4821c2acc5ba5&",
+          "content_type": "image/webp",
+          "size": 201360
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1516347557637525554/e7ff67230337b8da.png?ex=6a48b9b6&is=6a476836&hm=7ccb81cb435444eb39473520da06c1e884f0ff648ceaf177e1b4821c2acc5ba5&"
+      ],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1516347557926670398",
+      "created_at": "2026-06-16T16:43:50.185+09:00",
+      "updated_at": "2026-06-16T16:43:50.185+09:00"
+    },
+    {
+      "id": "1516346940688826388",
+      "type": "컨텐츠",
+      "title": "[토너먼트] : 21시 45분",
+      "date": "2026-06-16",
+      "content": "< 승리팀 보상 >\n§ 확정 §\n3000만 아데나\n명예코인 1000개\n오림의 장신구 마법 주문서 상자 15개\n다이아 1000개\n역별의 정수 10개\n인형 뽑기 팩 20개\n숙련도 부스팅 2개\n\n§ 랜덤 §\n500만 아데나\n인형 뽑기 팩 5개\n영웅 장비 상자 1개\n전설 장비 상자 1개\n아이템변경권 1개\n\n\n< 패배팀 보상 >\n§ 확정 §\n1000만 아데나\n명예코인 300개\n오림의 장신구 마법 주문서 상자 5개\n다이아 300개\n역별의 정수 3개\n인형 뽑기 팩 5개\n숙련도 부스팅 1개\n\n§ 랜덤 §\n500만 아데나\n인형 뽑기 팩 5개\n영웅 장비 상자 1개\n전설 장비 상자 1개\n아이템변경권 1개",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "49388da8dd4c4716.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1516346940391161980/49388da8dd4c4716.png?ex=6a48b922&is=6a4767a2&hm=94c4cae0e8c24efeac251b1e0703b0afc12a1d55133f71168798d55547ae6c32&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1516346940391161980/49388da8dd4c4716.png?ex=6a48b922&is=6a4767a2&hm=94c4cae0e8c24efeac251b1e0703b0afc12a1d55133f71168798d55547ae6c32&",
+          "content_type": "image/webp",
+          "size": 203200
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1516346940391161980/49388da8dd4c4716.png?ex=6a48b922&is=6a4767a2&hm=94c4cae0e8c24efeac251b1e0703b0afc12a1d55133f71168798d55547ae6c32&"
+      ],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1516346940688826388",
+      "created_at": "2026-06-16T16:41:23.024+09:00",
+      "updated_at": "2026-06-16T16:41:23.024+09:00"
+    }
+  ],
+  "download": [
+    {
+      "id": "1522408217655775272",
+      "type": "다운로드",
+      "title": "0703 아레스 클라이언트 링크 2",
+      "date": "2026-07-03",
+      "content": "0703 아레스 클라이언트 링크 2",
+      "author": "lin1ares",
+      "attachments": [],
+      "images": [],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1522408217655775272",
+      "created_at": "2026-07-03T10:06:44.066+09:00",
+      "updated_at": "2026-07-03T10:06:44.066+09:00"
+    },
+    {
+      "id": "1522408149351403730",
+      "type": "다운로드",
+      "title": "0703 아레스 클라이언트 링크 1",
+      "date": "2026-07-03",
+      "content": "0703 아레스 클라이언트 링크 1",
+      "author": "lin1ares",
+      "attachments": [],
+      "images": [],
+      "url": null,
+      "version": null,
+      "size": null,
+      "discord_message_id": "1522408149351403730",
+      "created_at": "2026-07-03T10:06:27.781+09:00",
+      "updated_at": "2026-07-03T10:06:27.781+09:00"
     }
   ]
 }
