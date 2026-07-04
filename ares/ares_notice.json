@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-04T15:29:50.514+09:00",
+  "updated": "2026-07-04T15:32:33.305+09:00",
   "notice": [
     {
       "id": "1522548105785114765",
@@ -593,26 +593,26 @@
       "type": "사냥터",
       "title": "[오만의 탑 2층]",
       "date": "2026-06-26",
-      "content": "입장료 : 1000만 아데나\n이용시간 : 3시간 (1층과 시간 공유)\n주요드랍 : 희귀 오만의 지배석 , [전설] 고강 무기 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "content": "입장료 : 3000만 아데나\n이용시간 : 3시간 (1층과 시간 공유)\n주요드랍 : 희귀 오만의 지배석 , [전설] 고강 무기 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
       "author": "lin1ares",
       "attachments": [
         {
           "name": "image.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a49d79b&is=6a48861b&hm=d89a927d8f8fd88ea161ea0ed7c841e6e2d30474e002091c9033f888e0513346&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a49d79b&is=6a48861b&hm=d89a927d8f8fd88ea161ea0ed7c841e6e2d30474e002091c9033f888e0513346&",
           "content_type": "image/webp",
           "size": 309742
         }
       ],
       "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&"
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a49d79b&is=6a48861b&hm=d89a927d8f8fd88ea161ea0ed7c841e6e2d30474e002091c9033f888e0513346&"
       ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a48861b&is=6a47349b&hm=e6eadd5eae4225c5ada4aa8980bf04ecf7fd2d1c9616b4f2137eb918d34221c1&",
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a49d79b&is=6a48861b&hm=d89a927d8f8fd88ea161ea0ed7c841e6e2d30474e002091c9033f888e0513346&",
       "version": null,
       "size": null,
       "discord_message_id": "1519916027041812550",
       "created_at": "2026-06-26T13:03:39.521+09:00",
-      "updated_at": "2026-06-26T13:03:39.521+09:00"
+      "updated_at": "2026-07-04T15:32:32.997+09:00"
     },
     {
       "id": "1519915559645347921",
