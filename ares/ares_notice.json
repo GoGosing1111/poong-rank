@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-04T15:32:41.716+09:00",
+  "updated": "2026-07-04T15:36:42.658+09:00",
   "notice": [
     {
       "id": "1522548105785114765",
@@ -588,6 +588,40 @@
     }
   ],
   "hunt": [
+    {
+      "id": "1522853645794676807",
+      "type": "사냥터",
+      "title": "[잊혀진 섬]",
+      "date": "2026-07-04",
+      "content": "입장료 : 잊섬 입장권 1개\n이용시간 : 3시간\n주요드랍 : 할파스의 심장 , 영웅등급 성물 3종\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "11-1_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a49fb7a&is=6a48a9fa&hm=58f4745457f8a5506da40221b0d0223da0a9e37bc327627fe935bfb70dd612c6&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a49fb7a&is=6a48a9fa&hm=58f4745457f8a5506da40221b0d0223da0a9e37bc327627fe935bfb70dd612c6&",
+          "content_type": "image/webp",
+          "size": 280888
+        },
+        {
+          "name": "11_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645463322745/11_.png?ex=6a49fb7a&is=6a48a9fa&hm=ec131a6735991faa4a9516965be88feddbaca24755afe96cb760b63c9249fe7b&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1522853645463322745/11_.png?ex=6a49fb7a&is=6a48a9fa&hm=ec131a6735991faa4a9516965be88feddbaca24755afe96cb760b63c9249fe7b&",
+          "content_type": "image/webp",
+          "size": 279470
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a49fb7a&is=6a48a9fa&hm=58f4745457f8a5506da40221b0d0223da0a9e37bc327627fe935bfb70dd612c6&",
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645463322745/11_.png?ex=6a49fb7a&is=6a48a9fa&hm=ec131a6735991faa4a9516965be88feddbaca24755afe96cb760b63c9249fe7b&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a49fb7a&is=6a48a9fa&hm=58f4745457f8a5506da40221b0d0223da0a9e37bc327627fe935bfb70dd612c6&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1522853645794676807",
+      "created_at": "2026-07-04T15:36:42.410+09:00",
+      "updated_at": "2026-07-04T15:36:42.410+09:00"
+    },
     {
       "id": "1519916027041812550",
       "type": "사냥터",
