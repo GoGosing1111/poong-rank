@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-04T15:32:33.305+09:00",
+  "updated": "2026-07-04T15:32:41.716+09:00",
   "notice": [
     {
       "id": "1522548105785114765",
@@ -645,26 +645,26 @@
       "type": "사냥터",
       "title": "[시련의 탑 1층] ※미지인 사냥터※",
       "date": "2026-06-16",
-      "content": "입장료 : 500만 아데나\n오픈시간 : 01시 , 12시 , 19시\n이용시간 : 오픈 후 2시간 씩\n주요드랍 : 할파스 갑옷 3종 , 토템 강화석\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X\n\n※ 미지인 사냥터 = 누구나 PK가 가능합니다. 중립 라인 구분 없습니다. 라인은 해당 맵에서의 PK로 인한 통제사냥터 & 무필 신청 불허합니다. ※",
+      "content": "입장료 : 1500만 아데나\n오픈시간 : 01시 , 12시 , 19시\n이용시간 : 오픈 후 2시간 씩\n주요드랍 : 할파스 갑옷 3종 , 토템 강화석\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X\n\n※ 미지인 사냥터 = 누구나 PK가 가능합니다. 중립 라인 구분 없습니다. 라인은 해당 맵에서의 PK로 인한 통제사냥터 & 무필 신청 불허합니다. ※",
       "author": "lin1ares",
       "attachments": [
         {
           "name": "8_1_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a495a2a&is=6a4808aa&hm=a8918b7800136b8500e45fd8471d2d2fe5301a4154b02156f9ac3e20ba78fe09&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a495a2a&is=6a4808aa&hm=a8918b7800136b8500e45fd8471d2d2fe5301a4154b02156f9ac3e20ba78fe09&",
           "content_type": "image/webp",
           "size": 144914
         }
       ],
       "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&"
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a495a2a&is=6a4808aa&hm=a8918b7800136b8500e45fd8471d2d2fe5301a4154b02156f9ac3e20ba78fe09&"
       ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a48b16a&is=6a475fea&hm=93c1cc42de2222a9e0119b8fc778f7d4825787edf9a04310a66b6995be78f664&",
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a495a2a&is=6a4808aa&hm=a8918b7800136b8500e45fd8471d2d2fe5301a4154b02156f9ac3e20ba78fe09&",
       "version": null,
       "size": null,
       "discord_message_id": "1516338649183158282",
       "created_at": "2026-06-16T16:08:26.175+09:00",
-      "updated_at": "2026-06-16T16:09:13.708+09:00"
+      "updated_at": "2026-07-04T15:32:41.376+09:00"
     },
     {
       "id": "1516337831318913054",
