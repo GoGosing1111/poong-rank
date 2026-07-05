@@ -10,7 +10,7 @@ CNINE VOD loader v7 - STABLE RECOVERY
   if (window.__C9_VOD_LOADER_V7__) return;
   window.__C9_VOD_LOADER_V7__ = true;
 
-  var BASE = 'https://keyman1335-maker.github.io/poong-rank';
+  var BASE = 'https://gogosing1111.github.io/poong-rank';
 
   // 캐시 우회용 버전. GitHub push 후 이 값이 바뀌어야 새 파일을 강제로 받음.
   var ORIGIN_JS = BASE + '/soop_vodchat.js?v=2026061234';
