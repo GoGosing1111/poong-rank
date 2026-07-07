@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-07T10:23:44.861+09:00",
+  "updated": "2026-07-07T10:32:54.856+09:00",
   "notice": [
     {
       "id": "1523299893597310977",
@@ -984,6 +984,32 @@
     }
   ],
   "boss": [
+    {
+      "id": "1523864353822998710",
+      "type": "보스",
+      "title": "[ 화염의 데스나이트 ]",
+      "date": "2026-07-07",
+      "content": "출현 지역 : 혼돈의 개미굴 2층\n출현 시간 : 14시\n\n보스 드랍품 (공용) : [축] 오림의 장신구 마법 주문서 , 신화 마안 도안 , 무기 보호 주문서 , 방어구 보호 주문서 , 1억 수표 , 다이아 랜덤 상자 , 실렌의 조각 , 명예코인 , 전설 비법서 , 영웅 비법서 , 역별의 정수 , 전설 장비 상자 , 영웅 장비 상자 , 골드 코인 , 보스 킬러 1 , 보스 킬러 2 , 보스 킬러 3 , 3차 신화 스킬 , 숙련도 이전권",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "5_14.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1523864352816369684/5_14.png?ex=6a4da8c5&is=6a4c5745&hm=63a5a7a03b7888593704c27298cbcc37833ef1b0fa254fdeab01a9f593f3be1b&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1523864352816369684/5_14.png?ex=6a4da8c5&is=6a4c5745&hm=63a5a7a03b7888593704c27298cbcc37833ef1b0fa254fdeab01a9f593f3be1b&",
+          "content_type": "image/webp",
+          "size": 84532
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1523864352816369684/5_14.png?ex=6a4da8c5&is=6a4c5745&hm=63a5a7a03b7888593704c27298cbcc37833ef1b0fa254fdeab01a9f593f3be1b&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1523864352816369684/5_14.png?ex=6a4da8c5&is=6a4c5745&hm=63a5a7a03b7888593704c27298cbcc37833ef1b0fa254fdeab01a9f593f3be1b&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1523864353822998710",
+      "created_at": "2026-07-07T10:32:53.982+09:00",
+      "updated_at": "2026-07-07T10:32:53.982+09:00"
+    },
     {
       "id": "1523862048503496704",
       "type": "보스",
