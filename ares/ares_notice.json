@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-07T10:23:14.268+09:00",
+  "updated": "2026-07-07T10:23:44.861+09:00",
   "notice": [
     {
       "id": "1523299893597310977",
@@ -984,6 +984,32 @@
     }
   ],
   "boss": [
+    {
+      "id": "1523862048503496704",
+      "type": "보스",
+      "title": "[얼음여왕]",
+      "date": "2026-07-07",
+      "content": "출현지역 : 오렌설벽\n출현시간 : 19시\n※ 해당 보스는 '중립' 전용 보스 입니다. 중립 혈맹만 공격권이 존재합니다.\n\n보스 드랍품 : [축] 오림의 장신구 마법 주문서 , 신화 마안 도안 , 무기 보호 주문서 , 방어구 보호 주문서 , 1억 수표 , 다이아 랜덤 상자 , 명예코인 , 전설 비법서 , 영웅 비법서 , 역별의 정수 , 전설 장비 상자 , 영웅 장비 상자 , 보스 킬러 1",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "19.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1523862048134533140/19.png?ex=6a4da6a0&is=6a4c5520&hm=888d150340c671df2f751aaa4670f1c28b017b8859404ac7d2259f6ea3fcbaf0&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1523862048134533140/19.png?ex=6a4da6a0&is=6a4c5520&hm=888d150340c671df2f751aaa4670f1c28b017b8859404ac7d2259f6ea3fcbaf0&",
+          "content_type": "image/webp",
+          "size": 82574
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1523862048134533140/19.png?ex=6a4da6a0&is=6a4c5520&hm=888d150340c671df2f751aaa4670f1c28b017b8859404ac7d2259f6ea3fcbaf0&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1523862048134533140/19.png?ex=6a4da6a0&is=6a4c5520&hm=888d150340c671df2f751aaa4670f1c28b017b8859404ac7d2259f6ea3fcbaf0&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1523862048503496704",
+      "created_at": "2026-07-07T10:23:44.351+09:00",
+      "updated_at": "2026-07-07T10:23:44.351+09:00"
+    },
     {
       "id": "1523860372769996880",
       "type": "보스",
