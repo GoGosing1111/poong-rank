@@ -1,7 +1,81 @@
 {
   "version": "3.0",
-  "updated": "2026-07-09T13:14:41.472+09:00",
+  "updated": "2026-07-09T20:57:51.370+09:00",
   "notice": [
+    {
+      "id": "1524746399479238837",
+      "type": "공지",
+      "title": "📢 [ 업데이트 예고 ]",
+      "date": "2026-07-09",
+      "content": "안녕하세요.\n아레스 운영팀입니다.\n\n다음 업데이트를 통해\n신규 콘텐츠 2종이 추가될 예정입니다.\n\n━━━━━━━━━━━━━━━━━━\n⭐ 신규 콘텐츠 ①\n수호성 시스템\n━━━━━━━━━━━━━━━━━━\n\n수호석을 사용하여\n수호성을 개방할 수 있습니다.\n\n카드 개방 방식으로 진행되며,\n다양한 전투 효과를 획득할 수 있습니다.\n\n[ 주요 효과 ]\n\n• PVE 사냥 특화 스킬\n• PVP 단일 대상 공격\n• HP 전체 회복\n• 다양한 신규 스킬\n\n━━━━━━━━━━━━━━━━━━\n📜 신규 콘텐츠 ②\n일일 퀘스트\n━━━━━━━━━━━━━━━━━━\n\n매일 다양한 일일 퀘스트가\n랜덤으로 부여됩니다.\n\n퀘스트를 완료하면\n캐릭터 성장에 도움이 되는 다양한 보상을 획득할 수 있습니다.\n\n※ 난이도가 높은 퀘스트일수록\n더 좋은 보상을 획득할 수 있습니다.\n\n새로운 콘텐츠와 함께\n더욱 풍성한 재미를 제공해드릴 예정이오니 많은 기대 부탁드립니다.\n\n감사합니다.\n\n- 아레스 운영팀 -",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "3_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746396920451092/3_.png?ex=6a50de3d&is=6a4f8cbd&hm=a99a406de821636a7df9dafacfa2afafeb0098cfdb2e14813486e170835fac59&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072257213042738/1524746396920451092/3_.png?ex=6a50de3d&is=6a4f8cbd&hm=a99a406de821636a7df9dafacfa2afafeb0098cfdb2e14813486e170835fac59&",
+          "content_type": "image/webp",
+          "size": 82252
+        },
+        {
+          "name": "3-1_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746397344206950/3-1_.png?ex=6a50de3d&is=6a4f8cbd&hm=4296995ef4b81d0851d544d12595502f8e0aaafa920a0b9e9649eee44d2ac2fb&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072257213042738/1524746397344206950/3-1_.png?ex=6a50de3d&is=6a4f8cbd&hm=4296995ef4b81d0851d544d12595502f8e0aaafa920a0b9e9649eee44d2ac2fb&",
+          "content_type": "image/webp",
+          "size": 91430
+        },
+        {
+          "name": "3-3_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746397746729010/3-3_.png?ex=6a50de3d&is=6a4f8cbd&hm=c5181f11352109d2e16d231e2bee056a519a99609bcff1c7faa284b65ed53949&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072257213042738/1524746397746729010/3-3_.png?ex=6a50de3d&is=6a4f8cbd&hm=c5181f11352109d2e16d231e2bee056a519a99609bcff1c7faa284b65ed53949&",
+          "content_type": "image/webp",
+          "size": 184826
+        },
+        {
+          "name": "4-1_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746398116085851/4-1_.png?ex=6a50de3d&is=6a4f8cbd&hm=96527caaeba02ccd8369950ae9f3c17de018b16d3e65cf4fb083b2c95c517653&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072257213042738/1524746398116085851/4-1_.png?ex=6a50de3d&is=6a4f8cbd&hm=96527caaeba02ccd8369950ae9f3c17de018b16d3e65cf4fb083b2c95c517653&",
+          "content_type": "image/webp",
+          "size": 53866
+        },
+        {
+          "name": "5_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746398468411472/5_.png?ex=6a50de3d&is=6a4f8cbd&hm=1da4aaa36a2b1409b7e1975f9006c2c1e66e13c3b050f028803d7bfc050b7122&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072257213042738/1524746398468411472/5_.png?ex=6a50de3d&is=6a4f8cbd&hm=1da4aaa36a2b1409b7e1975f9006c2c1e66e13c3b050f028803d7bfc050b7122&",
+          "content_type": "image/webp",
+          "size": 58186
+        },
+        {
+          "name": "5-2_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746398849831002/5-2_.png?ex=6a50de3d&is=6a4f8cbd&hm=90a3d9a87153fe941d51d3ac759cb60cf2d737acaa81512f2221f483887ff963&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072257213042738/1524746398849831002/5-2_.png?ex=6a50de3d&is=6a4f8cbd&hm=90a3d9a87153fe941d51d3ac759cb60cf2d737acaa81512f2221f483887ff963&",
+          "content_type": "image/webp",
+          "size": 96072
+        },
+        {
+          "name": "photo_2026-02-03_19-33-25.jpg",
+          "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746399181439118/photo_2026-02-03_19-33-25.jpg?ex=6a50de3d&is=6a4f8cbd&hm=ea33d31471669166626f4be5e27d5be707e2bd975a54d1ae88402a01b30214b1&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516072257213042738/1524746399181439118/photo_2026-02-03_19-33-25.jpg?ex=6a50de3d&is=6a4f8cbd&hm=ea33d31471669166626f4be5e27d5be707e2bd975a54d1ae88402a01b30214b1&",
+          "content_type": "image/jpeg",
+          "size": 29704
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516072257213042738/1524746396920451092/3_.png?ex=6a50de3d&is=6a4f8cbd&hm=a99a406de821636a7df9dafacfa2afafeb0098cfdb2e14813486e170835fac59&",
+        "https://cdn.discordapp.com/attachments/1516072257213042738/1524746397344206950/3-1_.png?ex=6a50de3d&is=6a4f8cbd&hm=4296995ef4b81d0851d544d12595502f8e0aaafa920a0b9e9649eee44d2ac2fb&",
+        "https://cdn.discordapp.com/attachments/1516072257213042738/1524746397746729010/3-3_.png?ex=6a50de3d&is=6a4f8cbd&hm=c5181f11352109d2e16d231e2bee056a519a99609bcff1c7faa284b65ed53949&",
+        "https://cdn.discordapp.com/attachments/1516072257213042738/1524746398116085851/4-1_.png?ex=6a50de3d&is=6a4f8cbd&hm=96527caaeba02ccd8369950ae9f3c17de018b16d3e65cf4fb083b2c95c517653&",
+        "https://cdn.discordapp.com/attachments/1516072257213042738/1524746398468411472/5_.png?ex=6a50de3d&is=6a4f8cbd&hm=1da4aaa36a2b1409b7e1975f9006c2c1e66e13c3b050f028803d7bfc050b7122&",
+        "https://cdn.discordapp.com/attachments/1516072257213042738/1524746398849831002/5-2_.png?ex=6a50de3d&is=6a4f8cbd&hm=90a3d9a87153fe941d51d3ac759cb60cf2d737acaa81512f2221f483887ff963&",
+        "https://cdn.discordapp.com/attachments/1516072257213042738/1524746399181439118/photo_2026-02-03_19-33-25.jpg?ex=6a50de3d&is=6a4f8cbd&hm=ea33d31471669166626f4be5e27d5be707e2bd975a54d1ae88402a01b30214b1&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516072257213042738/1524746396920451092/3_.png?ex=6a50de3d&is=6a4f8cbd&hm=a99a406de821636a7df9dafacfa2afafeb0098cfdb2e14813486e170835fac59&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1524746399479238837",
+      "created_at": "2026-07-09T20:57:50.054+09:00",
+      "updated_at": "2026-07-09T20:57:50.054+09:00"
+    },
     {
       "id": "1524629842211897394",
       "type": "공지",
