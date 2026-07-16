@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-16T14:45:02.235+09:00",
+  "updated": "2026-07-16T14:46:40.842+09:00",
   "notice": [
     {
       "id": "1526790292924272701",
@@ -876,6 +876,32 @@
     }
   ],
   "hunt": [
+    {
+      "id": "1527189704858931220",
+      "type": "사냥터",
+      "title": "[잊혀진 피라미드]",
+      "date": "2026-07-16",
+      "content": "입장료 : 피라미드 입장권 1개\n이용시간 : 3시간\n주요드랍 : 부츠의 유물 , 각반의 유물\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "13_.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a59c1bf&is=6a58703f&hm=295170631f442549eef7420d38ee55973462acc3408d1b6be23812be1f53f939&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a59c1bf&is=6a58703f&hm=295170631f442549eef7420d38ee55973462acc3408d1b6be23812be1f53f939&",
+          "content_type": "image/webp",
+          "size": 279774
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a59c1bf&is=6a58703f&hm=295170631f442549eef7420d38ee55973462acc3408d1b6be23812be1f53f939&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a59c1bf&is=6a58703f&hm=295170631f442549eef7420d38ee55973462acc3408d1b6be23812be1f53f939&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1527189704858931220",
+      "created_at": "2026-07-16T14:46:39.451+09:00",
+      "updated_at": "2026-07-16T14:46:39.451+09:00"
+    },
     {
       "id": "1527189290906419201",
       "type": "사냥터",
