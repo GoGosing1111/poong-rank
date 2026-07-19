@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-19T19:27:42.610+09:00",
+  "updated": "2026-07-19T19:36:23.705+09:00",
   "notice": [
     {
       "id": "1528260512964677862",
@@ -1641,28 +1641,28 @@
     {
       "id": "1522455431635796138",
       "type": "컨텐츠",
-      "title": "[몬스터 디펜스] : 20시 45분",
+      "title": "[몬스터 디펜스] : 20시 30분",
       "date": "2026-07-03",
       "content": "※ 부캐릭 출입금지 / 적발 시 영구정지 ※\n\n< 몬스터 라운드 보상 > (총 6라운드)\n• 500만 아데나\n• 명예코인 100개\n• 다이아 500개\n• 역별의 정수 2개\n• 전설 변신 상자 1개\n• 무기 보호 주문서 1개\n\n< 보스 라운드 보상 > (총 3라운드)\n§ 확정 §\n• 2000만 아데나\n• 명예코인 500개\n• 다이아 1500개\n• 역별의 정수 10개\n• 전설 변신 상자 1개\n• 전설 인형 상자 1개\n• 무기 보호 주문서 1개\n\n§ 랜덤 §\n• 500만 아데나\n• 전설 변신 상자\n• 전설 인형 상자\n• 전설 장비 상자\n• 아이템 변경권\n• [유일] 기르타스(변신)\n\n\n⚠️ < 몬스터 디펜스 주의사항 >\n\n1️⃣ '카운터 매직' 아이템을 반드시 준비해 주세요.\n\n2️⃣ 진행 도중 💀 사망 후 리스타트할 경우 보상을 획득할 수 없습니다.\n\n3️⃣ 해당 라운드의 👾 몬스터를 모두 처치해야 다음 라운드가 진행됩니다.\n\n4️⃣ 몬스터를 모두 처치하면 즉시 다음 라운드가 시작되므로, 🚨 보스 라운드 시작 전에 '카운터 매직'을 미리 사용하세요.\n\n\n📋 < 라운드 구성 >\n\n1라운드 👾 몬스터 침공\n2라운드 👾 몬스터 침공\n3라운드 👑 보스 침공\n\n4라운드 👾 몬스터 침공\n5라운드 👾 몬스터 침공\n6라운드 👑 보스 침공\n\n7라운드 👾 몬스터 침공\n8라운드 👾 몬스터 침공\n9라운드 👑 보스 침공\n\n전투 컨텐츠가 아닙니다. 서로 협력하여 몬스터의 침공을 막으시길 바랍니다.",
       "author": "lin1ares",
       "attachments": [
         {
           "name": "image.png",
-          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5ba65c&is=6a5a54dc&hm=38a55562718b0e60d012f906b67e9c63c8b0642f51fff4d824f6f1bcc5015e64&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5ba65c&is=6a5a54dc&hm=38a55562718b0e60d012f906b67e9c63c8b0642f51fff4d824f6f1bcc5015e64&",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5da09c&is=6a5c4f1c&hm=8cff1fcbb43cef69d28f994ff4be0f628d568d8ff1ffe806ab544fbbc5874055&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5da09c&is=6a5c4f1c&hm=8cff1fcbb43cef69d28f994ff4be0f628d568d8ff1ffe806ab544fbbc5874055&",
           "content_type": "image/webp",
           "size": 151870
         }
       ],
       "images": [
-        "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5ba65c&is=6a5a54dc&hm=38a55562718b0e60d012f906b67e9c63c8b0642f51fff4d824f6f1bcc5015e64&"
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5da09c&is=6a5c4f1c&hm=8cff1fcbb43cef69d28f994ff4be0f628d568d8ff1ffe806ab544fbbc5874055&"
       ],
-      "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5ba65c&is=6a5a54dc&hm=38a55562718b0e60d012f906b67e9c63c8b0642f51fff4d824f6f1bcc5015e64&",
+      "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1522455431342067762/image.png?ex=6a5da09c&is=6a5c4f1c&hm=8cff1fcbb43cef69d28f994ff4be0f628d568d8ff1ffe806ab544fbbc5874055&",
       "version": null,
       "size": null,
       "discord_message_id": "1522455431635796138",
       "created_at": "2026-07-03T13:14:20.756+09:00",
-      "updated_at": "2026-07-17T21:52:22.588+09:00"
+      "updated_at": "2026-07-19T19:36:23.774+09:00"
     },
     {
       "id": "1516353505936539738",
