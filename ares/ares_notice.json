@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-19T19:36:23.705+09:00",
+  "updated": "2026-07-19T20:00:58.305+09:00",
   "notice": [
     {
       "id": "1528260512964677862",
@@ -1622,6 +1622,32 @@
     }
   ],
   "content": [
+    {
+      "id": "1528355968340197489",
+      "type": "컨텐츠",
+      "title": "【 일일 퀘스트 】 : 상시",
+      "date": "2026-07-19",
+      "content": "📋 < 퀘스트 목록 >\n\n🔹 미지인 사냥터 정복\n🔹 유저 킬 미션\n🔹 보스 한입만 제출\n🔹 디펜스 보스 상자 제출\n🔹 디펜스 보상 상자 제출\n🔹 유니크 보물 제출\n🔹 토너먼트 승리 보상 제출\n🔹 미니공성 승리 보상 제출\n\n🎁 【 보상 안내 】\n\n보상 목록에 표시된 3종의 아이템은\n3종 중 1개를 선택하여 획득하는 방식이 아닙니다.\n\n각 보상 아이템의 확률이 개별적으로 적용되며,\n확률에 따라 최대 3종 모두 획득하실 수 있습니다.\n\n⚠️ 【 퀘스트 진행 안내 】\n\n모든 퀘스트는 반드시 퀘스트를 수락한 이후부터 진행 및 카운트가 적용됩니다.\n\n퀘스트 수락 전에 진행한 내용은 카운트되지 않으니 꼭 확인해 주세요.",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "image.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a5dffea&is=6a5cae6a&hm=7408ea9165771819256d9455e4293fb209c0142fad523626f26bab79491175dc&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a5dffea&is=6a5cae6a&hm=7408ea9165771819256d9455e4293fb209c0142fad523626f26bab79491175dc&",
+          "content_type": "image/webp",
+          "size": 42958
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a5dffea&is=6a5cae6a&hm=7408ea9165771819256d9455e4293fb209c0142fad523626f26bab79491175dc&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a5dffea&is=6a5cae6a&hm=7408ea9165771819256d9455e4293fb209c0142fad523626f26bab79491175dc&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1528355968340197489",
+      "created_at": "2026-07-19T20:00:58.333+09:00",
+      "updated_at": "2026-07-19T20:00:58.333+09:00"
+    },
     {
       "id": "1527547728027058276",
       "type": "컨텐츠",
