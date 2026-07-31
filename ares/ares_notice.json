@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-07-31T22:17:56.118+09:00",
+  "updated": "2026-07-31T22:20:50.056+09:00",
   "notice": [
     {
       "id": "1530883302108430427",
@@ -1538,6 +1538,32 @@
     }
   ],
   "boss": [
+    {
+      "id": "1532739818818113656",
+      "type": "보스",
+      "title": "[ 질투의 공주 이자벨 ]",
+      "date": "2026-07-31",
+      "content": "출현 지역 : 신념의 탑 3층\n출현 시간 : 23시\n\n보스 드랍품 (공용) : [축] 오림의 장신구 마법 주문서 , 신화 마안 도안 , 무기 보호 주문서 , 방어구 보호 주문서 , 1억 수표 , 다이아 랜덤 상자 , 실렌의 조각 , 명예코인 , 전설 비법서 , 영웅 비법서 , 역별의 정수 , 전설 장비 상자 , 영웅 장비 상자 , 골드 코인 , 보스 킬러 1 , 보스 킬러 2 , 보스 킬러 3 , 3차 신화 스킬 , 숙련도 이전권 , 수호석 , 룬 변환석 , 장갑의 유물 , 부츠의 유물 , 망토의 유물 , 각반의 유물 , 오염된 핵",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "14-1_23.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1532739818516254941/14-1_23.png?ex=6a6df2b1&is=6a6ca131&hm=a11ffc6f4a00ced6ae682966b1883e926feb24e8fdcd4e39ff66edb9cee5e25b&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1532739818516254941/14-1_23.png?ex=6a6df2b1&is=6a6ca131&hm=a11ffc6f4a00ced6ae682966b1883e926feb24e8fdcd4e39ff66edb9cee5e25b&",
+          "content_type": "image/webp",
+          "size": 133322
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1532739818516254941/14-1_23.png?ex=6a6df2b1&is=6a6ca131&hm=a11ffc6f4a00ced6ae682966b1883e926feb24e8fdcd4e39ff66edb9cee5e25b&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1532739818516254941/14-1_23.png?ex=6a6df2b1&is=6a6ca131&hm=a11ffc6f4a00ced6ae682966b1883e926feb24e8fdcd4e39ff66edb9cee5e25b&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1532739818818113656",
+      "created_at": "2026-07-31T22:20:49.735+09:00",
+      "updated_at": "2026-07-31T22:20:49.735+09:00"
+    },
     {
       "id": "1523864353822998710",
       "type": "보스",
