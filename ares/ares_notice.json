@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:15:06.121+09:00",
+  "updated": "2026-08-15T03:15:14.690+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -1227,34 +1227,7 @@
       "updated_at": "2026-08-11T23:41:33.028+09:00"
     }
   ],
-  "hunt": [
-    {
-      "id": "1516316663643898027",
-      "type": "사냥터",
-      "title": "[혹한의 신전]",
-      "date": "2026-06-16",
-      "content": "입장료 : 30만 아데나\n이용시간 : 5시간\n주요드랍 : 성흔의 면갑 , 성흔의 갑옷 , 나그바스의 망토\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 02시 대부 텍투스 출현",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "1_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a7ffbf0&is=6a7eaa70&hm=72e3555e3e48439c9a1d49e85c507406b24ec41924ad4bf5748eebaed5ded51d&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a7ffbf0&is=6a7eaa70&hm=72e3555e3e48439c9a1d49e85c507406b24ec41924ad4bf5748eebaed5ded51d&",
-          "content_type": "image/webp",
-          "size": 226160
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a7ffbf0&is=6a7eaa70&hm=72e3555e3e48439c9a1d49e85c507406b24ec41924ad4bf5748eebaed5ded51d&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516316663316746280/1_.png?ex=6a7ffbf0&is=6a7eaa70&hm=72e3555e3e48439c9a1d49e85c507406b24ec41924ad4bf5748eebaed5ded51d&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516316663643898027",
-      "created_at": "2026-06-16T14:41:04.414+09:00",
-      "updated_at": "2026-06-16T14:41:04.414+09:00"
-    }
-  ],
+  "hunt": [],
   "boss": [],
   "item": [
     {
