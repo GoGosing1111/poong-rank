@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:13:24.519+09:00",
+  "updated": "2026-08-15T03:14:09.172+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -2163,32 +2163,6 @@
       "discord_message_id": "1516347557926670398",
       "created_at": "2026-06-16T16:43:50.185+09:00",
       "updated_at": "2026-07-17T14:14:31.325+09:00"
-    },
-    {
-      "id": "1516346940688826388",
-      "type": "컨텐츠",
-      "title": "[토너먼트] : 21시 45분",
-      "date": "2026-06-16",
-      "content": "※ 부캐릭 출입금지 / 적발 시 영구정지 ※\n\n< 승리팀 보상 >\n§ 확정 §\n• 5000만 아데나\n• 명예코인 1000개\n• 다이아 4000개\n• 역별의 정수 20개\n• 전설 변신 상자 2개\n• 전설 인형 상자 2개\n• 숙련도 부스팅 2개\n\n§ 랜덤 §\n• 500만 아데나\n• 전설 변신 상자\n• 전설 인형 상자\n• 전설 장비 상자\n• 아이템 변경권\n• [유일] 기르타스(변신)\n\n\n< 패배팀 보상 >\n§ 확정 §\n• 2500만 아데나\n• 명예코인 500개\n• 다이아 2000개\n• 역별의 정수 10개\n• 전설 변신 상자\n• 전설 인형 상자\n• 숙련도 부스팅 1개\n\n§ 랜덤 §\n• 500만 아데나\n• 전설 변신 상자\n• 전설 인형 상자\n• 전설 장비 상자\n• 아이템 변경권\n• [유일] 기르타스(변신)",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "49388da8dd4c4716.png",
-          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1516346940391161980/49388da8dd4c4716.png?ex=6a7f6f62&is=6a7e1de2&hm=230cf0bb2f8a94c5778bc219a55f7d62cdd899bef4f9f77a14d95b0bdecc4291&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1516346940391161980/49388da8dd4c4716.png?ex=6a7f6f62&is=6a7e1de2&hm=230cf0bb2f8a94c5778bc219a55f7d62cdd899bef4f9f77a14d95b0bdecc4291&",
-          "content_type": "image/webp",
-          "size": 203200
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516315665483567185/1516346940391161980/49388da8dd4c4716.png?ex=6a7f6f62&is=6a7e1de2&hm=230cf0bb2f8a94c5778bc219a55f7d62cdd899bef4f9f77a14d95b0bdecc4291&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1516346940391161980/49388da8dd4c4716.png?ex=6a7f6f62&is=6a7e1de2&hm=230cf0bb2f8a94c5778bc219a55f7d62cdd899bef4f9f77a14d95b0bdecc4291&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516346940688826388",
-      "created_at": "2026-06-16T16:41:23.024+09:00",
-      "updated_at": "2026-07-17T14:19:55.027+09:00"
     }
   ],
   "download": []
