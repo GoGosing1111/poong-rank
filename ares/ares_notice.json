@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:14:38.227+09:00",
+  "updated": "2026-08-15T03:14:44.783+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -1229,32 +1229,6 @@
   ],
   "hunt": [
     {
-      "id": "1534122517122515034",
-      "type": "사냥터",
-      "title": "[알비노 분지]",
-      "date": "2026-08-04",
-      "content": "입장료 : 5천만 아데나\n이용시간 : 3시간\n주요드랍 : 투구의 유물 , 반지의 유물 , 전설 성물 3종\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "15_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1534122516799557643/15_.png?ex=6a7f80ae&is=6a7e2f2e&hm=5283c3a83386e86ff068b2b51ff9201b97d24c04f6fb543881ac43b203794d1c&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1534122516799557643/15_.png?ex=6a7f80ae&is=6a7e2f2e&hm=5283c3a83386e86ff068b2b51ff9201b97d24c04f6fb543881ac43b203794d1c&",
-          "content_type": "image/webp",
-          "size": 350194
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1534122516799557643/15_.png?ex=6a7f80ae&is=6a7e2f2e&hm=5283c3a83386e86ff068b2b51ff9201b97d24c04f6fb543881ac43b203794d1c&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1534122516799557643/15_.png?ex=6a7f80ae&is=6a7e2f2e&hm=5283c3a83386e86ff068b2b51ff9201b97d24c04f6fb543881ac43b203794d1c&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1534122517122515034",
-      "created_at": "2026-08-04T17:55:10.700+09:00",
-      "updated_at": "2026-08-04T17:55:10.700+09:00"
-    },
-    {
       "id": "1532740398726910034",
       "type": "사냥터",
       "title": "[신념의 탑 3층]",
@@ -1653,60 +1627,7 @@
       "updated_at": "2026-06-16T14:41:04.414+09:00"
     }
   ],
-  "boss": [
-    {
-      "id": "1516345052706902056",
-      "type": "보스",
-      "title": "[대부 텍투스]",
-      "date": "2026-06-16",
-      "content": "출현지역 : 혹한의 신전\n출현시간 : 02시",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "1_02.png",
-          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516345052354314320/1_02.png?ex=6a801660&is=6a7ec4e0&hm=905db2cfbd5d864e6464f0db7f13cec9482dba8889a26525fb745070ffb901af&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516345052354314320/1_02.png?ex=6a801660&is=6a7ec4e0&hm=905db2cfbd5d864e6464f0db7f13cec9482dba8889a26525fb745070ffb901af&",
-          "content_type": "image/webp",
-          "size": 136792
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516315526840979528/1516345052354314320/1_02.png?ex=6a801660&is=6a7ec4e0&hm=905db2cfbd5d864e6464f0db7f13cec9482dba8889a26525fb745070ffb901af&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516345052354314320/1_02.png?ex=6a801660&is=6a7ec4e0&hm=905db2cfbd5d864e6464f0db7f13cec9482dba8889a26525fb745070ffb901af&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516345052706902056",
-      "created_at": "2026-06-16T16:33:52.894+09:00",
-      "updated_at": "2026-06-16T16:33:52.894+09:00"
-    },
-    {
-      "id": "1516344945944825946",
-      "type": "보스",
-      "title": "[카슈베]",
-      "date": "2026-06-16",
-      "content": "출현지역 : 풍룡의 둥지\n출현시간 : 00시",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "2_00.png",
-          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516344945458282496/2_00.png?ex=6a801647&is=6a7ec4c7&hm=89959e000b22057c0a61f0d3851db2723441ea9901299692f8664299f69df4b7&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1516344945458282496/2_00.png?ex=6a801647&is=6a7ec4c7&hm=89959e000b22057c0a61f0d3851db2723441ea9901299692f8664299f69df4b7&",
-          "content_type": "image/webp",
-          "size": 173088
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516315526840979528/1516344945458282496/2_00.png?ex=6a801647&is=6a7ec4c7&hm=89959e000b22057c0a61f0d3851db2723441ea9901299692f8664299f69df4b7&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1516344945458282496/2_00.png?ex=6a801647&is=6a7ec4c7&hm=89959e000b22057c0a61f0d3851db2723441ea9901299692f8664299f69df4b7&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516344945944825946",
-      "created_at": "2026-06-16T16:33:27.440+09:00",
-      "updated_at": "2026-06-16T16:33:27.440+09:00"
-    }
-  ],
+  "boss": [],
   "item": [
     {
       "id": "1522522502314725529",
