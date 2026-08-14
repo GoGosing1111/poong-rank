@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:14:49.114+09:00",
+  "updated": "2026-08-15T03:14:53.771+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -1228,92 +1228,6 @@
     }
   ],
   "hunt": [
-    {
-      "id": "1522853645794676807",
-      "type": "사냥터",
-      "title": "[잊혀진 섬]",
-      "date": "2026-07-04",
-      "content": "입장료 : 잊섬 입장권 1개\n이용시간 : 3시간\n주요드랍 : 할파스의 심장 , 영웅등급 성물 3종\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "11-1_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a8008fa&is=6a7eb77a&hm=e731b12ffff4fe9d1e6cd8df5dd99365b67b585e2bf09d7e6b0b0691f9a9060b&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a8008fa&is=6a7eb77a&hm=e731b12ffff4fe9d1e6cd8df5dd99365b67b585e2bf09d7e6b0b0691f9a9060b&",
-          "content_type": "image/webp",
-          "size": 280888
-        },
-        {
-          "name": "11_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645463322745/11_.png?ex=6a8008fa&is=6a7eb77a&hm=8d177fc88764421914c65f36b0109eb5bacbcc904f17ded3e2a120e53b31e498&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1522853645463322745/11_.png?ex=6a8008fa&is=6a7eb77a&hm=8d177fc88764421914c65f36b0109eb5bacbcc904f17ded3e2a120e53b31e498&",
-          "content_type": "image/webp",
-          "size": 279470
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a8008fa&is=6a7eb77a&hm=e731b12ffff4fe9d1e6cd8df5dd99365b67b585e2bf09d7e6b0b0691f9a9060b&",
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645463322745/11_.png?ex=6a8008fa&is=6a7eb77a&hm=8d177fc88764421914c65f36b0109eb5bacbcc904f17ded3e2a120e53b31e498&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1522853645153206323/11-1_.png?ex=6a8008fa&is=6a7eb77a&hm=e731b12ffff4fe9d1e6cd8df5dd99365b67b585e2bf09d7e6b0b0691f9a9060b&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1522853645794676807",
-      "created_at": "2026-07-04T15:36:42.410+09:00",
-      "updated_at": "2026-07-04T15:36:42.410+09:00"
-    },
-    {
-      "id": "1519916027041812550",
-      "type": "사냥터",
-      "title": "[오만의 탑 2층]",
-      "date": "2026-06-26",
-      "content": "입장료 : 3000만 아데나\n이용시간 : 3시간 (1층과 시간 공유)\n주요드랍 : 희귀 오만의 지배석 , [전설] 고강 무기 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "image.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a7fe51b&is=6a7e939b&hm=110d58ca1994a8ecaf6edc6371ed5c5c0e26b449c851b412b1a717ffd4399ec2&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a7fe51b&is=6a7e939b&hm=110d58ca1994a8ecaf6edc6371ed5c5c0e26b449c851b412b1a717ffd4399ec2&",
-          "content_type": "image/webp",
-          "size": 309742
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a7fe51b&is=6a7e939b&hm=110d58ca1994a8ecaf6edc6371ed5c5c0e26b449c851b412b1a717ffd4399ec2&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519916026735624282/image.png?ex=6a7fe51b&is=6a7e939b&hm=110d58ca1994a8ecaf6edc6371ed5c5c0e26b449c851b412b1a717ffd4399ec2&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1519916027041812550",
-      "created_at": "2026-06-26T13:03:39.521+09:00",
-      "updated_at": "2026-07-04T15:32:32.997+09:00"
-    },
-    {
-      "id": "1519915559645347921",
-      "type": "사냥터",
-      "title": "[테베라스 사막]",
-      "date": "2026-06-26",
-      "content": "입장료 : 1000만 아데나\n이용시간 : 3시간\n주요드랍 : 윈다우드의 카탈리스트 , 전설 장비 상자 , [전설] 고강 방어구 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "image.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a7fe4ab&is=6a7e932b&hm=4de2f9c8087e10884cfbd02b730b210a05770c1af9b0cef91bae812891419881&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a7fe4ab&is=6a7e932b&hm=4de2f9c8087e10884cfbd02b730b210a05770c1af9b0cef91bae812891419881&",
-          "content_type": "image/webp",
-          "size": 151454
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a7fe4ab&is=6a7e932b&hm=4de2f9c8087e10884cfbd02b730b210a05770c1af9b0cef91bae812891419881&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1519915559234437323/image.png?ex=6a7fe4ab&is=6a7e932b&hm=4de2f9c8087e10884cfbd02b730b210a05770c1af9b0cef91bae812891419881&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1519915559645347921",
-      "created_at": "2026-06-26T13:01:48.085+09:00",
-      "updated_at": "2026-06-26T13:01:48.085+09:00"
-    },
     {
       "id": "1516338649183158282",
       "type": "사냥터",
