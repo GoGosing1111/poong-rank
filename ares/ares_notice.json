@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:14:15.533+09:00",
+  "updated": "2026-08-15T03:14:19.301+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -1991,58 +1991,6 @@
       "discord_message_id": "1529782101707325564",
       "created_at": "2026-07-23T18:27:55.024+09:00",
       "updated_at": "2026-07-23T18:27:55.024+09:00"
-    },
-    {
-      "id": "1529781778079023144",
-      "type": "컨텐츠",
-      "title": "[보물섬] : 1시 , 10시 , 16시 , 19시 , 21시 , 23시 30분",
-      "date": "2026-07-23",
-      "content": "※ 해당 NPC에게 '보물 탐지 삽'을 구매해야 입장이 가능합니다.\n\n※ 오픈 후 10분 동안 NPC 유지 및 입장 가능합니다.\n\n일반 보물\n• 500만 아데나\n• 역별의 정수 1개\n\n고급 보물\n• 2000만 아데나\n• 명예코인 250개\n• 다이아 1000개\n• 역별의 정수 3개\n\n최고급 보물\n• 5000만 아데나\n• 명예코인 500개\n• 다이아 2000개\n• 역별의 정수 10개\n\n유니크 보물\n• 1억 수표 1개\n• 명예코인 1500개\n• 다이아 5000개\n• 역별의 정수 25개",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "75edea621a07d588.png",
-          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1529781777810325544/75edea621a07d588.png?ex=6a7f880d&is=6a7e368d&hm=34cd461e82570592332098d6e4a442a027d9741140383f902dfa42090866e166&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1529781777810325544/75edea621a07d588.png?ex=6a7f880d&is=6a7e368d&hm=34cd461e82570592332098d6e4a442a027d9741140383f902dfa42090866e166&",
-          "content_type": "image/webp",
-          "size": 99994
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516315665483567185/1529781777810325544/75edea621a07d588.png?ex=6a7f880d&is=6a7e368d&hm=34cd461e82570592332098d6e4a442a027d9741140383f902dfa42090866e166&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1529781777810325544/75edea621a07d588.png?ex=6a7f880d&is=6a7e368d&hm=34cd461e82570592332098d6e4a442a027d9741140383f902dfa42090866e166&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1529781778079023144",
-      "created_at": "2026-07-23T18:26:37.865+09:00",
-      "updated_at": "2026-07-23T18:26:37.865+09:00"
-    },
-    {
-      "id": "1528355968340197489",
-      "type": "컨텐츠",
-      "title": "【 일일 퀘스트 】 : 상시",
-      "date": "2026-07-19",
-      "content": "📋 < 퀘스트 목록 >\n\n🔹 미지인 사냥터 정복\n🔹 유저 킬 미션\n🔹 보스 한입만 제출\n🔹 디펜스 보스 상자 제출\n🔹 디펜스 보상 상자 제출\n🔹 유니크 보물 제출\n🔹 토너먼트 승리 보상 제출\n🔹 미니공성 승리 보상 제출\n\n🎁 【 보상 안내 】\n\n보상 목록에 표시된 3종의 아이템은\n3종 중 1개를 선택하여 획득하는 방식이 아닙니다.\n\n각 보상 아이템의 확률이 개별적으로 적용되며,\n확률에 따라 최대 3종 모두 획득하실 수 있습니다.\n\n⚠️ 【 퀘스트 진행 안내 】\n\n모든 퀘스트는 반드시 퀘스트를 수락한 이후부터 진행 및 카운트가 적용됩니다.\n\n퀘스트 수락 전에 진행한 내용은 카운트되지 않으니 꼭 확인해 주세요.",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "image.png",
-          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a7f9e2a&is=6a7e4caa&hm=c41898839d1ddd891182bf4b2e102e4249dfdf05fdc6017da0a941b7ec26b8a0&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a7f9e2a&is=6a7e4caa&hm=c41898839d1ddd891182bf4b2e102e4249dfdf05fdc6017da0a941b7ec26b8a0&",
-          "content_type": "image/webp",
-          "size": 42958
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a7f9e2a&is=6a7e4caa&hm=c41898839d1ddd891182bf4b2e102e4249dfdf05fdc6017da0a941b7ec26b8a0&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1528355968235081758/image.png?ex=6a7f9e2a&is=6a7e4caa&hm=c41898839d1ddd891182bf4b2e102e4249dfdf05fdc6017da0a941b7ec26b8a0&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1528355968340197489",
-      "created_at": "2026-07-19T20:00:58.333+09:00",
-      "updated_at": "2026-07-19T20:00:58.333+09:00"
     },
     {
       "id": "1522455431635796138",
