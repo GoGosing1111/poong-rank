@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:15:01.186+09:00",
+  "updated": "2026-08-15T03:15:06.121+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -1228,110 +1228,6 @@
     }
   ],
   "hunt": [
-    {
-      "id": "1516326492252930159",
-      "type": "사냥터",
-      "title": "[혼돈의 개미굴 2층]",
-      "date": "2026-06-16",
-      "content": "입장료 : 100만 아데나\n이용시간 : 5시간\n주요드랍 : 타락한 성좌의 장갑 , 타락한 성좌의 부츠 , 칼투란의 각반\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 14시 화염의 데스나이트 출현",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "5_2.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a800517&is=6a7eb397&hm=c5ff49a9904af46a54bcfd3dce51cb3d9ddec3c63171597082b1e1a1e0f0c1de&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a800517&is=6a7eb397&hm=c5ff49a9904af46a54bcfd3dce51cb3d9ddec3c63171597082b1e1a1e0f0c1de&",
-          "content_type": "image/webp",
-          "size": 174866
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a800517&is=6a7eb397&hm=c5ff49a9904af46a54bcfd3dce51cb3d9ddec3c63171597082b1e1a1e0f0c1de&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326491804143796/5_2.png?ex=6a800517&is=6a7eb397&hm=c5ff49a9904af46a54bcfd3dce51cb3d9ddec3c63171597082b1e1a1e0f0c1de&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516326492252930159",
-      "created_at": "2026-06-16T15:20:07.737+09:00",
-      "updated_at": "2026-07-07T10:41:30.165+09:00"
-    },
-    {
-      "id": "1516326179672686712",
-      "type": "사냥터",
-      "title": "[혼돈의 개미굴 1층]",
-      "date": "2026-06-16",
-      "content": "입장료 : 100만 아데나\n이용시간 : 5시간\n주요드랍 : 타락한 성좌의 면갑 , 타락한 성좌의 갑옷 , 칼투란의 망토\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 20시 유마 박사 출현",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "4_1.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a8004cd&is=6a7eb34d&hm=9a475c646835ca07e636d0e7b8dff2ee3aabbe4dc7f78826857fd217878452b9&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a8004cd&is=6a7eb34d&hm=9a475c646835ca07e636d0e7b8dff2ee3aabbe4dc7f78826857fd217878452b9&",
-          "content_type": "image/webp",
-          "size": 157716
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a8004cd&is=6a7eb34d&hm=9a475c646835ca07e636d0e7b8dff2ee3aabbe4dc7f78826857fd217878452b9&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516326179341209771/4_1.png?ex=6a8004cd&is=6a7eb34d&hm=9a475c646835ca07e636d0e7b8dff2ee3aabbe4dc7f78826857fd217878452b9&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516326179672686712",
-      "created_at": "2026-06-16T15:18:53.212+09:00",
-      "updated_at": "2026-06-16T15:18:53.212+09:00"
-    },
-    {
-      "id": "1516317841597403146",
-      "type": "사냥터",
-      "title": "[오렌 설벽]",
-      "date": "2026-06-16",
-      "content": "입장료 : 70만 아데나\n이용시간 : 5시간\n주요드랍 : 샌드웜의 가더 , 반역자의 방패 , 데스나이트의 목걸이 , 오우거 킹의 벨트 , 신성한 아누비스의 반지\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 22시 혹한의 가디언 출현",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "3_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a7ffd09&is=6a7eab89&hm=48d772191fa4bf1e6a61e5bda8551aab44f0f6b4d866113c25b41be831acc520&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a7ffd09&is=6a7eab89&hm=48d772191fa4bf1e6a61e5bda8551aab44f0f6b4d866113c25b41be831acc520&",
-          "content_type": "image/webp",
-          "size": 154728
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a7ffd09&is=6a7eab89&hm=48d772191fa4bf1e6a61e5bda8551aab44f0f6b4d866113c25b41be831acc520&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317841299865620/3_.png?ex=6a7ffd09&is=6a7eab89&hm=48d772191fa4bf1e6a61e5bda8551aab44f0f6b4d866113c25b41be831acc520&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516317841597403146",
-      "created_at": "2026-06-16T14:45:45.260+09:00",
-      "updated_at": "2026-06-16T14:45:45.260+09:00"
-    },
-    {
-      "id": "1516317112862380172",
-      "type": "사냥터",
-      "title": "[풍룡의 둥지]",
-      "date": "2026-06-16",
-      "content": "입장료 : 50만 아데나\n이용시간 : 5시간\n주요드랍 : 성흔의 장갑 , 성흔의 부츠 , 나그바스의 각반\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 00시 카슈베 출현",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "2_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a7ffc5b&is=6a7eaadb&hm=c37393a25d520759e69bfc6d235a4df310dfdedf4cc243b797bab8ea3d9b3cfa&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a7ffc5b&is=6a7eaadb&hm=c37393a25d520759e69bfc6d235a4df310dfdedf4cc243b797bab8ea3d9b3cfa&",
-          "content_type": "image/webp",
-          "size": 267058
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a7ffc5b&is=6a7eaadb&hm=c37393a25d520759e69bfc6d235a4df310dfdedf4cc243b797bab8ea3d9b3cfa&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516317112346476696/2_.png?ex=6a7ffc5b&is=6a7eaadb&hm=c37393a25d520759e69bfc6d235a4df310dfdedf4cc243b797bab8ea3d9b3cfa&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516317112862380172",
-      "created_at": "2026-06-16T14:42:51.516+09:00",
-      "updated_at": "2026-06-16T14:42:51.516+09:00"
-    },
     {
       "id": "1516316663643898027",
       "type": "사냥터",
