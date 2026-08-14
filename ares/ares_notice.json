@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:14:44.783+09:00",
+  "updated": "2026-08-15T03:14:49.114+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -1228,84 +1228,6 @@
     }
   ],
   "hunt": [
-    {
-      "id": "1532740398726910034",
-      "type": "사냥터",
-      "title": "[신념의 탑 3층]",
-      "date": "2026-07-31",
-      "content": "입장료 : 5천만 아데나 or 신념의 탑 3층 지배 부적\n이용시간 : 3시간\n주요드랍 : 장갑의 유물 , 망토의 유물 , 전설 오만의 지배석 , 지배석 조각 , 전설 성물 3종\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : 질투의 공주 이자벨",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "14_3.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1532740398479310858/14_3.png?ex=6a7fbf7b&is=6a7e6dfb&hm=cfe7d26297540c8f9bf736ae40094ac260280030b7cb1c4e1b9a2e9bda460abb&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1532740398479310858/14_3.png?ex=6a7fbf7b&is=6a7e6dfb&hm=cfe7d26297540c8f9bf736ae40094ac260280030b7cb1c4e1b9a2e9bda460abb&",
-          "content_type": "image/webp",
-          "size": 266106
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1532740398479310858/14_3.png?ex=6a7fbf7b&is=6a7e6dfb&hm=cfe7d26297540c8f9bf736ae40094ac260280030b7cb1c4e1b9a2e9bda460abb&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1532740398479310858/14_3.png?ex=6a7fbf7b&is=6a7e6dfb&hm=cfe7d26297540c8f9bf736ae40094ac260280030b7cb1c4e1b9a2e9bda460abb&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1532740398726910034",
-      "created_at": "2026-07-31T22:23:07.996+09:00",
-      "updated_at": "2026-07-31T22:23:07.996+09:00"
-    },
-    {
-      "id": "1527189704858931220",
-      "type": "사냥터",
-      "title": "[잊혀진 피라미드]",
-      "date": "2026-07-16",
-      "content": "입장료 : 피라미드 입장권 1개\n이용시간 : 3시간\n주요드랍 : 부츠의 유물 , 각반의 유물\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "13_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a7ffd3f&is=6a7eabbf&hm=b32c7797cf03e4a8986623dd120d4b042dcc564df0cd45deed814dc8f34401d2&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a7ffd3f&is=6a7eabbf&hm=b32c7797cf03e4a8986623dd120d4b042dcc564df0cd45deed814dc8f34401d2&",
-          "content_type": "image/webp",
-          "size": 279774
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a7ffd3f&is=6a7eabbf&hm=b32c7797cf03e4a8986623dd120d4b042dcc564df0cd45deed814dc8f34401d2&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1527189704557072466/13_.png?ex=6a7ffd3f&is=6a7eabbf&hm=b32c7797cf03e4a8986623dd120d4b042dcc564df0cd45deed814dc8f34401d2&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1527189704858931220",
-      "created_at": "2026-07-16T14:46:39.451+09:00",
-      "updated_at": "2026-07-16T14:46:39.451+09:00"
-    },
-    {
-      "id": "1527189290906419201",
-      "type": "사냥터",
-      "title": "[오만의 탑 3층]",
-      "date": "2026-07-16",
-      "content": "입장료 : 3500만 아데나\n이용시간 : 3시간 (전체층과 시간 공유)\n주요드랍 : 영웅 오만의 지배석 , [전설] 고강 무기 상자\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "12_3.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1527189290847830186/12_3.png?ex=6a7ffcdc&is=6a7eab5c&hm=e0ce8700b1a55ef714a564d1cc12fdb20a68ef31809e39aef32575443d458a9d&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1527189290847830186/12_3.png?ex=6a7ffcdc&is=6a7eab5c&hm=e0ce8700b1a55ef714a564d1cc12fdb20a68ef31809e39aef32575443d458a9d&",
-          "content_type": "image/webp",
-          "size": 257886
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1527189290847830186/12_3.png?ex=6a7ffcdc&is=6a7eab5c&hm=e0ce8700b1a55ef714a564d1cc12fdb20a68ef31809e39aef32575443d458a9d&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1527189290847830186/12_3.png?ex=6a7ffcdc&is=6a7eab5c&hm=e0ce8700b1a55ef714a564d1cc12fdb20a68ef31809e39aef32575443d458a9d&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1527189290906419201",
-      "created_at": "2026-07-16T14:45:00.757+09:00",
-      "updated_at": "2026-07-16T14:45:00.757+09:00"
-    },
     {
       "id": "1522853645794676807",
       "type": "사냥터",
