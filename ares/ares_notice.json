@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T03:14:53.771+09:00",
+  "updated": "2026-08-15T03:14:57.344+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -1228,58 +1228,6 @@
     }
   ],
   "hunt": [
-    {
-      "id": "1516338649183158282",
-      "type": "사냥터",
-      "title": "[시련의 탑 1층] ※미지인 사냥터※",
-      "date": "2026-06-16",
-      "content": "입장료 : 1500만 아데나\n오픈시간 : 01시 , 12시 , 19시\n이용시간 : 오픈 후 2시간 씩\n주요드랍 : 할파스 갑옷 3종 , 토템 강화석\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X\n\n※ 미지인 사냥터 = 누구나 PK가 가능합니다. 중립 라인 구분 없습니다. 라인은 해당 맵에서의 PK로 인한 통제사냥터 & 무필 신청 불허합니다. ※",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "8_1_.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a80106a&is=6a7ebeea&hm=2a481ce1641f54cc65b284a253ea15268bceab324b036c17906d450913638496&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a80106a&is=6a7ebeea&hm=2a481ce1641f54cc65b284a253ea15268bceab324b036c17906d450913638496&",
-          "content_type": "image/webp",
-          "size": 144914
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a80106a&is=6a7ebeea&hm=2a481ce1641f54cc65b284a253ea15268bceab324b036c17906d450913638496&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516338648772120618/8_1_.png?ex=6a80106a&is=6a7ebeea&hm=2a481ce1641f54cc65b284a253ea15268bceab324b036c17906d450913638496&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516338649183158282",
-      "created_at": "2026-06-16T16:08:26.175+09:00",
-      "updated_at": "2026-07-04T15:32:41.376+09:00"
-    },
-    {
-      "id": "1516337831318913054",
-      "type": "사냥터",
-      "title": "[오만의 탑 1층]",
-      "date": "2026-06-16",
-      "content": "입장료 : 500만 아데나\n이용시간 : 3시간\n주요드랍 : 에보루타인의 무기 (전설급)\n└ .드랍 명령어 입력 시 확인 가능\n\n보스 : X",
-      "author": "lin1ares",
-      "attachments": [
-        {
-          "name": "7_1.png",
-          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a800fa7&is=6a7ebe27&hm=c5c5fb4d44351f2d1080bab7a7683004602f1c2507fd3e5786e847b256bfb389&",
-          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a800fa7&is=6a7ebe27&hm=c5c5fb4d44351f2d1080bab7a7683004602f1c2507fd3e5786e847b256bfb389&",
-          "content_type": "image/webp",
-          "size": 260714
-        }
-      ],
-      "images": [
-        "https://cdn.discordapp.com/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a800fa7&is=6a7ebe27&hm=c5c5fb4d44351f2d1080bab7a7683004602f1c2507fd3e5786e847b256bfb389&"
-      ],
-      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1516337830736040159/7_1.png?ex=6a800fa7&is=6a7ebe27&hm=c5c5fb4d44351f2d1080bab7a7683004602f1c2507fd3e5786e847b256bfb389&",
-      "version": null,
-      "size": null,
-      "discord_message_id": "1516337831318913054",
-      "created_at": "2026-06-16T16:05:11.181+09:00",
-      "updated_at": "2026-06-16T16:05:11.181+09:00"
-    },
     {
       "id": "1516327857817915502",
       "type": "사냥터",
