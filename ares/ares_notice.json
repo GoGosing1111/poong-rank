@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T00:48:26.358+09:00",
+  "updated": "2026-08-16T00:48:51.547+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -525,6 +525,32 @@
     }
   ],
   "boss": [
+    {
+      "id": "1538212886588162138",
+      "type": "보스",
+      "title": "[ 망각의 레이븐 킹 ]",
+      "date": "2026-08-16",
+      "content": "출현 지역 : 공허의 사원\n\n출현 시간 : 23시",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "00.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1538212886210543720/00.png?ex=6a81dbe2&is=6a808a62&hm=e26a88f986e79d860008be47ca93387cc94b8abea0dfeaefb4e3f29e831d90b6&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1538212886210543720/00.png?ex=6a81dbe2&is=6a808a62&hm=e26a88f986e79d860008be47ca93387cc94b8abea0dfeaefb4e3f29e831d90b6&",
+          "content_type": "image/webp",
+          "size": 96848
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1538212886210543720/00.png?ex=6a81dbe2&is=6a808a62&hm=e26a88f986e79d860008be47ca93387cc94b8abea0dfeaefb4e3f29e831d90b6&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1538212886210543720/00.png?ex=6a81dbe2&is=6a808a62&hm=e26a88f986e79d860008be47ca93387cc94b8abea0dfeaefb4e3f29e831d90b6&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538212886588162138",
+      "created_at": "2026-08-16T00:48:50.776+09:00",
+      "updated_at": "2026-08-16T00:48:50.776+09:00"
+    },
     {
       "id": "1538212781025656903",
       "type": "보스",
