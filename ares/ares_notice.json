@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T00:35:51.234+09:00",
+  "updated": "2026-08-16T00:37:29.889+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -289,6 +289,32 @@
     }
   ],
   "hunt": [
+    {
+      "id": "1538210025590358150",
+      "type": "사냥터",
+      "title": "개인 인던 : 모래지옥",
+      "date": "2026-08-16",
+      "content": "입장료 : 배틀존 깃발 20개 + 3천만 아데나\n\n주요드랍 : 알비노 유황과 같음\n\n출현 펑몹 : X\n\n출현 보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "21f453959413a9b1.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538210025439371416/21f453959413a9b1.png?ex=6a81d938&is=6a8087b8&hm=755cb12a40de94c7065ed5f2ff53edd862226fba5b3aa7e75ef412e05694f0d9&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1538210025439371416/21f453959413a9b1.png?ex=6a81d938&is=6a8087b8&hm=755cb12a40de94c7065ed5f2ff53edd862226fba5b3aa7e75ef412e05694f0d9&",
+          "content_type": "image/webp",
+          "size": 296448
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1538210025439371416/21f453959413a9b1.png?ex=6a81d938&is=6a8087b8&hm=755cb12a40de94c7065ed5f2ff53edd862226fba5b3aa7e75ef412e05694f0d9&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538210025439371416/21f453959413a9b1.png?ex=6a81d938&is=6a8087b8&hm=755cb12a40de94c7065ed5f2ff53edd862226fba5b3aa7e75ef412e05694f0d9&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538210025590358150",
+      "created_at": "2026-08-16T00:37:28.661+09:00",
+      "updated_at": "2026-08-16T00:37:28.661+09:00"
+    },
     {
       "id": "1538209613617303624",
       "type": "사냥터",
