@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T17:15:29.312+09:00",
+  "updated": "2026-08-15T17:37:01.303+09:00",
   "notice": [
     {
       "id": "1537815202333069402",
@@ -312,5 +312,22 @@
       "updated_at": "2026-07-17T14:17:43.035+09:00"
     }
   ],
-  "download": []
+  "download": [
+    {
+      "id": "1538104212133646396-1",
+      "type": "다운로드",
+      "title": "시즌2 아레스 서버 클라이언트 링크 1",
+      "date": "2026-08-15",
+      "content": "https://drive.google.com/file/d/12ac-fhRM6hi_4sdZgSW42_Jl1xHciI3T/view?usp=drive_link",
+      "author": "lin1ares",
+      "attachments": [],
+      "images": [],
+      "url": "https://drive.google.com/file/d/12ac-fhRM6hi_4sdZgSW42_Jl1xHciI3T/view?usp=drive_link",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538104212133646396-1",
+      "created_at": "2026-08-15T17:37:00.767+09:00",
+      "updated_at": "2026-08-15T17:37:00.767+09:00"
+    }
+  ]
 }
