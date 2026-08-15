@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T00:44:29.447+09:00",
+  "updated": "2026-08-16T00:46:14.823+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -524,7 +524,34 @@
       "updated_at": "2026-08-16T00:24:59.181+09:00"
     }
   ],
-  "boss": [],
+  "boss": [
+    {
+      "id": "1538212228526776440",
+      "type": "보스",
+      "title": "[ 알비노 유니콘 ]",
+      "date": "2026-08-16",
+      "content": "출현 지역 : 알비노 분지\n\n출현 시간 : 00시",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "02.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1538212227188785182/02.png?ex=6a81db45&is=6a8089c5&hm=9ccd6fab6c76b3eaf4f0b84f0f50a3343f462b9e4c438d37ac3633bf7eb361c5&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315526840979528/1538212227188785182/02.png?ex=6a81db45&is=6a8089c5&hm=9ccd6fab6c76b3eaf4f0b84f0f50a3343f462b9e4c438d37ac3633bf7eb361c5&",
+          "content_type": "image/webp",
+          "size": 66994
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315526840979528/1538212227188785182/02.png?ex=6a81db45&is=6a8089c5&hm=9ccd6fab6c76b3eaf4f0b84f0f50a3343f462b9e4c438d37ac3633bf7eb361c5&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516315526840979528/1538212227188785182/02.png?ex=6a81db45&is=6a8089c5&hm=9ccd6fab6c76b3eaf4f0b84f0f50a3343f462b9e4c438d37ac3633bf7eb361c5&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538212228526776440",
+      "created_at": "2026-08-16T00:46:13.882+09:00",
+      "updated_at": "2026-08-16T00:46:13.882+09:00"
+    }
+  ],
   "item": [],
   "content": [
     {
