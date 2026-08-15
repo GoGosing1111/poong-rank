@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T03:51:30.174+09:00",
+  "updated": "2026-08-16T03:57:36.647+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -826,6 +826,32 @@
   ],
   "item": [],
   "content": [
+    {
+      "id": "1538260386640302196",
+      "type": "컨텐츠",
+      "title": "[배틀존]",
+      "date": "2026-08-16",
+      "content": "매일 : 17시 , 21시 , 23시 30분\n\n입장조건 : 60레벨 이상\n\n부캐릭터의 입장을 막기 위해 60레벨 이상만 참여가 가능하며,\n\n부캐릭터 입장 후 적발 시 압류 대상입니다.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n입장 후 자동 팀 편성\n\n승리팀 = 배틀존 승리 보상 x1\n\n패배팀 = 배틀존 패배 보상 x1\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n박스 내용물은 아이템정보 → 박스내용물 란에서 확인 바랍니다.",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "image.png",
+          "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1538260386640433152/image.png?ex=6a82081f&is=6a80b69f&hm=7a5b6df6cbf5653ff4f775de6d87d364c754a846cd17bbae6417f8a4c76f3715&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516315665483567185/1538260386640433152/image.png?ex=6a82081f&is=6a80b69f&hm=7a5b6df6cbf5653ff4f775de6d87d364c754a846cd17bbae6417f8a4c76f3715&",
+          "content_type": "image/webp",
+          "size": 39830
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516315665483567185/1538260386640433152/image.png?ex=6a82081f&is=6a80b69f&hm=7a5b6df6cbf5653ff4f775de6d87d364c754a846cd17bbae6417f8a4c76f3715&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516315665483567185/1538260386640433152/image.png?ex=6a82081f&is=6a80b69f&hm=7a5b6df6cbf5653ff4f775de6d87d364c754a846cd17bbae6417f8a4c76f3715&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538260386640302196",
+      "created_at": "2026-08-16T03:57:35.671+09:00",
+      "updated_at": "2026-08-16T03:57:35.671+09:00"
+    },
     {
       "id": "1522455431635796138",
       "type": "컨텐츠",
