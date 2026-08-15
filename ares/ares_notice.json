@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T03:30:15.935+09:00",
+  "updated": "2026-08-16T03:44:53.449+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -95,6 +95,48 @@
   ],
   "update": [],
   "guide": [
+    {
+      "id": "1538257185371324437",
+      "type": "가이드",
+      "title": "★ 변신 , 인형 , 성물 뽑기 및 합성 가이드 ★",
+      "date": "2026-08-16",
+      "content": "사진 참고 바랍니다.\n\n사진을 보시고도 이해가 안되시면 고객센터에 문의 바랍니다.\n\n성물 뽑기 및 합성의 경우 인형과 동일한 창에서 진행합니다.",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "1.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538257184268357652/1.png?ex=6a820524&is=6a80b3a4&hm=7cfdc38b1ef1b37fa6e54112f476bb7a29f41b5a9b2042639c1c3d272fcbc436&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538257184268357652/1.png?ex=6a820524&is=6a80b3a4&hm=7cfdc38b1ef1b37fa6e54112f476bb7a29f41b5a9b2042639c1c3d272fcbc436&",
+          "content_type": "image/webp",
+          "size": 181852
+        },
+        {
+          "name": "3_.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538257184708890674/3_.png?ex=6a820524&is=6a80b3a4&hm=33bf0ed99beaa2a4d8b3ed1d1e30ea1fa29be6d5c02f1ac2a03e50bf8a50baa3&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538257184708890674/3_.png?ex=6a820524&is=6a80b3a4&hm=33bf0ed99beaa2a4d8b3ed1d1e30ea1fa29be6d5c02f1ac2a03e50bf8a50baa3&",
+          "content_type": "image/webp",
+          "size": 129582
+        },
+        {
+          "name": "1.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538257185132380270/1.png?ex=6a820524&is=6a80b3a4&hm=768b19a69096df6c5da9c2e106e093a2d2d850dec988d8a8d4a2f7ad87756e38&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538257185132380270/1.png?ex=6a820524&is=6a80b3a4&hm=768b19a69096df6c5da9c2e106e093a2d2d850dec988d8a8d4a2f7ad87756e38&",
+          "content_type": "image/webp",
+          "size": 178270
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538257184268357652/1.png?ex=6a820524&is=6a80b3a4&hm=7cfdc38b1ef1b37fa6e54112f476bb7a29f41b5a9b2042639c1c3d272fcbc436&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538257184708890674/3_.png?ex=6a820524&is=6a80b3a4&hm=33bf0ed99beaa2a4d8b3ed1d1e30ea1fa29be6d5c02f1ac2a03e50bf8a50baa3&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538257185132380270/1.png?ex=6a820524&is=6a80b3a4&hm=768b19a69096df6c5da9c2e106e093a2d2d850dec988d8a8d4a2f7ad87756e38&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538257184268357652/1.png?ex=6a820524&is=6a80b3a4&hm=7cfdc38b1ef1b37fa6e54112f476bb7a29f41b5a9b2042639c1c3d272fcbc436&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538257185371324437",
+      "created_at": "2026-08-16T03:44:52.429+09:00",
+      "updated_at": "2026-08-16T03:44:52.429+09:00"
+    },
     {
       "id": "1538227103718187059",
       "type": "가이드",
