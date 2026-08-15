@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T03:44:53.449+09:00",
+  "updated": "2026-08-16T03:50:52.834+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -95,6 +95,48 @@
   ],
   "update": [],
   "guide": [
+    {
+      "id": "1538258693165154307",
+      "type": "가이드",
+      "title": "★ 자동설정 가이드 ★",
+      "date": "2026-08-16",
+      "content": "사진 참고 바랍니다.\n\n사진을 보시고도 이해가 안되시면 고객센터에 문의 바랍니다.\n\n설정(등록) 하고자 하는 물품 및 스킬 = 1\n\n비설정(비등록) 하고자 하는 물품 및 스킬 = 0\n\n으로 설정하신 후 OK 버튼을 누르시면 됩니다.",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "6_.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538258691810394244/6_.png?ex=6a82068b&is=6a80b50b&hm=8c82c11b9d282bdc59c67c0804a8b3f34a580698e3b1529b93a49721c23d337f&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538258691810394244/6_.png?ex=6a82068b&is=6a80b50b&hm=8c82c11b9d282bdc59c67c0804a8b3f34a580698e3b1529b93a49721c23d337f&",
+          "content_type": "image/webp",
+          "size": 159964
+        },
+        {
+          "name": "1.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538258692254994573/1.png?ex=6a82068b&is=6a80b50b&hm=3252f7ca5c699a1d27d62388b61cb5f2fe2a88c32a70e5bd17bcba4d4ccd3d71&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538258692254994573/1.png?ex=6a82068b&is=6a80b50b&hm=3252f7ca5c699a1d27d62388b61cb5f2fe2a88c32a70e5bd17bcba4d4ccd3d71&",
+          "content_type": "image/webp",
+          "size": 157416
+        },
+        {
+          "name": "2.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538258692733009960/2.png?ex=6a82068b&is=6a80b50b&hm=3b98370daf32116263ff989d19e29e770077d537c8af98927b27e6711ef7dc72&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538258692733009960/2.png?ex=6a82068b&is=6a80b50b&hm=3b98370daf32116263ff989d19e29e770077d537c8af98927b27e6711ef7dc72&",
+          "content_type": "image/webp",
+          "size": 84562
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538258691810394244/6_.png?ex=6a82068b&is=6a80b50b&hm=8c82c11b9d282bdc59c67c0804a8b3f34a580698e3b1529b93a49721c23d337f&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538258692254994573/1.png?ex=6a82068b&is=6a80b50b&hm=3252f7ca5c699a1d27d62388b61cb5f2fe2a88c32a70e5bd17bcba4d4ccd3d71&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538258692733009960/2.png?ex=6a82068b&is=6a80b50b&hm=3b98370daf32116263ff989d19e29e770077d537c8af98927b27e6711ef7dc72&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538258691810394244/6_.png?ex=6a82068b&is=6a80b50b&hm=8c82c11b9d282bdc59c67c0804a8b3f34a580698e3b1529b93a49721c23d337f&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538258693165154307",
+      "created_at": "2026-08-16T03:50:51.915+09:00",
+      "updated_at": "2026-08-16T03:50:51.915+09:00"
+    },
     {
       "id": "1538257185371324437",
       "type": "가이드",
