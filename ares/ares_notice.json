@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T18:55:22.129+09:00",
+  "updated": "2026-08-16T00:19:48.070+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -288,7 +288,34 @@
       "updated_at": "2026-07-19T23:54:56.988+09:00"
     }
   ],
-  "hunt": [],
+  "hunt": [
+    {
+      "id": "1538205573873401966",
+      "type": "사냥터",
+      "title": "초급 사냥터 : 엘모어 격전지",
+      "date": "2026-08-16",
+      "content": "입장료 : 30만 아데나\n\n사용시간 : 5시간\n\n주요드랍 : 2차 무기 , 2차 투구 , 갑옷 , 영웅 무기 비법서 (소생 포함) , 2차 장비 소생 상자\n\n출현 펑몹 : 천년 구미호\n└ 펑몹 = 몬스터 처치 후 일정 확률로 스폰 (준보스)\n└ 펑몹 드랍품목은 [보스정보] 에서 확인 바랍니다.\n\n출현 보스 : 샤스키 (22시)",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "30.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538205573588197458/30.png?ex=6a81d513&is=6a808393&hm=20630cc0f4660dce35b42a29040de1fa3db808a0dc6f64f3a499bfddd8222721&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1538205573588197458/30.png?ex=6a81d513&is=6a808393&hm=20630cc0f4660dce35b42a29040de1fa3db808a0dc6f64f3a499bfddd8222721&",
+          "content_type": "image/webp",
+          "size": 284100
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1538205573588197458/30.png?ex=6a81d513&is=6a808393&hm=20630cc0f4660dce35b42a29040de1fa3db808a0dc6f64f3a499bfddd8222721&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538205573588197458/30.png?ex=6a81d513&is=6a808393&hm=20630cc0f4660dce35b42a29040de1fa3db808a0dc6f64f3a499bfddd8222721&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538205573873401966",
+      "created_at": "2026-08-16T00:19:47.289+09:00",
+      "updated_at": "2026-08-16T00:19:47.289+09:00"
+    }
+  ],
   "boss": [],
   "item": [],
   "content": [
