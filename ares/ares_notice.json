@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T00:33:56.860+09:00",
+  "updated": "2026-08-16T00:35:51.234+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -289,6 +289,32 @@
     }
   ],
   "hunt": [
+    {
+      "id": "1538209613617303624",
+      "type": "사냥터",
+      "title": "중급 사냥터 : 알비노 유황",
+      "date": "2026-08-16",
+      "content": "입장료 : 400만 아데나\n\n사용시간 : 1시간 30분\n\n주요드랍 : 3차 목걸이 , 장갑 , 부츠 , 망토 , 전설 방어구 비법서 (소생 포함) , 3차 장비 소생 상자 , 수호석\n\n출현 펑몹 :\n\n출현 보스 : 알비노 데몬 (14시)",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "400.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538209613227368628/400.png?ex=6a81d8d6&is=6a808756&hm=17798dd76eeec7f094ca6be35868b7cf39fed98614d5593c4ea154596f78f905&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1538209613227368628/400.png?ex=6a81d8d6&is=6a808756&hm=17798dd76eeec7f094ca6be35868b7cf39fed98614d5593c4ea154596f78f905&",
+          "content_type": "image/webp",
+          "size": 361866
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1538209613227368628/400.png?ex=6a81d8d6&is=6a808756&hm=17798dd76eeec7f094ca6be35868b7cf39fed98614d5593c4ea154596f78f905&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538209613227368628/400.png?ex=6a81d8d6&is=6a808756&hm=17798dd76eeec7f094ca6be35868b7cf39fed98614d5593c4ea154596f78f905&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538209613617303624",
+      "created_at": "2026-08-16T00:35:50.439+09:00",
+      "updated_at": "2026-08-16T00:35:50.439+09:00"
+    },
     {
       "id": "1538209134082531408",
       "type": "사냥터",
