@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T17:53:33.011+09:00",
+  "updated": "2026-08-15T17:56:27.830+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -95,6 +95,40 @@
   ],
   "update": [],
   "guide": [
+    {
+      "id": "1538109103803469894",
+      "type": "가이드",
+      "title": "★ 인형 및 성물 강화 안내 ★",
+      "date": "2026-08-15",
+      "content": "인형은 영웅 등급 부터 유일 등급 까지 등급에 맞는 해당 강화 주문서가 존재합니다.\n\n강화를 하지 않고 소환만 하실 경우 '광역 공격'을 하지 않으니, 반드시 강화하시기 바랍니다.\n\n※ 인형 강화를 하지 않으면 사냥 속도가 매우 느립니다. ※",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "1.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538109102775996457/1.png?ex=6a817b3a&is=6a8029ba&hm=8ff432b3d8936c241d45c7d57e6a93fff13acf96c17fc1a9dfd18bb371f43cb9&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538109102775996457/1.png?ex=6a817b3a&is=6a8029ba&hm=8ff432b3d8936c241d45c7d57e6a93fff13acf96c17fc1a9dfd18bb371f43cb9&",
+          "content_type": "image/webp",
+          "size": 61018
+        },
+        {
+          "name": "2.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538109103283638343/2.png?ex=6a817b3a&is=6a8029ba&hm=49385c20c670ed24656e601aa36370ecc15da58caf5ca24227ddc49562214508&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538109103283638343/2.png?ex=6a817b3a&is=6a8029ba&hm=49385c20c670ed24656e601aa36370ecc15da58caf5ca24227ddc49562214508&",
+          "content_type": "image/webp",
+          "size": 352404
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538109102775996457/1.png?ex=6a817b3a&is=6a8029ba&hm=8ff432b3d8936c241d45c7d57e6a93fff13acf96c17fc1a9dfd18bb371f43cb9&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538109103283638343/2.png?ex=6a817b3a&is=6a8029ba&hm=49385c20c670ed24656e601aa36370ecc15da58caf5ca24227ddc49562214508&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538109102775996457/1.png?ex=6a817b3a&is=6a8029ba&hm=8ff432b3d8936c241d45c7d57e6a93fff13acf96c17fc1a9dfd18bb371f43cb9&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538109103803469894",
+      "created_at": "2026-08-15T17:56:27.032+09:00",
+      "updated_at": "2026-08-15T17:56:27.032+09:00"
+    },
     {
       "id": "1538108118570115072",
       "type": "가이드",
