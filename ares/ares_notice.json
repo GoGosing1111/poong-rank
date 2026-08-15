@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T00:39:32.523+09:00",
+  "updated": "2026-08-16T00:43:09.541+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -289,6 +289,32 @@
     }
   ],
   "hunt": [
+    {
+      "id": "1538211451720704040",
+      "type": "사냥터",
+      "title": "고급 사냥터 : 욕망의 동굴",
+      "date": "2026-08-16",
+      "content": "입장료 : 1000만 아데나\n\n사용시간 : 3시간\n\n주요드랍 : 용 숨결 4종 (소생) , 용 무기 (소생) , 전설 무기 비법서 (소생 포함) , 3차 장비 소생 상자 , 수호석\n\n출현 펑몹 :\n\n출현 보스 : X",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "1000.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538211451385286696/1000.png?ex=6a81da8c&is=6a80890c&hm=1382260db050e8d3dea20f031590bb84b2ec63d081ef05dd32ab9bd4871462d9&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1538211451385286696/1000.png?ex=6a81da8c&is=6a80890c&hm=1382260db050e8d3dea20f031590bb84b2ec63d081ef05dd32ab9bd4871462d9&",
+          "content_type": "image/webp",
+          "size": 212914
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1538211451385286696/1000.png?ex=6a81da8c&is=6a80890c&hm=1382260db050e8d3dea20f031590bb84b2ec63d081ef05dd32ab9bd4871462d9&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538211451385286696/1000.png?ex=6a81da8c&is=6a80890c&hm=1382260db050e8d3dea20f031590bb84b2ec63d081ef05dd32ab9bd4871462d9&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538211451720704040",
+      "created_at": "2026-08-16T00:43:08.677+09:00",
+      "updated_at": "2026-08-16T00:43:08.677+09:00"
+    },
     {
       "id": "1538210541682565243",
       "type": "사냥터",
