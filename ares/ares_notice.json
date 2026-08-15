@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T00:37:29.889+09:00",
+  "updated": "2026-08-16T00:39:32.523+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -289,6 +289,32 @@
     }
   ],
   "hunt": [
+    {
+      "id": "1538210541682565243",
+      "type": "사냥터",
+      "title": "중급 사냥터 : 공허의 사원",
+      "date": "2026-08-16",
+      "content": "입장료 : 500만 아데나\n\n사용시간 : 3시간\n\n주요드랍 : 3차 가더/방패 , 반지 , 벨트 , 각반 , 전설 악세 비법서 (소생 포함) , 3차 장비 소생 상자 , 수호석\n\n출현 펑몹 :\n\n출현 보스 : 망각의 레이븐 킹 (23시)",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "500.png",
+          "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538210541221187584/500.png?ex=6a81d9b3&is=6a808833&hm=44a15be78a78ae6096eab6b75072cc94c41b4766d980528fd8a3dd8ee84f872c&",
+          "proxy_url": "https://media.discordapp.net/attachments/1516311966401036288/1538210541221187584/500.png?ex=6a81d9b3&is=6a808833&hm=44a15be78a78ae6096eab6b75072cc94c41b4766d980528fd8a3dd8ee84f872c&",
+          "content_type": "image/webp",
+          "size": 283520
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1516311966401036288/1538210541221187584/500.png?ex=6a81d9b3&is=6a808833&hm=44a15be78a78ae6096eab6b75072cc94c41b4766d980528fd8a3dd8ee84f872c&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1516311966401036288/1538210541221187584/500.png?ex=6a81d9b3&is=6a808833&hm=44a15be78a78ae6096eab6b75072cc94c41b4766d980528fd8a3dd8ee84f872c&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538210541682565243",
+      "created_at": "2026-08-16T00:39:31.707+09:00",
+      "updated_at": "2026-08-16T00:39:31.707+09:00"
+    },
     {
       "id": "1538210025590358150",
       "type": "사냥터",
