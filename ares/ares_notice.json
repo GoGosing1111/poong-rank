@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T18:31:21.872+09:00",
+  "updated": "2026-08-15T18:51:46.592+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -95,6 +95,56 @@
   ],
   "update": [],
   "guide": [
+    {
+      "id": "1538123024228683846",
+      "type": "가이드",
+      "title": "★ PSS 자동사냥 설정 가이드 ★",
+      "date": "2026-08-15",
+      "content": "우측 하단의 아이콘 클릭 또는 Alt + W 를 통해 PSS을 활성화/비활성화 할 수 있습니다.\n\n모든 동작은 체크박스 및 설정한 입력값 대로 작동하며 작동하지 않는다면 설정을 유심히 확인하시기 바랍니다.\n\n※ 반드시 아이템 줍기 설정에서 횟수를 99회 이상으로 설정하시기 바랍니다. ※\n\n[탈출] 란 에서의 이동거리는 텔이 되지 않는 사냥터에서만 사용하는 시스템입니다.\n└ 자세한 설명을 원하시는 유저분은 고객센터에 문의해주시기 바랍니다.",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "0_PSS.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538123022651887676/0_PSS.png?ex=6a818831&is=6a8036b1&hm=791e4cd7040940eb0d59d79b6907aef8f8f13d685268882f0667a740de5a50d0&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538123022651887676/0_PSS.png?ex=6a818831&is=6a8036b1&hm=791e4cd7040940eb0d59d79b6907aef8f8f13d685268882f0667a740de5a50d0&",
+          "content_type": "image/webp",
+          "size": 15828
+        },
+        {
+          "name": "1_PSS.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538123022957936650/1_PSS.png?ex=6a818831&is=6a8036b1&hm=7a16df9071e00a0b3fc115b844cf40c90bb2712b6ca3a22e2b8eae2cff09a1e3&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538123022957936650/1_PSS.png?ex=6a818831&is=6a8036b1&hm=7a16df9071e00a0b3fc115b844cf40c90bb2712b6ca3a22e2b8eae2cff09a1e3&",
+          "content_type": "image/webp",
+          "size": 216040
+        },
+        {
+          "name": "2_PSS.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538123023310127154/2_PSS.png?ex=6a818831&is=6a8036b1&hm=9a5390d0bd30c64a9f01fe76ada7b2159e4f47d3b173d14b7e1ee8bb33014153&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538123023310127154/2_PSS.png?ex=6a818831&is=6a8036b1&hm=9a5390d0bd30c64a9f01fe76ada7b2159e4f47d3b173d14b7e1ee8bb33014153&",
+          "content_type": "image/webp",
+          "size": 244424
+        },
+        {
+          "name": "3_PSS.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538123023713046548/3_PSS.png?ex=6a818831&is=6a8036b1&hm=29c72b3966fcaa6d02661d125342896251ca519bed01ea219965529e4e1d3823&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538123023713046548/3_PSS.png?ex=6a818831&is=6a8036b1&hm=29c72b3966fcaa6d02661d125342896251ca519bed01ea219965529e4e1d3823&",
+          "content_type": "image/webp",
+          "size": 231442
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538123022651887676/0_PSS.png?ex=6a818831&is=6a8036b1&hm=791e4cd7040940eb0d59d79b6907aef8f8f13d685268882f0667a740de5a50d0&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538123022957936650/1_PSS.png?ex=6a818831&is=6a8036b1&hm=7a16df9071e00a0b3fc115b844cf40c90bb2712b6ca3a22e2b8eae2cff09a1e3&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538123023310127154/2_PSS.png?ex=6a818831&is=6a8036b1&hm=9a5390d0bd30c64a9f01fe76ada7b2159e4f47d3b173d14b7e1ee8bb33014153&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538123023713046548/3_PSS.png?ex=6a818831&is=6a8036b1&hm=29c72b3966fcaa6d02661d125342896251ca519bed01ea219965529e4e1d3823&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538123022651887676/0_PSS.png?ex=6a818831&is=6a8036b1&hm=791e4cd7040940eb0d59d79b6907aef8f8f13d685268882f0667a740de5a50d0&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538123024228683846",
+      "created_at": "2026-08-15T18:51:45.920+09:00",
+      "updated_at": "2026-08-15T18:51:45.920+09:00"
+    },
     {
       "id": "1538109103803469894",
       "type": "가이드",
