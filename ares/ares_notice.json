@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-16T01:09:25.350+09:00",
+  "updated": "2026-08-16T01:45:21.299+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -95,6 +95,32 @@
   ],
   "update": [],
   "guide": [
+    {
+      "id": "1538227103718187059",
+      "type": "가이드",
+      "title": "첨부 공지",
+      "date": "2026-08-16",
+      "content": "첨부 공지",
+      "author": "lin1ares",
+      "attachments": [
+        {
+          "name": "8b778136f83ee8f5.png",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538227103391285258/8b778136f83ee8f5.png?ex=6a81e920&is=6a8097a0&hm=1e1eac1d12681978d598bee91ec0ecefe69a02c92dad9f9f8ff4593f96517b10&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1538227103391285258/8b778136f83ee8f5.png?ex=6a81e920&is=6a8097a0&hm=1e1eac1d12681978d598bee91ec0ecefe69a02c92dad9f9f8ff4593f96517b10&",
+          "content_type": "image/png",
+          "size": 33758
+        }
+      ],
+      "images": [
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1538227103391285258/8b778136f83ee8f5.png?ex=6a81e920&is=6a8097a0&hm=1e1eac1d12681978d598bee91ec0ecefe69a02c92dad9f9f8ff4593f96517b10&"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1538227103391285258/8b778136f83ee8f5.png?ex=6a81e920&is=6a8097a0&hm=1e1eac1d12681978d598bee91ec0ecefe69a02c92dad9f9f8ff4593f96517b10&",
+      "version": null,
+      "size": null,
+      "discord_message_id": "1538227103718187059",
+      "created_at": "2026-08-16T01:45:20.404+09:00",
+      "updated_at": "2026-08-16T01:45:20.404+09:00"
+    },
     {
       "id": "1538123024228683846",
       "type": "가이드",
