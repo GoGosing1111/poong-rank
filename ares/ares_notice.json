@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "updated": "2026-08-15T17:42:27.360+09:00",
+  "updated": "2026-08-15T17:49:38.993+09:00",
   "notice": [
     {
       "id": "1538104454631399464",
@@ -100,42 +100,42 @@
       "type": "가이드",
       "title": "【 수호성 가이드 】",
       "date": "2026-07-25",
-      "content": "━━━━━━━━━━━━━━━━━━\n\n🌠 [ 수호성 ]\n\n⚔️ 조우 (PVE 전용)\n• 1 ~ 4번 스킬 : 단일 공격\n• 5 ~ 7번 스킬 : 광역 공격\n\n🛡️ 아툰\n• 방어력 증가\n• 대미지 감소(리덕션)\n\n❤️ 질리언\n• HP 회복\n\n⚡ 크리스터\n• 단일 대미지 특화\n\n━━━━━━━━━━━━━━━━━━\n\n⚠️ 주의사항\n\n1️⃣ 수호성 활성화 중 대화창이 종료되면, 오픈한 카드가 ​모두 초기화됩니다.\n\n2️⃣ 경우에 따라 9장을 모두 오픈할 수도 있으니, 소모되는 재화를 반드시 확인한 후 진행해 주세요.\n\n3️⃣ 조우 / 아툰 / 질리언 / 크리스터는 각각 1개씩, 최대 4개의 스킬​을 활성화할 수 있습니다.\n\n4️⃣ 스킬 활성화 후 우측 체크박스(★)​가 선택되어 있는지 반드시 확인해 주세요.\n\n━━━━━━━━━━━━━━━━━━\n\n💡 추가 안내\n\n※ 수호성 이펙트 ON / OFF 명령어\n\n.수호성이펙\n\n※ 기본 설정은 OFF입니다.",
+      "content": "━━━━━━━━━━━━━━━━━━\n\n🌠 [ 수호성 ]\n\n⚔️ 조우 (PVE 전용)\n• 1 ~ 4번 스킬 : 단일 공격\n• 5 ~ 7번 스킬 : 광역 공격\n• 8번 스킬 : 광역 공격 (추후 공개 예정)\n\n🛡️ 아툰\n• 방어력 증가\n• 대미지 감소(리덕션)\n\n❤️ 질리언\n• HP 회복\n\n⚡ 크리스터\n• 단일 대미지 특화\n\n━━━━━━━━━━━━━━━━━━\n\n⚠️ 주의사항\n\n1️⃣ 수호성 활성화 중 대화창이 종료되면, 오픈한 카드가 ​모두 초기화됩니다.\n\n2️⃣ 경우에 따라 9장을 모두 오픈할 수도 있으니, 소모되는 재화를 반드시 확인한 후 진행해 주세요.\n\n3️⃣ 조우 / 아툰 / 질리언 / 크리스터는 각각 1개씩, 최대 4개의 스킬​을 활성화할 수 있습니다.\n\n4️⃣ 스킬 활성화 후 우측 체크박스(★)​가 선택되어 있는지 반드시 확인해 주세요.\n\n━━━━━━━━━━━━━━━━━━\n\n💡 추가 안내\n\n※ 수호성 이펙트 ON / OFF 명령어\n\n.수호성이펙\n\n※ 기본 설정은 OFF입니다.",
       "author": "lin1ares",
       "attachments": [
         {
           "name": "1.png",
-          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a80136c&is=6a7ec1ec&hm=18095caad06ddb752a85cdab4fe14346b86ff344a9cd1588f0c14280c0796a0b&",
-          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a80136c&is=6a7ec1ec&hm=18095caad06ddb752a85cdab4fe14346b86ff344a9cd1588f0c14280c0796a0b&",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a8164ec&is=6a80136c&hm=6b778cf56bfddde38f9c856cf3534680e8db4169275e3a8fc93e94806381771d&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a8164ec&is=6a80136c&hm=6b778cf56bfddde38f9c856cf3534680e8db4169275e3a8fc93e94806381771d&",
           "content_type": "image/webp",
           "size": 373840
         },
         {
           "name": "2.png",
-          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813610807346/2.png?ex=6a80136c&is=6a7ec1ec&hm=c65908ad08559717e8580edb2dbcfa1fd081d5b6bf30bdc7c4b56fe5e1e24064&",
-          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1530293813610807346/2.png?ex=6a80136c&is=6a7ec1ec&hm=c65908ad08559717e8580edb2dbcfa1fd081d5b6bf30bdc7c4b56fe5e1e24064&",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813610807346/2.png?ex=6a8164ec&is=6a80136c&hm=724b3d12008f5871a7cb7c9952d878a2ba06a26e41f24656bb11690ce1eede75&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1530293813610807346/2.png?ex=6a8164ec&is=6a80136c&hm=724b3d12008f5871a7cb7c9952d878a2ba06a26e41f24656bb11690ce1eede75&",
           "content_type": "image/webp",
           "size": 268510
         },
         {
           "name": "3.png",
-          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813921317096/3.png?ex=6a80136c&is=6a7ec1ec&hm=a339918df3d7a1de32fd57b14d4c3ab283e6b9b793cda4932be240e36aed7460&",
-          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1530293813921317096/3.png?ex=6a80136c&is=6a7ec1ec&hm=a339918df3d7a1de32fd57b14d4c3ab283e6b9b793cda4932be240e36aed7460&",
+          "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813921317096/3.png?ex=6a8164ec&is=6a80136c&hm=895b80ee942744e6a2b67f27eb65251cf2c3df0b94db1290d310c50a2b452f5e&",
+          "proxy_url": "https://media.discordapp.net/attachments/1517012319555813508/1530293813921317096/3.png?ex=6a8164ec&is=6a80136c&hm=895b80ee942744e6a2b67f27eb65251cf2c3df0b94db1290d310c50a2b452f5e&",
           "content_type": "image/webp",
           "size": 186080
         }
       ],
       "images": [
-        "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a80136c&is=6a7ec1ec&hm=18095caad06ddb752a85cdab4fe14346b86ff344a9cd1588f0c14280c0796a0b&",
-        "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813610807346/2.png?ex=6a80136c&is=6a7ec1ec&hm=c65908ad08559717e8580edb2dbcfa1fd081d5b6bf30bdc7c4b56fe5e1e24064&",
-        "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813921317096/3.png?ex=6a80136c&is=6a7ec1ec&hm=a339918df3d7a1de32fd57b14d4c3ab283e6b9b793cda4932be240e36aed7460&"
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a8164ec&is=6a80136c&hm=6b778cf56bfddde38f9c856cf3534680e8db4169275e3a8fc93e94806381771d&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813610807346/2.png?ex=6a8164ec&is=6a80136c&hm=724b3d12008f5871a7cb7c9952d878a2ba06a26e41f24656bb11690ce1eede75&",
+        "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813921317096/3.png?ex=6a8164ec&is=6a80136c&hm=895b80ee942744e6a2b67f27eb65251cf2c3df0b94db1290d310c50a2b452f5e&"
       ],
-      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a80136c&is=6a7ec1ec&hm=18095caad06ddb752a85cdab4fe14346b86ff344a9cd1588f0c14280c0796a0b&",
+      "url": "https://cdn.discordapp.com/attachments/1517012319555813508/1530293813271203880/1.png?ex=6a8164ec&is=6a80136c&hm=6b778cf56bfddde38f9c856cf3534680e8db4169275e3a8fc93e94806381771d&",
       "version": null,
       "size": null,
       "discord_message_id": "1530293814227369984",
       "created_at": "2026-07-25T04:21:16.796+09:00",
-      "updated_at": "2026-07-25T04:21:16.796+09:00"
+      "updated_at": "2026-08-15T17:49:38.230+09:00"
     },
     {
       "id": "1522531919504478328",
